@@ -1,0 +1,27 @@
+{
+  "name": "express-local-dev",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "express",
+  "tags": [
+    "async",
+    "api",
+    "security",
+    "testing",
+    "debugging"
+  ],
+  "entry_point_tokens": 59,
+  "full_tokens": 7825,
+  "requires": [],
+  "author": "bobmatnyc",
+  "updated": "2025-11-21",
+  "source_path": "express-local-dev.md",
+  "license": "MIT",
+  "source": "https://github.com/bobmatnyc/claude-mpm",
+  "created": "2025-11-21",
+  "modified": "2025-11-21",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

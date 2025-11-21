@@ -1,0 +1,24 @@
+{
+  "name": "json-data-handling",
+  "version": "1.0.0",
+  "category": "universal",
+  "toolchain": null,
+  "framework": null,
+  "tags": [
+    "debugging",
+    "frontend"
+  ],
+  "entry_point_tokens": 53,
+  "full_tokens": 1136,
+  "requires": [],
+  "author": "bobmatnyc",
+  "updated": "2025-11-21",
+  "source_path": "json-data-handling.md",
+  "license": "MIT",
+  "source": "https://github.com/bobmatnyc/claude-mpm",
+  "created": "2025-11-21",
+  "modified": "2025-11-21",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

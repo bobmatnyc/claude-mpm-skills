@@ -1,0 +1,27 @@
+{
+  "name": "api-documentation",
+  "version": "1.0.0",
+  "category": "universal",
+  "toolchain": null,
+  "framework": null,
+  "tags": [
+    "frontend",
+    "database",
+    "api",
+    "security",
+    "debugging"
+  ],
+  "entry_point_tokens": 52,
+  "full_tokens": 2366,
+  "requires": [],
+  "author": "bobmatnyc",
+  "updated": "2025-11-21",
+  "source_path": "api-documentation.md",
+  "license": "MIT",
+  "source": "https://github.com/bobmatnyc/claude-mpm",
+  "created": "2025-11-21",
+  "modified": "2025-11-21",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

@@ -1,0 +1,1378 @@
+{
+  "version": "1.0.0",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "updated": "2025-11-21",
+  "description": "Curated collection of Claude Code skills for intelligent project development",
+  "skills": {
+    "universal": [
+      {
+        "name": "internal-comms",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "frontend"
+        ],
+        "entry_point_tokens": 91,
+        "full_tokens": 563,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/internal-comms/SKILL.md"
+      },
+      {
+        "name": "skill-creator",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "frontend",
+          "database",
+          "api",
+          "testing"
+        ],
+        "entry_point_tokens": 65,
+        "full_tokens": 2407,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/skill-creator/SKILL.md"
+      },
+      {
+        "name": "artifacts-builder",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "frontend",
+          "testing"
+        ],
+        "entry_point_tokens": 82,
+        "full_tokens": 947,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/artifacts-builder/SKILL.md"
+      },
+      {
+        "name": "mcp-builder",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "async",
+          "api",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 59,
+        "full_tokens": 1976,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/mcp-builder/SKILL.md"
+      },
+      {
+        "name": "env-manager",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "frontend",
+          "database",
+          "api",
+          "security",
+          "debugging"
+        ],
+        "entry_point_tokens": 55,
+        "full_tokens": 2038,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "infrastructure/env-manager/SKILL.md"
+      },
+      {
+        "name": "test-driven-development",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "debugging",
+          "frontend",
+          "security",
+          "testing"
+        ],
+        "entry_point_tokens": 69,
+        "full_tokens": 1200,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "testing/test-driven-development/SKILL.md"
+      },
+      {
+        "name": "testing-anti-patterns",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "backend",
+          "api",
+          "frontend",
+          "testing"
+        ],
+        "entry_point_tokens": 68,
+        "full_tokens": 1515,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "testing/testing-anti-patterns/SKILL.md"
+      },
+      {
+        "name": "condition-based-waiting",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "debugging",
+          "frontend",
+          "async",
+          "testing"
+        ],
+        "entry_point_tokens": 55,
+        "full_tokens": 985,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "testing/condition-based-waiting/SKILL.md"
+      },
+      {
+        "name": "webapp-testing",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "backend",
+          "frontend",
+          "api",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 58,
+        "full_tokens": 1685,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "testing/webapp-testing/SKILL.md"
+      },
+      {
+        "name": "test-quality-inspector",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "async",
+          "database",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 82,
+        "full_tokens": 3252,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "testing/test-quality-inspector/SKILL.md"
+      },
+      {
+        "name": "systematic-debugging",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "frontend",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 64,
+        "full_tokens": 1286,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "debugging/systematic-debugging/SKILL.md"
+      },
+      {
+        "name": "root-cause-tracing",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "async",
+          "frontend",
+          "database",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 56,
+        "full_tokens": 1454,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "debugging/root-cause-tracing/SKILL.md"
+      },
+      {
+        "name": "verification-before-completion",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "debugging",
+          "frontend",
+          "security",
+          "testing"
+        ],
+        "entry_point_tokens": 75,
+        "full_tokens": 1038,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "debugging/verification-before-completion/SKILL.md"
+      },
+      {
+        "name": "dispatching-parallel-agents",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "debugging",
+          "frontend",
+          "testing"
+        ],
+        "entry_point_tokens": 61,
+        "full_tokens": 1664,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "collaboration/dispatching-parallel-agents/SKILL.md"
+      },
+      {
+        "name": "brainstorming",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "debugging",
+          "frontend",
+          "testing"
+        ],
+        "entry_point_tokens": 61,
+        "full_tokens": 757,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "collaboration/brainstorming/SKILL.md"
+      },
+      {
+        "name": "writing-plans",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "debugging",
+          "frontend",
+          "testing"
+        ],
+        "entry_point_tokens": 64,
+        "full_tokens": 888,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "collaboration/writing-plans/SKILL.md"
+      },
+      {
+        "name": "requesting-code-review",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "frontend",
+          "testing"
+        ],
+        "entry_point_tokens": 66,
+        "full_tokens": 812,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "collaboration/requesting-code-review/SKILL.md"
+      },
+      {
+        "name": "security-scanning",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "frontend",
+          "database",
+          "api",
+          "security",
+          "debugging"
+        ],
+        "entry_point_tokens": 51,
+        "full_tokens": 1868,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "security-scanning.md"
+      },
+      {
+        "name": "xlsx",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [],
+        "entry_point_tokens": 60,
+        "full_tokens": 742,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "xlsx.md"
+      },
+      {
+        "name": "database-migration",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "database",
+          "frontend",
+          "testing"
+        ],
+        "entry_point_tokens": 51,
+        "full_tokens": 1036,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "database-migration.md"
+      },
+      {
+        "name": "web-performance-optimization",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "async",
+          "api",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 60,
+        "full_tokens": 13226,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "web-performance-optimization.md"
+      },
+      {
+        "name": "json-data-handling",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "debugging",
+          "frontend"
+        ],
+        "entry_point_tokens": 53,
+        "full_tokens": 1136,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "json-data-handling.md"
+      },
+      {
+        "name": "git-workflow",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "api",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 62,
+        "full_tokens": 1862,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "git-workflow.md"
+      },
+      {
+        "name": "api-documentation",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "frontend",
+          "database",
+          "api",
+          "security",
+          "debugging"
+        ],
+        "entry_point_tokens": 52,
+        "full_tokens": 2366,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "api-documentation.md"
+      },
+      {
+        "name": "systematic-debugging",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "debugging",
+          "frontend",
+          "testing"
+        ],
+        "entry_point_tokens": 54,
+        "full_tokens": 2931,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "systematic-debugging.md"
+      },
+      {
+        "name": "test-driven-development",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "async",
+          "api",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 56,
+        "full_tokens": 2221,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "test-driven-development.md"
+      },
+      {
+        "name": "stacked-prs",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "frontend",
+          "security",
+          "testing"
+        ],
+        "entry_point_tokens": 57,
+        "full_tokens": 1634,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "collaboration/stacked-prs.md"
+      },
+      {
+        "name": "git-worktrees",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "frontend",
+          "database",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 60,
+        "full_tokens": 1993,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "collaboration/git-worktrees.md"
+      },
+      {
+        "name": "mcp-builder",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "async",
+          "api",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 74,
+        "full_tokens": 3340,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/mcp-builder/reference/design_principles.md"
+      },
+      {
+        "name": "mcp-builder",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "async",
+          "api",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 57,
+        "full_tokens": 8582,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/mcp-builder/reference/workflow.md"
+      },
+      {
+        "name": "mcp-builder",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "async",
+          "api",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 77,
+        "full_tokens": 7227,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/mcp-builder/reference/mcp_best_practices.md"
+      },
+      {
+        "name": "mcp-builder",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "async",
+          "api",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 76,
+        "full_tokens": 6545,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/mcp-builder/reference/python_mcp_server.md"
+      },
+      {
+        "name": "mcp-builder",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "async",
+          "api",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 85,
+        "full_tokens": 6657,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/mcp-builder/reference/node_mcp_server.md"
+      },
+      {
+        "name": "mcp-builder",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "api",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 66,
+        "full_tokens": 5414,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/mcp-builder/reference/evaluation.md"
+      },
+      {
+        "name": "internal-comms",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "api",
+          "security",
+          "frontend"
+        ],
+        "entry_point_tokens": 115,
+        "full_tokens": 591,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/internal-comms/examples/faq-answers.md"
+      },
+      {
+        "name": "internal-comms",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "security",
+          "frontend"
+        ],
+        "entry_point_tokens": 79,
+        "full_tokens": 823,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/internal-comms/examples/company-newsletter.md"
+      },
+      {
+        "name": "internal-comms",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "frontend"
+        ],
+        "entry_point_tokens": 57,
+        "full_tokens": 150,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/internal-comms/examples/general-comms.md"
+      },
+      {
+        "name": "internal-comms",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "frontend"
+        ],
+        "entry_point_tokens": 90,
+        "full_tokens": 818,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "main/internal-comms/examples/3p-updates.md"
+      },
+      {
+        "name": "env-manager",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "database",
+          "api",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 52,
+        "full_tokens": 4038,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "infrastructure/env-manager/INTEGRATION.md"
+      },
+      {
+        "name": "env-manager",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "api",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 65,
+        "full_tokens": 3775,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "infrastructure/env-manager/README.md"
+      },
+      {
+        "name": "webapp-testing",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "database",
+          "api",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 58,
+        "full_tokens": 4428,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "testing/webapp-testing/troubleshooting.md"
+      },
+      {
+        "name": "webapp-testing",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "async",
+          "api",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 58,
+        "full_tokens": 3751,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "testing/webapp-testing/reconnaissance-pattern.md"
+      },
+      {
+        "name": "webapp-testing",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "async",
+          "api",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 63,
+        "full_tokens": 4368,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "testing/webapp-testing/decision-tree.md"
+      },
+      {
+        "name": "webapp-testing",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "async",
+          "api",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 58,
+        "full_tokens": 3513,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "testing/webapp-testing/server-management.md"
+      },
+      {
+        "name": "webapp-testing",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "database",
+          "api",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 62,
+        "full_tokens": 2791,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "testing/webapp-testing/playwright-patterns.md"
+      },
+      {
+        "name": "test-quality-inspector",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "performance",
+          "api",
+          "security",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 63,
+        "full_tokens": 3175,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "testing/test-quality-inspector/examples/example-inspection-report.md"
+      },
+      {
+        "name": "systematic-debugging",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "backend",
+          "frontend",
+          "api",
+          "testing",
+          "debugging"
+        ],
+        "entry_point_tokens": 57,
+        "full_tokens": 474,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "debugging/systematic-debugging/test-pressure-1.md"
+      },
+      {
+        "name": "systematic-debugging",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "debugging",
+          "frontend",
+          "async",
+          "testing"
+        ],
+        "entry_point_tokens": 56,
+        "full_tokens": 570,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "debugging/systematic-debugging/test-pressure-2.md"
+      },
+      {
+        "name": "systematic-debugging",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "debugging",
+          "frontend",
+          "testing"
+        ],
+        "entry_point_tokens": 54,
+        "full_tokens": 1061,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "debugging/systematic-debugging/CREATION-LOG.md"
+      },
+      {
+        "name": "systematic-debugging",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "debugging",
+          "testing"
+        ],
+        "entry_point_tokens": 53,
+        "full_tokens": 163,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "debugging/systematic-debugging/test-academic.md"
+      },
+      {
+        "name": "systematic-debugging",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "debugging",
+          "frontend",
+          "security",
+          "testing"
+        ],
+        "entry_point_tokens": 58,
+        "full_tokens": 673,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2025-11-21",
+        "source_path": "debugging/systematic-debugging/test-pressure-3.md"
+      }
+    ],
+    "toolchains": {
+      "php": [
+        {
+          "name": "espocrm",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "php",
+          "framework": "espocrm",
+          "tags": [
+            "performance",
+            "api",
+            "security",
+            "testing",
+            "debugging"
+          ],
+          "entry_point_tokens": 50,
+          "full_tokens": 1691,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "php/espocrm-development/SKILL.md"
+        }
+      ],
+      "rust": [
+        {
+          "name": "desktop-applications",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": null,
+          "tags": [
+            "performance",
+            "async",
+            "api",
+            "testing",
+            "debugging"
+          ],
+          "entry_point_tokens": 52,
+          "full_tokens": 2582,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "rust/desktop-applications/SKILL.md"
+        },
+        {
+          "name": "tauri",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": "tauri",
+          "tags": [
+            "async",
+            "api",
+            "security",
+            "testing",
+            "debugging"
+          ],
+          "entry_point_tokens": 52,
+          "full_tokens": 4303,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "tauri/tauri-file-system.md"
+        },
+        {
+          "name": "tauri",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": "tauri",
+          "tags": [
+            "performance",
+            "async",
+            "api",
+            "security",
+            "debugging"
+          ],
+          "entry_point_tokens": 56,
+          "full_tokens": 3815,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "tauri/tauri-performance.md"
+        },
+        {
+          "name": "tauri",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": "tauri",
+          "tags": [
+            "async",
+            "api",
+            "security",
+            "testing",
+            "debugging"
+          ],
+          "entry_point_tokens": 55,
+          "full_tokens": 2399,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "tauri/tauri-testing.md"
+        },
+        {
+          "name": "tauri",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": "tauri",
+          "tags": [
+            "performance",
+            "async",
+            "security",
+            "testing",
+            "debugging"
+          ],
+          "entry_point_tokens": 53,
+          "full_tokens": 3506,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "tauri/tauri-state-management.md"
+        },
+        {
+          "name": "tauri",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": "tauri",
+          "tags": [
+            "async",
+            "frontend",
+            "api",
+            "security",
+            "debugging"
+          ],
+          "entry_point_tokens": 54,
+          "full_tokens": 3769,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "tauri/tauri-window-management.md"
+        },
+        {
+          "name": "tauri",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": "tauri",
+          "tags": [
+            "async",
+            "database",
+            "api",
+            "security",
+            "debugging"
+          ],
+          "entry_point_tokens": 53,
+          "full_tokens": 4733,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "tauri/tauri-frontend-integration.md"
+        },
+        {
+          "name": "tauri",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": "tauri",
+          "tags": [
+            "async",
+            "frontend",
+            "security",
+            "testing",
+            "debugging"
+          ],
+          "entry_point_tokens": 56,
+          "full_tokens": 2987,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "tauri/tauri-async-patterns.md"
+        },
+        {
+          "name": "tauri",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": "tauri",
+          "tags": [
+            "async",
+            "api",
+            "security",
+            "testing",
+            "debugging"
+          ],
+          "entry_point_tokens": 51,
+          "full_tokens": 3745,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "tauri/tauri-error-handling.md"
+        },
+        {
+          "name": "tauri",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": "tauri",
+          "tags": [
+            "performance",
+            "async",
+            "api",
+            "testing",
+            "debugging"
+          ],
+          "entry_point_tokens": 55,
+          "full_tokens": 3321,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "tauri/tauri-build-deploy.md"
+        },
+        {
+          "name": "tauri",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": "tauri",
+          "tags": [
+            "async",
+            "database",
+            "api",
+            "security",
+            "debugging"
+          ],
+          "entry_point_tokens": 53,
+          "full_tokens": 2925,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "tauri/tauri-command-patterns.md"
+        },
+        {
+          "name": "tauri",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": "tauri",
+          "tags": [
+            "performance",
+            "async",
+            "api",
+            "testing",
+            "debugging"
+          ],
+          "entry_point_tokens": 52,
+          "full_tokens": 3732,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "tauri/tauri-event-system.md"
+        }
+      ],
+      "python": [
+        {
+          "name": "fastapi-local-dev",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "python",
+          "framework": "fastapi",
+          "tags": [
+            "performance",
+            "async",
+            "api",
+            "testing",
+            "debugging"
+          ],
+          "entry_point_tokens": 51,
+          "full_tokens": 6352,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "fastapi-local-dev.md"
+        }
+      ],
+      "javascript": [
+        {
+          "name": "express-local-dev",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "express",
+          "tags": [
+            "async",
+            "api",
+            "security",
+            "testing",
+            "debugging"
+          ],
+          "entry_point_tokens": 59,
+          "full_tokens": 7825,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "express-local-dev.md"
+        },
+        {
+          "name": "nextjs",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "nextjs",
+          "tags": [
+            "performance",
+            "async",
+            "database",
+            "api",
+            "debugging"
+          ],
+          "entry_point_tokens": 50,
+          "full_tokens": 4115,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "nextjs-local-dev.md"
+        },
+        {
+          "name": "react",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "react",
+          "tags": [
+            "async",
+            "frontend",
+            "api",
+            "security",
+            "testing"
+          ],
+          "entry_point_tokens": 55,
+          "full_tokens": 4578,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "react/flexlayout-react.md"
+        },
+        {
+          "name": "nextjs",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "nextjs",
+          "tags": [
+            "async",
+            "database",
+            "api",
+            "security",
+            "testing"
+          ],
+          "entry_point_tokens": 64,
+          "full_tokens": 1926,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2025-11-21",
+          "source_path": "infrastructure/env-manager/examples/nextjs-env-structure.md"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "total_skills": 69,
+    "categories": [
+      "testing",
+      "debugging",
+      "collaboration",
+      "frameworks"
+    ],
+    "progressive_loading": true,
+    "entry_point_tokens": "30-50",
+    "governance": {
+      "branch_protection": true,
+      "required_reviewers": [
+        "bobmatnyc"
+      ],
+      "ci_validation": true
+    },
+    "universal_count": 51,
+    "toolchain_count": 18,
+    "last_updated": "2025-11-21",
+    "provenance_tracking": true
+  },
+  "provenance": {
+    "source_repository": "https://github.com/bobmatnyc/claude-mpm",
+    "skills_repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+    "author": "Claude MPM Team",
+    "license": "MIT",
+    "attribution_required": true,
+    "last_updated": "2025-11-21",
+    "total_skills_tracked": 33
+  }
+}

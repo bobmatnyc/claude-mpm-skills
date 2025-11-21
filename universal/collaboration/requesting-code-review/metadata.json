@@ -1,0 +1,24 @@
+{
+  "name": "requesting-code-review",
+  "version": "1.0.0",
+  "category": "universal",
+  "toolchain": null,
+  "framework": null,
+  "tags": [
+    "frontend",
+    "testing"
+  ],
+  "entry_point_tokens": 66,
+  "full_tokens": 812,
+  "requires": [],
+  "author": "bobmatnyc",
+  "updated": "2025-11-21",
+  "source_path": "collaboration/requesting-code-review/SKILL.md",
+  "license": "MIT",
+  "source": "https://github.com/bobmatnyc/claude-mpm",
+  "created": "2025-11-21",
+  "modified": "2025-11-21",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

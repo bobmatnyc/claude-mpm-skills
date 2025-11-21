@@ -1,0 +1,60 @@
+name: Validate Skills
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate skill structure
+        run: |
+          echo "🔍 Validating skill structure..."
+
+          # Check all SKILL.md files exist
+          find toolchains/ universal/ -type d -mindepth 3 -maxdepth 3 2>/dev/null | while read dir; do
+            if [ ! -f "$dir/SKILL.md" ]; then
+              echo "❌ Missing SKILL.md in $dir"
+              exit 1
+            fi
+            if [ ! -f "$dir/metadata.json" ]; then
+              echo "❌ Missing metadata.json in $dir"
+              exit 1
+            fi
+          done
+
+          echo "✅ All skills have required files"
+
+      - name: Validate manifest
+        run: |
+          echo "🔍 Validating manifest.json..."
+
+          if [ ! -f "manifest.json" ]; then
+            echo "❌ manifest.json not found"
+            exit 1
+          fi
+
+          # Validate JSON syntax
+          if ! python3 -m json.tool manifest.json > /dev/null; then
+            echo "❌ manifest.json is not valid JSON"
+            exit 1
+          fi
+
+          echo "✅ manifest.json is valid"
+
+      - name: Check for sensitive data
+        run: |
+          echo "🔍 Checking for sensitive data..."
+
+          # Search for common patterns (excluding safe examples)
+          if grep -r -i "api[_-]key\|secret\|password\|token" --include="*.md" --include="*.json" toolchains/ universal/ | grep -v "example\|placeholder\|YOUR_\|<YOUR_\|{API_KEY}"; then
+            echo "❌ Potential sensitive data detected"
+            exit 1
+          fi
+
+          echo "✅ No sensitive data detected"

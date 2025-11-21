@@ -1,0 +1,27 @@
+{
+  "name": "test-quality-inspector",
+  "version": "1.0.0",
+  "category": "universal",
+  "toolchain": null,
+  "framework": null,
+  "tags": [
+    "performance",
+    "api",
+    "security",
+    "testing",
+    "debugging"
+  ],
+  "entry_point_tokens": 63,
+  "full_tokens": 3175,
+  "requires": [],
+  "author": "bobmatnyc",
+  "updated": "2025-11-21",
+  "source_path": "testing/test-quality-inspector/examples/example-inspection-report.md",
+  "license": "MIT",
+  "source": "https://github.com/bobmatnyc/claude-mpm",
+  "created": "2025-11-21",
+  "modified": "2025-11-21",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

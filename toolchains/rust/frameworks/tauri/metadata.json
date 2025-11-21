@@ -1,0 +1,27 @@
+{
+  "name": "tauri",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "rust",
+  "framework": "tauri",
+  "tags": [
+    "performance",
+    "async",
+    "api",
+    "testing",
+    "debugging"
+  ],
+  "entry_point_tokens": 52,
+  "full_tokens": 3732,
+  "requires": [],
+  "author": "bobmatnyc",
+  "updated": "2025-11-21",
+  "source_path": "tauri/tauri-event-system.md",
+  "license": "MIT",
+  "source": "https://github.com/bobmatnyc/claude-mpm",
+  "created": "2025-11-21",
+  "modified": "2025-11-21",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

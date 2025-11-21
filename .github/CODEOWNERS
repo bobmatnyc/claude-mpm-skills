@@ -1,0 +1,18 @@
+# Code Owners for claude-mpm-skills
+# All changes to main require review from @bobmatnyc
+
+* @bobmatnyc
+
+# Toolchain-specific skills may have additional reviewers
+/toolchains/python/ @bobmatnyc
+/toolchains/javascript/ @bobmatnyc
+/toolchains/rust/ @bobmatnyc
+/toolchains/php/ @bobmatnyc
+
+# Universal skills require owner review
+/universal/ @bobmatnyc
+
+# Critical files always require owner review
+/manifest.json @bobmatnyc
+/GOVERNANCE.md @bobmatnyc
+/.github/ @bobmatnyc
