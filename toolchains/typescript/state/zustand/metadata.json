@@ -1,0 +1,16 @@
+{
+  "name": "zustand",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "typescript",
+  "subcategory": "state",
+  "tags": ["zustand", "state-management", "react", "typescript", "hooks"],
+  "entry_point_tokens": 70,
+  "full_tokens": 4500,
+  "related_skills": ["../../frameworks/react", "../../../nextjs", "../../testing/vitest"],
+  "author": "claude-mpm-skills",
+  "created": "2025-11-30",
+  "updated": "2025-11-30",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}
