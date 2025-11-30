@@ -1,0 +1,30 @@
+{
+  "name": "tanstack-query",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "typescript",
+  "subcategory": "state",
+  "tags": [
+    "tanstack-query",
+    "react-query",
+    "state-management",
+    "caching",
+    "server-state",
+    "data-fetching",
+    "mutations",
+    "optimistic-updates"
+  ],
+  "entry_point_tokens": 70,
+  "full_tokens": 5500,
+  "related_skills": [
+    "../zustand",
+    "../../api/trpc",
+    "../../frameworks/react",
+    "../../../nextjs"
+  ],
+  "author": "claude-mpm-skills",
+  "created": "2025-11-30",
+  "updated": "2025-11-30",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

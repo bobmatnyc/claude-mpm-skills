@@ -1,0 +1,76 @@
+{
+  "name": "trpc",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "typescript",
+  "subcategory": "api",
+  "tags": [
+    "trpc",
+    "api",
+    "typescript",
+    "type-safety",
+    "react-query",
+    "nextjs",
+    "end-to-end-types",
+    "rpc",
+    "websocket",
+    "real-time"
+  ],
+  "entry_point_tokens": 70,
+  "full_tokens": 5000,
+  "related_skills": [
+    "../../validation/zod",
+    "../../../nextjs",
+    "../../state/zustand",
+    "../../testing/vitest"
+  ],
+  "requires": [
+    "../../validation/zod"
+  ],
+  "author": "claude-mpm-skills",
+  "created": "2025-11-30",
+  "updated": "2025-11-30",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "description": "End-to-end type safety for TypeScript APIs without code generation. Build type-safe APIs with automatic client-server type inference.",
+  "keywords": [
+    "trpc",
+    "type-safe-api",
+    "typescript",
+    "react-query",
+    "nextjs",
+    "zod",
+    "rpc",
+    "api",
+    "full-stack"
+  ],
+  "documentation": "https://trpc.io",
+  "progressive_loading": {
+    "enabled": true,
+    "entry_point": "summary",
+    "estimated_tokens": {
+      "summary": 70,
+      "when_to_use": 150,
+      "quick_start": 300,
+      "core_concepts": 400,
+      "router_definition": 350,
+      "procedures": 400,
+      "input_validation": 350,
+      "context": 400,
+      "middleware": 400,
+      "error_handling": 350,
+      "client_setup": 400,
+      "react_integration": 450,
+      "nextjs_integration": 500,
+      "subscriptions": 400,
+      "file_uploads": 300,
+      "batching": 350,
+      "typescript_inference": 300,
+      "testing": 400,
+      "production_patterns": 450,
+      "comparison": 250,
+      "migration": 300,
+      "best_practices": 400
+    }
+  }
+}

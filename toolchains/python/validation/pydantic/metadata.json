@@ -1,0 +1,20 @@
+{
+  "name": "pydantic",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "python",
+  "subcategory": "validation",
+  "tags": ["pydantic", "validation", "python", "type-hints", "fastapi", "settings", "orm", "serialization"],
+  "entry_point_tokens": 70,
+  "full_tokens": 5500,
+  "related_skills": [
+    "../../frameworks/fastapi",
+    "../../frameworks/django",
+    "../../data/sqlalchemy"
+  ],
+  "author": "claude-mpm-skills",
+  "created": "2025-11-30",
+  "updated": "2025-11-30",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}
