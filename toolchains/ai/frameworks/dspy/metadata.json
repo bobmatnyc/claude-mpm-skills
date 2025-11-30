@@ -1,0 +1,130 @@
+{
+  "name": "dspy",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "ai",
+  "subcategory": "frameworks",
+  "tags": [
+    "dspy",
+    "prompt-optimization",
+    "automatic-prompting",
+    "few-shot",
+    "ai",
+    "llm",
+    "mipro",
+    "bootstrapping",
+    "teleprompters",
+    "signatures",
+    "chain-of-thought",
+    "rag",
+    "optimization"
+  ],
+  "entry_point_tokens": 75,
+  "full_tokens": 5500,
+  "related_skills": [
+    "../../sdks/anthropic",
+    "../langchain",
+    "../../services/openrouter"
+  ],
+  "author": "claude-mpm-skills",
+  "created": "2025-11-30",
+  "updated": "2025-11-30",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "description": "Declarative framework for automatic prompt optimization treating prompts as code with signatures, modules, and optimizers",
+  "key_features": [
+    "Declarative signatures for input/output specifications",
+    "Automatic prompt optimization via optimizers",
+    "MIPROv2 state-of-the-art optimizer (18-38% accuracy gains)",
+    "BootstrapFewShot for example selection",
+    "ChainOfThought, ReAct, ProgramOfThought modules",
+    "Teleprompters for compilation pipelines",
+    "Multi-model support (OpenAI, Anthropic, local)",
+    "Production deployment patterns",
+    "LangSmith integration for evaluation",
+    "Version control for optimized prompts"
+  ],
+  "use_cases": [
+    "Systematic prompt optimization with evaluation data",
+    "RAG (Retrieval-Augmented Generation) pipelines",
+    "Classification and structured extraction",
+    "Question answering systems",
+    "Code generation with test cases",
+    "Multi-hop reasoning tasks",
+    "Production LLM systems requiring accuracy",
+    "Replacing manual prompt engineering",
+    "Few-shot learning optimization",
+    "Prompt version control and A/B testing"
+  ],
+  "performance_benchmarks": {
+    "prompt_evaluation": {
+      "baseline": "46.2%",
+      "optimized": "64.0%",
+      "improvement": "+38.5%"
+    },
+    "guardrail_enforcement": {
+      "baseline": "72.1%",
+      "optimized": "84.3%",
+      "improvement": "+16.9%"
+    },
+    "code_generation": {
+      "baseline": "58.4%",
+      "optimized": "71.2%",
+      "improvement": "+21.9%"
+    },
+    "hallucination_detection": {
+      "baseline": "65.8%",
+      "optimized": "79.5%",
+      "improvement": "+20.8%"
+    },
+    "agent_routing": {
+      "baseline": "69.3%",
+      "optimized": "82.1%",
+      "improvement": "+18.5%"
+    }
+  },
+  "optimizers": [
+    "BootstrapFewShot",
+    "BootstrapFewShotWithRandomSearch",
+    "MIPROv2 (state-of-the-art 2025)",
+    "KNNFewShot",
+    "SignatureOptimizer",
+    "COPRO"
+  ],
+  "modules": [
+    "ChainOfThought",
+    "ReAct",
+    "Retrieve",
+    "ProgramOfThought",
+    "Custom modules via dspy.Module"
+  ],
+  "production_adopters": [
+    "JetBlue",
+    "Databricks",
+    "Walmart",
+    "VMware",
+    "Replit",
+    "Sephora",
+    "Moody's"
+  ],
+  "prerequisites": {
+    "python": ">=3.9",
+    "packages": [
+      "dspy-ai"
+    ],
+    "optional": [
+      "langsmith (for evaluation)",
+      "sentence-transformers (for embeddings)",
+      "openai",
+      "anthropic"
+    ]
+  },
+  "installation": {
+    "command": "pip install dspy-ai",
+    "providers": {
+      "openai": "pip install openai",
+      "anthropic": "pip install anthropic",
+      "local": "Ollama or other local LLM servers"
+    }
+  }
+}

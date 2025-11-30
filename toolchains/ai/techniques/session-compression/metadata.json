@@ -1,0 +1,57 @@
+{
+  "name": "session-compression",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "ai",
+  "subcategory": "techniques",
+  "tags": [
+    "ai",
+    "llm",
+    "session-compression",
+    "memory",
+    "context-management",
+    "prompt-optimization",
+    "rag",
+    "embeddings",
+    "summarization",
+    "langchain",
+    "anthropic",
+    "cost-optimization"
+  ],
+  "entry_point_tokens": 75,
+  "full_tokens": 5500,
+  "related_skills": [
+    "../../frameworks/langchain",
+    "../../sdks/anthropic",
+    "../../../python/frameworks/langchain"
+  ],
+  "description": "Compress long AI conversations to fit context windows while preserving critical information through summarization, RAG, and intelligent memory management",
+  "use_cases": [
+    "Multi-turn chatbots (50+ turns)",
+    "AI code assistants with long development sessions",
+    "Customer support with conversation history",
+    "Educational tutors tracking student progress",
+    "Long-running collaborative AI workflows"
+  ],
+  "key_features": [
+    "80-90% token cost reduction",
+    "3-20x compression ratios",
+    "Multiple compression strategies (extractive, abstractive, hierarchical, RAG)",
+    "Progressive compression thresholds (70%, 85%, 95%)",
+    "Anthropic prompt caching integration (90% cost savings)",
+    "LangChain memory types coverage",
+    "Production patterns with checkpointing and resume workflows"
+  ],
+  "prerequisites": [
+    "Basic Python knowledge",
+    "Familiarity with LLM APIs (Anthropic/OpenAI)",
+    "Understanding of token concepts"
+  ],
+  "estimated_learning_time": "30-45 minutes (full content)",
+  "difficulty": "intermediate",
+  "author": "claude-mpm-skills",
+  "created": "2025-11-30",
+  "updated": "2025-11-30",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}
