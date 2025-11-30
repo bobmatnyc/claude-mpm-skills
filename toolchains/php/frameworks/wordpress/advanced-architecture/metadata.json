@@ -1,0 +1,164 @@
+{
+  "name": "wordpress-advanced-architecture",
+  "version": "1.0.0",
+  "description": "Advanced WordPress development with REST API, WP-CLI, performance optimization, and caching strategies for scalable applications",
+  "tags": [
+    "wordpress",
+    "php",
+    "rest-api",
+    "wp-cli",
+    "performance",
+    "caching",
+    "optimization",
+    "redis",
+    "memcached",
+    "multisite"
+  ],
+  "requirements": {
+    "wordpress": ">=6.4",
+    "php": ">=8.1",
+    "tools": [
+      "wp-cli",
+      "composer"
+    ],
+    "recommended": [
+      "redis",
+      "memcached",
+      "query-monitor"
+    ]
+  },
+  "dependencies": [
+    "../plugin-fundamentals",
+    "../security",
+    "../../../../universal/infrastructure/docker"
+  ],
+  "related_skills": [
+    "../plugin-fundamentals",
+    "../security",
+    "../testing-qa",
+    "../../../../universal/data/graphql",
+    "../../../../universal/infrastructure/docker"
+  ],
+  "learning_path": [
+    "REST API endpoint registration with namespacing",
+    "Permission callbacks and authentication",
+    "Complete CRUD implementation with REST API",
+    "WP-CLI command development",
+    "Transients API for expiring cache",
+    "Object caching with Redis/Memcached",
+    "Database query optimization",
+    "Fragment caching and CDN integration",
+    "Multisite development patterns",
+    "Service-oriented architecture"
+  ],
+  "use_cases": [
+    "Building custom REST API endpoints for headless WordPress",
+    "Automating WordPress tasks with WP-CLI commands",
+    "Implementing high-performance caching strategies",
+    "Optimizing database queries for large datasets",
+    "Developing network-activated multisite plugins",
+    "Creating scalable WordPress applications"
+  ],
+  "performance_metrics": {
+    "rest_api": {
+      "response_time": "<100ms for typical endpoints",
+      "pagination": "Support for 100+ items per request"
+    },
+    "caching": {
+      "transients": "Expiring cache for time-sensitive data",
+      "object_cache": "Sub-millisecond access with Redis",
+      "page_cache": "Static HTML serving for anonymous users"
+    },
+    "database": {
+      "query_optimization": "Reduce N+1 queries with pre-fetching",
+      "indexing": "Index frequently queried columns"
+    }
+  },
+  "code_examples": {
+    "rest_api_crud": {
+      "description": "Complete CRUD REST API implementation",
+      "lines": 200,
+      "complexity": "intermediate"
+    },
+    "wp_cli_command": {
+      "description": "Custom WP-CLI command with progress bars",
+      "lines": 150,
+      "complexity": "intermediate"
+    },
+    "caching_strategies": {
+      "description": "Transients, object cache, and fragment caching",
+      "lines": 100,
+      "complexity": "intermediate"
+    },
+    "controller_pattern": {
+      "description": "REST API controller with WP_REST_Controller",
+      "lines": 250,
+      "complexity": "advanced"
+    }
+  },
+  "best_practices": [
+    "Use namespacing for REST API endpoints (myplugin/v1)",
+    "Always implement permission callbacks for security",
+    "Validate and sanitize all API input parameters",
+    "Use WP-CLI for bulk operations and automation",
+    "Implement caching with event-based invalidation",
+    "Pre-fetch related data to avoid N+1 queries",
+    "Use direct SQL for complex queries with JOINs",
+    "Add database indexes for frequently queried columns",
+    "Use service-oriented architecture for complex plugins",
+    "Monitor performance with Query Monitor"
+  ],
+  "common_patterns": {
+    "rest_api": [
+      "register_rest_route() with validation schemas",
+      "Permission callbacks for authentication",
+      "WP_REST_Controller for complex endpoints",
+      "HATEOAS links for API navigation"
+    ],
+    "wp_cli": [
+      "Command registration with WP_CLI::add_command()",
+      "Progress bars with make_progress_bar()",
+      "Interactive prompts with WP_CLI::confirm()",
+      "Output formatting with format_items()"
+    ],
+    "caching": [
+      "Transients for expiring cache (set_transient/get_transient)",
+      "Object cache for persistent data (wp_cache_*)",
+      "Fragment caching with output buffering",
+      "Event-based cache invalidation"
+    ],
+    "optimization": [
+      "WP_Query with 'fields' => 'ids' for count queries",
+      "Pre-fetch data with update_post_caches()",
+      "Direct SQL for complex JOIN queries",
+      "Database indexing for common filters"
+    ]
+  },
+  "anti_patterns": [
+    "Exposing endpoints without permission callbacks",
+    "Missing validation/sanitization on API input",
+    "N+1 queries in loops (fetch related data upfront)",
+    "Infinite cache expiration (always set TTL)",
+    "Page caching for logged-in users",
+    "Missing cache invalidation on content updates",
+    "Using WP_Query for complex multi-table queries",
+    "switch_to_blog() without restore_current_blog()"
+  ],
+  "testing": {
+    "rest_api": [
+      "cURL commands for endpoint testing",
+      "Postman/Insomnia for interactive testing",
+      "PHPUnit integration tests for REST endpoints"
+    ],
+    "wp_cli": [
+      "wp help <command> for documentation validation",
+      "Dry-run flags for safe testing",
+      "PHPUnit tests for command logic"
+    ],
+    "performance": [
+      "Query Monitor for profiling",
+      "Redis-cli for cache inspection",
+      "ab (Apache Bench) for load testing"
+    ]
+  }
+}

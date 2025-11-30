@@ -1,0 +1,176 @@
+{
+  "name": "wordpress-testing-qa",
+  "version": "1.0.0",
+  "description": "WordPress plugin and theme testing with PHPUnit integration tests, WP_Mock unit tests, PHPCS coding standards enforcement, and GitHub Actions CI/CD pipelines",
+  "tags": [
+    "wordpress",
+    "php",
+    "testing",
+    "phpunit",
+    "wp-mock",
+    "phpcs",
+    "quality-assurance",
+    "ci-cd",
+    "github-actions",
+    "code-coverage",
+    "coding-standards"
+  ],
+  "requirements": {
+    "wordpress": ">=6.4",
+    "php": ">=8.1",
+    "tools": [
+      "composer",
+      "phpunit",
+      "phpcs",
+      "wp-cli"
+    ]
+  },
+  "dependencies": [
+    "../plugin-fundamentals",
+    "../security-validation",
+    "../../../../php/fundamentals",
+    "../../../../php/composer"
+  ],
+  "related_skills": [
+    "../plugin-fundamentals",
+    "../security-validation",
+    "../block-editor",
+    "../../../../python/testing/pytest",
+    "../../../../universal/infrastructure/github-actions"
+  ],
+  "learning_path": [
+    "Understanding the WordPress testing pyramid",
+    "Setting up PHPUnit with WordPress test suite",
+    "Writing integration tests with WP_UnitTestCase",
+    "Unit testing with WP_Mock (no WordPress dependency)",
+    "Enforcing coding standards with PHPCS and WPCS",
+    "Configuring GitHub Actions for CI/CD",
+    "Implementing test coverage requirements",
+    "Testing common WordPress patterns (CPTs, hooks, AJAX, REST API)"
+  ],
+  "key_concepts": [
+    "PHPUnit integration testing with WordPress",
+    "WP_Mock for isolated unit testing",
+    "Test fixtures and factories",
+    "WordPress Coding Standards (WPCS)",
+    "Continuous Integration workflows",
+    "Code coverage measurement",
+    "Test-Driven Development (TDD)",
+    "Arrange-Act-Assert pattern"
+  ],
+  "progressive_disclosure": {
+    "entry_point_tokens": 78,
+    "full_content_tokens": 5200,
+    "expansion_ratio": 66.7
+  },
+  "examples": {
+    "phpunit_integration": {
+      "description": "WordPress test suite setup with factory objects",
+      "complexity": "intermediate",
+      "lines": 50
+    },
+    "wp_mock_unit": {
+      "description": "Unit testing without WordPress using WP_Mock",
+      "complexity": "intermediate",
+      "lines": 40
+    },
+    "phpcs_config": {
+      "description": "PHPCS configuration with WPCS ruleset",
+      "complexity": "beginner",
+      "lines": 30
+    },
+    "github_actions": {
+      "description": "Complete CI/CD workflow with matrix testing",
+      "complexity": "advanced",
+      "lines": 100
+    },
+    "ajax_testing": {
+      "description": "Testing WordPress AJAX handlers",
+      "complexity": "advanced",
+      "lines": 35
+    },
+    "rest_api_testing": {
+      "description": "Testing custom REST API endpoints",
+      "complexity": "advanced",
+      "lines": 45
+    }
+  },
+  "testing_coverage": {
+    "unit_tests": "60%",
+    "integration_tests": "30%",
+    "e2e_tests": "10%",
+    "minimum_coverage": "80%",
+    "critical_paths": "95%"
+  },
+  "tools": {
+    "phpunit": {
+      "version": "^9.6",
+      "purpose": "WordPress integration testing"
+    },
+    "wp_mock": {
+      "version": "^1.0",
+      "purpose": "Unit testing without WordPress"
+    },
+    "phpcs": {
+      "version": "^3.7",
+      "purpose": "Coding standards enforcement"
+    },
+    "wpcs": {
+      "version": "^3.0",
+      "purpose": "WordPress-specific coding rules"
+    },
+    "phpcompatibility": {
+      "version": "*",
+      "purpose": "PHP version compatibility checking"
+    }
+  },
+  "ci_cd": {
+    "platforms": [
+      "GitHub Actions",
+      "GitLab CI",
+      "CircleCI",
+      "Travis CI"
+    ],
+    "matrix_testing": {
+      "php_versions": ["8.1", "8.2", "8.3"],
+      "wordpress_versions": ["6.4", "6.5", "6.6", "6.7", "latest", "trunk"]
+    },
+    "coverage_reporting": [
+      "Codecov",
+      "Coveralls"
+    ]
+  },
+  "best_practices": [
+    "Follow test pyramid: 60% unit, 30% integration, 10% E2E",
+    "Use WP_Mock for pure logic, PHPUnit for WordPress interactions",
+    "Maintain 80% minimum code coverage for new code",
+    "Test critical paths at 95% coverage",
+    "Use data providers for testing multiple scenarios",
+    "Follow Arrange-Act-Assert pattern consistently",
+    "Run PHPCS in pre-commit hooks",
+    "Test across multiple PHP and WordPress versions",
+    "Use descriptive test names explaining scenario and outcome",
+    "Mock external dependencies in unit tests"
+  ],
+  "common_pitfalls": [
+    "Loading entire WordPress for unit tests (use WP_Mock instead)",
+    "Not cleaning up test data in tearDown()",
+    "Testing WordPress core functions instead of your code",
+    "Skipping security-critical function tests",
+    "Not testing error conditions and edge cases",
+    "Hardcoding WordPress table prefixes instead of using $wpdb->prefix",
+    "Forgetting to set up database fixtures before tests",
+    "Not mocking external API calls in tests"
+  ],
+  "skill_level": "intermediate",
+  "estimated_time": "8-12 hours",
+  "last_updated": "2025-01-30",
+  "maintained_by": "claude-mpm-skills",
+  "documentation_urls": [
+    "https://make.wordpress.org/core/handbook/testing/automated-testing/",
+    "https://make.wordpress.org/core/handbook/testing/automated-testing/writing-phpunit-tests/",
+    "https://github.com/10up/wp_mock",
+    "https://github.com/WordPress/WordPress-Coding-Standards",
+    "https://phpunit.de/documentation.html"
+  ]
+}

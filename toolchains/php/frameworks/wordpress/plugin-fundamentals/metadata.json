@@ -1,0 +1,228 @@
+{
+  "name": "wordpress-plugin-fundamentals",
+  "version": "1.0.0",
+  "description": "Modern WordPress plugin development with PHP 8.3+, OOP architecture, hooks system, database interactions, and Settings API for building secure, maintainable plugins",
+  "category": "php-frameworks",
+  "tags": [
+    "wordpress",
+    "php",
+    "plugin-development",
+    "hooks",
+    "actions",
+    "filters",
+    "wpdb",
+    "settings-api",
+    "wpcs",
+    "composer",
+    "psr-4",
+    "oop"
+  ],
+  "requirements": {
+    "wordpress": ">=6.4",
+    "php": ">=8.1",
+    "tools": ["composer", "wp-cli"],
+    "recommended_php": "8.3"
+  },
+  "progressive_disclosure": {
+    "entry_point_tokens": 75,
+    "full_content_tokens": 5450,
+    "estimated_sections": {
+      "plugin_architecture": 800,
+      "hooks_system": 1000,
+      "database_interactions": 900,
+      "settings_api": 800,
+      "wpcs": 600,
+      "best_practices": 500,
+      "common_patterns": 400,
+      "examples": 450
+    }
+  },
+  "related_skills": [
+    "../security-validation",
+    "../block-editor",
+    "../../../testing/phpunit",
+    "../../validation/pydantic"
+  ],
+  "learning_path": [
+    "Plugin architecture and directory structure",
+    "OOP patterns with Singleton and Dependency Injection",
+    "Hooks system: actions vs filters, priorities, custom hooks",
+    "Database operations with wpdb and custom tables",
+    "Settings API for admin configuration pages",
+    "WordPress Coding Standards (WPCS) compliance",
+    "Security best practices: sanitize, validate, escape",
+    "Translation-ready development (i18n)",
+    "Performance optimization with caching"
+  ],
+  "key_concepts": [
+    {
+      "concept": "Hooks System",
+      "importance": "critical",
+      "description": "Actions execute code at specific points, filters modify data. Core WordPress integration mechanism."
+    },
+    {
+      "concept": "Three-Layer Security",
+      "importance": "critical",
+      "description": "Sanitize on input, validate for logic, escape on output. Prevents XSS and SQL injection."
+    },
+    {
+      "concept": "PSR-4 Autoloading",
+      "importance": "high",
+      "description": "Modern PHP namespace-based class loading via Composer. Eliminates manual require statements."
+    },
+    {
+      "concept": "Settings API",
+      "importance": "high",
+      "description": "Structured approach to admin settings pages with automatic validation and sanitization."
+    },
+    {
+      "concept": "WordPress Coding Standards",
+      "importance": "high",
+      "description": "WPCS ensures code consistency, security, and compatibility across WordPress ecosystem."
+    }
+  ],
+  "code_examples": {
+    "basic_plugin_structure": {
+      "description": "Complete plugin file structure with OOP, Composer, and activation hooks",
+      "lines_of_code": 150,
+      "complexity": "intermediate"
+    },
+    "hooks_system": {
+      "description": "Actions, filters, custom hooks, priority management",
+      "lines_of_code": 120,
+      "complexity": "beginner"
+    },
+    "database_operations": {
+      "description": "wpdb prepared statements, custom tables, migrations",
+      "lines_of_code": 140,
+      "complexity": "intermediate"
+    },
+    "settings_api": {
+      "description": "Complete settings page with sections, fields, validation",
+      "lines_of_code": 130,
+      "complexity": "intermediate"
+    }
+  },
+  "design_decisions": [
+    {
+      "decision": "Singleton Pattern for Core Class",
+      "rationale": "Ensures single plugin instance, simplifies global access",
+      "trade_offs": "Testability vs. simplicity (use DI for complex plugins)",
+      "alternatives": ["Dependency Injection Container", "Static Factory Methods"]
+    },
+    {
+      "decision": "Custom Tables vs. Post Meta",
+      "rationale": "Custom tables provide 10x performance for large datasets",
+      "trade_offs": "Requires custom queries and migrations vs. WordPress abstraction",
+      "alternatives": ["post_meta", "options table", "custom post types"]
+    },
+    {
+      "decision": "Settings API vs. Custom Admin Pages",
+      "rationale": "Settings API provides built-in security, validation, and WordPress conventions",
+      "trade_offs": "Less flexible UI vs. automatic handling of forms and nonces",
+      "alternatives": ["Custom admin pages with manual form handling", "React-based settings UI"]
+    }
+  ],
+  "performance_considerations": [
+    "Use object caching (wp_cache_*) for expensive operations",
+    "Implement transients for API calls and database queries",
+    "Avoid querying database on every page load",
+    "Use conditional asset loading (only enqueue on relevant pages)",
+    "Optimize database queries with proper indexes",
+    "Lazy-load admin components that aren't always needed"
+  ],
+  "security_best_practices": [
+    "Always use $wpdb->prepare() for dynamic SQL queries",
+    "Verify nonces for all form submissions and AJAX requests",
+    "Check user capabilities before allowing actions",
+    "Sanitize all input data immediately upon receipt",
+    "Escape all output data based on context (HTML, attributes, URLs, JS)",
+    "Validate business logic after sanitization",
+    "Prevent direct file access with ABSPATH check",
+    "Use WordPress functions over native PHP when available"
+  ],
+  "common_pitfalls": [
+    {
+      "pitfall": "Forgetting to flush rewrite rules after registering post types",
+      "solution": "Call flush_rewrite_rules() in activation hook, not on every init"
+    },
+    {
+      "pitfall": "Not using $wpdb->prefix for custom tables",
+      "solution": "Always use $wpdb->prefix . 'table_name' for multisite compatibility"
+    },
+    {
+      "pitfall": "Hardcoding table prefix as 'wp_'",
+      "solution": "Use $wpdb->posts, $wpdb->users, etc. for core tables"
+    },
+    {
+      "pitfall": "Forgetting to return value in filter hooks",
+      "solution": "Filters MUST return the modified value, actions do not"
+    },
+    {
+      "pitfall": "Loading admin assets on all pages",
+      "solution": "Check $hook parameter in admin_enqueue_scripts callback"
+    },
+    {
+      "pitfall": "Not checking autosave in save_post hook",
+      "solution": "Check DOING_AUTOSAVE constant to prevent duplicate saves"
+    }
+  ],
+  "testing_strategy": {
+    "unit_tests": "PHPUnit with WordPress test suite for business logic",
+    "integration_tests": "Test plugin activation, database operations, hooks",
+    "coding_standards": "PHPCS with WPCS ruleset for code quality",
+    "recommended_coverage": "80% minimum for new code"
+  },
+  "modernization_notes": {
+    "php_version": "PHP 8.3 recommended for performance and security",
+    "composer": "Essential for autoloading and dependency management",
+    "block_editor": "Use show_in_rest => true for Gutenberg compatibility",
+    "rest_api": "Modern plugins should provide REST endpoints",
+    "wpcs_3": "Latest WordPress Coding Standards 3.0 with PHP 8+ support"
+  },
+  "migration_from_legacy": [
+    "Convert procedural code to OOP classes",
+    "Implement Composer PSR-4 autoloading",
+    "Replace manual includes with namespaces",
+    "Add type hints to function signatures (PHP 8.1+)",
+    "Migrate settings to Settings API",
+    "Add WPCS compliance via PHPCS",
+    "Implement PHPUnit tests for critical paths"
+  ],
+  "resources": {
+    "official_docs": [
+      "https://developer.wordpress.org/plugins/",
+      "https://developer.wordpress.org/reference/",
+      "https://developer.wordpress.org/coding-standards/"
+    ],
+    "tools": [
+      "https://wp-cli.org/",
+      "https://github.com/WordPress/WordPress-Coding-Standards",
+      "https://make.wordpress.org/core/handbook/testing/automated-testing/"
+    ],
+    "learning": [
+      "https://learn.wordpress.org/",
+      "https://wordpress.tv/"
+    ]
+  },
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "last_updated": "2025-01-30",
+  "skill_maturity": "production-ready",
+  "audience": [
+    "WordPress plugin developers",
+    "PHP developers transitioning to WordPress",
+    "Developers building custom WordPress solutions"
+  ],
+  "prerequisites": [
+    "Basic PHP knowledge",
+    "Understanding of object-oriented programming",
+    "Familiarity with WordPress admin interface",
+    "Basic Composer usage"
+  ],
+  "time_to_learn": {
+    "basic_proficiency": "4-6 hours",
+    "intermediate_skills": "2-3 days",
+    "advanced_mastery": "1-2 weeks"
+  }
+}

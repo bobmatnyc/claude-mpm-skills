@@ -1,0 +1,125 @@
+{
+  "name": "wordpress-block-editor-fse",
+  "version": "1.0.0",
+  "description": "Modern WordPress block development and Full Site Editing with theme.json, block themes, and custom blocks for WordPress 6.7+",
+  "tags": [
+    "wordpress",
+    "gutenberg",
+    "blocks",
+    "fse",
+    "full-site-editing",
+    "theme-json",
+    "block-themes",
+    "php",
+    "react",
+    "custom-blocks"
+  ],
+  "requirements": {
+    "wordpress": ">=6.4",
+    "php": ">=8.1",
+    "node": ">=18.0.0",
+    "tools": [
+      "@wordpress/scripts",
+      "@wordpress/env",
+      "composer"
+    ]
+  },
+  "dependencies": [
+    "php-fundamentals",
+    "wordpress-plugin-fundamentals",
+    "react",
+    "typescript"
+  ],
+  "learning_path": [
+    "Full Site Editing architecture and capabilities",
+    "theme.json configuration (version 3 schema)",
+    "Block theme structure (HTML templates and template parts)",
+    "Custom block development with block.json",
+    "Server-side rendering with render.php",
+    "Client-side rendering with React",
+    "Custom post types with block editor support",
+    "Development workflow with @wordpress/scripts",
+    "Migration from classic to block themes",
+    "Performance and accessibility best practices"
+  ],
+  "related_skills": [
+    "wordpress-plugin-fundamentals",
+    "wordpress-security",
+    "react",
+    "typescript",
+    "php-security"
+  ],
+  "progressive_disclosure": {
+    "entry_point_tokens": 79,
+    "full_content_tokens": 5847,
+    "compression_ratio": 74.0
+  },
+  "key_features": [
+    "Production-ready FSE (WordPress 6.2+)",
+    "theme.json version 3 schema with CSS custom properties",
+    "Complete block theme architecture examples",
+    "Custom block development (PHP + React)",
+    "Block.json metadata (Block API v3)",
+    "Server-side and client-side rendering patterns",
+    "Custom post type integration with block editor",
+    "Template locking and default block layouts",
+    "@wordpress/scripts build tooling",
+    "wp-env local development setup",
+    "Classic to block theme migration guide",
+    "Performance optimization strategies",
+    "Accessibility compliance (WCAG 2.1 AA)",
+    "Block pattern library organization"
+  ],
+  "use_cases": [
+    "Building new block themes from scratch",
+    "Creating custom Gutenberg blocks for specific business needs",
+    "Implementing centralized design systems with theme.json",
+    "Migrating classic themes to modern FSE architecture",
+    "Enabling visual customization for non-technical users",
+    "Developing custom post types with rich block editing",
+    "Creating reusable block patterns and template parts"
+  ],
+  "anti_patterns": [
+    "Mixing classic and block theme approaches",
+    "Overriding core block styles with !important CSS",
+    "Reinventing block supports (spacing, colors, typography)",
+    "Using client-side rendering for static content",
+    "Hardcoding color/font values instead of CSS variables",
+    "Skipping accessibility testing",
+    "Not using theme.json for design tokens",
+    "Ignoring block.json metadata"
+  ],
+  "quick_start": {
+    "steps": [
+      "Create theme.json with centralized design system (colors, typography, spacing)",
+      "Build custom blocks using block.json metadata + render.php for server-side rendering",
+      "Use HTML templates (templates/index.html) for block theme architecture instead of PHP files",
+      "Register custom post types with 'show_in_rest' => true for block editor support",
+      "Use @wordpress/scripts for build tooling (npm run start for development, npm run build for production)"
+    ],
+    "typical_workflow": [
+      "Set up wp-env for local development",
+      "Define design tokens in theme.json",
+      "Create HTML templates and template parts",
+      "Build custom blocks with block.json + render.php",
+      "Use npm run start for hot reloading during development",
+      "Test accessibility and keyboard navigation",
+      "Build for production with npm run build"
+    ]
+  },
+  "documentation_links": [
+    "https://developer.wordpress.org/block-editor/",
+    "https://developer.wordpress.org/themes/block-themes/",
+    "https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/",
+    "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/",
+    "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/",
+    "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/",
+    "https://fullsiteediting.com/"
+  ],
+  "token_budget": {
+    "entry_point": 79,
+    "full_content": 5847,
+    "target_entry": "75-85 tokens",
+    "target_full": "5,500-6,000 tokens"
+  }
+}

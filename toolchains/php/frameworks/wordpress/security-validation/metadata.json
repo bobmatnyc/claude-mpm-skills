@@ -1,0 +1,262 @@
+{
+  "name": "wordpress-security-validation",
+  "version": "1.0.0",
+  "description": "Security-first WordPress development with nonces, sanitization, validation, and escaping for robust plugin/theme security",
+  "skill_level": "intermediate",
+  "estimated_time_minutes": 120,
+  "tags": [
+    "wordpress",
+    "php",
+    "security",
+    "nonces",
+    "sanitization",
+    "validation",
+    "escaping",
+    "xss",
+    "csrf",
+    "sql-injection"
+  ],
+  "requirements": {
+    "wordpress": ">=6.4",
+    "php": ">=8.1",
+    "knowledge": [
+      "PHP fundamentals",
+      "WordPress plugin basics",
+      "HTML/JavaScript basics"
+    ]
+  },
+  "dependencies": [
+    "../plugin-fundamentals"
+  ],
+  "related_skills": [
+    "../plugin-fundamentals",
+    "../testing-qa",
+    "../../validation/pydantic"
+  ],
+  "learning_objectives": [
+    "Understand the three-layer security model (sanitize, validate, escape)",
+    "Implement CSRF protection with nonces in forms, URLs, and AJAX",
+    "Choose appropriate sanitization functions for different data types",
+    "Write robust validation rules for business logic",
+    "Escape output correctly based on context (HTML, attributes, JavaScript, SQL)",
+    "Implement proper capability checks for authorization",
+    "Prevent SQL injection with prepared statements",
+    "Identify and prevent common vulnerabilities (XSS, CSRF, SQLi)"
+  ],
+  "key_concepts": [
+    {
+      "concept": "Nonces (CSRF Protection)",
+      "description": "Cryptographic tokens that verify requests originated from your site",
+      "importance": "critical"
+    },
+    {
+      "concept": "Sanitization",
+      "description": "Removing/transforming dangerous characters from input",
+      "importance": "critical"
+    },
+    {
+      "concept": "Validation",
+      "description": "Ensuring data meets business logic requirements",
+      "importance": "high"
+    },
+    {
+      "concept": "Output Escaping",
+      "description": "Context-specific encoding to prevent XSS attacks",
+      "importance": "critical"
+    },
+    {
+      "concept": "Capability Checks",
+      "description": "Verifying user permissions before actions",
+      "importance": "critical"
+    },
+    {
+      "concept": "Prepared Statements",
+      "description": "SQL injection prevention with parameterized queries",
+      "importance": "critical"
+    }
+  ],
+  "common_pitfalls": [
+    "Skipping nonce verification for 'simple' operations",
+    "Using wrong escaping function for context (e.g., esc_html() for URLs)",
+    "Sanitizing on output instead of input",
+    "Escaping before storage instead of on output",
+    "Forgetting capability checks after nonce verification",
+    "Using string concatenation in SQL queries",
+    "Trusting user input without sanitization",
+    "Double-escaping output"
+  ],
+  "best_practices": [
+    "Always verify nonces before processing form/AJAX data",
+    "Combine nonce checks with capability checks",
+    "Sanitize input immediately upon receipt",
+    "Validate data after sanitization, before processing",
+    "Escape all output, every time, with correct function",
+    "Use $wpdb->prepare() for all dynamic SQL queries",
+    "Never trust user input, even from administrators",
+    "Store raw data, escape on output (not before storage)"
+  ],
+  "progressive_disclosure": {
+    "entry_point_tokens": 78,
+    "full_content_tokens": 5421,
+    "expansion_ratio": 69.5,
+    "sections": [
+      {
+        "title": "Three-Layer Security Model",
+        "tokens": 600,
+        "priority": "critical"
+      },
+      {
+        "title": "Nonces (CSRF Protection)",
+        "tokens": 900,
+        "priority": "critical"
+      },
+      {
+        "title": "Sanitization Functions",
+        "tokens": 1000,
+        "priority": "critical"
+      },
+      {
+        "title": "Validation Patterns",
+        "tokens": 800,
+        "priority": "high"
+      },
+      {
+        "title": "Output Escaping",
+        "tokens": 900,
+        "priority": "critical"
+      },
+      {
+        "title": "Capability Checks",
+        "tokens": 600,
+        "priority": "high"
+      },
+      {
+        "title": "SQL Injection Prevention",
+        "tokens": 400,
+        "priority": "critical"
+      },
+      {
+        "title": "Common Vulnerabilities",
+        "tokens": 300,
+        "priority": "medium"
+      }
+    ]
+  },
+  "code_examples": {
+    "total_count": 45,
+    "categories": [
+      {
+        "category": "Nonce Implementation",
+        "count": 8,
+        "examples": [
+          "Form nonces",
+          "URL nonces",
+          "AJAX nonces",
+          "Complete verification flow"
+        ]
+      },
+      {
+        "category": "Sanitization",
+        "count": 12,
+        "examples": [
+          "Text sanitization",
+          "HTML sanitization",
+          "File upload sanitization",
+          "Array sanitization",
+          "Custom sanitization callbacks"
+        ]
+      },
+      {
+        "category": "Validation",
+        "count": 8,
+        "examples": [
+          "Email validation",
+          "Range validation",
+          "Pattern matching",
+          "Multi-field validation",
+          "Custom validation rules"
+        ]
+      },
+      {
+        "category": "Output Escaping",
+        "count": 10,
+        "examples": [
+          "HTML escaping",
+          "Attribute escaping",
+          "URL escaping",
+          "JavaScript escaping",
+          "Context-specific escaping"
+        ]
+      },
+      {
+        "category": "Complete Examples",
+        "count": 7,
+        "examples": [
+          "Secure form handling",
+          "AJAX endpoint security",
+          "File upload security",
+          "SQL query security",
+          "Attack prevention scenarios"
+        ]
+      }
+    ]
+  },
+  "real_world_scenarios": [
+    {
+      "scenario": "User Profile Form",
+      "security_layers": [
+        "Nonce verification",
+        "Capability check (edit_user)",
+        "Input sanitization (sanitize_text_field, sanitize_email)",
+        "Validation (email format, string length)",
+        "Output escaping (esc_attr, esc_html)"
+      ]
+    },
+    {
+      "scenario": "AJAX Delete Operation",
+      "security_layers": [
+        "AJAX nonce (check_ajax_referer)",
+        "Capability check (delete_post)",
+        "Post ownership verification",
+        "Safe JSON response"
+      ]
+    },
+    {
+      "scenario": "Custom Database Query",
+      "security_layers": [
+        "$wpdb->prepare() with placeholders",
+        "Input sanitization before query",
+        "Result escaping on output"
+      ]
+    }
+  ],
+  "attack_vectors_covered": [
+    "XSS (Cross-Site Scripting)",
+    "CSRF (Cross-Site Request Forgery)",
+    "SQL Injection",
+    "Path Traversal",
+    "File Upload Exploits",
+    "Session Hijacking",
+    "Privilege Escalation"
+  ],
+  "testing_guidance": {
+    "manual_tests": [
+      "Test nonce expiration (24+ hours)",
+      "Test CSRF with external form",
+      "Test XSS with script injection",
+      "Test SQL injection with OR 1=1",
+      "Test capability bypass with low-privilege user"
+    ],
+    "automated_tools": [
+      "WPScan (vulnerability scanner)",
+      "PHPCS with WordPress-VIP-Go standard",
+      "Sucuri Security plugin",
+      "Wordfence Security plugin"
+    ]
+  },
+  "compliance": {
+    "wordpress_standards": "WordPress Security Handbook compliant",
+    "php_version": "8.3 recommended, 8.1 minimum",
+    "owasp": "Addresses OWASP Top 10 vulnerabilities"
+  }
+}

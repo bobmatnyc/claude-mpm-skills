@@ -38,13 +38,10 @@ $RECYCLE.BIN/
 *~
 .DS_Store
 .Python
-.claude-mpm/*.log
-.claude-mpm/cache/
-.claude-mpm/logs/
-.claude-mpm/sessions/
-.claude-mpm/tmp/
-.claude/cache/
-.claude/sessions/
+# Claude MPM directories (ignore all)
+.claude-mpm/
+.claude/
+.mcp.json
 .conda/
 .coverage
 .coverage.*
