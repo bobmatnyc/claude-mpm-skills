@@ -1,0 +1,41 @@
+{
+  "name": "supabase",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "backend",
+  "tags": ["backend", "supabase", "postgres", "auth", "storage", "realtime", "database", "baas"],
+  "entry_point_tokens": 90,
+  "full_tokens": 5500,
+  "related_skills": [
+    "../../../javascript/frameworks/nextjs",
+    "../../../javascript/frameworks/react",
+    "../../../javascript/frameworks/vue",
+    "../../../typescript"
+  ],
+  "description": "Open-source Firebase alternative with Postgres, authentication, storage, and realtime subscriptions",
+  "author": "Claude MPM",
+  "license": "MIT",
+  "features": [
+    "Postgres database with PostgREST API",
+    "Built-in authentication (email, OAuth, magic links, phone)",
+    "Row Level Security (RLS) for access control",
+    "File storage with image transformations",
+    "Realtime subscriptions to database changes",
+    "Edge Functions on Deno runtime",
+    "Next.js App Router integration",
+    "TypeScript type generation",
+    "Local development with CLI"
+  ],
+  "prerequisites": [
+    "JavaScript/TypeScript knowledge",
+    "Basic SQL understanding",
+    "React or Next.js experience (for frontend integration)"
+  ],
+  "use_cases": [
+    "Full-stack web applications",
+    "Mobile apps with backend needs",
+    "Realtime collaborative applications",
+    "Applications requiring authentication and authorization",
+    "Applications with file storage needs"
+  ]
+}

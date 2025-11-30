@@ -1,0 +1,32 @@
+{
+  "name": "neon",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "database",
+  "tags": ["database", "postgres", "serverless", "neon", "branching", "autoscaling", "drizzle", "prisma"],
+  "entry_point_tokens": 85,
+  "full_tokens": 4300,
+  "related_skills": [
+    "../../../typescript/data/drizzle",
+    "../../../typescript/data/prisma",
+    "../../deployment/vercel",
+    "../supabase"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT",
+  "description": "Neon serverless Postgres with autoscaling, database branching, and instant provisioning",
+  "keywords": [
+    "postgresql",
+    "serverless",
+    "database-branching",
+    "autoscaling",
+    "connection-pooling",
+    "edge-runtime",
+    "vercel-integration",
+    "drizzle-orm",
+    "prisma",
+    "point-in-time-recovery"
+  ],
+  "progressive_loading": true,
+  "difficulty": "intermediate"
+}

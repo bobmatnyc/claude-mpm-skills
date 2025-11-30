@@ -1,0 +1,17 @@
+{
+  "name": "netlify",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": ["deployment", "netlify", "jamstack", "serverless", "static-sites"],
+  "entry_point_tokens": 75,
+  "full_tokens": 4300,
+  "related_skills": [
+    "../../../javascript/frameworks/react",
+    "../../../javascript/frameworks/vue",
+    "../../../javascript/frameworks/svelte",
+    "../vercel"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

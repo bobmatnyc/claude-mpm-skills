@@ -1,0 +1,17 @@
+{
+  "name": "vercel",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": ["deployment", "vercel", "serverless", "edge-functions", "nextjs"],
+  "entry_point_tokens": 80,
+  "full_tokens": 4500,
+  "related_skills": [
+    "../../../javascript/frameworks/nextjs",
+    "../../../javascript/frameworks/react",
+    "../../../javascript/frameworks/vue",
+    "../netlify"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}
