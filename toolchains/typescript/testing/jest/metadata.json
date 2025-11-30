@@ -1,0 +1,17 @@
+{
+  "name": "jest-typescript",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "typescript",
+  "framework": "jest",
+  "tags": ["testing", "jest", "typescript", "react-testing-library"],
+  "entry_point_tokens": 75,
+  "full_tokens": 4500,
+  "related_skills": [
+    "../../typescript-core",
+    "../../../javascript/frameworks/react",
+    "../vitest"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

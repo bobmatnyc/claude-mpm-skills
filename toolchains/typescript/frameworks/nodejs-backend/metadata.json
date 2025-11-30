@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-backend",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "typescript",
+  "framework": "nodejs",
+  "tags": [
+    "backend",
+    "nodejs",
+    "express",
+    "fastify",
+    "rest-api",
+    "typescript",
+    "jwt",
+    "authentication",
+    "database",
+    "orm"
+  ],
+  "entry_point_tokens": 75,
+  "full_tokens": 4700,
+  "related_skills": [
+    "../../typescript-core",
+    "../../data/drizzle",
+    "../../data/kysely",
+    "../../data/prisma"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT",
+  "description": "Comprehensive TypeScript backend development with Express and Fastify, covering routing, middleware, authentication, database integration, testing, and production deployment patterns."
+}

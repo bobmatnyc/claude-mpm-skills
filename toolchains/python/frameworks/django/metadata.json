@@ -1,0 +1,17 @@
+{
+  "name": "django",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "python",
+  "framework": "django",
+  "tags": ["web-framework", "django", "orm", "rest-api", "admin"],
+  "entry_point_tokens": 85,
+  "full_tokens": 5000,
+  "related_skills": [
+    "../../testing/pytest",
+    "../fastapi",
+    "../../data/sqlalchemy"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}
