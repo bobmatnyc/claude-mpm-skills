@@ -1,0 +1,41 @@
+{
+  "name": "vite",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "subcategory": "build",
+  "framework": null,
+  "tags": [
+    "build-tool",
+    "vite",
+    "hmr",
+    "esm",
+    "bundler",
+    "dev-server",
+    "rollup",
+    "esbuild",
+    "react",
+    "vue",
+    "svelte"
+  ],
+  "entry_point_tokens": 75,
+  "full_tokens": 4000,
+  "requires": [],
+  "sub_skills": [],
+  "related_skills": [
+    "../../frameworks/react",
+    "../../frameworks/vue",
+    "../../frameworks/svelte",
+    "../../../typescript/typescript-core"
+  ],
+  "description": "Lightning-fast build tool with instant HMR and ESM-first architecture for modern web development",
+  "author": "Claude MPM",
+  "license": "MIT",
+  "vite_version": "5.x",
+  "supports": {
+    "frameworks": ["react", "vue", "svelte", "preact", "lit", "vanilla"],
+    "languages": ["javascript", "typescript", "jsx", "tsx"],
+    "css": ["css", "scss", "sass", "less", "stylus", "postcss"],
+    "modes": ["development", "production", "library", "ssr"]
+  }
+}
