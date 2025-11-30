@@ -1,0 +1,21 @@
+{
+  "name": "celery",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "python",
+  "subcategory": "async",
+  "tags": ["celery", "task-queue", "background-jobs", "async", "distributed"],
+  "entry_point_tokens": 65,
+  "full_tokens": 5000,
+  "related_skills": [
+    "../../frameworks/django",
+    "../../frameworks/fastapi",
+    "../../frameworks/flask",
+    "../asyncio"
+  ],
+  "author": "claude-mpm-skills",
+  "created": "2025-11-30",
+  "updated": "2025-11-30",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}
