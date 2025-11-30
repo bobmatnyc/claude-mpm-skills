@@ -1,0 +1,43 @@
+{
+  "name": "vue",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "vue",
+  "tags": [
+    "framework",
+    "vue",
+    "vue3",
+    "composition-api",
+    "reactivity",
+    "sfc",
+    "single-file-components",
+    "pinia",
+    "vue-router",
+    "vite",
+    "typescript",
+    "frontend"
+  ],
+  "entry_point_tokens": 80,
+  "full_tokens": 5000,
+  "related_skills": [
+    "../../build/vite",
+    "../../typescript/testing/vitest",
+    "../react",
+    "../svelte",
+    "../../state/pinia"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT",
+  "description": "Vue 3 framework with Composition API, reactivity system, single-file components, Vue Router, Pinia state management, and TypeScript support",
+  "keywords": [
+    "vue3",
+    "composition-api",
+    "reactivity",
+    "sfc",
+    "pinia",
+    "vue-router",
+    "vite",
+    "progressive-framework"
+  ]
+}

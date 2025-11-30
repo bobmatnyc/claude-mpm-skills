@@ -1,0 +1,34 @@
+{
+  "name": "langchain",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "ai",
+  "framework": "langchain",
+  "tags": ["ai", "langchain", "llm", "rag", "agents", "chains", "lcel", "anthropic", "claude"],
+  "entry_point_tokens": 85,
+  "full_tokens": 5200,
+  "related_skills": [
+    "../../../ai/sdks/anthropic",
+    "../../../ai/services/openrouter",
+    "../../../python/frameworks/fastapi"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT",
+  "description": "LLM application framework with chains, agents, RAG, and memory systems",
+  "key_features": [
+    "LCEL (LangChain Expression Language)",
+    "RAG patterns with vector stores",
+    "Agent framework with tools",
+    "Memory systems for conversations",
+    "Claude integration via langchain-anthropic",
+    "LangSmith observability"
+  ],
+  "use_cases": [
+    "Building LLM-powered applications",
+    "RAG (Retrieval Augmented Generation)",
+    "AI agents with tool calling",
+    "Conversational AI with memory",
+    "Document Q&A systems",
+    "Multi-step reasoning chains"
+  ]
+}

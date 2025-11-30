@@ -1,0 +1,17 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "playwright",
+  "tags": ["testing", "e2e", "playwright", "automation", "cross-browser"],
+  "entry_point_tokens": 85,
+  "full_tokens": 4700,
+  "related_skills": [
+    "../../typescript/testing/vitest",
+    "../../frameworks/react",
+    "../../frameworks/vue"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

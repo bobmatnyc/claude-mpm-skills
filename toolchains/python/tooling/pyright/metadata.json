@@ -1,0 +1,17 @@
+{
+  "name": "pyright",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "python",
+  "framework": null,
+  "tags": ["type-checking", "pyright", "pylance", "vscode", "static-analysis"],
+  "entry_point_tokens": 70,
+  "full_tokens": 4000,
+  "related_skills": [
+    "../mypy",
+    "../../frameworks/fastapi",
+    "../../frameworks/django"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

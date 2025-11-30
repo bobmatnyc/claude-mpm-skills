@@ -1,0 +1,32 @@
+{
+  "name": "mypy",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "python",
+  "subcategory": "tooling",
+  "framework": null,
+  "tags": [
+    "type-checking",
+    "mypy",
+    "type-hints",
+    "static-analysis",
+    "python",
+    "fastapi",
+    "django",
+    "pydantic",
+    "protocol",
+    "generics"
+  ],
+  "entry_point_tokens": 75,
+  "full_tokens": 4300,
+  "related_skills": [
+    "../../frameworks/fastapi-local-dev",
+    "../../frameworks/django",
+    "../../testing/pytest",
+    "../pyright"
+  ],
+  "description": "Static type checker for Python with gradual typing, strict mode, Protocol support, and framework integration for FastAPI and Django",
+  "author": "Claude MPM",
+  "license": "MIT",
+  "updated_at": "2025-11-30T00:00:00Z"
+}

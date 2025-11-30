@@ -1,0 +1,59 @@
+{
+  "name": "anthropic-sdk",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "ai",
+  "sdk": "anthropic",
+  "tags": [
+    "ai",
+    "claude",
+    "anthropic",
+    "llm",
+    "sdk",
+    "function-calling",
+    "vision",
+    "streaming",
+    "chat"
+  ],
+  "languages": [
+    "python",
+    "typescript"
+  ],
+  "entry_point_tokens": 85,
+  "full_tokens": 5000,
+  "progressive_loading": true,
+  "related_skills": [
+    "../services/openrouter",
+    "../protocols/mcp",
+    "../../../python/frameworks/fastapi",
+    "../../../typescript/frameworks/nodejs-backend"
+  ],
+  "key_features": [
+    "Messages API (chat completions)",
+    "Streaming responses",
+    "Function calling / tool use",
+    "Vision model integration",
+    "Prompt caching (beta)",
+    "Multi-language SDKs (Python, TypeScript)"
+  ],
+  "models": [
+    "claude-3-5-sonnet-20241022",
+    "claude-3-5-haiku-20241022",
+    "claude-3-opus-20240229"
+  ],
+  "use_cases": [
+    "AI chat interfaces",
+    "Code generation and analysis",
+    "Image analysis with vision models",
+    "Function calling and tool use",
+    "Streaming chat applications",
+    "AI-powered API endpoints"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT",
+  "documentation": "https://docs.anthropic.com/",
+  "github": {
+    "python": "https://github.com/anthropics/anthropic-sdk-python",
+    "typescript": "https://github.com/anthropics/anthropic-sdk-typescript"
+  }
+}
