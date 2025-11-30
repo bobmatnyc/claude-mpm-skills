@@ -1,0 +1,30 @@
+{
+  "name": "shadcn-ui",
+  "version": "1.0.0",
+  "category": "universal",
+  "subcategory": "components",
+  "tags": [
+    "shadcn",
+    "react",
+    "components",
+    "tailwind",
+    "radix-ui",
+    "accessibility"
+  ],
+  "entry_point_tokens": 85,
+  "full_tokens": 4800,
+  "related_skills": [
+    "../../../javascript/frameworks/react",
+    "../../../nextjs",
+    "../../styling/tailwind"
+  ],
+  "requires": [
+    "../../styling/tailwind",
+    "../../../javascript/frameworks/react"
+  ],
+  "author": "claude-mpm-skills",
+  "created": "2025-11-30",
+  "updated": "2025-11-30",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

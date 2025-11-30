@@ -1,0 +1,21 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "category": "universal",
+  "subcategory": "styling",
+  "tags": ["tailwind", "css", "utility-first", "responsive", "dark-mode", "jit", "design-system"],
+  "entry_point_tokens": 75,
+  "full_tokens": 4500,
+  "related_skills": [
+    "../../../javascript/frameworks/react",
+    "../../../javascript/frameworks/sveltekit",
+    "../../../nextjs",
+    "../../../typescript"
+  ],
+  "author": "claude-mpm-skills",
+  "created": "2025-11-30",
+  "updated": "2025-11-30",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "description": "Comprehensive Tailwind CSS skill covering utility-first styling, responsive design, dark mode, custom configuration, plugins, and framework integration"
+}
