@@ -23,5 +23,8 @@
   "modified": "2025-11-21",
   "maintainer": "Claude MPM Team",
   "attribution_required": true,
-  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "sub_skills": [
+    "state-machine"
+  ]
 }

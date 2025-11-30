@@ -1,0 +1,16 @@
+{
+  "name": "nextjs-core",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "nextjs",
+  "framework": "nextjs",
+  "tags": ["nextjs", "react", "server-components", "server-actions", "app-router"],
+  "entry_point_tokens": 150,
+  "full_tokens": 3500,
+  "requires": [],
+  "author": "claude-mpm-skills",
+  "updated": "2025-11-29",
+  "source_path": "toolchains/nextjs/core/SKILL.md",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

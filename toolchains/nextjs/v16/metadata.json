@@ -1,0 +1,16 @@
+{
+  "name": "nextjs-v16",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "nextjs",
+  "framework": "nextjs",
+  "tags": ["nextjs", "nextjs-16", "migration", "turbopack", "cache-components"],
+  "entry_point_tokens": 180,
+  "full_tokens": 4200,
+  "requires": ["nextjs-core"],
+  "author": "claude-mpm-skills",
+  "updated": "2025-11-29",
+  "source_path": "toolchains/nextjs/v16/SKILL.md",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

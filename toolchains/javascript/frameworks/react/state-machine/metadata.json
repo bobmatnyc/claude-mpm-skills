@@ -1,0 +1,35 @@
+{
+  "name": "react-state-machines",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "react",
+  "tags": [
+    "react",
+    "state-machine",
+    "xstate",
+    "actors",
+    "async",
+    "forms",
+    "ui-logic",
+    "typescript"
+  ],
+  "entry_point_tokens": 120,
+  "full_tokens": 8500,
+  "requires": [],
+  "author": "bobmatnyc",
+  "updated": "2025-11-29",
+  "source_path": "react/state-machine",
+  "license": "MIT",
+  "source": "https://github.com/bobmatnyc/claude-mpm",
+  "created": "2025-11-29",
+  "modified": "2025-11-29",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "related_skills": [
+    "toolchains/javascript/frameworks/react",
+    "toolchains/javascript/frameworks/nextjs",
+    "universal/testing/test-driven-development"
+  ]
+}

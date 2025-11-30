@@ -731,6 +731,10 @@ import { Layout } from 'flexlayout-react';
 - **Examples**: https://rawgit.com/caplin/FlexLayout/demos/demos/index.html
 - **TypeScript Types**: Included in package
 
+## Related Sub-Skills
+
+- **[state-machine](./state-machine/SKILL.md)**: XState v5 state machines and actor model for complex UI logic, multi-step forms, async flows
+
 ## Summary
 
 - **FlexLayout** provides IDE-quality docking layouts
