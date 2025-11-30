@@ -1,0 +1,39 @@
+{
+  "name": "kysely",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "typescript",
+  "subcategory": "data",
+  "tags": [
+    "database",
+    "sql",
+    "query-builder",
+    "type-safe",
+    "postgresql",
+    "mysql",
+    "sqlite",
+    "migrations",
+    "transactions",
+    "orm-alternative"
+  ],
+  "entry_point_tokens": 68,
+  "full_tokens": 4167,
+  "requires": [
+    "typescript-core"
+  ],
+  "related_skills": [
+    "drizzle",
+    "prisma",
+    "database-migration",
+    "nodejs-backend"
+  ],
+  "author": "Claude MPM Team",
+  "created": "2025-11-30",
+  "modified": "2025-11-30",
+  "updated": "2025-11-30",
+  "maintainer": "Claude MPM Team",
+  "license": "MIT",
+  "source": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "attribution_required": true
+}

@@ -1,0 +1,61 @@
+{
+  "name": "prisma-orm",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "typescript",
+  "subcategory": "data",
+  "tags": [
+    "prisma",
+    "orm",
+    "database",
+    "postgresql",
+    "mysql",
+    "sqlite",
+    "migrations",
+    "type-safety",
+    "schema",
+    "relations"
+  ],
+  "entry_point_tokens": 75,
+  "full_tokens": 4800,
+  "requires": [
+    "typescript-core"
+  ],
+  "related_skills": [
+    "nextjs-core",
+    "nextjs-v16",
+    "database-migration"
+  ],
+  "author": "claude-mpm-skills",
+  "updated": "2025-11-30",
+  "source_path": "toolchains/typescript/data/prisma/SKILL.md",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "description": "Prisma ORM for TypeScript - Type-safe database toolkit with schema-first development, auto-generated client, migrations, relations, and Prisma Studio",
+  "when_to_use": [
+    "Building Node.js or Next.js apps requiring database access",
+    "Need full type safety for database operations",
+    "Managing complex relations and nested queries",
+    "Requiring visual database tools (Prisma Studio)",
+    "Schema-first development workflow",
+    "Safe database migrations in production"
+  ],
+  "comparison": {
+    "vs_drizzle": {
+      "prisma_advantages": [
+        "Built-in Prisma Studio for visual database management",
+        "Automatic relation handling",
+        "Schema-first development with custom DSL",
+        "Lower learning curve",
+        "Better for rapid prototyping"
+      ],
+      "drizzle_advantages": [
+        "Smaller bundle size (~50kB vs ~300kB)",
+        "Better edge runtime support",
+        "SQL-like syntax for SQL experts",
+        "Full control over SQL generation",
+        "First-class raw SQL support"
+      ]
+    }
+  }
+}

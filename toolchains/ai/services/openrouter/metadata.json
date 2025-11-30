@@ -1,0 +1,32 @@
+{
+  "name": "openrouter",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "ai",
+  "service": "openrouter",
+  "tags": [
+    "ai",
+    "llm",
+    "api",
+    "openai-compatible",
+    "streaming",
+    "cost-optimization",
+    "multi-model",
+    "function-calling",
+    "vision"
+  ],
+  "entry_point_tokens": 75,
+  "full_tokens": 4180,
+  "requires": [],
+  "author": "Claude MPM Team",
+  "updated": "2025-11-30",
+  "source_path": "ai/services/openrouter",
+  "license": "MIT",
+  "source": "https://github.com/bobmatnyc/claude-mpm",
+  "created": "2025-11-30",
+  "modified": "2025-11-30",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "sub_skills": []
+}
