@@ -2087,3 +2087,13 @@ For more information:
 - Official Documentation: https://docs.celeryq.dev/
 - GitHub: https://github.com/celery/celery
 - Community: https://groups.google.com/forum/#!forum/celery-users
+
+## Related Skills
+
+When using Celery, these skills enhance your workflow:
+- **django**: Django + Celery integration for background tasks
+- **fastapi-local-dev**: FastAPI + Celery patterns for async API operations
+- **test-driven-development**: Testing async tasks and task chains
+- **systematic-debugging**: Debugging distributed task failures and race conditions
+
+[Full documentation available in these skills if deployed in your bundle]

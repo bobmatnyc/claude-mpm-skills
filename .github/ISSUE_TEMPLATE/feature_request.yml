@@ -1,0 +1,112 @@
+name: ✨ Feature Request
+description: Suggest an enhancement to an existing skill
+labels: ["✨ enhancement", "🚦 triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an enhancement! Please provide details about the improvement you'd like to see.
+
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill Name
+      description: Which skill would you like to enhance?
+      placeholder: "e.g., fastapi-local-dev, react, pytest"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: enhancement-type
+    attributes:
+      label: Enhancement Type
+      description: What kind of enhancement is this?
+      options:
+        - New concept/pattern to add
+        - Improved documentation
+        - Better examples
+        - Performance optimization
+        - Updated dependencies
+        - Error handling improvement
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of the enhancement
+      placeholder: "What would you like to add or improve?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case / Motivation
+      description: Why is this enhancement needed?
+      placeholder: |
+        Describe the problem this enhancement solves or the value it adds.
+        Include specific scenarios where this would be helpful.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: How would you like this to be implemented?
+      placeholder: |
+        Describe your proposed solution in detail.
+        Include code examples if applicable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What alternative solutions have you considered?
+      placeholder: "Describe alternative approaches and why you prefer the proposed solution"
+
+  - type: textarea
+    id: related-skills
+    attributes:
+      label: Related Skills
+      description: Are there other skills that should be updated alongside this one?
+      placeholder: "List any related skills that might benefit from similar enhancements"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this enhancement to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would improve workflow
+        - High - Blocking current work
+        - Critical - Preventing skill usage
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Would you like to contribute this enhancement?
+      options:
+        - label: I would like to implement this enhancement myself
+        - label: I can provide code examples or documentation
+        - label: I can help with testing
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues and PRs to ensure this is not a duplicate
+          required: true
+        - label: This enhancement aligns with the skill's purpose and scope
+          required: true
+        - label: I have read the CONTRIBUTING.md guidelines
+          required: true

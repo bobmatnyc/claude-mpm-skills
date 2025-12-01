@@ -14,6 +14,20 @@ skill-name/
 └── metadata.json     # Skill metadata
 ```
 
+**⚠️ CRITICAL: Skills Must Be Self-Contained**
+
+All skills MUST follow the [Skill Self-Containment Standard](docs/SKILL_SELF_CONTAINMENT_STANDARD.md):
+
+- ✅ **No relative paths** to other skills (`../../other-skill/`)
+- ✅ **No skill dependencies** - works standalone
+- ✅ **Essential content inlined** - not just referenced
+- ✅ **Complete examples** - working code, not fragments
+- ✅ **Flat deployment ready** - works in any directory structure
+
+See [examples/good-self-contained-skill/](examples/good-self-contained-skill/) for template.
+
+**Before submitting**: Use [SKILL_CREATION_PR_CHECKLIST.md](docs/SKILL_CREATION_PR_CHECKLIST.md)
+
 ### SKILL.md Format
 
 Skills must use progressive disclosure with two tiers:
@@ -101,6 +115,11 @@ All PRs require:
 ### Testing Requirements
 
 Before submitting, verify:
+- [ ] **Self-containment verified** (see [PR Checklist](docs/SKILL_CREATION_PR_CHECKLIST.md))
+  - [ ] Zero relative paths: `grep -r "\.\\./" skill-name/` returns empty
+  - [ ] Works in flat directory: Tested in `/tmp/skill-test/`
+  - [ ] Essential content inlined (not just referenced)
+  - [ ] No skill dependencies in metadata.json
 - [ ] Skill loads correctly in Claude Code
 - [ ] Entry point is concise (30-50 tokens)
 - [ ] Full documentation is comprehensive
@@ -119,7 +138,8 @@ Be respectful, inclusive, and constructive.
 
 - Open an issue for clarification
 - Contact @bobmatnyc for governance questions
-- Review existing skills for examples
+- Review [good-self-contained-skill example](examples/good-self-contained-skill/) for template
+- See [Self-Containment Standard](docs/SKILL_SELF_CONTAINMENT_STANDARD.md) for complete guidelines
 
 ## Skill Categories
 

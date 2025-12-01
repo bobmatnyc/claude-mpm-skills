@@ -1,0 +1,44 @@
+File,Line,Reference Type,Referenced Skill,Severity,Notes
+toolchains/python/validation/pydantic/SKILL.md,1342,Hard Path,../../frameworks/fastapi/,HIGH,Relative path to sibling skill
+toolchains/python/validation/pydantic/SKILL.md,1343,Hard Path,../../data/sqlalchemy/,HIGH,Relative path to sibling skill
+toolchains/python/validation/pydantic/SKILL.md,1344,Hard Path,../../frameworks/django/,HIGH,Relative path to sibling skill
+toolchains/python/validation/pydantic/SKILL.md,1345,Hard Path,../types/,HIGH,Relative path to sibling skill
+toolchains/python/validation/pydantic/SKILL.md,1346,Hard Path,../testing/pytest/,HIGH,Relative path to sibling skill
+toolchains/python/testing/pytest/SKILL.md,1324,Hard Path,../../frameworks/fastapi-local-dev/SKILL.md,HIGH,Markdown link with relative path
+toolchains/python/testing/pytest/SKILL.md,1325,Hard Path,../../../../universal/testing/test-driven-development/,HIGH,Cross-tree reference (toolchain → universal)
+toolchains/python/testing/pytest/SKILL.md,1326,Hard Path,../../../../universal/debugging/systematic-debugging/,HIGH,Cross-tree reference (toolchain → universal)
+toolchains/python/async/asyncio/SKILL.md,1558,Hard Path,../../frameworks/fastapi-local-dev/SKILL.md,HIGH,Markdown link with relative path
+toolchains/python/async/asyncio/SKILL.md,1559,Hard Path,../../testing/pytest/SKILL.md,MEDIUM,Markdown link within toolchain
+toolchains/python/async/asyncio/SKILL.md,1560,Hard Path,../../../../universal/debugging/systematic-debugging/,HIGH,Cross-tree reference
+toolchains/typescript/testing/jest/SKILL.md,959,Hard Path,../../core/SKILL.md,HIGH,Relative path to parent directory
+toolchains/typescript/testing/jest/SKILL.md,960,Hard Path,../../../javascript/frameworks/react/SKILL.md,HIGH,Complex cross-language reference
+toolchains/typescript/testing/vitest/SKILL.md,839,Hard Path,../../core/SKILL.md,HIGH,Relative path to parent directory
+toolchains/typescript/testing/vitest/SKILL.md,840,Hard Path,../../../javascript/frameworks/react/SKILL.md,HIGH,Cross-language reference
+toolchains/typescript/testing/vitest/SKILL.md,841,Hard Path,../../../../universal/testing/test-driven-development/SKILL.md,HIGH,Deepest path found (4 levels up)
+toolchains/typescript/data/kysely/SKILL.md,848,Hard Path,../../core/SKILL.md,MEDIUM,Relative path to typescript-core
+toolchains/typescript/data/kysely/SKILL.md,849,Hard Path,../../../../universal/data/database-migration/SKILL.md,MEDIUM,Cross-tree reference
+toolchains/python/frameworks/flask/SKILL.md,1460,Hard Path,../../testing/pytest/SKILL.md,MEDIUM,Markdown link within toolchain
+toolchains/python/frameworks/flask/SKILL.md,1461,Hard Path,../../data/sqlalchemy/,MEDIUM,Relative path to sibling
+toolchains/ai/protocols/mcp/SKILL.md,1206,Hard Path,../../../typescript/core/SKILL.md,MEDIUM,Cross-language reference
+toolchains/ai/protocols/mcp/SKILL.md,1207,Hard Path,../../../python/core/SKILL.md,MEDIUM,Cross-language reference
+toolchains/ai/protocols/mcp/SKILL.md,1208,Hard Path,../../services/openrouter/SKILL.md,LOW,Sibling reference within ai/
+toolchains/php/frameworks/wordpress/testing-qa/SKILL.md,1949,Soft Reference,../../../../python/testing/pytest/SKILL.md,LOW,Cross-language informational
+toolchains/php/frameworks/wordpress/testing-qa/SKILL.md,1950,Soft Reference,../../../../universal/infrastructure/github-actions/SKILL.md,LOW,Informational cross-reference
+toolchains/php/frameworks/wordpress/plugin-fundamentals/SKILL.md,1076,Soft Reference,../security-validation/SKILL.md,LOW,Sibling skill reference
+toolchains/php/frameworks/wordpress/advanced-architecture/SKILL.md,1678,Soft Reference,../../../../universal/data/graphql/SKILL.md,LOW,Universal skill reference
+toolchains/php/frameworks/wordpress/advanced-architecture/SKILL.md,1679,Soft Reference,../../../../universal/infrastructure/docker/SKILL.md,LOW,Universal skill reference
+toolchains/python/tooling/mypy/SKILL.md,1275,Soft Reference,../../testing/pytest/,LOW,Ecosystem reference
+toolchains/python/tooling/mypy/SKILL.md,1276,Soft Reference,../../frameworks/fastapi-local-dev/,LOW,Ecosystem reference
+toolchains/python/tooling/mypy/SKILL.md,1277,Soft Reference,../../data/pydantic/,LOW,Ecosystem reference
+universal/testing/testing-anti-patterns/SKILL.md,26,Soft Reference,../test-driven-development/,LOW,Universal cross-reference
+universal/testing/testing-anti-patterns/SKILL.md,115,Soft Reference,../../../productivity/verification-before-completion/,LOW,Universal cross-reference
+universal/testing/testing-anti-patterns/SKILL.md,139,Soft Reference,../../../productivity/verification-before-completion/,LOW,Duplicate reference
+universal/testing/testing-anti-patterns/SKILL.md,397,Soft Reference,../../test-driven-development/,LOW,Universal cross-reference
+universal/collaboration/dispatching-parallel-agents/SKILL.md,141,Soft Reference,../../testing/test-driven-development/,LOW,Universal cross-reference
+universal/collaboration/dispatching-parallel-agents/SKILL.md,142,Soft Reference,../../productivity/verification-before-completion/,LOW,Universal cross-reference
+toolchains/javascript/frameworks/react/state-machine/SKILL.md,188,Hierarchical,react,MEDIUM,Explicit parent skill declaration
+toolchains/javascript/frameworks/react/SKILL.md,734,Hierarchical,Sub-Skills,MEDIUM,Parent with children structure
+universal/debugging/root-cause-tracing/references/integration.md,1-439,Progressive Disclosure,Multiple skills referenced,LOW,Integration documentation (by design)
+universal/testing/test-driven-development/references/integration.md,1-471,Progressive Disclosure,Multiple skills referenced,LOW,Integration documentation (by design)
+universal/testing/testing-anti-patterns/references/tdd-connection.md,Multiple,Progressive Disclosure,test-driven-development,LOW,Advanced content cross-linking
+universal/debugging/verification-before-completion/references/integration-and-workflows.md,Multiple,Progressive Disclosure,Multiple skills,LOW,Workflow integration docs

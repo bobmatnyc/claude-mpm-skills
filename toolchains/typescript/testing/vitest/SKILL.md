@@ -836,9 +836,172 @@ test: {
 
 ## Related Skills
 
-- **[../../typescript-core](../../core/SKILL.md)**: Advanced TypeScript type patterns and validation
-- **[../../../javascript/frameworks/react](../../../javascript/frameworks/react/SKILL.md)**: React patterns and state management
-- **[../../../../universal/testing/test-driven-development](../../../../universal/testing/test-driven-development/SKILL.md)**: TDD workflow and best practices
+When using Vitest, consider these complementary skills:
+
+- **typescript-core**: Advanced TypeScript type patterns, tsconfig, and runtime validation
+- **react**: React component testing with Testing Library integration
+- **test-driven-development**: Complete TDD workflow (RED/GREEN/REFACTOR cycle)
+
+### Quick TypeScript Type Patterns (Inlined for Standalone Use)
+
+```typescript
+// Type-safe test factories with generics
+function createMockData<T extends Record<string, unknown>>(
+  defaults: T,
+  overrides?: Partial<T>
+): T {
+  return { ...defaults, ...overrides };
+}
+
+const mockUser = createMockData(
+  { id: 1, name: 'Test', email: 'test@example.com' },
+  { name: 'Alice' }
+);
+
+// Runtime validation with Zod in tests
+import { z } from 'zod';
+
+const UserSchema = z.object({
+  id: z.number(),
+  name: z.string(),
+  email: z.string().email(),
+});
+
+test('API returns valid user', async () => {
+  const response = await fetch('/api/user/1');
+  const data = await response.json();
+
+  // Runtime validation + type inference
+  const user = UserSchema.parse(data);
+  expect(user.email).toContain('@');
+});
+
+// Const type parameters for literal inference
+const createTestConfig = <const T extends Record<string, unknown>>(config: T): T => config;
+const testEnv = createTestConfig({ mode: 'test', debug: false });
+// Type: { mode: "test"; debug: false } (literals preserved)
+```
+
+### Quick React Testing Patterns (Inlined for Standalone Use)
+
+```typescript
+// React Testing Library with Vitest
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { userEvent } from '@testing-library/user-event';
+import { describe, test, expect, vi } from 'vitest';
+
+// Component testing
+describe('UserProfile', () => {
+  test('renders user information', () => {
+    const user = { id: 1, name: 'Alice', email: 'alice@example.com' };
+    render(<UserProfile user={user} />);
+
+    expect(screen.getByText('Alice')).toBeInTheDocument();
+    expect(screen.getByText('alice@example.com')).toBeInTheDocument();
+  });
+
+  test('handles form submission', async () => {
+    const onSubmit = vi.fn();
+    render(<UserForm onSubmit={onSubmit} />);
+
+    const user = userEvent.setup();
+    await user.type(screen.getByLabelText('Name'), 'Bob');
+    await user.click(screen.getByRole('button', { name: 'Submit' }));
+
+    await waitFor(() => {
+      expect(onSubmit).toHaveBeenCalledWith({ name: 'Bob' });
+    });
+  });
+});
+
+// Hook testing
+import { renderHook, act } from '@testing-library/react';
+
+test('useCounter hook increments', () => {
+  const { result } = renderHook(() => useCounter(0));
+
+  expect(result.current.count).toBe(0);
+
+  act(() => {
+    result.current.increment();
+  });
+
+  expect(result.current.count).toBe(1);
+});
+```
+
+### Quick TDD Workflow Reference (Inlined for Standalone Use)
+
+**RED → GREEN → REFACTOR Cycle:**
+
+1. **RED Phase: Write Failing Test**
+   ```typescript
+   test('should authenticate user with valid credentials', () => {
+     const user = { username: 'alice', password: 'secret123' };
+     const result = authenticate(user);
+     expect(result.isAuthenticated).toBe(true);
+     // This fails because authenticate() doesn't exist yet
+   });
+   ```
+
+2. **GREEN Phase: Make It Pass**
+   ```typescript
+   function authenticate(user: User): AuthResult {
+     // Minimum code to pass the test
+     if (user.username === 'alice' && user.password === 'secret123') {
+       return { isAuthenticated: true };
+     }
+     return { isAuthenticated: false };
+   }
+   ```
+
+3. **REFACTOR Phase: Improve Code**
+   ```typescript
+   function authenticate(user: User): AuthResult {
+     // Clean up while keeping tests green
+     const hashed = hashPassword(user.password);
+     const storedUser = database.getUser(user.username);
+     return {
+       isAuthenticated: storedUser?.passwordHash === hashed
+     };
+   }
+   ```
+
+**Test Structure: Arrange-Act-Assert (AAA)**
+```typescript
+test('creates user successfully', async () => {
+  // Arrange: Set up test data
+  const userData = { username: 'alice', email: 'alice@example.com' };
+
+  // Act: Perform the action
+  const user = await createUser(userData);
+
+  // Assert: Verify outcome
+  expect(user.username).toBe('alice');
+  expect(user.email).toBe('alice@example.com');
+});
+```
+
+**Vitest-Specific TDD Features:**
+```typescript
+// Watch mode with HMR (instant feedback)
+// vitest --watch
+
+// UI mode for visual debugging
+// vitest --ui
+
+// Run only changed tests
+// vitest --changed
+
+// Benchmark mode for performance testing
+import { bench } from 'vitest';
+
+bench('authenticate performance', () => {
+  authenticate({ username: 'alice', password: 'secret' });
+});
+```
+
+[Full TypeScript, React, and TDD workflows available in respective skills if deployed together]
 
 ## Summary
 

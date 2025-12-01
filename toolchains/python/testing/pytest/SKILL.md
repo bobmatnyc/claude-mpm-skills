@@ -1321,9 +1321,102 @@ def pytest_configure(config):
 
 ## Related Skills
 
-- **[fastapi-local-dev](../../frameworks/fastapi-local-dev/SKILL.md)**: FastAPI development server patterns
-- **[test-driven-development](../../../../universal/testing/test-driven-development/)**: TDD workflow and philosophy
-- **[systematic-debugging](../../../../universal/debugging/systematic-debugging/)**: Debugging failing tests
+When using pytest, consider these complementary skills:
+
+- **fastapi-local-dev**: FastAPI development server patterns and test fixtures
+- **test-driven-development**: Complete TDD workflow (RED/GREEN/REFACTOR cycle)
+- **systematic-debugging**: Root cause investigation for failing tests
+
+### Quick TDD Workflow Reference (Inlined for Standalone Use)
+
+**RED → GREEN → REFACTOR Cycle:**
+
+1. **RED Phase: Write Failing Test**
+   ```python
+   def test_should_authenticate_user_when_credentials_valid():
+       # Test that describes desired behavior
+       user = User(username='alice', password='secret123')
+       result = authenticate(user)
+       assert result.is_authenticated is True
+       # This test will fail because authenticate() doesn't exist yet
+   ```
+
+2. **GREEN Phase: Make It Pass**
+   ```python
+   def authenticate(user):
+       # Minimum code to pass the test
+       if user.username == 'alice' and user.password == 'secret123':
+           return AuthResult(is_authenticated=True)
+       return AuthResult(is_authenticated=False)
+   ```
+
+3. **REFACTOR Phase: Improve Code**
+   ```python
+   def authenticate(user):
+       # Clean up while keeping tests green
+       hashed_password = hash_password(user.password)
+       stored_user = database.get_user(user.username)
+       return AuthResult(
+           is_authenticated=(stored_user.password_hash == hashed_password)
+       )
+   ```
+
+**Test Structure: Arrange-Act-Assert (AAA)**
+```python
+def test_user_creation():
+    # Arrange: Set up test data
+    user_data = {'username': 'alice', 'email': 'alice@example.com'}
+
+    # Act: Perform the action
+    user = create_user(user_data)
+
+    # Assert: Verify outcome
+    assert user.username == 'alice'
+    assert user.email == 'alice@example.com'
+```
+
+### Quick Debugging Reference (Inlined for Standalone Use)
+
+**Phase 1: Root Cause Investigation**
+- Read error messages completely (stack traces, line numbers)
+- Reproduce consistently (document exact steps)
+- Check recent changes (git log, git diff)
+- Understand what changed and why it might cause failure
+
+**Phase 2: Isolate the Problem**
+```python
+# Use pytest's built-in debugging
+pytest tests/test_auth.py -vv --pdb  # Drop into debugger on failure
+pytest tests/test_auth.py -x         # Stop on first failure
+pytest tests/test_auth.py -k "auth"  # Run only auth-related tests
+
+# Add strategic print/logging
+def test_complex_workflow():
+    user = create_user({'username': 'test'})
+    print(f"DEBUG: Created user {user.id}")  # Visible with pytest -s
+    result = process_user(user)
+    print(f"DEBUG: Result status {result.status}")
+    assert result.success
+```
+
+**Phase 3: Fix Root Cause**
+- Fix the underlying problem, not symptoms
+- Add regression test to prevent recurrence
+- Verify fix doesn't break other tests
+
+**Phase 4: Verify Solution**
+```bash
+# Run full test suite
+pytest
+
+# Run with coverage
+pytest --cov=src --cov-report=html
+
+# Verify specific test patterns
+pytest -k "auth or login" -v
+```
+
+[Full TDD and debugging workflows available in respective skills if deployed together]
 
 ---
 

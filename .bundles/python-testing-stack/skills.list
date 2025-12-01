@@ -1,0 +1,14 @@
+# Python Testing Stack - Skill Manifest
+# Version: 1.0.0
+# Format: path/to/skill:version (or path/to/skill for latest)
+
+# Core Testing
+toolchains/python/testing/pytest
+toolchains/python/async/asyncio
+
+# Testing Methodology
+universal/testing/test-driven-development
+
+# Debugging & Verification
+universal/debugging/systematic-debugging
+universal/debugging/verification-before-completion

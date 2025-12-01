@@ -29,6 +29,33 @@
 - [ ] Examples are provided
 - [ ] Skill category is appropriate
 
+## Self-Containment Verification
+
+**Run these commands and paste output:**
+
+```bash
+# Verify no relative path dependencies (replace {your-skill-directory} with actual path)
+grep -r "\.\\./" {your-skill-directory}/
+
+# Expected output: (empty - no results means no relative paths found)
+```
+
+**Paste grep output here:**
+```
+<!-- Paste command output here. Should be empty if no ../ paths exist -->
+```
+
+**Self-Containment Checklist:**
+- [ ] Zero `../` relative paths (verified above with grep command)
+- [ ] Skill works in flat directory deployment
+- [ ] Essential content is inlined (not just referenced)
+- [ ] Complementary skills are listed informationally only (no hard dependencies)
+- [ ] I have tested this skill in isolation
+- [ ] No broken markdown links (all links verified)
+- [ ] I have read the [SKILL_SELF_CONTAINMENT_STANDARD.md](../SKILL_SELF_CONTAINMENT_STANDARD.md)
+
+**For reviewers:** Verify grep output is empty before approving.
+
 ### Related Issues
 <!-- Link any related issues here -->
 

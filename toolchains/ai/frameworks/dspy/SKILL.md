@@ -1539,3 +1539,12 @@ Based on 2025 production studies:
 - **Paper**: "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines"
 - **2025 Study**: "Is It Time To Treat Prompts As Code?" (arXiv:2507.03620)
 - **Community**: Discord, GitHub Discussions
+
+## Related Skills
+
+When using Dspy, these skills enhance your workflow:
+- **langgraph**: LangGraph for multi-agent orchestration (use with DSPy-optimized prompts)
+- **test-driven-development**: Testing DSPy modules and prompt optimizations
+- **systematic-debugging**: Debugging DSPy compilation and optimization failures
+
+[Full documentation available in these skills if deployed in your bundle]

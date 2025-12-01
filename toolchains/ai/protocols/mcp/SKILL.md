@@ -1203,9 +1203,236 @@ async def call_tool(name: str, arguments: dict):
 
 ## Related Skills
 
-- **[typescript-core](../../../typescript/core/SKILL.md)**: TypeScript fundamentals for MCP server development
-- **[python-core](../../../python/core/SKILL.md)**: Python async patterns for MCP servers
-- **[openrouter](../../services/openrouter/SKILL.md)**: Alternative LLM API integration
+When building MCP servers, consider these complementary skills:
+
+- **typescript-core**: TypeScript type safety, tsconfig optimization, and advanced patterns
+- **asyncio**: Python async patterns for MCP servers with async/await
+- **openrouter**: Alternative LLM API integration for multi-model support
+
+### Quick TypeScript MCP Patterns (Inlined for Standalone Use)
+
+```typescript
+// Type-safe MCP server with TypeScript
+import { Server } from '@modelcontextprotocol/sdk/server/index.js';
+import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
+import {
+  CallToolRequestSchema,
+  ListToolsRequestSchema,
+} from '@modelcontextprotocol/sdk/types.js';
+import { z } from 'zod';
+
+// Define tool schemas with runtime validation
+const SearchSchema = z.object({
+  query: z.string().min(1).max(500),
+  limit: z.number().int().min(1).max(100).default(10),
+});
+
+type SearchArgs = z.infer<typeof SearchSchema>;
+
+class TypeSafeMCPServer {
+  private server: Server;
+
+  constructor() {
+    this.server = new Server(
+      {
+        name: 'typed-search-server',
+        version: '1.0.0',
+      },
+      {
+        capabilities: {
+          tools: {},
+        },
+      }
+    );
+
+    this.setupToolHandlers();
+  }
+
+  private setupToolHandlers() {
+    // List tools with full type inference
+    this.server.setRequestHandler(ListToolsRequestSchema, async () => ({
+      tools: [
+        {
+          name: 'search',
+          description: 'Search with type-safe parameters',
+          inputSchema: {
+            type: 'object',
+            properties: {
+              query: { type: 'string', minLength: 1, maxLength: 500 },
+              limit: { type: 'number', minimum: 1, maximum: 100, default: 10 },
+            },
+            required: ['query'],
+          },
+        },
+      ],
+    }));
+
+    // Type-safe tool execution
+    this.server.setRequestHandler(CallToolRequestSchema, async (request) => {
+      if (request.params.name === 'search') {
+        // Runtime validation with Zod
+        const args = SearchSchema.parse(request.params.arguments);
+
+        // Type-safe implementation
+        const results = await this.performSearch(args);
+
+        return {
+          content: [{ type: 'text', text: JSON.stringify(results) }],
+        };
+      }
+
+      throw new Error(`Unknown tool: ${request.params.name}`);
+    });
+  }
+
+  private async performSearch(args: SearchArgs): Promise<Array<{ title: string; url: string }>> {
+    // Implementation with full type safety
+    // args.query is string, args.limit is number
+    return [];
+  }
+
+  async run() {
+    const transport = new StdioServerTransport();
+    await this.server.connect(transport);
+  }
+}
+
+// Start server
+const server = new TypeSafeMCPServer();
+server.run();
+```
+
+### Quick Python Async MCP Patterns (Inlined for Standalone Use)
+
+```python
+# Async MCP server with Python
+import asyncio
+import logging
+from typing import Any
+from mcp.server import Server
+from mcp.server.stdio import stdio_server
+from mcp.types import Tool, TextContent
+from pydantic import BaseModel, Field
+
+# Type-safe argument models with Pydantic
+class SearchArgs(BaseModel):
+    query: str = Field(..., min_length=1, max_length=500)
+    limit: int = Field(10, ge=1, le=100)
+
+class AsyncMCPServer:
+    def __init__(self):
+        self.server = Server("async-search-server")
+        self.setup_handlers()
+
+    def setup_handlers(self):
+        @self.server.list_tools()
+        async def list_tools() -> list[Tool]:
+            return [
+                Tool(
+                    name="search",
+                    description="Search with async processing",
+                    inputSchema={
+                        "type": "object",
+                        "properties": {
+                            "query": {"type": "string", "minLength": 1, "maxLength": 500},
+                            "limit": {"type": "number", "minimum": 1, "maximum": 100, "default": 10},
+                        },
+                        "required": ["query"],
+                    },
+                )
+            ]
+
+        @self.server.call_tool()
+        async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
+            if name == "search":
+                # Validate with Pydantic
+                args = SearchArgs(**arguments)
+
+                # Async implementation
+                results = await self.perform_search(args)
+
+                return [
+                    TextContent(
+                        type="text",
+                        text=str(results)
+                    )
+                ]
+
+            raise ValueError(f"Unknown tool: {name}")
+
+    async def perform_search(self, args: SearchArgs) -> list[dict[str, str]]:
+        """Async search implementation"""
+        # Simulate async I/O
+        await asyncio.sleep(0.1)
+
+        # Use validated args (args.query is str, args.limit is int)
+        return [
+            {"title": f"Result for {args.query}", "url": "https://example.com"}
+        ]
+
+async def main():
+    """Run async MCP server"""
+    logging.basicConfig(level=logging.INFO)
+    server = AsyncMCPServer()
+
+    # Use stdio transport for Claude Desktop
+    async with stdio_server() as (read_stream, write_stream):
+        await server.server.run(
+            read_stream,
+            write_stream,
+            server.server.create_initialization_options()
+        )
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+### Quick Multi-Language MCP Patterns (Inlined for Standalone Use)
+
+**TypeScript vs Python Trade-offs:**
+
+| Feature | TypeScript | Python |
+|---------|-----------|--------|
+| **Type Safety** | Compile-time + runtime (Zod) | Runtime only (Pydantic) |
+| **Performance** | Faster startup, Node.js overhead | Slower startup, better for CPU tasks |
+| **Async Support** | Native async/await, event loop | asyncio, great for I/O |
+| **Ecosystem** | npm packages, frontend tools | Data science, ML libraries |
+| **Best For** | Web APIs, real-time tools | Data processing, ML integration |
+
+**Common Patterns Across Both:**
+
+1. **Input Validation**
+   - TypeScript: Zod schemas
+   - Python: Pydantic models
+
+2. **Error Handling**
+   - Both: Try/catch with specific error types
+   - Return error content in MCP response
+
+3. **Resource Management**
+   - TypeScript: async/await with try/finally
+   - Python: async context managers
+
+4. **Testing**
+   - TypeScript: Vitest/Jest with mock transport
+   - Python: pytest with pytest-asyncio
+
+**Choosing Implementation Language:**
+```typescript
+// TypeScript - Best for:
+// - File system operations
+// - Web scraping/HTTP requests
+// - JSON/API manipulation
+// - Real-time data streams
+
+// Python - Best for:
+// - Data analysis (pandas, numpy)
+// - Machine learning (scikit-learn, torch)
+// - Database ETL operations
+// - Scientific computing
+```
+
+[Full TypeScript, Python async, and OpenRouter patterns available in respective skills if deployed together]
 
 ## Summary
 

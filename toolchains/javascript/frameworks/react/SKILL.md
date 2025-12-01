@@ -744,3 +744,13 @@ import { Layout } from 'flexlayout-react';
 - **React-friendly** - Hooks, TypeScript support
 - **Perfect for** - IDEs, dashboards, admin panels, complex UIs
 - **Tauri integration** - Persist to backend, window-specific layouts
+
+## Related Skills
+
+When using React, these skills enhance your workflow:
+- **tanstack-query**: Server-state management for React apps with caching and refetching
+- **zustand**: Lightweight client-state management alternative to Redux
+- **nextjs**: React framework with SSR, routing, and full-stack capabilities
+- **test-driven-development**: TDD patterns for React components and hooks
+
+[Full documentation available in these skills if deployed in your bundle]

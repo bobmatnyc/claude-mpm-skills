@@ -956,9 +956,128 @@ const mockFn = jest.fn<(id: number) => Promise<User>>();
 
 ## Related Skills
 
-- **[../../typescript-core](../../core/SKILL.md)**: Advanced TypeScript patterns and type safety
-- **[../../../javascript/frameworks/react](../../../javascript/frameworks/react/SKILL.md)**: React component patterns and hooks
-- **[../vitest](../vitest/SKILL.md)**: Modern alternative with Vite-native performance
+When using Jest, consider these complementary skills:
+
+- **typescript-core**: Advanced TypeScript patterns, tsconfig optimization, and type safety
+- **react**: React component testing patterns with Testing Library
+- **vitest**: Modern alternative with Vite-native performance and faster execution
+
+### Quick TypeScript Type Safety Reference (Inlined for Standalone Use)
+
+```typescript
+// Type-safe test helpers with generics
+function createMockUser<T extends Partial<User>>(overrides: T): User & T {
+  return {
+    id: 1,
+    name: 'Test User',
+    email: 'test@example.com',
+    ...overrides
+  };
+}
+
+// Usage with type inference
+const adminUser = createMockUser({ role: 'admin' });
+// Type: User & { role: string }
+
+// Type-safe mock functions
+const mockFetch = jest.fn<typeof fetch>();
+mockFetch.mockResolvedValue(new Response('{}'));
+
+// Const type parameters for literal types
+const createConfig = <const T extends Record<string, unknown>>(config: T): T => config;
+const testConfig = createConfig({ environment: 'test', debug: true });
+// Type: { environment: "test"; debug: true } (literals preserved)
+```
+
+### Quick React Testing Patterns (Inlined for Standalone Use)
+
+```typescript
+// React Testing Library with Jest
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import '@testing-library/jest-dom';
+
+// Component testing pattern
+describe('UserProfile', () => {
+  it('should display user information', () => {
+    const user = { id: 1, name: 'Alice', email: 'alice@example.com' };
+    render(<UserProfile user={user} />);
+
+    expect(screen.getByText('Alice')).toBeInTheDocument();
+    expect(screen.getByText('alice@example.com')).toBeInTheDocument();
+  });
+
+  it('should handle user interactions', async () => {
+    const onSubmit = jest.fn();
+    render(<UserForm onSubmit={onSubmit} />);
+
+    // User interactions
+    await userEvent.type(screen.getByLabelText('Name'), 'Bob');
+    await userEvent.click(screen.getByRole('button', { name: 'Submit' }));
+
+    await waitFor(() => {
+      expect(onSubmit).toHaveBeenCalledWith({ name: 'Bob' });
+    });
+  });
+});
+
+// Hook testing
+import { renderHook, act } from '@testing-library/react';
+
+test('useCounter hook', () => {
+  const { result } = renderHook(() => useCounter(0));
+
+  expect(result.current.count).toBe(0);
+
+  act(() => {
+    result.current.increment();
+  });
+
+  expect(result.current.count).toBe(1);
+});
+
+// Context and Provider testing
+const wrapper = ({ children }: { children: React.ReactNode }) => (
+  <AuthProvider>{children}</AuthProvider>
+);
+
+test('useAuth hook with context', () => {
+  const { result } = renderHook(() => useAuth(), { wrapper });
+  expect(result.current.user).toBeDefined();
+});
+```
+
+### Quick Vitest Comparison (Inlined for Standalone Use)
+
+**When to Choose Vitest over Jest:**
+- New Vite/Vite-based projects (Next.js with Turbopack, SvelteKit)
+- Need faster test execution (10-100x faster)
+- ESM-first architecture
+- Hot Module Replacement for tests
+
+**When to Stick with Jest:**
+- Existing large codebases with Jest already configured
+- Corporate environments with established Jest workflows
+- Need mature ecosystem and extensive plugins
+- React apps with Create React App (default Jest setup)
+
+**Migration Snippet (Jest → Vitest):**
+```typescript
+// Jest: import from '@testing-library/jest-dom'
+import '@testing-library/jest-dom';
+
+// Vitest: import from vitest globals
+import { expect, test, describe } from 'vitest';
+import { screen } from '@testing-library/react';
+
+// Most Jest syntax works in Vitest unchanged
+test('component renders', () => {
+  render(<Component />);
+  expect(screen.getByText('Hello')).toBeTruthy();
+});
+```
+
+[Full TypeScript, React, and Vitest patterns available in respective skills if deployed together]
 
 ## Summary
 

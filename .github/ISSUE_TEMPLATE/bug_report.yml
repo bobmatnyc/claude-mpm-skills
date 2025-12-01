@@ -1,0 +1,112 @@
+name: 🐛 Bug Report
+description: Report a broken skill, deployment issue, or incorrect documentation
+labels: ["🐛 bug", "🚦 triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please provide as much detail as possible.
+
+  - type: dropdown
+    id: skill-category
+    attributes:
+      label: Skill Category
+      description: What category does this skill belong to?
+      options:
+        - Python
+        - TypeScript
+        - JavaScript
+        - Rust
+        - Go
+        - Universal
+        - AI/ML
+        - Bundle
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill Name
+      description: Name of the affected skill
+      placeholder: "e.g., fastapi-local-dev, react, pytest"
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is
+      placeholder: "What's broken?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: "Describe the expected outcome"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: "Describe what went wrong"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this bug?
+      placeholder: |
+        1. Deploy skill using '...'
+        2. Run command '...'
+        3. Observe error '...'
+    validations:
+      required: true
+
+  - type: input
+    id: deployment-mode
+    attributes:
+      label: Deployment Mode
+      description: How is the skill deployed?
+      placeholder: "flat, hierarchical, bundle, or custom"
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Your environment details
+      placeholder: |
+        - OS: [e.g., macOS 14.0, Ubuntu 22.04]
+        - Claude Code Version: [e.g., 1.0.0]
+        - Tool/Framework Version: [e.g., FastAPI 0.104.0]
+      render: markdown
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other context, screenshots, or logs
+      placeholder: "Add any other information that might help"
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have tested with the latest version of the skill
+          required: true
+        - label: I have provided sufficient information to reproduce the issue
+          required: true

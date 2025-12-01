@@ -376,3 +376,13 @@ func TestEmailValidation(t *testing.T) {
 - **Debugging:** Tests isolate issues quickly
 - **Coverage:** Ensures comprehensive test coverage
 - **Regression Prevention:** Catches bugs before deployment
+
+## Related Skills
+
+When using Test Driven Development, these skills enhance your workflow:
+- **systematic-debugging**: Debug-first methodology when tests fail unexpectedly
+- **react**: Testing React components, hooks, and context
+- **django**: Testing Django models, views, and forms
+- **fastapi-local-dev**: Testing FastAPI endpoints and dependency injection
+
+[Full documentation available in these skills if deployed in your bundle]

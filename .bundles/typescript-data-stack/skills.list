@@ -1,0 +1,13 @@
+# TypeScript Data Stack - Skill Manifest
+# Version: 1.0.0
+
+# ORMs (choose based on project needs)
+toolchains/typescript/data/kysely
+toolchains/typescript/data/drizzle
+toolchains/typescript/data/prisma
+
+# Validation
+toolchains/typescript/validation/zod
+
+# Database Management
+universal/data/database-migration

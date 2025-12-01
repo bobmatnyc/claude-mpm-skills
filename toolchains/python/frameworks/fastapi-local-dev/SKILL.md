@@ -1187,10 +1187,14 @@ module.exports = {
 
 ## Related Skills
 
-- **docker-containerization** - For containerized FastAPI deployments
-- **systematic-debugging** - For complex debugging scenarios
-- **express-local-dev** - Similar patterns for Node.js/Express applications
-- **nextjs-local-dev** - For full-stack applications with Next.js frontend
+When using FastAPI Local Development, these skills enhance your workflow:
+- **sqlalchemy**: ORM integration for database-backed FastAPI applications
+- **test-driven-development**: Complete TDD workflow for FastAPI endpoints and dependencies
+- **celery**: Background task processing for async operations beyond FastAPI's built-in async
+- **systematic-debugging**: Advanced debugging for auto-reload issues, import errors, and worker problems
+- **django**: Django patterns for teams migrating from Django to FastAPI
+
+[Full documentation available in these skills if deployed in your bundle]
 
 ---
 

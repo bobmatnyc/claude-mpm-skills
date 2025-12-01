@@ -1,0 +1,210 @@
+name: 🚀 New Skill Proposal
+description: Propose a new skill for the library
+labels: ["🚀 new-skill", "🚦 triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a new skill! Please provide comprehensive details to help us evaluate your proposal.
+
+        **Before submitting**: Please read the [SKILL_SELF_CONTAINMENT_STANDARD.md](https://github.com/bobmatnyc/claude-mpm-skills/blob/main/SKILL_SELF_CONTAINMENT_STANDARD.md) to understand our skill design principles.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Skill Category
+      description: What category does this skill belong to?
+      options:
+        - Python
+        - TypeScript
+        - JavaScript
+        - Rust
+        - Go
+        - PHP
+        - Ruby
+        - Java
+        - C/C++
+        - Universal (language-agnostic)
+        - AI/ML
+        - DevOps/Infrastructure
+        - Database
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: skill-name
+    attributes:
+      label: Proposed Skill Name
+      description: What should this skill be called?
+      placeholder: "e.g., sqlalchemy, zustand, playwright, terraform"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Skill Description
+      description: What does this skill teach Claude Code?
+      placeholder: |
+        Provide a clear, concise description of the skill's purpose.
+        Example: "Teach Claude Code to work with SQLAlchemy ORM, including model definition, migrations, and query patterns."
+    validations:
+      required: true
+
+  - type: textarea
+    id: key-concepts
+    attributes:
+      label: Key Concepts
+      description: What are the main topics this skill should cover?
+      placeholder: |
+        List the core concepts and patterns this skill will teach.
+        Example:
+        - Model definition and relationships
+        - Database migrations with Alembic
+        - Query patterns and optimization
+        - Session management
+        - Advanced features (eager loading, etc.)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Complexity Level
+      description: What is the skill's complexity level?
+      options:
+        - Beginner - Basic concepts and simple examples
+        - Intermediate - Common patterns and best practices
+        - Advanced - Complex scenarios and optimization
+    validations:
+      required: true
+
+  - type: textarea
+    id: target-audience
+    attributes:
+      label: Target Audience
+      description: Who would benefit from this skill?
+      placeholder: |
+        Describe the intended users and their use cases.
+        Example: "Backend developers building data-driven Python applications who need robust ORM capabilities."
+
+  - type: textarea
+    id: example-usage
+    attributes:
+      label: Example Usage Scenario
+      description: Provide a concrete example of when this skill would be invoked
+      placeholder: |
+        Describe a real-world scenario where Claude Code would use this skill.
+        Example: "User asks: 'Create a SQLAlchemy model for a blog with posts, comments, and users'"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: self-containment
+    attributes:
+      label: Self-Containment Checklist
+      description: Verify this skill meets our self-containment standards
+      options:
+        - label: I have read the SKILL_SELF_CONTAINMENT_STANDARD.md
+          required: true
+        - label: This skill will be standalone (no hard dependencies on other skills)
+          required: true
+        - label: I can provide complete, runnable examples within the skill
+          required: true
+        - label: The skill will work correctly in flat directory deployment
+          required: true
+
+  - type: textarea
+    id: related-skills
+    attributes:
+      label: Related Skills
+      description: Which existing skills complement this one?
+      placeholder: |
+        List skills that are related or complementary (but not required).
+        Example: "Complements: fastapi-local-dev, pytest, pydantic"
+
+  - type: textarea
+    id: toolchain-requirements
+    attributes:
+      label: Toolchain Requirements
+      description: What tools, frameworks, or dependencies are needed?
+      placeholder: |
+        List the primary tools/frameworks this skill focuses on.
+        Example:
+        - SQLAlchemy 2.0+
+        - Alembic (for migrations)
+        - Python 3.9+
+        - Database drivers (psycopg2, asyncpg, etc.)
+
+  - type: dropdown
+    id: maturity
+    attributes:
+      label: Ecosystem Maturity
+      description: How mature is the tool/framework this skill covers?
+      options:
+        - Stable - Production-ready, widely adopted
+        - Growing - Active development, gaining adoption
+        - Emerging - New but promising
+        - Experimental - Early stage or rapidly changing
+
+  - type: textarea
+    id: similar-skills
+    attributes:
+      label: Similar Skills
+      description: Are there similar skills in other ecosystems?
+      placeholder: |
+        Mention similar skills for other languages/frameworks.
+        Example: "Similar to TypeORM skill for TypeScript, Sequelize skill for Node.js"
+
+  - type: textarea
+    id: value-proposition
+    attributes:
+      label: Value Proposition
+      description: Why should this skill be added to the library?
+      placeholder: |
+        Explain the unique value this skill provides.
+        Consider: popularity, common use cases, gaps in current skill coverage.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution Intent
+      description: How would you like to contribute?
+      options:
+        - label: I want to create this skill myself
+        - label: I can provide examples and documentation
+        - label: I can help with testing and review
+        - label: I'm requesting someone else create it
+
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Proposed Timeline
+      description: If you're creating this skill, what's your timeline?
+      placeholder: |
+        Example: "I can complete initial version within 2 weeks, with refinements over following month."
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information that would help evaluate this proposal
+      placeholder: "Add links to documentation, similar projects, or other relevant information"
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Final Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing skills and proposals to avoid duplicates
+          required: true
+        - label: I have read the CONTRIBUTING.md guidelines
+          required: true
+        - label: This skill aligns with the repository's purpose
+          required: true
+        - label: I understand the self-containment requirements
+          required: true

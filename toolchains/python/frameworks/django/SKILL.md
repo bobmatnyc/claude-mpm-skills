@@ -1365,3 +1365,13 @@ pip install celery  # Task queue
 ---
 
 **Next Steps**: Explore Django documentation at https://docs.djangoproject.com/ and Django REST Framework at https://www.django-rest-framework.org/
+
+## Related Skills
+
+When using Django, these skills enhance your workflow:
+- **sqlalchemy**: Alternative ORM for SQLAlchemy-first projects with advanced query capabilities
+- **test-driven-development**: Complete TDD workflow for Django apps (models, views, forms)
+- **fastapi-local-dev**: FastAPI development patterns for building Django + FastAPI hybrid systems
+- **celery**: Asynchronous task processing for Django background jobs and scheduled tasks
+
+[Full documentation available in these skills if deployed in your bundle]

@@ -1,0 +1,14 @@
+# AI/MCP Development - Skill Manifest
+# Version: 1.0.0
+
+# Protocols & SDKs
+toolchains/ai/protocols/mcp
+toolchains/ai/sdks/anthropic
+
+# AI Frameworks
+toolchains/ai/frameworks/langchain
+toolchains/ai/frameworks/dspy
+toolchains/ai/frameworks/langgraph
+
+# Techniques
+toolchains/ai/techniques/session-compression

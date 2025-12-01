@@ -375,3 +375,13 @@ CREATE TABLE IF NOT EXISTS "users" (
 - **typescript-core**: Type-safe schema inference with `satisfies`
 - **nextjs-core**: Server Actions, Route Handlers, Middleware integration
 - **Database Migration**: Safe schema evolution patterns
+
+## Related Skills
+
+When using Drizzle, these skills enhance your workflow:
+- **prisma**: Alternative ORM comparison: Drizzle vs Prisma trade-offs
+- **typescript**: Advanced TypeScript patterns for type-safe queries
+- **nextjs**: Drizzle with Next.js Server Actions and API routes
+- **sqlalchemy**: SQLAlchemy patterns for Python developers learning Drizzle
+
+[Full documentation available in these skills if deployed in your bundle]

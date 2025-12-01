@@ -1149,3 +1149,13 @@ function createHistoryStore<T>(initialState: T) {
 - [GitHub Repository](https://github.com/pmndrs/zustand)
 - [TypeScript Guide](https://docs.pmnd.rs/zustand/guides/typescript)
 - [Middleware Reference](https://docs.pmnd.rs/zustand/integrations/persisting-store-data)
+
+## Related Skills
+
+When using Zustand, these skills enhance your workflow:
+- **react**: React integration patterns and hooks for Zustand stores
+- **tanstack-query**: Server-state management (use with Zustand for client state)
+- **nextjs**: Zustand with Next.js App Router and Client Components
+- **test-driven-development**: Testing Zustand stores, actions, and selectors
+
+[Full documentation available in these skills if deployed in your bundle]

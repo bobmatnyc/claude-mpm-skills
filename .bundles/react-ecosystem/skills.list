@@ -1,0 +1,16 @@
+# React Ecosystem - Skill Manifest
+# Version: 1.0.0
+
+# Core Framework
+toolchains/javascript/frameworks/react
+
+# State Management
+toolchains/typescript/state/zustand
+toolchains/typescript/state/tanstack-query
+
+# Testing
+toolchains/typescript/testing/jest
+toolchains/typescript/testing/vitest
+
+# Methodology
+universal/testing/test-driven-development

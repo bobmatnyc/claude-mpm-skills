@@ -67,3 +67,13 @@ But:
 ## Choose A, B, or C
 
 Which do you choose? Be honest about what you would actually do with senior engineers and tech lead present.
+
+## Related Skills
+
+When using Systematic Debugging, these skills enhance your workflow:
+- **test-driven-development**: TDD workflow for reproducing and fixing bugs
+- **fastapi-local-dev**: Debugging FastAPI auto-reload and import errors
+- **django**: Debugging Django ORM queries and middleware
+- **tanstack-query**: Debugging cache invalidation and stale data issues
+
+[Full documentation available in these skills if deployed in your bundle]

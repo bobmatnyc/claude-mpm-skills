@@ -313,3 +313,14 @@ python scripts/sync_secrets.py --platform vercel --compare
 ---
 
 **Related**: [validation.md](../references/validation.md) | [security.md](../references/security.md) | [frameworks.md](../references/frameworks.md)
+
+## Related Skills
+
+When using Nextjs, these skills enhance your workflow:
+- **react**: Core React patterns and hooks for Next.js components
+- **tanstack-query**: Server-state management with App Router and Server Components
+- **drizzle**: Type-safe ORM for Next.js server actions and API routes
+- **prisma**: Alternative ORM with excellent Next.js integration
+- **test-driven-development**: Testing Next.js App Router, Server Components, and API routes
+
+[Full documentation available in these skills if deployed in your bundle]

@@ -1,0 +1,47 @@
+{
+  "name": "bad-example-skill",
+  "version": "1.0.0",
+  "category": "framework",
+  "toolchain": "python",
+  "description": "ANTI-PATTERN - Example showing violations of self-containment (DO NOT COPY)",
+  "tags": [
+    "anti-pattern",
+    "bad-example",
+    "violations",
+    "do-not-copy"
+  ],
+  "dependencies": [
+    "example-framework>=2.0.0"
+  ],
+  "requires": [
+    "⚠️ VIOLATION: This field should be empty!",
+    "⚠️ setup-skill",
+    "⚠️ database-skill",
+    "⚠️ pytest-patterns"
+  ],
+  "self_contained": false,
+  "author": "claude-mpm-skills",
+  "updated": "2025-11-30",
+  "notes": [
+    "⚠️ THIS IS AN ANTI-PATTERN EXAMPLE",
+    "⚠️ DO NOT COPY THIS STRUCTURE",
+    "⚠️ See good-self-contained-skill for correct approach",
+    "",
+    "VIOLATIONS DEMONSTRATED:",
+    "1. 'requires' field lists other skills (WRONG)",
+    "2. 'self_contained' is false (WRONG)",
+    "3. Notes indicate skill won't work without others (WRONG)",
+    "",
+    "CORRECT APPROACH:",
+    "- 'requires' should be empty or list external packages only",
+    "- 'self_contained' should be true",
+    "- Use 'complementary_skills' for optional enhancements",
+    "",
+    "SEE: examples/good-self-contained-skill/metadata.json"
+  ],
+  "⚠️_complementary_skills_SHOULD_BE_HERE": [
+    "setup-skill",
+    "database-skill",
+    "pytest-patterns"
+  ]
+}

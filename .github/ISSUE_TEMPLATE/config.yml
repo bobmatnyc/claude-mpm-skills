@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 GitHub Discussions
+    url: https://github.com/bobmatnyc/claude-mpm-skills/discussions
+    about: General questions, ideas, or showcase your skills
+  - name: 📖 Documentation
+    url: https://github.com/bobmatnyc/claude-mpm-skills/blob/main/CONTRIBUTING.md
+    about: Read the contribution guidelines
+  - name: 🧠 Self-Containment Standard
+    url: https://github.com/bobmatnyc/claude-mpm-skills/blob/main/SKILL_SELF_CONTAINMENT_STANDARD.md
+    about: Learn about skill design principles and self-containment requirements

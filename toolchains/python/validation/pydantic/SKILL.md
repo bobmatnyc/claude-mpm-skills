@@ -1338,12 +1338,94 @@ class Document(AuditMixin):
         return data
 ```
 
-## Related Documentation
-- FastAPI Integration: `../../frameworks/fastapi/`
-- SQLAlchemy ORM: `../../data/sqlalchemy/`
-- Django Framework: `../../frameworks/django/`
-- Python Type Hints: `../types/`
-- Testing with Pytest: `../testing/pytest/`
+## Related Skills
+
+When using Pydantic, consider these complementary skills:
+
+- **fastapi-local-dev**: FastAPI development server patterns with Pydantic integration
+- **sqlalchemy**: SQLAlchemy ORM patterns for database models with Pydantic validation
+- **django**: Django framework integration with Pydantic schemas
+- **pytest**: Testing strategies for Pydantic models and validation
+
+### Quick FastAPI Integration Reference (Inlined for Standalone Use)
+
+```python
+# FastAPI with Pydantic (basic pattern)
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+class UserCreate(BaseModel):
+    username: str
+    email: EmailStr
+    password: str
+
+class UserResponse(BaseModel):
+    id: int
+    username: str
+    email: EmailStr
+
+    model_config = ConfigDict(from_attributes=True)
+
+@app.post('/users', response_model=UserResponse)
+def create_user(user: UserCreate):
+    # FastAPI auto-validates using Pydantic
+    # response_model filters out password
+    return UserResponse(id=1, username=user.username, email=user.email)
+```
+
+### Quick SQLAlchemy Integration Reference (Inlined for Standalone Use)
+
+```python
+# SQLAlchemy 2.0 with Pydantic validation
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import DeclarativeBase
+from pydantic import BaseModel, ConfigDict
+
+class Base(DeclarativeBase):
+    pass
+
+class UserDB(Base):
+    __tablename__ = 'users'
+    id = Column(Integer, primary_key=True)
+    username = Column(String(50))
+    email = Column(String(100))
+
+class UserSchema(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+    id: int
+    username: str
+    email: str
+
+# Convert ORM to Pydantic
+user_orm = db.query(UserDB).first()
+user_validated = UserSchema.model_validate(user_orm)
+```
+
+### Quick Pytest Testing Reference (Inlined for Standalone Use)
+
+```python
+# Testing Pydantic models with pytest
+import pytest
+from pydantic import ValidationError
+
+def test_user_validation():
+    user = User(id=1, name='Alice', email='alice@example.com')
+    assert user.name == 'Alice'
+
+def test_validation_error():
+    with pytest.raises(ValidationError) as exc_info:
+        User(id='invalid', name='Bob', email='bob@example.com')
+    errors = exc_info.value.errors()
+    assert errors[0]['type'] == 'int_parsing'
+
+@pytest.fixture
+def sample_user():
+    return User(id=1, name='Alice', email='alice@example.com')
+```
+
+[Full integration patterns available in respective skills if deployed together]
 
 ## Additional Resources
 - [Pydantic Documentation](https://docs.pydantic.dev/)

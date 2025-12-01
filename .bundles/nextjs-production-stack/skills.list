@@ -1,0 +1,14 @@
+# Next.js Production Stack - Skill Manifest
+# Version: 1.0.0
+
+# Next.js Framework
+toolchains/nextjs/core
+toolchains/nextjs/v16
+
+# Core Dependencies
+toolchains/javascript/frameworks/react
+toolchains/typescript/core
+
+# Deployment & Styling
+toolchains/platforms/deployment/vercel
+toolchains/ui/styling/tailwind

@@ -96,3 +96,12 @@ virtualenv/
 wheels/
 yarn-debug.log*
 yarn-error.log*
+
+# Added by Claude MPM /mpm-init
+.claude-mpm/*.log
+.claude-mpm/cache/
+.claude-mpm/logs/
+.claude-mpm/sessions/
+.claude-mpm/tmp/
+.claude/cache/
+.claude/sessions/

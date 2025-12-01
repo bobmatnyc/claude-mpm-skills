@@ -2395,3 +2395,13 @@ TanStack Query is the industry-standard solution for server-state management in 
 - **Advanced**: Optimistic updates, SSR, integrations, and performance
 
 For additional resources, visit the [official documentation](https://tanstack.com/query/latest).
+
+## Related Skills
+
+When using Tanstack Query, these skills enhance your workflow:
+- **react**: React hooks and patterns for integrating TanStack Query
+- **nextjs**: TanStack Query with Next.js App Router and Server Components
+- **zustand**: Complementary client-state management (use together for hybrid state)
+- **test-driven-development**: Testing queries, mutations, and cache behavior
+
+[Full documentation available in these skills if deployed in your bundle]

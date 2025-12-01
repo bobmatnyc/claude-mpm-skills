@@ -969,3 +969,13 @@ class Post(Base, AuditMixin):
 - [Alembic Documentation](https://alembic.sqlalchemy.org/)
 - [FastAPI SQLAlchemy Guide](https://fastapi.tiangolo.com/tutorial/sql-databases/)
 - [SQLAlchemy Type Annotations](https://docs.sqlalchemy.org/en/20/orm/declarative_tables.html#mapped-column-derives-the-datatype-and-nullability-from-the-mapped-annotation)
+
+## Related Skills
+
+When using Sqlalchemy, these skills enhance your workflow:
+- **django**: Django ORM patterns and migration strategies for comparison
+- **test-driven-development**: TDD patterns for database models and queries
+- **fastapi-local-dev**: FastAPI + SQLAlchemy integration patterns
+- **systematic-debugging**: Advanced debugging for ORM query issues and N+1 problems
+
+[Full documentation available in these skills if deployed in your bundle]

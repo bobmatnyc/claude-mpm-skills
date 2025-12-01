@@ -1457,7 +1457,200 @@ def handle_error(error):
 
 ## Related Skills
 
-- **[pytest](../../testing/pytest/SKILL.md)**: Testing Flask applications
-- **[sqlalchemy](../../data/sqlalchemy/)**: Database ORM patterns
-- **[fastapi](../fastapi-local-dev/SKILL.md)**: Modern async alternative
-- **[django](../django/)**: Batteries-included framework comparison
+When using Flask, consider these complementary skills:
+
+- **pytest**: Testing Flask applications with fixtures and test client
+- **sqlalchemy**: Database ORM patterns with Flask-SQLAlchemy integration
+- **fastapi-local-dev**: Modern async alternative for high-performance APIs
+- **django**: Batteries-included framework with built-in admin and ORM
+
+### Quick Flask Testing Patterns (Inlined for Standalone Use)
+
+```python
+# Testing Flask with pytest
+import pytest
+from flask import Flask
+from app import create_app, db
+
+@pytest.fixture
+def app():
+    """Create and configure test app"""
+    app = create_app('testing')
+    with app.app_context():
+        db.create_all()
+        yield app
+        db.drop_all()
+
+@pytest.fixture
+def client(app):
+    """Test client for making requests"""
+    return app.test_client()
+
+@pytest.fixture
+def runner(app):
+    """CLI test runner"""
+    return app.test_cli_runner()
+
+# Test routes
+def test_home_page(client):
+    response = client.get('/')
+    assert response.status_code == 200
+    assert b'Welcome' in response.data
+
+def test_api_endpoint(client):
+    response = client.post('/api/users', json={
+        'username': 'alice',
+        'email': 'alice@example.com'
+    })
+    assert response.status_code == 201
+    data = response.get_json()
+    assert data['username'] == 'alice'
+
+def test_authentication(client):
+    # Login
+    response = client.post('/login', data={
+        'username': 'alice',
+        'password': 'secret123'
+    })
+    assert response.status_code == 302  # Redirect after login
+
+    # Access protected route
+    response = client.get('/dashboard')
+    assert response.status_code == 200
+
+# Test with database
+def test_user_creation(app):
+    with app.app_context():
+        user = User(username='bob', email='bob@example.com')
+        db.session.add(user)
+        db.session.commit()
+
+        found = User.query.filter_by(username='bob').first()
+        assert found is not None
+        assert found.email == 'bob@example.com'
+
+# Test error handling
+def test_404_error(client):
+    response = client.get('/nonexistent')
+    assert response.status_code == 404
+    assert b'Not Found' in response.data
+```
+
+### Quick SQLAlchemy Integration (Inlined for Standalone Use)
+
+```python
+# Flask-SQLAlchemy setup
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.orm import DeclarativeBase
+
+class Base(DeclarativeBase):
+    pass
+
+db = SQLAlchemy(model_class=Base)
+
+def create_app():
+    app = Flask(__name__)
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://user:pass@localhost/db'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+    db.init_app(app)
+
+    with app.app_context():
+        db.create_all()
+
+    return app
+
+# Define models
+class User(db.Model):
+    __tablename__ = 'users'
+
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(50), unique=True, nullable=False)
+    email = db.Column(db.String(100), unique=True, nullable=False)
+    posts = db.relationship('Post', backref='author', lazy='dynamic')
+
+class Post(db.Model):
+    __tablename__ = 'posts'
+
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(200), nullable=False)
+    content = db.Column(db.Text, nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+
+# Query patterns
+@app.route('/users/<int:user_id>')
+def get_user(user_id):
+    user = db.session.get(User, user_id)
+    if not user:
+        abort(404)
+    return jsonify({
+        'id': user.id,
+        'username': user.username,
+        'email': user.email,
+        'posts': [{'title': p.title} for p in user.posts]
+    })
+
+@app.route('/users', methods=['POST'])
+def create_user():
+    data = request.get_json()
+    user = User(username=data['username'], email=data['email'])
+    db.session.add(user)
+    db.session.commit()
+    return jsonify({'id': user.id}), 201
+
+# Transaction handling
+from sqlalchemy.exc import IntegrityError
+
+@app.route('/transfer', methods=['POST'])
+def transfer_funds():
+    try:
+        # All operations in single transaction
+        sender = User.query.get_or_404(request.json['sender_id'])
+        receiver = User.query.get_or_404(request.json['receiver_id'])
+        amount = request.json['amount']
+
+        sender.balance -= amount
+        receiver.balance += amount
+
+        db.session.commit()
+        return jsonify({'status': 'success'})
+    except IntegrityError:
+        db.session.rollback()
+        return jsonify({'error': 'Transaction failed'}), 400
+```
+
+### Quick FastAPI Comparison (Inlined for Standalone Use)
+
+**When to Choose FastAPI over Flask:**
+- Need async/await for high concurrency
+- Want automatic API documentation (OpenAPI/Swagger)
+- Require built-in data validation (Pydantic)
+- Building modern microservices or GraphQL APIs
+- Need WebSocket or Server-Sent Events support
+
+**When to Stick with Flask:**
+- Building traditional server-rendered web apps
+- Existing large Flask codebase
+- Need mature ecosystem and extensive plugins
+- Team familiar with synchronous Python patterns
+- Simpler deployment (no async runtime complexity)
+
+**Migration Considerations:**
+```python
+# Flask pattern
+@app.route('/users/<int:user_id>')
+def get_user(user_id):
+    user = User.query.get_or_404(user_id)
+    return jsonify({'id': user.id, 'name': user.name})
+
+# FastAPI equivalent
+@app.get('/users/{user_id}', response_model=UserResponse)
+async def get_user(user_id: int, db: AsyncSession = Depends(get_db)):
+    user = await db.get(User, user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    return user
+```
+
+[Full pytest, SQLAlchemy, and FastAPI patterns available in respective skills if deployed together]

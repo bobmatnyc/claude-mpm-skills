@@ -2430,3 +2430,12 @@ LangGraph transforms agent development from linear chains into **cyclic, statefu
 - [ ] Deployment strategy (cloud/self-hosted)
 
 For simple request-response patterns, use LangChain LCEL. For complex stateful workflows, LangGraph is the industry-standard solution.
+
+## Related Skills
+
+When using Langgraph, these skills enhance your workflow:
+- **dspy**: DSPy for LLM prompt optimization (complementary to LangGraph orchestration)
+- **test-driven-development**: Testing LangGraph workflows and state machines
+- **systematic-debugging**: Debugging multi-agent workflows and state transitions
+
+[Full documentation available in these skills if deployed in your bundle]

@@ -1,0 +1,14 @@
+# Universal Development - Skill Manifest
+# Version: 1.0.0
+
+# Testing & Quality
+universal/testing/test-driven-development
+universal/debugging/systematic-debugging
+universal/debugging/verification-before-completion
+
+# Architecture & Design
+universal/architecture/software-patterns
+
+# Collaboration & Process
+universal/collaboration/git-workflow
+universal/collaboration/writing-plans

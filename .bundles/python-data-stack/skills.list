@@ -1,0 +1,13 @@
+# Python Data Stack - Skill Manifest
+# Version: 1.0.0
+
+# Validation & ORM
+toolchains/python/validation/pydantic
+toolchains/python/data/sqlalchemy
+
+# Database Management
+universal/data/database-migration
+
+# Testing & Data Handling
+toolchains/python/testing/pytest
+universal/data/json-data-handling

@@ -1555,9 +1555,141 @@ from typing import List, Dict, Any
 
 ## Related Skills
 
-- **[fastapi-local-dev](../../frameworks/fastapi-local-dev/SKILL.md)**: FastAPI async server patterns
-- **[pytest](../../testing/pytest/SKILL.md)**: Testing async code with pytest-asyncio
-- **[systematic-debugging](../../../../universal/debugging/systematic-debugging/)**: Debugging async applications
+When using asyncio, consider these complementary skills:
+
+- **fastapi-local-dev**: FastAPI async server patterns and production deployment
+- **pytest**: Testing async code with pytest-asyncio and fixtures
+- **systematic-debugging**: Debugging async race conditions and deadlocks
+
+### Quick FastAPI Async Patterns (Inlined for Standalone Use)
+
+```python
+# FastAPI async endpoint pattern
+from fastapi import FastAPI, Depends
+from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
+from sqlalchemy.orm import sessionmaker
+
+app = FastAPI()
+
+# Async database setup
+engine = create_async_engine("postgresql+asyncpg://user:pass@localhost/db")
+AsyncSessionLocal = sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
+
+async def get_db():
+    async with AsyncSessionLocal() as session:
+        yield session
+
+@app.get("/users/{user_id}")
+async def get_user(user_id: int, db: AsyncSession = Depends(get_db)):
+    # Async database query
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalar_one_or_none()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    return user
+
+# Background tasks with asyncio
+@app.post("/send-email")
+async def send_email_endpoint(email: EmailSchema):
+    # Non-blocking background task
+    asyncio.create_task(send_email_async(email))
+    return {"status": "email queued"}
+```
+
+### Quick pytest-asyncio Patterns (Inlined for Standalone Use)
+
+```python
+# Testing async functions with pytest
+import pytest
+import pytest_asyncio
+from httpx import AsyncClient
+
+# Async test fixture
+@pytest_asyncio.fixture
+async def async_client():
+    async with AsyncClient(app=app, base_url="http://test") as client:
+        yield client
+
+# Async test function
+@pytest.mark.asyncio
+async def test_get_user(async_client):
+    response = await async_client.get("/users/1")
+    assert response.status_code == 200
+    assert response.json()["id"] == 1
+
+# Testing concurrent operations
+@pytest.mark.asyncio
+async def test_concurrent_requests():
+    async with AsyncClient(app=app, base_url="http://test") as client:
+        # Run 10 requests concurrently
+        responses = await asyncio.gather(
+            *[client.get(f"/users/{i}") for i in range(1, 11)]
+        )
+        assert all(r.status_code == 200 for r in responses)
+
+# Mock async dependencies
+@pytest_asyncio.fixture
+async def mock_db():
+    # Setup mock database
+    db = AsyncMock()
+    yield db
+    # Cleanup
+```
+
+### Quick Async Debugging Reference (Inlined for Standalone Use)
+
+**Common Async Pitfalls:**
+
+1. **Blocking the Event Loop**
+   ```python
+   # ❌ WRONG: Blocking call in async function
+   async def bad_function():
+       time.sleep(5)  # Blocks entire event loop!
+       return "done"
+
+   # ✅ CORRECT: Use asyncio.sleep
+   async def good_function():
+       await asyncio.sleep(5)  # Releases event loop
+       return "done"
+   ```
+
+2. **Debugging Race Conditions**
+   ```python
+   # Add logging to track execution order
+   import logging
+   logging.basicConfig(level=logging.DEBUG)
+
+   async def debug_task(name):
+       logging.debug(f"{name}: Starting")
+       await asyncio.sleep(1)
+       logging.debug(f"{name}: Finished")
+       return name
+
+   # Run with detailed tracing
+   asyncio.run(asyncio.gather(debug_task("A"), debug_task("B")), debug=True)
+   ```
+
+3. **Deadlock Detection**
+   ```python
+   # Use timeout to detect deadlocks
+   try:
+       result = await asyncio.wait_for(some_async_function(), timeout=5.0)
+   except asyncio.TimeoutError:
+       logging.error("Deadlock detected: operation timed out")
+       # Investigate what's blocking
+   ```
+
+4. **Inspecting Running Tasks**
+   ```python
+   # Check all pending tasks
+   tasks = asyncio.all_tasks()
+   for task in tasks:
+       print(f"Task: {task.get_name()}, Done: {task.done()}")
+       if not task.done():
+           print(f"  Current coro: {task.get_coro()}")
+   ```
+
+[Full FastAPI, pytest, and debugging patterns available in respective skills if deployed together]
 
 ---
 

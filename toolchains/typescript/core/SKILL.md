@@ -218,3 +218,13 @@ const jsonSchema = UserSchema; // Already JSON Schema compliant
 - **nextjs-core**: Type-safe Server Actions and route handlers
 - **nextjs-v16**: Async API patterns and Cache Components typing
 - **mcp-builder**: Zod schemas for MCP tool inputs
+
+## Related Skills
+
+When using Core, these skills enhance your workflow:
+- **react**: TypeScript with React: component typing, hooks, generics
+- **nextjs**: TypeScript in Next.js: Server Components, Server Actions typing
+- **drizzle**: Type-safe database queries with Drizzle ORM
+- **prisma**: Prisma's generated TypeScript types for database schemas
+
+[Full documentation available in these skills if deployed in your bundle]

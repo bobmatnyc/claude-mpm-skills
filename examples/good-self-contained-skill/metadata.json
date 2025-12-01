@@ -1,0 +1,41 @@
+{
+  "name": "example-framework-skill",
+  "version": "1.0.0",
+  "category": "framework",
+  "toolchain": "python",
+  "description": "Example of a properly self-contained skill following all best practices",
+  "tags": [
+    "self-contained",
+    "example",
+    "template",
+    "best-practice",
+    "framework",
+    "testing",
+    "database"
+  ],
+  "dependencies": [
+    "example-framework>=2.0.0",
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0"
+  ],
+  "bundles": [
+    "python-web-dev-bundle"
+  ],
+  "author": "claude-mpm-skills",
+  "updated": "2025-11-30",
+  "self_contained": true,
+  "requires": [],
+  "complementary_skills": [
+    "pytest-patterns",
+    "database-orm-patterns",
+    "api-security",
+    "deployment-patterns"
+  ],
+  "notes": [
+    "This is a template demonstrating proper self-containment",
+    "All essential patterns are inlined",
+    "Works independently of other skills",
+    "Complementary skills are optional enhancements",
+    "Tested in isolation - fully functional standalone"
+  ]
+}

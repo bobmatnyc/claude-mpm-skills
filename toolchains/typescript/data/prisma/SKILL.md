@@ -587,3 +587,13 @@ await prisma.$transaction([
 - **Schema Reference**: https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference
 - **Client API**: https://www.prisma.io/docs/reference/api-reference/prisma-client-reference
 - **Examples**: https://github.com/prisma/prisma-examples
+
+## Related Skills
+
+When using Prisma, these skills enhance your workflow:
+- **drizzle**: Drizzle ORM as lightweight alternative to Prisma
+- **typescript**: TypeScript best practices for Prisma generated types
+- **nextjs**: Prisma with Next.js: connection pooling, edge runtime considerations
+- **test-driven-development**: Testing Prisma models, migrations, and queries
+
+[Full documentation available in these skills if deployed in your bundle]

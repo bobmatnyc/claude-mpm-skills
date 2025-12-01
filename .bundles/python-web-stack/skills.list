@@ -1,0 +1,18 @@
+# Python Web Stack - Skill Manifest
+# Version: 1.0.0
+
+# Core Framework
+toolchains/python/frameworks/fastapi-local-dev
+
+# Validation & Data
+toolchains/python/validation/pydantic
+toolchains/python/data/sqlalchemy
+
+# Background Processing
+toolchains/python/async/celery
+
+# Testing
+toolchains/python/testing/pytest
+
+# Database Management
+universal/data/database-migration
