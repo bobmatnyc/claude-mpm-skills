@@ -1,4 +1,6 @@
 ---
+name: pydantic
+description: Python data validation using type hints and runtime type checking with Pydantic v2's Rust-powered core for high-performance validation in FastAPI, Django, and configuration management.
 progressive_disclosure:
   entry_point:
     - summary

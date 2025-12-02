@@ -1,3 +1,8 @@
+---
+name: tailwind-css
+description: Tailwind CSS utility-first framework for rapid UI development with responsive design and dark mode. Use when building component-based applications requiring consistent design systems with React, Vue, or Svelte.
+---
+
 # Tailwind CSS Skill
 
 ---

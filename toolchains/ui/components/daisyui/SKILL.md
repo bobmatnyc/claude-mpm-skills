@@ -1,4 +1,6 @@
 ---
+name: daisyui
+description: Tailwind CSS component library providing semantic class names for 50+ components with built-in themes, dark mode, and customization for rapid UI development.
 progressive_disclosure:
   entry_point:
     - summary

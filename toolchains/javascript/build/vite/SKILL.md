@@ -1,3 +1,8 @@
+---
+name: vite-build-tool
+description: Vite lightning-fast build tool with instant HMR, ESM-first architecture, and zero-config setup for modern web development. Use when building React/Vue/Svelte applications, needing instant hot module replacement, migrating from webpack/CRA, or setting up TypeScript projects.
+---
+
 # Vite Build Tool Skill
 
 ---
@@ -1033,11 +1038,13 @@ export default defineConfig({
 
 ## Related Skills
 
-- **[React](../../frameworks/react)**: React framework integration
-- **[Vue](../../frameworks/vue)**: Vue framework integration
-- **[Svelte](../../frameworks/svelte)**: Svelte framework integration
-- **[TypeScript](../../../typescript/typescript-core)**: TypeScript configuration
-- **[Vitest](../testing/vitest)**: Testing with Vite
+When using Vite, consider these complementary skills (available in the skill library):
+
+- **React**: React framework integration - use Vite's optimized React plugin for fast development
+- **Vue**: Vue framework integration - leverage Vite's native Vue support and SFC compilation
+- **Svelte**: Svelte framework integration - combine Svelte's compile-time optimizations with Vite's speed
+- **TypeScript**: TypeScript configuration - configure TypeScript with Vite for type-safe development
+- **Vitest**: Testing with Vite - use Vitest for lightning-fast unit testing with Vite's transform pipeline
 
 ## Resources
 

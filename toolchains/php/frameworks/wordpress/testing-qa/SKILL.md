@@ -1,3 +1,8 @@
+---
+name: wordpress-testing-qa
+description: WordPress plugin and theme testing with PHPUnit integration tests, WP_Mock unit tests, PHPCS coding standards, and CI/CD workflows. Use when testing WordPress plugins, enforcing coding standards, or implementing quality assurance processes.
+---
+
 # WordPress Testing & Quality Assurance
 
 ---
@@ -1944,10 +1949,12 @@ class Test_REST_API extends WP_UnitTestCase {
 ---
 
 **Related Skills:**
-- [WordPress Plugin Fundamentals](../plugin-fundamentals/SKILL.md)
-- [WordPress Security & Validation](../security-validation/SKILL.md)
-- [Python pytest Testing](../../../../python/testing/pytest/SKILL.md)
-- [GitHub Actions CI/CD](../../../../universal/infrastructure/github-actions/SKILL.md)
+When testing WordPress applications, consider these complementary skills (available in the skill library):
+
+- **WordPress Plugin Fundamentals**: Core plugin architecture and hooks - essential foundation for understanding what to test
+- **WordPress Security & Validation**: Security patterns and data validation - critical for security testing strategies
+- **Python pytest Testing**: Modern testing patterns - concepts applicable to WordPress testing approaches
+- **GitHub Actions CI/CD**: CI/CD automation - integrate WordPress tests into automated pipelines
 
 **Further Reading:**
 - [WordPress PHPUnit Documentation](https://make.wordpress.org/core/handbook/testing/automated-testing/writing-phpunit-tests/)

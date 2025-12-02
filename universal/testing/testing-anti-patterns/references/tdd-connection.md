@@ -33,7 +33,7 @@ Test-Driven Development (TDD) is not just a testing methodology - it's a design 
 
 **Critical rule:** Never write implementation without failing test first.
 
-See [test-driven-development skill](../../test-driven-development/) for complete workflow.
+See the Test-Driven Development skill for complete workflow (available in the skill library for comprehensive TDD guidance).
 
 ## How TDD Prevents Each Anti-Pattern
 
@@ -642,10 +642,10 @@ test('returns cached result', () => {
 ## Integration with Other Skills
 
 **Prerequisite skills:**
-- [test-driven-development](../../test-driven-development/) - Complete TDD workflow
+- **test-driven-development**: Complete TDD workflow (see skill library for full details)
 
 **Complementary skills:**
-- [verification-before-completion](../../../productivity/verification-before-completion/) - Definition of "done"
+- **verification-before-completion**: Definition of "done" (available in skill library)
 
 **Anti-pattern prevention:**
 - This skill - What TDD prevents
@@ -692,4 +692,4 @@ Always refactor
 Never skip the cycle
 ```
 
-See [test-driven-development skill](../../test-driven-development/) for complete TDD workflow and examples.
+See the Test-Driven Development skill for complete TDD workflow and examples (available in the skill library).

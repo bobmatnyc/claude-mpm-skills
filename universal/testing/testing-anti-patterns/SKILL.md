@@ -23,7 +23,7 @@ Tests must verify real behavior, not mock behavior. Mocks are a means to isolate
 
 **Core principle:** Test what the code does, not what the mocks do.
 
-**Following strict TDD prevents these anti-patterns.** See [test-driven-development skill](../test-driven-development/) for the complete TDD workflow.
+**Following strict TDD prevents these anti-patterns.** See the Test-Driven Development skill (available in the skill library) for the complete TDD workflow.
 
 ## When to Use This Skill
 
@@ -111,8 +111,20 @@ If you're testing mock behavior, you've gone wrong. Fix: Test real behavior or q
 - **[TDD Connection](references/tdd-connection.md)** - How test-driven development prevents these patterns
 
 ### Related Skills
-- **[test-driven-development](../test-driven-development/)** - Complete TDD workflow (prevents these patterns)
-- **[verification-before-completion](../../../productivity/verification-before-completion/)** - Testing is part of "done"
+
+When using this skill, consider these complementary skills (if deployed in your skill bundle):
+
+- **test-driven-development**: Complete TDD workflow and red-green-refactor cycle
+  - *Use case*: Implementing TDD discipline to prevent anti-patterns
+  - *Integration*: TDD workflow prevents most anti-patterns by design
+  - *Status*: Recommended - basic anti-patterns covered in this skill
+
+- **verification-before-completion**: Definition of "done" and verification protocols
+  - *Use case*: Ensuring tests are part of completion criteria
+  - *Integration*: Tests must pass before work is considered complete
+  - *Status*: Recommended - testing mindset reinforcement
+
+*Note: All skills are independently deployable. This skill is fully functional without them.*
 
 ## Key Reminders
 
@@ -135,6 +147,6 @@ If you're testing mock behavior, you've gone wrong. Fix: Test real behavior or q
 
 ## Integration with Other Skills
 
-**Prerequisite:** [test-driven-development](../test-driven-development/) - TDD prevents anti-patterns
-**Complementary:** [verification-before-completion](../../../productivity/verification-before-completion/) - Tests = done
-**Domain-specific:** webapp-testing, backend-testing for framework patterns
+**Prerequisite:** Test-Driven Development skill - TDD prevents anti-patterns (recommended for complete workflow)
+**Complementary:** Verification-Before-Completion skill - Tests = done (ensures proper testing discipline)
+**Domain-specific:** webapp-testing, backend-testing for framework patterns (see skill library if available)

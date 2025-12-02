@@ -1,3 +1,8 @@
+---
+name: internal-comms-3p-updates
+description: Framework for writing concise 3P (Progress, Plans, Problems) team updates for executives and stakeholders. Use when creating team status updates, summarizing sprint accomplishments, or communicating team progress to leadership.
+---
+
 ## Instructions
 You are being asked to write a 3P update. 3P updates stand for "Progress, Plans, Problems." The main audience is for executives, leadership, other teammates, etc. They're meant to be very succinct and to-the-point: think something you can read in 30-60sec or less. They're also for people with some, but not a lot of context on what the team does.
 

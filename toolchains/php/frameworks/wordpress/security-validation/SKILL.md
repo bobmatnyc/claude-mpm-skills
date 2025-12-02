@@ -1,4 +1,6 @@
 ---
+name: wordpress-security-validation
+description: Security-first WordPress development with nonces, sanitization, validation, and escaping to prevent XSS, CSRF, and SQL injection vulnerabilities.
 progressive_disclosure:
   entry_point:
     summary: "Security-first WordPress development with nonces, sanitization, validation, and escaping for robust plugin/theme security"

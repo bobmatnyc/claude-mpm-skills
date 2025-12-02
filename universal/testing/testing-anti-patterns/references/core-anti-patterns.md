@@ -408,4 +408,4 @@ vi.mock('./database');
 - Test-only methods (minimal implementation doesn't add them)
 - Uninformed mocking (you understand needs before mocking)
 
-See [test-driven-development skill](../../test-driven-development/) for complete TDD workflow.
+See the Test-Driven Development skill for complete TDD workflow (available in the skill library for comprehensive TDD guidance).

@@ -566,4 +566,4 @@ npm test -- --coverage --coverageThreshold='{"global":{"lines":80}}'
 
 **This workflow prevents all five anti-patterns naturally.**
 
-See [test-driven-development skill](../../test-driven-development/) for complete TDD workflow.
+See the Test-Driven Development skill for complete TDD workflow (available in the skill library for comprehensive TDD guidance).

@@ -549,7 +549,7 @@ test('user registration validates email', async () => {
 - Complete data structures (test fails if incomplete)
 - Complete coverage (tests drive implementation)
 
-See [test-driven-development skill](../../test-driven-development/) for complete TDD workflow.
+See the Test-Driven Development skill for complete TDD workflow (available in the skill library for comprehensive TDD guidance).
 
 ## Real-World Impact
 

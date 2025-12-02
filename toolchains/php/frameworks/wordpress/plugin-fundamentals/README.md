@@ -73,9 +73,9 @@ This skill provides comprehensive guidance for building secure, maintainable Wor
 
 ## Related Skills
 
-- **[../security-validation](../security-validation/SKILL.md)**: WordPress security patterns, nonces, sanitization
-- **[../block-editor](../block-editor/SKILL.md)**: Block Editor development, FSE, theme.json
-- **[../../../testing/phpunit](../../../testing/phpunit/SKILL.md)**: PHPUnit testing for WordPress
+- **security-validation**: WordPress security patterns, nonces, sanitization (available in the skill library)
+- **block-editor**: Block Editor development, FSE, theme.json (available in the skill library)
+- **phpunit**: PHPUnit testing for WordPress (available in the skill library)
 
 ## Design Decisions
 

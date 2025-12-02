@@ -1,3 +1,8 @@
+---
+name: nodejs-backend-typescript
+description: Node.js backend development with TypeScript, Express/Fastify servers, routing, middleware, and database integration. Use when building REST APIs with TypeScript, creating Express/Fastify servers, or implementing microservices architectures.
+---
+
 # Node.js Backend Development with TypeScript
 
 ---

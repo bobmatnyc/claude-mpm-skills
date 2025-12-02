@@ -1,3 +1,8 @@
+---
+name: env-manager
+description: Environment variable validation, security scanning, and management for Next.js, Vite, React, and Node.js applications. Use when validating environment configurations, preventing exposed secrets, or implementing framework-aware environment variable management.
+---
+
 # Environment Variable Manager (env-manager)
 
 **Comprehensive environment variable validation, security scanning, and management for modern web applications.**

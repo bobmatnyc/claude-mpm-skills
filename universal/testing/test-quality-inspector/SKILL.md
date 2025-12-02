@@ -1,3 +1,8 @@
+---
+name: test-quality-inspector
+description: Test quality inspection framework for reviewing test coverage, identifying gaps, and ensuring comprehensive validation. Use when reviewing test suites, performing QA inspections, or establishing testing quality standards.
+---
+
 # Example Test Inspection Report
 
 ## Scenario: User Registration Feature
@@ -394,7 +399,7 @@ def test_user_creation_with_valid_data_persists_to_database():
 # Then implement create_user to make it pass
 ```
 
-See [test-driven-development skill](../../test-driven-development/) for complete TDD workflow.
+See the Test-Driven Development skill for complete TDD workflow (available in the skill library for comprehensive TDD guidance).
 
 ---
 

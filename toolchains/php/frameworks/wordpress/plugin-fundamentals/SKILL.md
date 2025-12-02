@@ -1292,9 +1292,11 @@ $controller = $container->get( 'controller' );
 
 ## Related Skills
 
-- **[security-validation](../security-validation/SKILL.md)**: WordPress security, nonces, sanitization, validation, escaping
-- **[block-editor](../block-editor/SKILL.md)**: Block Editor development, FSE, theme.json, custom blocks
-- **[../../../testing/phpunit](../../../testing/phpunit/SKILL.md)**: PHPUnit testing for WordPress plugins
+When developing WordPress plugins, consider these complementary skills (available in the skill library):
+
+- **security-validation**: WordPress security, nonces, sanitization, validation, escaping - critical for securing plugin functionality
+- **block-editor**: Block Editor development, FSE, theme.json, custom blocks - extend plugins with modern block-based interfaces
+- **phpunit**: PHPUnit testing for WordPress plugins - comprehensive testing strategies for WordPress plugin development
 
 ## Resources
 

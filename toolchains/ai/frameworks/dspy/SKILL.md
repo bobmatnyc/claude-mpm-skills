@@ -1,3 +1,8 @@
+---
+name: dspy-framework
+description: DSPy declarative framework for automatic prompt optimization treating prompts as code with systematic evaluation and compilers. Use when optimizing prompts systematically, building production LLM systems, implementing RAG/classification tasks, or requiring version-controlled reproducible prompts.
+---
+
 # DSPy Framework
 
 ---

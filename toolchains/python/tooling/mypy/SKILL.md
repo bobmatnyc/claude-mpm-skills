@@ -1272,9 +1272,11 @@ mypy --verbose src/
 
 ## Related Skills
 
-- **[pytest](../../testing/pytest/)**: Type-safe testing with mypy
-- **[fastapi-local-dev](../../frameworks/fastapi-local-dev/)**: FastAPI with full type safety
-- **[pydantic](../../data/pydantic/)**: Runtime type validation with mypy support
+When using mypy, consider these complementary skills (available in the skill library):
+
+- **pytest**: Type-safe testing with mypy - integrates type checking into your test suite for comprehensive type coverage
+- **fastapi-local-dev**: FastAPI with full type safety - combines FastAPI's runtime validation with mypy's static checking
+- **pydantic**: Runtime type validation with mypy support - validates data at runtime while mypy validates at compile time
 
 ---
 

@@ -1,3 +1,8 @@
+---
+name: trpc-type-safety
+description: tRPC end-to-end type-safe APIs for TypeScript with React Query integration and full-stack type safety. Use when building Next.js applications requiring type-safe API calls, implementing React Query patterns, or eliminating API schema duplication.
+---
+
 # tRPC - End-to-End Type Safety
 
 ---

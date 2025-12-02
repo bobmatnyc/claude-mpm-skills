@@ -1,4 +1,6 @@
 ---
+name: wordpress-advanced-architecture
+description: Advanced WordPress development with REST API endpoints, WP-CLI commands, performance optimization, and caching strategies for scalable applications.
 progressive_disclosure:
   entry_point:
     summary: "Advanced WordPress development with REST API, WP-CLI, performance optimization, and caching strategies"
@@ -1672,11 +1674,13 @@ function process_books_batch() {
 
 ## Related Skills
 
-- [WordPress Plugin Fundamentals](../plugin-fundamentals/SKILL.md) - Core plugin architecture and hooks
-- [WordPress Security & Data Validation](../security/SKILL.md) - Security best practices
-- [WordPress Testing & QA](../testing-qa/SKILL.md) - Testing REST endpoints and WP-CLI
-- [GraphQL](../../../../universal/data/graphql/SKILL.md) - Alternative to REST API
-- [Docker](../../../../universal/infrastructure/docker/SKILL.md) - Development environment setup
+When building advanced WordPress applications, consider these complementary skills (available in the skill library):
+
+- **WordPress Plugin Fundamentals**: Core plugin architecture and hooks - essential foundation for custom REST endpoints and WP-CLI commands
+- **WordPress Security & Data Validation**: Security best practices - critical for securing REST API endpoints and validating user input
+- **WordPress Testing & QA**: Testing REST endpoints and WP-CLI - comprehensive testing strategies for advanced WordPress features
+- **GraphQL**: Alternative to REST API - consider GraphQL as a modern alternative to WordPress REST API for complex data queries
+- **Docker**: Development environment setup - containerize WordPress development for consistent and reproducible environments
 
 ## References
 

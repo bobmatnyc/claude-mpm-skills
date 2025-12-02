@@ -1,4 +1,6 @@
 ---
+name: graphql
+description: GraphQL query language and runtime for APIs enabling clients to request exactly the data they need with strongly-typed schemas and single endpoint architecture.
 progressive_disclosure:
   entry_point:
     - summary

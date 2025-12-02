@@ -1,3 +1,8 @@
+---
+name: webapp-testing-patterns
+description: Comprehensive web application testing patterns with Playwright selectors, wait strategies, and best practices. Use when implementing E2E tests, defining reliable selectors, or establishing testing best practices for web applications.
+---
+
 # Playwright Patterns Reference
 
 Complete guide to Playwright automation patterns, selectors, and best practices.

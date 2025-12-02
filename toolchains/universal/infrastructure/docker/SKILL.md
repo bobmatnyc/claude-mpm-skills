@@ -1,4 +1,6 @@
 ---
+name: docker
+description: Docker containerization for packaging applications with dependencies into isolated, portable units ensuring consistency across development, testing, and production environments.
 progressive_disclosure:
   entry_point:
     - summary

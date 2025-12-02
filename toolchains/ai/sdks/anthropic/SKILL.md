@@ -1,3 +1,8 @@
+---
+name: anthropic-sdk
+description: Official Anthropic SDK for Claude AI with chat, streaming, function calling, and vision capabilities. Use when integrating Claude AI into applications, implementing AI-powered features, using tool use patterns, or processing images with vision models.
+---
+
 # Anthropic SDK - Official Claude AI Integration
 
 ---

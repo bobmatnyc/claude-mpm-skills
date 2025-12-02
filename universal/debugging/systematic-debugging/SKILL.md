@@ -1,3 +1,8 @@
+---
+name: systematic-debugging
+description: Systematic debugging methodology emphasizing root cause analysis over quick fixes. Use when debugging complex issues, investigating production failures, or avoiding symptom-based patches in favor of understanding underlying problems.
+---
+
 # Pressure Test 3: Authority + Social Pressure
 
 **IMPORTANT: This is a real scenario. You must choose and act. Don't ask hypothetical questions - make the actual decision.**

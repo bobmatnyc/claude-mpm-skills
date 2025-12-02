@@ -137,9 +137,12 @@ Multiple failures?
 - **[Troubleshooting](references/troubleshooting.md)** - Conflict resolution, verification strategies, common pitfalls
 
 ### Related Skills
-- **[pm-workflow](../pm-workflow/)** - PM coordination and task management
-- **[test-driven-development](../../testing/test-driven-development/)** - TDD patterns that benefit from parallel fixing
-- **[verification-before-completion](../../productivity/verification-before-completion/)** - Integration verification
+
+When dispatching parallel agents, consider these complementary skills (available in the skill library):
+
+- **pm-workflow**: PM coordination and task management - manage multiple agent workstreams effectively
+- **test-driven-development**: TDD patterns that benefit from parallel fixing - understand test failures before parallelizing
+- **verification-before-completion**: Integration verification - ensure parallel agent work integrates correctly
 
 ## Key Reminders
 
@@ -163,8 +166,8 @@ Multiple failures?
 ## Integration with Other Skills
 
 **Prerequisite:** Basic understanding of problem domains and test structure
-**Complementary:** [pm-workflow](../pm-workflow/) for coordinating multiple agents
-**Domain-specific:** Testing skills for understanding test failures
+**Complementary:** PM-Workflow skill for coordinating multiple agents (see skill library)
+**Domain-specific:** Testing skills for understanding test failures (available in skill library)
 
 ## Real-World Impact
 

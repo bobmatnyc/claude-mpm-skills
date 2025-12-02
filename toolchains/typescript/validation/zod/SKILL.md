@@ -1,4 +1,6 @@
 ---
+name: zod
+description: TypeScript-first schema validation library with static type inference for form validation, API validation, and runtime type checking with compile-time types.
 progressive_disclosure:
   entry_point:
     - summary

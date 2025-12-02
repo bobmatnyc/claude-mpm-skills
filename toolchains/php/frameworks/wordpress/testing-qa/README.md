@@ -100,11 +100,12 @@ testing-qa/
 
 ## Related Skills
 
-- [WordPress Plugin Fundamentals](../plugin-fundamentals/)
-- [WordPress Security & Validation](../security-validation/)
-- [WordPress Block Editor](../block-editor/)
-- [Python pytest Testing](../../../../python/testing/pytest/)
-- [GitHub Actions](../../../../universal/infrastructure/github-actions/)
+Related skills available in the skill library:
+- **WordPress Plugin Fundamentals**: Core plugin architecture and hooks
+- **WordPress Security & Validation**: Security patterns and data validation
+- **WordPress Block Editor**: Modern block development and testing
+- **Python pytest Testing**: Testing patterns applicable to WordPress
+- **GitHub Actions**: CI/CD automation for WordPress testing pipelines
 
 ## Testing Workflow Example
 
