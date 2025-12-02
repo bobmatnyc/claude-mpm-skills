@@ -6,6 +6,29 @@
 
 This repository contains a comprehensive collection of **82 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, AI, and universal tooling.
 
+## What is Claude MPM?
+
+**Claude MPM (Multi-Agent Project Manager)** is an advanced orchestration framework that runs within Claude Code (Anthropic's official CLI). It enables:
+
+- **Multi-Agent Coordination**: Specialized agents for different tasks (research, engineering, QA, ops)
+- **Intelligent Delegation**: PM agent coordinates work across specialist agents
+- **Context Management**: Efficient token usage with progressive disclosure
+- **Skill System**: Modular, reusable knowledge bases (this repository)
+
+**Key Components:**
+- **Claude Code**: Anthropic's official CLI environment
+- **Claude MPM**: Multi-agent framework running in Claude Code
+- **Skills**: Domain-specific knowledge modules (this repo contains 82+ skills)
+
+**How They Work Together:**
+```
+Claude Code (CLI)
+    ↓
+Claude MPM (Multi-Agent Framework)
+    ↓
+Skills (Knowledge Modules) ← You are here
+```
+
 ## Features
 
 - **Progressive Loading**: Skills load on-demand with 60-95 token entry points, expanding to 3,000-6,000 tokens
@@ -204,6 +227,82 @@ claude-mpm-skills/
 - TDD - Test-driven development workflows
 - Systematic Debugging - Root cause analysis
 
+## Installation
+
+### Prerequisites
+
+- **Claude Code** (Anthropic's official CLI)
+- **Claude MPM** framework
+
+### Step 1: Install Claude MPM
+
+```bash
+# Install via pip (recommended)
+pip install claude-mpm
+
+# Or install via Homebrew (macOS)
+brew tap bobmatnyc/tools
+brew install claude-mpm
+
+# Or install from source
+git clone https://github.com/bobmatnyc/claude-mpm.git
+cd claude-mpm
+pip install -e .
+```
+
+### Step 2: Initialize Claude MPM in Your Project
+
+```bash
+# Navigate to your project directory
+cd your-project
+
+# Initialize Claude MPM
+/mpm-init
+```
+
+This creates `.claude-mpm/` directory with configuration and agent setup.
+
+### Step 3: Deploy Skills (Automatic)
+
+```bash
+# Auto-detect your project stack and deploy relevant skills
+/mpm-auto-configure
+
+# Or use the agent auto-configuration
+/mpm-agents-auto-configure
+```
+
+Skills are automatically selected based on:
+- `package.json` → TypeScript/JavaScript skills
+- `pyproject.toml` → Python skills
+- Framework configs → Next.js, React, Django, FastAPI
+- Dependencies → AI frameworks (LangChain, Anthropic)
+
+### Step 4: Verify Installation
+
+```bash
+# Check MPM status
+/mpm-status
+
+# List available skills
+/mpm-agents-list
+
+# View deployed agents
+/mpm-agents
+```
+
+### Manual Skill Installation (Alternative)
+
+Clone this repository to make skills available to Claude MPM:
+
+```bash
+# Clone skills repository
+git clone https://github.com/bobmatnyc/claude-mpm-skills.git
+
+# Link to Claude MPM skills directory
+ln -s $(pwd)/claude-mpm-skills ~/.claude-mpm/skills
+```
+
 ## Usage
 
 ### Automatic Deployment (Recommended)
@@ -318,12 +417,30 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## Documentation
 
-- **[Versioning Policy](docs/VERSIONING.md)**: Semantic versioning for skills
-- **[Research Documents](docs/research/)**: Comprehensive technique analysis
-  - Skills library structure and coverage analysis
-  - AI session compression techniques
-  - AI prompt training techniques
-  - Quick wins coverage analysis
+### User Documentation
+
+- **[User Guide](docs/USER_GUIDE.md)** - Understanding and using Claude Code skills
+- **[Troubleshooting](docs/TROUBLESHOOTING.md)** - Common issues and solutions
+
+### Developer Documentation
+
+- **[Skill Creation Guide](docs/SKILL_CREATION_GUIDE.md)** - Building your own skills
+- **[Best Practices](docs/SKILL_SELF_CONTAINMENT_STANDARD.md)** - Self-containment standards
+- **[Contributing](CONTRIBUTING.md)** - Contribution guidelines
+- **[Versioning Policy](docs/VERSIONING.md)** - Semantic versioning for skills
+
+### Architecture & Research
+
+- **[Architecture](docs/STRUCTURE.md)** - Repository structure
+- **[Research Documents](docs/research/)** - Pattern analysis and guides
+  - Python, TypeScript, Ruby, Rust, PHP, Java, Go advanced patterns
+  - Skills compliance analysis
+  - Coverage analysis
+
+### Reference
+
+- **[PR Checklist](docs/SKILL_CREATION_PR_CHECKLIST.md)** - Submission requirements
+- **[GitHub Setup](docs/GITHUB_REPOSITORY_SETUP.md)** - Repository configuration
 
 ## License
 
@@ -331,8 +448,10 @@ MIT License - See [LICENSE](LICENSE)
 
 ## Links
 
-- **Claude MPM**: https://github.com/bobmatnyc/claude-mpm
-- **Documentation**: https://github.com/bobmatnyc/claude-mpm/tree/main/docs
+- **Claude MPM Framework**: https://github.com/bobmatnyc/claude-mpm
+- **Claude MPM Documentation**: https://github.com/bobmatnyc/claude-mpm/tree/main/docs
+- **Skills Documentation**: [docs/USER_GUIDE.md](docs/USER_GUIDE.md)
+- **Skill Creation Guide**: [docs/SKILL_CREATION_GUIDE.md](docs/SKILL_CREATION_GUIDE.md)
 - **Issues**: https://github.com/bobmatnyc/claude-mpm-skills/issues
 - **Discussions**: https://github.com/bobmatnyc/claude-mpm-skills/discussions
 
