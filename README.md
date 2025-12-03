@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains a comprehensive collection of **82 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, AI, and universal tooling.
+This repository contains a comprehensive collection of **89 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, PHP, Rust, AI, and universal tooling.
 
 ## What is Claude MPM?
 
@@ -18,7 +18,7 @@ This repository contains a comprehensive collection of **82 Claude Code skills**
 **Key Components:**
 - **Claude Code**: Anthropic's official CLI environment
 - **Claude MPM**: Multi-agent framework running in Claude Code
-- **Skills**: Domain-specific knowledge modules (this repo contains 82+ skills)
+- **Skills**: Domain-specific knowledge modules (this repo contains 89 skills)
 
 **How They Work Together:**
 ```
@@ -32,32 +32,32 @@ Skills (Knowledge Modules) ← You are here
 ## Features
 
 - **Progressive Loading**: Skills load on-demand with 60-95 token entry points, expanding to 3,000-6,000 tokens
-- **Token Efficiency**: 99.7% token savings during discovery phase
+- **Token Efficiency**: 98.2% token savings during discovery phase
 - **Toolchain Detection**: Automatically deploy relevant skills based on project type
 - **Production-Ready**: All skills include real-world examples, best practices, and troubleshooting
 - **Research-Backed**: Built on latest 2025 techniques and industry patterns
 
 ## Quick Stats
 
-- **Total Skills**: 82 production-ready skills
+- **Total Skills**: 89 production-ready skills
 - **Coverage**: 95%+ of modern development workflows
-- **Token Efficiency**: ~1,100 entry tokens vs ~348,000 full tokens (99.7% savings)
-- **Categories**: Python, TypeScript, JavaScript, Next.js, UI, AI, Platforms, Universal
+- **Token Efficiency**: ~7,120 entry tokens vs ~400,500 full tokens (98.2% savings)
+- **Categories**: Python, TypeScript, JavaScript, PHP, Rust, Next.js, UI, AI, Platforms, Universal
 - **Complete Stacks**: Full-stack TypeScript, Python Web, React Frontend, AI Workflows
 
 ## Repository Structure
 
 ```
 claude-mpm-skills/
-├── toolchains/          # Language/framework-specific skills (50 skills)
-│   ├── python/         # 11 skills
+├── toolchains/          # Language/framework-specific skills (60 skills)
+│   ├── python/         # 10 skills
 │   │   ├── frameworks/     # Django, FastAPI, Flask
 │   │   ├── testing/        # pytest
 │   │   ├── data/           # SQLAlchemy
 │   │   ├── async/          # asyncio, Celery
 │   │   ├── tooling/        # mypy, pyright
 │   │   └── validation/     # Pydantic
-│   ├── typescript/     # 14 skills
+│   ├── typescript/     # 12 skills
 │   │   ├── frameworks/     # React, Vue, Node.js backend
 │   │   ├── testing/        # Vitest, Jest
 │   │   ├── data/           # Drizzle, Kysely, Prisma
@@ -65,15 +65,20 @@ claude-mpm-skills/
 │   │   ├── state/          # Zustand, TanStack Query
 │   │   ├── api/            # tRPC
 │   │   └── build/          # Turborepo
-│   ├── javascript/     # 7 skills
+│   ├── javascript/     # 10 skills
 │   │   ├── frameworks/     # React, Vue, Svelte, SvelteKit
 │   │   ├── testing/        # Playwright
 │   │   ├── build/          # Vite
 │   │   └── tooling/        # Biome
+│   ├── php/            # 6 skills
+│   │   ├── frameworks/     # WordPress, EspoCRM
+│   │   └── testing/        # PHPUnit, PHPCS
+│   ├── rust/           # 2 skills
+│   │   └── frameworks/     # Tauri
 │   ├── nextjs/         # 2 skills
 │   │   ├── core/           # Next.js fundamentals
 │   │   └── v16/            # Next.js 16 (Turbopack, cache components)
-│   ├── ui/             # 5 skills
+│   ├── ui/             # 4 skills
 │   │   ├── styling/        # Tailwind CSS
 │   │   └── components/     # shadcn/ui, DaisyUI, Headless UI
 │   ├── ai/             # 7 skills
@@ -86,7 +91,7 @@ claude-mpm-skills/
 │       ├── deployment/     # Vercel, Netlify
 │       ├── database/       # Neon
 │       └── backend/        # Supabase
-└── universal/           # 32 skills
+└── universal/           # 27 skills
     ├── infrastructure/     # Docker, GitHub Actions
     ├── data/              # GraphQL
     ├── architecture/      # Software patterns
@@ -95,7 +100,7 @@ claude-mpm-skills/
 
 ## Complete Skill Catalog
 
-### Python (11 Skills)
+### Python (10 Skills)
 
 **Frameworks**:
 - Django - Full-featured web framework with ORM, admin, DRF
@@ -119,7 +124,7 @@ claude-mpm-skills/
 **Validation**:
 - Pydantic - Data validation with type hints, FastAPI/Django integration
 
-### TypeScript (14 Skills)
+### TypeScript (12 Skills)
 
 **Frameworks**:
 - React - Hooks, context, performance optimization
@@ -148,7 +153,7 @@ claude-mpm-skills/
 **Build Tools**:
 - Turborepo - Monorepo with intelligent caching
 
-### JavaScript (7 Skills)
+### JavaScript (10 Skills)
 
 **Frameworks**:
 - React - Component patterns (also in TypeScript)
@@ -165,12 +170,30 @@ claude-mpm-skills/
 **Tooling**:
 - Biome - Fast linter and formatter (Rust-powered)
 
+### PHP (6 Skills)
+
+**WordPress Ecosystem**:
+- wordpress-advanced-architecture - REST API, WP-CLI, performance optimization, caching strategies
+- wordpress-block-editor - Block themes, FSE architecture, theme.json, custom Gutenberg blocks
+- wordpress-testing-qa - PHPUnit integration tests, WP_Mock unit tests, PHPCS coding standards
+
+**Enterprise**:
+- espocrm-development - EspoCRM customization, entity management, API extensions
+- espocrm-advanced-features - Advanced workflows, complex business logic implementation
+- espocrm-deployment - Production deployment, security hardening, performance tuning
+
+### Rust (2 Skills)
+
+**Desktop Applications**:
+- tauri - Cross-platform desktop apps with Rust backend, web frontend
+- tauri-advanced-events - Bidirectional communication, streaming, custom event handling
+
 ### Next.js (2 Skills)
 
 - Next.js Core - App Router, Server Components, Server Actions
 - Next.js v16 - Turbopack, cache components, migration guide
 
-### UI & Styling (5 Skills)
+### UI & Styling (4 Skills)
 
 **CSS Frameworks**:
 - Tailwind CSS - Utility-first CSS with JIT mode
@@ -211,7 +234,7 @@ claude-mpm-skills/
 **Backend**:
 - Supabase - Postgres + Auth + Storage + Realtime + RLS
 
-### Universal (32 Skills)
+### Universal (27 Skills)
 
 **Infrastructure**:
 - Docker - Containerization, multi-stage builds, compose
@@ -392,12 +415,12 @@ Skills use a two-tier structure for optimal token efficiency:
 - Testing strategies
 - Troubleshooting
 
-**Token Savings**: 99.7% during discovery (load 82 entry points vs all full docs)
+**Token Savings**: 98.2% during discovery (load 89 entry points vs all full docs)
 
 ## Performance Benchmarks
 
-- **Discovery Phase**: 1,100 tokens (all 82 entry points) vs 348,000 tokens (all full docs)
-- **Token Efficiency**: 99.7% reduction during skill browsing
+- **Discovery Phase**: 7,120 tokens (all 89 entry points) vs 400,500 tokens (all full docs)
+- **Token Efficiency**: 98.2% reduction during skill browsing
 - **Coverage**: 95%+ of modern development workflows
 - **Production Adopters**: Skills based on patterns from JetBlue, Databricks, Walmart, VMware
 
@@ -465,7 +488,7 @@ Built with research from:
 
 ---
 
-**Last Updated**: 2025-11-30
-**Skills Count**: 82
+**Last Updated**: 2025-12-02
+**Skills Count**: 89
 **Coverage**: 95%+
-**Token Efficiency**: 99.7%
+**Token Efficiency**: 98.2%
