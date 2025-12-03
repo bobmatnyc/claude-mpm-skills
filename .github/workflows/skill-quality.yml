@@ -1,0 +1,201 @@
+name: Skill Quality Checks
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+      - 'scripts/check_voice_consistency.py'
+      - '.github/workflows/skill-quality.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.md'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  voice-consistency:
+    name: Voice Consistency & Example Format
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run quality checks
+        id: quality_check
+        run: |
+          python scripts/check_voice_consistency.py \
+            --format json \
+            --ci \
+            > quality-report.json
+        continue-on-error: true
+
+      - name: Generate report summary
+        if: always()
+        run: |
+          python scripts/check_voice_consistency.py \
+            --format text \
+            > quality-report.txt
+
+      - name: Upload quality report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-report
+          path: |
+            quality-report.json
+            quality-report.txt
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Read report
+            let report;
+            try {
+              report = JSON.parse(fs.readFileSync('quality-report.json', 'utf8'));
+            } catch (e) {
+              console.log('No report generated');
+              return;
+            }
+
+            const summary = report.summary;
+            const files = report.files || [];
+
+            // Build comment
+            let comment = '## 📊 Skill Quality Report\n\n';
+            comment += '### Summary\n';
+            comment += `- **Files checked:** ${summary.total_files}\n`;
+            comment += `- **Files with violations:** ${summary.files_with_violations}\n`;
+            comment += `- 🔴 **Errors:** ${summary.total_errors} (critical)\n`;
+            comment += `- 🟡 **Warnings:** ${summary.total_warnings}\n`;
+            comment += `- 🔵 **Info:** ${summary.total_info}\n\n`;
+
+            if (summary.total_errors === 0 && summary.total_warnings === 0 && summary.total_info === 0) {
+              comment += '✅ **All checks passed!** Skills maintain high quality standards.\n';
+            } else if (summary.total_errors > 0) {
+              comment += '❌ **Critical violations found.** Please fix before merging.\n\n';
+              comment += '### Violations by File\n\n';
+
+              for (const file of files.slice(0, 5)) {
+                comment += `#### \`${file.path}\`\n`;
+                comment += `${file.error_count} errors, ${file.warning_count} warnings, ${file.info_count} info\n\n`;
+
+                const errors = file.violations.filter(v => v.severity === 'error').slice(0, 3);
+                if (errors.length > 0) {
+                  comment += '**Top Errors:**\n';
+                  for (const v of errors) {
+                    comment += `- Line ${v.line}: ${v.message}\n`;
+                    if (v.suggestion) {
+                      comment += `  - *Fix:* ${v.suggestion}\n`;
+                    }
+                  }
+                  comment += '\n';
+                }
+              }
+
+              if (files.length > 5) {
+                comment += `\n*... and ${files.length - 5} more files with violations*\n`;
+              }
+            } else {
+              comment += '⚠️ **Warnings found.** Consider fixing for better quality.\n';
+            }
+
+            comment += '\n---\n';
+            comment += '<details><summary>View full report</summary>\n\n';
+            comment += '```\n';
+            comment += fs.readFileSync('quality-report.txt', 'utf8');
+            comment += '```\n';
+            comment += '</details>\n';
+
+            // Find existing comment
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+
+            const botComment = comments.find(comment =>
+              comment.user.type === 'Bot' &&
+              comment.body.includes('Skill Quality Report')
+            );
+
+            // Create or update comment
+            if (botComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: comment
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: comment
+              });
+            }
+
+      - name: Fail on critical violations
+        if: always()
+        run: |
+          if [ -f quality-report.json ]; then
+            ERRORS=$(jq '.summary.total_errors' quality-report.json)
+            if [ "$ERRORS" -gt 0 ]; then
+              echo "❌ Found $ERRORS critical violations"
+              exit 1
+            fi
+          fi
+
+  skill-count-verification:
+    name: Verify Skill Count Accuracy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Count SKILL.md files
+        id: count
+        run: |
+          ACTUAL_COUNT=$(find . -name "SKILL.md" -type f | wc -l)
+          echo "actual_count=$ACTUAL_COUNT" >> $GITHUB_OUTPUT
+          echo "Found $ACTUAL_COUNT SKILL.md files"
+
+      - name: Extract documented count from README
+        id: documented
+        run: |
+          if [ -f README.md ]; then
+            # Look for skill count in README (format: "89 skills" or similar)
+            DOCUMENTED_COUNT=$(grep -oP '\d+ skills' README.md | head -1 | grep -oP '\d+' || echo "0")
+            echo "documented_count=$DOCUMENTED_COUNT" >> $GITHUB_OUTPUT
+            echo "README documents $DOCUMENTED_COUNT skills"
+          else
+            echo "documented_count=0" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Compare counts
+        run: |
+          ACTUAL=${{ steps.count.outputs.actual_count }}
+          DOCUMENTED=${{ steps.documented.outputs.documented_count }}
+
+          if [ "$ACTUAL" != "$DOCUMENTED" ]; then
+            echo "⚠️  Skill count mismatch!"
+            echo "Actual: $ACTUAL"
+            echo "Documented in README: $DOCUMENTED"
+            echo "Please update README.md to reflect correct skill count."
+            exit 1
+          else
+            echo "✅ Skill count matches: $ACTUAL skills"
+          fi
