@@ -108,3 +108,7 @@ yarn-error.log*
 
 # MCP Ticketer
 .mcp-ticketer/
+
+# Aitrackdown (ticket management)
+.aitrackdown/
+.aitrackdown*
