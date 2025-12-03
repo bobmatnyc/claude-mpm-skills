@@ -1,5 +1,4 @@
 ---
-name: github-actions
 progressive_disclosure:
   entry_point:
     - summary
