@@ -105,3 +105,6 @@ yarn-error.log*
 .claude-mpm/tmp/
 .claude/cache/
 .claude/sessions/
+
+# MCP Ticketer
+.mcp-ticketer/
