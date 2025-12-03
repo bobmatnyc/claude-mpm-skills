@@ -4,7 +4,9 @@ The three most critical testing anti-patterns that violate fundamental testing p
 
 ## Anti-Pattern 1: Testing Mock Behavior
 
-**The violation:**
+### The Violation
+
+**[TypeScript/Jest]**
 ```typescript
 // ❌ BAD: Testing that the mock exists
 test('renders sidebar', () => {
@@ -13,15 +15,33 @@ test('renders sidebar', () => {
 });
 ```
 
+**[Python/pytest]**
+```python
+# ❌ BAD: Testing mock behavior, not real code
+from unittest.mock import Mock
+
+def test_send_email():
+    mock_mailer = Mock()
+
+    send_welcome_email(mock_mailer, "user@example.com")
+
+    # Asserting on MOCK behavior
+    assert mock_mailer.send_email.called  # Testing the mock!
+    assert mock_mailer.send_email.call_count == 1
+    mock_mailer.send_email.assert_called_with("user@example.com", "Welcome!")
+```
+
 **Why this is wrong:**
-- You're verifying the mock works, not that the component works
+- You're verifying the mock works, not that the component/function works
 - Test passes when mock is present, fails when it's not
 - Tells you nothing about real behavior
 - False confidence - production may still be broken
 
 **your human partner's correction:** "Are we testing the behavior of a mock?"
 
-**The fix:**
+### The Fix
+
+**[TypeScript/Jest]**
 ```typescript
 // ✅ GOOD: Test real component or don't mock it
 test('renders sidebar', () => {
@@ -37,13 +57,43 @@ test('page layout includes sidebar area', () => {
 });
 ```
 
+**[Python/pytest]**
+```python
+# ✅ GOOD: Test real behavior with test double
+class FakeMailer:
+    def __init__(self):
+        self.sent_emails = []
+
+    def send_email(self, to: str, subject: str, body: str):
+        self.sent_emails.append({"to": to, "subject": subject, "body": body})
+
+def test_send_welcome_email_sends_correct_content():
+    mailer = FakeMailer()
+
+    send_welcome_email(mailer, "user@example.com")
+
+    # Assert on REAL behavior
+    assert len(mailer.sent_emails) == 1
+    email = mailer.sent_emails[0]
+    assert email["to"] == "user@example.com"
+    assert email["subject"] == "Welcome!"
+    assert "Thank you for signing up" in email["body"]
+```
+
 ### Detection Strategy
 
-**Red flags:**
+**Red flags (TypeScript/Jest):**
 - Assertions check for `*-mock` in test IDs
 - Test IDs contain "mock", "stub", "fake"
 - Test fails when you remove the mock
 - Can't explain what real behavior you're testing
+
+**Red flags (Python/pytest):**
+- `mock.assert_called()`
+- `mock.assert_called_once()`
+- `mock.assert_called_with(...)`
+- `mock.call_count` assertions
+- Testing `.called` or `.call_args` attributes
 
 **Gate Function:**
 
@@ -80,7 +130,9 @@ BEFORE asserting on any mock element:
 
 ## Anti-Pattern 2: Test-Only Methods in Production
 
-**The violation:**
+### The Violation
+
+**[TypeScript/Jest]**
 ```typescript
 // ❌ BAD: destroy() only used in tests
 class Session {
@@ -95,15 +147,33 @@ class Session {
 afterEach(() => session.destroy());
 ```
 
+**[Python/pytest]**
+```python
+# ❌ BAD: Test-only method in production class
+class UserService:
+    def __init__(self, db: Database):
+        self._db = db
+
+    def create_user(self, email: str) -> User:
+        return self._db.insert_user(email)
+
+    # Test-only method!
+    def _set_mock_db(self, mock_db):
+        """For testing only"""
+        self._db = mock_db
+```
+
 **Why this is wrong:**
 - Production class polluted with test-only code
 - Dangerous if accidentally called in production
 - Violates YAGNI (You Aren't Gonna Need It)
 - Violates separation of concerns
-- Confuses object lifecycle with entity lifecycle
+- Breaks encapsulation
 - Creates maintenance burden (unused code in production)
 
-**The fix:**
+### The Fix
+
+**[TypeScript/Jest]**
 ```typescript
 // ✅ GOOD: Test utilities handle test cleanup
 // Session has no destroy() - it's stateless in production
@@ -125,6 +195,36 @@ export async function cleanupSession(session: Session) {
 afterEach(() => cleanupSession(session));
 ```
 
+**[Python/pytest]**
+```python
+# ✅ GOOD: Dependency injection, no test-only methods
+class UserService:
+    def __init__(self, db: Database):
+        self._db = db  # Injected dependency
+
+    def create_user(self, email: str) -> User:
+        return self._db.insert_user(email)
+
+# test_user_service.py
+class FakeDatabase:
+    def __init__(self):
+        self.users = []
+
+    def insert_user(self, email: str) -> User:
+        user = User(id=len(self.users) + 1, email=email)
+        self.users.append(user)
+        return user
+
+def test_create_user():
+    fake_db = FakeDatabase()
+    service = UserService(fake_db)
+
+    user = service.create_user("test@example.com")
+
+    assert user.email == "test@example.com"
+    assert len(fake_db.users) == 1
+```
+
 ### When Test Utilities Make Sense
 
 **Good candidates for test utilities:**
@@ -144,11 +244,17 @@ afterEach(() => cleanupSession(session));
 
 ### Detection Strategy
 
-**Red flags:**
+**Red flags (TypeScript/Jest):**
 - Method only called in `*.test.*` or `*.spec.*` files
 - Method name suggests testing (reset, clear, destroy, mock)
 - Comments say "for testing only"
 - Method has no production use case
+
+**Red flags (Python/pytest):**
+- Methods named `_set_*`, `_mock_*`, `_for_testing`
+- Docstrings saying "For testing only"
+- `if os.getenv('TESTING')` conditionals
+- Properties that exist only for test access
 
 **Gate Function:**
 
@@ -205,7 +311,9 @@ export async function resetTestDatabase(db: Database) {
 
 ## Anti-Pattern 3: Mocking Without Understanding
 
-**The violation:**
+### The Violation
+
+**[TypeScript/Jest]**
 ```typescript
 // ❌ BAD: Mock breaks test logic
 test('detects duplicate server', async () => {
@@ -220,13 +328,28 @@ test('detects duplicate server', async () => {
 });
 ```
 
+**[Python/pytest]**
+```python
+# ❌ BAD: Mocking without understanding side effects
+@patch('user_service.send_email')
+def test_user_registration(mock_send_email):
+    register_user("test@example.com", "password123")
+
+    # Didn't realize send_email also logs to analytics
+    # Didn't realize send_email creates async task
+    # Test passes but misses important behavior
+    mock_send_email.assert_called_once()
+```
+
 **Why this is wrong:**
-- Mocked method had side effect test depended on (writing config)
+- Mocked method had side effects test depended on
 - Over-mocking to "be safe" breaks actual behavior
 - Test passes for wrong reason or fails mysteriously
 - You're testing mock behavior, not real behavior
 
-**The fix:**
+### The Fix
+
+**[TypeScript/Jest]**
 ```typescript
 // ✅ GOOD: Mock at correct level
 test('detects duplicate server', async () => {
@@ -237,6 +360,29 @@ test('detects duplicate server', async () => {
   await addServer(config);  // Config written
   await expect(addServer(config)).rejects.toThrow('already exists');
 });
+```
+
+**[Python/pytest]**
+```python
+# ✅ GOOD: Understand THEN mock minimally
+def test_user_registration():
+    # First, run WITHOUT mocks to understand behavior
+    # Discovered: send_email logs analytics + creates task
+
+    # Now mock only the external I/O
+    with patch('user_service.EmailClient.send') as mock_smtp:
+        register_user("test@example.com", "password123")
+
+        # Verify real behavior (not just mock called)
+        user = User.query.filter_by(email="test@example.com").first()
+        assert user is not None
+        assert user.email_verified is False
+
+        # Analytics logged (real behavior preserved)
+        assert Analytics.query.filter_by(event='user_registered').count() == 1
+
+        # Email attempted (mock at I/O boundary)
+        assert mock_smtp.called
 ```
 
 ### Understanding Dependencies Before Mocking
@@ -332,6 +478,7 @@ BEFORE mocking any method:
 
 **Choose the right level:**
 
+**[TypeScript/Jest]**
 ```typescript
 // ❌ Too high - breaks test logic
 vi.mock('UserService');  // Mocks everything, including state changes
@@ -344,6 +491,21 @@ vi.mock('HTTPClient');  // Mock network, preserve business logic
 
 // ✅ Right level - controls non-determinism
 vi.spyOn(Date, 'now').mockReturnValue(fixedTimestamp);
+```
+
+**[Python/pytest]**
+```python
+# ❌ Too high - breaks test logic
+@patch('user_service')  # Mocks entire module, including state
+
+# ❌ Too high - over-mocking
+@patch('user_service.UserRepository')  # Could use in-memory/test database
+
+# ✅ Right level - isolates slow operation
+@patch('requests.post')  # Mock network, preserve business logic
+
+# ✅ Right level - controls non-determinism
+@patch('time.time', return_value=1234567890)
 ```
 
 **Mocking hierarchy (top to bottom):**

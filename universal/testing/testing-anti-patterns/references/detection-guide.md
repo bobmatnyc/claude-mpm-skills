@@ -40,7 +40,7 @@ Run before committing any test:
 
 ### Red Flags
 
-**Code indicators:**
+**[TypeScript/Jest]**
 ```typescript
 // 🚩 Test ID contains "mock"
 expect(screen.getByTestId('sidebar-mock')).toBeInTheDocument();
@@ -53,6 +53,21 @@ expect(result).toBe(mockReturnValue);
 
 // 🚩 Test fails when mock removed
 // Remove mock → test fails → you're testing mock
+```
+
+**[Python/pytest]**
+```python
+# 🚩 Asserting on mock call behavior
+mock_mailer.send_email.assert_called()
+mock_mailer.send_email.assert_called_once()
+mock_mailer.send_email.assert_called_with("user@example.com", "Welcome!")
+
+# 🚩 Checking mock attributes
+assert mock_mailer.send_email.called
+assert mock_mailer.send_email.call_count == 1
+
+# 🚩 Test fails when mock removed
+# Remove mock → test fails → you're testing mock
 ```
 
 **Language patterns:**
@@ -105,7 +120,7 @@ function detectsMockTesting(testFile: string): string[] {
 
 ### Red Flags
 
-**Code indicators:**
+**[TypeScript/Jest]**
 ```typescript
 // 🚩 Method only called in test files
 // Search: "destroy(" → Only in *.test.ts files
@@ -123,10 +138,38 @@ class Session {
 // "Used by test cleanup"
 ```
 
+**[Python/pytest]**
+```python
+# 🚩 Methods only called in test files
+# Search: "_set_mock" → Only in test_*.py files
+
+# 🚩 Method names suggesting test use
+class UserService:
+    def _set_mock_db(self, db):  # 🚩
+        pass
+    def _reset_for_testing(self):  # 🚩
+        pass
+    def _mock_dependencies(self):  # 🚩
+        pass
+
+# 🚩 Docstrings acknowledging test-only use
+"""For testing only"""
+"""Used by test fixtures"""
+```
+
 **File analysis:**
+
+**[TypeScript/Jest]**
 ```bash
 # Find methods only called in tests
 grep -r "\.destroy\(" --include="*.ts" | grep -v ".test.ts"
+# If empty → method only in tests → move to test utils
+```
+
+**[Python/pytest]**
+```bash
+# Find methods only called in tests
+grep -r "\._set_mock" --include="*.py" | grep -v "test_"
 # If empty → method only in tests → move to test utils
 ```
 
@@ -538,6 +581,103 @@ npm test -- --coverage --coverageThreshold='{"global":{"lines":80}}'
 | Incomplete Mocks | Partial<T> or no types | Check against API docs |
 | Tests as Afterthought | Implementation before tests | Check git history |
 
+## Python/pytest-Specific Detection Patterns
+
+### Red Flags Unique to Python
+
+**Over-reliance on unittest.mock:**
+```python
+# 🚩 Using Mock() for data objects
+mock_user = Mock()
+mock_user.id = 123
+mock_user.name = "Alice"
+# Should use dataclass or fixture factory instead
+
+# 🚩 MagicMock without spec
+mock_service = MagicMock()
+# Should specify spec=RealService to catch attribute errors
+
+# 🚩 Global @patch decorators
+@patch('module.function1')
+@patch('module.function2')
+@patch('module.function3')
+def test_something(...):
+    # Too broad - over-mocking
+```
+
+**Fixture Abuse:**
+```python
+# 🚩 autouse fixtures without clear need
+@pytest.fixture(autouse=True)
+def setup_everything():
+    # Hidden dependency - tests unclear
+
+# 🚩 Fixture bloat
+@pytest.fixture
+def user(db, session, config, mailer, cache, queue):
+    # Too many dependencies
+
+# 🚩 Complex fixture chains
+@pytest.fixture
+def user(profile, settings, permissions):
+    # Each has more fixtures - hard to understand
+```
+
+**pytest-mock Patterns:**
+```python
+# 🚩 Mocking at wrong level
+mocker.patch('user_service.UserRepository')  # Too high
+# Should mock database connection, not repository
+
+# 🚩 Missing spec parameter
+mocker.patch('requests.post')  # No spec
+# Should use spec=requests.post or spec_set
+
+# 🚩 Asserting on mock calls without behavior check
+mock_mailer.send_email.assert_called_once()
+# But no assertion on actual result!
+```
+
+### Python Detection Script
+
+```python
+# Check for anti-patterns in Python tests
+def detect_python_anti_patterns(test_file: str) -> list[str]:
+    warnings = []
+
+    # Pattern: Mock assertions without behavior checks
+    if '.assert_called' in test_file and 'assert ' not in test_file:
+        warnings.append('Mock assertions without real behavior checks')
+
+    # Pattern: Using Mock() for data objects
+    if 'Mock()' in test_file and 'dataclass' not in test_file:
+        warnings.append('Using Mock() for data - use dataclass/fixture')
+
+    # Pattern: @patch without spec
+    if '@patch(' in test_file and 'spec=' not in test_file:
+        warnings.append('@patch without spec parameter')
+
+    # Pattern: Too many autouse fixtures
+    autouse_count = test_file.count('autouse=True')
+    if autouse_count > 2:
+        warnings.append(f'{autouse_count} autouse fixtures - hidden dependencies')
+
+    return warnings
+```
+
+### pytest Best Practices Checklist
+
+```
+□ Use fixtures instead of mocks when possible
+□ Specify spec= on @patch decorators
+□ Use dataclasses/factories for test data, not Mock()
+□ Limit autouse fixtures to truly global setup
+□ Prefer monkeypatch over @patch for simple cases
+□ Use parametrize instead of loops
+□ Keep fixture chains shallow (<3 levels)
+□ Mock at I/O boundaries (requests, database), not business logic
+```
+
 ## When to Seek Help
 
 **STOP and ask your human partner if:**
@@ -547,12 +687,16 @@ npm test -- --coverage --coverageThreshold='{"global":{"lines":80}}'
 - You can't explain what test verifies
 - Same test needs different mocks in different runs
 - Integration test seems simpler than mocks
+- Fixture chain depth >3 levels (Python/pytest)
+- Using Mock() for data objects (Python)
 
 **Questions to ask:**
 - "Do we need to be using a mock here?"
 - "Should this be an integration test?"
 - "Am I testing the right thing?"
 - "Is this test-only method necessary?"
+- "Should this be a fixture instead of a mock?" (Python/pytest)
+- "Can I use a fake/test double instead?" (Python/pytest)
 
 ## Prevention Mindset
 

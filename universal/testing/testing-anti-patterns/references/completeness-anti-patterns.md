@@ -4,7 +4,9 @@ Anti-patterns related to incomplete testing practices: partial mocks that hide s
 
 ## Anti-Pattern 4: Incomplete Mocks
 
-**The violation:**
+### The Violation
+
+**[TypeScript/Jest]**
 ```typescript
 // ❌ BAD: Partial mock - only fields you think you need
 const mockResponse = {
@@ -14,6 +16,23 @@ const mockResponse = {
 };
 
 // Later: breaks when code accesses response.metadata.requestId
+```
+
+**[Python/pytest]**
+```python
+# ❌ BAD: Incomplete mock missing fields
+from unittest.mock import Mock
+
+def test_display_user_profile():
+    mock_user = Mock()
+    mock_user.id = 123
+    mock_user.name = "Alice"
+    # Missing: email, profile, metadata
+
+    result = display_user_profile(mock_user)
+
+    # Test passes but production code may access user.profile.timezone
+    # → AttributeError in production!
 ```
 
 **Why this is wrong:**
@@ -26,6 +45,8 @@ const mockResponse = {
 **The Iron Rule:** Mock the COMPLETE data structure as it exists in reality, not just fields your immediate test uses.
 
 **Real-world impact:**
+
+**[TypeScript/Jest]**
 ```typescript
 // Your test (incomplete mock)
 const mockUser = { id: '123', name: 'Alice' };
@@ -37,9 +58,22 @@ function getUserTimezone(user) {
 }
 ```
 
+**[Python/pytest]**
+```python
+# Your test (incomplete mock)
+mock_user = Mock(id=123, name="Alice")
+# Passes ✅
+
+# Production code elsewhere
+def get_user_timezone(user):
+    return user.profile.timezone  # AttributeError in production!
+```
+
 ### Complete Mock Strategy
 
 **The fix:**
+
+**[TypeScript/Jest]**
 ```typescript
 // ✅ GOOD: Mirror real API completeness
 const mockResponse = {
@@ -61,6 +95,51 @@ const mockResponse = {
   }
   // All fields real API returns
 };
+```
+
+**[Python/pytest]**
+```python
+# ✅ GOOD: Complete mock or use fixture
+from dataclasses import dataclass
+from typing import Optional
+
+@dataclass
+class User:
+    id: int
+    name: str
+    email: str
+    profile: 'UserProfile'
+    metadata: dict
+
+@dataclass
+class UserProfile:
+    timezone: str
+    locale: str
+    avatar: Optional[str]
+
+# Fixture factory
+def create_test_user(**overrides) -> User:
+    """Complete user with all required fields"""
+    defaults = {
+        "id": 123,
+        "name": "Alice",
+        "email": "alice@example.com",
+        "profile": UserProfile(
+            timezone="UTC",
+            locale="en-US",
+            avatar=None
+        ),
+        "metadata": {}
+    }
+    return User(**{**defaults, **overrides})
+
+def test_display_user_profile():
+    user = create_test_user(name="Alice")
+
+    result = display_user_profile(user)
+
+    assert "Alice" in result
+    assert "UTC" in result
 ```
 
 ### How to Create Complete Mocks
@@ -286,13 +365,36 @@ const mock = createMockUser({ name: 'Alice' });
 // Risk: Minimal - centralized, typed, complete
 ```
 
-## Anti-Pattern 5: Integration Tests as Afterthought
+## Anti-Pattern 5: Tests as Afterthought
 
-**The violation:**
+### The Violation
+
+**[TypeScript/Jest]**
+```typescript
+// ❌ BAD - Implementation before tests
+// 1. Wrote UserService class
+// 2. Wrote createUser() method
+// 3. Wrote updateUser() method
+// 4. Now writing tests to achieve coverage
+
+test('creates user', () => {
+  // Test confirms what code DOES, not what it SHOULD do
+  // Bugs baked into test expectations
+});
 ```
-✅ Implementation complete
-❌ No tests written
-"Ready for testing"
+
+**[Python/pytest]**
+```python
+# ❌ BAD - Implementation before tests
+# 1. Wrote create_user() function
+# 2. Wrote update_user() function
+# 3. Wrote delete_user() function
+# 4. Now writing tests to achieve coverage
+
+def test_create_user():
+    # Test confirms what code DOES, not what it SHOULD do
+    # Bugs baked into test expectations
+    pass
 ```
 
 **Why this is wrong:**
@@ -303,15 +405,60 @@ const mock = createMockUser({ name: 'Alice' });
 - Missing tests = incomplete feature
 - Technical debt from day one
 
-**The fix:**
+### The Fix - TDD
+
+**[TypeScript/Jest]**
+```typescript
+// ✅ GOOD - Test first (TDD)
+
+// Step 1: RED - Write failing test
+test('creates user with valid email', () => {
+  const service = new UserService();
+  expect(() => service.createUser('invalid-email')).toThrow('Invalid email');
+  // ❌ Test fails - createUser doesn't exist
+});
+
+// Step 2: GREEN - Minimal implementation
+class UserService {
+  createUser(email: string): User {
+    if (!email.includes('@')) throw new Error('Invalid email');
+    return new User(email);
+  }
+}
+// ✅ Test passes
+
+// Step 3: REFACTOR - Improve without breaking test
+class UserService {
+  createUser(email: string): User {
+    this.validateEmail(email);  // Extracted validation
+    return new User(email);
+  }
+  // ✅ Test still passes
+}
 ```
-TDD cycle:
-1. Write failing test
-2. Watch it fail (verify)
-3. Write minimal code to pass
-4. Watch it pass (verify)
-5. Refactor
-6. THEN claim complete
+
+**[Python/pytest]**
+```python
+# ✅ GOOD - Test first (TDD)
+
+# Step 1: RED - Write failing test
+def test_create_user_validates_email():
+    with pytest.raises(ValidationError):
+        create_user("invalid-email")
+    # ❌ Test fails - create_user doesn't exist
+
+# Step 2: GREEN - Minimal implementation
+def create_user(email: str) -> User:
+    if "@" not in email:
+        raise ValidationError("Invalid email")
+    return User(email=email)
+    # ✅ Test passes
+
+# Step 3: REFACTOR - Improve without breaking test
+def create_user(email: str) -> User:
+    validate_email(email)  # Extracted validation
+    return User(email=email)
+    # ✅ Test still passes
 ```
 
 ### Why Tests Must Come First

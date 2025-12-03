@@ -1,11 +1,21 @@
 ---
 name: Testing Anti-Patterns
-description: Never test mock behavior. Never add test-only methods to production classes. Understand dependencies before mocking.
+description: Never test mock behavior. Never add test-only methods to production classes. Understand dependencies before mocking. Language-agnostic principles with TypeScript/Jest and Python/pytest examples.
 when_to_use: when writing or changing tests, adding mocks, or tempted to add test-only methods to production code
-version: 2.0.0
+version: 3.0.0
+tags:
+  - testing
+  - typescript
+  - javascript
+  - python
+  - pytest
+  - jest
+  - mocking
+  - tdd
+  - anti-patterns
 progressive_disclosure:
   entry_point:
-    summary: "Avoid testing mocks, test-only production methods, and incomplete mocking. Test real behavior, not mock behavior."
+    summary: "Avoid testing mocks, test-only production methods, and incomplete mocking. Test real behavior, not mock behavior. Covers TypeScript/Jest and Python/pytest."
     when_to_use: "When writing tests, adding mocks, reviewing test failures, or tempted to add test-only methods to production code."
     quick_start: "1. Ask: 'Am I testing real behavior?' 2. Check: 'Is this method only for tests?' 3. Verify: 'Do I understand what I'm mocking?' 4. Confirm: 'Is my mock complete?' 5. Apply: TDD prevents these patterns"
   references:
@@ -14,6 +24,12 @@ progressive_disclosure:
     - detection-guide.md
     - tdd-connection.md
     - python-examples.md
+related_skills:
+  - toolchains-typescript-testing-jest
+  - toolchains-typescript-testing-vitest
+  - toolchains-python-testing-pytest
+  - universal-debugging-systematic-debugging
+  - universal-debugging-verification-before-completion
 ---
 
 # Testing Anti-Patterns
@@ -65,23 +81,30 @@ Partial mocks missing fields downstream code needs. **Fix:** Mirror complete API
 
 ### 5. Tests as Afterthought
 Implementation "complete" without tests. **Fix:** TDD - write test first.
-**→** [completeness-anti-patterns.md](references/completeness-anti-patterns.md#anti-pattern-5-integration-tests-as-afterthought)
+**→** [completeness-anti-patterns.md](references/completeness-anti-patterns.md#anti-pattern-5-tests-as-afterthought)
 
 ## Quick Detection Checklist
 
 Run this checklist before committing any test:
 
+**Language-agnostic checks:**
 ```
-□ Am I asserting on mock elements? (testId='*-mock')
-  → If yes: STOP - Test real component or unmock
+□ Am I asserting on mock behavior instead of real behavior?
+  → TypeScript: testId='*-mock', expect(mock).toHaveBeenCalled()
+  → Python: mock.assert_called(), mock.call_count
+  → If yes: STOP - Test real behavior or unmock
 
 □ Does this method only exist for tests?
+  → TypeScript: destroy(), reset(), clear() only in *.test.ts
+  → Python: _set_mock_*, _for_testing only in test_*.py
   → If yes: STOP - Move to test utilities
 
 □ Do I fully understand what I'm mocking?
   → If no: STOP - Run with real impl first, then mock minimally
 
 □ Is my mock missing fields the real API has?
+  → TypeScript: Partial<T>, incomplete objects
+  → Python: Mock() with few attributes, missing nested fields
   → If yes: STOP - Mirror complete API structure
 
 □ Did I write implementation before test?
@@ -112,7 +135,7 @@ If you're testing mock behavior, you've gone wrong. Fix: Test real behavior or q
 - **[TDD Connection](references/tdd-connection.md)** - How test-driven development prevents these patterns
 
 ### Language-Specific Examples
-- **[Python Examples](references/python-examples.md)** - How anti-patterns manifest in Python/pytest with unittest.mock. Load when working with Python tests.
+- **[Python Examples](references/python-examples.md)** - Complete Python/pytest guide covering all 5 anti-patterns with unittest.mock and pytest-mock patterns, fixture best practices, and pytest-specific detection. Load when working with Python tests.
 
 ### Related Skills
 
@@ -141,11 +164,21 @@ When using this skill, consider these complementary skills (if deployed in your 
 ## Red Flags - STOP
 
 **STOP immediately if you find yourself:**
-- Asserting on `*-mock` test IDs
-- Adding methods only called in test files
-- Mocking "just to be safe" without understanding
-- Creating mocks from memory instead of API docs
-- Saying "tests can wait" or "ready for testing"
+- **Testing mock behavior**
+  - TypeScript: Asserting on `*-mock` test IDs, `expect(mock).toHaveBeenCalled()`
+  - Python: `mock.assert_called()`, `mock.call_count` without real behavior checks
+- **Adding test-only methods**
+  - TypeScript: `destroy()`, `reset()` only in `*.test.ts`
+  - Python: `_set_mock_*`, `_for_testing` with "For testing only" docstrings
+- **Mocking without understanding**
+  - Adding `@patch` or `vi.mock()` "just to be safe"
+  - Creating mocks from memory instead of API docs
+- **Incomplete mocks**
+  - TypeScript: `Partial<T>`, missing nested objects
+  - Python: `Mock()` for data objects, missing required fields
+- **Tests as afterthought**
+  - Saying "tests can wait" or "ready for testing"
+  - Implementation commits before test commits
 
 **When mocks become too complex:** Consider integration tests with real components. Often simpler and more valuable.
 
