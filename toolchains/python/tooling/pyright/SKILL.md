@@ -1,11 +1,6 @@
 ---
 name: pyright-type-checker
 description: Pyright fast Python type checker from Microsoft with VS Code integration and strict type checking modes. Use when needing faster type checking than mypy, using VS Code with Pylance, or enforcing stricter type safety.
----
-
-# Pyright - Fast Python Type Checker
-
----
 progressive_disclosure:
   entry_point:
     summary: "Fast Python type checker from Microsoft with VS Code integration and strict modes"
@@ -22,6 +17,8 @@ progressive_disclosure:
     entry: 65-80
     full: 3500-4500
 ---
+
+# Pyright - Fast Python Type Checker
 
 ## Installation
 
