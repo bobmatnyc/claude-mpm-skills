@@ -11,6 +11,8 @@ progressive_disclosure:
     - configuration.md
     - runtime-validation.md
     - advanced-patterns-2025.md
+    - decision-trees.md
+    - troubleshooting.md
 ---
 
 # TypeScript Core Patterns
@@ -170,6 +172,47 @@ function parseUser(input: unknown): User {
 
 **→ See [runtime-validation.md](./references/runtime-validation.md) for complete Zod, TypeBox, and Valibot patterns**
 
+## Decision Support
+
+### Quick Decision Guide
+
+**Need to choose between `type` vs `interface`?**
+- Public API / library types → `interface`
+- Union types / mapped types → `type`
+- Simple object shapes → `interface` (default)
+
+**Need generics or union types?**
+- Output type depends on input type → Generics
+- Fixed set of known types → Union types
+- Building reusable data structures → Generics
+
+**Dealing with unknown data?**
+- External data (API, user input) → `unknown` (type-safe)
+- Rapid prototyping / migration → `any` (temporarily)
+
+**Need runtime validation?**
+- Full-stack TypeScript with tRPC → Zod
+- OpenAPI / high performance → TypeBox
+- Edge functions / minimal bundle → Valibot
+
+**→ See [decision-trees.md](./references/decision-trees.md) for comprehensive decision frameworks**
+
+## Troubleshooting
+
+### Common Issues Quick Reference
+
+**Property does not exist on type** → Define proper interface or use optional properties
+
+**Type is not assignable** → Fix property types or use runtime validation (Zod)
+
+**Object is possibly 'undefined'** → Use optional chaining (`?.`) or type guards
+
+**Cannot find module** → Check file extensions (.js for ESM) and module resolution
+
+**Slow compilation** → Enable `incremental`, use `skipLibCheck`, consider esbuild/swc
+
+**→ See [troubleshooting.md](./references/troubleshooting.md) for detailed solutions with examples**
+
 ## Navigation
 
 ### Detailed References
@@ -181,6 +224,10 @@ function parseUser(input: unknown): User {
 - **[🔒 Runtime Validation](./references/runtime-validation.md)** - Zod, TypeBox, Valibot deep patterns, error handling, integration strategies. Load when implementing API validation or form handling.
 
 - **[✨ Advanced Patterns 2025](./references/advanced-patterns-2025.md)** - TypeScript 5.2+ features: `using` keyword, stable decorators, import type behavior, satisfies with generics. Load when using modern language features.
+
+- **[🌳 Decision Trees](./references/decision-trees.md)** - Clear decision frameworks for `type` vs `interface`, generics vs unions, `unknown` vs `any`, validation library selection, type narrowing strategies, and module resolution. Load when making TypeScript design decisions.
+
+- **[🔧 Troubleshooting](./references/troubleshooting.md)** - Common TypeScript errors and fixes, type inference issues, module resolution problems, tsconfig misconfigurations, build performance optimization, and type compatibility errors. Load when debugging TypeScript issues.
 
 ## Red Flags
 

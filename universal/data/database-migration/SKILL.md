@@ -1,9 +1,9 @@
 ---
 skill_id: database-migration
-skill_version: 0.1.0
-description: Safe patterns for evolving database schemas in production.
-updated_at: 2025-10-30T17:00:00Z
-tags: [database, migration, schema, production]
+skill_version: 1.1.0
+description: Safe patterns for evolving database schemas in production with decision trees and troubleshooting guidance.
+updated_at: 2025-12-03T00:00:00Z
+tags: [database, migration, schema, production, decision-trees, troubleshooting, zero-downtime]
 ---
 
 # Database Migration
@@ -190,6 +190,59 @@ ALTER TABLE users ADD COLUMN full_name VARCHAR(255);
 -- DOWN
 ALTER TABLE users DROP COLUMN full_name;
 ```
+
+## Decision Support
+
+### Quick Decision Guide
+
+**Making a schema change?**
+- Breaking change (drops/modifies data) → Multi-phase migration (expand-contract)
+- Additive change (new columns/tables) → Single-phase migration
+- Large table (millions of rows) → Use CONCURRENTLY for indexes
+
+**Need zero downtime?**
+- Schema change → Expand-contract pattern (5 phases)
+- Data migration (< 10k rows) → Synchronous in-migration
+- Data migration (> 1M rows) → Background worker pattern
+
+**Planning rollback?**
+- Added new schema only → Simple DOWN migration
+- Modified/removed schema → Multi-phase rollback or fix forward
+- Cannot lose data → Point-in-time recovery (PITR)
+
+**Choosing migration tool?**
+- Python/Django → Django Migrations
+- Python/SQLAlchemy → Alembic
+- Node.js/TypeScript → Prisma Migrate or Knex.js
+- Enterprise/multi-language → Flyway or Liquibase
+
+**→ See [references/decision-trees.md](./references/decision-trees.md) for comprehensive decision frameworks**
+
+## Troubleshooting
+
+### Common Issues Quick Reference
+
+**Migration failed halfway** → Check database state, fix forward with repair migration
+
+**Schema drift detected** → Use autogenerate to create reconciliation migration
+
+**Cannot rollback (no downgrade)** → Create reverse migration or fix forward
+
+**Foreign key violation** → Clean data before adding constraint, or add as NOT VALID
+
+**Migration locks table too long** → Use CONCURRENTLY, add columns in phases, batch updates
+
+**Circular dependency** → Create merge migration or reorder dependencies
+
+**→ See [references/troubleshooting.md](./references/troubleshooting.md) for detailed solutions with examples**
+
+## Navigation
+
+### Detailed References
+
+- **[🌳 Decision Trees](./references/decision-trees.md)** - Schema migration strategies, zero-downtime patterns, rollback strategies, migration tool selection, and data migration approaches. Load when planning migrations or choosing strategies.
+
+- **[🔧 Troubleshooting](./references/troubleshooting.md)** - Failed migration recovery, schema drift detection, migration conflicts, rollback failures, data integrity issues, and performance problems. Load when debugging migration issues.
 
 ## Remember
 - Test migrations on copy of production data
