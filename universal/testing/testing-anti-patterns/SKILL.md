@@ -13,6 +13,7 @@ progressive_disclosure:
     - completeness-anti-patterns.md
     - detection-guide.md
     - tdd-connection.md
+    - python-examples.md
 ---
 
 # Testing Anti-Patterns
@@ -109,6 +110,9 @@ If you're testing mock behavior, you've gone wrong. Fix: Test real behavior or q
 ### Detection & Prevention
 - **[Detection Guide](references/detection-guide.md)** - Red flags, warning signs, gate functions
 - **[TDD Connection](references/tdd-connection.md)** - How test-driven development prevents these patterns
+
+### Language-Specific Examples
+- **[Python Examples](references/python-examples.md)** - How anti-patterns manifest in Python/pytest with unittest.mock. Load when working with Python tests.
 
 ### Related Skills
 

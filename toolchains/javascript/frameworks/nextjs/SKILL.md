@@ -215,7 +215,7 @@ DATABASE_URL=postgres://...  # ✅ Not exposed to browser
 
 ⚠️ Important: `NEXT_PUBLIC_*` variables are **baked into the build** at build time.
 
-If you change them in Vercel, you must **redeploy**:
+If changing them in Vercel, **redeploy** is required:
 
 ```bash
 vercel --prod

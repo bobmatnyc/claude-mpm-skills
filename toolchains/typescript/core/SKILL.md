@@ -1,11 +1,31 @@
 ---
 name: typescript-core
 description: Advanced TypeScript patterns and best practices for 2025. Use when working with TypeScript projects requiring type system mastery (generics, conditional types, mapped types), tsconfig optimization, runtime validation integration (Zod, TypeBox, Valibot), or type-safe API patterns. Essential for Next.js, Node.js, and full-stack TypeScript development.
+progressive_disclosure:
+  entry_point:
+    summary: "Type-safe TypeScript patterns with optimal tsconfig, runtime validation, and modern TS 5.2+ features"
+    when_to_use: "When working with TypeScript requiring advanced types, strict configuration, runtime validation, or modern language features (using, decorators)"
+    quick_start: "1. Start with tsconfig baseline 2. Apply core type patterns (const, satisfies) 3. Integrate runtime validation (Zod/TypeBox) 4. Use modern features (using, decorators) as needed"
+  references:
+    - advanced-types.md
+    - configuration.md
+    - runtime-validation.md
+    - advanced-patterns-2025.md
 ---
 
 # TypeScript Core Patterns
 
 Modern TypeScript development patterns for type safety, runtime validation, and optimal configuration.
+
+## Quick Start
+
+**New Project:** Use 2025 tsconfig → Enable `strict` + `noUncheckedIndexedAccess` → Choose Zod for validation
+
+**Existing Project:** Enable `strict: false` initially → Fix `any` with `unknown` → Add `noUncheckedIndexedAccess`
+
+**API Development:** Zod schemas at boundaries → `z.infer<typeof Schema>` for types → `satisfies` for routes
+
+**Library Development:** Enable `declaration: true` → Use `const` type parameters → See [advanced-patterns-2025.md](./references/advanced-patterns-2025.md)
 
 ## Quick Reference
 
@@ -119,80 +139,36 @@ function handle(action: Action) {
 
 ## Runtime Validation
 
-### Choosing a Library
+TypeScript types disappear at runtime. Use validation libraries for external data (APIs, forms, config files).
 
-| Feature | **Zod** | **TypeBox** | **Valibot** |
-|---------|---------|-------------|-------------|
-| Bundle Size | ~13.5kB | ~8kB | **~1.4kB** |
-| Runtime Speed | Baseline | **~10x faster** | ~2x faster |
-| JSON Schema | Via converter | **Native** | Via converter |
-| Best For | Full-stack, tRPC | OpenAPI, Fastify | Edge functions |
+### Quick Comparison
 
-### Zod Patterns (Default Choice)
+| Library | Bundle Size | Speed | Best For |
+|---------|-------------|-------|----------|
+| **Zod** | ~13.5kB | Baseline | Full-stack apps, tRPC integration |
+| **TypeBox** | ~8kB | ~10x faster | OpenAPI, performance-critical |
+| **Valibot** | ~1.4kB | ~2x faster | Edge functions, minimal bundles |
+
+### Basic Pattern (Zod)
 
 ```typescript
 import { z } from "zod";
 
-// Basic schema with inference
 const UserSchema = z.object({
   id: z.string().uuid(),
   email: z.string().email(),
   role: z.enum(["admin", "user", "guest"]),
-  metadata: z.record(z.unknown()).optional(),
 });
 
 type User = z.infer<typeof UserSchema>;
 
-// Transform and refine
-const ApiResponseSchema = z.object({
-  data: z.array(UserSchema),
-  pagination: z.object({
-    page: z.coerce.number().positive(),
-    total: z.coerce.number().nonnegative(),
-  }),
-});
-
-// Parse with error handling
+// Validate external data
 function parseUser(input: unknown): User {
-  return UserSchema.parse(input); // Throws ZodError
-}
-
-function safeParseUser(input: unknown): Result<User, z.ZodError> {
-  const result = UserSchema.safeParse(input);
-  return result.success 
-    ? { success: true, data: result.data }
-    : { success: false, error: result.error };
+  return UserSchema.parse(input);
 }
 ```
 
-### TypeBox Patterns (Performance-Critical)
-
-```typescript
-import { Type, Static } from "@sinclair/typebox";
-import { TypeCompiler } from "@sinclair/typebox/compiler";
-
-const UserSchema = Type.Object({
-  id: Type.String({ format: "uuid" }),
-  email: Type.String({ format: "email" }),
-  role: Type.Union([
-    Type.Literal("admin"),
-    Type.Literal("user"),
-    Type.Literal("guest"),
-  ]),
-});
-
-type User = Static<typeof UserSchema>;
-
-// Compile for 10x faster validation
-const CompiledUser = TypeCompiler.Compile(UserSchema);
-
-function validateUser(input: unknown): input is User {
-  return CompiledUser.Check(input);
-}
-
-// Get JSON Schema for OpenAPI
-const jsonSchema = UserSchema; // Already JSON Schema compliant
-```
+**→ See [runtime-validation.md](./references/runtime-validation.md) for complete Zod, TypeBox, and Valibot patterns**
 
 ## Navigation
 
@@ -203,6 +179,8 @@ const jsonSchema = UserSchema; // Already JSON Schema compliant
 - **[⚙️ Configuration](./references/configuration.md)** - Complete tsconfig.json guide, project references, monorepo patterns. Load when setting up new projects or optimizing builds.
 
 - **[🔒 Runtime Validation](./references/runtime-validation.md)** - Zod, TypeBox, Valibot deep patterns, error handling, integration strategies. Load when implementing API validation or form handling.
+
+- **[✨ Advanced Patterns 2025](./references/advanced-patterns-2025.md)** - TypeScript 5.2+ features: `using` keyword, stable decorators, import type behavior, satisfies with generics. Load when using modern language features.
 
 ## Red Flags
 

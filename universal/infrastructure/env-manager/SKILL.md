@@ -531,13 +531,13 @@ touch .env
 **Options:**
 1. Move secret to server-side variable (remove NEXT_PUBLIC_ prefix)
 2. Use public/publishable keys only in client-exposed variables
-3. If it's truly not a secret, you can ignore the warning
+3. If truly not a secret, ignore the warning
 
 ### .env.example generation replaces too much
 
-env-manager is conservative about secrets. If it over-sanitizes, you can:
+env-manager is conservative about secrets. If it over-sanitizes:
 1. Manually edit .env.example after generation
-2. Use specific placeholder values in your .env that won't trigger sanitization
+2. Use specific placeholder values in .env that won't trigger sanitization
 
 ## Advanced Usage
 

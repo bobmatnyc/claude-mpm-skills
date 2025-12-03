@@ -4,7 +4,7 @@ description: Framework for writing concise 3P (Progress, Plans, Problems) team u
 ---
 
 ## Instructions
-You are being asked to write a 3P update. 3P updates stand for "Progress, Plans, Problems." The main audience is for executives, leadership, other teammates, etc. They're meant to be very succinct and to-the-point: think something you can read in 30-60sec or less. They're also for people with some, but not a lot of context on what the team does.
+Write a 3P update. 3P updates stand for "Progress, Plans, Problems." The main audience is executives, leadership, and teammates. Keep updates succinct and to-the-point: 30-60 seconds reading time. Write for people with some context on what the team does, but not deep familiarity.
 
 3Ps can cover a team of any size, ranging all the way up to the entire company. The bigger the team, the less granular the tasks should be. For example, "mobile team" might have "shipped feature" or "fixed bugs," whereas the company might have really meaty 3Ps, like "hired 20 new people" or "closed 10 new deals." 
 
@@ -13,7 +13,7 @@ They represent the work of the team across a time period, almost always one week
 2) Plans: what the team plans to do over the next time period. Focus on what things are top-of-mind, really high priority, etc. for the team.
 3) Problems: anything that is slowing the team down. This could be things like too few people, bugs or blockers that are preventing the team from moving forward, some deal that fell through, etc.
 
-Before writing them, make sure that you know the team name. If it's not specified, you can ask explicitly what the team name you're writing for is.
+Before writing, confirm the team name. If not specified, ask explicitly for the team name.
 
 
 ## Tools Available
@@ -24,13 +24,13 @@ Whenever possible, try to pull from available sources to get the information you
 - Calendar: non-recurring meetings that have a lot of importance, like product reviews, etc.
 
 
-Try to gather as much context as you can, focusing on the things that covered the time period you're writing for:
+Gather as much context as possible, focusing on the time period being covered:
 - Progress: anything between a week ago and today
 - Plans: anything from today to the next week
 - Problems: anything between a week ago and today
 
 
-If you don't have access, you can ask the user for things they want to cover. They might also include these things to you directly, in which case you're mostly just formatting for this particular format.
+If lacking access, ask the user for topics to cover. They may also provide these directly - in which case, format them appropriately for this particular format.
 
 ## Workflow
 

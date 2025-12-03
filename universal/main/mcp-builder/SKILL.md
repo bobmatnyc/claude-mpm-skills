@@ -382,7 +382,7 @@ Remember to parallelize solving tasks to avoid running out of context, then accu
 
 # Running Evaluations
 
-After creating your evaluation file, you can use the provided evaluation harness to test your MCP server.
+After creating the evaluation file, use the provided evaluation harness to test the MCP server.
 
 ## Setup
 
@@ -453,7 +453,7 @@ python scripts/evaluation.py \
 
 ### 2. Server-Sent Events (SSE)
 
-For SSE-based MCP servers (you must start the server first):
+For SSE-based MCP servers (start the server first):
 
 ```bash
 python scripts/evaluation.py \
@@ -466,7 +466,7 @@ python scripts/evaluation.py \
 
 ### 3. HTTP (Streamable HTTP)
 
-For HTTP-based MCP servers (you must start the server first):
+For HTTP-based MCP servers (start the server first):
 
 ```bash
 python scripts/evaluation.py \
