@@ -1,27 +1,64 @@
 {
-  "name": "express-local-dev",
-  "version": "1.0.0",
+  "name": "express-production",
+  "version": "2.0.0",
   "category": "toolchain",
   "toolchain": "javascript",
   "framework": "express",
   "tags": [
-    "async",
-    "api",
+    "express",
+    "nodejs",
+    "production",
+    "middleware",
     "security",
     "testing",
-    "debugging"
+    "deployment",
+    "backend",
+    "rest-api",
+    "microservices",
+    "authentication",
+    "error-handling"
   ],
-  "entry_point_tokens": 59,
-  "full_tokens": 7825,
+  "entry_point_tokens": 120,
+  "full_tokens": 14500,
   "requires": [],
-  "author": "bobmatnyc",
-  "updated": "2025-11-21",
-  "source_path": "express-local-dev.md",
+  "related_skills": [
+    "nodejs-backend",
+    "typescript-core",
+    "docker-containerization",
+    "systematic-debugging",
+    "fastify-production",
+    "testing-anti-patterns",
+    "verification-before-completion"
+  ],
+  "author": "Claude MPM Team",
+  "updated": "2025-12-03",
+  "source_path": "SKILL.md",
   "license": "MIT",
   "source": "https://github.com/bobmatnyc/claude-mpm",
   "created": "2025-11-21",
-  "modified": "2025-11-21",
+  "modified": "2025-12-03",
   "maintainer": "Claude MPM Team",
   "attribution_required": true,
-  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "progressive_disclosure": {
+    "enabled": true,
+    "references": [
+      "references/middleware-patterns.md",
+      "references/security-hardening.md",
+      "references/testing-strategies.md",
+      "references/production-deployment.md"
+    ]
+  },
+  "skill_level": "production",
+  "complexity": "comprehensive",
+  "coverage": [
+    "middleware-architecture",
+    "error-handling",
+    "security-hardening",
+    "testing-strategies",
+    "production-deployment",
+    "pm2-clustering",
+    "logging-monitoring",
+    "graceful-shutdown"
+  ]
 }

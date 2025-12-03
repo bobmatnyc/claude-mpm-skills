@@ -1,0 +1,55 @@
+{
+  "name": "api-design-patterns",
+  "version": "1.0.0",
+  "category": "universal",
+  "subcategory": "web",
+  "description": "Comprehensive API design patterns covering REST, GraphQL, gRPC, versioning strategies, authentication, and modern API best practices",
+  "tags": [
+    "api",
+    "rest",
+    "graphql",
+    "grpc",
+    "architecture",
+    "web",
+    "design-patterns",
+    "oauth",
+    "jwt",
+    "authentication",
+    "versioning",
+    "pagination",
+    "rate-limiting"
+  ],
+  "entry_point_tokens": 85,
+  "full_tokens": 8500,
+  "self_contained": true,
+  "requires": [],
+  "related_skills": [
+    "graphql",
+    "typescript",
+    "nodejs-backend",
+    "django",
+    "fastapi",
+    "flask",
+    "software-patterns"
+  ],
+  "complementary_skills": [
+    "web-performance-optimization",
+    "api-documentation",
+    "docker",
+    "testing-anti-patterns"
+  ],
+  "author": "Claude MPM Skills",
+  "created": "2025-12-03",
+  "updated": "2025-12-03",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "maintainer": "Claude MPM Team",
+  "notes": [
+    "Covers all major API architectural styles (REST, GraphQL, gRPC)",
+    "Includes comprehensive versioning strategies and migration patterns",
+    "Deep authentication coverage (OAuth 2.0, JWT, API keys, RBAC)",
+    "Production-ready patterns with security best practices",
+    "Progressive disclosure: main SKILL.md + 5 detailed reference docs",
+    "Self-contained with complete examples and decision trees"
+  ]
+}
