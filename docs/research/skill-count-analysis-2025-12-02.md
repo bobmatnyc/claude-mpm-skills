@@ -1,12 +1,17 @@
 # Skill Count Analysis - December 2, 2025
 
+**UPDATE (2025-12-03):** README skill count was updated from 82 → 89 on Dec 2 (commit `980e217`). However, current actual count is **168 skills** (not 89). The repository has grown significantly beyond documented counts. A comprehensive recount and README update is needed.
+
 ## Executive Summary
 
-**CRITICAL FINDING: The repository contains 89 actual skills, NOT 82 as claimed in the README.**
+**CRITICAL FINDING (Dec 2): The repository contains 89 actual skills, NOT 82 as claimed in the README.**
+**UPDATE (Dec 3): Current count is 168 skills - repository has grown substantially.**
 
-- **Actual Total**: 89 skills (87 production skills + 2 examples)
-- **README Claim**: 82 skills
-- **Discrepancy**: +7 skills (8.5% higher than documented)
+- **Actual Total (Dec 2)**: 89 skills (87 production skills + 2 examples)
+- **Actual Total (Dec 3)**: 168 skills
+- **README Claim (Dec 2)**: 82 skills
+- **README Updated**: 89 skills (Dec 2, commit `980e217`)
+- **Current Discrepancy**: +79 skills beyond Dec 2 update
 - **README Location**: `/Users/masa/Projects/claude-mpm-skills/README.md` (Line 7)
 
 ## Detailed Skill Count
