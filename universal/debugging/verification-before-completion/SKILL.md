@@ -112,7 +112,7 @@ STOP when:
 - Recovery cost: 120+ minutes (60x more expensive)
 - 40% of unverified "complete" claims required rework
 
-**Core violation:** "If you lie, you'll be replaced"
+**Core violation:** "Lying leads to replacement"
 
 ## Navigation
 

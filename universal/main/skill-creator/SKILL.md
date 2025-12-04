@@ -139,7 +139,7 @@ skill-name/
 
 - **Start with examples** - 3-5 concrete usage scenarios before designing
 - **Use init script** - `scripts/init_skill.py` creates proper structure automatically
-- **Imperative voice** - "To accomplish X, do Y" (not "You should do X")
+- **Imperative voice** - "To accomplish X, do Y" (not "should do X")
 - **Progressive disclosure** - Entry <200 lines, details in references (for skills >150 lines)
 - **Avoid duplication** - Information lives in ONE place (entry summary, reference detail)
 - **Component clarity** - Scripts for code, references for knowledge, assets for templates

@@ -19,7 +19,7 @@ progressive_disclosure:
 
 ## Overview
 
-When you have multiple unrelated failures (different test files, different subsystems, different bugs), investigating them sequentially wastes time. Each investigation is independent and can happen in parallel.
+When multiple unrelated failures occur (different test files, different subsystems, different bugs), investigating them sequentially wastes time. Each investigation is independent and can happen in parallel.
 
 **Core principle:** Dispatch one agent per independent problem domain. Let them work concurrently.
 
@@ -157,7 +157,7 @@ When dispatching parallel agents, consider these complementary skills (available
 **STOP immediately if:**
 - Agents are editing the same files (scope overlap)
 - Fixes from one agent break another's work (hidden dependencies)
-- You can't clearly separate problem domains (not independent)
+- Problem domains cannot be clearly separated (not independent)
 - Agents return no summary (can't verify changes)
 - Integration requires major refactoring (conflicts)
 

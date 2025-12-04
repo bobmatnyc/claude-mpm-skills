@@ -361,7 +361,7 @@ This question is poor because:
 After creating evaluations:
 
 1. **Examine the XML file** to understand the schema
-2. **Load each task instruction** and in parallel using the MCP server and tools, identify the correct answer by attempting to solve the task YOURSELF
+2. **Load each task instruction** and in parallel using the MCP server and tools, identify the correct answer by attempting to solve the task directly
 3. **Flag any operations** that require WRITE or DESTRUCTIVE operations
 4. **Accumulate all CORRECT answers** and replace any incorrect answers in the document
 5. **Remove any `<qa_pair>`** that require WRITE or DESTRUCTIVE operations
@@ -584,7 +584,7 @@ python scripts/evaluation.py \
 
 ### Connection Errors
 
-If you get connection errors:
+When connection errors occur:
 - **STDIO**: Verify the command and arguments are correct
 - **SSE/HTTP**: Check the URL is accessible and headers are correct
 - Ensure any required API keys are set in environment variables or headers
