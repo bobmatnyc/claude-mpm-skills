@@ -11,8 +11,8 @@ progressive_disclosure:
     summary: "Full-featured Python web framework with batteries included (ORM, admin, auth)"
     when_to_use:
       - "When building content-heavy web applications"
-      - "When you need built-in admin interface"
-      - "When you want Django ORM and migrations"
+      - "When needing built-in admin interface"
+      - "When using Django ORM and migrations"
       - "When building REST APIs with Django REST Framework"
     quick_start:
       - "pip install django"
@@ -25,7 +25,7 @@ progressive_disclosure:
 
 ## Overview
 
-Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel.
+Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, enabling focus on writing applications without reinventing the wheel.
 
 **Key Philosophy**: "Batteries included" - Django comes with extensive built-in features including ORM, authentication, admin interface, forms, and security features.
 

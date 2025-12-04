@@ -11,9 +11,9 @@ progressive_disclosure:
     summary: "Modern E2E testing framework with cross-browser automation and built-in test runner"
     when_to_use:
       - "When testing web applications end-to-end"
-      - "When you need cross-browser testing"
+      - "When needing cross-browser testing"
       - "When testing user flows and interactions"
-      - "When you need screenshot/video recording"
+      - "When needing screenshot/video recording"
     quick_start:
       - "npm init playwright@latest"
       - "Choose TypeScript and test location"

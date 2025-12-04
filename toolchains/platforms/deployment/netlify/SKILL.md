@@ -12,8 +12,8 @@ progressive_disclosure:
     when_to_use:
       - "When deploying static sites and SPAs"
       - "When building JAMstack applications"
-      - "When you need serverless functions"
-      - "When you want built-in forms and auth"
+      - "When needing serverless functions"
+      - "When requiring built-in forms and auth"
     quick_start:
       - "npm install -g netlify-cli"
       - "netlify login"

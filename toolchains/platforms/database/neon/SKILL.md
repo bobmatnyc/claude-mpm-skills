@@ -10,9 +10,9 @@ progressive_disclosure:
   entry_point:
     summary: "Serverless Postgres with autoscaling, branching, and instant database provisioning"
     when_to_use:
-      - "When you need serverless Postgres"
+      - "When needing serverless Postgres"
       - "When building edge and serverless apps"
-      - "When you want database branching for dev/staging"
+      - "When implementing database branching for dev/staging"
       - "When using Drizzle, Prisma, or raw SQL"
     quick_start:
       - "Create project on Neon console"
