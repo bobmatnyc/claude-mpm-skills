@@ -150,7 +150,7 @@ Or on GitHub: Compare `feature/002-user-profile...feature/001-base-auth` (three 
 
 ### When Base PR Changes (Review Feedback)
 
-If PR-001 gets updated, you must rebase dependent PRs:
+If PR-001 gets updated, rebase dependent PRs:
 
 ```bash
 # Update PR-001 (base)

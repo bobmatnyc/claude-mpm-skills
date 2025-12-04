@@ -1,6 +1,6 @@
 ---
 name: prisma-orm
-description: Prisma ORM for TypeScript - Type-safe database toolkit with schema-first development, auto-generated client, migrations, relations, and Prisma Studio. Use when building Node.js or Next.js apps requiring database access with full type safety, complex relations, transactions, or when you need both development tools (Studio) and production performance.
+description: Prisma ORM for TypeScript - Type-safe database toolkit with schema-first development, auto-generated client, migrations, relations, and Prisma Studio. Use when building Node.js or Next.js apps requiring database access with full type safety, complex relations, transactions, or when both development tools (Studio) and production performance are needed.
 ---
 
 # Prisma ORM - Type-Safe Database Toolkit

@@ -1395,4 +1395,4 @@ Supabase provides a complete backend platform with:
 - **Local Development** with Supabase CLI
 - **Production Ready** with monitoring and backups
 
-Use Supabase when you need a full-featured backend with the power of Postgres, built-in auth, and realtime capabilities, all with excellent TypeScript and Next.js integration.
+Use Supabase when a full-featured backend with the power of Postgres, built-in auth, and realtime capabilities is needed, all with excellent TypeScript and Next.js integration.

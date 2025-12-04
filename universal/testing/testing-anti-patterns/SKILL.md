@@ -44,8 +44,8 @@ Tests must verify real behavior, not mock behavior. Mocks are a means to isolate
 
 ## When to Use This Skill
 
-Activate this skill when you're:
-- **Writing or changing tests** - Verify you're testing real behavior
+Activate this skill when:
+- **Writing or changing tests** - Verify tests cover real behavior
 - **Adding mocks** - Ensure mocking is necessary and correct
 - **Reviewing test failures** - Check if mock behavior is the issue
 - **Tempted to add test-only methods** - STOP and reconsider
@@ -120,7 +120,7 @@ Run this checklist before committing any test:
 
 **Mocks are tools to isolate, not things to test.**
 
-If you're testing mock behavior, you've gone wrong. Fix: Test real behavior or question why you're mocking at all.
+Testing mock behavior indicates a problem. Fix: Test real behavior or question why mocking is necessary.
 
 **TDD prevents these patterns.** Write test first → Watch fail → Minimal implementation → Pass → Refactor.
 
@@ -163,7 +163,7 @@ When using this skill, consider these complementary skills (if deployed in your 
 
 ## Red Flags - STOP
 
-**STOP immediately if you find yourself:**
+**STOP immediately when:**
 - **Testing mock behavior**
   - TypeScript: Asserting on `*-mock` test IDs, `expect(mock).toHaveBeenCalled()`
   - Python: `mock.assert_called()`, `mock.call_count` without real behavior checks

@@ -197,7 +197,7 @@ List the tools available in the MCP server:
 
 Repeat steps 1 & 2 until you have a good understanding:
 - Iterate multiple times
-- Think about the kinds of tasks you want to create
+- Consider the kinds of tasks to create
 - Refine your understanding
 - At NO stage should you READ the code of the MCP server implementation itself
 - Use your intuition and understanding to create reasonable, realistic, but VERY challenging tasks
@@ -375,7 +375,7 @@ Remember to parallelize solving tasks to avoid running out of context, then accu
 3. **Focus on Realistic Use Cases** that humans would actually want to accomplish
 4. **Create Challenging Questions** that test the limits of the MCP server's capabilities
 5. **Ensure Stability** by using historical data and closed concepts
-6. **Verify Answers** by solving the questions yourself using the MCP server tools
+6. **Verify Answers** by solving the questions using the MCP server tools
 7. **Iterate and Refine** based on what you learn during the process
 
 ---

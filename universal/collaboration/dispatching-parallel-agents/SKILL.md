@@ -25,7 +25,7 @@ When you have multiple unrelated failures (different test files, different subsy
 
 ## When to Use This Skill
 
-Activate this skill when you're facing:
+Activate this skill when facing:
 - **3+ test files failing** with different root causes
 - **Multiple subsystems broken** independently
 - **Each problem is self-contained** - can be understood without context from others

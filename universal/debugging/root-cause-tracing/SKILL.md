@@ -123,7 +123,7 @@ For detailed information:
 
 ## Red Flags - STOP
 
-If you catch yourself thinking:
+STOP when thinking:
 - "I'll just add validation here" (without finding source)
 - "This will prevent the error" (symptom fix)
 - "Too hard to trace back" (add instrumentation instead)

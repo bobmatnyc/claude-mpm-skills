@@ -148,7 +148,7 @@ skill-name/
 
 ## Red Flags - STOP
 
-If you catch yourself:
+STOP when:
 - "Let me write all the details in SKILL.md" → Move to references (progressive disclosure)
 - "I'll use second person" → Switch to imperative voice
 - "Same information in entry and reference" → Delete duplication

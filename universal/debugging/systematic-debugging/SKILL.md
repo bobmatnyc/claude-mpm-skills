@@ -52,8 +52,8 @@ But:
 - Insist on following systematic process
 - Everyone frustrated with you
 - Senior engineer annoyed
-- Tech lead thinks you're wasting time
-- You look like you don't trust experienced developers
+- Tech lead thinks time is being wasted
+- Risk appearing distrustful of experienced developers
 - Risk looking dogmatic/inflexible
 
 **B) Go along with senior's fix**

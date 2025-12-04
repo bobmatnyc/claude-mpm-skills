@@ -169,7 +169,7 @@ Dependencies should be visible. Service Locator hides them; DI exposes them.
 
 ## Red Flags - STOP
 
-If you catch yourself:
+STOP when:
 - "Let me add all these patterns upfront" → Apply only what solves current problems
 - "This pattern is best practice" → Best practice for what problem?
 - "We might need this later" → YAGNI - add when needed
