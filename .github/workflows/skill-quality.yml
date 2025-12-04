@@ -169,7 +169,7 @@ jobs:
       - name: Count SKILL.md files
         id: count
         run: |
-          ACTUAL_COUNT=$(find . -name "SKILL.md" -type f | wc -l)
+          ACTUAL_COUNT=$(find . -name "SKILL.md" -type f | wc -l | tr -d ' ')
           echo "actual_count=$ACTUAL_COUNT" >> $GITHUB_OUTPUT
           echo "Found $ACTUAL_COUNT SKILL.md files"
 
