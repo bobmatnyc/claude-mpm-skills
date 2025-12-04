@@ -1,0 +1,13 @@
+{
+  "name": "golang-testing-strategies",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "golang",
+  "framework": "testing",
+  "tags": ["testing", "golang", "testify", "gomock", "benchmarks", "ci-cd"],
+  "entry_point_tokens": 150,
+  "full_tokens": 4500,
+  "related_skills": [],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

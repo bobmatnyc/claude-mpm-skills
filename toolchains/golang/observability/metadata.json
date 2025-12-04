@@ -1,0 +1,13 @@
+{
+  "name": "golang-observability-opentelemetry",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "golang",
+  "framework": "observability",
+  "tags": ["observability", "golang", "opentelemetry", "prometheus", "tracing", "metrics", "logging", "slog"],
+  "entry_point_tokens": 150,
+  "full_tokens": 5000,
+  "related_skills": ["../toolchains-golang-web", "../toolchains-golang-testing"],
+  "author": "Claude MPM",
+  "license": "MIT"
+}
