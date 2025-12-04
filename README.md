@@ -426,9 +426,9 @@ Skills use a two-tier structure for optimal token efficiency:
 
 ## Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions! See [CONTRIBUTING.md](docs/community/CONTRIBUTING.md) for guidelines.
 
-**Governance**: All merges to main require approval from @bobmatnyc (see [GOVERNANCE.md](GOVERNANCE.md))
+**Governance**: All merges to main require approval from @bobmatnyc (see [GOVERNANCE.md](docs/community/GOVERNANCE.md))
 
 ### Skill Format Requirements
 
@@ -449,12 +449,12 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 - **[Skill Creation Guide](docs/SKILL_CREATION_GUIDE.md)** - Building your own skills
 - **[Best Practices](docs/SKILL_SELF_CONTAINMENT_STANDARD.md)** - Self-containment standards
-- **[Contributing](CONTRIBUTING.md)** - Contribution guidelines
+- **[Contributing](docs/community/CONTRIBUTING.md)** - Contribution guidelines
 - **[Versioning Policy](docs/VERSIONING.md)** - Semantic versioning for skills
 
 ### Architecture & Research
 
-- **[Architecture](docs/STRUCTURE.md)** - Repository structure
+- **[Architecture](docs/architecture/STRUCTURE.md)** - Repository structure
 - **[Research Documents](docs/research/)** - Pattern analysis and guides
   - Python, TypeScript, Ruby, Rust, PHP, Java, Go advanced patterns
   - Skills compliance analysis
@@ -463,7 +463,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 ### Reference
 
 - **[PR Checklist](docs/SKILL_CREATION_PR_CHECKLIST.md)** - Submission requirements
-- **[GitHub Setup](docs/GITHUB_REPOSITORY_SETUP.md)** - Repository configuration
+- **[GitHub Setup](docs/infrastructure/GITHUB_REPOSITORY_SETUP.md)** - Repository configuration
 
 ## License
 

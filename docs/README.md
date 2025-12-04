@@ -11,22 +11,24 @@ This directory contains all documentation for the Claude MPM Skills repository. 
 
 ### For Users
 - **[User Guide](USER_GUIDE.md)** - Complete guide to using Claude Code skills (56KB)
-- **[Quick Setup Guide](QUICK_SETUP_GUIDE.md)** - Get started quickly
+- **[Quick Setup Guide](guides/QUICK_SETUP_GUIDE.md)** - Get started quickly
 - **[Troubleshooting](TROUBLESHOOTING.md)** - Common issues and solutions
 
 ### For Contributors
-- **[Contributing Guide](../CONTRIBUTING.md)** - How to contribute to this project
+- **[Contributing Guide](community/CONTRIBUTING.md)** - How to contribute to this project
 - **[Skill Creation Guide](SKILL_CREATION_GUIDE.md)** - Create new skills (95KB)
 - **[Skill Creation PR Checklist](SKILL_CREATION_PR_CHECKLIST.md)** - Pre-submission verification (13KB)
 - **[Skill Self-Containment Standard](SKILL_SELF_CONTAINMENT_STANDARD.md)** - Self-containment requirements (38KB)
-- **[Voice Consistency Guide](VOICE_CONSISTENCY_GUIDE.md)** - Writing style standards (13KB)
+- **[Voice Consistency Guide](guides/VOICE_CONSISTENCY_GUIDE.md)** - Writing style standards (13KB)
 
 ### For Maintainers
-- **[Implementation Status](IMPLEMENTATION_STATUS.md)** - Quality review progress tracking (93% complete)
-- **[Documentation Status](DOCUMENTATION_STATUS.md)** - Documentation completion status
-- **[Skills Improvement Report](skills-improvement-report-2025-12-03.md)** - External review findings
+- **[Implementation Status](status/implementation-status-2025-12-03.md)** - Quality review progress tracking (93% complete)
+- **[Documentation Status](status/documentation-status-2025-12-03.md)** - Documentation completion status
+- **[Skills Improvement Report](status/skills-improvement-2025-12-03.md)** - External review findings
 - **[Versioning Policy](VERSIONING.md)** - Semantic versioning for skills (10KB)
-- **[Governance](../GOVERNANCE.md)** - Project governance model
+- **[Governance](community/GOVERNANCE.md)** - Project governance model
+- **[Architecture](architecture/STRUCTURE.md)** - Repository structure
+- **[GitHub Setup](infrastructure/GITHUB_REPOSITORY_SETUP.md)** - CI/CD configuration
 
 ---
 
@@ -35,7 +37,7 @@ This directory contains all documentation for the Claude MPM Skills repository. 
 ### User Documentation
 
 #### Getting Started
-- **[Quick Setup Guide](QUICK_SETUP_GUIDE.md)** (12KB)
+- **[Quick Setup Guide](guides/QUICK_SETUP_GUIDE.md)** (12KB)
   - Installation and first deployment
   - Toolchain detection
   - Skill selection basics
@@ -87,7 +89,7 @@ This directory contains all documentation for the Claude MPM Skills repository. 
    - Submission process
 
 #### Quality Standards
-- **[Voice Consistency Guide](VOICE_CONSISTENCY_GUIDE.md)** (13KB)
+- **[Voice Consistency Guide](guides/VOICE_CONSISTENCY_GUIDE.md)** (13KB)
   - Writing style standards
   - Imperative vs second-person
   - Example format (❌/✅ pattern)
@@ -112,7 +114,7 @@ This directory contains all documentation for the Claude MPM Skills repository. 
 ### Maintainer Documentation
 
 #### Status Tracking
-- **[Implementation Status](IMPLEMENTATION_STATUS.md)** (Updated: 2025-12-03)
+- **[Implementation Status](status/implementation-status-2025-12-03.md)** (Updated: 2025-12-03)
   - Quality review implementation tracking
   - **93% complete** (14/15 items done)
   - Priority 1 (Accuracy): ✅ 100% complete
@@ -122,22 +124,27 @@ This directory contains all documentation for the Claude MPM Skills repository. 
   - Recent completions with commit references
   - Remaining work and next steps
 
-- **[Documentation Status](DOCUMENTATION_STATUS.md)** (Updated: 2025-12-03)
+- **[Documentation Status](status/documentation-status-2025-12-03.md)** (Updated: 2025-12-03)
   - Self-containment documentation: ✅ Complete
   - User guides: ✅ Complete (USER_GUIDE.md created)
   - Developer guides: ✅ Complete
   - Recent documentation updates
   - Coverage summary
 
+- **[Voice Fixes Progress](status/voice-fixes-progress-2025-12-04.md)** (Updated: 2025-12-04)
+  - Voice consistency violation fixes
+  - 130 errors → 0 errors (100% fixed)
+  - Batch 1-3 progress tracking
+
 #### Analysis & Research
-- **[Skills Improvement Report](skills-improvement-report-2025-12-03.md)** (4.3KB)
+- **[Skills Improvement Report](status/skills-improvement-2025-12-03.md)** (4.3KB)
   - External review findings
   - High-priority gaps identified
   - Recommended next steps
   - Implementation roadmap
 
 #### Repository Management
-- **[GitHub Repository Setup](GITHUB_REPOSITORY_SETUP.md)** (41KB)
+- **[GitHub Repository Setup](infrastructure/GITHUB_REPOSITORY_SETUP.md)** (41KB)
   - Repository configuration
   - Branch protection
   - CI/CD setup
