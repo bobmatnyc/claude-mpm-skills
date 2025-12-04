@@ -16,16 +16,22 @@ jobs:
         run: |
           echo "🔍 Validating skill structure..."
 
-          # Check all SKILL.md files exist
-          find toolchains/ universal/ -type d -mindepth 3 -maxdepth 3 2>/dev/null | while read dir; do
-            if [ ! -f "$dir/SKILL.md" ]; then
-              echo "❌ Missing SKILL.md in $dir"
-              exit 1
-            fi
-            if [ ! -f "$dir/metadata.json" ]; then
-              echo "❌ Missing metadata.json in $dir"
-              exit 1
-            fi
+          # Check all SKILL.md files exist (excluding references/ directories)
+          # Check depths 3-4 to handle both flat and nested structures
+          for depth in 3 4; do
+            find toolchains/ universal/ -type d -mindepth $depth -maxdepth $depth 2>/dev/null | grep -v "/references$" | while read dir; do
+              # Only validate if it contains actual skill files (has SKILL.md or metadata.json)
+              if [ -f "$dir/SKILL.md" ] || [ -f "$dir/metadata.json" ]; then
+                if [ ! -f "$dir/SKILL.md" ]; then
+                  echo "❌ Missing SKILL.md in $dir"
+                  exit 1
+                fi
+                if [ ! -f "$dir/metadata.json" ]; then
+                  echo "❌ Missing metadata.json in $dir"
+                  exit 1
+                fi
+              fi
+            done
           done
 
           echo "✅ All skills have required files"
@@ -51,10 +57,23 @@ jobs:
         run: |
           echo "🔍 Checking for sensitive data..."
 
-          # Search for common patterns (excluding safe examples)
-          if grep -r -i "api[_-]key\|secret\|password\|token" --include="*.md" --include="*.json" toolchains/ universal/ | grep -v "example\|placeholder\|YOUR_\|<YOUR_\|{API_KEY}"; then
-            echo "❌ Potential sensitive data detected"
+          # Only check for real secrets with specific patterns (not documentation examples)
+          # Look for actual API keys that match common formats
+          if grep -rE "sk-[a-zA-Z0-9]{32,}|ghp_[a-zA-Z0-9]{36}|xox[baprs]-[a-zA-Z0-9-]{10,}" --include="*.md" --include="*.json" toolchains/ universal/; then
+            echo "❌ Actual API key or token detected"
             exit 1
           fi
 
-          echo "✅ No sensitive data detected"
+          # Check for private keys
+          if grep -r "BEGIN PRIVATE KEY\|BEGIN RSA PRIVATE KEY" --include="*.md" --include="*.json" toolchains/ universal/; then
+            echo "❌ Private key detected"
+            exit 1
+          fi
+
+          # Check for AWS credentials
+          if grep -rE "AKIA[0-9A-Z]{16}" --include="*.md" --include="*.json" toolchains/ universal/; then
+            echo "❌ AWS access key detected"
+            exit 1
+          fi
+
+          echo "✅ No actual secrets detected"
