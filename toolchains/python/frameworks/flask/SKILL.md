@@ -8,7 +8,7 @@ license: MIT
 progressive_disclosure:
   entry_point:
     summary: "Lightweight Python web framework for microservices and REST APIs with flexible architecture and extensive extension ecosystem"
-    when_to_use: "Building microservices, REST APIs with Flask-RESTful, lightweight web apps, when you need flexibility over batteries-included frameworks, rapid prototyping"
+    when_to_use: "Building microservices, REST APIs with Flask-RESTful, lightweight web apps, when flexibility over batteries-included frameworks is needed, rapid prototyping"
     quick_start: "1. pip install flask 2. Create app.py with @app.route decorators 3. flask run 4. Access http://localhost:5000"
 context_limit: 700
 tags:

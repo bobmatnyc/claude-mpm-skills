@@ -8,7 +8,7 @@ license: MIT
 progressive_disclosure:
   entry_point:
     summary: "Modern TypeScript testing with Vitest: Vite-native, ESM-first, instant HMR, built-in TypeScript support, React/Vue component testing"
-    when_to_use: "Testing TypeScript/JavaScript projects, React/Vue components, Vite-based projects, when migrating from Jest, when you need fast test execution"
+    when_to_use: "Testing TypeScript/JavaScript projects, React/Vue components, Vite-based projects, when migrating from Jest, when fast test execution is needed"
     quick_start: "1. npm install -D vitest 2. Create vitest.config.ts 3. Write *.test.ts files 4. Run: npx vitest"
 context_limit: 700
 tags:

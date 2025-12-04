@@ -11,9 +11,9 @@ progressive_disclosure:
     summary: "Python SQL toolkit and ORM with powerful query builder and relationship mapping"
     when_to_use:
       - "When building Python applications with databases"
-      - "When you need complex SQL queries with type safety"
+      - "When needing complex SQL queries with type safety"
       - "When working with FastAPI/Flask/Django"
-      - "When you need database migrations (Alembic)"
+      - "When needing database migrations (Alembic)"
     quick_start:
       - "pip install sqlalchemy"
       - "Define models with declarative base"

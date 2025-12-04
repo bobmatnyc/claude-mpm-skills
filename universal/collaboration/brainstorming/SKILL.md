@@ -54,13 +54,13 @@ When your human partner confirms (any affirmative response):
 
 ## When to Revisit Earlier Phases
 
-**You can and should go backward when:**
+**Go backward when:**
 - Partner reveals new constraint during Phase 2 or 3 → Return to Phase 1 to understand it
 - Validation shows fundamental gap in requirements → Return to Phase 1
 - Partner questions approach during Phase 3 → Return to Phase 2 to explore alternatives
 - Something doesn't make sense → Go back and clarify
 
-**Don't force forward linearly** when going backward would give better results.
+**Don't force forward linearly** when going backward gives better results.
 
 ## Related Skills
 

@@ -11,7 +11,7 @@ progressive_disclosure:
     summary: "Lightning-fast build tool with instant HMR and ESM-first architecture for modern web development"
     when_to_use:
       - "When building React/Vue/Svelte/Preact applications"
-      - "When you need instant HMR (Hot Module Replacement)"
+      - "When needing instant HMR (Hot Module Replacement)"
       - "When migrating from webpack/CRA/Parcel"
       - "When setting up TypeScript projects with zero config"
       - "When building component libraries or UI frameworks"

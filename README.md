@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains a comprehensive collection of **89 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, PHP, Rust, AI, and universal tooling.
+This repository contains a comprehensive collection of **191 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, PHP, Rust, AI, and universal tooling.
 
 ## What is Claude MPM?
 
@@ -18,7 +18,7 @@ This repository contains a comprehensive collection of **89 Claude Code skills**
 **Key Components:**
 - **Claude Code**: Anthropic's official CLI environment
 - **Claude MPM**: Multi-agent framework running in Claude Code
-- **Skills**: Domain-specific knowledge modules (this repo contains 89 skills)
+- **Skills**: Domain-specific knowledge modules (this repo contains 191 skills)
 
 **How They Work Together:**
 ```
@@ -39,7 +39,7 @@ Skills (Knowledge Modules) ← You are here
 
 ## Quick Stats
 
-- **Total Skills**: 89 production-ready skills
+- **Total Skills**: 191 production-ready skills
 - **Coverage**: 95%+ of modern development workflows
 - **Token Efficiency**: ~7,120 entry tokens vs ~400,500 full tokens (98.2% savings)
 - **Categories**: Python, TypeScript, JavaScript, PHP, Rust, Next.js, UI, AI, Platforms, Universal
@@ -415,20 +415,20 @@ Skills use a two-tier structure for optimal token efficiency:
 - Testing strategies
 - Troubleshooting
 
-**Token Savings**: 98.2% during discovery (load 89 entry points vs all full docs)
+**Token Savings**: 98.2% during discovery (load 191 entry points vs all full docs)
 
 ## Performance Benchmarks
 
-- **Discovery Phase**: 7,120 tokens (all 89 entry points) vs 400,500 tokens (all full docs)
+- **Discovery Phase**: 15,275 tokens (all 191 entry points) vs 859,500 tokens (all full docs)
 - **Token Efficiency**: 98.2% reduction during skill browsing
 - **Coverage**: 95%+ of modern development workflows
 - **Production Adopters**: Skills based on patterns from JetBlue, Databricks, Walmart, VMware
 
 ## Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions! See [CONTRIBUTING.md](docs/community/CONTRIBUTING.md) for guidelines.
 
-**Governance**: All merges to main require approval from @bobmatnyc (see [GOVERNANCE.md](GOVERNANCE.md))
+**Governance**: All merges to main require approval from @bobmatnyc (see [GOVERNANCE.md](docs/community/GOVERNANCE.md))
 
 ### Skill Format Requirements
 
@@ -449,12 +449,12 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 - **[Skill Creation Guide](docs/SKILL_CREATION_GUIDE.md)** - Building your own skills
 - **[Best Practices](docs/SKILL_SELF_CONTAINMENT_STANDARD.md)** - Self-containment standards
-- **[Contributing](CONTRIBUTING.md)** - Contribution guidelines
+- **[Contributing](docs/community/CONTRIBUTING.md)** - Contribution guidelines
 - **[Versioning Policy](docs/VERSIONING.md)** - Semantic versioning for skills
 
 ### Architecture & Research
 
-- **[Architecture](docs/STRUCTURE.md)** - Repository structure
+- **[Architecture](docs/architecture/STRUCTURE.md)** - Repository structure
 - **[Research Documents](docs/research/)** - Pattern analysis and guides
   - Python, TypeScript, Ruby, Rust, PHP, Java, Go advanced patterns
   - Skills compliance analysis
@@ -463,7 +463,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 ### Reference
 
 - **[PR Checklist](docs/SKILL_CREATION_PR_CHECKLIST.md)** - Submission requirements
-- **[GitHub Setup](docs/GITHUB_REPOSITORY_SETUP.md)** - Repository configuration
+- **[GitHub Setup](docs/infrastructure/GITHUB_REPOSITORY_SETUP.md)** - Repository configuration
 
 ## License
 
@@ -488,7 +488,7 @@ Built with research from:
 
 ---
 
-**Last Updated**: 2025-12-02
-**Skills Count**: 89
+**Last Updated**: 2025-12-04
+**Skills Count**: 191
 **Coverage**: 95%+
 **Token Efficiency**: 98.2%

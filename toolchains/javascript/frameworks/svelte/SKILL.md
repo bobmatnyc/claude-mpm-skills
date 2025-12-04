@@ -749,7 +749,7 @@ export function clickOutside(node: HTMLElement, callback: () => void) {
 
 ## Performance Best Practices
 
-1. **Use $derived over $effect** when you just need computed values
+1. **Use $derived over $effect** when only computed values are needed
 2. **Avoid unnecessary $effect** - only for side effects, not computations
 3. **Leverage compiler optimizations** - Svelte does most work at build time
 4. **Use keyed each blocks** - `{#each items as item (item.id)}`

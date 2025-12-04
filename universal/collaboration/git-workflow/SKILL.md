@@ -411,4 +411,4 @@ git show commit-hash
 - **Descriptive messages** - Future you will thank present you
 - **Pull before push** - Stay synchronized with team
 - **Use branches** - Keep main stable
-- **Review before commit** - Check what you're committing
+- **Review before commit** - Check what is being committed

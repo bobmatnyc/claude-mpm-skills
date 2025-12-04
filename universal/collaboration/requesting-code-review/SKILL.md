@@ -97,7 +97,7 @@ See [pushing back examples](references/review-examples.md#pushing-back-on-review
 **Always:**
 - Provide full context in review request
 - Fix Critical issues immediately
-- Document why you disagree (if you do)
+- Document disagreements with technical justification
 - Re-review after fixing Critical issues
 
 ## Examples

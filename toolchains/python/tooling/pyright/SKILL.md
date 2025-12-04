@@ -10,9 +10,9 @@ progressive_disclosure:
   entry_point:
     summary: "Fast Python type checker from Microsoft with VS Code integration and strict modes"
     when_to_use:
-      - "When you need faster type checking than mypy"
+      - "When needing faster type checking than mypy"
       - "When using VS Code (Pylance)"
-      - "When you want stricter type checking"
+      - "When requiring stricter type checking"
       - "When migrating from mypy"
     quick_start:
       - "npm install -g pyright"

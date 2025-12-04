@@ -11,8 +11,8 @@ progressive_disclosure:
     summary: "Open-source Firebase alternative with Postgres, authentication, storage, and realtime"
     when_to_use:
       - "When building full-stack applications"
-      - "When you need auth, database, and storage"
-      - "When you want realtime subscriptions"
+      - "When auth, database, and storage are required"
+      - "When realtime subscriptions are needed"
       - "When using Next.js, React, or Vue"
     quick_start:
       - "Create project on Supabase console"
@@ -1395,4 +1395,4 @@ Supabase provides a complete backend platform with:
 - **Local Development** with Supabase CLI
 - **Production Ready** with monitoring and backups
 
-Use Supabase when you need a full-featured backend with the power of Postgres, built-in auth, and realtime capabilities, all with excellent TypeScript and Next.js integration.
+Use Supabase when a full-featured backend with the power of Postgres, built-in auth, and realtime capabilities is needed, all with excellent TypeScript and Next.js integration.

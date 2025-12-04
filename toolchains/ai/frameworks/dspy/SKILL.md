@@ -13,7 +13,7 @@ progressive_disclosure:
       - "When optimizing prompts systematically with evaluation data"
       - "When building production LLM systems requiring accuracy improvements"
       - "When implementing RAG, classification, or structured extraction tasks"
-      - "When you need version-controlled, reproducible prompts"
+      - "When version-controlled, reproducible prompts are needed"
     quick_start:
       - "pip install dspy-ai"
       - "Define signature: class QA(dspy.Signature): question = dspy.InputField(); answer = dspy.OutputField()"

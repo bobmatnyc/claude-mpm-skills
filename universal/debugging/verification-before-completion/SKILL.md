@@ -47,7 +47,7 @@ Activate ALWAYS before claiming:
 
 **Use this ESPECIALLY when:**
 - Under time pressure or tired
-- "Quick fix" seems obvious or you're confident
+- "Quick fix" seems obvious or confidence is high
 - Agent reports success or tests "should" pass
 
 ## The Iron Law
@@ -56,7 +56,7 @@ Activate ALWAYS before claiming:
 NO COMPLETION CLAIMS WITHOUT FRESH VERIFICATION EVIDENCE
 ```
 
-If you haven't run the verification command in this message, you cannot claim it passes.
+Without running the verification command in this message, claiming success is not allowed.
 
 ## Core Principles
 
@@ -96,7 +96,7 @@ Skip any step = lying, not verifying.
 
 ## Red Flags - STOP Immediately
 
-If you catch yourself:
+STOP when:
 - Using "should", "probably", "seems to"
 - Expressing satisfaction before verification
 - About to commit/push/PR without verification
@@ -112,7 +112,7 @@ If you catch yourself:
 - Recovery cost: 120+ minutes (60x more expensive)
 - 40% of unverified "complete" claims required rework
 
-**Core violation:** "If you lie, you'll be replaced"
+**Core violation:** "Lying leads to replacement"
 
 ## Navigation
 

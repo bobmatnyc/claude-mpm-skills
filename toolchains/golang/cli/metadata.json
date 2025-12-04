@@ -1,0 +1,13 @@
+{
+  "name": "golang-cli-cobra-viper",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "golang",
+  "framework": "cli",
+  "tags": ["cli", "golang", "cobra", "viper", "configuration", "shell-completion"],
+  "entry_point_tokens": 140,
+  "full_tokens": 4500,
+  "related_skills": ["../toolchains-golang-testing"],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

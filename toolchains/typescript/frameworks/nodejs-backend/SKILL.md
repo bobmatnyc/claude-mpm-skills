@@ -12,7 +12,7 @@ progressive_disclosure:
     when_to_use:
       - "When building REST APIs with TypeScript"
       - "When creating Express/Fastify servers"
-      - "When you need server-side TypeScript"
+      - "When needing server-side TypeScript"
       - "When building microservices"
     quick_start:
       - "npm init -y && npm install -D typescript @types/node tsx"

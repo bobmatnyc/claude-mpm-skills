@@ -41,7 +41,7 @@ Activate when developing custom EspoCRM modules, entities, relationships, hooks,
 
 **BUSINESS LOGIC IN SERVICES, NOT HOOKS | DATA ACCESS VIA ENTITYMANAGER, NEVER DIRECT PDO | NEVER PASS CONTAINER AS DEPENDENCY**
 
-If you're accessing Container directly or writing business logic in hooks, you're violating architecture.
+Accessing Container directly or writing business logic in hooks violates architecture.
 
 ## Core Architecture Principles
 

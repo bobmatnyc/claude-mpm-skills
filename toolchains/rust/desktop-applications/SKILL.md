@@ -63,7 +63,7 @@ Activate when building desktop applications that need **native performance**, **
 
 **TAURI FOR WEB UI + RUST BACKEND | NATIVE GUI FOR PURE RUST | NEVER MIX BUSINESS LOGIC IN FRONTEND**
 
-If you're duplicating logic between frontend and backend, or bypassing IPC for direct access, you're violating architecture.
+Duplicating logic between frontend and backend, or bypassing IPC for direct access, violates architecture.
 
 ## Core Principles
 
