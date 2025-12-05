@@ -1,0 +1,26 @@
+{
+  "name": "phoenix-api-channels",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "elixir",
+  "framework": "phoenix-api-channels",
+  "tags": [
+    "elixir",
+    "phoenix",
+    "channels",
+    "presence",
+    "pubsub",
+    "json",
+    "api",
+    "auth",
+    "telemetry"
+  ],
+  "entry_point_tokens": 170,
+  "full_tokens": 5200,
+  "requires": [],
+  "author": "Claude MPM Team",
+  "updated": "2025-12-05",
+  "source_path": "toolchains/elixir/frameworks/phoenix-api-channels/SKILL.md",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}
