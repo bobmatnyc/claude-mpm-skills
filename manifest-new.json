@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
-  "updated": "2025-12-03",
+  "updated": "2025-12-05",
   "description": "Curated collection of Claude Code skills for intelligent project development",
   "skills": {
     "universal": [
@@ -2093,6 +2093,105 @@
           "updated": "2025-12-01",
           "source_path": "toolchains/universal/data/graphql/SKILL.md"
         }
+      ],
+      "elixir": [
+        {
+          "name": "phoenix-liveview",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "elixir",
+          "framework": "phoenix-liveview",
+          "tags": [
+            "elixir",
+            "phoenix",
+            "liveview",
+            "beam",
+            "otp",
+            "ecto",
+            "pubsub",
+            "presence",
+            "telemetry"
+          ],
+          "entry_point_tokens": 180,
+          "full_tokens": 5600,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-05",
+          "source_path": "toolchains/elixir/frameworks/phoenix-liveview/SKILL.md"
+        },
+        {
+          "name": "phoenix-api-channels",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "elixir",
+          "framework": "phoenix-api-channels",
+          "tags": [
+            "elixir",
+            "phoenix",
+            "channels",
+            "presence",
+            "pubsub",
+            "json",
+            "api",
+            "auth",
+            "telemetry"
+          ],
+          "entry_point_tokens": 170,
+          "full_tokens": 5200,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-05",
+          "source_path": "toolchains/elixir/frameworks/phoenix-api-channels/SKILL.md"
+        },
+        {
+          "name": "ecto-patterns",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "elixir",
+          "framework": "ecto-patterns",
+          "tags": [
+            "elixir",
+            "ecto",
+            "phoenix",
+            "queries",
+            "migrations",
+            "transactions",
+            "multi-tenancy",
+            "pagination",
+            "performance",
+            "testing"
+          ],
+          "entry_point_tokens": 170,
+          "full_tokens": 5400,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-05",
+          "source_path": "toolchains/elixir/data/ecto-patterns/SKILL.md"
+        },
+        {
+          "name": "phoenix-ops",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "elixir",
+          "framework": "phoenix-ops",
+          "tags": [
+            "elixir",
+            "phoenix",
+            "ops",
+            "releases",
+            "libcluster",
+            "telemetry",
+            "logging",
+            "security",
+            "deployment"
+          ],
+          "entry_point_tokens": 180,
+          "full_tokens": 5600,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-05",
+          "source_path": "toolchains/elixir/ops/phoenix-ops/SKILL.md"
+        }
       ]
     },
     "examples": [
@@ -2111,10 +2210,10 @@
         "entry_point_tokens": 3396,
         "full_tokens": 3396,
         "requires": [
-          "⚠️ VIOLATION: This field should be empty!",
-          "⚠️ setup-skill",
-          "⚠️ database-skill",
-          "⚠️ pytest-patterns"
+          "\u26a0\ufe0f VIOLATION: This field should be empty!",
+          "\u26a0\ufe0f setup-skill",
+          "\u26a0\ufe0f database-skill",
+          "\u26a0\ufe0f pytest-patterns"
         ],
         "author": "claude-mpm-skills",
         "updated": "2025-12-01",
@@ -2145,11 +2244,11 @@
     ]
   },
   "metadata": {
-    "total_skills": 89,
+    "total_skills": 93,
     "categories": {
       "universal": 27,
-      "toolchains": 60,
-      "examples": 2
+      "examples": 2,
+      "toolchains": 64
     },
     "toolchains": {
       "ai": 7,
@@ -2161,9 +2260,10 @@
       "rust": 2,
       "typescript": 12,
       "ui": 4,
-      "universal": 3
+      "universal": 3,
+      "elixir": 4
     },
-    "last_updated": "2025-12-03",
+    "last_updated": "2025-12-05",
     "schema_version": "2.0.0"
   },
   "provenance": {

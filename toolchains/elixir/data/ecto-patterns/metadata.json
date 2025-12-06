@@ -1,0 +1,27 @@
+{
+  "name": "ecto-patterns",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "elixir",
+  "framework": "ecto-patterns",
+  "tags": [
+    "elixir",
+    "ecto",
+    "phoenix",
+    "queries",
+    "migrations",
+    "transactions",
+    "multi-tenancy",
+    "pagination",
+    "performance",
+    "testing"
+  ],
+  "entry_point_tokens": 170,
+  "full_tokens": 5400,
+  "requires": [],
+  "author": "Claude MPM Team",
+  "updated": "2025-12-05",
+  "source_path": "toolchains/elixir/data/ecto-patterns/SKILL.md",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

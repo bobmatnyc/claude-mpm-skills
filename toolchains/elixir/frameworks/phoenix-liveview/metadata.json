@@ -1,0 +1,26 @@
+{
+  "name": "phoenix-liveview",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "elixir",
+  "framework": "phoenix-liveview",
+  "tags": [
+    "elixir",
+    "phoenix",
+    "liveview",
+    "beam",
+    "otp",
+    "ecto",
+    "pubsub",
+    "presence",
+    "telemetry"
+  ],
+  "entry_point_tokens": 180,
+  "full_tokens": 5600,
+  "requires": [],
+  "author": "Claude MPM Team",
+  "updated": "2025-12-05",
+  "source_path": "toolchains/elixir/frameworks/phoenix-liveview/SKILL.md",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

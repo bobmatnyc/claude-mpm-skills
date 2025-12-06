@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains a comprehensive collection of **191 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, PHP, Rust, AI, and universal tooling.
+This repository contains a comprehensive collection of **93 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, AI, and universal tooling.
 
 ## What is Claude MPM?
 
@@ -18,7 +18,7 @@ This repository contains a comprehensive collection of **191 Claude Code skills*
 **Key Components:**
 - **Claude Code**: Anthropic's official CLI environment
 - **Claude MPM**: Multi-agent framework running in Claude Code
-- **Skills**: Domain-specific knowledge modules (this repo contains 191 skills)
+- **Skills**: Domain-specific knowledge modules (this repo contains 93 skills)
 
 **How They Work Together:**
 ```
@@ -31,25 +31,25 @@ Skills (Knowledge Modules) ← You are here
 
 ## Features
 
-- **Progressive Loading**: Skills load on-demand with 60-95 token entry points, expanding to 3,000-6,000 tokens
-- **Token Efficiency**: 98.2% token savings during discovery phase
+- **Progressive Loading**: Skills load on-demand with compact entry points, expanding to full references when needed
+- **Token Efficiency**: ~83% token savings during discovery phase
 - **Toolchain Detection**: Automatically deploy relevant skills based on project type
 - **Production-Ready**: All skills include real-world examples, best practices, and troubleshooting
 - **Research-Backed**: Built on latest 2025 techniques and industry patterns
 
 ## Quick Stats
 
-- **Total Skills**: 191 production-ready skills
+- **Total Skills**: 93 production-ready skills
 - **Coverage**: 95%+ of modern development workflows
-- **Token Efficiency**: ~7,120 entry tokens vs ~400,500 full tokens (98.2% savings)
-- **Categories**: Python, TypeScript, JavaScript, PHP, Rust, Next.js, UI, AI, Platforms, Universal
+- **Token Efficiency**: ~64.0k entry tokens vs ~395.2k full tokens (~84% savings)
+- **Categories**: Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, Next.js, UI, AI, Platforms, Universal
 - **Complete Stacks**: Full-stack TypeScript, Python Web, React Frontend, AI Workflows
 
 ## Repository Structure
 
 ```
 claude-mpm-skills/
-├── toolchains/          # Language/framework-specific skills (60 skills)
+├── toolchains/          # Language/framework-specific skills (64 skills)
 │   ├── python/         # 10 skills
 │   │   ├── frameworks/     # Django, FastAPI, Flask
 │   │   ├── testing/        # pytest
@@ -73,8 +73,18 @@ claude-mpm-skills/
 │   ├── php/            # 6 skills
 │   │   ├── frameworks/     # WordPress, EspoCRM
 │   │   └── testing/        # PHPUnit, PHPCS
+│   ├── golang/         # 5 skills
+│   │   ├── web/            # net/http, Chi, Gin, Echo, Fiber
+│   │   ├── testing/        # Go testing, testify, httptest
+│   │   ├── data/           # SQL, migrations, ORMs/query builders
+│   │   ├── cli/            # CLI tooling patterns
+│   │   └── observability/  # Logging and telemetry
 │   ├── rust/           # 2 skills
 │   │   └── frameworks/     # Tauri
+│   ├── elixir/         # 4 skills
+│   │   ├── frameworks/     # Phoenix + LiveView (BEAM), Phoenix API + Channels
+│   │   ├── data/           # Ecto patterns
+│   │   └── ops/            # Phoenix operations & releases
 │   ├── nextjs/         # 2 skills
 │   │   ├── core/           # Next.js fundamentals
 │   │   └── v16/            # Next.js 16 (Turbopack, cache components)
@@ -401,7 +411,7 @@ Session Compression + OpenRouter + MCP
 
 Skills use a two-tier structure for optimal token efficiency:
 
-### Entry Point (60-95 tokens)
+### Entry Point (60-200 tokens, depending on skill depth)
 - Skill name and summary
 - When to use (3-5 scenarios)
 - Quick start (3-5 steps)
@@ -415,14 +425,15 @@ Skills use a two-tier structure for optimal token efficiency:
 - Testing strategies
 - Troubleshooting
 
-**Token Savings**: 98.2% during discovery (load 191 entry points vs all full docs)
+**Token Savings**: ~84% during discovery (load 93 entry points vs all full docs)
 
 ## Performance Benchmarks
 
-- **Discovery Phase**: 15,275 tokens (all 191 entry points) vs 859,500 tokens (all full docs)
-- **Token Efficiency**: 98.2% reduction during skill browsing
+- **Discovery Phase**: 63,982 tokens (all 93 entry points) vs 395,214 tokens (all full docs)
+- **Token Efficiency**: ~84% reduction during skill browsing
 - **Coverage**: 95%+ of modern development workflows
 - **Production Adopters**: Skills based on patterns from JetBlue, Databricks, Walmart, VMware
+- **Token Reporting**: `python scripts/token_report.py --manifest manifest.json --out stats/token-summary.json` for CI/dashboard consumption
 
 ## Contributing
 
@@ -433,7 +444,7 @@ We welcome contributions! See [CONTRIBUTING.md](docs/community/CONTRIBUTING.md) 
 ### Skill Format Requirements
 
 1. **Progressive Disclosure**: YAML frontmatter with entry_point section
-2. **Token Budgets**: Entry 60-95 tokens, Full 3,000-6,000 tokens
+2. **Token Budgets**: Entry 60-200 tokens, Full 3,000-6,000 tokens
 3. **Metadata**: Complete metadata.json with tags, related_skills, token estimates
 4. **Examples**: Real-world code examples with error handling
 5. **Versioning**: Semantic versioning (see [docs/VERSIONING.md](docs/VERSIONING.md))
@@ -488,7 +499,7 @@ Built with research from:
 
 ---
 
-**Last Updated**: 2025-12-04
-**Skills Count**: 191
+**Last Updated**: 2025-12-05
+**Skills Count**: 93
 **Coverage**: 95%+
-**Token Efficiency**: 98.2%
+**Token Efficiency**: ~83%
