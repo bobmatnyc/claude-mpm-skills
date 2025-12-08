@@ -1,0 +1,16 @@
+{
+  "name": "validated-handler",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "nextjs",
+  "framework": "nextjs",
+  "tags": ["nextjs", "api", "validation", "zod", "typescript", "error-handling", "app-router"],
+  "entry_point_tokens": 200,
+  "full_tokens": 3500,
+  "requires": ["toolchains-nextjs-core", "toolchains-typescript-validation-zod"],
+  "author": "claude-mpm-skills",
+  "updated": "2025-12-08",
+  "source_path": "toolchains/nextjs/api/validated-handler/SKILL.md",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

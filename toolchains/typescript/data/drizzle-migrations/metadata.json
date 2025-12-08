@@ -1,0 +1,16 @@
+{
+  "name": "drizzle-migrations",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "typescript",
+  "framework": "drizzle",
+  "tags": ["drizzle", "migrations", "database", "sql", "typescript", "schema", "orm"],
+  "entry_point_tokens": 250,
+  "full_tokens": 5000,
+  "requires": ["toolchains-typescript-core", "toolchains-typescript-data-drizzle"],
+  "author": "claude-mpm-skills",
+  "updated": "2025-12-08",
+  "source_path": "toolchains/typescript/data/drizzle-migrations/SKILL.md",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

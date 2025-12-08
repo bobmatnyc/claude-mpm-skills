@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains a comprehensive collection of **93 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, AI, and universal tooling.
+This repository contains a comprehensive collection of **108 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, AI, and universal tooling.
 
 ## What is Claude MPM?
 
@@ -18,7 +18,7 @@ This repository contains a comprehensive collection of **93 Claude Code skills**
 **Key Components:**
 - **Claude Code**: Anthropic's official CLI environment
 - **Claude MPM**: Multi-agent framework running in Claude Code
-- **Skills**: Domain-specific knowledge modules (this repo contains 93 skills)
+- **Skills**: Domain-specific knowledge modules (this repo contains 108 skills)
 
 **How They Work Together:**
 ```
@@ -39,7 +39,7 @@ Skills (Knowledge Modules) ← You are here
 
 ## Quick Stats
 
-- **Total Skills**: 93 production-ready skills
+- **Total Skills**: 108 production-ready skills
 - **Coverage**: 95%+ of modern development workflows
 - **Token Efficiency**: ~64.0k entry tokens vs ~395.2k full tokens (~84% savings)
 - **Categories**: Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, Next.js, UI, AI, Platforms, Universal
@@ -425,11 +425,11 @@ Skills use a two-tier structure for optimal token efficiency:
 - Testing strategies
 - Troubleshooting
 
-**Token Savings**: ~84% during discovery (load 93 entry points vs all full docs)
+**Token Savings**: ~84% during discovery (load 108 entry points vs all full docs)
 
 ## Performance Benchmarks
 
-- **Discovery Phase**: 63,982 tokens (all 93 entry points) vs 395,214 tokens (all full docs)
+- **Discovery Phase**: 63,982 tokens (all 108 entry points) vs 395,214 tokens (all full docs)
 - **Token Efficiency**: ~84% reduction during skill browsing
 - **Coverage**: 95%+ of modern development workflows
 - **Production Adopters**: Skills based on patterns from JetBlue, Databricks, Walmart, VMware
@@ -499,7 +499,7 @@ Built with research from:
 
 ---
 
-**Last Updated**: 2025-12-05
-**Skills Count**: 93
+**Last Updated**: 2025-12-08
+**Skills Count**: 108
 **Coverage**: 95%+
 **Token Efficiency**: ~83%

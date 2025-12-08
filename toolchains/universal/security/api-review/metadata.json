@@ -1,0 +1,15 @@
+{
+  "name": "api-security-review",
+  "version": "1.0.0",
+  "category": "universal",
+  "subcategory": "security",
+  "tags": ["api", "security", "authentication", "authorization", "validation", "review"],
+  "entry_point_tokens": 100,
+  "full_tokens": 4500,
+  "related_skills": ["zod", "fastapi-local-dev", "nextjs", "nodejs-backend"],
+  "author": "claude-mpm-skills",
+  "created": "2025-12-08",
+  "updated": "2025-12-08",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

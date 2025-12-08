@@ -1,0 +1,15 @@
+{
+  "name": "emergency-release-workflow",
+  "version": "1.0.0",
+  "category": "universal",
+  "subcategory": "emergency",
+  "tags": ["hotfix", "emergency", "deployment", "production", "incident-response", "release"],
+  "entry_point_tokens": 95,
+  "full_tokens": 4000,
+  "related_skills": ["git-workflow", "pr-quality-checklist", "systematic-debugging"],
+  "author": "claude-mpm-skills",
+  "created": "2025-12-08",
+  "updated": "2025-12-08",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}
