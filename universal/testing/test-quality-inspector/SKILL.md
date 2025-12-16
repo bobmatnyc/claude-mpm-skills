@@ -1,6 +1,6 @@
 ---
 name: test-quality-inspector
-description: Test quality inspection framework for reviewing test coverage, identifying gaps, and ensuring comprehensive validation. Use when reviewing test suites, performing QA inspections, or establishing testing quality standards.
+description: "Test quality inspection framework for reviewing test coverage, identifying gaps, and ensuring comprehensive validation"
 ---
 
 # Example Test Inspection Report

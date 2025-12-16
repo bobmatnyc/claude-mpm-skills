@@ -1,6 +1,6 @@
 ---
 name: playwright-e2e-testing
-description: Playwright modern end-to-end testing framework with cross-browser automation, auto-wait, and built-in test runner. Use when testing web applications end-to-end, implementing cross-browser testing, or recording user flows with screenshots and videos.
+description: "Playwright modern end-to-end testing framework with cross-browser automation, auto-wait, and built-in test runner"
 ---
 
 # Playwright E2E Testing Skill

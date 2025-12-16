@@ -1,6 +1,6 @@
 ---
 name: nextjs-core
-description: Core Next.js patterns for App Router development including Server Components, Server Actions, route handlers, data fetching, and caching strategies. Use when building Next.js applications with the App Router, implementing server-side logic, or optimizing data flows. Version-agnostic patterns that apply to Next.js 14+.
+description: "Core Next.js patterns for App Router development including Server Components, Server Actions, route handlers, data fetching, and caching strategies"
 ---
 
 # Next.js Core Patterns

@@ -1,6 +1,6 @@
 ---
 name: phoenix-api-channels
-description: Phoenix controllers, JSON APIs, Channels, and Presence on the BEAM. Covers routing, plugs, versioned APIs, Ecto-backed contexts, PubSub broadcasting, Presence tracking, authentication, testing, telemetry, and deployment considerations.
+description: "Phoenix controllers, JSON APIs, Channels, and Presence on the BEAM"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

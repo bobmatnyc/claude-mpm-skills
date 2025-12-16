@@ -1,6 +1,6 @@
 ---
 name: django-framework
-description: Django full-featured Python web framework with batteries included (ORM, admin, auth). Use when building content-heavy web applications, implementing admin interfaces, or creating REST APIs with Django REST Framework.
+description: "Django full-featured Python web framework with batteries included (ORM, admin, auth)"
 ---
 
 # Django Framework Skill

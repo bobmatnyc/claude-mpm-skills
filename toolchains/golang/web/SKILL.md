@@ -1,6 +1,6 @@
 ---
 name: golang-http-frameworks
-description: Go HTTP API development with net/http, Chi, Gin, Echo, and Fiber frameworks. Covers REST API design, middleware patterns, request validation, error handling, and HTTP client best practices. Use when building web services or RESTful APIs.
+description: "Go HTTP API development with net/http, Chi, Gin, Echo, and Fiber frameworks"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

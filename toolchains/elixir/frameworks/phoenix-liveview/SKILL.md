@@ -1,6 +1,6 @@
 ---
 name: phoenix-liveview
-description: Phoenix Framework with LiveView on the BEAM. Covers OTP foundations, context-driven domain modeling, Ecto data layer, LiveView real-time patterns, PubSub/Presence, testing, performance, and deployment with releases.
+description: "Phoenix Framework with LiveView on the BEAM"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

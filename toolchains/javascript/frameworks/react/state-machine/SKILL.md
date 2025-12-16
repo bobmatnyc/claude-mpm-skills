@@ -1,6 +1,6 @@
 ---
 name: react-state-machines
-description: Building reusable React state machine skills with XState v5 and the actor model. This skill should be used when implementing explicit state management for complex UI flows, multi-step forms, media players, modals with animations, or any component where impossible states should be unrepresentable.
+description: "Building reusable React state machine skills with XState v5 and the actor model"
 version: 1.0.0
 category: development
 author: Claude MPM Team

@@ -1,6 +1,6 @@
 ---
 name: nextjs-v16
-description: Next.js 16 specific features, breaking changes, and migration guide. Use when upgrading from Next.js 15, implementing Cache Components with "use cache", working with Turbopack, or handling the new async request APIs. Released October 2025 with fundamental caching model changes.
+description: "Next.js 16 specific features, breaking changes, and migration guide"
 ---
 
 # Next.js 16 Migration & Features

@@ -1,6 +1,6 @@
 ---
 name: drizzle-orm
-description: Type-safe SQL ORM for TypeScript with zero runtime overhead. Use when building database layers requiring compile-time safety, minimal bundle size, or superior performance over Prisma. Supports PostgreSQL, MySQL, SQLite with native SQL generation, relational queries, and migration management via Drizzle Kit.
+description: "Type-safe SQL ORM for TypeScript with zero runtime overhead"
 ---
 
 # Drizzle ORM
