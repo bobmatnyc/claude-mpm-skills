@@ -1,0 +1,33 @@
+{
+  "name": "golang-grpc",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "golang",
+  "tags": [
+    "golang",
+    "grpc",
+    "protobuf",
+    "microservices",
+    "streaming",
+    "interceptors",
+    "authentication",
+    "observability",
+    "testing"
+  ],
+  "entry_point_tokens": 160,
+  "full_tokens": 6500,
+  "requires": [],
+  "related_skills": [
+    "golang-concurrency-patterns",
+    "golang-http-frameworks",
+    "golang-testing-strategies",
+    "golang-observability-opentelemetry",
+    "api-design-patterns"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "created": "2025-12-17",
+  "updated": "2025-12-17"
+}
+

@@ -1,7 +1,44 @@
-# Svelte 5 Runes with Static Adapter
+---
+name: svelte5-runes-static
+description: Svelte 5 runes + SvelteKit adapter-static (SSG/SSR) patterns for hydration-safe state, store bridges, and reactivity that survives prerendering
+version: 1.0.0
+category: toolchain
+author: Claude MPM Team
+license: MIT
+progressive_disclosure:
+  entry_point:
+    summary: "Hydration-safe Svelte 5 runes patterns for SvelteKit adapter-static (SSG/SSR)"
+    when_to_use: "When using Svelte 5 runes with SvelteKit prerendering/adapter-static and encountering frozen state, hydration mismatches, or store bridge issues"
+    quick_start: "1. Keep global state in writable()/derived() 2. Bridge store → $state in $effect() 3. Use $derived() for computations 4. Guard client-only code with browser"
+context_limit: 150
+tags:
+  - svelte
+  - svelte5
+  - sveltekit
+  - runes
+  - adapter-static
+  - ssr
+  - ssg
+  - hydration
+  - stores
+  - reactivity
+  - prerendering
+  - typescript
+requires_tools: []
+---
 
-**Inherits from**: toolchains-javascript-frameworks-svelte (base Svelte knowledge)
-**Focus**: Svelte 5 runes mode with adapter-static (SSG/SSR) and reactivity patterns
+# Svelte 5 Runes with adapter-static (SvelteKit)
+
+## Overview
+
+Build static-first SvelteKit applications with Svelte 5 runes without breaking hydration. Apply these patterns when using `adapter-static` (prerendering) and combining global stores with component-local runes.
+
+## Related Skills
+
+- `svelte` (Svelte 5 runes core patterns)
+- `sveltekit` (adapters, deployment, SSR/SSG patterns)
+- `typescript-core` (TypeScript patterns and validation)
+- `vitest` (unit testing patterns)
 
 ## Core Expertise
 
@@ -506,6 +543,7 @@ When migrating from Svelte 4 to Svelte 5 with adapter-static:
 
 ```typescript
 import { mount } from 'svelte';
+import { tick } from 'svelte';
 import { describe, it, expect } from 'vitest';
 import Counter from './Counter.svelte';
 
@@ -530,6 +568,7 @@ describe('Counter', () => {
 
 ```typescript
 import { get } from 'svelte/store';
+import { tick } from 'svelte';
 import { describe, it, expect } from 'vitest';
 import { createMyStore } from './myStore';
 

@@ -226,7 +226,7 @@ python scripts/check_voice_consistency.py --report quality-report.md
 # JSON output for CI/CD
 python scripts/check_voice_consistency.py --format json > report.json
 
-# CI mode (strict, exit 1 on errors)
+# CI mode (strict, exit 1 on warnings or errors)
 python scripts/check_voice_consistency.py --ci
 ```
 
@@ -237,7 +237,7 @@ python scripts/check_voice_consistency.py --ci
   - Test-only methods in production code
   - Critical format violations
 
-- **🟡 WARNING** (Should fix):
+- **🟡 WARNING** (Should fix; blocks `--ci`):
   - Passive voice patterns
   - Non-imperative mood
   - Missing code blocks after ✅/❌
@@ -255,7 +255,7 @@ python scripts/check_voice_consistency.py --ci
 ================================================================================
 VOICE CONSISTENCY & EXAMPLE FORMAT REPORT
 ================================================================================
-Files checked: 89
+Files checked: N
 Files with violations: 12
 
 Violations by severity:
@@ -265,8 +265,8 @@ Violations by severity:
   Total:      47
 
 Quality metrics:
-  Files with ✅/❌ examples: 67/89
-  Files with anti-patterns:  72/89
+  Files with ✅/❌ examples: X/N
+  Files with anti-patterns:  Y/N
 ================================================================================
 ```
 
@@ -300,7 +300,7 @@ The `.github/workflows/skill-quality.yml` workflow runs automatically on:
 **Features:**
 - Runs quality checks on all skills
 - Posts PR comments with violation summary
-- Blocks merge if critical errors found
+- Blocks merge if `--ci` reports warnings or errors
 - Uploads detailed reports as artifacts
 
 ### Pre-Commit Hook

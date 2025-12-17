@@ -16,7 +16,7 @@ Production-quality deployment script that transforms the hierarchical skill stru
 
 ### Overview
 
-The script auto-discovers all 89 skills from `toolchains/`, `universal/`, and `examples/` directories, transforms their hierarchical paths to flat names (e.g., `toolchains/python/frameworks/django` → `toolchains-python-frameworks-django`), and copies all required files to the target deployment directory.
+The script auto-discovers all skills from `toolchains/`, `universal/`, and `examples/` directories, transforms their hierarchical paths to flat names (e.g., `toolchains/python/frameworks/django` → `toolchains-python-frameworks-django`), and copies all required files to the target deployment directory.
 
 ### Usage
 
@@ -71,13 +71,13 @@ Files excluded:
 Source: /Users/masa/Projects/claude-mpm-skills
 Target: /Users/masa/Projects/claude-mpm-skills/.claude/skills
 
-[1/89] toolchains-python-frameworks-django ✓
-[2/89] toolchains-javascript-frameworks-react ✓
+[1/N] toolchains-python-frameworks-django ✓
+[2/N] toolchains-javascript-frameworks-react ✓
 ...
-[89/89] examples-good-self-contained-skill ✓
+[N/N] examples-good-self-contained-skill ✓
 
 ✅ Deployment Summary:
-   - Skills deployed: 89
+   - Skills deployed: N
    - Files copied: 264
    - References preserved: 21
    - Target: .claude/skills/
@@ -88,7 +88,7 @@ Target: /Users/masa/Projects/claude-mpm-skills/.claude/skills
 - **Auto-discovery**: Automatically finds all skills with SKILL.md files
 - **Path transformation**: Converts hierarchical paths to flat names
 - **Color-coded output**: Green (success), yellow (warning), red (error)
-- **Progress tracking**: Shows X/89 progress indicator for each skill
+- **Progress tracking**: Shows X/N progress indicator for each skill
 - **Validation**: Checks source directories, target permissions, existing deployments
 - **References preservation**: Automatically copies references/ directories
 - **Deployment manifest**: Generates `.deployment_manifest` with deployment metadata
@@ -110,7 +110,7 @@ Target: /Users/masa/Projects/claude-mpm-skills/.claude/skills
 
 # Output:
 # ✅ Deployment Summary:
-#    - Skills deployed: 89
+#    - Skills deployed: N
 #    - Files copied: 264
 #    - References preserved: 21
 ```
@@ -160,7 +160,7 @@ Each deployment generates a `.deployment_manifest` file in the target directory 
 # Generated: 2025-12-03 14:58:17 UTC
 # Source: /Users/masa/Projects/claude-mpm-skills
 # Target: /Users/masa/Projects/claude-mpm-skills/.claude/skills
-# Skills Deployed: 89
+# Skills Deployed: N
 # Files Copied: 264
 # References Preserved: 21
 # Script Version: 1.0.0
@@ -172,7 +172,7 @@ Each deployment generates a `.deployment_manifest` file in the target directory 
 - **Dependencies**: Standard Unix utilities (find, cp, mkdir, etc.)
 - **Compatibility**: macOS, Linux
 - **Safety**: Uses `set -euo pipefail` for robust error handling
-- **Performance**: Processes all 89 skills in < 1 second
+- **Performance**: Processes all skills quickly (depends on total count)
 
 ### Troubleshooting
 

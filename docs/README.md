@@ -1,6 +1,6 @@
 # Claude MPM Skills - Documentation Index
 
-**Last Updated:** December 3, 2025
+**Last Updated:** December 17, 2025
 **Documentation Status:** ✅ Current and comprehensive
 
 This directory contains all documentation for the Claude MPM Skills repository. Documentation is organized by audience and purpose.
@@ -283,7 +283,19 @@ All documentation in this repository follows these standards:
 
 ---
 
-## 🆕 Recent Updates (December 2-3, 2025)
+## 🆕 Recent Updates
+
+### December 17, 2025
+- ✅ Regenerated `manifest.json` to cover all 110 skills in `toolchains/`, `universal/`, and `examples/`
+- ✅ Normalized `toolchains/javascript/frameworks/svelte5-runes-static` to match standard skill format
+- ✅ Added Phase 2 language-growth skills (Go: concurrency + gRPC, Rust: Axum + Clap, TypeScript: Fastify, JavaScript: Cypress)
+- ✅ Added Phase 1 infra/reliability skills (Kubernetes, Terraform, OpenTelemetry, Threat Modeling)
+- ✅ Added `.bundles/golang-web-stack` for Go HTTP/gRPC services (data, testing, observability, security, Docker)
+- ✅ Upgraded `universal/security/security-scanning` with progressive disclosure + CI/triage/supply-chain references
+- ✅ Upgraded `toolchains/nextjs/core` with compact entry point + caching/testing references
+- ✅ Updated `toolchains/nextjs/v16` migration skill with compact entry point + improved checklist/voice consistency
+- ✅ Upgraded `toolchains/python/frameworks/fastapi-local-dev` with compact entry point + dev/prod/Docker/troubleshooting references
+- ✅ Updated top-level `README.md` counts and token totals
 
 ### December 3, 2025
 - ✅ Updated IMPLEMENTATION_STATUS.md (93% complete, accurate dates)

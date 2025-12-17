@@ -1,0 +1,36 @@
+{
+  "name": "fastify",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "typescript",
+  "tags": [
+    "typescript",
+    "fastify",
+    "nodejs",
+    "backend",
+    "api",
+    "validation",
+    "json-schema",
+    "zod",
+    "typebox",
+    "security",
+    "testing"
+  ],
+  "entry_point_tokens": 130,
+  "full_tokens": 5200,
+  "requires": [],
+  "related_skills": [
+    "typescript-core",
+    "nodejs-backend",
+    "zod",
+    "vitest",
+    "api-design-patterns",
+    "docker"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "created": "2025-12-17",
+  "updated": "2025-12-17"
+}
+

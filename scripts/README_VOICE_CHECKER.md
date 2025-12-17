@@ -1,6 +1,6 @@
 # Voice Consistency & Example Format Checker
 
-Automated quality assurance tool for Claude Code skills that enforces imperative voice and consistent example formatting across 89+ skills.
+Automated quality assurance tool for Claude Code skills that enforces imperative voice and consistent example formatting across the skills library.
 
 ## Quick Start
 
@@ -17,7 +17,7 @@ python scripts/check_voice_consistency.py --path path/to/SKILL.md
 # Verbose output
 python scripts/check_voice_consistency.py --verbose
 
-# CI mode (strict, exit 1 on errors)
+# CI mode (strict, exit 1 on warnings or errors)
 python scripts/check_voice_consistency.py --ci
 ```
 
@@ -56,14 +56,14 @@ python scripts/check_voice_consistency.py --ci
 ### Basic Usage
 
 ```bash
-# Default: Check all SKILL.md files
+# Default: Check all source SKILL.md files (toolchains/, universal/, examples/)
 python scripts/check_voice_consistency.py
 
 # Output:
 # ================================================================================
 # VOICE CONSISTENCY & EXAMPLE FORMAT REPORT
 # ================================================================================
-# Files checked: 89
+# Files checked: N
 # Files with violations: 12
 #
 # Violations by severity:
@@ -125,12 +125,12 @@ python scripts/check_voice_consistency.py --report report.md && open report.md
 ### CI/CD Mode
 
 ```bash
-# Strict mode: exit 1 on any errors
+# Strict mode: exit 1 on any warnings or errors
 python scripts/check_voice_consistency.py --ci
 
 # Exit codes:
-#   0 = No errors (warnings/info OK)
-#   1 = Errors found (blocks merge)
+#   0 = No warnings or errors
+#   1 = Warnings or errors found (blocks merge)
 ```
 
 ## Violation Severity Levels
@@ -151,7 +151,7 @@ python scripts/check_voice_consistency.py --ci
 
 **Why ERROR**: Second-person voice violates the fundamental requirement for imperative voice. These must be fixed before merging.
 
-### 🟡 WARNING (Should Fix)
+### 🟡 WARNING (Should Fix; Blocks `--ci`)
 
 **Passive voice:**
 ```markdown
@@ -214,7 +214,7 @@ python scripts/check_voice_consistency.py --ci
 ================================================================================
 VOICE CONSISTENCY & EXAMPLE FORMAT REPORT
 ================================================================================
-Files checked: 89
+Files checked: N
 Files with violations: 12
 
 Violations by severity:
@@ -224,8 +224,8 @@ Violations by severity:
   Total:      47
 
 Quality metrics:
-  Files with ✅/❌ examples: 67/89
-  Files with anti-patterns:  72/89
+  Files with ✅/❌ examples: X/N
+  Files with anti-patterns:  Y/N
 ================================================================================
 
 📄 toolchains/python/tooling/mypy/SKILL.md
@@ -249,7 +249,7 @@ Quality metrics:
 ```json
 {
   "summary": {
-    "total_files": 89,
+    "total_files": 110,
     "files_with_violations": 12,
     "total_errors": 8,
     "total_warnings": 24,
@@ -285,7 +285,7 @@ Quality metrics:
 
 ## Summary
 
-- **Files checked:** 89
+- **Files checked:** N
 - **Files with violations:** 12
 - **Errors:** 8 (critical)
 - **Warnings:** 24
@@ -325,7 +325,7 @@ The tool integrates with GitHub Actions via `.github/workflows/skill-quality.yml
 ## 📊 Skill Quality Report
 
 ### Summary
-- **Files checked:** 89
+- **Files checked:** N
 - **Files with violations:** 12
 - 🔴 **Errors:** 8 (critical)
 - 🟡 **Warnings:** 24
@@ -392,7 +392,7 @@ fix-quality:
 
 ## Performance
 
-**Benchmarks** (on 89 skills, ~50k lines total):
+**Benchmarks** (on the full skills set, ~50k lines total):
 
 ```
 Initial run (cold):     2.3s

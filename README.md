@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains a comprehensive collection of **93 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, AI, and universal tooling.
+This repository contains a comprehensive collection of **110 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, AI, and universal tooling.
 
 ## What is Claude MPM?
 
@@ -18,7 +18,7 @@ This repository contains a comprehensive collection of **93 Claude Code skills**
 **Key Components:**
 - **Claude Code**: Anthropic's official CLI environment
 - **Claude MPM**: Multi-agent framework running in Claude Code
-- **Skills**: Domain-specific knowledge modules (this repo contains 93 skills)
+- **Skills**: Domain-specific knowledge modules (this repo contains 110 skills)
 
 **How They Work Together:**
 ```
@@ -32,16 +32,16 @@ Skills (Knowledge Modules) ← You are here
 ## Features
 
 - **Progressive Loading**: Skills load on-demand with compact entry points, expanding to full references when needed
-- **Token Efficiency**: ~83% token savings during discovery phase
+- **Token Efficiency**: ~87% token savings during discovery phase
 - **Toolchain Detection**: Automatically deploy relevant skills based on project type
 - **Production-Ready**: All skills include real-world examples, best practices, and troubleshooting
 - **Research-Backed**: Built on latest 2025 techniques and industry patterns
 
 ## Quick Stats
 
-- **Total Skills**: 93 production-ready skills
+- **Total Skills**: 110 production-ready skills
 - **Coverage**: 95%+ of modern development workflows
-- **Token Efficiency**: ~64.0k entry tokens vs ~395.2k full tokens (~84% savings)
+- **Token Efficiency**: ~66.7k entry tokens vs ~512.4k full tokens (~87% savings)
 - **Categories**: Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, Next.js, UI, AI, Platforms, Universal
 - **Complete Stacks**: Full-stack TypeScript, Python Web, React Frontend, AI Workflows
 
@@ -49,7 +49,7 @@ Skills (Knowledge Modules) ← You are here
 
 ```
 claude-mpm-skills/
-├── toolchains/          # Language/framework-specific skills (64 skills)
+├── toolchains/          # Language/framework-specific skills (76 skills)
 │   ├── python/         # 10 skills
 │   │   ├── frameworks/     # Django, FastAPI, Flask
 │   │   ├── testing/        # pytest
@@ -57,30 +57,34 @@ claude-mpm-skills/
 │   │   ├── async/          # asyncio, Celery
 │   │   ├── tooling/        # mypy, pyright
 │   │   └── validation/     # Pydantic
-│   ├── typescript/     # 12 skills
-│   │   ├── frameworks/     # React, Vue, Node.js backend
+│   ├── typescript/     # 13 skills
+│   │   ├── frameworks/     # React, Vue, Node.js backend, Fastify
 │   │   ├── testing/        # Vitest, Jest
 │   │   ├── data/           # Drizzle, Kysely, Prisma
 │   │   ├── validation/     # Zod
 │   │   ├── state/          # Zustand, TanStack Query
 │   │   ├── api/            # tRPC
 │   │   └── build/          # Turborepo
-│   ├── javascript/     # 10 skills
+│   ├── javascript/     # 12 skills
 │   │   ├── frameworks/     # React, Vue, Svelte, SvelteKit
-│   │   ├── testing/        # Playwright
+│   │   ├── testing/        # Playwright, Cypress
 │   │   ├── build/          # Vite
 │   │   └── tooling/        # Biome
 │   ├── php/            # 6 skills
 │   │   ├── frameworks/     # WordPress, EspoCRM
 │   │   └── testing/        # PHPUnit, PHPCS
-│   ├── golang/         # 5 skills
+│   ├── golang/         # 7 skills
 │   │   ├── web/            # net/http, Chi, Gin, Echo, Fiber
 │   │   ├── testing/        # Go testing, testify, httptest
 │   │   ├── data/           # SQL, migrations, ORMs/query builders
 │   │   ├── cli/            # CLI tooling patterns
 │   │   └── observability/  # Logging and telemetry
-│   ├── rust/           # 2 skills
-│   │   └── frameworks/     # Tauri
+│   │   ├── grpc/           # Protobuf APIs, interceptors, streaming
+│   │   └── concurrency/    # errgroup, worker pools, bounded fan-out
+│   ├── rust/           # 4 skills
+│   │   ├── frameworks/     # Tauri, Axum
+│   │   ├── cli/            # Clap
+│   │   └── desktop-applications/ # Desktop app patterns
 │   ├── elixir/         # 4 skills
 │   │   ├── frameworks/     # Phoenix + LiveView (BEAM), Phoenix API + Channels
 │   │   ├── data/           # Ecto patterns
@@ -101,7 +105,7 @@ claude-mpm-skills/
 │       ├── deployment/     # Vercel, Netlify
 │       ├── database/       # Neon
 │       └── backend/        # Supabase
-└── universal/           # 27 skills
+└── universal/           # 32 skills
     ├── infrastructure/     # Docker, GitHub Actions
     ├── data/              # GraphQL
     ├── architecture/      # Software patterns
@@ -134,12 +138,13 @@ claude-mpm-skills/
 **Validation**:
 - Pydantic - Data validation with type hints, FastAPI/Django integration
 
-### TypeScript (12 Skills)
+### TypeScript (13 Skills)
 
 **Frameworks**:
 - React - Hooks, context, performance optimization
 - Vue 3 - Composition API, Pinia, TypeScript integration
 - Node.js Backend - Express/Fastify with Drizzle/Prisma
+- Fastify - Schema-first, high-performance backend with typed routes
 
 **Testing**:
 - Vitest - Modern testing with React/Vue
@@ -163,16 +168,18 @@ claude-mpm-skills/
 **Build Tools**:
 - Turborepo - Monorepo with intelligent caching
 
-### JavaScript (10 Skills)
+### JavaScript (12 Skills)
 
 **Frameworks**:
 - React - Component patterns (also in TypeScript)
 - Vue - Progressive framework (also in TypeScript)
 - Svelte - Reactive framework with runes
 - SvelteKit - Full-stack Svelte with SSR/SSG
+- Svelte 5 Runes + adapter-static - Hydration-safe state and store bridges
 
 **Testing**:
 - Playwright - Cross-browser E2E testing with Page Object Model
+- Cypress - Browser E2E testing with network stubbing and component testing
 
 **Build Tools**:
 - Vite - Fast build tool with HMR
@@ -192,11 +199,38 @@ claude-mpm-skills/
 - espocrm-advanced-features - Advanced workflows, complex business logic implementation
 - espocrm-deployment - Production deployment, security hardening, performance tuning
 
-### Rust (2 Skills)
+### Golang (7 Skills)
 
-**Desktop Applications**:
-- tauri - Cross-platform desktop apps with Rust backend, web frontend
-- tauri-advanced-events - Bidirectional communication, streaming, custom event handling
+**Web & HTTP**:
+- golang-http-frameworks - net/http, Chi, Gin, Echo, Fiber patterns
+
+**gRPC**:
+- golang-grpc - Protobuf APIs, interceptors, streaming, bufconn testing
+
+**Concurrency**:
+- golang-concurrency-patterns - Context, errgroup, worker pools, bounded fan-out
+
+**Testing**:
+- golang-testing-strategies - Table-driven tests, testify, gomock, benchmarks
+
+**Data**:
+- golang-database-patterns - SQL patterns, migrations, query builders
+
+**CLI**:
+- golang-cli-cobra-viper - Cobra/Viper CLI structure and config
+
+**Observability**:
+- golang-observability-opentelemetry - Logging/metrics/traces + middleware patterns
+
+### Rust (4 Skills)
+
+**Web & Desktop**:
+- axum - Production Rust HTTP APIs with Tower middleware
+- desktop-applications - Rust desktop app architecture and integration patterns
+- tauri - Cross-platform desktop apps with Rust backend and web frontend
+
+**CLI**:
+- clap - Rust CLI parsing, subcommands, config layering, testable binaries
 
 ### Next.js (2 Skills)
 
@@ -244,11 +278,19 @@ claude-mpm-skills/
 **Backend**:
 - Supabase - Postgres + Auth + Storage + Realtime + RLS
 
-### Universal (27 Skills)
+### Universal (32 Skills)
 
 **Infrastructure**:
 - Docker - Containerization, multi-stage builds, compose
 - GitHub Actions - CI/CD workflows, matrix strategies, deployments
+- Kubernetes - Workloads, probes, rollouts, debugging runbook, hardening
+- Terraform - IaC workflow: state, modules, environments, CI guardrails
+
+**Observability**:
+- OpenTelemetry - Traces/metrics/logs, OTLP + Collector pipelines, sampling, troubleshooting
+
+**Security**:
+- Threat Modeling - STRIDE workshops, threat registers, mitigations → tickets + tests
 
 **Data**:
 - GraphQL - Schema-first APIs, Apollo, resolvers, subscriptions
@@ -425,12 +467,12 @@ Skills use a two-tier structure for optimal token efficiency:
 - Testing strategies
 - Troubleshooting
 
-**Token Savings**: ~84% during discovery (load 93 entry points vs all full docs)
+**Token Savings**: ~87% during discovery (load 110 entry points vs all full docs)
 
 ## Performance Benchmarks
 
-- **Discovery Phase**: 63,982 tokens (all 93 entry points) vs 395,214 tokens (all full docs)
-- **Token Efficiency**: ~84% reduction during skill browsing
+- **Discovery Phase**: 66,690 tokens (all 110 entry points) vs 512,411 tokens (all full docs)
+- **Token Efficiency**: ~87% reduction during skill browsing
 - **Coverage**: 95%+ of modern development workflows
 - **Production Adopters**: Skills based on patterns from JetBlue, Databricks, Walmart, VMware
 - **Token Reporting**: `python scripts/token_report.py --manifest manifest.json --out stats/token-summary.json` for CI/dashboard consumption
@@ -499,7 +541,7 @@ Built with research from:
 
 ---
 
-**Last Updated**: 2025-12-05
-**Skills Count**: 93
+**Last Updated**: 2025-12-17
+**Skills Count**: 110
 **Coverage**: 95%+
-**Token Efficiency**: ~83%
+**Token Efficiency**: ~87%

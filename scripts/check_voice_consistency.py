@@ -671,7 +671,7 @@ Examples:
   %(prog)s --path universal/            # Check specific directory
   %(prog)s --verbose                    # Detailed output
   %(prog)s --report report.md           # Generate markdown report
-  %(prog)s --ci                         # CI mode (strict, exit 1 on errors)
+  %(prog)s --ci                         # CI mode (strict, exit 1 on warnings or errors)
   %(prog)s --format json > report.json  # JSON output
         """
     )
@@ -705,7 +705,7 @@ Examples:
     parser.add_argument(
         '--ci',
         action='store_true',
-        help='CI mode: strict checking, exit 1 on errors'
+        help='CI mode: strict checking, exit 1 on warnings or errors'
     )
 
     parser.add_argument(
@@ -721,15 +721,26 @@ Examples:
     if args.path:
         check_path = args.path
     else:
-        check_path = Path(__file__).parent.parent
+        repo_root = Path(__file__).parent.parent
+        default_roots = [
+            repo_root / "toolchains",
+            repo_root / "universal",
+            repo_root / "examples",
+        ]
+        check_paths = [p for p in default_roots if p.exists()]
+        check_path = None
 
     # Run checks
     checker = SkillQualityChecker(verbose=args.verbose)
 
-    if check_path.is_file():
-        checker.reports.append(checker.check_file(check_path))
+    if check_path is not None:
+        if check_path.is_file():
+            checker.reports.append(checker.check_file(check_path))
+        else:
+            checker.check_directory(check_path)
     else:
-        checker.check_directory(check_path)
+        for root in check_paths:
+            checker.check_directory(root)
 
     # Generate report
     generator = ReportGenerator(checker.reports, verbose=args.verbose)

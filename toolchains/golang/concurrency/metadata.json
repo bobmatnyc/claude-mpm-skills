@@ -1,0 +1,31 @@
+{
+  "name": "golang-concurrency-patterns",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "golang",
+  "tags": [
+    "golang",
+    "concurrency",
+    "context",
+    "errgroup",
+    "channels",
+    "mutex",
+    "race-detector",
+    "worker-pool",
+    "structured-concurrency"
+  ],
+  "entry_point_tokens": 150,
+  "full_tokens": 5000,
+  "requires": [],
+  "related_skills": [
+    "golang-testing-strategies",
+    "golang-observability-opentelemetry",
+    "golang-http-frameworks"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "created": "2025-12-17",
+  "updated": "2025-12-17"
+}
+

@@ -1,0 +1,30 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "tags": [
+    "testing",
+    "cypress",
+    "e2e",
+    "component-testing",
+    "browser-testing",
+    "ci",
+    "flake-reduction"
+  ],
+  "entry_point_tokens": 130,
+  "full_tokens": 5200,
+  "requires": [],
+  "related_skills": [
+    "playwright",
+    "webapp-testing",
+    "test-driven-development",
+    "verification-before-completion"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "created": "2025-12-17",
+  "updated": "2025-12-17"
+}
+

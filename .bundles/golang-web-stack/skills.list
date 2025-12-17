@@ -1,0 +1,28 @@
+# Golang Web Stack - Skill Manifest
+# Version: 1.0.0
+
+# Core HTTP APIs
+toolchains/golang/web
+
+# RPC & Contracts (service-to-service)
+toolchains/golang/grpc
+
+# Concurrency & Cancellation
+toolchains/golang/concurrency
+
+# Data Access
+toolchains/golang/data
+
+# Observability
+toolchains/golang/observability
+
+# Testing
+toolchains/golang/testing
+
+# API Design & Security
+universal/web/api-design-patterns
+universal/security/security-scanning
+
+# Containerization
+toolchains/universal/infrastructure/docker
+

@@ -253,4 +253,4 @@ end
 - Forgetting to limit event payloads; large messages can overwhelm channels.
 - Leaving longpoll enabled when unused; disable to reduce surface area.
 
-Phoenix API + Channels shine when contexts own data, controllers stay thin, and Channels use PubSub/Presence with strict authorization and telemetry. The BEAM handles concurrency and fault tolerance so you can focus on clear boundaries and real-time experiences.
+Phoenix API + Channels shine when contexts own data, controllers stay thin, and Channels use PubSub/Presence with strict authorization and telemetry. The BEAM handles concurrency and fault tolerance; focus on clear boundaries and real-time experiences.

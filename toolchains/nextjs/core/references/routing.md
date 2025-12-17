@@ -494,3 +494,9 @@ export function CurrentRoute() {
 5. **Keep middleware lean** - heavy logic belongs in route handlers
 6. **Match middleware carefully** - exclude static assets
 7. **Prefetch strategically** - disable for rarely visited pages
+
+## Anti-patterns
+
+- ❌ Put heavy auth and business logic in middleware; ✅ keep middleware as routing glue and enforce authz in server code.
+- ❌ Use `Access-Control-Allow-Origin: *` for authenticated endpoints; ✅ scope CORS to trusted origins.
+- ❌ Forget `default.tsx` for parallel routes; ✅ add defaults to avoid slot rendering errors.

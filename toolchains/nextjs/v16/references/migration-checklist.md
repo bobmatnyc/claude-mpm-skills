@@ -239,6 +239,14 @@ mv middleware.ts proxy.ts
 # Update export name to "proxy"
 ```
 
+## Anti-patterns
+
+- ❌ Merge the upgrade without updating Node/TypeScript in CI; ✅ upgrade CI runtime first.
+- ❌ Leave sync request API usage; ✅ `await` `params`, `searchParams`, `cookies()`, and `headers()`.
+- ❌ Keep `middleware.ts`; ✅ move to `proxy.ts` and export `proxy`.
+- ❌ Keep old `revalidateTag("tag")`; ✅ pass a profile (`"max"`, `"hours"`) or `{ expire: ... }`.
+- ❌ Treat Turbopack failures as “later”; ✅ validate `next build` early and use `--webpack` only as a temporary bridge.
+
 ### Issue: revalidateTag type error
 
 **Cause:** Missing second argument
