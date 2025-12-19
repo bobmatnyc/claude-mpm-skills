@@ -15,6 +15,13 @@ progressive_disclosure:
     - react-integration.md
     - skills-architecture.md
     - testing-patterns.md
+    - decision-trees.md
+    - real-world-patterns.md
+    - error-handling.md
+    - performance.md
+    - persistence-hydration.md
+    - migration-guide.md
+    - composition-patterns.md
 context_limit: 700
 tags:
   - react
@@ -43,9 +50,13 @@ State machines make impossible states unrepresentable by modeling UI behavior as
 - State dependencies: one state depends on another to update correctly
 
 **Do not use for:**
-- Simple boolean toggles with no async
-- Form fields with related validation (useReducer suffices)
+- Simple boolean toggles with no async (useState is simpler)
+- Single form fields with basic validation (useReducer suffices)
 - Server state caching (React Query/TanStack Query handles this)
+- Static data transformations (useMemo is better)
+- Simple counters or toggles (useState is clearer)
+
+**See decision-trees.md for comprehensive decision guidance**
 
 ## Core Mental Model
 
@@ -162,12 +173,22 @@ const modelRef = useRef(Model.fromJson(layout));
 
 ## Navigation to References
 
-For detailed implementation patterns, see the reference files:
-
+### Core Patterns
 - **xstate-v5-patterns.md**: Complete v5 API, statecharts (hierarchy/parallel/history), promise actors
 - **react-integration.md**: useMachine vs useActorRef, Context patterns, side effect handling
-- **skills-architecture.md**: Input/output parameterization, composition patterns, library structure
 - **testing-patterns.md**: Unit testing, mocking actors, visualization debugging
+
+### Decision Making & Best Practices
+- **decision-trees.md**: When to use state machines vs useState/useReducer/React Query, machine splitting strategies
+- **real-world-patterns.md**: Complete examples - auth flows, file uploads, wizards, undo/redo, shopping carts
+- **error-handling.md**: Error boundaries, retry strategies, circuit breakers, graceful degradation
+- **performance.md**: Selector memoization, React.memo integration, machine splitting for performance
+
+### Advanced Topics
+- **persistence-hydration.md**: localStorage persistence, SSR/Next.js hydration, snapshot serialization
+- **migration-guide.md**: Step-by-step migration from useState/useReducer with before/after examples
+- **composition-patterns.md**: Actor communication, machine composition, higher-order machines, systemId
+- **skills-architecture.md**: Input/output parameterization, library structure
 
 ## Key Reminders
 
