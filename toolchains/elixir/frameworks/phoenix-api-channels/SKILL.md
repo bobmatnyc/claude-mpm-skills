@@ -1,6 +1,6 @@
 ---
 name: phoenix-api-channels
-description: Phoenix controllers, JSON APIs, Channels, and Presence on the BEAM. Covers routing, plugs, versioned APIs, Ecto-backed contexts, PubSub broadcasting, Presence tracking, authentication, testing, telemetry, and deployment considerations.
+description: "Phoenix controllers, JSON APIs, Channels, and Presence on the BEAM"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team
@@ -253,4 +253,4 @@ end
 - Forgetting to limit event payloads; large messages can overwhelm channels.
 - Leaving longpoll enabled when unused; disable to reduce surface area.
 
-Phoenix API + Channels shine when contexts own data, controllers stay thin, and Channels use PubSub/Presence with strict authorization and telemetry. The BEAM handles concurrency and fault tolerance, enabling clear boundaries and real-time experiences.
+Phoenix API + Channels shine when contexts own data, controllers stay thin, and Channels use PubSub/Presence with strict authorization and telemetry. The BEAM handles concurrency and fault tolerance; focus on clear boundaries and real-time experiences.

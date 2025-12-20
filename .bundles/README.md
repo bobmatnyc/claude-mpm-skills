@@ -13,6 +13,9 @@ Curated skill bundles for efficient deployment of complete development stacks.
 - **python-web-stack**: FastAPI, Pydantic, SQLAlchemy, Celery
 - **python-data-stack**: Pydantic, SQLAlchemy, database migrations
 
+### Golang Ecosystem
+- **golang-web-stack**: Go HTTP + gRPC + data access + testing + observability
+
 ### TypeScript/JavaScript Ecosystem
 - **typescript-data-stack**: Kysely, Drizzle, Prisma, database migrations
 - **react-ecosystem**: React, Zustand, TanStack Query, Jest, Vitest

@@ -17,7 +17,7 @@ The `generate_manifest.py` script generates a correct, validated `manifest.json`
   - `toolchains/` directory
   - `examples/` directory
 - Excludes `.claude/skills` deployment directory
-- Discovers **89 skills** (as of 2025-12-03)
+- Discovers all skills in the repository (currently **110**)
 
 ### 2. Metadata Extraction
 - Reads `metadata.json` if present in skill directory
@@ -154,15 +154,15 @@ The generated manifest follows this structure:
     }
   },
   "metadata": {
-    "total_skills": 89,
+    "total_skills": 110,
     "categories": {
-      "universal": 27,
-      "toolchains": 60,
+      "universal": 32,
+      "toolchains": 76,
       "examples": 2
     },
     "toolchains": {
       "python": 10,
-      "typescript": 12,
+      "typescript": 13,
       ...
     },
     "last_updated": "2025-12-03",
@@ -206,12 +206,12 @@ The generated manifest follows this structure:
 ### Statistics
 | Metric | Old | New |
 |--------|-----|-----|
-| Total Skills | 69 | 89 |
-| Universal Skills | 51 | 27 |
-| Toolchain Skills | 18 | 60 |
+| Total Skills | 69 | 110 |
+| Universal Skills | 51 | 28 |
+| Toolchain Skills | 18 | 76 |
 | Correct Paths | 0% | 100% |
 | Duplicates | 7 | 0 |
-| Reference Tracking | 0 | 14 skills |
+| Reference Tracking | 0 | 24 skills |
 
 ### Fixed Issues
 
@@ -332,7 +332,7 @@ git commit -m "Update manifest after skill changes"
 
 ## Success Criteria
 
-- ✅ All 89 skills present in manifest
+- ✅ All skills present in manifest (currently 110)
 - ✅ Zero duplicate entries
 - ✅ 100% correct hierarchical paths
 - ✅ All paths verified to exist

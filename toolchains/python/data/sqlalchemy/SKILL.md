@@ -1,6 +1,6 @@
 ---
 name: sqlalchemy-orm
-description: SQLAlchemy Python SQL toolkit and ORM with powerful query builder, relationship mapping, and database migrations via Alembic. Use when building Python applications with complex database requirements, using FastAPI/Flask/Django, or needing type-safe SQL queries.
+description: "SQLAlchemy Python SQL toolkit and ORM with powerful query builder, relationship mapping, and database migrations via Alembic"
 ---
 
 # SQLAlchemy ORM Skill

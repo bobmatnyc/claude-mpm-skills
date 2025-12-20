@@ -1,6 +1,6 @@
 ---
 name: golang-cli-cobra-viper
-description: Building production-quality CLI tools with Cobra command framework and Viper configuration management. Covers command structure, flag binding, environment variables, and shell completion. Use when creating developer tools, admin CLIs, or DevOps utilities.
+description: "Building production-quality CLI tools with Cobra command framework and Viper configuration management"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

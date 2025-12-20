@@ -1,6 +1,6 @@
 ---
 name: langchain-framework
-description: LangChain LLM application framework with chains, agents, RAG, and memory for building AI-powered applications. Use when implementing RAG (Retrieval Augmented Generation), creating AI agents with tools, or chaining multiple LLM calls.
+description: "LangChain LLM application framework with chains, agents, RAG, and memory for building AI-powered applications"
 ---
 
 # LangChain Framework

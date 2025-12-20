@@ -1,7 +1,7 @@
 ---
 skill_id: web-performance-optimization
 skill_version: 2.0.0
-description: Optimize web performance using Core Web Vitals, modern patterns (View Transitions, Speculation Rules), and framework-specific techniques. Use when improving Lighthouse scores, reducing page load times, or implementing 2025 performance patterns.
+description: "Optimize web performance using Core Web Vitals, modern patterns (View Transitions, Speculation Rules), and framework-specific techniques"
 updated_at: 2025-12-02T00:00:00Z
 tags: [performance, optimization, lighthouse, core-web-vitals, frontend]
 progressive_disclosure:

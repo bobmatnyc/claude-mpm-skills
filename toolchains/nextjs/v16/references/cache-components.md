@@ -310,7 +310,7 @@ Check response headers for cache status:
 
 ### Development Mode
 
-In development, caching is disabled by default. Enable for testing:
+Development mode disables caching by default. Enable caching for testing:
 
 ```typescript
 // next.config.ts

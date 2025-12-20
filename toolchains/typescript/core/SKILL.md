@@ -1,6 +1,6 @@
 ---
 name: typescript-core
-description: Advanced TypeScript patterns and best practices for 2025. Use when working with TypeScript projects requiring type system mastery (generics, conditional types, mapped types), tsconfig optimization, runtime validation integration (Zod, TypeBox, Valibot), or type-safe API patterns. Essential for Next.js, Node.js, and full-stack TypeScript development.
+description: "Advanced TypeScript patterns and best practices for 2025"
 progressive_disclosure:
   entry_point:
     summary: "Type-safe TypeScript patterns with optimal tsconfig, runtime validation, and modern TS 5.2+ features"

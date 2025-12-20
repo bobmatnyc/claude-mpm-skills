@@ -1,0 +1,36 @@
+{
+  "name": "opentelemetry",
+  "version": "1.0.0",
+  "category": "universal",
+  "subcategory": "observability",
+  "description": "OpenTelemetry observability patterns for traces, metrics, and logs: context propagation, OTLP export, Collector pipelines, sampling, and troubleshooting",
+  "tags": [
+    "observability",
+    "opentelemetry",
+    "otel",
+    "tracing",
+    "metrics",
+    "logs",
+    "otlp",
+    "collector"
+  ],
+  "entry_point_tokens": 150,
+  "full_tokens": 9000,
+  "self_contained": true,
+  "requires": [],
+  "related_skills": [
+    "golang-observability-opentelemetry",
+    "systematic-debugging",
+    "web-performance-optimization",
+    "verification-before-completion"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "created": "2025-12-17",
+  "updated": "2025-12-17",
+  "notes": [
+    "Collector-first guidance for vendor-neutral OTLP export and processing",
+    "Focuses on correlation, sampling strategy, and cardinality pitfalls"
+  ]
+}

@@ -1,6 +1,6 @@
 ---
 name: wordpress-block-editor-fse
-description: Modern WordPress block development and Full Site Editing with theme.json, block themes, and custom blocks for WordPress 6.7+. Use this skill when building block themes with FSE architecture, creating custom Gutenberg blocks, or implementing centralized styling with theme.json.
+description: "Modern WordPress block development and Full Site Editing with theme.json, block themes, and custom blocks for WordPress 6.7+"
 version: 1.0.0
 category: development
 author: Claude MPM Team

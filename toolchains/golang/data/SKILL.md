@@ -1,6 +1,6 @@
 ---
 name: golang-database-patterns
-description: Go database integration patterns using sqlx, pgx, and migration tools like golang-migrate. Covers repository pattern, connection pooling, transaction handling, and schema evolution. Use when building data access layers or managing database schemas.
+description: "Go database integration patterns using sqlx, pgx, and migration tools like golang-migrate"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

@@ -6,7 +6,9 @@
 
 ## Overview
 
-Created a comprehensive Python script (`scripts/generate_manifest.py`) that generates a correct, validated `manifest.json` for all 89 skills in the repository. The script addresses all critical issues identified in the manifest structure analysis.
+Created a comprehensive Python script (`scripts/generate_manifest.py`) that generates a correct, validated `manifest.json` for all skills in the repository (110 skills as of 2025-12-17). The script addresses all critical issues identified in the manifest structure analysis.
+
+> Note: Several counts in this document reflect the 2025-12-03 snapshot; the generator discovers whatever skills exist in `toolchains/`, `universal/`, and `examples/`.
 
 ## Critical Issues Fixed
 

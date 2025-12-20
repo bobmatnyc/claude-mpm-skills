@@ -1,6 +1,6 @@
 ---
 name: mcp-builder-evaluation
-description: MCP (Model Context Protocol) server evaluation guide for creating comprehensive test suites with read-only, independent questions. Use when building MCP servers, creating evaluation frameworks, or testing LLM tool usage patterns.
+description: "MCP (Model Context Protocol) server evaluation guide for creating comprehensive test suites with read-only, independent questions"
 ---
 
 # MCP Server Evaluation Guide

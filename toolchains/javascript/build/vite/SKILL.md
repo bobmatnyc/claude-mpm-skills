@@ -1,6 +1,6 @@
 ---
 name: vite-build-tool
-description: Vite lightning-fast build tool with instant HMR, ESM-first architecture, and zero-config setup for modern web development. Use when building React/Vue/Svelte applications, needing instant hot module replacement, migrating from webpack/CRA, or setting up TypeScript projects.
+description: "Vite lightning-fast build tool with instant HMR, ESM-first architecture, and zero-config setup for modern web development"
 ---
 
 # Vite Build Tool Skill

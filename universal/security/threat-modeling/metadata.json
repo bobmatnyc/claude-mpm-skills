@@ -1,0 +1,34 @@
+{
+  "name": "threat-modeling",
+  "version": "1.0.0",
+  "category": "universal",
+  "subcategory": "security",
+  "description": "Threat modeling workflow for software systems: scope, data flow diagrams, STRIDE analysis, risk scoring, and converting mitigations into backlog and tests",
+  "tags": [
+    "security",
+    "threat-modeling",
+    "stride",
+    "architecture",
+    "risk",
+    "abuse-cases"
+  ],
+  "entry_point_tokens": 150,
+  "full_tokens": 8000,
+  "self_contained": true,
+  "requires": [],
+  "related_skills": [
+    "security-scanning",
+    "api-design-patterns",
+    "software-patterns",
+    "writing-plans"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "created": "2025-12-17",
+  "updated": "2025-12-17",
+  "notes": [
+    "STRIDE workshop format with a threat register and actionable outputs",
+    "Designed to produce mitigations, tests, and PR checks, not just a document"
+  ]
+}

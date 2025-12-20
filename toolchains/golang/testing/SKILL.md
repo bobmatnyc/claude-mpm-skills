@@ -1,6 +1,6 @@
 ---
 name: golang-testing-strategies
-description: Comprehensive Go testing strategies including table-driven tests, testify assertions, gomock interface mocking, benchmark testing, and CI/CD integration. Use when writing test suites, setting up testing infrastructure, or ensuring code quality.
+description: "Comprehensive Go testing strategies including table-driven tests, testify assertions, gomock interface mocking, benchmark testing, and CI/CD integration"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

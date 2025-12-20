@@ -1,6 +1,6 @@
 ---
 name: golang-observability-opentelemetry
-description: Instrumenting Go applications with OpenTelemetry for distributed tracing, Prometheus for metrics, and structured logging with slog. Covers auto-instrumentation, health checks, and graceful shutdown. Use when adding observability to microservices or debugging production issues.
+description: "Instrumenting Go applications with OpenTelemetry for distributed tracing, Prometheus for metrics, and structured logging with slog"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

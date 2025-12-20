@@ -1,10 +1,46 @@
 {
   "version": "1.0.0",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
-  "updated": "2025-12-05",
+  "updated": "2025-12-17",
   "description": "Curated collection of Claude Code skills for intelligent project development",
   "skills": {
     "universal": [
+      {
+        "name": "api-design-patterns",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "api",
+          "rest",
+          "graphql",
+          "grpc",
+          "architecture",
+          "web",
+          "design-patterns",
+          "oauth",
+          "jwt",
+          "authentication",
+          "versioning",
+          "pagination",
+          "rate-limiting"
+        ],
+        "entry_point_tokens": 85,
+        "full_tokens": 8500,
+        "requires": [],
+        "author": "Claude MPM Skills",
+        "updated": "2025-12-03",
+        "source_path": "universal/web/api-design-patterns/SKILL.md",
+        "has_references": true,
+        "reference_files": [
+          "authentication.md",
+          "graphql-patterns.md",
+          "grpc-patterns.md",
+          "rest-patterns.md",
+          "versioning-strategies.md"
+        ]
+      },
       {
         "name": "api-documentation",
         "version": "1.0.0",
@@ -57,7 +93,7 @@
         "full_tokens": 757,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-11-21",
+        "updated": "2025-12-03",
         "source_path": "universal/collaboration/brainstorming/SKILL.md"
       },
       {
@@ -85,21 +121,30 @@
       },
       {
         "name": "database-migration",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
         "tags": [
           "database",
-          "frontend",
-          "testing"
+          "migration",
+          "schema",
+          "production",
+          "decision-trees",
+          "troubleshooting",
+          "zero-downtime"
         ],
         "entry_point_tokens": 51,
         "full_tokens": 1036,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-11-21",
-        "source_path": "universal/data/database-migration/SKILL.md"
+        "updated": "2025-12-03",
+        "source_path": "universal/data/database-migration/SKILL.md",
+        "has_references": true,
+        "reference_files": [
+          "decision-trees.md",
+          "troubleshooting.md"
+        ]
       },
       {
         "name": "dispatching-parallel-agents",
@@ -117,7 +162,7 @@
         "full_tokens": 1664,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-01",
+        "updated": "2025-12-03",
         "source_path": "universal/collaboration/dispatching-parallel-agents/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -144,7 +189,7 @@
         "full_tokens": 3775,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-02",
+        "updated": "2025-12-03",
         "source_path": "universal/infrastructure/env-manager/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -172,7 +217,7 @@
         "full_tokens": 1862,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-11-21",
+        "updated": "2025-12-03",
         "source_path": "universal/collaboration/git-workflow/SKILL.md"
       },
       {
@@ -229,6 +274,36 @@
         "source_path": "universal/data/json-data-handling/SKILL.md"
       },
       {
+        "name": "kubernetes",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "kubernetes",
+          "k8s",
+          "infrastructure",
+          "deployment",
+          "operations",
+          "reliability",
+          "debugging",
+          "security"
+        ],
+        "entry_point_tokens": 150,
+        "full_tokens": 9000,
+        "requires": [],
+        "author": "Claude MPM Team",
+        "updated": "2025-12-16",
+        "source_path": "universal/infrastructure/kubernetes/SKILL.md",
+        "has_references": true,
+        "reference_files": [
+          "core-objects.md",
+          "debugging-runbook.md",
+          "rollouts-and-probes.md",
+          "security-hardening.md"
+        ]
+      },
+      {
         "name": "mcp-builder",
         "version": "1.0.0",
         "category": "universal",
@@ -245,8 +320,37 @@
         "full_tokens": 5414,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-02",
+        "updated": "2025-12-03",
         "source_path": "universal/main/mcp-builder/SKILL.md"
+      },
+      {
+        "name": "opentelemetry",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "observability",
+          "opentelemetry",
+          "otel",
+          "tracing",
+          "metrics",
+          "logs",
+          "otlp",
+          "collector"
+        ],
+        "entry_point_tokens": 150,
+        "full_tokens": 9000,
+        "requires": [],
+        "author": "Claude MPM Team",
+        "updated": "2025-12-16",
+        "source_path": "universal/observability/opentelemetry/SKILL.md",
+        "has_references": true,
+        "reference_files": [
+          "collector-and-otlp.md",
+          "concepts.md",
+          "instrumentation-and-troubleshooting.md"
+        ]
       },
       {
         "name": "requesting-code-review",
@@ -262,7 +366,7 @@
         "full_tokens": 812,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-11-21",
+        "updated": "2025-12-03",
         "source_path": "universal/collaboration/requesting-code-review/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -287,7 +391,7 @@
         "full_tokens": 1454,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-11-21",
+        "updated": "2025-12-03",
         "source_path": "universal/debugging/root-cause-tracing/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -299,23 +403,35 @@
       },
       {
         "name": "security-scanning",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
         "tags": [
-          "frontend",
-          "database",
-          "api",
           "security",
-          "debugging"
+          "scanning",
+          "sast",
+          "dependency-scanning",
+          "secrets",
+          "supply-chain",
+          "ci",
+          "iac",
+          "container-scanning"
         ],
-        "entry_point_tokens": 51,
-        "full_tokens": 1868,
+        "entry_point_tokens": 197,
+        "full_tokens": 2492,
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2025-11-21",
-        "source_path": "universal/security/security-scanning/SKILL.md"
+        "source_path": "universal/security/security-scanning/SKILL.md",
+        "has_references": true,
+        "reference_files": [
+          "ci-workflows.md",
+          "common-findings-and-fixes.md",
+          "supply-chain-and-sbom.md",
+          "tooling-matrix.md",
+          "triage-and-remediation.md"
+        ]
       },
       {
         "name": "skill-creator",
@@ -334,7 +450,7 @@
         "full_tokens": 2407,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-11-21",
+        "updated": "2025-12-03",
         "source_path": "universal/main/skill-creator/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -362,7 +478,7 @@
         "full_tokens": 1800,
         "requires": [],
         "author": "masa",
-        "updated": "2025-11-30",
+        "updated": "2025-12-03",
         "source_path": "universal/architecture/software-patterns/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -388,7 +504,7 @@
         "full_tokens": 1634,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-11-21",
+        "updated": "2025-12-03",
         "source_path": "universal/collaboration/stacked-prs/SKILL.md"
       },
       {
@@ -407,7 +523,7 @@
         "full_tokens": 673,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-01",
+        "updated": "2025-12-03",
         "source_path": "universal/debugging/systematic-debugging/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -415,6 +531,35 @@
           "examples.md",
           "troubleshooting.md",
           "workflow.md"
+        ]
+      },
+      {
+        "name": "terraform",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "terraform",
+          "iac",
+          "infrastructure",
+          "provisioning",
+          "state",
+          "modules",
+          "ci",
+          "policy"
+        ],
+        "entry_point_tokens": 140,
+        "full_tokens": 8000,
+        "requires": [],
+        "author": "Claude MPM Team",
+        "updated": "2025-12-16",
+        "source_path": "universal/infrastructure/terraform/SKILL.md",
+        "has_references": true,
+        "reference_files": [
+          "modules-and-composition.md",
+          "state-and-environments.md",
+          "workflows-and-guardrails.md"
         ]
       },
       {
@@ -487,7 +632,7 @@
         "full_tokens": 1515,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-02",
+        "updated": "2025-12-03",
         "source_path": "universal/testing/testing-anti-patterns/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -496,6 +641,33 @@
           "detection-guide.md",
           "python-examples.md",
           "tdd-connection.md"
+        ]
+      },
+      {
+        "name": "threat-modeling",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "security",
+          "threat-modeling",
+          "stride",
+          "architecture",
+          "risk",
+          "abuse-cases"
+        ],
+        "entry_point_tokens": 150,
+        "full_tokens": 8000,
+        "requires": [],
+        "author": "Claude MPM Team",
+        "updated": "2025-12-16",
+        "source_path": "universal/security/threat-modeling/SKILL.md",
+        "has_references": true,
+        "reference_files": [
+          "common-threats-and-mitigations.md",
+          "stride-workshop.md",
+          "templates.md"
         ]
       },
       {
@@ -514,7 +686,7 @@
         "full_tokens": 1038,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-11-21",
+        "updated": "2025-12-03",
         "source_path": "universal/debugging/verification-before-completion/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -662,7 +834,7 @@
           "full_tokens": 5500,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/ai/frameworks/dspy/SKILL.md"
         },
         {
@@ -798,6 +970,264 @@
           "source_path": "toolchains/ai/techniques/session-compression/SKILL.md"
         }
       ],
+      "elixir": [
+        {
+          "name": "ecto-patterns",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "elixir",
+          "framework": null,
+          "tags": [
+            "elixir",
+            "ecto",
+            "phoenix",
+            "queries",
+            "migrations",
+            "transactions",
+            "multi-tenancy",
+            "pagination",
+            "performance",
+            "testing"
+          ],
+          "entry_point_tokens": 170,
+          "full_tokens": 5400,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-05",
+          "source_path": "toolchains/elixir/data/ecto-patterns/SKILL.md"
+        },
+        {
+          "name": "phoenix-api-channels",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "elixir",
+          "framework": "phoenix-api-channels",
+          "tags": [
+            "elixir",
+            "phoenix",
+            "channels",
+            "presence",
+            "pubsub",
+            "json",
+            "api",
+            "auth",
+            "telemetry"
+          ],
+          "entry_point_tokens": 170,
+          "full_tokens": 5200,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-05",
+          "source_path": "toolchains/elixir/frameworks/phoenix-api-channels/SKILL.md"
+        },
+        {
+          "name": "phoenix-liveview",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "elixir",
+          "framework": "phoenix-liveview",
+          "tags": [
+            "elixir",
+            "phoenix",
+            "liveview",
+            "beam",
+            "otp",
+            "ecto",
+            "pubsub",
+            "presence",
+            "telemetry"
+          ],
+          "entry_point_tokens": 180,
+          "full_tokens": 5600,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-05",
+          "source_path": "toolchains/elixir/frameworks/phoenix-liveview/SKILL.md"
+        },
+        {
+          "name": "phoenix-ops",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "elixir",
+          "framework": null,
+          "tags": [
+            "elixir",
+            "phoenix",
+            "ops",
+            "releases",
+            "libcluster",
+            "telemetry",
+            "logging",
+            "security",
+            "deployment"
+          ],
+          "entry_point_tokens": 180,
+          "full_tokens": 5600,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-05",
+          "source_path": "toolchains/elixir/ops/phoenix-ops/SKILL.md"
+        }
+      ],
+      "golang": [
+        {
+          "name": "golang-cli-cobra-viper",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "golang",
+          "framework": null,
+          "tags": [
+            "cli",
+            "golang",
+            "cobra",
+            "viper",
+            "configuration",
+            "shell-completion"
+          ],
+          "entry_point_tokens": 140,
+          "full_tokens": 4500,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-03",
+          "source_path": "toolchains/golang/cli/SKILL.md"
+        },
+        {
+          "name": "golang-concurrency-patterns",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "golang",
+          "framework": null,
+          "tags": [
+            "golang",
+            "concurrency",
+            "context",
+            "errgroup",
+            "channels",
+            "mutex",
+            "race-detector",
+            "worker-pool",
+            "structured-concurrency"
+          ],
+          "entry_point_tokens": 150,
+          "full_tokens": 5000,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-16",
+          "source_path": "toolchains/golang/concurrency/SKILL.md"
+        },
+        {
+          "name": "golang-database-patterns",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "golang",
+          "framework": null,
+          "tags": [
+            "database",
+            "golang",
+            "sqlx",
+            "pgx",
+            "migrations",
+            "repository-pattern"
+          ],
+          "entry_point_tokens": 140,
+          "full_tokens": 5400,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-03",
+          "source_path": "toolchains/golang/data/SKILL.md"
+        },
+        {
+          "name": "golang-grpc",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "golang",
+          "framework": null,
+          "tags": [
+            "golang",
+            "grpc",
+            "protobuf",
+            "microservices",
+            "streaming",
+            "interceptors",
+            "authentication",
+            "observability",
+            "testing"
+          ],
+          "entry_point_tokens": 160,
+          "full_tokens": 6500,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-16",
+          "source_path": "toolchains/golang/grpc/SKILL.md"
+        },
+        {
+          "name": "golang-http-frameworks",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "golang",
+          "framework": null,
+          "tags": [
+            "http",
+            "golang",
+            "chi",
+            "gin",
+            "echo",
+            "fiber",
+            "rest-api",
+            "middleware"
+          ],
+          "entry_point_tokens": 160,
+          "full_tokens": 5000,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-03",
+          "source_path": "toolchains/golang/web/SKILL.md"
+        },
+        {
+          "name": "golang-observability-opentelemetry",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "golang",
+          "framework": null,
+          "tags": [
+            "observability",
+            "golang",
+            "opentelemetry",
+            "prometheus",
+            "tracing",
+            "metrics",
+            "logging",
+            "slog"
+          ],
+          "entry_point_tokens": 150,
+          "full_tokens": 5000,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-03",
+          "source_path": "toolchains/golang/observability/SKILL.md"
+        },
+        {
+          "name": "golang-testing-strategies",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "golang",
+          "framework": null,
+          "tags": [
+            "testing",
+            "golang",
+            "testify",
+            "gomock",
+            "benchmarks",
+            "ci-cd"
+          ],
+          "entry_point_tokens": 150,
+          "full_tokens": 4500,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-03",
+          "source_path": "toolchains/golang/testing/SKILL.md"
+        }
+      ],
       "javascript": [
         {
           "name": "biome",
@@ -823,24 +1253,60 @@
           "source_path": "toolchains/javascript/tooling/biome/SKILL.md"
         },
         {
-          "name": "express-local-dev",
+          "name": "cypress",
           "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": null,
+          "tags": [
+            "testing",
+            "cypress",
+            "e2e",
+            "component-testing",
+            "browser-testing",
+            "ci",
+            "flake-reduction"
+          ],
+          "entry_point_tokens": 130,
+          "full_tokens": 5200,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-16",
+          "source_path": "toolchains/javascript/testing/cypress/SKILL.md"
+        },
+        {
+          "name": "express-production",
+          "version": "2.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "express-local-dev",
           "tags": [
-            "async",
-            "api",
+            "express",
+            "nodejs",
+            "production",
+            "middleware",
             "security",
             "testing",
-            "debugging"
+            "deployment",
+            "backend",
+            "rest-api",
+            "microservices",
+            "authentication",
+            "error-handling"
           ],
-          "entry_point_tokens": 59,
-          "full_tokens": 7825,
+          "entry_point_tokens": 120,
+          "full_tokens": 14500,
           "requires": [],
-          "author": "bobmatnyc",
-          "updated": "2025-12-01",
-          "source_path": "toolchains/javascript/frameworks/express-local-dev/SKILL.md"
+          "author": "Claude MPM Team",
+          "updated": "2025-12-03",
+          "source_path": "toolchains/javascript/frameworks/express-local-dev/SKILL.md",
+          "has_references": true,
+          "reference_files": [
+            "middleware-patterns.md",
+            "production-deployment.md",
+            "security-hardening.md",
+            "testing-strategies.md"
+          ]
         },
         {
           "name": "nextjs",
@@ -879,7 +1345,7 @@
           "full_tokens": 4700,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/javascript/testing/playwright/SKILL.md"
         },
         {
@@ -958,8 +1424,35 @@
           "full_tokens": 4500,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2025-11-30",
+          "updated": "2025-12-03",
           "source_path": "toolchains/javascript/frameworks/svelte/SKILL.md"
+        },
+        {
+          "name": "svelte5-runes-static",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "svelte5-runes-static",
+          "tags": [
+            "svelte",
+            "svelte5",
+            "runes",
+            "adapter-static",
+            "ssr",
+            "ssg",
+            "stores",
+            "reactivity",
+            "hydration",
+            "sveltekit",
+            "prerendering",
+            "typescript"
+          ],
+          "entry_point_tokens": 90,
+          "full_tokens": 6000,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-11",
+          "source_path": "toolchains/javascript/frameworks/svelte5-runes-static/SKILL.md"
         },
         {
           "name": "sveltekit",
@@ -1011,7 +1504,7 @@
           "full_tokens": 4000,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/javascript/build/vite/SKILL.md"
         },
         {
@@ -1045,19 +1538,25 @@
       "nextjs": [
         {
           "name": "nextjs-core",
-          "version": "1.0.0",
+          "version": "1.1.0",
           "category": "toolchain",
           "toolchain": "nextjs",
           "framework": null,
           "tags": [
             "nextjs",
             "react",
+            "app-router",
             "server-components",
             "server-actions",
-            "app-router"
+            "route-handlers",
+            "routing",
+            "data-fetching",
+            "caching",
+            "authentication",
+            "testing"
           ],
-          "entry_point_tokens": 150,
-          "full_tokens": 3500,
+          "entry_point_tokens": 188,
+          "full_tokens": 12236,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-11-30",
@@ -1065,14 +1564,16 @@
           "has_references": true,
           "reference_files": [
             "authentication.md",
+            "caching-and-rendering.md",
             "data-fetching.md",
             "routing.md",
-            "server-actions.md"
+            "server-actions.md",
+            "testing.md"
           ]
         },
         {
           "name": "nextjs-v16",
-          "version": "1.0.0",
+          "version": "1.1.0",
           "category": "toolchain",
           "toolchain": "nextjs",
           "framework": null,
@@ -1080,11 +1581,14 @@
             "nextjs",
             "nextjs-16",
             "migration",
+            "async-request-apis",
             "turbopack",
-            "cache-components"
+            "cache-components",
+            "use-cache",
+            "proxy"
           ],
-          "entry_point_tokens": 180,
-          "full_tokens": 4200,
+          "entry_point_tokens": 186,
+          "full_tokens": 5289,
           "requires": [
             "nextjs-core"
           ],
@@ -1117,7 +1621,7 @@
           "full_tokens": 1691,
           "requires": [],
           "author": "bobmatnyc",
-          "updated": "2025-11-21",
+          "updated": "2025-12-03",
           "source_path": "toolchains/php/frameworks/espocrm/SKILL.md",
           "has_references": true,
           "reference_files": [
@@ -1279,7 +1783,7 @@
           "full_tokens": 4300,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/platforms/database/neon/SKILL.md"
         },
         {
@@ -1299,7 +1803,7 @@
           "full_tokens": 4300,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/platforms/deployment/netlify/SKILL.md"
         },
         {
@@ -1322,7 +1826,7 @@
           "full_tokens": 5500,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/platforms/backend/supabase/SKILL.md"
         },
         {
@@ -1342,7 +1846,7 @@
           "full_tokens": 4500,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/platforms/deployment/vercel/SKILL.md"
         }
       ],
@@ -1411,28 +1915,43 @@
           "full_tokens": 5000,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/python/frameworks/django/SKILL.md"
         },
         {
           "name": "fastapi-local-dev",
-          "version": "1.0.0",
+          "version": "1.1.0",
           "category": "toolchain",
           "toolchain": "python",
           "framework": "fastapi-local-dev",
           "tags": [
-            "performance",
-            "async",
             "api",
-            "testing",
-            "debugging"
+            "python",
+            "fastapi",
+            "uvicorn",
+            "gunicorn",
+            "reload",
+            "docker",
+            "systemd",
+            "pm2",
+            "wsl",
+            "troubleshooting"
           ],
-          "entry_point_tokens": 51,
-          "full_tokens": 6352,
+          "entry_point_tokens": 173,
+          "full_tokens": 1625,
           "requires": [],
           "author": "bobmatnyc",
           "updated": "2025-12-01",
-          "source_path": "toolchains/python/frameworks/fastapi-local-dev/SKILL.md"
+          "source_path": "toolchains/python/frameworks/fastapi-local-dev/SKILL.md",
+          "has_references": true,
+          "reference_files": [
+            "dev-server.md",
+            "docker.md",
+            "process-management.md",
+            "production-gunicorn.md",
+            "templates.md",
+            "troubleshooting.md"
+          ]
         },
         {
           "name": "flask",
@@ -1456,7 +1975,7 @@
           "full_tokens": 4300,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/python/frameworks/flask/SKILL.md"
         },
         {
@@ -1524,7 +2043,7 @@
           "full_tokens": 4000,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/python/tooling/pyright/SKILL.md"
         },
         {
@@ -1580,11 +2099,57 @@
           "full_tokens": 5000,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/python/data/sqlalchemy/SKILL.md"
         }
       ],
       "rust": [
+        {
+          "name": "axum",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": "axum",
+          "tags": [
+            "rust",
+            "axum",
+            "tokio",
+            "http",
+            "api",
+            "tower",
+            "middleware",
+            "tracing",
+            "testing"
+          ],
+          "entry_point_tokens": 140,
+          "full_tokens": 5500,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-16",
+          "source_path": "toolchains/rust/frameworks/axum/SKILL.md"
+        },
+        {
+          "name": "clap",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": null,
+          "tags": [
+            "rust",
+            "cli",
+            "clap",
+            "argument-parsing",
+            "subcommands",
+            "config",
+            "testing"
+          ],
+          "entry_point_tokens": 120,
+          "full_tokens": 4500,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-16",
+          "source_path": "toolchains/rust/cli/clap/SKILL.md"
+        },
         {
           "name": "desktop-applications",
           "version": "1.0.0",
@@ -1602,7 +2167,7 @@
           "full_tokens": 2582,
           "requires": [],
           "author": "bobmatnyc",
-          "updated": "2025-11-21",
+          "updated": "2025-12-03",
           "source_path": "toolchains/rust/desktop-applications/SKILL.md",
           "has_references": true,
           "reference_files": [
@@ -1668,6 +2233,32 @@
             "query-patterns.md",
             "vs-prisma.md"
           ]
+        },
+        {
+          "name": "fastify",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "typescript",
+          "framework": "fastify",
+          "tags": [
+            "typescript",
+            "fastify",
+            "nodejs",
+            "backend",
+            "api",
+            "validation",
+            "json-schema",
+            "zod",
+            "typebox",
+            "security",
+            "testing"
+          ],
+          "entry_point_tokens": 130,
+          "full_tokens": 5200,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-16",
+          "source_path": "toolchains/typescript/frameworks/fastify/SKILL.md"
         },
         {
           "name": "jest-typescript",
@@ -1737,7 +2328,7 @@
           "full_tokens": 4700,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/typescript/frameworks/nodejs-backend/SKILL.md"
         },
         {
@@ -1764,7 +2355,7 @@
             "typescript-core"
           ],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/typescript/data/prisma/SKILL.md"
         },
         {
@@ -1841,7 +2432,7 @@
         },
         {
           "name": "typescript-core",
-          "version": "1.0.0",
+          "version": "1.1.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -1851,20 +2442,24 @@
             "validation",
             "zod",
             "typebox",
-            "tsconfig"
+            "tsconfig",
+            "decision-trees",
+            "troubleshooting"
           ],
           "entry_point_tokens": 180,
           "full_tokens": 4500,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-02",
+          "updated": "2025-12-03",
           "source_path": "toolchains/typescript/core/SKILL.md",
           "has_references": true,
           "reference_files": [
             "advanced-patterns-2025.md",
             "advanced-types.md",
             "configuration.md",
-            "runtime-validation.md"
+            "decision-trees.md",
+            "runtime-validation.md",
+            "troubleshooting.md"
           ]
         },
         {
@@ -1890,7 +2485,7 @@
           "full_tokens": 3200,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2025-12-01",
+          "updated": "2025-12-03",
           "source_path": "toolchains/typescript/testing/vitest/SKILL.md"
         },
         {
@@ -2093,105 +2688,6 @@
           "updated": "2025-12-01",
           "source_path": "toolchains/universal/data/graphql/SKILL.md"
         }
-      ],
-      "elixir": [
-        {
-          "name": "phoenix-liveview",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "elixir",
-          "framework": "phoenix-liveview",
-          "tags": [
-            "elixir",
-            "phoenix",
-            "liveview",
-            "beam",
-            "otp",
-            "ecto",
-            "pubsub",
-            "presence",
-            "telemetry"
-          ],
-          "entry_point_tokens": 180,
-          "full_tokens": 5600,
-          "requires": [],
-          "author": "Claude MPM Team",
-          "updated": "2025-12-05",
-          "source_path": "toolchains/elixir/frameworks/phoenix-liveview/SKILL.md"
-        },
-        {
-          "name": "phoenix-api-channels",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "elixir",
-          "framework": "phoenix-api-channels",
-          "tags": [
-            "elixir",
-            "phoenix",
-            "channels",
-            "presence",
-            "pubsub",
-            "json",
-            "api",
-            "auth",
-            "telemetry"
-          ],
-          "entry_point_tokens": 170,
-          "full_tokens": 5200,
-          "requires": [],
-          "author": "Claude MPM Team",
-          "updated": "2025-12-05",
-          "source_path": "toolchains/elixir/frameworks/phoenix-api-channels/SKILL.md"
-        },
-        {
-          "name": "ecto-patterns",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "elixir",
-          "framework": "ecto-patterns",
-          "tags": [
-            "elixir",
-            "ecto",
-            "phoenix",
-            "queries",
-            "migrations",
-            "transactions",
-            "multi-tenancy",
-            "pagination",
-            "performance",
-            "testing"
-          ],
-          "entry_point_tokens": 170,
-          "full_tokens": 5400,
-          "requires": [],
-          "author": "Claude MPM Team",
-          "updated": "2025-12-05",
-          "source_path": "toolchains/elixir/data/ecto-patterns/SKILL.md"
-        },
-        {
-          "name": "phoenix-ops",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "elixir",
-          "framework": "phoenix-ops",
-          "tags": [
-            "elixir",
-            "phoenix",
-            "ops",
-            "releases",
-            "libcluster",
-            "telemetry",
-            "logging",
-            "security",
-            "deployment"
-          ],
-          "entry_point_tokens": 180,
-          "full_tokens": 5600,
-          "requires": [],
-          "author": "Claude MPM Team",
-          "updated": "2025-12-05",
-          "source_path": "toolchains/elixir/ops/phoenix-ops/SKILL.md"
-        }
       ]
     },
     "examples": [
@@ -2210,10 +2706,10 @@
         "entry_point_tokens": 3396,
         "full_tokens": 3396,
         "requires": [
-          "\u26a0\ufe0f VIOLATION: This field should be empty!",
-          "\u26a0\ufe0f setup-skill",
-          "\u26a0\ufe0f database-skill",
-          "\u26a0\ufe0f pytest-patterns"
+          "⚠️ VIOLATION: This field should be empty!",
+          "⚠️ setup-skill",
+          "⚠️ database-skill",
+          "⚠️ pytest-patterns"
         ],
         "author": "claude-mpm-skills",
         "updated": "2025-12-01",
@@ -2244,26 +2740,27 @@
     ]
   },
   "metadata": {
-    "total_skills": 93,
+    "total_skills": 110,
     "categories": {
-      "universal": 27,
-      "examples": 2,
-      "toolchains": 64
+      "universal": 32,
+      "toolchains": 76,
+      "examples": 2
     },
     "toolchains": {
       "ai": 7,
-      "javascript": 10,
+      "elixir": 4,
+      "golang": 7,
+      "javascript": 12,
       "nextjs": 2,
       "php": 6,
       "platforms": 4,
       "python": 10,
-      "rust": 2,
-      "typescript": 12,
+      "rust": 4,
+      "typescript": 13,
       "ui": 4,
-      "universal": 3,
-      "elixir": 4
+      "universal": 3
     },
-    "last_updated": "2025-12-05",
+    "last_updated": "2025-12-17",
     "schema_version": "2.0.0"
   },
   "provenance": {

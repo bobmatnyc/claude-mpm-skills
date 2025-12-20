@@ -1,6 +1,6 @@
 ---
 name: shadcn-ui
-description: shadcn/ui component library for React with Tailwind CSS - copy-paste accessible components with full code ownership. Use when building React applications needing customizable UI components with Next.js, Vite, or Remix integration.
+description: "shadcn/ui component library for React with Tailwind CSS - copy-paste accessible components with full code ownership"
 ---
 
 # shadcn/ui - Component Library
