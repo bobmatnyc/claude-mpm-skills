@@ -1,6 +1,5 @@
 ---
-skill_id: database-migration
-skill_version: 1.1.0
+name: database-migration
 description: Safe patterns for evolving database schemas in production with decision trees and troubleshooting guidance.
 updated_at: 2025-12-03T00:00:00Z
 tags: [database, migration, schema, production, decision-trees, troubleshooting, zero-downtime]

@@ -1,5 +1,5 @@
 ---
-skill_name: api-design-patterns
+name: api-design-patterns
 version: 1.0.0
 description: Comprehensive API design patterns covering REST, GraphQL, gRPC, versioning, authentication, and modern API best practices
 category: universal

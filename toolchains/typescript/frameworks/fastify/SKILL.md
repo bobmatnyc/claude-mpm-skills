@@ -1,6 +1,6 @@
 ---
 name: fastify
-description: Production Fastify (TypeScript) patterns: schema validation, plugins, typed routes, error handling, security hardening, logging, testing with inject, and graceful shutdown
+description: "Production Fastify (TypeScript) patterns: schema validation, plugins, typed routes, error handling, security hardening, logging, testing with inject, and graceful shutdown"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

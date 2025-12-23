@@ -1,4 +1,7 @@
 ---
+name: github-actions
+description: "GitHub Actions CI/CD workflows for automating build, test, and deployment"
+version: 1.0.0
 progressive_disclosure:
   entry_point:
     - summary

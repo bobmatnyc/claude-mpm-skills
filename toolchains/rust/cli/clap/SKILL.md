@@ -1,6 +1,6 @@
 ---
 name: clap
-description: Build production Rust CLIs with Clap: subcommands, config layering, validation, exit codes, shell completions, and testable command surfaces
+description: "Build production Rust CLIs with Clap: subcommands, config layering, validation, exit codes, shell completions, and testable command surfaces"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

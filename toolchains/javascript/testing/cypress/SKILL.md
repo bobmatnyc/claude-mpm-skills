@@ -1,6 +1,6 @@
 ---
 name: cypress
-description: Cypress end-to-end and component testing patterns for web apps: reliable selectors, stable waits, network stubbing, auth handling, CI parallelization, and flake reduction
+description: "Cypress end-to-end and component testing patterns for web apps: reliable selectors, stable waits, network stubbing, auth handling, CI parallelization, and flake reduction"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

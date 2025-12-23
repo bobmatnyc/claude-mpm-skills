@@ -1,6 +1,5 @@
 ---
-skill_id: web-performance-optimization
-skill_version: 2.0.0
+name: web-performance-optimization
 description: "Optimize web performance using Core Web Vitals, modern patterns (View Transitions, Speculation Rules), and framework-specific techniques"
 updated_at: 2025-12-02T00:00:00Z
 tags: [performance, optimization, lighthouse, core-web-vitals, frontend]

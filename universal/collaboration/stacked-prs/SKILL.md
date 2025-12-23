@@ -1,6 +1,5 @@
 ---
-skill_id: stacked-prs
-skill_version: 1.0.0
+name: stacked-prs
 description: Create and manage stacked (dependent) pull requests for complex features
 tags: [git, pull-requests, branching, workflow, collaboration]
 related_agents: [version-control]

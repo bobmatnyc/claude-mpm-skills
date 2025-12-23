@@ -1,6 +1,6 @@
 ---
 name: golang-concurrency-patterns
-description: Go concurrency patterns for production services: context cancellation, errgroup, worker pools, bounded parallelism, fan-in/fan-out, and common race/deadlock pitfalls
+description: "Go concurrency patterns for production services: context cancellation, errgroup, worker pools, bounded parallelism, fan-in/fan-out, and common race/deadlock pitfalls"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

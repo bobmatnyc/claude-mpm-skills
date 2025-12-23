@@ -1,0 +1,16 @@
+{
+  "name": "pre-merge-verification",
+  "version": "1.0.0",
+  "category": "universal",
+  "toolchain": null,
+  "framework": null,
+  "tags": ["verification", "testing", "ci", "quality", "pre-commit", "linting", "type-checking"],
+  "entry_point_tokens": 180,
+  "full_tokens": 2500,
+  "requires": [],
+  "author": "claude-mpm-skills",
+  "updated": "2025-12-08",
+  "source_path": "universal/verification/pre-merge/SKILL.md",
+  "license": "MIT",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

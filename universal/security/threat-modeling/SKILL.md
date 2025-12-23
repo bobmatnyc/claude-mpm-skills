@@ -1,6 +1,6 @@
 ---
 name: threat-modeling
-description: Threat modeling workflow for software systems: scope, data flow diagrams, STRIDE analysis, risk scoring, and turning mitigations into backlog and tests
+description: "Threat modeling workflow for software systems: scope, data flow diagrams, STRIDE analysis, risk scoring, and turning mitigations into backlog and tests"
 version: 1.0.0
 category: universal
 author: Claude MPM Team
