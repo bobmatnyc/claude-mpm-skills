@@ -1,6 +1,6 @@
 ---
 name: phoenix-ops
-description: Phoenix operations and deployment: releases, runtime configuration, clustering, libcluster, telemetry/logging, secrets, assets, background jobs, and production hardening on the BEAM.
+description: "Phoenix operations and deployment: releases, runtime configuration, clustering, libcluster, telemetry/logging, secrets, assets, background jobs, and production hardening on the BEAM."
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

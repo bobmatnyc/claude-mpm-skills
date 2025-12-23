@@ -1,6 +1,6 @@
 ---
 name: security-scanning
-description: CI security scanning: secrets, deps, SAST, triage, expiring exceptions
+description: "CI security scanning: secrets, deps, SAST, triage, expiring exceptions"
 version: 1.1.0
 category: universal
 author: Claude MPM Team

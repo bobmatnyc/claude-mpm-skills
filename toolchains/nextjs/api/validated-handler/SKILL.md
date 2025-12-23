@@ -1,3 +1,10 @@
+---
+name: validated-handler
+description: "Type-safe API route handler with automatic Zod validation for Next.js App Router..."
+version: 1.0.0
+tags: []
+---
+
 # Next.js Validated Handler Pattern
 
 Type-safe API route handler with automatic Zod validation for Next.js App Router.

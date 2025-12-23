@@ -1,6 +1,6 @@
 ---
 name: axum
-description: Axum (Rust) web framework patterns for production APIs: routers/extractors, state, middleware, error handling, tracing, graceful shutdown, and testing
+description: "Axum (Rust) web framework patterns for production APIs: routers/extractors, state, middleware, error handling, tracing, graceful shutdown, and testing"
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

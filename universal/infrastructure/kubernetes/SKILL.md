@@ -1,6 +1,6 @@
 ---
 name: kubernetes
-description: Kubernetes operations playbook for deploying services: core objects, probes, resource sizing, safe rollouts, and fast kubectl debugging
+description: "Kubernetes operations playbook for deploying services: core objects, probes, resource sizing, safe rollouts, and fast kubectl debugging"
 version: 1.0.0
 category: universal
 author: Claude MPM Team

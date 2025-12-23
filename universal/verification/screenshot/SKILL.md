@@ -1,3 +1,10 @@
+---
+name: screenshot
+description: "Visual verification workflow for UI changes to accelerate code review and catch ..."
+version: 1.0.0
+tags: []
+---
+
 # Screenshot-Based UI Verification
 
 Visual verification workflow for UI changes to accelerate code review and catch responsive design issues early.

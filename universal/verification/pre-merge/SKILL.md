@@ -1,3 +1,10 @@
+---
+name: pre-merge
+description: "Comprehensive verification workflow before merging changes to production."
+version: 1.0.0
+tags: []
+---
+
 # Pre-Merge Verification
 
 Comprehensive verification workflow before merging changes to production.

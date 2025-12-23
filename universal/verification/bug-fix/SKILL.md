@@ -1,3 +1,10 @@
+---
+name: bug-fix
+description: "Systematic workflow for verifying bug fixes to ensure quality and prevent regres..."
+version: 1.0.0
+tags: []
+---
+
 # Bug Fix Verification
 
 Systematic workflow for verifying bug fixes to ensure quality and prevent regressions.
