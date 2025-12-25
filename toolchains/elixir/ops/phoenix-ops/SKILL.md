@@ -14,7 +14,7 @@ progressive_disclosure:
       - "Setting up telemetry/logging and runtime configuration for releases"
       - "Hardening endpoints (HTTPS, rate limiting, CORS, secrets)"
     quick_start:
-      - "Set env: MIX_ENV=prod PHX_SERVER=true SECRET_KEY_BASE=... DATABASE_URL=..."
+      - 'Set env: MIX_ENV=prod PHX_SERVER=true SECRET_KEY_BASE=... DATABASE_URL=...'
       - "mix assets.deploy && MIX_ENV=prod mix release"
       - "Configure runtime in config/runtime.exs (DB, cache, endpoints, Oban)"
       - "Add libcluster + DNS/epmd strategy; enable OpentelemetryPhoenix/Ecto"
