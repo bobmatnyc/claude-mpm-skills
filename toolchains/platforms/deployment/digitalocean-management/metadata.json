@@ -1,0 +1,23 @@
+{
+  "name": "digitalocean-management",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": [
+    "digitalocean",
+    "management",
+    "monitoring",
+    "uptime",
+    "projects",
+    "alerts"
+  ],
+  "entry_point_tokens": 100,
+  "full_tokens": 3800,
+  "related_skills": [
+    "digitalocean-networking",
+    "digitalocean-storage",
+    "digitalocean-managed-databases"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

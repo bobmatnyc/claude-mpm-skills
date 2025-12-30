@@ -1,0 +1,23 @@
+{
+  "name": "digitalocean-teams",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": [
+    "digitalocean",
+    "teams",
+    "organizations",
+    "roles",
+    "permissions",
+    "billing",
+    "sso"
+  ],
+  "entry_point_tokens": 100,
+  "full_tokens": 3800,
+  "related_skills": [
+    "digitalocean-overview",
+    "digitalocean-management"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

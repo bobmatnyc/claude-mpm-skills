@@ -1,0 +1,24 @@
+{
+  "name": "digitalocean-storage",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": [
+    "digitalocean",
+    "storage",
+    "spaces",
+    "volumes",
+    "nfs",
+    "snapshots",
+    "backups"
+  ],
+  "entry_point_tokens": 100,
+  "full_tokens": 4300,
+  "related_skills": [
+    "digitalocean-compute",
+    "digitalocean-containers-images",
+    "digitalocean-managed-databases"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

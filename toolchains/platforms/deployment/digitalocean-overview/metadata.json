@@ -1,0 +1,28 @@
+{
+  "name": "digitalocean-overview",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": [
+    "digitalocean",
+    "overview",
+    "platform",
+    "onboarding",
+    "projects",
+    "account"
+  ],
+  "entry_point_tokens": 100,
+  "full_tokens": 3500,
+  "related_skills": [
+    "digitalocean-compute",
+    "digitalocean-agentic-cloud",
+    "digitalocean-storage",
+    "digitalocean-containers-images",
+    "digitalocean-managed-databases",
+    "digitalocean-networking",
+    "digitalocean-management",
+    "digitalocean-teams"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

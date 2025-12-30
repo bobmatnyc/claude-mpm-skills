@@ -1,0 +1,26 @@
+{
+  "name": "digitalocean-compute",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": [
+    "digitalocean",
+    "compute",
+    "droplets",
+    "app-platform",
+    "functions",
+    "kubernetes",
+    "gpu"
+  ],
+  "entry_point_tokens": 100,
+  "full_tokens": 4700,
+  "related_skills": [
+    "digitalocean-containers-images",
+    "digitalocean-storage",
+    "digitalocean-networking",
+    "kubernetes",
+    "docker"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}
