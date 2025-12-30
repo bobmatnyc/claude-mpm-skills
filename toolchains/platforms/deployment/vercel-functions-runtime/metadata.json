@@ -1,0 +1,23 @@
+{
+  "name": "vercel-functions-runtime",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": [
+    "vercel",
+    "functions",
+    "edge-runtime",
+    "cron",
+    "serverless",
+    "middleware"
+  ],
+  "entry_point_tokens": 100,
+  "full_tokens": 4200,
+  "related_skills": [
+    "vercel-deployments-builds",
+    "vercel-networking-domains",
+    "vercel-observability"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "vercel-storage-data",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": [
+    "vercel",
+    "postgres",
+    "redis",
+    "blob",
+    "edge-config",
+    "data-cache",
+    "storage"
+  ],
+  "entry_point_tokens": 100,
+  "full_tokens": 4300,
+  "related_skills": [
+    "vercel-functions-runtime",
+    "vercel-networking-domains",
+    "vercel-observability"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

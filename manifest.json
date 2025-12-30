@@ -2126,24 +2126,203 @@
           "source_path": "toolchains/platforms/backend/supabase/SKILL.md"
         },
         {
-          "name": "vercel",
+          "name": "vercel-ai",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
           "tags": [
-            "deployment",
             "vercel",
-            "serverless",
-            "edge-functions",
-            "nextjs"
+            "ai",
+            "ai-gateway",
+            "ai-sdk",
+            "agent",
+            "mcp"
           ],
-          "entry_point_tokens": 80,
-          "full_tokens": 4500,
+          "entry_point_tokens": 100,
+          "full_tokens": 4200,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-16",
-          "source_path": "toolchains/platforms/deployment/vercel/SKILL.md"
+          "updated": "2025-12-30",
+          "source_path": "toolchains/platforms/deployment/vercel-ai/SKILL.md"
+        },
+        {
+          "name": "vercel-deployments-builds",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "vercel",
+            "deployments",
+            "builds",
+            "preview",
+            "release-phases",
+            "rollback"
+          ],
+          "entry_point_tokens": 100,
+          "full_tokens": 4300,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-30",
+          "source_path": "toolchains/platforms/deployment/vercel-deployments-builds/SKILL.md"
+        },
+        {
+          "name": "vercel-functions-runtime",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "vercel",
+            "functions",
+            "edge-runtime",
+            "cron",
+            "serverless",
+            "middleware"
+          ],
+          "entry_point_tokens": 100,
+          "full_tokens": 4200,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-30",
+          "source_path": "toolchains/platforms/deployment/vercel-functions-runtime/SKILL.md"
+        },
+        {
+          "name": "vercel-networking-domains",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "vercel",
+            "domains",
+            "routing",
+            "redirects",
+            "rewrites",
+            "headers",
+            "cdn",
+            "edge-cache",
+            "regions"
+          ],
+          "entry_point_tokens": 100,
+          "full_tokens": 4300,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-30",
+          "source_path": "toolchains/platforms/deployment/vercel-networking-domains/SKILL.md"
+        },
+        {
+          "name": "vercel-observability",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "vercel",
+            "analytics",
+            "speed-insights",
+            "logs",
+            "tracing",
+            "alerts",
+            "observability"
+          ],
+          "entry_point_tokens": 100,
+          "full_tokens": 4200,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-30",
+          "source_path": "toolchains/platforms/deployment/vercel-observability/SKILL.md"
+        },
+        {
+          "name": "vercel-overview",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "vercel",
+            "overview",
+            "projects",
+            "cli",
+            "git",
+            "environment-variables",
+            "api",
+            "webhooks"
+          ],
+          "entry_point_tokens": 100,
+          "full_tokens": 3600,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-30",
+          "source_path": "toolchains/platforms/deployment/vercel-overview/SKILL.md"
+        },
+        {
+          "name": "vercel-security-access",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "vercel",
+            "security",
+            "rbac",
+            "sso",
+            "deployment-protection",
+            "firewall",
+            "botid",
+            "audit-log",
+            "2fa"
+          ],
+          "entry_point_tokens": 100,
+          "full_tokens": 4700,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-30",
+          "source_path": "toolchains/platforms/deployment/vercel-security-access/SKILL.md"
+        },
+        {
+          "name": "vercel-storage-data",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "vercel",
+            "postgres",
+            "redis",
+            "blob",
+            "edge-config",
+            "data-cache",
+            "storage"
+          ],
+          "entry_point_tokens": 100,
+          "full_tokens": 4300,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-30",
+          "source_path": "toolchains/platforms/deployment/vercel-storage-data/SKILL.md"
+        },
+        {
+          "name": "vercel-teams-billing",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "vercel",
+            "teams",
+            "accounts",
+            "plans",
+            "spend-management",
+            "billing"
+          ],
+          "entry_point_tokens": 100,
+          "full_tokens": 3800,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-30",
+          "source_path": "toolchains/platforms/deployment/vercel-teams-billing/SKILL.md"
         }
       ],
       "python": [
@@ -3145,10 +3324,10 @@
     ]
   },
   "metadata": {
-    "total_skills": 128,
+    "total_skills": 136,
     "categories": {
       "universal": 35,
-      "toolchains": 91,
+      "toolchains": 99,
       "examples": 2
     },
     "toolchains": {
@@ -3158,7 +3337,7 @@
       "javascript": 12,
       "nextjs": 3,
       "php": 6,
-      "platforms": 13,
+      "platforms": 21,
       "python": 10,
       "rust": 4,
       "typescript": 14,

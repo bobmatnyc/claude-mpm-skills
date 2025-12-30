@@ -1,0 +1,23 @@
+{
+  "name": "vercel-deployments-builds",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": [
+    "vercel",
+    "deployments",
+    "builds",
+    "preview",
+    "release-phases",
+    "rollback"
+  ],
+  "entry_point_tokens": 100,
+  "full_tokens": 4300,
+  "related_skills": [
+    "vercel-functions-runtime",
+    "vercel-networking-domains",
+    "vercel-observability"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

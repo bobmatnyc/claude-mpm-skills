@@ -1,0 +1,22 @@
+{
+  "name": "vercel-teams-billing",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": [
+    "vercel",
+    "teams",
+    "accounts",
+    "plans",
+    "spend-management",
+    "billing"
+  ],
+  "entry_point_tokens": 100,
+  "full_tokens": 3800,
+  "related_skills": [
+    "vercel-security-access",
+    "vercel-overview"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

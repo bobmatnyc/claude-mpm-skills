@@ -1,0 +1,26 @@
+{
+  "name": "vercel-networking-domains",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": [
+    "vercel",
+    "domains",
+    "routing",
+    "redirects",
+    "rewrites",
+    "headers",
+    "cdn",
+    "edge-cache",
+    "regions"
+  ],
+  "entry_point_tokens": 100,
+  "full_tokens": 4300,
+  "related_skills": [
+    "vercel-functions-runtime",
+    "vercel-deployments-builds",
+    "vercel-observability"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

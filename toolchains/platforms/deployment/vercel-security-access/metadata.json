@@ -1,0 +1,25 @@
+{
+  "name": "vercel-security-access",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": [
+    "vercel",
+    "security",
+    "rbac",
+    "sso",
+    "deployment-protection",
+    "firewall",
+    "botid",
+    "audit-log",
+    "2fa"
+  ],
+  "entry_point_tokens": 100,
+  "full_tokens": 4700,
+  "related_skills": [
+    "vercel-teams-billing",
+    "vercel-observability"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}

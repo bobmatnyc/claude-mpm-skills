@@ -1,0 +1,23 @@
+{
+  "name": "vercel-ai",
+  "version": "1.0.0",
+  "category": "platform",
+  "platform": "deployment",
+  "tags": [
+    "vercel",
+    "ai",
+    "ai-gateway",
+    "ai-sdk",
+    "agent",
+    "mcp"
+  ],
+  "entry_point_tokens": 100,
+  "full_tokens": 4200,
+  "related_skills": [
+    "vercel-functions-runtime",
+    "vercel-storage-data",
+    "vercel-observability"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}
