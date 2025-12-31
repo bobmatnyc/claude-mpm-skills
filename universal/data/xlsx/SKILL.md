@@ -3,8 +3,12 @@ name: xlsx
 description: Working with Excel files programmatically.
 updated_at: 2025-10-30T17:00:00Z
 tags: [excel, xlsx, spreadsheet, data]
+progressive_disclosure:
+  entry_point:
+    summary: "Working with Excel files programmatically."
+    when_to_use: "When working with xlsx or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Excel/XLSX Manipulation
 
 Working with Excel files programmatically.

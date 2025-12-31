@@ -12,7 +12,7 @@
     "middleware"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 469,
+  "full_tokens": 564,
   "related_skills": [
     "vercel-deployments-builds",
     "vercel-networking-domains",

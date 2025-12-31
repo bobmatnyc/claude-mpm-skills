@@ -1,8 +1,12 @@
 ---
 name: mcp-builder-evaluation
 description: "MCP (Model Context Protocol) server evaluation guide for creating comprehensive test suites with read-only, independent questions"
+progressive_disclosure:
+  entry_point:
+    summary: "MCP (Model Context Protocol) server evaluation guide for creating comprehensive test suites with read-only, independent questions"
+    when_to_use: "When working with mcp-builder-evaluation or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # MCP Server Evaluation Guide
 
 ## Overview

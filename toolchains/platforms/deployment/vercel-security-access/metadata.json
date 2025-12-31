@@ -15,7 +15,7 @@
     "2fa"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 550,
+  "full_tokens": 653,
   "related_skills": [
     "vercel-teams-billing",
     "vercel-observability"

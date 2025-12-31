@@ -3,8 +3,12 @@ name: api-documentation
 description: Best practices for documenting APIs and code interfaces, eliminating redundant documentation guidance per agent.
 updated_at: 2025-10-30T17:00:00Z
 tags: [api, documentation, best-practices, interfaces]
+progressive_disclosure:
+  entry_point:
+    summary: "Best practices for documenting APIs and code interfaces, eliminating redundant documentation guidance per agent."
+    when_to_use: "When designing, implementing, or documenting APIs."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # API Documentation
 
 Best practices for documenting APIs and code interfaces. Eliminates ~100-150 lines of redundant documentation guidance per agent.

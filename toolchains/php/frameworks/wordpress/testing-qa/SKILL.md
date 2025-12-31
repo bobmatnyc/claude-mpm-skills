@@ -1,8 +1,12 @@
 ---
 name: wordpress-testing-qa
 description: "WordPress plugin and theme testing with PHPUnit integration tests, WP_Mock unit tests, PHPCS coding standards, and CI/CD workflows"
+progressive_disclosure:
+  entry_point:
+    summary: "WordPress plugin and theme testing with PHPUnit integration tests, WP_Mock unit tests, PHPCS coding standards, and CI/CD workflows"
+    when_to_use: "When writing tests, implementing wordpress-testing-qa, or ensuring code quality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # WordPress Testing & Quality Assurance
 
 ---

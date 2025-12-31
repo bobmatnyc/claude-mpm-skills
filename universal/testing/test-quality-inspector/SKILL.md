@@ -1,8 +1,16 @@
 ---
 name: test-quality-inspector
 description: "Test quality inspection framework for reviewing test coverage, identifying gaps, and ensuring comprehensive validation"
+progressive_disclosure:
+  entry_point:
+    summary: "Test quality inspection framework for reviewing test coverage, identifying gaps, and ensuring comprehensive validation"
+    when_to_use: "When writing tests, implementing test-quality-inspector, or ensuring code quality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
+  references:
+    - assertion-quality.md
+    - inspection-checklist.md
+    - red-flags.md
 ---
-
 # Example Test Inspection Report
 
 ## Scenario: User Registration Feature

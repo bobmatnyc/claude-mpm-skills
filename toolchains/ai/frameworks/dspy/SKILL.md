@@ -1,8 +1,12 @@
 ---
 name: dspy-framework
 description: "DSPy declarative framework for automatic prompt optimization treating prompts as code with systematic evaluation and compilers"
+progressive_disclosure:
+  entry_point:
+    summary: "DSPy declarative framework for automatic prompt optimization treating prompts as code with systematic evaluation and compilers"
+    when_to_use: "When working with dspy-framework or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # DSPy Framework
 
 ---

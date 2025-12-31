@@ -1,8 +1,12 @@
 ---
 name: nodejs-backend-typescript
 description: "Node.js backend development with TypeScript, Express/Fastify servers, routing, middleware, and database integration"
+progressive_disclosure:
+  entry_point:
+    summary: "Node.js backend development with TypeScript, Express/Fastify servers, routing, middleware, and database integration"
+    when_to_use: "When working with nodejs-backend-typescript or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Node.js Backend Development with TypeScript
 
 ---

@@ -1,8 +1,12 @@
 ---
 name: shadcn-ui
 description: "shadcn/ui component library for React with Tailwind CSS - copy-paste accessible components with full code ownership"
+progressive_disclosure:
+  entry_point:
+    summary: "shadcn/ui component library for React with Tailwind CSS - copy-paste accessible components with full code ownership"
+    when_to_use: "When working with shadcn-ui or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # shadcn/ui - Component Library
 
 ---

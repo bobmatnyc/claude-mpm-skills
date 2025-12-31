@@ -1,8 +1,12 @@
 ---
 name: vercel-networking-domains
 description: Vercel networking and routing for domains, DNS, redirects, rewrites, headers, CDN, edge cache, and regions. Use when configuring routing or traffic behavior on Vercel.
+progressive_disclosure:
+  entry_point:
+    summary: "Vercel networking and routing for domains, DNS, redirects, rewrites, headers, CDN, edge cache, and regions. Use when configuring routing or traffic behavior on Vercel."
+    when_to_use: "When working with vercel-networking-domains or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Vercel Networking and Domains Skill
 
 ---

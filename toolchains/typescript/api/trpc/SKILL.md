@@ -1,8 +1,12 @@
 ---
 name: trpc-type-safety
 description: "tRPC end-to-end type-safe APIs for TypeScript with React Query integration and full-stack type safety"
+progressive_disclosure:
+  entry_point:
+    summary: "tRPC end-to-end type-safe APIs for TypeScript with React Query integration and full-stack type safety"
+    when_to_use: "When working with trpc-type-safety or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # tRPC - End-to-End Type Safety
 
 ---

@@ -1,8 +1,12 @@
 ---
 name: langchain-framework
 description: "LangChain LLM application framework with chains, agents, RAG, and memory for building AI-powered applications"
+progressive_disclosure:
+  entry_point:
+    summary: "LangChain LLM application framework with chains, agents, RAG, and memory for building AI-powered applications"
+    when_to_use: "When working with langchain-framework or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # LangChain Framework
 
 ---

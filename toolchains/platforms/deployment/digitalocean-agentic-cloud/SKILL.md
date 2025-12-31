@@ -1,8 +1,12 @@
 ---
 name: digitalocean-agentic-cloud
 description: DigitalOcean Gradient AI agentic cloud and AI platform for building, training, and deploying AI agents on GPU infrastructure with foundation models, knowledge bases, and agent routes. Use when planning or operating AI agents on DigitalOcean.
+progressive_disclosure:
+  entry_point:
+    summary: "DigitalOcean Gradient AI agentic cloud and AI platform for building, training, and deploying AI agents on GPU infrastructure with foundation models, knowledge bases, and agent routes. Use when plan..."
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # DigitalOcean Agentic Cloud Skill
 
 ---

@@ -1,8 +1,12 @@
 ---
 name: nextjs-env-variables
 description: Next.js environment variable management with file precedence, variable types, and deployment configurations. Use when configuring Next.js applications, managing environment-specific settings, or deploying to Vercel/Railway/Heroku.
+progressive_disclosure:
+  entry_point:
+    summary: "Next.js environment variable management with file precedence, variable types, and deployment configurations. Use when configuring Next.js applications, managing environment-specific settings, or de..."
+    when_to_use: "When working with nextjs-env-variables or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Next.js Environment Variable Structure
 
 Complete guide to Next.js environment variable management.

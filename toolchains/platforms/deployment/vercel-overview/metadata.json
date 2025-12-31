@@ -14,7 +14,7 @@
     "webhooks"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 728,
+  "full_tokens": 831,
   "related_skills": [
     "vercel-deployments-builds",
     "vercel-functions-runtime",

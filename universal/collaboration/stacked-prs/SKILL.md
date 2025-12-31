@@ -3,8 +3,12 @@ name: stacked-prs
 description: Create and manage stacked (dependent) pull requests for complex features
 tags: [git, pull-requests, branching, workflow, collaboration]
 related_agents: [version-control]
+progressive_disclosure:
+  entry_point:
+    summary: "Create and manage stacked (dependent) pull requests for complex features"
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Stacked Pull Requests
 
 ## Overview

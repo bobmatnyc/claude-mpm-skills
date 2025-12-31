@@ -1,8 +1,16 @@
 ---
 name: better-auth-core
 description: Better Auth core setup for TypeScript apps. Use when configuring the Better Auth instance, wiring server handlers and client instances, working with sessions, or calling server-side auth APIs.
+progressive_disclosure:
+  entry_point:
+    summary: "Better Auth core setup for TypeScript apps. Use when configuring the Better Auth instance, wiring server handlers and client instances, working with sessions, or calling server-side auth APIs."
+    when_to_use: "When implementing authentication, authorization, or security."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
+  references:
+    - client-server.md
+    - setup-database.md
+    - typescript.md
 ---
-
 # Better Auth Core (TypeScript)
 
 ## Goals

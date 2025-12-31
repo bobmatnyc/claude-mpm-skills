@@ -1,8 +1,12 @@
 ---
 name: vite-build-tool
 description: "Vite lightning-fast build tool with instant HMR, ESM-first architecture, and zero-config setup for modern web development"
+progressive_disclosure:
+  entry_point:
+    summary: "Vite lightning-fast build tool with instant HMR, ESM-first architecture, and zero-config setup for modern web development"
+    when_to_use: "When working with vite-build-tool or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Vite Build Tool Skill
 
 ---

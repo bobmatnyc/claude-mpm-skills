@@ -1,8 +1,12 @@
 ---
 name: digitalocean-containers-images
 description: DigitalOcean containers and images including Container Registry, preconfigured images, and custom images. Use when building, storing, or deploying container images or Droplet images on DigitalOcean.
+progressive_disclosure:
+  entry_point:
+    summary: "DigitalOcean containers and images including Container Registry, preconfigured images, and custom images. Use when building, storing, or deploying container images or Droplet images on DigitalOcean."
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # DigitalOcean Containers and Images Skill
 
 ---

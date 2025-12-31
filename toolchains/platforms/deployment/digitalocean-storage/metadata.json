@@ -13,7 +13,7 @@
     "backups"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 661,
+  "full_tokens": 759,
   "related_skills": [
     "digitalocean-compute",
     "digitalocean-containers-images",

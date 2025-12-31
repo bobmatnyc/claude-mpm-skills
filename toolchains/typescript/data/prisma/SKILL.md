@@ -1,8 +1,12 @@
 ---
 name: prisma-orm
 description: "Prisma ORM for TypeScript - Type-safe database toolkit with schema-first development, auto-generated client, migrations, relations, and Prisma Studio"
+progressive_disclosure:
+  entry_point:
+    summary: "Prisma ORM for TypeScript - Type-safe database toolkit with schema-first development, auto-generated client, migrations, relations, and Prisma Studio"
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Prisma ORM - Type-Safe Database Toolkit
 
 Modern database toolkit for TypeScript with schema-first development, auto-generated type-safe client, and powerful migration system.

@@ -1,8 +1,12 @@
 ---
 name: digitalocean-storage
 description: DigitalOcean storage services including Spaces object storage, Volumes block storage, NFS, Snapshots, and Backups. Use when selecting or managing storage for DigitalOcean workloads.
+progressive_disclosure:
+  entry_point:
+    summary: "DigitalOcean storage services including Spaces object storage, Volumes block storage, NFS, Snapshots, and Backups. Use when selecting or managing storage for DigitalOcean workloads."
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # DigitalOcean Storage Skill
 
 ---

@@ -15,7 +15,7 @@
     "regions"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 484,
+  "full_tokens": 586,
   "related_skills": [
     "vercel-functions-runtime",
     "vercel-deployments-builds",

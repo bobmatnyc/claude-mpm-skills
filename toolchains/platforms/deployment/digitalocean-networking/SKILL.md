@@ -1,8 +1,12 @@
 ---
 name: digitalocean-networking
 description: DigitalOcean networking services including VPC, firewalls, load balancers, reserved IPs, DNS, IPv6, and NAT gateway. Use when designing or securing network connectivity for DigitalOcean workloads.
+progressive_disclosure:
+  entry_point:
+    summary: "DigitalOcean networking services including VPC, firewalls, load balancers, reserved IPs, DNS, IPv6, and NAT gateway. Use when designing or securing network connectivity for DigitalOcean workloads."
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # DigitalOcean Networking Skill
 
 ---

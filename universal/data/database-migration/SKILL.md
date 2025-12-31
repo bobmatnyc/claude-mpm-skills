@@ -3,8 +3,15 @@ name: database-migration
 description: Safe patterns for evolving database schemas in production with decision trees and troubleshooting guidance.
 updated_at: 2025-12-03T00:00:00Z
 tags: [database, migration, schema, production, decision-trees, troubleshooting, zero-downtime]
+progressive_disclosure:
+  entry_point:
+    summary: "Safe patterns for evolving database schemas in production with decision trees and troubleshooting guidance."
+    when_to_use: "When working with data, databases, or data transformations."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
+  references:
+    - decision-trees.md
+    - troubleshooting.md
 ---
-
 # Database Migration
 
 Safe patterns for evolving database schemas in production.

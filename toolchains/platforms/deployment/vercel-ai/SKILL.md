@@ -1,8 +1,12 @@
 ---
 name: vercel-ai
 description: Vercel AI platform guidance covering AI SDK, AI Gateway, Vercel Agent, and MCP. Use when building AI-powered or agentic workloads on Vercel.
+progressive_disclosure:
+  entry_point:
+    summary: "Vercel AI platform guidance covering AI SDK, AI Gateway, Vercel Agent, and MCP. Use when building AI-powered or agentic workloads on Vercel."
+    when_to_use: "When working with vercel-ai or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Vercel AI Skill
 
 ---

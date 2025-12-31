@@ -1,8 +1,12 @@
 ---
 name: digitalocean-overview
 description: DigitalOcean platform overview for account setup, projects, tooling (Control Panel, doctl, API, Terraform), and service selection across compute, storage, databases, networking, management, and teams. Use when onboarding or planning DigitalOcean usage.
+progressive_disclosure:
+  entry_point:
+    summary: "DigitalOcean platform overview for account setup, projects, tooling (Control Panel, doctl, API, Terraform), and service selection across compute, storage, databases, networking, management, and tea..."
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # DigitalOcean Platform Overview Skill
 
 ---

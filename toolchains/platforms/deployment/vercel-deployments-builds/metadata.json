@@ -12,7 +12,7 @@
     "rollback"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 554,
+  "full_tokens": 654,
   "related_skills": [
     "vercel-functions-runtime",
     "vercel-networking-domains",

@@ -3,8 +3,12 @@ name: drizzle-migrations
 description: "Migration-first database development workflow using Drizzle ORM for TypeScript/J..."
 version: 1.0.0
 tags: []
+progressive_disclosure:
+  entry_point:
+    summary: "Migration-first database development workflow using Drizzle ORM for TypeScript/J..."
+    when_to_use: "When working with drizzle-migrations or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Drizzle ORM Database Migrations (TypeScript)
 
 Migration-first database development workflow using Drizzle ORM for TypeScript/JavaScript projects.

@@ -3,8 +3,18 @@ name: test-driven-development
 description: Comprehensive TDD patterns and practices for all programming languages, eliminating redundant testing guidance per agent.
 updated_at: 2025-10-30T17:00:00Z
 tags: [testing, tdd, best-practices, quality-assurance]
+progressive_disclosure:
+  entry_point:
+    summary: "Comprehensive TDD patterns and practices for all programming languages, eliminating redundant testing guidance per agent."
+    when_to_use: "When writing tests, implementing test-driven-development, or ensuring code quality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
+  references:
+    - anti-patterns.md
+    - examples.md
+    - integration.md
+    - philosophy.md
+    - workflow.md
 ---
-
 # Test-Driven Development (TDD)
 
 Comprehensive TDD patterns and practices for all programming languages. This skill eliminates ~500-800 lines of redundant testing guidance per agent.

@@ -7,8 +7,12 @@ tags: [anti-pattern, bad-example, violations]
 version: 1.0.0
 author: claude-mpm-skills
 updated: 2025-11-30
+progressive_disclosure:
+  entry_point:
+    summary: "ANTI-PATTERN - Example showing violations of self-containment (DO NOT COPY)"
+    when_to_use: "When working with bad-example-skill or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # ⚠️ BAD EXAMPLE - Interdependent Skill (Anti-Pattern)
 
 **WARNING**: This is an **ANTI-PATTERN** example showing what NOT to do.

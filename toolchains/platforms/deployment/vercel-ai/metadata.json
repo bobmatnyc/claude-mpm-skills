@@ -12,7 +12,7 @@
     "mcp"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 474,
+  "full_tokens": 572,
   "related_skills": [
     "vercel-functions-runtime",
     "vercel-storage-data",

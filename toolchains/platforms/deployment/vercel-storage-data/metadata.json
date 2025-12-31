@@ -13,7 +13,7 @@
     "storage"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 506,
+  "full_tokens": 605,
   "related_skills": [
     "vercel-functions-runtime",
     "vercel-networking-domains",

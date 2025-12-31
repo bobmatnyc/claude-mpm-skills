@@ -3,8 +3,12 @@ name: bug-fix
 description: "Systematic workflow for verifying bug fixes to ensure quality and prevent regres..."
 version: 1.0.0
 tags: []
+progressive_disclosure:
+  entry_point:
+    summary: "Systematic workflow for verifying bug fixes to ensure quality and prevent regres..."
+    when_to_use: "When working with bug-fix or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Bug Fix Verification
 
 Systematic workflow for verifying bug fixes to ensure quality and prevent regressions.

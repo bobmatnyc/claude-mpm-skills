@@ -3,8 +3,12 @@ name: json-data-handling
 description: Working effectively with JSON data structures.
 updated_at: 2025-10-30T17:00:00Z
 tags: [json, data, parsing, serialization]
+progressive_disclosure:
+  entry_point:
+    summary: "Working effectively with JSON data structures."
+    when_to_use: "When working with data, databases, or data transformations."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # JSON Data Handling
 
 Working effectively with JSON data structures.

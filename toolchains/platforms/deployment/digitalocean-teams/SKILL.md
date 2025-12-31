@@ -1,8 +1,12 @@
 ---
 name: digitalocean-teams
 description: DigitalOcean Teams and Organizations for billing, access control, roles, and membership. Use when managing team structure, permissions, and organization-wide billing on DigitalOcean.
+progressive_disclosure:
+  entry_point:
+    summary: "DigitalOcean Teams and Organizations for billing, access control, roles, and membership. Use when managing team structure, permissions, and organization-wide billing on DigitalOcean."
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # DigitalOcean Teams Skill
 
 ---

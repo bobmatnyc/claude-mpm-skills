@@ -1,8 +1,12 @@
 ---
 name: neon-serverless-postgres
 description: Neon serverless Postgres with autoscaling, instant database branching, and zero-downtime deployments. Use when building serverless applications, implementing database branching for dev/staging, or deploying with Vercel/Netlify.
+progressive_disclosure:
+  entry_point:
+    summary: "Neon serverless Postgres with autoscaling, instant database branching, and zero-downtime deployments. Use when building serverless applications, implementing database branching for dev/staging, or ..."
+    when_to_use: "When working with neon-serverless-postgres or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Neon Serverless Postgres Skill
 
 ---

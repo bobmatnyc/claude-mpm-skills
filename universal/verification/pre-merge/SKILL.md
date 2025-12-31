@@ -3,8 +3,12 @@ name: pre-merge
 description: "Comprehensive verification workflow before merging changes to production."
 version: 1.0.0
 tags: []
+progressive_disclosure:
+  entry_point:
+    summary: "Comprehensive verification workflow before merging changes to production."
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Pre-Merge Verification
 
 Comprehensive verification workflow before merging changes to production.

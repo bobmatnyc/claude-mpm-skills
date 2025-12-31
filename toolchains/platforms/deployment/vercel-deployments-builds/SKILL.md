@@ -1,8 +1,12 @@
 ---
 name: vercel-deployments-builds
 description: Vercel deployment lifecycle for builds, deployments, previews, release phases, and rollback. Use when configuring build output, deployment workflows, or release controls on Vercel.
+progressive_disclosure:
+  entry_point:
+    summary: "Vercel deployment lifecycle for builds, deployments, previews, release phases, and rollback. Use when configuring build output, deployment workflows, or release controls on Vercel."
+    when_to_use: "When working with vercel-deployments-builds or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Vercel Deployments and Builds Skill
 
 ---

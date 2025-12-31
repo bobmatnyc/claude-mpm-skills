@@ -1,8 +1,12 @@
 ---
 name: netlify-deployment-platform
 description: "Netlify JAMstack deployment platform with serverless functions, forms, and identity"
+progressive_disclosure:
+  entry_point:
+    summary: "Netlify JAMstack deployment platform with serverless functions, forms, and identity"
+    when_to_use: "When working with netlify-deployment-platform or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Netlify Platform Skill
 
 ---

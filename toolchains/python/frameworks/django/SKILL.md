@@ -1,8 +1,12 @@
 ---
 name: django-framework
 description: "Django full-featured Python web framework with batteries included (ORM, admin, auth)"
+progressive_disclosure:
+  entry_point:
+    summary: "Django full-featured Python web framework with batteries included (ORM, admin, auth)"
+    when_to_use: "When working with django-framework or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Django Framework Skill
 
 ---

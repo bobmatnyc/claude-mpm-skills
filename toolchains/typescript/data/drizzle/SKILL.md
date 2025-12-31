@@ -1,8 +1,17 @@
 ---
 name: drizzle-orm
 description: "Type-safe SQL ORM for TypeScript with zero runtime overhead"
+progressive_disclosure:
+  entry_point:
+    summary: "Type-safe SQL ORM for TypeScript with zero runtime overhead"
+    when_to_use: "When working with drizzle-orm or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
+  references:
+    - advanced-schemas.md
+    - performance.md
+    - query-patterns.md
+    - vs-prisma.md
 ---
-
 # Drizzle ORM
 
 Modern TypeScript-first ORM with zero dependencies, compile-time type safety, and SQL-like syntax. Optimized for edge runtimes and serverless environments.

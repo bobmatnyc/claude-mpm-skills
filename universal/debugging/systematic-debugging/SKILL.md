@@ -1,8 +1,17 @@
 ---
 name: systematic-debugging
 description: "Systematic debugging methodology emphasizing root cause analysis over quick fixes"
+progressive_disclosure:
+  entry_point:
+    summary: "Systematic debugging methodology emphasizing root cause analysis over quick fixes"
+    when_to_use: "When debugging issues, tracing errors, or investigating problems."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
+  references:
+    - anti-patterns.md
+    - examples.md
+    - troubleshooting.md
+    - workflow.md
 ---
-
 # Pressure Test 3: Authority + Social Pressure
 
 **IMPORTANT: This is a real scenario. Choose and act. Don't ask hypothetical questions - make the actual decision.**

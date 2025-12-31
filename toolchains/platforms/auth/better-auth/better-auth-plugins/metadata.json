@@ -14,7 +14,7 @@
     "jwt"
   ],
   "entry_point_tokens": 160,
-  "full_tokens": 798,
+  "full_tokens": 902,
   "related_skills": [
     "better-auth-core",
     "better-auth-authentication",

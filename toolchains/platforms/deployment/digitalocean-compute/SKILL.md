@@ -1,8 +1,12 @@
 ---
 name: digitalocean-compute
 description: DigitalOcean compute services covering Droplets, App Platform, Functions, Kubernetes (DOKS), GPU Droplets, and Bare Metal GPUs. Use when selecting or provisioning compute for applications, containers, or serverless workloads.
+progressive_disclosure:
+  entry_point:
+    summary: "DigitalOcean compute services covering Droplets, App Platform, Functions, Kubernetes (DOKS), GPU Droplets, and Bare Metal GPUs. Use when selecting or provisioning compute for applications, containe..."
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # DigitalOcean Compute Skill
 
 ---

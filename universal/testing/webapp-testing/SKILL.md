@@ -1,8 +1,12 @@
 ---
 name: webapp-testing-patterns
 description: "Comprehensive web application testing patterns with Playwright selectors, wait strategies, and best practices"
+progressive_disclosure:
+  entry_point:
+    summary: "Comprehensive web application testing patterns with Playwright selectors, wait strategies, and best practices"
+    when_to_use: "When writing tests, implementing webapp-testing-patterns, or ensuring code quality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Playwright Patterns Reference
 
 Complete guide to Playwright automation patterns, selectors, and best practices.

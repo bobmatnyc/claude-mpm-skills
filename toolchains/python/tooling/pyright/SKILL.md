@@ -1,8 +1,12 @@
 ---
 name: pyright-type-checker
 description: "Pyright fast Python type checker from Microsoft with VS Code integration and strict type checking modes"
+progressive_disclosure:
+  entry_point:
+    summary: "Pyright fast Python type checker from Microsoft with VS Code integration and strict type checking modes"
+    when_to_use: "When working with pyright-type-checker or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Pyright - Fast Python Type Checker
 
 ---

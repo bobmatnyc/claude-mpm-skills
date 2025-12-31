@@ -13,7 +13,7 @@
     "observability"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 433,
+  "full_tokens": 533,
   "related_skills": [
     "vercel-deployments-builds",
     "vercel-functions-runtime",

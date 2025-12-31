@@ -3,8 +3,12 @@ name: screenshot
 description: "Visual verification workflow for UI changes to accelerate code review and catch ..."
 version: 1.0.0
 tags: []
+progressive_disclosure:
+  entry_point:
+    summary: "Visual verification workflow for UI changes to accelerate code review and catch ..."
+    when_to_use: "When working with screenshot or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Screenshot-Based UI Verification
 
 Visual verification workflow for UI changes to accelerate code review and catch responsive design issues early.

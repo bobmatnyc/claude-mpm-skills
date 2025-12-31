@@ -3,8 +3,12 @@ name: validated-handler
 description: "Type-safe API route handler with automatic Zod validation for Next.js App Router..."
 version: 1.0.0
 tags: []
+progressive_disclosure:
+  entry_point:
+    summary: "Type-safe API route handler with automatic Zod validation for Next.js App Router..."
+    when_to_use: "When working with validated-handler or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Next.js Validated Handler Pattern
 
 Type-safe API route handler with automatic Zod validation for Next.js App Router.

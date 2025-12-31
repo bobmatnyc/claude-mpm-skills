@@ -3,8 +3,12 @@ name: git-worktrees
 description: Use git worktrees for parallel development on multiple branches simultaneously
 tags: [git, worktrees, parallel-development, productivity]
 related_agents: [version-control, engineer]
+progressive_disclosure:
+  entry_point:
+    summary: "Use git worktrees for parallel development on multiple branches simultaneously"
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Git Worktrees
 
 ## Overview

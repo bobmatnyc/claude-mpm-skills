@@ -9,8 +9,18 @@ token_budget:
   entry_point: 85
   full_content: 8500
 self_contained: true
+progressive_disclosure:
+  entry_point:
+    summary: "Comprehensive API design patterns covering REST, GraphQL, gRPC, versioning, authentication, and modern API best practices"
+    when_to_use: "When designing, implementing, or documenting APIs."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
+  references:
+    - authentication.md
+    - graphql-patterns.md
+    - grpc-patterns.md
+    - rest-patterns.md
+    - versioning-strategies.md
 ---
-
 # API Design Patterns
 
 Design robust, scalable APIs using proven patterns for REST, GraphQL, and gRPC with proper versioning, authentication, and error handling.

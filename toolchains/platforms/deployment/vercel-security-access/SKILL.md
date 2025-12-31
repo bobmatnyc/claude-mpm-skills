@@ -1,8 +1,12 @@
 ---
 name: vercel-security-access
 description: Vercel security and access controls including RBAC, SSO, deployment protection, firewall, bot defense, audit logs, and 2FA. Use when securing Vercel projects or managing access.
+progressive_disclosure:
+  entry_point:
+    summary: "Vercel security and access controls including RBAC, SSO, deployment protection, firewall, bot defense, audit logs, and 2FA. Use when securing Vercel projects or managing access."
+    when_to_use: "When working with vercel-security-access or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Vercel Security and Access Skill
 
 ---

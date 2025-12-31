@@ -7,8 +7,12 @@ tags: [self-contained, example, template, best-practice]
 version: 1.0.0
 author: claude-mpm-skills
 updated: 2025-11-30
+progressive_disclosure:
+  entry_point:
+    summary: "Example of a properly self-contained skill following all best practices"
+    when_to_use: "When working with example-framework-skill or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Example Framework Skill
 
 A complete example demonstrating proper self-containment patterns for Claude Code skills.

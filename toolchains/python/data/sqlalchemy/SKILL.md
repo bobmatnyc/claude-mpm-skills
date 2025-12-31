@@ -1,8 +1,12 @@
 ---
 name: sqlalchemy-orm
 description: "SQLAlchemy Python SQL toolkit and ORM with powerful query builder, relationship mapping, and database migrations via Alembic"
+progressive_disclosure:
+  entry_point:
+    summary: "SQLAlchemy Python SQL toolkit and ORM with powerful query builder, relationship mapping, and database migrations via Alembic"
+    when_to_use: "When working with sqlalchemy-orm or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # SQLAlchemy ORM Skill
 
 ---

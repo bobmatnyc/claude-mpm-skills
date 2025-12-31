@@ -1,8 +1,12 @@
 ---
 name: vercel-storage-data
 description: Vercel data and storage services including Postgres, Redis, Vercel Blob, Edge Config, and data cache. Use when selecting data storage or caching on Vercel.
+progressive_disclosure:
+  entry_point:
+    summary: "Vercel data and storage services including Postgres, Redis, Vercel Blob, Edge Config, and data cache. Use when selecting data storage or caching on Vercel."
+    when_to_use: "When working with data, databases, or data transformations."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Vercel Storage and Data Skill
 
 ---

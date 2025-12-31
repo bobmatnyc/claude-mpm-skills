@@ -1,8 +1,12 @@
 ---
 name: digitalocean-management
 description: DigitalOcean management services for monitoring, uptime checks, and resource organization with Projects. Use when setting up observability, alerts, and operational visibility on DigitalOcean.
+progressive_disclosure:
+  entry_point:
+    summary: "DigitalOcean management services for monitoring, uptime checks, and resource organization with Projects. Use when setting up observability, alerts, and operational visibility on DigitalOcean."
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # DigitalOcean Management Skill
 
 ---

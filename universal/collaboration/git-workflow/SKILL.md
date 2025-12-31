@@ -3,8 +3,12 @@ name: git-workflow
 description: Essential Git patterns for effective version control, eliminating redundant Git guidance per agent.
 updated_at: 2025-10-30T17:00:00Z
 tags: [git, version-control, workflow, best-practices]
+progressive_disclosure:
+  entry_point:
+    summary: "Essential Git patterns for effective version control, eliminating redundant Git guidance per agent."
+    when_to_use: "When working with version control, branches, or pull requests."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Git Workflow
 
 Essential Git patterns for effective version control. Eliminates ~120-150 lines of redundant Git guidance per agent.

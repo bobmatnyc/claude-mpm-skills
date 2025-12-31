@@ -1,8 +1,15 @@
 ---
 name: better-auth-integrations
 description: Better Auth framework integrations for TypeScript. Use when wiring route handlers in Next.js, SvelteKit, Remix, Express, Hono, or other web frameworks.
+progressive_disclosure:
+  entry_point:
+    summary: "Better Auth framework integrations for TypeScript. Use when wiring route handlers in Next.js, SvelteKit, Remix, Express, Hono, or other web frameworks."
+    when_to_use: "When implementing authentication, authorization, or security."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
+  references:
+    - frameworks.md
+    - nextjs.md
 ---
-
 # Better Auth Integrations
 
 ## Goals

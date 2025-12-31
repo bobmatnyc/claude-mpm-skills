@@ -1,8 +1,12 @@
 ---
 name: vercel-overview
 description: Vercel platform overview for onboarding, projects, CLI, Git integration, environment variables, project configuration, REST API, and webhooks. Use when planning or operating workloads on Vercel.
+progressive_disclosure:
+  entry_point:
+    summary: "Vercel platform overview for onboarding, projects, CLI, Git integration, environment variables, project configuration, REST API, and webhooks. Use when planning or operating workloads on Vercel."
+    when_to_use: "When working with vercel-overview or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Vercel Platform Overview Skill
 
 ---

@@ -1,8 +1,12 @@
 ---
 name: tailwind-css
 description: "Tailwind CSS utility-first framework for rapid UI development with responsive design and dark mode"
+progressive_disclosure:
+  entry_point:
+    summary: "Tailwind CSS utility-first framework for rapid UI development with responsive design and dark mode"
+    when_to_use: "When working with tailwind-css or related functionality."
+    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
 ---
-
 # Tailwind CSS Skill
 
 ---
