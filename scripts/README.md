@@ -4,9 +4,161 @@ This directory contains utility scripts for managing the Claude MPM Skills repos
 
 ## Available Scripts
 
-- **flatten_skills.sh** - Deploy skills to flat directory structure
-- **check_voice_consistency.py** - Validate imperative voice in skills
-- **create-labels.sh** - Create GitHub labels for the repository
+| Script | Description |
+|--------|-------------|
+| **init_skill.py** | Initialize a new skill with proper structure |
+| **package_skill.py** | Package and validate skills for deployment |
+| **flatten_skills.sh** | Deploy all skills to flat directory structure |
+| **generate_manifest.py** | Generate manifest.json from all skills |
+| **check_voice_consistency.py** | Validate imperative voice in skills |
+| **token_report.py** | Generate token usage reports |
+| **create-labels.sh** | Create GitHub labels for the repository |
+
+---
+
+## init_skill.py
+
+Initialize a new skill with proper directory structure, SKILL.md template, and metadata.json.
+
+### Usage
+
+```bash
+# Interactive mode (recommended for first-time users)
+python scripts/init_skill.py
+
+# Create a toolchain skill
+python scripts/init_skill.py --category toolchains --toolchain python --subcategory frameworks --framework fastapi
+
+# Create a universal skill
+python scripts/init_skill.py --category universal --subcategory testing --name tdd-patterns
+
+# Quick mode with full path
+python scripts/init_skill.py --path toolchains/rust/testing/integration
+
+# With description
+python scripts/init_skill.py --path toolchains/python/async/asyncio --description "Python asyncio patterns"
+
+# Dry run (preview without creating files)
+python scripts/init_skill.py --dry-run --path toolchains/go/testing/integration
+```
+
+### Options
+
+| Option | Description |
+|--------|-------------|
+| `--path PATH` | Full skill path (e.g., toolchains/python/frameworks/django) |
+| `--category {toolchains,universal,examples}` | Skill category |
+| `--toolchain NAME` | Toolchain (e.g., python, javascript, rust) |
+| `--subcategory NAME` | Subcategory (e.g., frameworks, testing, tooling) |
+| `--framework NAME` | Framework or skill name |
+| `--name NAME` | Skill name (for universal/examples) |
+| `--description TEXT` | Skill description |
+| `--tags LIST` | Comma-separated tags |
+| `--force` | Overwrite existing skill |
+| `--dry-run` | Preview without creating files |
+| `--interactive, -i` | Run in interactive mode |
+
+### What Gets Created
+
+```
+{skill_path}/
+├── SKILL.md           # Main skill content with frontmatter template
+└── metadata.json      # Skill metadata with proper structure
+```
+
+### Example Output
+
+```
+✅ Skill created successfully!
+
+📁 Location: toolchains/python/frameworks/fastapi/
+   - SKILL.md
+   - metadata.json
+
+📝 Next steps:
+   1. Edit toolchains/python/frameworks/fastapi/SKILL.md with actual content
+   2. Update metadata.json with accurate token counts
+   3. Add related_skills references
+   4. Run: python scripts/generate_manifest.py --validate
+   5. Deploy: ./scripts/flatten_skills.sh
+```
+
+---
+
+## package_skill.py
+
+Package and validate individual skills for deployment to the Claude skills directory.
+
+### Usage
+
+```bash
+# Package a single skill
+python scripts/package_skill.py toolchains/python/frameworks/django
+
+# Validate only (no copy)
+python scripts/package_skill.py --validate toolchains/python/frameworks/django
+
+# Package to custom target
+python scripts/package_skill.py --target ~/.claude/skills toolchains/python/frameworks/django
+
+# Package all skills matching pattern
+python scripts/package_skill.py --pattern "toolchains/python/*"
+
+# Package all skills
+python scripts/package_skill.py --all
+
+# Force overwrite existing
+python scripts/package_skill.py --force toolchains/python/frameworks/django
+
+# Verbose output
+python scripts/package_skill.py --verbose toolchains/rust/frameworks/tauri
+```
+
+### Options
+
+| Option | Description |
+|--------|-------------|
+| `skill_path` | Path to skill directory (relative to repo root) |
+| `--pattern PATTERN` | Pattern to match multiple skills |
+| `--target DIR` | Target directory for packaged skills (default: .claude/skills) |
+| `--validate, -V` | Validate only, do not package |
+| `--force, -f` | Overwrite existing packaged skills |
+| `--dry-run` | Preview without packaging |
+| `--verbose, -v` | Enable verbose output |
+| `--all, -a` | Package all skills |
+
+### Validation Checks
+
+The script performs these validations:
+
+1. **SKILL.md exists** with proper frontmatter
+2. **metadata.json exists** with required fields (name, version, category)
+3. **Token counts** are calculated and compared to declared values
+4. **Progressive disclosure** section is present
+5. **References** are detected and counted
+
+### Example Output
+
+```
+🔧 Processing 1 skill(s)...
+   Target: .claude/skills
+
+📦 toolchains/python/frameworks/django
+  SKILL.md: 4523 tokens
+  metadata.json: {...}
+  references/models.md: 1200 tokens
+  Total tokens: 5723
+   ✅ Packaged: toolchains-python-frameworks-django
+
+==================================================
+Summary: 1 successful, 0 failed
+
+✅ Skills packaged to: .claude/skills
+
+Next steps:
+  - Verify deployment with: ls -la .claude/skills/
+  - Run manifest generator: python scripts/generate_manifest.py
+```
 
 ---
 

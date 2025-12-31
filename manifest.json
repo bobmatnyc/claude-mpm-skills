@@ -1,13 +1,13 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
-  "updated": "2025-12-30",
+  "updated": "2025-12-31",
   "description": "Curated collection of Claude Code skills for intelligent project development",
   "skills": {
     "universal": [
       {
         "name": "api-design-patterns",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -43,7 +43,7 @@
       },
       {
         "name": "api-documentation",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -63,7 +63,7 @@
       },
       {
         "name": "artifacts-builder",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -80,7 +80,7 @@
       },
       {
         "name": "brainstorming",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -98,7 +98,7 @@
       },
       {
         "name": "bug-fix-verification",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -121,7 +121,7 @@
       },
       {
         "name": "condition-based-waiting",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -171,7 +171,7 @@
       },
       {
         "name": "dispatching-parallel-agents",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -197,7 +197,7 @@
       },
       {
         "name": "env-manager",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -225,7 +225,7 @@
       },
       {
         "name": "git-workflow",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -245,7 +245,7 @@
       },
       {
         "name": "git-worktrees",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -265,7 +265,7 @@
       },
       {
         "name": "internal-comms",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -281,7 +281,7 @@
       },
       {
         "name": "json-data-handling",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -298,7 +298,7 @@
       },
       {
         "name": "kubernetes",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -328,7 +328,7 @@
       },
       {
         "name": "mcp-builder",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -348,7 +348,7 @@
       },
       {
         "name": "opentelemetry",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -377,7 +377,7 @@
       },
       {
         "name": "pre-merge-verification",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -399,7 +399,7 @@
       },
       {
         "name": "requesting-code-review",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -421,7 +421,7 @@
       },
       {
         "name": "root-cause-tracing",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -448,7 +448,7 @@
       },
       {
         "name": "screenshot-verification",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -501,7 +501,7 @@
       },
       {
         "name": "skill-creator",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -529,7 +529,7 @@
       },
       {
         "name": "software-patterns",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -557,7 +557,7 @@
       },
       {
         "name": "stacked-prs",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -575,7 +575,7 @@
       },
       {
         "name": "systematic-debugging",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -601,7 +601,7 @@
       },
       {
         "name": "terraform",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -630,7 +630,7 @@
       },
       {
         "name": "test-driven-development",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -658,7 +658,7 @@
       },
       {
         "name": "test-quality-inspector",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -684,7 +684,7 @@
       },
       {
         "name": "testing-anti-patterns",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -711,7 +711,7 @@
       },
       {
         "name": "threat-modeling",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -738,7 +738,7 @@
       },
       {
         "name": "verification-before-completion",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -764,7 +764,7 @@
       },
       {
         "name": "web-performance-optimization",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -793,7 +793,7 @@
       },
       {
         "name": "webapp-testing",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -813,7 +813,7 @@
       },
       {
         "name": "writing-plans",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -836,7 +836,7 @@
       },
       {
         "name": "xlsx",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -853,7 +853,7 @@
       "ai": [
         {
           "name": "anthropic-sdk",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": null,
@@ -877,7 +877,7 @@
         },
         {
           "name": "dspy",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": "dspy",
@@ -905,7 +905,7 @@
         },
         {
           "name": "langchain",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": "langchain",
@@ -929,7 +929,7 @@
         },
         {
           "name": "langgraph",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": "langgraph",
@@ -956,7 +956,7 @@
         },
         {
           "name": "mcp",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": null,
@@ -986,7 +986,7 @@
         },
         {
           "name": "openrouter",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": null,
@@ -1010,7 +1010,7 @@
         },
         {
           "name": "session-compression",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": null,
@@ -1039,7 +1039,7 @@
       "elixir": [
         {
           "name": "ecto-patterns",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "elixir",
           "framework": null,
@@ -1064,7 +1064,7 @@
         },
         {
           "name": "phoenix-api-channels",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "elixir",
           "framework": "phoenix-api-channels",
@@ -1088,7 +1088,7 @@
         },
         {
           "name": "phoenix-liveview",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "elixir",
           "framework": "phoenix-liveview",
@@ -1112,7 +1112,7 @@
         },
         {
           "name": "phoenix-ops",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "elixir",
           "framework": null,
@@ -1138,7 +1138,7 @@
       "golang": [
         {
           "name": "golang-cli-cobra-viper",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1159,7 +1159,7 @@
         },
         {
           "name": "golang-concurrency-patterns",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1183,7 +1183,7 @@
         },
         {
           "name": "golang-database-patterns",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1204,7 +1204,7 @@
         },
         {
           "name": "golang-grpc",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1228,7 +1228,7 @@
         },
         {
           "name": "golang-http-frameworks",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1251,7 +1251,7 @@
         },
         {
           "name": "golang-observability-opentelemetry",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1274,7 +1274,7 @@
         },
         {
           "name": "golang-testing-strategies",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1297,7 +1297,7 @@
       "javascript": [
         {
           "name": "biome",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": null,
@@ -1320,7 +1320,7 @@
         },
         {
           "name": "cypress",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": null,
@@ -1376,7 +1376,7 @@
         },
         {
           "name": "nextjs",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "nextjs",
@@ -1396,7 +1396,7 @@
         },
         {
           "name": "playwright",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": null,
@@ -1416,7 +1416,7 @@
         },
         {
           "name": "react",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "react",
@@ -1436,7 +1436,7 @@
         },
         {
           "name": "react-state-machines",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "react",
@@ -1473,7 +1473,7 @@
         },
         {
           "name": "svelte",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "svelte",
@@ -1502,7 +1502,7 @@
         },
         {
           "name": "svelte5-runes-static",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "svelte5-runes-static",
@@ -1529,7 +1529,7 @@
         },
         {
           "name": "sveltekit",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "sveltekit",
@@ -1556,7 +1556,7 @@
         },
         {
           "name": "vite",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": null,
@@ -1582,7 +1582,7 @@
         },
         {
           "name": "vue",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "vue",
@@ -1677,7 +1677,7 @@
         },
         {
           "name": "validated-handler",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "nextjs",
           "framework": null,
@@ -1704,7 +1704,7 @@
       "php": [
         {
           "name": "espocrm",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "espocrm",
@@ -1733,7 +1733,7 @@
         },
         {
           "name": "wordpress-advanced-architecture",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "wordpress",
@@ -1758,7 +1758,7 @@
         },
         {
           "name": "wordpress-block-editor-fse",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "wordpress",
@@ -1783,7 +1783,7 @@
         },
         {
           "name": "wordpress-plugin-fundamentals",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "wordpress",
@@ -1810,7 +1810,7 @@
         },
         {
           "name": "wordpress-security-validation",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "wordpress",
@@ -1835,7 +1835,7 @@
         },
         {
           "name": "wordpress-testing-qa",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "wordpress",
@@ -1862,8 +1862,121 @@
       ],
       "platforms": [
         {
+          "name": "better-auth-authentication",
+          "version": "1.0.1",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "better-auth",
+            "auth",
+            "email-password",
+            "social",
+            "oauth",
+            "providers",
+            "typescript"
+          ],
+          "entry_point_tokens": 200,
+          "full_tokens": 1800,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-31",
+          "source_path": "toolchains/platforms/auth/better-auth/better-auth-authentication/SKILL.md",
+          "has_references": true,
+          "reference_files": [
+            "email-password.md",
+            "providers.md"
+          ]
+        },
+        {
+          "name": "better-auth-core",
+          "version": "1.0.1",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "better-auth",
+            "auth",
+            "typescript",
+            "core",
+            "sessions",
+            "api",
+            "client",
+            "server",
+            "database"
+          ],
+          "entry_point_tokens": 220,
+          "full_tokens": 2600,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-31",
+          "source_path": "toolchains/platforms/auth/better-auth/better-auth-core/SKILL.md",
+          "has_references": true,
+          "reference_files": [
+            "client-server.md",
+            "setup-database.md",
+            "typescript.md"
+          ]
+        },
+        {
+          "name": "better-auth-integrations",
+          "version": "1.0.1",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "better-auth",
+            "auth",
+            "integrations",
+            "nextjs",
+            "sveltekit",
+            "remix",
+            "express",
+            "hono",
+            "cloudflare"
+          ],
+          "entry_point_tokens": 160,
+          "full_tokens": 1500,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-31",
+          "source_path": "toolchains/platforms/auth/better-auth/better-auth-integrations/SKILL.md",
+          "has_references": true,
+          "reference_files": [
+            "frameworks.md",
+            "nextjs.md"
+          ]
+        },
+        {
+          "name": "better-auth-plugins",
+          "version": "1.0.1",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "better-auth",
+            "auth",
+            "plugins",
+            "2fa",
+            "passkey",
+            "magic-link",
+            "sso",
+            "jwt"
+          ],
+          "entry_point_tokens": 160,
+          "full_tokens": 1700,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2025-12-31",
+          "source_path": "toolchains/platforms/auth/better-auth/better-auth-plugins/SKILL.md",
+          "has_references": true,
+          "reference_files": [
+            "plugins-index.md"
+          ]
+        },
+        {
           "name": "digitalocean-agentic-cloud",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -1884,7 +1997,7 @@
         },
         {
           "name": "digitalocean-compute",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -1906,7 +2019,7 @@
         },
         {
           "name": "digitalocean-containers-images",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -1927,7 +2040,7 @@
         },
         {
           "name": "digitalocean-managed-databases",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -1951,7 +2064,7 @@
         },
         {
           "name": "digitalocean-management",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -1972,7 +2085,7 @@
         },
         {
           "name": "digitalocean-networking",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -1996,7 +2109,7 @@
         },
         {
           "name": "digitalocean-overview",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2017,7 +2130,7 @@
         },
         {
           "name": "digitalocean-storage",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2039,7 +2152,7 @@
         },
         {
           "name": "digitalocean-teams",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2061,7 +2174,7 @@
         },
         {
           "name": "neon",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2084,7 +2197,7 @@
         },
         {
           "name": "netlify",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2104,7 +2217,7 @@
         },
         {
           "name": "supabase",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2127,7 +2240,7 @@
         },
         {
           "name": "vercel-ai",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2148,7 +2261,7 @@
         },
         {
           "name": "vercel-deployments-builds",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2169,7 +2282,7 @@
         },
         {
           "name": "vercel-functions-runtime",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2190,7 +2303,7 @@
         },
         {
           "name": "vercel-networking-domains",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2214,7 +2327,7 @@
         },
         {
           "name": "vercel-observability",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2236,7 +2349,7 @@
         },
         {
           "name": "vercel-overview",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2259,7 +2372,7 @@
         },
         {
           "name": "vercel-security-access",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2283,7 +2396,7 @@
         },
         {
           "name": "vercel-storage-data",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2305,7 +2418,7 @@
         },
         {
           "name": "vercel-teams-billing",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2328,7 +2441,7 @@
       "python": [
         {
           "name": "asyncio",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2355,7 +2468,7 @@
         },
         {
           "name": "celery",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2375,7 +2488,7 @@
         },
         {
           "name": "django",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "python",
           "framework": "django",
@@ -2430,7 +2543,7 @@
         },
         {
           "name": "flask",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "python",
           "framework": "flask",
@@ -2455,7 +2568,7 @@
         },
         {
           "name": "mypy",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2480,7 +2593,7 @@
         },
         {
           "name": "pydantic",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2503,7 +2616,7 @@
         },
         {
           "name": "pyright",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2523,7 +2636,7 @@
         },
         {
           "name": "pytest",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2552,7 +2665,7 @@
         },
         {
           "name": "sqlalchemy",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2581,7 +2694,7 @@
       "rust": [
         {
           "name": "axum",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "rust",
           "framework": "axum",
@@ -2605,7 +2718,7 @@
         },
         {
           "name": "clap",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "rust",
           "framework": null,
@@ -2627,7 +2740,7 @@
         },
         {
           "name": "desktop-applications",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "rust",
           "framework": null,
@@ -2656,7 +2769,7 @@
         },
         {
           "name": "tauri",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "rust",
           "framework": "tauri",
@@ -2678,7 +2791,7 @@
       "typescript": [
         {
           "name": "drizzle-migrations",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2703,7 +2816,7 @@
         },
         {
           "name": "drizzle-orm",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2736,7 +2849,7 @@
         },
         {
           "name": "fastify",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": "fastify",
@@ -2762,7 +2875,7 @@
         },
         {
           "name": "jest-typescript",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2781,7 +2894,7 @@
         },
         {
           "name": "kysely",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2808,7 +2921,7 @@
         },
         {
           "name": "nodejs-backend",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": "nodejs-backend",
@@ -2833,7 +2946,7 @@
         },
         {
           "name": "prisma-orm",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2860,7 +2973,7 @@
         },
         {
           "name": "tanstack-query",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2883,7 +2996,7 @@
         },
         {
           "name": "trpc",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2910,7 +3023,7 @@
         },
         {
           "name": "turborepo",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2964,7 +3077,7 @@
         },
         {
           "name": "vitest",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2990,7 +3103,7 @@
         },
         {
           "name": "zod",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -3010,7 +3123,7 @@
         },
         {
           "name": "zustand",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -3032,7 +3145,7 @@
       "ui": [
         {
           "name": "daisyui",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "ui",
           "framework": null,
@@ -3054,7 +3167,7 @@
         },
         {
           "name": "headlessui",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "ui",
           "framework": null,
@@ -3078,7 +3191,7 @@
         },
         {
           "name": "shadcn-ui",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "ui",
           "framework": null,
@@ -3102,7 +3215,7 @@
         },
         {
           "name": "tailwind",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "ui",
           "framework": null,
@@ -3126,7 +3239,7 @@
       "universal": [
         {
           "name": "api-security-review",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3147,7 +3260,7 @@
         },
         {
           "name": "dependency-audit",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3169,7 +3282,7 @@
         },
         {
           "name": "docker",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3189,7 +3302,7 @@
         },
         {
           "name": "emergency-release-workflow",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3210,7 +3323,7 @@
         },
         {
           "name": "github-actions",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3230,7 +3343,7 @@
         },
         {
           "name": "graphql",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3254,7 +3367,7 @@
         },
         {
           "name": "pr-quality-checklist",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3277,7 +3390,7 @@
     "examples": [
       {
         "name": "bad-example-skill",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "example",
         "toolchain": null,
         "framework": null,
@@ -3301,7 +3414,7 @@
       },
       {
         "name": "example-framework-skill",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "example",
         "toolchain": null,
         "framework": null,
@@ -3324,10 +3437,10 @@
     ]
   },
   "metadata": {
-    "total_skills": 136,
+    "total_skills": 140,
     "categories": {
       "universal": 35,
-      "toolchains": 99,
+      "toolchains": 103,
       "examples": 2
     },
     "toolchains": {
@@ -3337,14 +3450,14 @@
       "javascript": 12,
       "nextjs": 3,
       "php": 6,
-      "platforms": 21,
+      "platforms": 25,
       "python": 10,
       "rust": 4,
       "typescript": 14,
       "ui": 4,
       "universal": 7
     },
-    "last_updated": "2025-12-30",
+    "last_updated": "2025-12-31",
     "schema_version": "2.0.0"
   },
   "provenance": {
