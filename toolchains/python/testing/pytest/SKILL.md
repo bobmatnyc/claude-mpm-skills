@@ -218,13 +218,15 @@ import shutil
 def temp_directory():
     """Create a temporary directory for test."""
     temp_dir = tempfile.mkdtemp()
-    print(f"\nSetup: Created {temp_dir}")
+    print(f"
+Setup: Created {temp_dir}")
 
     yield temp_dir  # Provide directory to test
 
     # Teardown: cleanup after test
     shutil.rmtree(temp_dir)
-    print(f"\nTeardown: Removed {temp_dir}")
+    print(f"
+Teardown: Removed {temp_dir}")
 
 def test_file_creation(temp_directory):
     file_path = f"{temp_directory}/test.txt"
@@ -902,6 +904,24 @@ async def test_create_user_async(async_db_session):
     )
     assert result.scalar_one().name == "Test"
 ```
+
+## Local pytest Profiles (Your Repos)
+
+Common settings from your projects' `pyproject.toml`:
+
+- `asyncio_mode = "auto"` (default in mcp-browser, mcp-memory, claude-mpm, edgar)
+- `addopts` includes `--strict-markers` and `--strict-config` for CI consistency
+- Coverage flags: `--cov=<package>`, `--cov-report=term-missing`, `--cov-report=xml`
+- Selective ignores (mcp-vector-search): `--ignore=tests/manual`, `--ignore=tests/e2e`
+- `pythonpath = ["src"]` for editable import resolution (mcp-ticketer)
+
+Typical markers:
+
+- `unit`, `integration`, `e2e`
+- `slow`, `benchmark`, `performance`
+- `requires_api` (edgar)
+
+Reference: see `pyproject.toml` in `claude-mpm`, `edgar`, `mcp-vector-search`, `mcp-ticketer`, and `kuzu-memory` for full lists.
 
 ## Best Practices
 

@@ -14,8 +14,8 @@
     "javascript",
     "rust"
   ],
-  "entry_point_tokens": 70,
-  "full_tokens": 4832,
+  "entry_point_tokens": 169,
+  "full_tokens": 5014,
   "related_skills": [
     "../../typescript/typescript-core",
     "../build/vite",
@@ -23,6 +23,9 @@
   ],
   "author": "Claude MPM",
   "license": "MIT",
+  "updated": "2025-12-31",
+  "source_path": "toolchains/javascript/tooling/biome/SKILL.md",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "description": "Fast all-in-one linter and formatter (Rust-based replacement for ESLint + Prettier)",
   "when_to_use": [
     "When you need fast linting and formatting",

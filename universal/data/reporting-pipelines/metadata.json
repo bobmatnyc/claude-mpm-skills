@@ -1,0 +1,22 @@
+{
+  "name": "reporting-pipelines",
+  "version": "1.0.0",
+  "category": "universal",
+  "tags": [
+    "reporting",
+    "csv",
+    "json",
+    "markdown",
+    "analytics"
+  ],
+  "entry_point_tokens": 98,
+  "full_tokens": 549,
+  "related_skills": [
+    "../sec-edgar-pipeline"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "updated": "2025-12-31",
+  "source_path": "universal/data/reporting-pipelines/SKILL.md",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

@@ -20,8 +20,8 @@
     "flask",
     "coverage"
   ],
-  "entry_point_tokens": 70,
-  "full_tokens": 7862,
+  "entry_point_tokens": 163,
+  "full_tokens": 8084,
   "related_skills": [
     "../../frameworks/fastapi-local-dev",
     "../../../../universal/testing/test-driven-development",
@@ -32,8 +32,8 @@
   "requires": [],
   "sub_skills": [],
   "created": "2025-11-30",
-  "updated": "2025-11-30",
-  "source_path": "toolchains/python/testing/pytest",
+  "updated": "2025-12-31",
+  "source_path": "toolchains/python/testing/pytest/SKILL.md",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "description": "pytest - Python's most powerful testing framework with fixtures, parametrization, plugins, and framework integration for FastAPI, Django, Flask"
 }

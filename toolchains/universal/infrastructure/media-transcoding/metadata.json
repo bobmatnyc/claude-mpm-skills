@@ -1,0 +1,24 @@
+{
+  "name": "media-transcoding",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "universal",
+  "framework": "media-transcoding",
+  "tags": [
+    "ffmpeg",
+    "video",
+    "media",
+    "transcoding",
+    "encoding"
+  ],
+  "entry_point_tokens": 112,
+  "full_tokens": 693,
+  "related_skills": [
+    "../docker"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "updated": "2025-12-31",
+  "source_path": "toolchains/universal/infrastructure/media-transcoding/SKILL.md",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

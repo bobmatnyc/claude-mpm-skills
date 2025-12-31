@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.0",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "updated": "2025-12-31",
   "description": "Curated collection of Claude Code skills for intelligent project development",
@@ -7,7 +7,7 @@
     "universal": [
       {
         "name": "api-design-patterns",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -27,10 +27,10 @@
           "rate-limiting"
         ],
         "entry_point_tokens": 85,
-        "full_tokens": 8500,
+        "full_tokens": 34968,
         "requires": [],
         "author": "Claude MPM Skills",
-        "updated": "2025-12-23",
+        "updated": "2025-12-31",
         "source_path": "universal/web/api-design-patterns/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -43,7 +43,7 @@
       },
       {
         "name": "api-documentation",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -58,12 +58,12 @@
         "full_tokens": 2366,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-23",
+        "updated": "2025-12-31",
         "source_path": "universal/web/api-documentation/SKILL.md"
       },
       {
         "name": "artifacts-builder",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -72,7 +72,7 @@
           "testing"
         ],
         "entry_point_tokens": 82,
-        "full_tokens": 947,
+        "full_tokens": 843,
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2025-12-16",
@@ -80,7 +80,7 @@
       },
       {
         "name": "brainstorming",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -90,7 +90,7 @@
           "testing"
         ],
         "entry_point_tokens": 61,
-        "full_tokens": 757,
+        "full_tokens": 649,
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2025-12-03",
@@ -98,7 +98,7 @@
       },
       {
         "name": "bug-fix-verification",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -116,12 +116,12 @@
           "universal-debugging-systematic-debugging"
         ],
         "author": "claude-mpm-skills",
-        "updated": "2025-12-23",
+        "updated": "2025-12-31",
         "source_path": "universal/verification/bug-fix/SKILL.md"
       },
       {
         "name": "condition-based-waiting",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -132,7 +132,7 @@
           "testing"
         ],
         "entry_point_tokens": 55,
-        "full_tokens": 985,
+        "full_tokens": 2385,
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2025-11-21",
@@ -158,10 +158,10 @@
           "zero-downtime"
         ],
         "entry_point_tokens": 51,
-        "full_tokens": 1036,
+        "full_tokens": 10347,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-23",
+        "updated": "2025-12-31",
         "source_path": "universal/data/database-migration/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -171,7 +171,7 @@
       },
       {
         "name": "dispatching-parallel-agents",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -182,7 +182,7 @@
           "testing"
         ],
         "entry_point_tokens": 61,
-        "full_tokens": 1664,
+        "full_tokens": 14739,
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2025-12-03",
@@ -197,7 +197,7 @@
       },
       {
         "name": "env-manager",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -209,10 +209,10 @@
           "debugging"
         ],
         "entry_point_tokens": 65,
-        "full_tokens": 3775,
+        "full_tokens": 17364,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-16",
+        "updated": "2025-12-31",
         "source_path": "universal/infrastructure/env-manager/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -225,7 +225,7 @@
       },
       {
         "name": "git-workflow",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -240,12 +240,12 @@
         "full_tokens": 1862,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-23",
+        "updated": "2025-12-31",
         "source_path": "universal/collaboration/git-workflow/SKILL.md"
       },
       {
         "name": "git-worktrees",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -260,12 +260,12 @@
         "full_tokens": 1993,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-23",
+        "updated": "2025-12-31",
         "source_path": "universal/collaboration/git-worktrees/SKILL.md"
       },
       {
         "name": "internal-comms",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -273,15 +273,15 @@
           "frontend"
         ],
         "entry_point_tokens": 90,
-        "full_tokens": 818,
+        "full_tokens": 811,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-16",
+        "updated": "2025-12-31",
         "source_path": "universal/main/internal-comms/SKILL.md"
       },
       {
         "name": "json-data-handling",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -293,12 +293,12 @@
         "full_tokens": 1136,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-23",
+        "updated": "2025-12-31",
         "source_path": "universal/data/json-data-handling/SKILL.md"
       },
       {
         "name": "kubernetes",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -313,7 +313,7 @@
           "security"
         ],
         "entry_point_tokens": 150,
-        "full_tokens": 9000,
+        "full_tokens": 2470,
         "requires": [],
         "author": "Claude MPM Team",
         "updated": "2025-12-23",
@@ -328,7 +328,7 @@
       },
       {
         "name": "mcp-builder",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -339,16 +339,16 @@
           "testing",
           "debugging"
         ],
-        "entry_point_tokens": 66,
-        "full_tokens": 5414,
+        "entry_point_tokens": 79,
+        "full_tokens": 5341,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-16",
+        "updated": "2025-12-31",
         "source_path": "universal/main/mcp-builder/SKILL.md"
       },
       {
         "name": "opentelemetry",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -363,7 +363,7 @@
           "collector"
         ],
         "entry_point_tokens": 150,
-        "full_tokens": 9000,
+        "full_tokens": 1453,
         "requires": [],
         "author": "Claude MPM Team",
         "updated": "2025-12-23",
@@ -377,7 +377,7 @@
       },
       {
         "name": "pre-merge-verification",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -391,15 +391,35 @@
           "type-checking"
         ],
         "entry_point_tokens": 180,
-        "full_tokens": 2500,
+        "full_tokens": 1819,
         "requires": [],
         "author": "claude-mpm-skills",
-        "updated": "2025-12-23",
+        "updated": "2025-12-31",
         "source_path": "universal/verification/pre-merge/SKILL.md"
       },
       {
+        "name": "reporting-pipelines",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "reporting",
+          "csv",
+          "json",
+          "markdown",
+          "analytics"
+        ],
+        "entry_point_tokens": 98,
+        "full_tokens": 549,
+        "requires": [],
+        "author": "Claude MPM Team",
+        "updated": "2025-12-31",
+        "source_path": "universal/data/reporting-pipelines/SKILL.md"
+      },
+      {
         "name": "requesting-code-review",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -408,7 +428,7 @@
           "testing"
         ],
         "entry_point_tokens": 66,
-        "full_tokens": 812,
+        "full_tokens": 4044,
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2025-12-03",
@@ -421,7 +441,7 @@
       },
       {
         "name": "root-cause-tracing",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -433,7 +453,7 @@
           "debugging"
         ],
         "entry_point_tokens": 56,
-        "full_tokens": 1454,
+        "full_tokens": 13753,
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2025-12-03",
@@ -448,7 +468,7 @@
       },
       {
         "name": "screenshot-verification",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -464,8 +484,28 @@
         "full_tokens": 2800,
         "requires": [],
         "author": "claude-mpm-skills",
-        "updated": "2025-12-23",
+        "updated": "2025-12-31",
         "source_path": "universal/verification/screenshot/SKILL.md"
+      },
+      {
+        "name": "sec-edgar-pipeline",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "sec",
+          "edgar",
+          "filings",
+          "def14a",
+          "extraction"
+        ],
+        "entry_point_tokens": 144,
+        "full_tokens": 796,
+        "requires": [],
+        "author": "Claude MPM Team",
+        "updated": "2025-12-31",
+        "source_path": "universal/data/sec-edgar-pipeline/SKILL.md"
       },
       {
         "name": "security-scanning",
@@ -501,7 +541,7 @@
       },
       {
         "name": "skill-creator",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -513,7 +553,7 @@
           "testing"
         ],
         "entry_point_tokens": 65,
-        "full_tokens": 2407,
+        "full_tokens": 16583,
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2025-12-16",
@@ -529,7 +569,7 @@
       },
       {
         "name": "software-patterns",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -541,7 +581,7 @@
           "service-oriented"
         ],
         "entry_point_tokens": 75,
-        "full_tokens": 1800,
+        "full_tokens": 15814,
         "requires": [],
         "author": "masa",
         "updated": "2025-12-03",
@@ -557,7 +597,7 @@
       },
       {
         "name": "stacked-prs",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -570,12 +610,12 @@
         "full_tokens": 1634,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-23",
+        "updated": "2025-12-31",
         "source_path": "universal/collaboration/stacked-prs/SKILL.md"
       },
       {
         "name": "systematic-debugging",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -586,10 +626,10 @@
           "testing"
         ],
         "entry_point_tokens": 58,
-        "full_tokens": 673,
+        "full_tokens": 11799,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-16",
+        "updated": "2025-12-31",
         "source_path": "universal/debugging/systematic-debugging/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -601,7 +641,7 @@
       },
       {
         "name": "terraform",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -616,7 +656,7 @@
           "policy"
         ],
         "entry_point_tokens": 140,
-        "full_tokens": 8000,
+        "full_tokens": 1291,
         "requires": [],
         "author": "Claude MPM Team",
         "updated": "2025-12-23",
@@ -630,7 +670,7 @@
       },
       {
         "name": "test-driven-development",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -642,10 +682,10 @@
           "debugging"
         ],
         "entry_point_tokens": 56,
-        "full_tokens": 2221,
+        "full_tokens": 18625,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-23",
+        "updated": "2025-12-31",
         "source_path": "universal/testing/test-driven-development/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -658,7 +698,7 @@
       },
       {
         "name": "test-quality-inspector",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -670,10 +710,10 @@
           "debugging"
         ],
         "entry_point_tokens": 63,
-        "full_tokens": 3175,
+        "full_tokens": 8395,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-16",
+        "updated": "2025-12-31",
         "source_path": "universal/testing/test-quality-inspector/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -684,7 +724,7 @@
       },
       {
         "name": "testing-anti-patterns",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -695,7 +735,7 @@
           "testing"
         ],
         "entry_point_tokens": 68,
-        "full_tokens": 1515,
+        "full_tokens": 21813,
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2025-12-03",
@@ -711,7 +751,7 @@
       },
       {
         "name": "threat-modeling",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -724,7 +764,7 @@
           "abuse-cases"
         ],
         "entry_point_tokens": 150,
-        "full_tokens": 8000,
+        "full_tokens": 1495,
         "requires": [],
         "author": "Claude MPM Team",
         "updated": "2025-12-23",
@@ -738,7 +778,7 @@
       },
       {
         "name": "verification-before-completion",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -749,7 +789,7 @@
           "testing"
         ],
         "entry_point_tokens": 75,
-        "full_tokens": 1038,
+        "full_tokens": 13256,
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2025-12-03",
@@ -764,7 +804,7 @@
       },
       {
         "name": "web-performance-optimization",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -776,7 +816,7 @@
           "debugging"
         ],
         "entry_point_tokens": 60,
-        "full_tokens": 13226,
+        "full_tokens": 39470,
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2025-12-23",
@@ -793,7 +833,7 @@
       },
       {
         "name": "webapp-testing",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -808,12 +848,12 @@
         "full_tokens": 2791,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-16",
+        "updated": "2025-12-31",
         "source_path": "universal/testing/webapp-testing/SKILL.md"
       },
       {
         "name": "writing-plans",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -823,7 +863,7 @@
           "testing"
         ],
         "entry_point_tokens": 64,
-        "full_tokens": 888,
+        "full_tokens": 4801,
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2025-11-21",
@@ -836,16 +876,16 @@
       },
       {
         "name": "xlsx",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
         "tags": [],
         "entry_point_tokens": 60,
-        "full_tokens": 742,
+        "full_tokens": 882,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-23",
+        "updated": "2025-12-31",
         "source_path": "universal/data/xlsx/SKILL.md"
       }
     ],
@@ -853,7 +893,7 @@
       "ai": [
         {
           "name": "anthropic-sdk",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": null,
@@ -869,15 +909,15 @@
             "chat"
           ],
           "entry_point_tokens": 85,
-          "full_tokens": 5000,
+          "full_tokens": 5920,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/ai/sdks/anthropic/SKILL.md"
         },
         {
           "name": "dspy",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": "dspy",
@@ -897,15 +937,15 @@
             "optimization"
           ],
           "entry_point_tokens": 75,
-          "full_tokens": 5500,
+          "full_tokens": 10191,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/ai/frameworks/dspy/SKILL.md"
         },
         {
           "name": "langchain",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": "langchain",
@@ -924,12 +964,12 @@
           "full_tokens": 5200,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/ai/frameworks/langchain/SKILL.md"
         },
         {
           "name": "langgraph",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": "langgraph",
@@ -946,7 +986,7 @@
             "human-in-loop"
           ],
           "entry_point_tokens": 80,
-          "full_tokens": 5800,
+          "full_tokens": 13762,
           "requires": [
             "../langchain"
           ],
@@ -955,8 +995,29 @@
           "source_path": "toolchains/ai/frameworks/langgraph/SKILL.md"
         },
         {
+          "name": "local-llm-ops",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "ai",
+          "framework": null,
+          "tags": [
+            "llm",
+            "ollama",
+            "local",
+            "benchmark",
+            "chat",
+            "ops"
+          ],
+          "entry_point_tokens": 125,
+          "full_tokens": 659,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-31",
+          "source_path": "toolchains/ai/ops/local-llm-ops/SKILL.md"
+        },
+        {
           "name": "mcp",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": null,
@@ -977,8 +1038,8 @@
             "api",
             "claude-desktop"
           ],
-          "entry_point_tokens": 78,
-          "full_tokens": 4850,
+          "entry_point_tokens": 167,
+          "full_tokens": 8827,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-01",
@@ -986,7 +1047,7 @@
         },
         {
           "name": "openrouter",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": null,
@@ -1002,7 +1063,7 @@
             "vision"
           ],
           "entry_point_tokens": 75,
-          "full_tokens": 4180,
+          "full_tokens": 7113,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-11-30",
@@ -1010,7 +1071,7 @@
         },
         {
           "name": "session-compression",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ai",
           "framework": null,
@@ -1029,17 +1090,37 @@
             "cost-optimization"
           ],
           "entry_point_tokens": 75,
-          "full_tokens": 5500,
+          "full_tokens": 13311,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-12-01",
           "source_path": "toolchains/ai/techniques/session-compression/SKILL.md"
+        },
+        {
+          "name": "vector-search-workflows",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "ai",
+          "framework": null,
+          "tags": [
+            "vector-search",
+            "embeddings",
+            "indexing",
+            "search",
+            "mcp"
+          ],
+          "entry_point_tokens": 118,
+          "full_tokens": 700,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-31",
+          "source_path": "toolchains/ai/techniques/vector-search-workflows/SKILL.md"
         }
       ],
       "elixir": [
         {
           "name": "ecto-patterns",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "elixir",
           "framework": null,
@@ -1056,7 +1137,7 @@
             "testing"
           ],
           "entry_point_tokens": 170,
-          "full_tokens": 5400,
+          "full_tokens": 1646,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-05",
@@ -1064,7 +1145,7 @@
         },
         {
           "name": "phoenix-api-channels",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "elixir",
           "framework": "phoenix-api-channels",
@@ -1080,7 +1161,7 @@
             "telemetry"
           ],
           "entry_point_tokens": 170,
-          "full_tokens": 5200,
+          "full_tokens": 2001,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-17",
@@ -1088,7 +1169,7 @@
         },
         {
           "name": "phoenix-liveview",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "elixir",
           "framework": "phoenix-liveview",
@@ -1104,7 +1185,7 @@
             "telemetry"
           ],
           "entry_point_tokens": 180,
-          "full_tokens": 5600,
+          "full_tokens": 2842,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-16",
@@ -1112,7 +1193,7 @@
         },
         {
           "name": "phoenix-ops",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "elixir",
           "framework": null,
@@ -1128,7 +1209,7 @@
             "deployment"
           ],
           "entry_point_tokens": 180,
-          "full_tokens": 5600,
+          "full_tokens": 1341,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-25",
@@ -1138,7 +1219,7 @@
       "golang": [
         {
           "name": "golang-cli-cobra-viper",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1151,7 +1232,7 @@
             "shell-completion"
           ],
           "entry_point_tokens": 140,
-          "full_tokens": 4500,
+          "full_tokens": 6894,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-12-16",
@@ -1159,7 +1240,7 @@
         },
         {
           "name": "golang-concurrency-patterns",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1175,7 +1256,7 @@
             "structured-concurrency"
           ],
           "entry_point_tokens": 150,
-          "full_tokens": 5000,
+          "full_tokens": 2070,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-23",
@@ -1183,7 +1264,7 @@
         },
         {
           "name": "golang-database-patterns",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1196,7 +1277,7 @@
             "repository-pattern"
           ],
           "entry_point_tokens": 140,
-          "full_tokens": 5400,
+          "full_tokens": 8868,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-12-16",
@@ -1204,7 +1285,7 @@
         },
         {
           "name": "golang-grpc",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1220,7 +1301,7 @@
             "testing"
           ],
           "entry_point_tokens": 160,
-          "full_tokens": 6500,
+          "full_tokens": 2077,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-23",
@@ -1228,7 +1309,7 @@
         },
         {
           "name": "golang-http-frameworks",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1243,7 +1324,7 @@
             "middleware"
           ],
           "entry_point_tokens": 160,
-          "full_tokens": 5000,
+          "full_tokens": 6745,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-12-16",
@@ -1251,7 +1332,7 @@
         },
         {
           "name": "golang-observability-opentelemetry",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1266,7 +1347,7 @@
             "slog"
           ],
           "entry_point_tokens": 150,
-          "full_tokens": 5000,
+          "full_tokens": 6126,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-12-16",
@@ -1274,7 +1355,7 @@
         },
         {
           "name": "golang-testing-strategies",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1297,7 +1378,7 @@
       "javascript": [
         {
           "name": "biome",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": null,
@@ -1311,8 +1392,8 @@
             "javascript",
             "rust"
           ],
-          "entry_point_tokens": 70,
-          "full_tokens": 3500,
+          "entry_point_tokens": 169,
+          "full_tokens": 5014,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-11-30",
@@ -1320,7 +1401,7 @@
         },
         {
           "name": "cypress",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": null,
@@ -1334,7 +1415,7 @@
             "flake-reduction"
           ],
           "entry_point_tokens": 130,
-          "full_tokens": 5200,
+          "full_tokens": 1137,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-23",
@@ -1361,7 +1442,7 @@
             "error-handling"
           ],
           "entry_point_tokens": 120,
-          "full_tokens": 14500,
+          "full_tokens": 27280,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-03",
@@ -1376,7 +1457,7 @@
         },
         {
           "name": "nextjs",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "nextjs",
@@ -1388,15 +1469,15 @@
             "testing"
           ],
           "entry_point_tokens": 64,
-          "full_tokens": 1926,
+          "full_tokens": 2123,
           "requires": [],
           "author": "bobmatnyc",
-          "updated": "2025-12-02",
+          "updated": "2025-12-31",
           "source_path": "toolchains/javascript/frameworks/nextjs/SKILL.md"
         },
         {
           "name": "playwright",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": null,
@@ -1408,15 +1489,15 @@
             "cross-browser"
           ],
           "entry_point_tokens": 85,
-          "full_tokens": 4700,
+          "full_tokens": 6541,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/javascript/testing/playwright/SKILL.md"
         },
         {
           "name": "react",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "react",
@@ -1428,7 +1509,7 @@
             "testing"
           ],
           "entry_point_tokens": 55,
-          "full_tokens": 4578,
+          "full_tokens": 4070,
           "requires": [],
           "author": "bobmatnyc",
           "updated": "2025-12-01",
@@ -1436,7 +1517,7 @@
         },
         {
           "name": "react-state-machines",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "react",
@@ -1451,7 +1532,7 @@
             "typescript"
           ],
           "entry_point_tokens": 150,
-          "full_tokens": 18500,
+          "full_tokens": 37323,
           "requires": [],
           "author": "bobmatnyc",
           "updated": "2025-12-19",
@@ -1473,7 +1554,7 @@
         },
         {
           "name": "svelte",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "svelte",
@@ -1494,7 +1575,7 @@
             "transitions"
           ],
           "entry_point_tokens": 85,
-          "full_tokens": 4500,
+          "full_tokens": 5054,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-03",
@@ -1502,7 +1583,7 @@
         },
         {
           "name": "svelte5-runes-static",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "svelte5-runes-static",
@@ -1521,7 +1602,7 @@
             "typescript"
           ],
           "entry_point_tokens": 90,
-          "full_tokens": 6000,
+          "full_tokens": 3952,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-17",
@@ -1529,7 +1610,7 @@
         },
         {
           "name": "sveltekit",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "sveltekit",
@@ -1546,7 +1627,7 @@
             "typescript"
           ],
           "entry_point_tokens": 80,
-          "full_tokens": 5000,
+          "full_tokens": 8391,
           "requires": [
             "../svelte"
           ],
@@ -1556,7 +1637,7 @@
         },
         {
           "name": "vite",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": null,
@@ -1574,15 +1655,15 @@
             "svelte"
           ],
           "entry_point_tokens": 75,
-          "full_tokens": 4000,
+          "full_tokens": 5460,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/javascript/build/vite/SKILL.md"
         },
         {
           "name": "vue",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "vue",
@@ -1601,7 +1682,7 @@
             "frontend"
           ],
           "entry_point_tokens": 80,
-          "full_tokens": 5000,
+          "full_tokens": 7994,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-11-30",
@@ -1677,7 +1758,7 @@
         },
         {
           "name": "validated-handler",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "nextjs",
           "framework": null,
@@ -1691,20 +1772,20 @@
             "app-router"
           ],
           "entry_point_tokens": 200,
-          "full_tokens": 3500,
+          "full_tokens": 4056,
           "requires": [
             "toolchains-nextjs-core",
             "toolchains-typescript-validation-zod"
           ],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-23",
+          "updated": "2025-12-31",
           "source_path": "toolchains/nextjs/api/validated-handler/SKILL.md"
         }
       ],
       "php": [
         {
           "name": "espocrm",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "espocrm",
@@ -1716,7 +1797,7 @@
             "debugging"
           ],
           "entry_point_tokens": 50,
-          "full_tokens": 1691,
+          "full_tokens": 26087,
           "requires": [],
           "author": "bobmatnyc",
           "updated": "2025-12-03",
@@ -1733,7 +1814,7 @@
         },
         {
           "name": "wordpress-advanced-architecture",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "wordpress",
@@ -1749,7 +1830,7 @@
             "memcached",
             "multisite"
           ],
-          "entry_point_tokens": 12169,
+          "entry_point_tokens": 98,
           "full_tokens": 12169,
           "requires": [],
           "author": "Claude MPM Team",
@@ -1758,7 +1839,7 @@
         },
         {
           "name": "wordpress-block-editor-fse",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "wordpress",
@@ -1774,7 +1855,7 @@
             "react",
             "custom-blocks"
           ],
-          "entry_point_tokens": 5517,
+          "entry_point_tokens": 98,
           "full_tokens": 5517,
           "requires": [],
           "author": "Claude MPM Team",
@@ -1783,7 +1864,7 @@
         },
         {
           "name": "wordpress-plugin-fundamentals",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "wordpress",
@@ -1801,7 +1882,7 @@
             "psr-4",
             "oop"
           ],
-          "entry_point_tokens": 8643,
+          "entry_point_tokens": 155,
           "full_tokens": 8643,
           "requires": [],
           "author": "Claude MPM Team",
@@ -1810,7 +1891,7 @@
         },
         {
           "name": "wordpress-security-validation",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "wordpress",
@@ -1826,7 +1907,7 @@
             "csrf",
             "sql-injection"
           ],
-          "entry_point_tokens": 11530,
+          "entry_point_tokens": 98,
           "full_tokens": 11530,
           "requires": [],
           "author": "Claude MPM Team",
@@ -1835,7 +1916,7 @@
         },
         {
           "name": "wordpress-testing-qa",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "wordpress",
@@ -1852,18 +1933,18 @@
             "code-coverage",
             "coding-standards"
           ],
-          "entry_point_tokens": 12579,
+          "entry_point_tokens": 106,
           "full_tokens": 12579,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/php/frameworks/wordpress/testing-qa/SKILL.md"
         }
       ],
       "platforms": [
         {
           "name": "better-auth-authentication",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -1877,7 +1958,7 @@
             "typescript"
           ],
           "entry_point_tokens": 200,
-          "full_tokens": 1800,
+          "full_tokens": 1151,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-12-31",
@@ -1890,7 +1971,7 @@
         },
         {
           "name": "better-auth-core",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -1906,7 +1987,7 @@
             "database"
           ],
           "entry_point_tokens": 220,
-          "full_tokens": 2600,
+          "full_tokens": 1890,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-12-31",
@@ -1920,7 +2001,7 @@
         },
         {
           "name": "better-auth-integrations",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -1936,7 +2017,7 @@
             "cloudflare"
           ],
           "entry_point_tokens": 160,
-          "full_tokens": 1500,
+          "full_tokens": 1103,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-12-31",
@@ -1949,7 +2030,7 @@
         },
         {
           "name": "better-auth-plugins",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -1964,7 +2045,7 @@
             "jwt"
           ],
           "entry_point_tokens": 160,
-          "full_tokens": 1700,
+          "full_tokens": 902,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-12-31",
@@ -1976,7 +2057,7 @@
         },
         {
           "name": "digitalocean-agentic-cloud",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -1989,15 +2070,15 @@
             "agents"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 3600,
+          "full_tokens": 630,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/digitalocean-agentic-cloud/SKILL.md"
         },
         {
           "name": "digitalocean-compute",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2011,15 +2092,15 @@
             "gpu"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4700,
+          "full_tokens": 887,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/digitalocean-compute/SKILL.md"
         },
         {
           "name": "digitalocean-containers-images",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2032,15 +2113,15 @@
             "snapshots"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4000,
+          "full_tokens": 630,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/digitalocean-containers-images/SKILL.md"
         },
         {
           "name": "digitalocean-managed-databases",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2056,15 +2137,15 @@
             "valkey"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4800,
+          "full_tokens": 695,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/digitalocean-managed-databases/SKILL.md"
         },
         {
           "name": "digitalocean-management",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2077,15 +2158,15 @@
             "alerts"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 3800,
+          "full_tokens": 554,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/digitalocean-management/SKILL.md"
         },
         {
           "name": "digitalocean-networking",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2101,15 +2182,15 @@
             "nat-gateway"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4500,
+          "full_tokens": 800,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/digitalocean-networking/SKILL.md"
         },
         {
           "name": "digitalocean-overview",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2122,15 +2203,15 @@
             "account"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 3500,
+          "full_tokens": 870,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/digitalocean-overview/SKILL.md"
         },
         {
           "name": "digitalocean-storage",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2144,15 +2225,15 @@
             "backups"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4300,
+          "full_tokens": 759,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/digitalocean-storage/SKILL.md"
         },
         {
           "name": "digitalocean-teams",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2166,15 +2247,15 @@
             "sso"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 3800,
+          "full_tokens": 575,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/digitalocean-teams/SKILL.md"
         },
         {
           "name": "neon",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2189,15 +2270,15 @@
             "prisma"
           ],
           "entry_point_tokens": 85,
-          "full_tokens": 4300,
+          "full_tokens": 4971,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-03",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/database/neon/SKILL.md"
         },
         {
           "name": "netlify",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2209,15 +2290,15 @@
             "static-sites"
           ],
           "entry_point_tokens": 75,
-          "full_tokens": 4300,
+          "full_tokens": 4970,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/netlify/SKILL.md"
         },
         {
           "name": "supabase",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2232,15 +2313,15 @@
             "baas"
           ],
           "entry_point_tokens": 90,
-          "full_tokens": 5500,
+          "full_tokens": 8098,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-03",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/backend/supabase/SKILL.md"
         },
         {
           "name": "vercel-ai",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2253,15 +2334,15 @@
             "mcp"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4200,
+          "full_tokens": 572,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/vercel-ai/SKILL.md"
         },
         {
           "name": "vercel-deployments-builds",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2274,15 +2355,15 @@
             "rollback"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4300,
+          "full_tokens": 654,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/vercel-deployments-builds/SKILL.md"
         },
         {
           "name": "vercel-functions-runtime",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2295,15 +2376,15 @@
             "middleware"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4200,
+          "full_tokens": 564,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/vercel-functions-runtime/SKILL.md"
         },
         {
           "name": "vercel-networking-domains",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2319,15 +2400,15 @@
             "regions"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4300,
+          "full_tokens": 586,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/vercel-networking-domains/SKILL.md"
         },
         {
           "name": "vercel-observability",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2341,15 +2422,15 @@
             "observability"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4200,
+          "full_tokens": 533,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/vercel-observability/SKILL.md"
         },
         {
           "name": "vercel-overview",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2364,15 +2445,15 @@
             "webhooks"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 3600,
+          "full_tokens": 831,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/vercel-overview/SKILL.md"
         },
         {
           "name": "vercel-security-access",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2388,15 +2469,15 @@
             "2fa"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4700,
+          "full_tokens": 653,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/vercel-security-access/SKILL.md"
         },
         {
           "name": "vercel-storage-data",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2410,15 +2491,15 @@
             "storage"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4300,
+          "full_tokens": 605,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/vercel-storage-data/SKILL.md"
         },
         {
           "name": "vercel-teams-billing",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
           "framework": null,
@@ -2431,17 +2512,17 @@
             "billing"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 3800,
+          "full_tokens": 463,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/platforms/deployment/vercel-teams-billing/SKILL.md"
         }
       ],
       "python": [
         {
           "name": "asyncio",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2460,7 +2541,7 @@
             "performance"
           ],
           "entry_point_tokens": 72,
-          "full_tokens": 4200,
+          "full_tokens": 9835,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-01",
@@ -2468,7 +2549,7 @@
         },
         {
           "name": "celery",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2480,7 +2561,7 @@
             "distributed"
           ],
           "entry_point_tokens": 65,
-          "full_tokens": 5000,
+          "full_tokens": 12751,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-12-01",
@@ -2488,7 +2569,7 @@
         },
         {
           "name": "django",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "python",
           "framework": "django",
@@ -2500,10 +2581,10 @@
             "admin"
           ],
           "entry_point_tokens": 85,
-          "full_tokens": 5000,
+          "full_tokens": 7995,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/python/frameworks/django/SKILL.md"
         },
         {
@@ -2526,7 +2607,7 @@
             "troubleshooting"
           ],
           "entry_point_tokens": 173,
-          "full_tokens": 1625,
+          "full_tokens": 1845,
           "requires": [],
           "author": "bobmatnyc",
           "updated": "2025-12-17",
@@ -2543,7 +2624,7 @@
         },
         {
           "name": "flask",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "python",
           "framework": "flask",
@@ -2560,7 +2641,7 @@
             "marshmallow"
           ],
           "entry_point_tokens": 75,
-          "full_tokens": 4300,
+          "full_tokens": 9864,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-12-03",
@@ -2568,7 +2649,7 @@
         },
         {
           "name": "mypy",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2584,8 +2665,8 @@
             "protocol",
             "generics"
           ],
-          "entry_point_tokens": 75,
-          "full_tokens": 4300,
+          "entry_point_tokens": 147,
+          "full_tokens": 7651,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-12-01",
@@ -2593,7 +2674,7 @@
         },
         {
           "name": "pydantic",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2608,7 +2689,7 @@
             "serialization"
           ],
           "entry_point_tokens": 70,
-          "full_tokens": 5500,
+          "full_tokens": 8176,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-12-01",
@@ -2616,7 +2697,7 @@
         },
         {
           "name": "pyright",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2628,15 +2709,15 @@
             "static-analysis"
           ],
           "entry_point_tokens": 70,
-          "full_tokens": 4000,
+          "full_tokens": 3506,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/python/tooling/pyright/SKILL.md"
         },
         {
           "name": "pytest",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2656,8 +2737,8 @@
             "flask",
             "coverage"
           ],
-          "entry_point_tokens": 70,
-          "full_tokens": 4200,
+          "entry_point_tokens": 163,
+          "full_tokens": 8084,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-01",
@@ -2665,7 +2746,7 @@
         },
         {
           "name": "sqlalchemy",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -2684,17 +2765,17 @@
             "flask"
           ],
           "entry_point_tokens": 80,
-          "full_tokens": 5000,
+          "full_tokens": 5876,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/python/data/sqlalchemy/SKILL.md"
         }
       ],
       "rust": [
         {
           "name": "axum",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "rust",
           "framework": "axum",
@@ -2710,7 +2791,7 @@
             "testing"
           ],
           "entry_point_tokens": 140,
-          "full_tokens": 5500,
+          "full_tokens": 1814,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-23",
@@ -2718,7 +2799,7 @@
         },
         {
           "name": "clap",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "rust",
           "framework": null,
@@ -2732,7 +2813,7 @@
             "testing"
           ],
           "entry_point_tokens": 120,
-          "full_tokens": 4500,
+          "full_tokens": 1188,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-23",
@@ -2740,7 +2821,7 @@
         },
         {
           "name": "desktop-applications",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "rust",
           "framework": null,
@@ -2752,7 +2833,7 @@
             "debugging"
           ],
           "entry_point_tokens": 52,
-          "full_tokens": 2582,
+          "full_tokens": 32953,
           "requires": [],
           "author": "bobmatnyc",
           "updated": "2025-12-03",
@@ -2769,7 +2850,7 @@
         },
         {
           "name": "tauri",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "rust",
           "framework": "tauri",
@@ -2791,7 +2872,7 @@
       "typescript": [
         {
           "name": "drizzle-migrations",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2805,18 +2886,18 @@
             "orm"
           ],
           "entry_point_tokens": 250,
-          "full_tokens": 5000,
+          "full_tokens": 3024,
           "requires": [
             "toolchains-typescript-core",
             "toolchains-typescript-data-drizzle"
           ],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-23",
+          "updated": "2025-12-31",
           "source_path": "toolchains/typescript/data/drizzle-migrations/SKILL.md"
         },
         {
           "name": "drizzle-orm",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2832,12 +2913,12 @@
             "type-safety"
           ],
           "entry_point_tokens": 75,
-          "full_tokens": 4200,
+          "full_tokens": 14767,
           "requires": [
             "typescript-core"
           ],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/typescript/data/drizzle/SKILL.md",
           "has_references": true,
           "reference_files": [
@@ -2849,7 +2930,7 @@
         },
         {
           "name": "fastify",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": "fastify",
@@ -2867,7 +2948,7 @@
             "testing"
           ],
           "entry_point_tokens": 130,
-          "full_tokens": 5200,
+          "full_tokens": 1494,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-23",
@@ -2875,7 +2956,7 @@
         },
         {
           "name": "jest-typescript",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2886,7 +2967,7 @@
             "react-testing-library"
           ],
           "entry_point_tokens": 75,
-          "full_tokens": 4500,
+          "full_tokens": 6420,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2025-12-01",
@@ -2894,7 +2975,7 @@
         },
         {
           "name": "kysely",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2911,7 +2992,7 @@
             "orm-alternative"
           ],
           "entry_point_tokens": 68,
-          "full_tokens": 4167,
+          "full_tokens": 6522,
           "requires": [
             "typescript-core"
           ],
@@ -2921,7 +3002,7 @@
         },
         {
           "name": "nodejs-backend",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": "nodejs-backend",
@@ -2938,15 +3019,15 @@
             "orm"
           ],
           "entry_point_tokens": 75,
-          "full_tokens": 4700,
+          "full_tokens": 5576,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/typescript/frameworks/nodejs-backend/SKILL.md"
         },
         {
           "name": "prisma-orm",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2963,17 +3044,17 @@
             "relations"
           ],
           "entry_point_tokens": 75,
-          "full_tokens": 4800,
+          "full_tokens": 3485,
           "requires": [
             "typescript-core"
           ],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/typescript/data/prisma/SKILL.md"
         },
         {
           "name": "tanstack-query",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -2988,7 +3069,7 @@
             "optimistic-updates"
           ],
           "entry_point_tokens": 70,
-          "full_tokens": 5500,
+          "full_tokens": 14141,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-12-01",
@@ -2996,7 +3077,7 @@
         },
         {
           "name": "trpc",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -3013,17 +3094,17 @@
             "real-time"
           ],
           "entry_point_tokens": 70,
-          "full_tokens": 5000,
+          "full_tokens": 12046,
           "requires": [
             "../../validation/zod"
           ],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/typescript/api/trpc/SKILL.md"
         },
         {
           "name": "turborepo",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -3037,7 +3118,7 @@
             "pipeline"
           ],
           "entry_point_tokens": 70,
-          "full_tokens": 5500,
+          "full_tokens": 9386,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-12-01",
@@ -3059,8 +3140,8 @@
             "decision-trees",
             "troubleshooting"
           ],
-          "entry_point_tokens": 180,
-          "full_tokens": 4500,
+          "entry_point_tokens": 107,
+          "full_tokens": 21673,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-12-16",
@@ -3077,7 +3158,7 @@
         },
         {
           "name": "vitest",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -3095,7 +3176,7 @@
             "coverage"
           ],
           "entry_point_tokens": 78,
-          "full_tokens": 3200,
+          "full_tokens": 6035,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2025-12-03",
@@ -3103,7 +3184,7 @@
         },
         {
           "name": "zod",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -3115,7 +3196,7 @@
             "type-safety"
           ],
           "entry_point_tokens": 65,
-          "full_tokens": 5000,
+          "full_tokens": 7468,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-12-01",
@@ -3123,7 +3204,7 @@
         },
         {
           "name": "zustand",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
           "framework": null,
@@ -3135,7 +3216,7 @@
             "hooks"
           ],
           "entry_point_tokens": 70,
-          "full_tokens": 4500,
+          "full_tokens": 6408,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-12-01",
@@ -3145,7 +3226,7 @@
       "ui": [
         {
           "name": "daisyui",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ui",
           "framework": null,
@@ -3157,7 +3238,7 @@
             "ui-library"
           ],
           "entry_point_tokens": 75,
-          "full_tokens": 4200,
+          "full_tokens": 9503,
           "requires": [
             "../../styling/tailwind"
           ],
@@ -3167,7 +3248,7 @@
         },
         {
           "name": "headlessui",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ui",
           "framework": null,
@@ -3183,7 +3264,7 @@
             "typescript"
           ],
           "entry_point_tokens": 80,
-          "full_tokens": 4400,
+          "full_tokens": 6814,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-11-30",
@@ -3191,7 +3272,7 @@
         },
         {
           "name": "shadcn-ui",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ui",
           "framework": null,
@@ -3204,18 +3285,18 @@
             "accessibility"
           ],
           "entry_point_tokens": 85,
-          "full_tokens": 4800,
+          "full_tokens": 7879,
           "requires": [
             "../../styling/tailwind",
             "../../../javascript/frameworks/react"
           ],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/ui/components/shadcn/SKILL.md"
         },
         {
           "name": "tailwind",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ui",
           "framework": null,
@@ -3229,17 +3310,17 @@
             "design-system"
           ],
           "entry_point_tokens": 75,
-          "full_tokens": 4500,
+          "full_tokens": 8041,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/ui/styling/tailwind/SKILL.md"
         }
       ],
       "universal": [
         {
           "name": "api-security-review",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3252,7 +3333,7 @@
             "review"
           ],
           "entry_point_tokens": 100,
-          "full_tokens": 4500,
+          "full_tokens": 5025,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-12-08",
@@ -3260,7 +3341,7 @@
         },
         {
           "name": "dependency-audit",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3282,7 +3363,7 @@
         },
         {
           "name": "docker",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3293,8 +3374,8 @@
             "infrastructure",
             "deployment"
           ],
-          "entry_point_tokens": 75,
-          "full_tokens": 5500,
+          "entry_point_tokens": 78,
+          "full_tokens": 7794,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-12-01",
@@ -3302,7 +3383,7 @@
         },
         {
           "name": "emergency-release-workflow",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3323,7 +3404,7 @@
         },
         {
           "name": "github-actions",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3334,8 +3415,8 @@
             "devops",
             "workflows"
           ],
-          "entry_point_tokens": 70,
-          "full_tokens": 5000,
+          "entry_point_tokens": 30,
+          "full_tokens": 7527,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-12-23",
@@ -3343,7 +3424,7 @@
         },
         {
           "name": "graphql",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3359,15 +3440,56 @@
             "typescript"
           ],
           "entry_point_tokens": 70,
-          "full_tokens": 5500,
+          "full_tokens": 12073,
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2025-12-01",
           "source_path": "toolchains/universal/data/graphql/SKILL.md"
         },
         {
+          "name": "homebrew-formula-maintenance",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "universal",
+          "framework": null,
+          "tags": [
+            "homebrew",
+            "formula",
+            "brew",
+            "pypi",
+            "release",
+            "ci"
+          ],
+          "entry_point_tokens": 135,
+          "full_tokens": 1077,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-31",
+          "source_path": "toolchains/universal/infrastructure/homebrew-formula-maintenance/SKILL.md"
+        },
+        {
+          "name": "media-transcoding",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "universal",
+          "framework": null,
+          "tags": [
+            "ffmpeg",
+            "video",
+            "media",
+            "transcoding",
+            "encoding"
+          ],
+          "entry_point_tokens": 112,
+          "full_tokens": 693,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2025-12-31",
+          "source_path": "toolchains/universal/infrastructure/media-transcoding/SKILL.md"
+        },
+        {
           "name": "pr-quality-checklist",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "universal",
           "framework": null,
@@ -3390,7 +3512,7 @@
     "examples": [
       {
         "name": "bad-example-skill",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "example",
         "toolchain": null,
         "framework": null,
@@ -3400,7 +3522,7 @@
           "violations",
           "do-not-copy"
         ],
-        "entry_point_tokens": 3232,
+        "entry_point_tokens": 74,
         "full_tokens": 3232,
         "requires": [
           "⚠️ VIOLATION: This field should be empty!",
@@ -3409,12 +3531,12 @@
           "⚠️ pytest-patterns"
         ],
         "author": "claude-mpm-skills",
-        "updated": "2025-12-01",
+        "updated": "2025-12-31",
         "source_path": "examples/bad-interdependent-skill/SKILL.md"
       },
       {
         "name": "example-framework-skill",
-        "version": "1.0.1",
+        "version": "1.0.0",
         "category": "example",
         "toolchain": null,
         "framework": null,
@@ -3427,24 +3549,24 @@
           "testing",
           "database"
         ],
-        "entry_point_tokens": 2844,
+        "entry_point_tokens": 72,
         "full_tokens": 2844,
         "requires": [],
         "author": "claude-mpm-skills",
-        "updated": "2025-12-01",
+        "updated": "2025-12-31",
         "source_path": "examples/good-self-contained-skill/SKILL.md"
       }
     ]
   },
   "metadata": {
-    "total_skills": 140,
+    "total_skills": 146,
     "categories": {
-      "universal": 35,
-      "toolchains": 103,
+      "universal": 37,
+      "toolchains": 107,
       "examples": 2
     },
     "toolchains": {
-      "ai": 7,
+      "ai": 9,
       "elixir": 4,
       "golang": 7,
       "javascript": 12,
@@ -3455,7 +3577,7 @@
       "rust": 4,
       "typescript": 14,
       "ui": 4,
-      "universal": 7
+      "universal": 9
     },
     "last_updated": "2025-12-31",
     "schema_version": "2.0.0"

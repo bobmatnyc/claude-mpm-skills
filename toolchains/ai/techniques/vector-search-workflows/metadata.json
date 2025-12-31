@@ -1,0 +1,25 @@
+{
+  "name": "vector-search-workflows",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "ai",
+  "framework": "vector-search-workflows",
+  "tags": [
+    "vector-search",
+    "embeddings",
+    "indexing",
+    "search",
+    "mcp"
+  ],
+  "entry_point_tokens": 118,
+  "full_tokens": 700,
+  "related_skills": [
+    "../../protocols/mcp",
+    "../../../universal/main/mcp-builder"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "updated": "2025-12-31",
+  "source_path": "toolchains/ai/techniques/vector-search-workflows/SKILL.md",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

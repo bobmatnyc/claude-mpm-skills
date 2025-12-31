@@ -1,0 +1,26 @@
+{
+  "name": "homebrew-formula-maintenance",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "universal",
+  "framework": "homebrew-formula-maintenance",
+  "tags": [
+    "homebrew",
+    "formula",
+    "brew",
+    "pypi",
+    "release",
+    "ci"
+  ],
+  "entry_point_tokens": 135,
+  "full_tokens": 1077,
+  "related_skills": [
+    "../github-actions",
+    "../docker"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "updated": "2025-12-31",
+  "source_path": "toolchains/universal/infrastructure/homebrew-formula-maintenance/SKILL.md",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

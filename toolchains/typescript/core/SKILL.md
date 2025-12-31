@@ -60,6 +60,10 @@ Modern TypeScript development patterns for type safety, runtime validation, and 
 | `verbatimModuleSyntax` | Enforces explicit type-only imports | ESM projects |
 | `erasableSyntaxOnly` | Node.js 22+ native TS support | Type stripping environments |
 
+## Local Baselines
+
+See `references/configuration.md` for repo-specific tsconfig patterns (CommonJS CLI, NodeNext strict, Next.js bundler).
+
 ## Core Type Patterns
 
 ### Const Type Parameters

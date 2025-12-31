@@ -1069,6 +1069,18 @@ mypy src/
 pyright src/
 ```
 
+## Local mypy Profiles (Your Repos)
+
+Common patterns from your Python projects:
+
+- **Strict default** (edgar, kuzu-memory, mcp-browser):
+  `disallow_untyped_defs = true`, `check_untyped_defs = true`, `no_implicit_optional = true`, `warn_return_any = true`, `strict_equality = true`.
+- **Relaxed profile** (mcp-ticketer): strict flags disabled temporarily with a `disable_error_code` list for patch releases.
+- **Incremental adoption** (mcp-vector-search): `ignore_errors = true` while stabilizing types.
+- **Missing imports**: `ignore_missing_imports = true` used in mcp-memory and mcp-ticketer.
+
+Reference: see `pyproject.toml` in `edgar`, `kuzu-memory`, `mcp-vector-search`, and `mcp-ticketer`.
+
 ## Best Practices
 
 ### 1. Start with Key Modules

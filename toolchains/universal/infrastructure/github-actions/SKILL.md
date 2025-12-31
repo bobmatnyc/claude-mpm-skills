@@ -1426,6 +1426,31 @@ jobs:
 
 ---
 
+## Local Workflow Patterns (Your Repos)
+
+### Python + uv CI (mcp-vector-search)
+
+- Install uv: `astral-sh/setup-uv@v3` and `uv python install 3.11`.
+- Use `uv sync --dev` and run `uv run ruff`, `uv run mypy`, `uv run pytest`.
+- Use OS + Python version matrix and upload coverage to Codecov on linux.
+
+### Node + pnpm CI (ai-code-review)
+
+- Use `pnpm/action-setup@v4` and `actions/setup-node@v4` with pnpm cache.
+- Install with `pnpm install --frozen-lockfile`, then `pnpm run lint`, `pnpm run build:types`, `pnpm test`.
+
+### Release on Tags
+
+- Trigger on `push` tags `v*`.
+- Build, create GitHub Release notes, and publish to npm or PyPI.
+- Use `pypa/gh-action-pypi-publish@release/v1` or `NODE_AUTH_TOKEN` for npm publish.
+
+### Homebrew Update Pipeline
+
+- Trigger on `workflow_run` after CI success.
+- Run `scripts/update_homebrew_formula.py` with `HOMEBREW_TAP_TOKEN`.
+- On failure, open an issue with manual update steps.
+
 ## Resources
 
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)

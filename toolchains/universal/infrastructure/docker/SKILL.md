@@ -1057,6 +1057,27 @@ docker history myapp:latest
 
 ---
 
+## Local Docker Patterns (mcp-browser, mcp-memory)
+
+### mcp-browser dev compose
+
+- `docker-compose.yml` runs `mcp-server` with a port range `8875-8895` and optional `chrome` profile.
+- Code mounts are read-only (`./src:/app/src:ro`) with persistent logs and temp volumes.
+- Environment defaults: `MCP_DEBUG=true`, `MCP_LOG_LEVEL=DEBUG`, `MCP_HOST=0.0.0.0`, `MCP_PORT=8875`.
+- Optional profiles: `chrome` (browser) and `tools` (dev tools container).
+
+### mcp-browser Dockerfile.dev
+
+- `ARG PYTHON_VERSION=3.11`, install `watchdog` + Playwright Chromium.
+- Install package in editable mode and run `python -m src.dev_runner`.
+- Non-root user and healthcheck on `/health`.
+
+### mcp-memory production Dockerfile
+
+- Multi-stage build with venv in `/opt/venv` and `python:3.11-slim`.
+- Runtime installs `curl` for healthcheck, sets `PYTHONPATH=/app`.
+- Uses non-root user and `CMD ["python", "run_api_server.py"]` with `/health` check.
+
 ## Troubleshooting
 
 ### Common Issues

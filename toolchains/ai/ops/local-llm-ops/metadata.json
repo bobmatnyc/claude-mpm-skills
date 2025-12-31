@@ -1,0 +1,23 @@
+{
+  "name": "local-llm-ops",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "ai",
+  "framework": "local-llm-ops",
+  "tags": [
+    "llm",
+    "ollama",
+    "local",
+    "benchmark",
+    "chat",
+    "ops"
+  ],
+  "entry_point_tokens": 125,
+  "full_tokens": 659,
+  "related_skills": [],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "updated": "2025-12-31",
+  "source_path": "toolchains/ai/ops/local-llm-ops/SKILL.md",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

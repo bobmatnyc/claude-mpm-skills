@@ -1,11 +1,11 @@
 ---
-name: mcp-builder-evaluation
-description: "MCP (Model Context Protocol) server evaluation guide for creating comprehensive test suites with read-only, independent questions"
+name: mcp-builder
+description: "MCP (Model Context Protocol) server build and evaluation guide, including local conventions for tool surfaces, config, and testing"
 progressive_disclosure:
   entry_point:
-    summary: "MCP (Model Context Protocol) server evaluation guide for creating comprehensive test suites with read-only, independent questions"
-    when_to_use: "When working with mcp-builder-evaluation or related functionality."
-    quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
+    summary: "Build and evaluate MCP servers: define tool/resource surfaces, configure stdio, and validate with independent questions."
+    when_to_use: "Designing MCP servers or evaluating whether their tools and docs enable reliable, read-only usage."
+    quick_start: "1. Define tool/resource surface 2. Wire stdio server + .mcp.json 3. Draft evaluation questions"
 ---
 # MCP Server Evaluation Guide
 
@@ -583,6 +583,38 @@ python scripts/evaluation.py \
    - Read the agent's feedback on your tools
    - Identify areas for improvement
    - Iterate on your MCP server design
+
+## Local MCP Server Conventions (mcp-* Repos)
+
+Use these patterns when building or evaluating your MCP servers:
+
+- Provide a `mcp` subcommand that runs the stdio server (e.g., `mcp-vector-search mcp`, `mcp-ticketer mcp --path <repo>`, `mcp-browser mcp`).
+- Favor compact, consolidated tool surfaces to reduce token footprint; use pagination and compact modes when listing data.
+- Include `setup`, `install`, or `doctor` commands to validate runtime dependencies and integrate with clients.
+- Prefer `.mcp.json` entries with `type: stdio`, explicit `command`, and minimal `env` overrides.
+
+Example `.mcp.json` entry:
+
+```json
+{
+  "mcpServers": {
+    "mcp-vector-search": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "mcp-vector-search", "mcp"],
+      "env": {
+        "MCP_ENABLE_FILE_WATCHING": "true"
+      }
+    }
+  }
+}
+```
+
+Operational notes:
+
+- Use explicit env vars for adapters and database paths (e.g., `MCP_TICKETER_ADAPTER`, `KUZU_MEMORY_DB`).
+- Expose a health endpoint when running HTTP/SSE variants.
+- Allow dynamic port allocation for browser integrations (mcp-browser uses a port range).
 
 ## Troubleshooting
 

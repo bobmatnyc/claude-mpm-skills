@@ -917,6 +917,24 @@ biome check --max-diagnostics=20 .
 }
 ```
 
+## Local Biome Configs (Your Repos)
+
+Patterns from active projects:
+
+- `ai-code-review/biome.json`: `files.includes` targets `src/**/*.ts` and excludes tests, `lineWidth: 100`, single quotes, semicolons always, and `noExplicitAny: warn`.
+- `itinerizer-ts/biome.json`: `files.ignore` includes `node_modules`, `dist`, `.claude`, and data directories; `organizeImports.enabled = true`.
+- `matsuoka-com` and `diogenes` use similar formatting defaults (2-space indent, lineWidth 100).
+
+Common scripts:
+
+```json
+{
+  "lint": "biome check src/ --diagnostic-level=error",
+  "lint:fix": "biome check src/ --write",
+  "format": "biome format src/ --write"
+}
+```
+
 ## Resources
 
 - **Official Docs**: https://biomejs.dev

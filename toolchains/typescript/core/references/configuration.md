@@ -86,6 +86,53 @@ Complete tsconfig.json reference for modern TypeScript projects.
 }
 ```
 
+## Local Repo Baselines (Examples)
+
+### CLI / Node CommonJS (ai-code-review)
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": true,
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true,
+    "types": ["vitest/globals", "node"],
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "**/*.test.ts"]
+}
+```
+
+### NodeNext Strict (smarterthings)
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "tests"]
+}
+```
+
+### Next.js Bundler (matsuoka-com)
+
+Use the Next.js example above with `moduleResolution: "bundler"` and `noEmit: true` for app builds.
+
 ### Node.js 22+ Type Stripping
 
 ```json
