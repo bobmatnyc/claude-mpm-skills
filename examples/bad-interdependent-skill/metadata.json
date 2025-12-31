@@ -1,7 +1,7 @@
 {
   "name": "bad-example-skill",
   "version": "1.0.0",
-  "category": "framework",
+  "category": "example",
   "toolchain": "python",
   "description": "ANTI-PATTERN - Example showing violations of self-containment (DO NOT COPY)",
   "tags": [

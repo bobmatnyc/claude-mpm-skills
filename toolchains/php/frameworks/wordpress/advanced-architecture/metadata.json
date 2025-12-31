@@ -1,6 +1,7 @@
 {
   "name": "wordpress-advanced-architecture",
   "version": "1.0.0",
+  "category": "toolchain",
   "description": "Advanced WordPress development with REST API, WP-CLI, performance optimization, and caching strategies for scalable applications",
   "tags": [
     "wordpress",

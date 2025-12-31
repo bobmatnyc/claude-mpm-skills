@@ -1,6 +1,7 @@
 {
   "name": "wordpress-security-validation",
   "version": "1.0.0",
+  "category": "toolchain",
   "description": "Security-first WordPress development with nonces, sanitization, validation, and escaping for robust plugin/theme security",
   "skill_level": "intermediate",
   "estimated_time_minutes": 120,

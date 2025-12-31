@@ -1,6 +1,7 @@
 {
   "name": "wordpress-testing-qa",
   "version": "1.0.0",
+  "category": "toolchain",
   "description": "WordPress plugin and theme testing with PHPUnit integration tests, WP_Mock unit tests, PHPCS coding standards enforcement, and GitHub Actions CI/CD pipelines",
   "tags": [
     "wordpress",

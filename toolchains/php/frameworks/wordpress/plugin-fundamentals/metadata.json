@@ -2,7 +2,7 @@
   "name": "wordpress-plugin-fundamentals",
   "version": "1.0.0",
   "description": "Modern WordPress plugin development with PHP 8.3+, OOP architecture, hooks system, database interactions, and Settings API for building secure, maintainable plugins",
-  "category": "php-frameworks",
+  "category": "toolchain",
   "tags": [
     "wordpress",
     "php",
