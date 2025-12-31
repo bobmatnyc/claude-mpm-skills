@@ -22,9 +22,7 @@
     "claude-desktop"
   ],
   "entry_point_tokens": 78,
-  "full_tokens": 4850,
-  "requires": [],
-  "sub_skills": [],
+  "full_tokens": 8524,
   "related_skills": [
     "../../../typescript/core",
     "../../../python/core",
@@ -32,6 +30,8 @@
   ],
   "author": "Claude MPM Team",
   "license": "MIT",
+  "requires": [],
+  "sub_skills": [],
   "created": "2025-11-30",
   "updated": "2025-11-30",
   "source_path": "toolchains/ai/protocols/mcp",

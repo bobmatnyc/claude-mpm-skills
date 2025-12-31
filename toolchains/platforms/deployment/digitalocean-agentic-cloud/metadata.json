@@ -1,8 +1,8 @@
 {
   "name": "digitalocean-agentic-cloud",
   "version": "1.0.0",
-  "category": "platform",
-  "platform": "deployment",
+  "category": "toolchain",
+  "toolchain": null,
   "tags": [
     "digitalocean",
     "gradient-ai",
@@ -12,12 +12,13 @@
     "agents"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 3600,
+  "full_tokens": 530,
   "related_skills": [
     "digitalocean-storage",
     "digitalocean-compute",
     "digitalocean-management"
   ],
   "author": "Claude MPM",
-  "license": "MIT"
+  "license": "MIT",
+  "platform": "deployment"
 }

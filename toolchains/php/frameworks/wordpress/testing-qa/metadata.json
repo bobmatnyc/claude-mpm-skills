@@ -2,7 +2,7 @@
   "name": "wordpress-testing-qa",
   "version": "1.0.0",
   "category": "toolchain",
-  "description": "WordPress plugin and theme testing with PHPUnit integration tests, WP_Mock unit tests, PHPCS coding standards enforcement, and GitHub Actions CI/CD pipelines",
+  "toolchain": "php",
   "tags": [
     "wordpress",
     "php",
@@ -16,6 +16,16 @@
     "code-coverage",
     "coding-standards"
   ],
+  "entry_point_tokens": 106,
+  "full_tokens": 12579,
+  "related_skills": [
+    "../plugin-fundamentals",
+    "../security-validation",
+    "../block-editor",
+    "../../../../python/testing/pytest",
+    "../../../../universal/infrastructure/github-actions"
+  ],
+  "description": "WordPress plugin and theme testing with PHPUnit integration tests, WP_Mock unit tests, PHPCS coding standards enforcement, and GitHub Actions CI/CD pipelines",
   "requirements": {
     "wordpress": ">=6.4",
     "php": ">=8.1",
@@ -31,13 +41,6 @@
     "../security-validation",
     "../../../../php/fundamentals",
     "../../../../php/composer"
-  ],
-  "related_skills": [
-    "../plugin-fundamentals",
-    "../security-validation",
-    "../block-editor",
-    "../../../../python/testing/pytest",
-    "../../../../universal/infrastructure/github-actions"
   ],
   "learning_path": [
     "Understanding the WordPress testing pyramid",
@@ -133,8 +136,19 @@
       "Travis CI"
     ],
     "matrix_testing": {
-      "php_versions": ["8.1", "8.2", "8.3"],
-      "wordpress_versions": ["6.4", "6.5", "6.6", "6.7", "latest", "trunk"]
+      "php_versions": [
+        "8.1",
+        "8.2",
+        "8.3"
+      ],
+      "wordpress_versions": [
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "latest",
+        "trunk"
+      ]
     },
     "coverage_reporting": [
       "Codecov",

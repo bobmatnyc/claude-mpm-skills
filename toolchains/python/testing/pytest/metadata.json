@@ -21,9 +21,7 @@
     "coverage"
   ],
   "entry_point_tokens": 70,
-  "full_tokens": 4200,
-  "requires": [],
-  "sub_skills": [],
+  "full_tokens": 7862,
   "related_skills": [
     "../../frameworks/fastapi-local-dev",
     "../../../../universal/testing/test-driven-development",
@@ -31,6 +29,8 @@
   ],
   "author": "Claude MPM Team",
   "license": "MIT",
+  "requires": [],
+  "sub_skills": [],
   "created": "2025-11-30",
   "updated": "2025-11-30",
   "source_path": "toolchains/python/testing/pytest",

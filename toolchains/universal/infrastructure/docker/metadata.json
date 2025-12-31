@@ -2,14 +2,21 @@
   "name": "docker",
   "version": "1.0.0",
   "category": "universal",
-  "subcategory": "infrastructure",
-  "tags": ["docker", "containers", "devops", "infrastructure", "deployment"],
+  "toolchain": "universal",
+  "tags": [
+    "docker",
+    "containers",
+    "devops",
+    "infrastructure",
+    "deployment"
+  ],
   "entry_point_tokens": 75,
-  "full_tokens": 5500,
+  "full_tokens": 7536,
   "related_skills": [],
   "author": "claude-mpm-skills",
+  "license": "MIT",
+  "subcategory": "infrastructure",
   "created": "2025-11-30",
   "updated": "2025-11-30",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
 }

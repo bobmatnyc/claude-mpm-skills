@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "ai",
-  "sdk": "anthropic",
   "tags": [
     "ai",
     "claude",
@@ -15,19 +14,22 @@
     "streaming",
     "chat"
   ],
-  "languages": [
-    "python",
-    "typescript"
-  ],
   "entry_point_tokens": 85,
-  "full_tokens": 5000,
-  "progressive_loading": true,
+  "full_tokens": 5920,
   "related_skills": [
     "../services/openrouter",
     "../protocols/mcp",
     "../../../python/frameworks/fastapi",
     "../../../typescript/frameworks/nodejs-backend"
   ],
+  "author": "Claude MPM",
+  "license": "MIT",
+  "sdk": "anthropic",
+  "languages": [
+    "python",
+    "typescript"
+  ],
+  "progressive_loading": true,
   "key_features": [
     "Messages API (chat completions)",
     "Streaming responses",
@@ -49,8 +51,6 @@
     "Streaming chat applications",
     "AI-powered API endpoints"
   ],
-  "author": "Claude MPM",
-  "license": "MIT",
   "documentation": "https://docs.anthropic.com/",
   "github": {
     "python": "https://github.com/anthropics/anthropic-sdk-python",

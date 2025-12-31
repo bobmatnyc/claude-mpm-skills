@@ -2,8 +2,7 @@
   "name": "threat-modeling",
   "version": "1.0.0",
   "category": "universal",
-  "subcategory": "security",
-  "description": "Threat modeling workflow for software systems: scope, data flow diagrams, STRIDE analysis, risk scoring, and converting mitigations into backlog and tests",
+  "toolchain": null,
   "tags": [
     "security",
     "threat-modeling",
@@ -13,9 +12,7 @@
     "abuse-cases"
   ],
   "entry_point_tokens": 150,
-  "full_tokens": 8000,
-  "self_contained": true,
-  "requires": [],
+  "full_tokens": 1495,
   "related_skills": [
     "security-scanning",
     "api-design-patterns",
@@ -24,6 +21,10 @@
   ],
   "author": "Claude MPM Team",
   "license": "MIT",
+  "subcategory": "security",
+  "description": "Threat modeling workflow for software systems: scope, data flow diagrams, STRIDE analysis, risk scoring, and converting mitigations into backlog and tests",
+  "self_contained": true,
+  "requires": [],
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "created": "2025-12-17",
   "updated": "2025-12-17",

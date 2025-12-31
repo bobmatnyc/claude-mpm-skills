@@ -19,7 +19,7 @@
     "frontend"
   ],
   "entry_point_tokens": 80,
-  "full_tokens": 5000,
+  "full_tokens": 7994,
   "related_skills": [
     "../../build/vite",
     "../../typescript/testing/vitest",

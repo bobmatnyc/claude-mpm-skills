@@ -16,11 +16,11 @@
     "deployment"
   ],
   "entry_point_tokens": 180,
-  "full_tokens": 5600,
-  "requires": [],
+  "full_tokens": 1341,
   "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [],
   "updated": "2025-12-05",
   "source_path": "toolchains/elixir/ops/phoenix-ops/SKILL.md",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
 }

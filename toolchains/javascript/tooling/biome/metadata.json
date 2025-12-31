@@ -15,7 +15,7 @@
     "rust"
   ],
   "entry_point_tokens": 70,
-  "full_tokens": 3500,
+  "full_tokens": 4832,
   "related_skills": [
     "../../typescript/typescript-core",
     "../build/vite",

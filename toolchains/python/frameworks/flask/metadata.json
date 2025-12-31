@@ -17,7 +17,7 @@
     "marshmallow"
   ],
   "entry_point_tokens": 75,
-  "full_tokens": 4300,
+  "full_tokens": 9864,
   "related_skills": [
     "../../testing/pytest",
     "../../data/sqlalchemy",

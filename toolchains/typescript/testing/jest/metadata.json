@@ -4,9 +4,14 @@
   "category": "toolchain",
   "toolchain": "typescript",
   "framework": "jest",
-  "tags": ["testing", "jest", "typescript", "react-testing-library"],
+  "tags": [
+    "testing",
+    "jest",
+    "typescript",
+    "react-testing-library"
+  ],
   "entry_point_tokens": 75,
-  "full_tokens": 4500,
+  "full_tokens": 6420,
   "related_skills": [
     "../../typescript-core",
     "../../../javascript/frameworks/react",

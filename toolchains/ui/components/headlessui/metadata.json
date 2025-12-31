@@ -2,7 +2,7 @@
   "name": "headlessui",
   "version": "1.0.0",
   "category": "universal",
-  "subcategory": "components",
+  "toolchain": "ui",
   "tags": [
     "headlessui",
     "react",
@@ -15,15 +15,16 @@
     "typescript"
   ],
   "entry_point_tokens": 80,
-  "full_tokens": 4400,
+  "full_tokens": 6814,
   "related_skills": [
     "../../../javascript/frameworks/react",
     "../../../javascript/frameworks/vue",
     "../../styling/tailwind"
   ],
   "author": "claude-mpm-skills",
+  "license": "MIT",
+  "subcategory": "components",
   "created": "2025-11-30",
   "updated": "2025-11-30",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
 }

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "typescript",
-  "subcategory": "state",
   "tags": [
     "tanstack-query",
     "react-query",
@@ -15,7 +14,7 @@
     "optimistic-updates"
   ],
   "entry_point_tokens": 70,
-  "full_tokens": 5500,
+  "full_tokens": 14141,
   "related_skills": [
     "../zustand",
     "../../api/trpc",
@@ -23,8 +22,9 @@
     "../../../nextjs"
   ],
   "author": "claude-mpm-skills",
+  "license": "MIT",
+  "subcategory": "state",
   "created": "2025-11-30",
   "updated": "2025-11-30",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
 }

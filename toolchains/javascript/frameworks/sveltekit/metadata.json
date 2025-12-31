@@ -17,18 +17,18 @@
     "typescript"
   ],
   "entry_point_tokens": 80,
-  "full_tokens": 5000,
+  "full_tokens": 8391,
   "related_skills": [
     "../svelte",
     "../../testing/vitest",
     "../../testing/playwright"
   ],
+  "author": "claude-mpm-skills",
+  "license": "MIT",
   "requires": [
     "../svelte"
   ],
-  "author": "claude-mpm-skills",
   "created": "2025-11-30",
   "updated": "2025-11-30",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
 }

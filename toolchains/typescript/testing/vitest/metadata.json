@@ -18,9 +18,7 @@
     "coverage"
   ],
   "entry_point_tokens": 78,
-  "full_tokens": 3200,
-  "requires": [],
-  "sub_skills": [],
+  "full_tokens": 6035,
   "related_skills": [
     "../../core",
     "../../../javascript/frameworks/react",
@@ -28,6 +26,8 @@
   ],
   "author": "Claude MPM Team",
   "license": "MIT",
+  "requires": [],
+  "sub_skills": [],
   "created": "2025-11-30",
   "modified": "2025-11-30",
   "updated": "2025-11-30",

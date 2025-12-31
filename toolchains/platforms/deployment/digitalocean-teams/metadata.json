@@ -1,8 +1,8 @@
 {
   "name": "digitalocean-teams",
   "version": "1.0.0",
-  "category": "platform",
-  "platform": "deployment",
+  "category": "toolchain",
+  "toolchain": null,
   "tags": [
     "digitalocean",
     "teams",
@@ -13,11 +13,12 @@
     "sso"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 3800,
+  "full_tokens": 480,
   "related_skills": [
     "digitalocean-overview",
     "digitalocean-management"
   ],
   "author": "Claude MPM",
-  "license": "MIT"
+  "license": "MIT",
+  "platform": "deployment"
 }

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "ai",
-  "subcategory": "frameworks",
   "tags": [
     "dspy",
     "prompt-optimization",
@@ -20,16 +19,17 @@
     "optimization"
   ],
   "entry_point_tokens": 75,
-  "full_tokens": 5500,
+  "full_tokens": 10191,
   "related_skills": [
     "../../sdks/anthropic",
     "../langchain",
     "../../services/openrouter"
   ],
   "author": "claude-mpm-skills",
+  "license": "MIT",
+  "subcategory": "frameworks",
   "created": "2025-11-30",
   "updated": "2025-11-30",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "description": "Declarative framework for automatic prompt optimization treating prompts as code with signatures, modules, and optimizers",
   "key_features": [

@@ -4,10 +4,19 @@
   "category": "toolchain",
   "toolchain": "golang",
   "framework": "database",
-  "tags": ["database", "golang", "sqlx", "pgx", "migrations", "repository-pattern"],
+  "tags": [
+    "database",
+    "golang",
+    "sqlx",
+    "pgx",
+    "migrations",
+    "repository-pattern"
+  ],
   "entry_point_tokens": 140,
-  "full_tokens": 5400,
-  "related_skills": ["../toolchains-golang-testing"],
+  "full_tokens": 8868,
+  "related_skills": [
+    "../toolchains-golang-testing"
+  ],
   "author": "Claude MPM",
   "license": "MIT"
 }

@@ -2,7 +2,7 @@
   "name": "wordpress-advanced-architecture",
   "version": "1.0.0",
   "category": "toolchain",
-  "description": "Advanced WordPress development with REST API, WP-CLI, performance optimization, and caching strategies for scalable applications",
+  "toolchain": "php",
   "tags": [
     "wordpress",
     "php",
@@ -15,6 +15,16 @@
     "memcached",
     "multisite"
   ],
+  "entry_point_tokens": 98,
+  "full_tokens": 12169,
+  "related_skills": [
+    "../plugin-fundamentals",
+    "../security",
+    "../testing-qa",
+    "../../../../universal/data/graphql",
+    "../../../../universal/infrastructure/docker"
+  ],
+  "description": "Advanced WordPress development with REST API, WP-CLI, performance optimization, and caching strategies for scalable applications",
   "requirements": {
     "wordpress": ">=6.4",
     "php": ">=8.1",
@@ -31,13 +41,6 @@
   "dependencies": [
     "../plugin-fundamentals",
     "../security",
-    "../../../../universal/infrastructure/docker"
-  ],
-  "related_skills": [
-    "../plugin-fundamentals",
-    "../security",
-    "../testing-qa",
-    "../../../../universal/data/graphql",
     "../../../../universal/infrastructure/docker"
   ],
   "learning_path": [

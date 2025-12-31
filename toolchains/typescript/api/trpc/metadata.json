@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "typescript",
-  "subcategory": "api",
   "tags": [
     "trpc",
     "api",
@@ -17,20 +16,21 @@
     "real-time"
   ],
   "entry_point_tokens": 70,
-  "full_tokens": 5000,
+  "full_tokens": 12046,
   "related_skills": [
     "../../validation/zod",
     "../../../nextjs",
     "../../state/zustand",
     "../../testing/vitest"
   ],
+  "author": "claude-mpm-skills",
+  "license": "MIT",
+  "subcategory": "api",
   "requires": [
     "../../validation/zod"
   ],
-  "author": "claude-mpm-skills",
   "created": "2025-11-30",
   "updated": "2025-11-30",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "description": "End-to-end type safety for TypeScript APIs without code generation. Build type-safe APIs with automatic client-server type inference.",
   "keywords": [

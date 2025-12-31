@@ -1,0 +1,27 @@
+{
+  "name": "better-auth-integrations",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": null,
+  "tags": [
+    "better-auth",
+    "auth",
+    "integrations",
+    "nextjs",
+    "sveltekit",
+    "remix",
+    "express",
+    "hono",
+    "cloudflare"
+  ],
+  "entry_point_tokens": 160,
+  "full_tokens": 1103,
+  "related_skills": [
+    "better-auth-core",
+    "better-auth-authentication",
+    "better-auth-plugins"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT",
+  "platform": "auth"
+}

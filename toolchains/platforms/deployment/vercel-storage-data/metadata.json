@@ -1,8 +1,8 @@
 {
   "name": "vercel-storage-data",
   "version": "1.0.0",
-  "category": "platform",
-  "platform": "deployment",
+  "category": "toolchain",
+  "toolchain": null,
   "tags": [
     "vercel",
     "postgres",
@@ -13,12 +13,13 @@
     "storage"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 4300,
+  "full_tokens": 506,
   "related_skills": [
     "vercel-functions-runtime",
     "vercel-networking-domains",
     "vercel-observability"
   ],
   "author": "Claude MPM",
-  "license": "MIT"
+  "license": "MIT",
+  "platform": "deployment"
 }

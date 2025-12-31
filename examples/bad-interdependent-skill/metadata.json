@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "category": "example",
   "toolchain": "python",
-  "description": "ANTI-PATTERN - Example showing violations of self-containment (DO NOT COPY)",
   "tags": [
     "anti-pattern",
     "bad-example",
     "violations",
     "do-not-copy"
   ],
+  "entry_point_tokens": 74,
+  "full_tokens": 3232,
+  "author": "claude-mpm-skills",
+  "description": "ANTI-PATTERN - Example showing violations of self-containment (DO NOT COPY)",
   "dependencies": [
     "example-framework>=2.0.0"
   ],
@@ -20,7 +23,6 @@
     "⚠️ pytest-patterns"
   ],
   "self_contained": false,
-  "author": "claude-mpm-skills",
   "updated": "2025-11-30",
   "notes": [
     "⚠️ THIS IS AN ANTI-PATTERN EXAMPLE",

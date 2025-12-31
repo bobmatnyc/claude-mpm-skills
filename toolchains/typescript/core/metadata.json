@@ -4,13 +4,22 @@
   "category": "toolchain",
   "toolchain": "typescript",
   "framework": null,
-  "tags": ["typescript", "types", "validation", "zod", "typebox", "tsconfig", "decision-trees", "troubleshooting"],
+  "tags": [
+    "typescript",
+    "types",
+    "validation",
+    "zod",
+    "typebox",
+    "tsconfig",
+    "decision-trees",
+    "troubleshooting"
+  ],
   "entry_point_tokens": 180,
-  "full_tokens": 4500,
-  "requires": [],
+  "full_tokens": 21365,
   "author": "claude-mpm-skills",
+  "license": "MIT",
+  "requires": [],
   "updated": "2025-12-03",
   "source_path": "toolchains/typescript/core/SKILL.md",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
 }

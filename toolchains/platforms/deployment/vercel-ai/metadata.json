@@ -1,8 +1,8 @@
 {
   "name": "vercel-ai",
   "version": "1.0.0",
-  "category": "platform",
-  "platform": "deployment",
+  "category": "toolchain",
+  "toolchain": null,
   "tags": [
     "vercel",
     "ai",
@@ -12,12 +12,13 @@
     "mcp"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 4200,
+  "full_tokens": 474,
   "related_skills": [
     "vercel-functions-runtime",
     "vercel-storage-data",
     "vercel-observability"
   ],
   "author": "Claude MPM",
-  "license": "MIT"
+  "license": "MIT",
+  "platform": "deployment"
 }

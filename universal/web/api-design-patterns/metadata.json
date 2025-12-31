@@ -2,8 +2,7 @@
   "name": "api-design-patterns",
   "version": "1.0.0",
   "category": "universal",
-  "subcategory": "web",
-  "description": "Comprehensive API design patterns covering REST, GraphQL, gRPC, versioning strategies, authentication, and modern API best practices",
+  "toolchain": null,
   "tags": [
     "api",
     "rest",
@@ -20,9 +19,7 @@
     "rate-limiting"
   ],
   "entry_point_tokens": 85,
-  "full_tokens": 8500,
-  "self_contained": true,
-  "requires": [],
+  "full_tokens": 34968,
   "related_skills": [
     "graphql",
     "typescript",
@@ -32,16 +29,20 @@
     "flask",
     "software-patterns"
   ],
+  "author": "Claude MPM Skills",
+  "license": "MIT",
+  "subcategory": "web",
+  "description": "Comprehensive API design patterns covering REST, GraphQL, gRPC, versioning strategies, authentication, and modern API best practices",
+  "self_contained": true,
+  "requires": [],
   "complementary_skills": [
     "web-performance-optimization",
     "api-documentation",
     "docker",
     "testing-anti-patterns"
   ],
-  "author": "Claude MPM Skills",
   "created": "2025-12-03",
   "updated": "2025-12-03",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "maintainer": "Claude MPM Team",
   "notes": [

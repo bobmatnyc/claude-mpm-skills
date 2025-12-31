@@ -15,8 +15,7 @@
     "testing"
   ],
   "entry_point_tokens": 140,
-  "full_tokens": 5500,
-  "requires": [],
+  "full_tokens": 1814,
   "related_skills": [
     "docker",
     "github-actions",
@@ -25,8 +24,8 @@
   ],
   "author": "Claude MPM Team",
   "license": "MIT",
+  "requires": [],
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "created": "2025-12-17",
   "updated": "2025-12-17"
 }
-

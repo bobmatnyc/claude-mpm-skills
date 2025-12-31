@@ -1,8 +1,8 @@
 {
   "name": "digitalocean-storage",
   "version": "1.0.0",
-  "category": "platform",
-  "platform": "deployment",
+  "category": "toolchain",
+  "toolchain": null,
   "tags": [
     "digitalocean",
     "storage",
@@ -13,12 +13,13 @@
     "backups"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 4300,
+  "full_tokens": 661,
   "related_skills": [
     "digitalocean-compute",
     "digitalocean-containers-images",
     "digitalocean-managed-databases"
   ],
   "author": "Claude MPM",
-  "license": "MIT"
+  "license": "MIT",
+  "platform": "deployment"
 }

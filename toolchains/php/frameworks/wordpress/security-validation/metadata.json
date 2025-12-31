@@ -2,9 +2,7 @@
   "name": "wordpress-security-validation",
   "version": "1.0.0",
   "category": "toolchain",
-  "description": "Security-first WordPress development with nonces, sanitization, validation, and escaping for robust plugin/theme security",
-  "skill_level": "intermediate",
-  "estimated_time_minutes": 120,
+  "toolchain": "php",
   "tags": [
     "wordpress",
     "php",
@@ -17,6 +15,16 @@
     "csrf",
     "sql-injection"
   ],
+  "entry_point_tokens": 98,
+  "full_tokens": 11530,
+  "related_skills": [
+    "../plugin-fundamentals",
+    "../testing-qa",
+    "../../validation/pydantic"
+  ],
+  "description": "Security-first WordPress development with nonces, sanitization, validation, and escaping for robust plugin/theme security",
+  "skill_level": "intermediate",
+  "estimated_time_minutes": 120,
   "requirements": {
     "wordpress": ">=6.4",
     "php": ">=8.1",
@@ -28,11 +36,6 @@
   },
   "dependencies": [
     "../plugin-fundamentals"
-  ],
-  "related_skills": [
-    "../plugin-fundamentals",
-    "../testing-qa",
-    "../../validation/pydantic"
   ],
   "learning_objectives": [
     "Understand the three-layer security model (sanitize, validate, escape)",

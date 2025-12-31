@@ -13,8 +13,7 @@
     "flake-reduction"
   ],
   "entry_point_tokens": 130,
-  "full_tokens": 5200,
-  "requires": [],
+  "full_tokens": 1137,
   "related_skills": [
     "playwright",
     "webapp-testing",
@@ -23,8 +22,8 @@
   ],
   "author": "Claude MPM Team",
   "license": "MIT",
+  "requires": [],
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "created": "2025-12-17",
   "updated": "2025-12-17"
 }
-

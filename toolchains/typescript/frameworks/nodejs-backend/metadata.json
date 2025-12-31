@@ -17,7 +17,7 @@
     "orm"
   ],
   "entry_point_tokens": 75,
-  "full_tokens": 4700,
+  "full_tokens": 5576,
   "related_skills": [
     "../../typescript-core",
     "../../data/drizzle",

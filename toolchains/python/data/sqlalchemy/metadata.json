@@ -4,7 +4,6 @@
   "category": "toolchain",
   "toolchain": "python",
   "framework": "sqlalchemy",
-  "subcategory": "data",
   "tags": [
     "orm",
     "database",
@@ -20,7 +19,17 @@
     "flask"
   ],
   "entry_point_tokens": 80,
-  "full_tokens": 5000,
+  "full_tokens": 5876,
+  "related_skills": [
+    "../../frameworks/fastapi",
+    "../../frameworks/flask",
+    "../../testing/pytest",
+    "../../../database/postgresql",
+    "../../../database/mysql"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT",
+  "subcategory": "data",
   "description": "SQLAlchemy 2.0 ORM with declarative models, relationships, migrations, and async support",
   "when_to_use": [
     "Building Python applications with relational databases",
@@ -39,21 +48,12 @@
     "Connection pooling and performance optimization",
     "FastAPI and Flask integration patterns"
   ],
-  "related_skills": [
-    "../../frameworks/fastapi",
-    "../../frameworks/flask",
-    "../../testing/pytest",
-    "../../../database/postgresql",
-    "../../../database/mysql"
-  ],
   "prerequisites": [
     "Python 3.10+",
     "Basic SQL knowledge",
     "Understanding of relational databases"
   ],
   "installation": "pip install sqlalchemy alembic",
-  "author": "Claude MPM",
-  "license": "MIT",
   "created_at": "2025-11-30",
   "progressive_loading": {
     "entry_tokens": 80,

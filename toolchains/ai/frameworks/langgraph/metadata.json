@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "ai",
-  "subcategory": "frameworks",
   "tags": [
     "langgraph",
     "multi-agent",
@@ -17,18 +16,19 @@
     "human-in-loop"
   ],
   "entry_point_tokens": 80,
-  "full_tokens": 5800,
+  "full_tokens": 13762,
   "related_skills": [
     "../langchain",
     "../../sdks/anthropic"
   ],
+  "author": "claude-mpm-skills",
+  "license": "MIT",
+  "subcategory": "frameworks",
   "requires": [
     "../langchain"
   ],
-  "author": "claude-mpm-skills",
   "created": "2025-11-30",
   "updated": "2025-11-30",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "description": "Comprehensive LangGraph workflows skill covering stateful multi-agent orchestration, state management, conditional routing, human-in-the-loop, checkpointing, time-travel debugging, and production deployment patterns."
 }

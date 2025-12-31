@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "ai",
-  "subcategory": "techniques",
   "tags": [
     "ai",
     "llm",
@@ -19,12 +18,15 @@
     "cost-optimization"
   ],
   "entry_point_tokens": 75,
-  "full_tokens": 5500,
+  "full_tokens": 13311,
   "related_skills": [
     "../../frameworks/langchain",
     "../../sdks/anthropic",
     "../../../python/frameworks/langchain"
   ],
+  "author": "claude-mpm-skills",
+  "license": "MIT",
+  "subcategory": "techniques",
   "description": "Compress long AI conversations to fit context windows while preserving critical information through summarization, RAG, and intelligent memory management",
   "use_cases": [
     "Multi-turn chatbots (50+ turns)",
@@ -49,9 +51,7 @@
   ],
   "estimated_learning_time": "30-45 minutes (full content)",
   "difficulty": "intermediate",
-  "author": "claude-mpm-skills",
   "created": "2025-11-30",
   "updated": "2025-11-30",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
 }

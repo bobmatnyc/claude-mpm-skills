@@ -1,0 +1,26 @@
+{
+  "name": "better-auth-plugins",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": null,
+  "tags": [
+    "better-auth",
+    "auth",
+    "plugins",
+    "2fa",
+    "passkey",
+    "magic-link",
+    "sso",
+    "jwt"
+  ],
+  "entry_point_tokens": 160,
+  "full_tokens": 798,
+  "related_skills": [
+    "better-auth-core",
+    "better-auth-authentication",
+    "better-auth-integrations"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT",
+  "platform": "auth"
+}

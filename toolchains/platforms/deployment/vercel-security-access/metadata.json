@@ -1,8 +1,8 @@
 {
   "name": "vercel-security-access",
   "version": "1.0.0",
-  "category": "platform",
-  "platform": "deployment",
+  "category": "toolchain",
+  "toolchain": null,
   "tags": [
     "vercel",
     "security",
@@ -15,11 +15,12 @@
     "2fa"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 4700,
+  "full_tokens": 550,
   "related_skills": [
     "vercel-teams-billing",
     "vercel-observability"
   ],
   "author": "Claude MPM",
-  "license": "MIT"
+  "license": "MIT",
+  "platform": "deployment"
 }

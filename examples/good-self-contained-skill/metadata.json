@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "category": "example",
   "toolchain": "python",
-  "description": "Example of a properly self-contained skill following all best practices",
   "tags": [
     "self-contained",
     "example",
@@ -13,6 +12,10 @@
     "testing",
     "database"
   ],
+  "entry_point_tokens": 72,
+  "full_tokens": 2844,
+  "author": "claude-mpm-skills",
+  "description": "Example of a properly self-contained skill following all best practices",
   "dependencies": [
     "example-framework>=2.0.0",
     "pytest>=7.0.0",
@@ -21,7 +24,6 @@
   "bundles": [
     "python-web-dev-bundle"
   ],
-  "author": "claude-mpm-skills",
   "updated": "2025-11-30",
   "self_contained": true,
   "requires": [],

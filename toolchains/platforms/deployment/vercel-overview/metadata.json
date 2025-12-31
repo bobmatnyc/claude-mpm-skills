@@ -1,8 +1,8 @@
 {
   "name": "vercel-overview",
   "version": "1.0.0",
-  "category": "platform",
-  "platform": "deployment",
+  "category": "toolchain",
+  "toolchain": null,
   "tags": [
     "vercel",
     "overview",
@@ -14,7 +14,7 @@
     "webhooks"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 3600,
+  "full_tokens": 728,
   "related_skills": [
     "vercel-deployments-builds",
     "vercel-functions-runtime",
@@ -26,5 +26,6 @@
     "vercel-ai"
   ],
   "author": "Claude MPM",
-  "license": "MIT"
+  "license": "MIT",
+  "platform": "deployment"
 }

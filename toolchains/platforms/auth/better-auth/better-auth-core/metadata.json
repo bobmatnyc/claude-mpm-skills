@@ -1,0 +1,27 @@
+{
+  "name": "better-auth-core",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": null,
+  "tags": [
+    "better-auth",
+    "auth",
+    "typescript",
+    "core",
+    "sessions",
+    "api",
+    "client",
+    "server",
+    "database"
+  ],
+  "entry_point_tokens": 220,
+  "full_tokens": 1890,
+  "related_skills": [
+    "better-auth-authentication",
+    "better-auth-integrations",
+    "better-auth-plugins"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT",
+  "platform": "auth"
+}

@@ -2,15 +2,26 @@
   "name": "daisyui",
   "version": "1.0.0",
   "category": "universal",
-  "subcategory": "components",
-  "tags": ["daisyui", "tailwind", "components", "themes", "ui-library"],
+  "toolchain": "ui",
+  "tags": [
+    "daisyui",
+    "tailwind",
+    "components",
+    "themes",
+    "ui-library"
+  ],
   "entry_point_tokens": 75,
-  "full_tokens": 4200,
-  "related_skills": ["../../styling/tailwind"],
-  "requires": ["../../styling/tailwind"],
+  "full_tokens": 9503,
+  "related_skills": [
+    "../../styling/tailwind"
+  ],
   "author": "claude-mpm-skills",
+  "license": "MIT",
+  "subcategory": "components",
+  "requires": [
+    "../../styling/tailwind"
+  ],
   "created": "2025-11-30",
   "updated": "2025-11-30",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
 }

@@ -2,14 +2,23 @@
   "name": "github-actions",
   "version": "1.0.0",
   "category": "universal",
-  "subcategory": "infrastructure",
-  "tags": ["github-actions", "ci-cd", "automation", "devops", "workflows"],
+  "toolchain": "universal",
+  "tags": [
+    "github-actions",
+    "ci-cd",
+    "automation",
+    "devops",
+    "workflows"
+  ],
   "entry_point_tokens": 70,
-  "full_tokens": 5000,
-  "related_skills": ["../docker"],
+  "full_tokens": 7263,
+  "related_skills": [
+    "../docker"
+  ],
   "author": "claude-mpm-skills",
+  "license": "MIT",
+  "subcategory": "infrastructure",
   "created": "2025-11-30",
   "updated": "2025-11-30",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
 }

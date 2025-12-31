@@ -2,7 +2,7 @@
   "name": "wordpress-block-editor-fse",
   "version": "1.0.0",
   "category": "toolchain",
-  "description": "Modern WordPress block development and Full Site Editing with theme.json, block themes, and custom blocks for WordPress 6.7+",
+  "toolchain": "php",
   "tags": [
     "wordpress",
     "gutenberg",
@@ -15,6 +15,16 @@
     "react",
     "custom-blocks"
   ],
+  "entry_point_tokens": 98,
+  "full_tokens": 5517,
+  "related_skills": [
+    "wordpress-plugin-fundamentals",
+    "wordpress-security",
+    "react",
+    "typescript",
+    "php-security"
+  ],
+  "description": "Modern WordPress block development and Full Site Editing with theme.json, block themes, and custom blocks for WordPress 6.7+",
   "requirements": {
     "wordpress": ">=6.4",
     "php": ">=8.1",
@@ -42,13 +52,6 @@
     "Development workflow with @wordpress/scripts",
     "Migration from classic to block themes",
     "Performance and accessibility best practices"
-  ],
-  "related_skills": [
-    "wordpress-plugin-fundamentals",
-    "wordpress-security",
-    "react",
-    "typescript",
-    "php-security"
   ],
   "progressive_disclosure": {
     "entry_point_tokens": 79,

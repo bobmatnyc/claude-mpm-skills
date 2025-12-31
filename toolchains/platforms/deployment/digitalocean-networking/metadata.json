@@ -1,8 +1,8 @@
 {
   "name": "digitalocean-networking",
   "version": "1.0.0",
-  "category": "platform",
-  "platform": "deployment",
+  "category": "toolchain",
+  "toolchain": null,
   "tags": [
     "digitalocean",
     "networking",
@@ -15,12 +15,13 @@
     "nat-gateway"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 4500,
+  "full_tokens": 697,
   "related_skills": [
     "digitalocean-compute",
     "digitalocean-managed-databases",
     "digitalocean-management"
   ],
   "author": "Claude MPM",
-  "license": "MIT"
+  "license": "MIT",
+  "platform": "deployment"
 }

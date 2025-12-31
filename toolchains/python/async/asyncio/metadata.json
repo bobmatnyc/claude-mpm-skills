@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "python",
-  "subcategory": "async",
   "tags": [
     "asyncio",
     "async",
@@ -19,15 +18,16 @@
     "performance"
   ],
   "entry_point_tokens": 72,
-  "full_tokens": 4200,
-  "requires": [],
+  "full_tokens": 9835,
   "related_skills": [
     "fastapi-local-dev",
     "pytest"
   ],
   "author": "Claude MPM Team",
-  "updated": "2025-11-30",
   "license": "MIT",
+  "subcategory": "async",
+  "requires": [],
+  "updated": "2025-11-30",
   "source": "https://github.com/bobmatnyc/claude-mpm",
   "created": "2025-11-30",
   "modified": "2025-11-30",

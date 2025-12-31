@@ -15,8 +15,7 @@
     "structured-concurrency"
   ],
   "entry_point_tokens": 150,
-  "full_tokens": 5000,
-  "requires": [],
+  "full_tokens": 2070,
   "related_skills": [
     "golang-testing-strategies",
     "golang-observability-opentelemetry",
@@ -24,8 +23,8 @@
   ],
   "author": "Claude MPM Team",
   "license": "MIT",
+  "requires": [],
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "created": "2025-12-17",
   "updated": "2025-12-17"
 }
-

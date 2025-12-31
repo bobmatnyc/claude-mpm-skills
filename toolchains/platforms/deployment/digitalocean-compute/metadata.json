@@ -1,8 +1,8 @@
 {
   "name": "digitalocean-compute",
   "version": "1.0.0",
-  "category": "platform",
-  "platform": "deployment",
+  "category": "toolchain",
+  "toolchain": null,
   "tags": [
     "digitalocean",
     "compute",
@@ -13,7 +13,7 @@
     "gpu"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 4700,
+  "full_tokens": 784,
   "related_skills": [
     "digitalocean-containers-images",
     "digitalocean-storage",
@@ -22,5 +22,6 @@
     "docker"
   ],
   "author": "Claude MPM",
-  "license": "MIT"
+  "license": "MIT",
+  "platform": "deployment"
 }

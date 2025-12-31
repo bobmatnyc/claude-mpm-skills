@@ -1,8 +1,8 @@
 {
   "name": "digitalocean-managed-databases",
   "version": "1.0.0",
-  "category": "platform",
-  "platform": "deployment",
+  "category": "toolchain",
+  "toolchain": null,
   "tags": [
     "digitalocean",
     "databases",
@@ -15,12 +15,13 @@
     "valkey"
   ],
   "entry_point_tokens": 100,
-  "full_tokens": 4800,
+  "full_tokens": 594,
   "related_skills": [
     "digitalocean-networking",
     "digitalocean-management",
     "digitalocean-storage"
   ],
   "author": "Claude MPM",
-  "license": "MIT"
+  "license": "MIT",
+  "platform": "deployment"
 }

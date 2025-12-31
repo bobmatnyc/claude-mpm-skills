@@ -2,14 +2,30 @@
   "name": "graphql",
   "version": "1.0.0",
   "category": "universal",
-  "subcategory": "data",
-  "tags": ["graphql", "api", "schema", "queries", "apollo", "mutations", "subscriptions", "resolvers", "typescript"],
+  "toolchain": "universal",
+  "tags": [
+    "graphql",
+    "api",
+    "schema",
+    "queries",
+    "apollo",
+    "mutations",
+    "subscriptions",
+    "resolvers",
+    "typescript"
+  ],
   "entry_point_tokens": 70,
-  "full_tokens": 5500,
-  "related_skills": ["typescript", "react", "nextjs", "fastapi"],
+  "full_tokens": 12073,
+  "related_skills": [
+    "typescript",
+    "react",
+    "nextjs",
+    "fastapi"
+  ],
   "author": "claude-mpm-skills",
+  "license": "MIT",
+  "subcategory": "data",
   "created": "2025-11-30",
   "updated": "2025-11-30",
-  "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
 }

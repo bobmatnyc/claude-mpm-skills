@@ -2,8 +2,7 @@
   "name": "terraform",
   "version": "1.0.0",
   "category": "universal",
-  "subcategory": "infrastructure",
-  "description": "Terraform infrastructure-as-code workflow patterns: remote state, environments, module design, safe plan/apply, drift control, and CI guardrails",
+  "toolchain": null,
   "tags": [
     "terraform",
     "iac",
@@ -15,9 +14,7 @@
     "policy"
   ],
   "entry_point_tokens": 140,
-  "full_tokens": 8000,
-  "self_contained": true,
-  "requires": [],
+  "full_tokens": 1291,
   "related_skills": [
     "github-actions",
     "security-scanning",
@@ -26,6 +23,10 @@
   ],
   "author": "Claude MPM Team",
   "license": "MIT",
+  "subcategory": "infrastructure",
+  "description": "Terraform infrastructure-as-code workflow patterns: remote state, environments, module design, safe plan/apply, drift control, and CI guardrails",
+  "self_contained": true,
+  "requires": [],
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "created": "2025-12-17",
   "updated": "2025-12-17",

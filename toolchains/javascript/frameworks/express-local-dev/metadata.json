@@ -19,8 +19,7 @@
     "error-handling"
   ],
   "entry_point_tokens": 120,
-  "full_tokens": 14500,
-  "requires": [],
+  "full_tokens": 27280,
   "related_skills": [
     "nodejs-backend",
     "typescript-core",
@@ -31,9 +30,10 @@
     "verification-before-completion"
   ],
   "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [],
   "updated": "2025-12-03",
   "source_path": "SKILL.md",
-  "license": "MIT",
   "source": "https://github.com/bobmatnyc/claude-mpm",
   "created": "2025-11-21",
   "modified": "2025-12-03",
