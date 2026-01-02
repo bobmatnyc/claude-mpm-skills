@@ -17,6 +17,10 @@ progressive_disclosure:
     - frontend-customization.md
     - common-tasks.md
     - testing-debugging.md
+    - select-builder.md
+    - api-actions.md
+    - custom-field-types.md
+    - extension-packages.md
 context_limit: 800
 tags:
   - espocrm
@@ -35,7 +39,7 @@ EspoCRM is a metadata-driven CRM platform where configuration lives in JSON file
 
 ## When to Use This Skill
 
-Activate when developing custom EspoCRM modules, entities, relationships, hooks, services, API endpoints, or integrations. **Use especially when:** working with ORM (EntityManager required), implementing business logic (belongs in Services), creating hooks (use interfaces), modifying metadata (requires cache rebuild), or building custom field types.
+Activate when developing custom EspoCRM modules, entities, relationships, hooks, services, API endpoints, or integrations. **Use especially when:** working with ORM (EntityManager required), implementing business logic (belongs in Services), creating hooks (use interfaces), modifying metadata (requires cache rebuild), building custom field types, creating complex queries with SelectBuilder, implementing custom API actions, or packaging extensions.
 
 ## The Iron Law
 
@@ -117,12 +121,22 @@ EspoCRM provides 7 hook types - ALWAYS use interfaces: `BeforeSave` (validation 
 
 ## Navigation
 
-For detailed information:
+### Core Concepts
 - **[Architecture](references/architecture.md)**: Metadata system, ORM, DI container, repository pattern, and core architectural patterns
 - **[Development Workflow](references/development-workflow.md)**: Module creation, custom entities, fields, APIs, and extension development process
 - **[Hooks and Services](references/hooks-and-services.md)**: Service layer implementation, hook types, dependency injection, and business logic patterns
+
+### Advanced Topics
+- **[SelectBuilder](references/select-builder.md)**: Advanced querying with SelectBuilder - complex queries, joins, aggregations, and query optimization
+- **[API Actions](references/api-actions.md)**: Creating custom API endpoints - action handlers, request/response patterns, and authentication
+- **[Custom Field Types](references/custom-field-types.md)**: Building custom field types - backend, frontend, metadata, and integration
+
+### UI and Integration
 - **[Frontend Customization](references/frontend-customization.md)**: View system, client-side development, and UI customization
 - **[Common Tasks](references/common-tasks.md)**: Scheduled jobs, emails, PDFs, ACL, workflows, and integration patterns
+- **[Extension Packages](references/extension-packages.md)**: Packaging and distributing extensions - manifest files, installation, and versioning
+
+### Quality Assurance
 - **[Testing and Debugging](references/testing-debugging.md)**: Unit tests, debugging techniques, performance optimization, and common pitfalls
 
 ## Key Patterns

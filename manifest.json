@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
-  "updated": "2025-12-31",
+  "updated": "2026-01-02",
   "description": "Curated collection of Claude Code skills for intelligent project development",
   "skills": {
     "universal": [
@@ -1042,7 +1042,7 @@
           "full_tokens": 8827,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2025-12-01",
+          "updated": "2025-12-31",
           "source_path": "toolchains/ai/protocols/mcp/SKILL.md"
         },
         {
@@ -1396,7 +1396,7 @@
           "full_tokens": 5014,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-11-30",
+          "updated": "2025-12-31",
           "source_path": "toolchains/javascript/tooling/biome/SKILL.md"
         },
         {
@@ -1804,11 +1804,15 @@
           "source_path": "toolchains/php/frameworks/espocrm/SKILL.md",
           "has_references": true,
           "reference_files": [
+            "api-actions.md",
             "architecture.md",
             "common-tasks.md",
+            "custom-field-types.md",
             "development-workflow.md",
+            "extension-packages.md",
             "frontend-customization.md",
             "hooks-and-services.md",
+            "select-builder.md",
             "testing-debugging.md"
           ]
         },
@@ -2669,7 +2673,7 @@
           "full_tokens": 7651,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-01",
+          "updated": "2025-12-31",
           "source_path": "toolchains/python/tooling/mypy/SKILL.md"
         },
         {
@@ -2741,7 +2745,7 @@
           "full_tokens": 8084,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2025-12-01",
+          "updated": "2025-12-31",
           "source_path": "toolchains/python/testing/pytest/SKILL.md"
         },
         {
@@ -3144,7 +3148,7 @@
           "full_tokens": 21673,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-16",
+          "updated": "2025-12-31",
           "source_path": "toolchains/typescript/core/SKILL.md",
           "has_references": true,
           "reference_files": [
@@ -3378,7 +3382,7 @@
           "full_tokens": 7794,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-01",
+          "updated": "2025-12-31",
           "source_path": "toolchains/universal/infrastructure/docker/SKILL.md"
         },
         {
@@ -3419,7 +3423,7 @@
           "full_tokens": 7527,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-23",
+          "updated": "2025-12-31",
           "source_path": "toolchains/universal/infrastructure/github-actions/SKILL.md"
         },
         {
@@ -3579,7 +3583,7 @@
       "ui": 4,
       "universal": 9
     },
-    "last_updated": "2025-12-31",
+    "last_updated": "2026-01-02",
     "schema_version": "2.0.0"
   },
   "provenance": {
