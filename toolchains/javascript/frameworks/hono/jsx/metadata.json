@@ -1,0 +1,54 @@
+{
+  "name": "hono-jsx",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "hono",
+  "tags": [
+    "hono",
+    "jsx",
+    "ssr",
+    "streaming",
+    "html",
+    "components",
+    "suspense",
+    "server-rendering",
+    "htmx"
+  ],
+  "entry_point_tokens": 70,
+  "full_tokens": 3500,
+  "related_skills": [
+    "hono-core",
+    "hono-middleware",
+    "hono-cloudflare"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [
+    "hono-core"
+  ],
+  "updated": "2025-01-03",
+  "source_path": "SKILL.md",
+  "source": "https://hono.dev",
+  "created": "2025-01-03",
+  "modified": "2025-01-03",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "progressive_disclosure": {
+    "enabled": false,
+    "references": []
+  },
+  "skill_level": "intermediate",
+  "complexity": "intermediate",
+  "coverage": [
+    "jsx-rendering",
+    "async-components",
+    "streaming",
+    "suspense",
+    "error-boundaries",
+    "context-api",
+    "head-hoisting",
+    "htmx-integration"
+  ]
+}

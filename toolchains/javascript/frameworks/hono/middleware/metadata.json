@@ -1,0 +1,57 @@
+{
+  "name": "hono-middleware",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "hono",
+  "tags": [
+    "hono",
+    "middleware",
+    "cors",
+    "authentication",
+    "jwt",
+    "logging",
+    "compression",
+    "security",
+    "rate-limiting",
+    "caching"
+  ],
+  "entry_point_tokens": 80,
+  "full_tokens": 4500,
+  "related_skills": [
+    "hono-core",
+    "hono-validation",
+    "hono-cloudflare"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [
+    "hono-core"
+  ],
+  "updated": "2025-01-03",
+  "source_path": "SKILL.md",
+  "source": "https://hono.dev",
+  "created": "2025-01-03",
+  "modified": "2025-01-03",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "progressive_disclosure": {
+    "enabled": false,
+    "references": []
+  },
+  "skill_level": "intermediate",
+  "complexity": "intermediate",
+  "coverage": [
+    "middleware-basics",
+    "execution-order",
+    "context-variables",
+    "cors",
+    "authentication",
+    "jwt",
+    "logging",
+    "compression",
+    "security-headers",
+    "rate-limiting"
+  ]
+}

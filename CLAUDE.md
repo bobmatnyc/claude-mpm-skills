@@ -1,67 +1,103 @@
 # Claude Code Instructions for claude-mpm-skills Project
 
-## Skill Creation Pattern
+## ⚠️ CRITICAL: This is a SKILLS REPOSITORY
 
-**IMPORTANT**: When creating new skills for this project, follow this exact structure:
+**This project develops skills for the Claude MPM Skills Repository, NOT for local use.**
 
-### Directory Structure
+Skills are:
+1. **Developed** in `toolchains/` or `universal/` directories
+2. **Built** using `scripts/generate_manifest.py`
+3. **Deployed** via `scripts/flatten_skills.sh` to `.claude/skills/` (gitignored)
 
-```
-.claude/skills/{category-toolchain-framework}/
-  ├── SKILL.md           # Main skill content
-  ├── metadata.json      # Skill metadata
-  └── .etag_cache.json   # Optional cache file
-```
+**DO NOT create skills directly in `.claude/skills/`** - that's the deployment target, not the source!
 
-### Example Structure Reference
+---
 
-See: `.claude/skills/toolchains-python-frameworks-django/` for a complete example.
+## Skill Creation Workflow
 
-### metadata.json Format
+### Step 1: Initialize New Skill
 
-```json
-{
-  "name": "skill-name",
-  "version": "1.0.0",
-  "category": "toolchain",
-  "toolchain": "language-name",
-  "framework": "framework-name",
-  "tags": ["tag1", "tag2", "tag3"],
-  "entry_point_tokens": 85,
-  "full_tokens": 5000,
-  "related_skills": [
-    "../../category/skill-name",
-    "../sibling-skill"
-  ],
-  "author": "Claude MPM",
-  "license": "MIT"
-}
+Use the init script (recommended):
+
+```bash
+# Interactive mode
+python scripts/init_skill.py
+
+# Toolchain skill (e.g., PHP framework)
+python scripts/init_skill.py --path toolchains/php/frameworks/espocrm
+
+# Universal skill
+python scripts/init_skill.py --path universal/testing/integration-patterns
+
+# With description
+python scripts/init_skill.py --path toolchains/python/async/celery --description "Celery task queue patterns"
+
+# Dry run to preview
+python scripts/init_skill.py --dry-run --path toolchains/go/testing/integration
 ```
 
-### SKILL.md Format
+### Step 2: Skill Directory Structure
 
+Skills are organized hierarchically in the repository:
+
+```
+claude-mpm-skills/
+├── toolchains/           # Language/framework-specific skills
+│   ├── python/
+│   │   ├── frameworks/
+│   │   │   └── django/
+│   │   │       ├── SKILL.md
+│   │   │       ├── metadata.json
+│   │   │       └── references/     # Optional deep-dive docs
+│   │   └── testing/
+│   │       └── pytest/
+│   └── php/
+│       └── frameworks/
+│           └── espocrm/            # ← Example: EspoCRM skill location
+│               ├── SKILL.md
+│               ├── metadata.json
+│               └── references/
+├── universal/            # Cross-language skills
+│   ├── testing/
+│   │   └── tdd-patterns/
+│   └── architecture/
+│       └── api-design/
+└── manifest.json         # Auto-generated - DO NOT edit manually
+```
+
+### Step 3: Required Files
+
+Each skill directory must contain:
+
+#### SKILL.md (Required)
 ```markdown
 ---
 name: skill-name
 description: Brief description with use cases
+version: 1.0.0
+category: development
+author: Claude MPM Team
+license: MIT
+progressive_disclosure:
+  entry_point:
+    summary: "One-line summary"
+    when_to_use: "When to activate this skill"
+    quick_start: "Steps to get started"
+  references:
+    - architecture.md
+    - patterns.md
+context_limit: 800
+tags:
+  - tag1
+  - tag2
+requires_tools: []
 ---
 
 # Skill Title
 
----
-progressive_disclosure:
-  entry_point:
-    summary: "One-line summary"
-    when_to_use:
-      - "Use case 1"
-      - "Use case 2"
-    quick_start:
-      - "Step 1"
-      - "Step 2"
-  token_estimate:
-    entry: 75
-    full: 4000-5000
----
+## Overview
+
+## When to Use This Skill
 
 ## Core Concepts
 
@@ -71,52 +107,116 @@ progressive_disclosure:
 
 ## Anti-Patterns
 
-## Decision Trees
-
-## Examples
-
-## Resources
+## Navigation (if references exist)
+- **[Architecture](references/architecture.md)**: ...
+- **[Patterns](references/patterns.md)**: ...
 ```
 
-### Key Points
+#### metadata.json (Required)
+```json
+{
+  "name": "skill-name",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "python",
+  "framework": "django",
+  "tags": ["web", "orm", "api"],
+  "entry_point_tokens": 85,
+  "full_tokens": 5000,
+  "author": "Claude MPM Skills",
+  "license": "MIT",
+  "requires": [],
+  "updated": "2025-01-02",
+  "source_path": "toolchains/python/frameworks-django/SKILL.md"
+}
+```
 
-1. **Location**: Skills MUST be in `.claude/skills/`, NOT `src/claude_mpm/skills/`
-2. **Naming**: Directory name uses format: `{category}-{toolchain}-{framework}`
-3. **Files**: ALWAYS include both `SKILL.md` and `metadata.json`
-4. **Git**: The `.claude/` directory is gitignored (intentional - skills managed separately)
+### Step 4: Validate and Build
 
-### Common Mistakes to Avoid
+```bash
+# Validate skill structure
+python scripts/package_skill.py --validate toolchains/php/frameworks/espocrm
 
-❌ **DON'T**: Create skills as single files like `golang-testing-strategies.md`
-✅ **DO**: Create directory with `SKILL.md` and `metadata.json`
+# Generate/update manifest.json
+python scripts/generate_manifest.py --output manifest.json
 
-❌ **DON'T**: Put skills in `src/claude_mpm/skills/`
-✅ **DO**: Put skills in `.claude/skills/`
+# Validate entire manifest
+python scripts/generate_manifest.py --validate
+```
 
-❌ **DON'T**: Forget the `metadata.json` file
-✅ **DO**: Always create both `SKILL.md` and `metadata.json`
+### Step 5: Deploy for Testing
 
-### Verification Checklist
+```bash
+# Deploy all skills to .claude/skills/ (for local testing)
+./scripts/flatten_skills.sh
 
-Before considering a skill complete:
+# Deploy with force overwrite
+./scripts/flatten_skills.sh --force
 
-- [ ] Directory created in `.claude/skills/{category-toolchain-framework}/`
-- [ ] `SKILL.md` file with full content
-- [ ] `metadata.json` file with proper structure
-- [ ] Frontmatter in SKILL.md with progressive_disclosure
-- [ ] Token estimates in both metadata.json and SKILL.md
-- [ ] Related skills references updated
-- [ ] Code examples are runnable
-- [ ] Decision trees included
-- [ ] Anti-patterns documented
-- [ ] Resources section with current links
+# Dry run to preview
+./scripts/flatten_skills.sh --dry-run
+```
+
+---
+
+## Existing EspoCRM Skill
+
+There is already an EspoCRM skill at:
+```
+toolchains/php/frameworks/espocrm/
+├── SKILL.md
+├── metadata.json
+└── references/
+    ├── architecture.md
+    ├── common-tasks.md
+    ├── development-workflow.md
+    ├── frontend-customization.md
+    ├── hooks-and-services.md
+    └── testing-debugging.md
+```
+
+To extend or improve it, edit files in this location, NOT in `.claude/skills/`.
+
+---
+
+## Common Mistakes to Avoid
+
+❌ **DON'T**: Create skills in `.claude/skills/` directly
+✅ **DO**: Create in `toolchains/` or `universal/`, then deploy
+
+❌ **DON'T**: Edit `manifest.json` manually
+✅ **DO**: Run `python scripts/generate_manifest.py`
+
+❌ **DON'T**: Commit `.claude/skills/` to git (it's gitignored)
+✅ **DO**: Commit source files in `toolchains/` and `universal/`
+
+❌ **DON'T**: Forget to run manifest generation after changes
+✅ **DO**: Run build scripts before committing
+
+---
 
 ## Research Documentation
 
-When conducting research for skills, document findings in:
-- `docs/research/{topic}-{YYYY-MM-DD}.md`
+When conducting research for new skills:
+- Document findings in: `docs/research/{topic}-{YYYY-MM-DD}.md`
 
-## Related Documentation
+---
 
-- Skill creation guide: `docs/skills/README.md` (if exists)
-- Skill examples: `.claude/skills/examples-good-self-contained-skill/`
+## Quick Reference
+
+| Task | Command |
+|------|---------|
+| Create new skill | `python scripts/init_skill.py --path toolchains/...` |
+| Validate skill | `python scripts/package_skill.py --validate path/to/skill` |
+| Generate manifest | `python scripts/generate_manifest.py --output manifest.json` |
+| Deploy locally | `./scripts/flatten_skills.sh --force` |
+| Check token counts | `python scripts/token_report.py` |
+| Voice consistency | `python scripts/check_voice_consistency.py` |
+
+---
+
+## See Also
+
+- `scripts/README.md` - Detailed script documentation
+- `README.md` - Repository overview and skill catalog
+- `docs/` - Additional documentation

@@ -1,0 +1,53 @@
+{
+  "name": "hono-testing",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "hono",
+  "tags": [
+    "hono",
+    "testing",
+    "vitest",
+    "jest",
+    "integration-testing",
+    "mocking",
+    "test-client",
+    "unit-testing"
+  ],
+  "entry_point_tokens": 70,
+  "full_tokens": 3600,
+  "related_skills": [
+    "hono-core",
+    "hono-middleware",
+    "hono-validation",
+    "vitest-testing"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [
+    "hono-core"
+  ],
+  "updated": "2025-01-03",
+  "source_path": "SKILL.md",
+  "source": "https://hono.dev",
+  "created": "2025-01-03",
+  "modified": "2025-01-03",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "progressive_disclosure": {
+    "enabled": false,
+    "references": []
+  },
+  "skill_level": "intermediate",
+  "complexity": "intermediate",
+  "coverage": [
+    "app-request",
+    "test-client",
+    "environment-mocking",
+    "middleware-testing",
+    "validation-testing",
+    "error-handling",
+    "file-uploads"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "hono-core",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "hono",
+  "tags": [
+    "hono",
+    "web-framework",
+    "routing",
+    "typescript",
+    "cloudflare-workers",
+    "deno",
+    "bun",
+    "nodejs",
+    "edge",
+    "serverless",
+    "rest-api",
+    "web-standards"
+  ],
+  "entry_point_tokens": 85,
+  "full_tokens": 4200,
+  "related_skills": [
+    "hono-middleware",
+    "hono-validation",
+    "hono-rpc",
+    "hono-testing",
+    "hono-jsx",
+    "hono-cloudflare"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [],
+  "updated": "2025-01-03",
+  "source_path": "SKILL.md",
+  "source": "https://hono.dev",
+  "created": "2025-01-03",
+  "modified": "2025-01-03",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "progressive_disclosure": {
+    "enabled": false,
+    "references": []
+  },
+  "skill_level": "foundational",
+  "complexity": "beginner-intermediate",
+  "coverage": [
+    "app-creation",
+    "routing-patterns",
+    "context-object",
+    "response-methods",
+    "path-parameters",
+    "route-grouping",
+    "error-handling",
+    "multi-runtime"
+  ]
+}

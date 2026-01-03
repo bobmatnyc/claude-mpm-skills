@@ -1,0 +1,53 @@
+{
+  "name": "hono-rpc",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "hono",
+  "tags": [
+    "hono",
+    "rpc",
+    "type-safety",
+    "typescript",
+    "api-client",
+    "full-stack",
+    "end-to-end-types",
+    "monorepo"
+  ],
+  "entry_point_tokens": 75,
+  "full_tokens": 3800,
+  "related_skills": [
+    "hono-core",
+    "hono-validation",
+    "typescript-core"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [
+    "hono-core"
+  ],
+  "updated": "2025-01-03",
+  "source_path": "SKILL.md",
+  "source": "https://hono.dev",
+  "created": "2025-01-03",
+  "modified": "2025-01-03",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "progressive_disclosure": {
+    "enabled": false,
+    "references": []
+  },
+  "skill_level": "intermediate-advanced",
+  "complexity": "intermediate",
+  "coverage": [
+    "hc-client",
+    "type-inference",
+    "route-chaining",
+    "path-parameters",
+    "query-parameters",
+    "request-types",
+    "response-types",
+    "error-handling"
+  ]
+}

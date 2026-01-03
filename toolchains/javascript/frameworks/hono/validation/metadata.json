@@ -1,0 +1,54 @@
+{
+  "name": "hono-validation",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "hono",
+  "tags": [
+    "hono",
+    "validation",
+    "zod",
+    "typebox",
+    "valibot",
+    "typescript",
+    "type-safety",
+    "input-validation",
+    "schema-validation"
+  ],
+  "entry_point_tokens": 75,
+  "full_tokens": 4100,
+  "related_skills": [
+    "hono-core",
+    "hono-rpc",
+    "typescript-core"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [
+    "hono-core"
+  ],
+  "updated": "2025-01-03",
+  "source_path": "SKILL.md",
+  "source": "https://hono.dev",
+  "created": "2025-01-03",
+  "modified": "2025-01-03",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "progressive_disclosure": {
+    "enabled": false,
+    "references": []
+  },
+  "skill_level": "intermediate",
+  "complexity": "intermediate",
+  "coverage": [
+    "zod-validator",
+    "typebox-validator",
+    "valibot-validator",
+    "validation-targets",
+    "custom-error-handling",
+    "schema-patterns",
+    "coercion",
+    "file-uploads"
+  ]
+}

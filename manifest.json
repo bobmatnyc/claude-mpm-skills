@@ -1456,6 +1456,188 @@
           ]
         },
         {
+          "name": "hono-cloudflare",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "hono",
+          "tags": [
+            "hono",
+            "cloudflare-workers",
+            "edge",
+            "kv",
+            "d1",
+            "r2",
+            "durable-objects",
+            "serverless",
+            "cloudflare-pages"
+          ],
+          "entry_point_tokens": 75,
+          "full_tokens": 4200,
+          "requires": [
+            "hono-core"
+          ],
+          "author": "Claude MPM Team",
+          "updated": "2026-01-02",
+          "source_path": "toolchains/javascript/frameworks/hono/cloudflare/SKILL.md"
+        },
+        {
+          "name": "hono-core",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "hono",
+          "tags": [
+            "hono",
+            "web-framework",
+            "routing",
+            "typescript",
+            "cloudflare-workers",
+            "deno",
+            "bun",
+            "nodejs",
+            "edge",
+            "serverless",
+            "rest-api",
+            "web-standards"
+          ],
+          "entry_point_tokens": 85,
+          "full_tokens": 4200,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-01-02",
+          "source_path": "toolchains/javascript/frameworks/hono/core/SKILL.md"
+        },
+        {
+          "name": "hono-jsx",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "hono",
+          "tags": [
+            "hono",
+            "jsx",
+            "ssr",
+            "streaming",
+            "html",
+            "components",
+            "suspense",
+            "server-rendering",
+            "htmx"
+          ],
+          "entry_point_tokens": 70,
+          "full_tokens": 3500,
+          "requires": [
+            "hono-core"
+          ],
+          "author": "Claude MPM Team",
+          "updated": "2026-01-02",
+          "source_path": "toolchains/javascript/frameworks/hono/jsx/SKILL.md"
+        },
+        {
+          "name": "hono-middleware",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "hono",
+          "tags": [
+            "hono",
+            "middleware",
+            "cors",
+            "authentication",
+            "jwt",
+            "logging",
+            "compression",
+            "security",
+            "rate-limiting",
+            "caching"
+          ],
+          "entry_point_tokens": 80,
+          "full_tokens": 4500,
+          "requires": [
+            "hono-core"
+          ],
+          "author": "Claude MPM Team",
+          "updated": "2026-01-02",
+          "source_path": "toolchains/javascript/frameworks/hono/middleware/SKILL.md"
+        },
+        {
+          "name": "hono-rpc",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "hono",
+          "tags": [
+            "hono",
+            "rpc",
+            "type-safety",
+            "typescript",
+            "api-client",
+            "full-stack",
+            "end-to-end-types",
+            "monorepo"
+          ],
+          "entry_point_tokens": 75,
+          "full_tokens": 3800,
+          "requires": [
+            "hono-core"
+          ],
+          "author": "Claude MPM Team",
+          "updated": "2026-01-02",
+          "source_path": "toolchains/javascript/frameworks/hono/rpc/SKILL.md"
+        },
+        {
+          "name": "hono-testing",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "hono",
+          "tags": [
+            "hono",
+            "testing",
+            "vitest",
+            "jest",
+            "integration-testing",
+            "mocking",
+            "test-client",
+            "unit-testing"
+          ],
+          "entry_point_tokens": 70,
+          "full_tokens": 3600,
+          "requires": [
+            "hono-core"
+          ],
+          "author": "Claude MPM Team",
+          "updated": "2026-01-02",
+          "source_path": "toolchains/javascript/frameworks/hono/testing/SKILL.md"
+        },
+        {
+          "name": "hono-validation",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "hono",
+          "tags": [
+            "hono",
+            "validation",
+            "zod",
+            "typebox",
+            "valibot",
+            "typescript",
+            "type-safety",
+            "input-validation",
+            "schema-validation"
+          ],
+          "entry_point_tokens": 75,
+          "full_tokens": 4100,
+          "requires": [
+            "hono-core"
+          ],
+          "author": "Claude MPM Team",
+          "updated": "2026-01-02",
+          "source_path": "toolchains/javascript/frameworks/hono/validation/SKILL.md"
+        },
+        {
           "name": "nextjs",
           "version": "1.0.0",
           "category": "toolchain",
@@ -1785,7 +1967,7 @@
       "php": [
         {
           "name": "espocrm",
-          "version": "1.0.0",
+          "version": "1.1.0",
           "category": "toolchain",
           "toolchain": "php",
           "framework": "espocrm",
@@ -1794,13 +1976,18 @@
             "api",
             "security",
             "testing",
-            "debugging"
+            "debugging",
+            "select-builder",
+            "api-actions",
+            "custom-fields",
+            "extension-packages",
+            "query-optimization"
           ],
-          "entry_point_tokens": 50,
-          "full_tokens": 26087,
+          "entry_point_tokens": 550,
+          "full_tokens": 45000,
           "requires": [],
           "author": "bobmatnyc",
-          "updated": "2025-12-03",
+          "updated": "2026-01-02",
           "source_path": "toolchains/php/frameworks/espocrm/SKILL.md",
           "has_references": true,
           "reference_files": [
@@ -3563,17 +3750,17 @@
     ]
   },
   "metadata": {
-    "total_skills": 146,
+    "total_skills": 153,
     "categories": {
       "universal": 37,
-      "toolchains": 107,
+      "toolchains": 114,
       "examples": 2
     },
     "toolchains": {
       "ai": 9,
       "elixir": 4,
       "golang": 7,
-      "javascript": 12,
+      "javascript": 19,
       "nextjs": 3,
       "php": 6,
       "platforms": 25,
