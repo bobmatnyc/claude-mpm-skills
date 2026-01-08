@@ -1,6 +1,6 @@
 ---
 name: sec-edgar-pipeline
-description: SEC EDGAR extraction pipeline: setup, filing discovery by CIK, recipe-driven extraction, and report generation.
+description: "SEC EDGAR extraction pipeline: setup, filing discovery by CIK, recipe-driven extraction, and report generation."
 version: 1.0.0
 category: universal
 author: Claude MPM Team
