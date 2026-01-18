@@ -1,7 +1,10 @@
 ---
 name: test-driven-development
 description: Comprehensive TDD patterns and practices for all programming languages, eliminating redundant testing guidance per agent.
-updated_at: 2025-10-30T17:00:00Z
+license: Apache-2.0
+compatibility: claude-code
+metadata:
+  updated_at: 2025-10-30T17:00:00Z
 tags: [testing, tdd, best-practices, quality-assurance]
 progressive_disclosure:
   entry_point:

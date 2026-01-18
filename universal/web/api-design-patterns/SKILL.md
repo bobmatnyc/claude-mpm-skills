@@ -1,14 +1,17 @@
 ---
 name: api-design-patterns
-version: 1.0.0
 description: Comprehensive API design patterns covering REST, GraphQL, gRPC, versioning, authentication, and modern API best practices
-category: universal
+license: Apache-2.0
+compatibility: claude-code
+metadata:
+  version: 1.0.0
+  category: universal
+  related_skills: [graphql, typescript, nodejs-backend, django, fastapi, flask]
+  token_budget:
+    entry_point: 85
+    full_content: 8500
+  self_contained: true
 tags: [api, rest, graphql, grpc, architecture, web, design-patterns]
-related_skills: [graphql, typescript, nodejs-backend, django, fastapi, flask]
-token_budget:
-  entry_point: 85
-  full_content: 8500
-self_contained: true
 progressive_disclosure:
   entry_point:
     summary: "Comprehensive API design patterns covering REST, GraphQL, gRPC, versioning, authentication, and modern API best practices"

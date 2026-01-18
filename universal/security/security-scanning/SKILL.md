@@ -1,10 +1,12 @@
 ---
 name: security-scanning
 description: "CI security scanning: secrets, deps, SAST, triage, expiring exceptions"
-version: 1.1.0
-category: universal
-author: Claude MPM Team
 license: MIT
+compatibility: claude-code
+metadata:
+  version: 1.1.0
+  category: universal
+  author: Claude MPM Team
 progressive_disclosure:
   entry_point:
     summary: "Baseline CI scans (secrets, deps, SAST) with triage and expiring exceptions"

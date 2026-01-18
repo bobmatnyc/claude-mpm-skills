@@ -1,6 +1,8 @@
 ---
 name: systematic-debugging
 description: "Systematic debugging methodology emphasizing root cause analysis over quick fixes"
+license: Apache-2.0
+compatibility: claude-code
 progressive_disclosure:
   entry_point:
     summary: "Systematic debugging methodology emphasizing root cause analysis over quick fixes"

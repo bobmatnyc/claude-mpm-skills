@@ -1,7 +1,10 @@
 ---
 name: git-workflow
 description: Essential Git patterns for effective version control, eliminating redundant Git guidance per agent.
-updated_at: 2025-10-30T17:00:00Z
+license: Apache-2.0
+compatibility: claude-code
+metadata:
+  updated_at: 2025-10-30T17:00:00Z
 tags: [git, version-control, workflow, best-practices]
 progressive_disclosure:
   entry_point:
