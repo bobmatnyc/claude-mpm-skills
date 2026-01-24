@@ -157,7 +157,7 @@ export const appRouter = t.router({
   hello: t.procedure
     .input(z.object({ name: z.string() }))
     .query(({ input }) => {
-      return { greeting: `Hello ${input.name}!` };
+      return { greeting: `Hello ${input.name}` };
     }),
 
   createPost: t.procedure

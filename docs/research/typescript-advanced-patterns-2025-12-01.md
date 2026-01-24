@@ -1225,7 +1225,7 @@ const result = await fetchUser("123");
 
 const message = match(
   result,
-  (user) => `Hello, ${user.name}!`,
+  (user) => `Hello, ${user.name}`,
   (error) => `Error: ${error.message}`
 );
 

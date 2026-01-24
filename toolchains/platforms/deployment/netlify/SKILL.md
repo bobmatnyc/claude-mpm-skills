@@ -249,7 +249,7 @@ export const handler: Handler = async (
   return {
     statusCode: 200,
     body: JSON.stringify({
-      message: `Hello ${name}!`,
+      message: `Hello ${name}`,
       email,
     }),
   };
