@@ -1,0 +1,24 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "database",
+  "framework": "mongodb",
+  "tags": [
+    "mongodb",
+    "nosql",
+    "database",
+    "document-database",
+    "aggregation",
+    "indexing",
+    "spring-data",
+    "schema-design"
+  ],
+  "entry_point_tokens": 85,
+  "full_tokens": 10000,
+  "related_skills": [
+    "../../java/frameworks/spring-boot"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT"
+}

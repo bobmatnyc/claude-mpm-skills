@@ -1,0 +1,25 @@
+{
+  "name": "spring-boot",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "java",
+  "framework": "spring-boot",
+  "tags": [
+    "java",
+    "spring-boot",
+    "spring",
+    "microservices",
+    "rest-api",
+    "dependency-injection",
+    "jpa",
+    "security",
+    "actuator"
+  ],
+  "entry_point_tokens": 85,
+  "full_tokens": 10500,
+  "related_skills": [
+    "../../../databases/mongodb"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT"
+}

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
-  "updated": "2026-01-02",
+  "updated": "2026-01-28",
   "description": "Curated collection of Claude Code skills for intelligent project development",
   "skills": {
     "universal": [
@@ -30,7 +30,7 @@
         "full_tokens": 34968,
         "requires": [],
         "author": "Claude MPM Skills",
-        "updated": "2025-12-31",
+        "updated": "2026-01-17",
         "source_path": "universal/web/api-design-patterns/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -240,7 +240,7 @@
         "full_tokens": 1862,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-31",
+        "updated": "2026-01-17",
         "source_path": "universal/collaboration/git-workflow/SKILL.md"
       },
       {
@@ -504,7 +504,7 @@
         "full_tokens": 796,
         "requires": [],
         "author": "Claude MPM Team",
-        "updated": "2025-12-31",
+        "updated": "2026-01-08",
         "source_path": "universal/data/sec-edgar-pipeline/SKILL.md"
       },
       {
@@ -528,7 +528,7 @@
         "full_tokens": 2492,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-23",
+        "updated": "2026-01-17",
         "source_path": "universal/security/security-scanning/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -629,7 +629,7 @@
         "full_tokens": 11799,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-31",
+        "updated": "2026-01-17",
         "source_path": "universal/debugging/systematic-debugging/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -685,7 +685,7 @@
         "full_tokens": 18625,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2025-12-31",
+        "updated": "2026-01-17",
         "source_path": "universal/testing/test-driven-development/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -1117,6 +1117,31 @@
           "source_path": "toolchains/ai/techniques/vector-search-workflows/SKILL.md"
         }
       ],
+      "databases": [
+        {
+          "name": "mongodb",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "databases",
+          "framework": null,
+          "tags": [
+            "mongodb",
+            "nosql",
+            "database",
+            "document-database",
+            "aggregation",
+            "indexing",
+            "spring-data",
+            "schema-design"
+          ],
+          "entry_point_tokens": 85,
+          "full_tokens": 10000,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-01-23",
+          "source_path": "toolchains/databases/mongodb/SKILL.md"
+        }
+      ],
       "elixir": [
         {
           "name": "ecto-patterns",
@@ -1373,6 +1398,32 @@
           "author": "Claude MPM",
           "updated": "2025-12-16",
           "source_path": "toolchains/golang/testing/SKILL.md"
+        }
+      ],
+      "java": [
+        {
+          "name": "spring-boot",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "java",
+          "framework": "spring-boot",
+          "tags": [
+            "java",
+            "spring-boot",
+            "spring",
+            "microservices",
+            "rest-api",
+            "dependency-injection",
+            "jpa",
+            "security",
+            "actuator"
+          ],
+          "entry_point_tokens": 85,
+          "full_tokens": 10500,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-01-23",
+          "source_path": "toolchains/java/frameworks/spring-boot/SKILL.md"
         }
       ],
       "javascript": [
@@ -3750,16 +3801,18 @@
     ]
   },
   "metadata": {
-    "total_skills": 153,
+    "total_skills": 155,
     "categories": {
       "universal": 37,
-      "toolchains": 114,
+      "toolchains": 116,
       "examples": 2
     },
     "toolchains": {
       "ai": 9,
+      "databases": 1,
       "elixir": 4,
       "golang": 7,
+      "java": 1,
       "javascript": 19,
       "nextjs": 3,
       "php": 6,
@@ -3770,7 +3823,7 @@
       "ui": 4,
       "universal": 9
     },
-    "last_updated": "2026-01-02",
+    "last_updated": "2026-01-28",
     "schema_version": "2.0.0"
   },
   "provenance": {
