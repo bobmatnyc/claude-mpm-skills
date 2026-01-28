@@ -88,7 +88,7 @@ npm create vite@latest my-app -- --template svelte-ts
 
   // Automatically updates when dependencies change
   let fullName = $derived(`${firstName} ${lastName}`);
-  let greeting = $derived(`Hello, ${fullName}!`);
+  let greeting = $derived(`Hello, ${fullName}`);
 
   // Complex derivations
   let items = $state([1, 2, 3, 4, 5]);
