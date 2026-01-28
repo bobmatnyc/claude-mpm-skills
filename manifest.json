@@ -1138,7 +1138,7 @@
           "full_tokens": 10000,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-01-23",
+          "updated": "2026-01-28",
           "source_path": "toolchains/databases/mongodb/SKILL.md"
         }
       ],
@@ -1422,7 +1422,7 @@
           "full_tokens": 10500,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-01-23",
+          "updated": "2026-01-28",
           "source_path": "toolchains/java/frameworks/spring-boot/SKILL.md"
         }
       ],
@@ -1811,7 +1811,7 @@
           "full_tokens": 5054,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2025-12-03",
+          "updated": "2026-01-28",
           "source_path": "toolchains/javascript/frameworks/svelte/SKILL.md"
         },
         {
@@ -2298,6 +2298,40 @@
           ]
         },
         {
+          "name": "datadog-observability",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "platforms",
+          "framework": null,
+          "tags": [
+            "observability",
+            "monitoring",
+            "apm",
+            "logging",
+            "metrics",
+            "tracing",
+            "datadog",
+            "alerting",
+            "infrastructure"
+          ],
+          "entry_point_tokens": 85,
+          "full_tokens": 20200,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-01-28",
+          "source_path": "toolchains/platforms/observability/datadog/SKILL.md",
+          "has_references": true,
+          "reference_files": [
+            "agent-installation.md",
+            "alerting.md",
+            "apm-instrumentation.md",
+            "cost-optimization.md",
+            "custom-metrics.md",
+            "kubernetes.md",
+            "log-management.md"
+          ]
+        },
+        {
           "name": "digitalocean-agentic-cloud",
           "version": "1.0.0",
           "category": "toolchain",
@@ -2535,7 +2569,7 @@
           "full_tokens": 4970,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2025-12-31",
+          "updated": "2026-01-28",
           "source_path": "toolchains/platforms/deployment/netlify/SKILL.md"
         },
         {
@@ -3341,7 +3375,7 @@
             "../../validation/zod"
           ],
           "author": "claude-mpm-skills",
-          "updated": "2025-12-31",
+          "updated": "2026-01-28",
           "source_path": "toolchains/typescript/api/trpc/SKILL.md"
         },
         {
@@ -3801,10 +3835,10 @@
     ]
   },
   "metadata": {
-    "total_skills": 155,
+    "total_skills": 156,
     "categories": {
       "universal": 37,
-      "toolchains": 116,
+      "toolchains": 117,
       "examples": 2
     },
     "toolchains": {
@@ -3816,7 +3850,7 @@
       "javascript": 19,
       "nextjs": 3,
       "php": 6,
-      "platforms": 25,
+      "platforms": 26,
       "python": 10,
       "rust": 4,
       "typescript": 14,

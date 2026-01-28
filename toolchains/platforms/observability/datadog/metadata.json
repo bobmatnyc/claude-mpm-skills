@@ -1,0 +1,23 @@
+{
+  "name": "datadog-observability",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "observability",
+  "platform": "observability",
+  "tags": [
+    "observability",
+    "monitoring",
+    "apm",
+    "logging",
+    "metrics",
+    "tracing",
+    "datadog",
+    "alerting",
+    "infrastructure"
+  ],
+  "entry_point_tokens": 85,
+  "full_tokens": 20200,
+  "related_skills": [],
+  "author": "Claude MPM Team",
+  "license": "MIT"
+}
