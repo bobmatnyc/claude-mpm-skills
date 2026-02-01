@@ -1,0 +1,40 @@
+{
+  "name": "react-hooks-composition",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "react",
+  "tags": [
+    "react",
+    "hooks",
+    "composition",
+    "swr",
+    "performance",
+    "typescript",
+    "custom-hooks",
+    "useMemo",
+    "useCallback",
+    "context",
+    "debounce",
+    "state-machine"
+  ],
+  "entry_point_tokens": 4200,
+  "full_tokens": 12500,
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [],
+  "updated": "2026-02-01",
+  "source_path": "toolchains/javascript/frameworks/react/hooks-composition/SKILL.md",
+  "source": "https://github.com/bobmatnyc/claude-mpm",
+  "created": "2026-02-01",
+  "modified": "2026-02-01",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "has_references": true,
+  "reference_files": [
+    "swr-patterns.md",
+    "performance-optimization.md",
+    "testing-patterns.md"
+  ]
+}

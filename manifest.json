@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
-  "updated": "2026-01-28",
+  "updated": "2026-02-01",
   "description": "Curated collection of Claude Code skills for intelligent project development",
   "skills": {
     "universal": [
@@ -1783,6 +1783,39 @@
             "skills-architecture.md",
             "testing-patterns.md",
             "xstate-v5-patterns.md"
+          ]
+        },
+        {
+          "name": "react-hooks-composition",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "react",
+          "tags": [
+            "react",
+            "hooks",
+            "composition",
+            "swr",
+            "performance",
+            "typescript",
+            "custom-hooks",
+            "useMemo",
+            "useCallback",
+            "context",
+            "debounce",
+            "state-machine"
+          ],
+          "entry_point_tokens": 4200,
+          "full_tokens": 12500,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-02-01",
+          "source_path": "toolchains/javascript/frameworks/react/hooks-composition/SKILL.md",
+          "has_references": true,
+          "reference_files": [
+            "swr-patterns.md",
+            "performance-optimization.md",
+            "testing-patterns.md"
           ]
         },
         {
