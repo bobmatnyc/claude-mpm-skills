@@ -376,6 +376,28 @@
         ]
       },
       {
+        "name": "pm-bug-reporting",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "bug-reporting",
+          "github",
+          "issues",
+          "pm-required",
+          "workflow",
+          "debugging"
+        ],
+        "entry_point_tokens": 979,
+        "full_tokens": 979,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2026-02-11",
+        "source_path": "pm/pm-bug-reporting.md",
+        "description": "Bug reporting protocol for PM and agents to file GitHub issues"
+      },
+      {
         "name": "pre-merge-verification",
         "version": "1.0.0",
         "category": "universal",
@@ -3801,10 +3823,10 @@
         "entry_point_tokens": 74,
         "full_tokens": 3232,
         "requires": [
-          "⚠️ VIOLATION: This field should be empty!",
-          "⚠️ setup-skill",
-          "⚠️ database-skill",
-          "⚠️ pytest-patterns"
+          "\u26a0\ufe0f VIOLATION: This field should be empty!",
+          "\u26a0\ufe0f setup-skill",
+          "\u26a0\ufe0f database-skill",
+          "\u26a0\ufe0f pytest-patterns"
         ],
         "author": "claude-mpm-skills",
         "updated": "2025-12-31",
