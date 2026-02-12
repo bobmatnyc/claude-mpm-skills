@@ -1,0 +1,23 @@
+{
+  "name": "vb6-legacy",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "visualbasic",
+  "framework": "vb6",
+  "tags": [
+    "visualbasic",
+    "vb6",
+    "legacy",
+    "com",
+    "interop",
+    "migration"
+  ],
+  "entry_point_tokens": 2980,
+  "full_tokens": 2980,
+  "related_skills": [
+    "../../core",
+    "../../frameworks/winforms"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT"
+}

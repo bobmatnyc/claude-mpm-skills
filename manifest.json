@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
-  "updated": "2026-01-28",
+  "updated": "2026-02-12T12:52:44.338900",
   "description": "Curated collection of Claude Code skills for intelligent project development",
   "skills": {
     "universal": [
@@ -3783,6 +3783,99 @@
           "updated": "2025-12-08",
           "source_path": "toolchains/universal/pr/quality/SKILL.md"
         }
+      ],
+      "visualbasic": [
+        {
+          "name": "vb-core",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "visualbasic",
+          "framework": null,
+          "tags": [
+            "visualbasic",
+            "vb.net",
+            "dotnet",
+            "type-safety",
+            "linq",
+            "async-await",
+            "option-strict"
+          ],
+          "entry_point_tokens": 3850,
+          "full_tokens": 3850,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-02-12",
+          "source_path": "toolchains/visualbasic/core/SKILL.md"
+        },
+        {
+          "name": "vb-winforms",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "visualbasic",
+          "framework": "winforms",
+          "tags": [
+            "visualbasic",
+            "winforms",
+            "desktop",
+            "ui",
+            "data-binding",
+            "threading",
+            "forms"
+          ],
+          "entry_point_tokens": 2420,
+          "full_tokens": 2420,
+          "requires": [
+            "vb-core"
+          ],
+          "author": "Claude MPM Team",
+          "updated": "2026-02-12",
+          "source_path": "toolchains/visualbasic/frameworks/winforms/SKILL.md"
+        },
+        {
+          "name": "vb-database",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "visualbasic",
+          "framework": "adonet",
+          "tags": [
+            "visualbasic",
+            "database",
+            "adonet",
+            "entity-framework",
+            "sql",
+            "async",
+            "transactions"
+          ],
+          "entry_point_tokens": 2650,
+          "full_tokens": 2650,
+          "requires": [
+            "vb-core"
+          ],
+          "author": "Claude MPM Team",
+          "updated": "2026-02-12",
+          "source_path": "toolchains/visualbasic/database/adonet/SKILL.md"
+        },
+        {
+          "name": "vb6-legacy",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "visualbasic",
+          "framework": "vb6",
+          "tags": [
+            "visualbasic",
+            "vb6",
+            "legacy",
+            "com",
+            "interop",
+            "migration"
+          ],
+          "entry_point_tokens": 2980,
+          "full_tokens": 2980,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-02-12",
+          "source_path": "toolchains/visualbasic/legacy/vb6-interop/SKILL.md"
+        }
       ]
     },
     "examples": [
@@ -3801,10 +3894,10 @@
         "entry_point_tokens": 74,
         "full_tokens": 3232,
         "requires": [
-          "⚠️ VIOLATION: This field should be empty!",
-          "⚠️ setup-skill",
-          "⚠️ database-skill",
-          "⚠️ pytest-patterns"
+          "\u26a0\ufe0f VIOLATION: This field should be empty!",
+          "\u26a0\ufe0f setup-skill",
+          "\u26a0\ufe0f database-skill",
+          "\u26a0\ufe0f pytest-patterns"
         ],
         "author": "claude-mpm-skills",
         "updated": "2025-12-31",

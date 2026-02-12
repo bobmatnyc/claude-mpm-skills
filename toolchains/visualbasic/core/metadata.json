@@ -1,0 +1,25 @@
+{
+  "name": "vb-core",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "visualbasic",
+  "framework": null,
+  "tags": [
+    "visualbasic",
+    "vb.net",
+    "dotnet",
+    "type-safety",
+    "linq",
+    "async-await",
+    "option-strict"
+  ],
+  "entry_point_tokens": 3850,
+  "full_tokens": 3850,
+  "related_skills": [
+    "../frameworks/winforms",
+    "../database/adonet",
+    "../../universal/testing/test-driven-development"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "vb-winforms",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "visualbasic",
+  "framework": "winforms",
+  "tags": [
+    "visualbasic",
+    "winforms",
+    "desktop",
+    "ui",
+    "data-binding",
+    "threading",
+    "forms"
+  ],
+  "entry_point_tokens": 2420,
+  "full_tokens": 2420,
+  "related_skills": [
+    "../../core",
+    "../../database/adonet"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT"
+}

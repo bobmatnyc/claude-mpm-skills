@@ -1,0 +1,24 @@
+{
+  "name": "vb-database",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "visualbasic",
+  "framework": "adonet",
+  "tags": [
+    "visualbasic",
+    "database",
+    "adonet",
+    "entity-framework",
+    "sql",
+    "async",
+    "transactions"
+  ],
+  "entry_point_tokens": 2650,
+  "full_tokens": 2650,
+  "related_skills": [
+    "../../core",
+    "../../frameworks/winforms"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT"
+}
