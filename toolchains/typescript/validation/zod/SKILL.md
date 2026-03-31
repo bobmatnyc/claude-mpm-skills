@@ -16,6 +16,7 @@ progressive_disclosure:
     - error_handling
     - async_validation
     - advanced_types
+    - api_handler_patterns
     - integrations
     - best_practices
 token_estimates:
@@ -29,9 +30,10 @@ token_estimates:
   error_handling: 250
   async_validation: 200
   advanced_types: 500
+  api_handler_patterns: 800
   integrations: 1200
   best_practices: 300
-  full: 5000
+  full: 5800
 ---
 
 # Zod Validation Skill
@@ -784,6 +786,509 @@ const email = Email.parse('user@example.com');
 
 getUserById(userId); // ✓
 getUserById(email);  // ✗ Type error
+```
+
+<!-- SECTION: api_handler_patterns -->
+## API Handler Patterns
+
+### Generic Validated Handler
+
+Create type-safe API handlers with automatic validation, error formatting, and authentication.
+
+```typescript
+import { NextRequest, NextResponse } from 'next/server';
+import { z } from 'zod';
+
+// Generic handler type with validated input
+type ValidatedHandler<T, C = T> = (
+  state: {
+    input: T;
+    request: NextRequest;
+    ctx: RouteContext<C>;
+  }
+) => Promise<Response> | Response;
+
+// Route context interface
+interface RouteContext<T = unknown> {
+  params: T;
+}
+
+// Validation configuration
+interface ValidationConfig<T extends z.ZodType, C extends z.ZodType> {
+  input?: {
+    schema: T;
+    source: 'body' | 'query' | 'params';
+  };
+  auth?: {
+    role: 'admin' | 'provider' | 'user';
+  };
+  context?: C;
+}
+
+// Generic validated handler wrapper
+export function validatedHandler<
+  T extends z.ZodType,
+  C extends z.ZodType = z.ZodType<any>
+>(
+  config: ValidationConfig<T, C>,
+  handler: ValidatedHandler<z.infer<T>, z.infer<C>>
+) {
+  return async (
+    request: NextRequest,
+    ctx: RouteContext<z.infer<C>>
+  ): Promise<Response> => {
+    try {
+      // Extract input based on source
+      let rawInput: unknown;
+
+      if (config.input) {
+        switch (config.input.source) {
+          case 'body':
+            rawInput = await request.json();
+            break;
+          case 'query':
+            rawInput = Object.fromEntries(request.nextUrl.searchParams);
+            break;
+          case 'params':
+            rawInput = ctx.params;
+            break;
+        }
+
+        // Validate input
+        const result = config.input.schema.safeParse(rawInput);
+
+        if (!result.success) {
+          return NextResponse.json(
+            {
+              error: 'Validation failed',
+              details: result.error.issues.map(err => ({
+                path: err.path.join('.'),
+                message: err.message,
+                code: err.code,
+              })),
+            },
+            { status: 400 }
+          );
+        }
+
+        // Call handler with validated input
+        return handler({
+          input: result.data,
+          request,
+          ctx
+        });
+      }
+
+      // No validation required
+      return handler({
+        input: {} as z.infer<T>,
+        request,
+        ctx
+      });
+
+    } catch (error) {
+      console.error('Handler error:', error);
+      return NextResponse.json(
+        { error: 'Internal server error' },
+        { status: 500 }
+      );
+    }
+  };
+}
+```
+
+**Usage Example:**
+
+```typescript
+// Define validation schema
+const CreateCampSchema = z.object({
+  name: z.string().min(3),
+  location: z.string(),
+  startDate: z.string().datetime(),
+  endDate: z.string().datetime(),
+  capacity: z.number().positive(),
+});
+
+// Type-safe route handler
+export const POST = validatedHandler(
+  {
+    input: {
+      schema: CreateCampSchema,
+      source: 'body',
+    },
+    auth: { role: 'admin' },
+  },
+  async ({ input, request }) => {
+    // input is fully typed as z.infer<typeof CreateCampSchema>
+    const camp = await createCamp({
+      name: input.name,
+      location: input.location,
+      startDate: new Date(input.startDate),
+      endDate: new Date(input.endDate),
+      capacity: input.capacity,
+    });
+
+    return NextResponse.json(camp, { status: 201 });
+  }
+);
+```
+
+### Discriminated Unions for Complex Types
+
+Use discriminated unions to handle multiple input types with type-safe narrowing.
+
+```typescript
+// Location selection with discriminated union
+const LocationSelectionSchema = z.discriminatedUnion('type', [
+  z.object({
+    type: z.literal('map-bounds'),
+    north: z.number().min(-90).max(90),
+    south: z.number().min(-90).max(90),
+    east: z.number().min(-180).max(180),
+    west: z.number().min(-180).max(180),
+  }),
+  z.object({
+    type: z.literal('address'),
+    address: z.string().min(1),
+    radius: z.number().positive().optional(),
+  }),
+  z.object({
+    type: z.literal('user-location'),
+    lat: z.number().min(-90).max(90),
+    lng: z.number().min(-180).max(180),
+    radius: z.number().positive().default(10),
+  }),
+]);
+
+type LocationSelection = z.infer<typeof LocationSelectionSchema>;
+
+// Type-safe handler with union narrowing
+function processLocation(selection: LocationSelection) {
+  switch (selection.type) {
+    case 'map-bounds':
+      return searchByBounds({
+        north: selection.north,
+        south: selection.south,
+        east: selection.east,
+        west: selection.west,
+      });
+
+    case 'address':
+      return searchByAddress({
+        address: selection.address,
+        radius: selection.radius,
+      });
+
+    case 'user-location':
+      return searchByCoordinates({
+        lat: selection.lat,
+        lng: selection.lng,
+        radius: selection.radius,
+      });
+  }
+}
+```
+
+### Complete Type Mapping with Required
+
+Ensure all keys are mapped with TypeScript's `Required` utility type.
+
+```typescript
+import { NumberParam, StringParam, DateParam } from 'next-query-params';
+
+// Filters interface
+interface Filters {
+  startDate?: Date;
+  endDate?: Date;
+  status?: 'active' | 'inactive' | 'pending';
+  search?: string;
+  minPrice?: number;
+  maxPrice?: number;
+}
+
+// Query param config interface
+interface QueryParamConfig<T> {
+  encode: (value: T) => string;
+  decode: (value: string | undefined) => T | undefined;
+}
+
+// Complete mapping enforced by Required<Filters>
+const filtersQueryParamConfigMap: {
+  [Key in keyof Required<Filters>]: QueryParamConfig<Filters[Key]>;
+} = {
+  startDate: DateParam,
+  endDate: DateParam,
+  status: StringParam,
+  search: StringParam,
+  minPrice: NumberParam,
+  maxPrice: NumberParam,
+  // TypeScript error if any key is missing
+};
+
+// Zod schema matching the interface
+const FiltersSchema = z.object({
+  startDate: z.date().optional(),
+  endDate: z.date().optional(),
+  status: z.enum(['active', 'inactive', 'pending']).optional(),
+  search: z.string().optional(),
+  minPrice: z.number().positive().optional(),
+  maxPrice: z.number().positive().optional(),
+});
+
+// Validation with cross-field checks
+const ValidatedFiltersSchema = FiltersSchema.refine(
+  (data) => {
+    if (data.startDate && data.endDate) {
+      return data.endDate >= data.startDate;
+    }
+    return true;
+  },
+  {
+    message: 'End date must be after start date',
+    path: ['endDate'],
+  }
+).refine(
+  (data) => {
+    if (data.minPrice && data.maxPrice) {
+      return data.maxPrice >= data.minPrice;
+    }
+    return true;
+  },
+  {
+    message: 'Max price must be greater than min price',
+    path: ['maxPrice'],
+  }
+);
+```
+
+### Structured Error Response Format
+
+Create consistent, type-safe error responses.
+
+```typescript
+// Error response schema
+const ApiErrorSchema = z.object({
+  code: z.enum([
+    'VALIDATION_ERROR',
+    'AUTHENTICATION_ERROR',
+    'AUTHORIZATION_ERROR',
+    'NOT_FOUND',
+    'INTERNAL_ERROR',
+  ]),
+  message: z.string(),
+  details: z.array(
+    z.object({
+      path: z.string(),
+      message: z.string(),
+      code: z.string().optional(),
+    })
+  ).optional(),
+  timestamp: z.string().datetime(),
+});
+
+type ApiError = z.infer<typeof ApiErrorSchema>;
+
+// Format Zod errors for API response
+function formatZodError(error: z.ZodError): ApiError {
+  return {
+    code: 'VALIDATION_ERROR',
+    message: 'Input validation failed',
+    details: error.issues.map(issue => ({
+      path: issue.path.join('.'),
+      message: issue.message,
+      code: issue.code,
+    })),
+    timestamp: new Date().toISOString(),
+  };
+}
+
+// Error response helper
+function errorResponse(
+  code: ApiError['code'],
+  message: string,
+  status: number,
+  details?: ApiError['details']
+): Response {
+  const error: ApiError = {
+    code,
+    message,
+    details,
+    timestamp: new Date().toISOString(),
+  };
+
+  return NextResponse.json(error, { status });
+}
+
+// Usage in handler
+export const POST = validatedHandler(
+  {
+    input: { schema: CreateUserSchema, source: 'body' },
+  },
+  async ({ input }) => {
+    try {
+      const user = await createUser(input);
+      return NextResponse.json(user, { status: 201 });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return NextResponse.json(
+          formatZodError(error),
+          { status: 400 }
+        );
+      }
+
+      return errorResponse(
+        'INTERNAL_ERROR',
+        'Failed to create user',
+        500
+      );
+    }
+  }
+);
+```
+
+### Query Parameter Transformation
+
+Handle query parameter parsing with validation and transformation.
+
+```typescript
+// Query param schema with transforms
+const SearchParamsSchema = z.object({
+  // String to number with validation
+  page: z
+    .string()
+    .transform(Number)
+    .pipe(z.number().int().positive().default(1)),
+
+  // String to number with limits
+  pageSize: z
+    .string()
+    .transform(Number)
+    .pipe(z.number().int().min(1).max(100).default(20)),
+
+  // CSV string to array
+  tags: z
+    .string()
+    .optional()
+    .transform(val => val ? val.split(',').map(t => t.trim()) : []),
+
+  // ISO date string to Date
+  startDate: z
+    .string()
+    .datetime()
+    .optional()
+    .transform(val => val ? new Date(val) : undefined),
+
+  // Boolean string to boolean
+  includeInactive: z
+    .string()
+    .optional()
+    .transform(val => val === 'true')
+    .pipe(z.boolean().default(false)),
+
+  // Enum validation
+  sortBy: z
+    .enum(['name', 'date', 'price'])
+    .default('date'),
+
+  // Sort order
+  sortOrder: z
+    .enum(['asc', 'desc'])
+    .default('desc'),
+});
+
+// Handler with query param validation
+export const GET = validatedHandler(
+  {
+    input: {
+      schema: SearchParamsSchema,
+      source: 'query',
+    },
+  },
+  async ({ input }) => {
+    // All params are properly typed and transformed
+    const results = await searchItems({
+      page: input.page,              // number
+      pageSize: input.pageSize,      // number
+      tags: input.tags,              // string[]
+      startDate: input.startDate,    // Date | undefined
+      includeInactive: input.includeInactive, // boolean
+      sortBy: input.sortBy,          // 'name' | 'date' | 'price'
+      sortOrder: input.sortOrder,    // 'asc' | 'desc'
+    });
+
+    return NextResponse.json(results);
+  }
+);
+```
+
+### Schema Composition for Reusable Validation
+
+Build complex schemas from reusable parts.
+
+```typescript
+// Base schemas
+const TimestampSchema = z.object({
+  createdAt: z.date(),
+  updatedAt: z.date(),
+});
+
+const PaginationSchema = z.object({
+  page: z.number().int().positive(),
+  pageSize: z.number().int().min(1).max(100),
+  total: z.number().int().nonnegative(),
+});
+
+const LocationSchema = z.object({
+  lat: z.number().min(-90).max(90),
+  lng: z.number().min(-180).max(180),
+  address: z.string().optional(),
+});
+
+// Composed schemas
+const CampSchema = z.object({
+  id: z.string().uuid(),
+  name: z.string().min(3),
+  location: LocationSchema,
+  capacity: z.number().positive(),
+  status: z.enum(['active', 'inactive', 'full']),
+}).merge(TimestampSchema);
+
+const CampListResponseSchema = z.object({
+  camps: z.array(CampSchema),
+  pagination: PaginationSchema,
+});
+
+// Type inference works across composition
+type Camp = z.infer<typeof CampSchema>;
+type CampListResponse = z.infer<typeof CampListResponseSchema>;
+
+// Usage in handler
+export const GET = validatedHandler(
+  {
+    input: {
+      schema: z.object({
+        page: z.number().default(1),
+        pageSize: z.number().default(20),
+      }),
+      source: 'query',
+    },
+  },
+  async ({ input }) => {
+    const camps = await getCamps(input.page, input.pageSize);
+
+    // Response validated against schema
+    const response: CampListResponse = {
+      camps,
+      pagination: {
+        page: input.page,
+        pageSize: input.pageSize,
+        total: await getCampCount(),
+      },
+    };
+
+    return NextResponse.json(response);
+  }
+);
 ```
 
 <!-- SECTION: integrations -->
