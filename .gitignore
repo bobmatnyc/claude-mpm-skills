@@ -41,6 +41,8 @@ $RECYCLE.BIN/
 # Claude MPM directories (ignore all)
 .claude-mpm/
 .claude/
+!.claude/skills/
+!.claude/skills/**
 .mcp.json
 .conda/
 .coverage
