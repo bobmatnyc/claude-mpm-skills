@@ -1,6 +1,8 @@
 ---
 name: screenshot
 description: "Visual verification workflow for UI changes to accelerate code review and catch ..."
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 tags: []
 progressive_disclosure:

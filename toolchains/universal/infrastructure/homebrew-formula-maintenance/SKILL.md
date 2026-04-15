@@ -1,6 +1,8 @@
 ---
 name: homebrew-formula-maintenance
 description: Homebrew formula maintenance workflows for Python CLIs and taps, including version bumps, SHA/resource updates, testing, audits, and releases.
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

@@ -1,6 +1,8 @@
 ---
 name: git-workflow
 description: Essential Git patterns for effective version control, eliminating redundant Git guidance per agent.
+user-invocable: false
+disable-model-invocation: true
 license: Apache-2.0
 compatibility: claude-code
 metadata:

@@ -1,6 +1,8 @@
 ---
 name: golang-cli-cobra-viper
 description: "Building production-quality CLI tools with Cobra command framework and Viper configuration management"
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

@@ -1,6 +1,8 @@
 ---
 name: dspy-framework
 description: "DSPy declarative framework for automatic prompt optimization treating prompts as code with systematic evaluation and compilers"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "DSPy declarative framework for automatic prompt optimization treating prompts as code with systematic evaluation and compilers"

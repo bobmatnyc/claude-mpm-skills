@@ -1,6 +1,8 @@
 ---
 name: verification-before-completion
 description: Run verification commands and confirm output before claiming success
+user-invocable: false
+disable-model-invocation: true
 version: 2.0.0
 category: debugging
 author: Jesse Vincent

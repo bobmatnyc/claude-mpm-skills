@@ -1,6 +1,8 @@
 ---
 name: phoenix-ops
 description: "Phoenix operations and deployment: releases, runtime configuration, clustering, libcluster, telemetry/logging, secrets, assets, background jobs, and production hardening on the BEAM."
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

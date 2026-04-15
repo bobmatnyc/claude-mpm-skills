@@ -1,6 +1,8 @@
 ---
 name: database-migration
 description: Safe patterns for evolving database schemas in production with decision trees and troubleshooting guidance.
+user-invocable: false
+disable-model-invocation: true
 updated_at: 2025-12-03T00:00:00Z
 tags: [database, migration, schema, production, decision-trees, troubleshooting, zero-downtime]
 progressive_disclosure:

@@ -1,6 +1,8 @@
 ---
 name: hono-core
 description: Hono ultrafast web framework fundamentals - routing, context, handlers, and response patterns for multi-runtime deployment
+user-invocable: false
+disable-model-invocation: true
 skill_version: 1.0.0
 updated_at: 2025-01-03T00:00:00Z
 tags: [hono, web-framework, routing, typescript, cloudflare-workers, deno, bun, nodejs]

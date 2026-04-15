@@ -1,6 +1,8 @@
 ---
 name: digitalocean-management
 description: DigitalOcean management services for monitoring, uptime checks, and resource organization with Projects. Use when setting up observability, alerts, and operational visibility on DigitalOcean.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "DigitalOcean management services for monitoring, uptime checks, and resource organization with Projects. Use when setting up observability, alerts, and operational visibility on DigitalOcean."

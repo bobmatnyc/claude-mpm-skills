@@ -1,6 +1,8 @@
 ---
 name: hono-jsx
 description: Hono JSX - server-side rendering, streaming, async components, and HTML generation patterns
+user-invocable: false
+disable-model-invocation: true
 skill_version: 1.0.0
 updated_at: 2025-01-03T00:00:00Z
 tags: [hono, jsx, ssr, streaming, html, components, suspense]

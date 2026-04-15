@@ -1,6 +1,8 @@
 ---
 name: digitalocean-compute
 description: DigitalOcean compute services covering Droplets, App Platform, Functions, Kubernetes (DOKS), GPU Droplets, and Bare Metal GPUs. Use when selecting or provisioning compute for applications, containers, or serverless workloads.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "DigitalOcean compute services covering Droplets, App Platform, Functions, Kubernetes (DOKS), GPU Droplets, and Bare Metal GPUs. Use when selecting or provisioning compute for applications, containe..."

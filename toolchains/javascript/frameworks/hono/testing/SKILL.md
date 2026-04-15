@@ -1,6 +1,8 @@
 ---
 name: hono-testing
 description: Hono testing patterns - app.request(), test client, mocking environment, and integration testing strategies
+user-invocable: false
+disable-model-invocation: true
 skill_version: 1.0.0
 updated_at: 2025-01-03T00:00:00Z
 tags: [hono, testing, vitest, jest, integration-testing, mocking]

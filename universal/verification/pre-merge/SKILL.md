@@ -1,6 +1,8 @@
 ---
 name: pre-merge
 description: "Comprehensive verification workflow before merging changes to production."
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 tags: []
 progressive_disclosure:

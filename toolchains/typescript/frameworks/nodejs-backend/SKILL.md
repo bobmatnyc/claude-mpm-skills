@@ -1,6 +1,8 @@
 ---
 name: nodejs-backend-typescript
 description: "Node.js backend development with TypeScript, Express/Fastify servers, routing, middleware, and database integration"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Node.js backend development with TypeScript, Express/Fastify servers, routing, middleware, and database integration"

@@ -1,6 +1,8 @@
 ---
 name: langgraph
 description: LangGraph framework for building stateful, multi-agent AI applications with cyclical workflows, human-in-the-loop patterns, and persistent checkpointing.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     - summary

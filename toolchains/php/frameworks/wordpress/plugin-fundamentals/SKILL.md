@@ -1,6 +1,8 @@
 ---
 name: wordpress-plugin-fundamentals
 description: Modern WordPress plugin development with PHP 8.3+, OOP architecture, hooks system, database interactions, and Settings API
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: development
 author: Claude MPM Team

@@ -1,6 +1,8 @@
 ---
 name: hono-rpc
 description: Hono RPC - end-to-end type-safe API client generation with hc client and TypeScript inference
+user-invocable: false
+disable-model-invocation: true
 skill_version: 1.0.0
 updated_at: 2025-01-03T00:00:00Z
 tags: [hono, rpc, type-safety, typescript, api-client, full-stack]

@@ -1,6 +1,8 @@
 ---
 name: webapp-testing-patterns
 description: "Comprehensive web application testing patterns with Playwright selectors, wait strategies, and best practices"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Comprehensive web application testing patterns with Playwright selectors, wait strategies, and best practices"

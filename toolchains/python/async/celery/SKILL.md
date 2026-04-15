@@ -1,6 +1,8 @@
 ---
 name: celery
 description: Distributed task queue system for Python enabling asynchronous execution of background jobs, scheduled tasks, and workflows across multiple workers with Django, Flask, and FastAPI integration.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     - summary

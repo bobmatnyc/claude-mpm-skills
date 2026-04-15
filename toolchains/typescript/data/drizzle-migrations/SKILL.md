@@ -1,6 +1,8 @@
 ---
 name: drizzle-migrations
 description: "Migration-first database development workflow using Drizzle ORM for TypeScript/J..."
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 tags: []
 progressive_disclosure:

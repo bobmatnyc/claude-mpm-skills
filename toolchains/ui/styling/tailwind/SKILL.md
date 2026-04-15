@@ -1,6 +1,8 @@
 ---
 name: tailwind-css
 description: "Tailwind CSS utility-first framework for rapid UI development with responsive design and dark mode"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Tailwind CSS utility-first framework for rapid UI development with responsive design and dark mode"

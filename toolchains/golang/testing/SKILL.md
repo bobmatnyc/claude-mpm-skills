@@ -1,6 +1,8 @@
 ---
 name: golang-testing-strategies
 description: "Comprehensive Go testing strategies including table-driven tests, testify assertions, gomock interface mocking, benchmark testing, and CI/CD integration"
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

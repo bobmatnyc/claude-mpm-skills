@@ -1,6 +1,8 @@
 ---
 name: espocrm-development
 description: Comprehensive guide for developing on EspoCRM - metadata-driven CRM with service layer architecture
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: development
 author: Claude MPM Team

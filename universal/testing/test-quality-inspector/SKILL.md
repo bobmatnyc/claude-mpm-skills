@@ -1,6 +1,8 @@
 ---
 name: test-quality-inspector
 description: "Test quality inspection framework for reviewing test coverage, identifying gaps, and ensuring comprehensive validation"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Test quality inspection framework for reviewing test coverage, identifying gaps, and ensuring comprehensive validation"

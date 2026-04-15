@@ -1,6 +1,8 @@
 ---
 name: trpc-type-safety
 description: "tRPC end-to-end type-safe APIs for TypeScript with React Query integration and full-stack type safety"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "tRPC end-to-end type-safe APIs for TypeScript with React Query integration and full-stack type safety"

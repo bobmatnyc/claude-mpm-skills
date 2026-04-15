@@ -1,6 +1,8 @@
 ---
 name: reporting-pipelines
 description: Reporting pipelines for CSV/JSON/Markdown exports with timestamped outputs, summaries, and post-processing.
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: universal
 author: Claude MPM Team

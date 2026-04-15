@@ -1,6 +1,8 @@
 ---
 name: svelte5-runes-static
 description: Svelte 5 runes + SvelteKit adapter-static (SSG/SSR) patterns for hydration-safe state, store bridges, and reactivity that survives prerendering
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

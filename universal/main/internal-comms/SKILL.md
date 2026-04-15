@@ -1,6 +1,8 @@
 ---
 name: internal-comms-3p-updates
 description: "Framework for writing concise 3P (Progress, Plans, Problems) team updates for executives and stakeholders"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Framework for writing concise 3P (Progress, Plans, Problems) team updates for executives and stakeholders"

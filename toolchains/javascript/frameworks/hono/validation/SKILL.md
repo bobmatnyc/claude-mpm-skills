@@ -1,6 +1,8 @@
 ---
 name: hono-validation
 description: Hono request validation with Zod, TypeBox, Valibot - type-safe input validation for JSON, forms, query params, and headers
+user-invocable: false
+disable-model-invocation: true
 skill_version: 1.0.0
 updated_at: 2025-01-03T00:00:00Z
 tags: [hono, validation, zod, typebox, valibot, typescript, type-safety]

@@ -1,6 +1,8 @@
 ---
 name: digitalocean-teams
 description: DigitalOcean Teams and Organizations for billing, access control, roles, and membership. Use when managing team structure, permissions, and organization-wide billing on DigitalOcean.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "DigitalOcean Teams and Organizations for billing, access control, roles, and membership. Use when managing team structure, permissions, and organization-wide billing on DigitalOcean."

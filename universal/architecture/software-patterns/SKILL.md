@@ -1,6 +1,8 @@
 ---
 name: software-patterns
 description: Decision framework for architectural patterns including DI, SOA, Repository, Domain Events, Circuit Breaker, and Anti-Corruption Layer. Use when designing systems, choosing patterns, or reviewing architecture.
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 languages: all
 progressive_disclosure:

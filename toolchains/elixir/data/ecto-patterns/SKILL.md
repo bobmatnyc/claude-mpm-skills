@@ -1,6 +1,8 @@
 ---
 name: ecto-patterns
 description: Ecto patterns for Phoenix/Elixir apps. Covers schemas, changesets, migrations, queries, Ecto.Multi, transactions, constraints, associations, pagination, tenant partitioning, performance, and testing.
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

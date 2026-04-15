@@ -1,6 +1,8 @@
 ---
 name: bug-fix
 description: "Systematic workflow for verifying bug fixes to ensure quality and prevent regres..."
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 tags: []
 progressive_disclosure:

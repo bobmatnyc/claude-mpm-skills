@@ -1,6 +1,8 @@
 ---
 name: mypy
 description: mypy - Static type checker for Python with gradual typing, strict mode, Protocol support, and framework integration
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

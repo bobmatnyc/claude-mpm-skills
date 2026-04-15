@@ -1,6 +1,8 @@
 ---
 name: better-auth-plugins
 description: Better Auth plugin system for TypeScript. Use when adding advanced auth features (2FA, magic link, passkey, username, JWT, organizations) via server and client plugins.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Better Auth plugin system for TypeScript. Use when adding advanced auth features (2FA, magic link, passkey, username, JWT, organizations) via server and client plugins."

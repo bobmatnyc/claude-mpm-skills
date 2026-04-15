@@ -1,6 +1,8 @@
 ---
 name: playwright-e2e-testing
 description: "Playwright modern end-to-end testing framework with cross-browser automation, auto-wait, and built-in test runner"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Playwright modern end-to-end testing framework with cross-browser automation, auto-wait, and built-in test runner"

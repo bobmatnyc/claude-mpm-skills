@@ -1,6 +1,8 @@
 ---
 name: flexlayout-react
 description: FlexLayout for React - Advanced docking layout manager with drag-and-drop, tabs, splitters, and complex window management
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: development
 author: Claude MPM Team

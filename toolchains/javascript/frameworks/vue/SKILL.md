@@ -1,6 +1,8 @@
 ---
 name: vue
 description: Vue 3 - Progressive JavaScript framework with Composition API, reactivity system, single-file components, Vite integration, TypeScript support
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

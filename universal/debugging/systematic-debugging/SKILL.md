@@ -1,6 +1,8 @@
 ---
 name: systematic-debugging
 description: "Systematic debugging methodology emphasizing root cause analysis over quick fixes"
+user-invocable: false
+disable-model-invocation: true
 license: Apache-2.0
 compatibility: claude-code
 progressive_disclosure:

@@ -1,6 +1,8 @@
 ---
 name: tauri-event-system
 description: Advanced Tauri event patterns for bidirectional communication, streaming data, window-to-window messaging, and custom event handling
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: development
 author: Claude MPM Team

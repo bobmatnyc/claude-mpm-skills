@@ -1,6 +1,8 @@
 ---
 name: shadcn-ui
 description: "shadcn/ui component library for React with Tailwind CSS - copy-paste accessible components with full code ownership"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "shadcn/ui component library for React with Tailwind CSS - copy-paste accessible components with full code ownership"

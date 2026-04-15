@@ -1,6 +1,8 @@
 ---
 name: express-production
 description: Production-ready Express.js development covering middleware architecture, error handling, security hardening, testing strategies, and deployment patterns
+user-invocable: false
+disable-model-invocation: true
 skill_version: 2.0.0
 updated_at: 2025-12-03T00:00:00Z
 tags: [express, nodejs, production, middleware, security, testing, deployment, backend]

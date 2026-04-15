@@ -1,6 +1,8 @@
 ---
 name: drizzle-orm
 description: "Type-safe SQL ORM for TypeScript with zero runtime overhead"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Type-safe SQL ORM for TypeScript with zero runtime overhead"

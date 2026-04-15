@@ -1,6 +1,8 @@
 ---
 name: zustand
 description: Minimal, unopinionated state management library for React with simple hook-based API, no providers, and minimal boilerplate for global state without Redux complexity.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     - summary

@@ -1,6 +1,8 @@
 ---
 name: security-scanning
 description: "CI security scanning: secrets, deps, SAST, triage, expiring exceptions"
+user-invocable: false
+disable-model-invocation: true
 license: MIT
 compatibility: claude-code
 metadata:

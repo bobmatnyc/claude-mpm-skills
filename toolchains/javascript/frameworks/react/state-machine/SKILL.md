@@ -1,6 +1,8 @@
 ---
 name: react-state-machines
 description: "Building reusable React state machine skills with XState v5 and the actor model"
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: development
 author: Claude MPM Team

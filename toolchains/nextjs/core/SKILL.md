@@ -1,6 +1,8 @@
 ---
 name: nextjs-core
 description: Core Next.js patterns for App Router development including Server Components, Server Actions, route handlers, data fetching, and caching strategies
+user-invocable: false
+disable-model-invocation: true
 version: 1.1.0
 category: toolchain
 progressive_disclosure:

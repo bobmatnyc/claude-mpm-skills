@@ -1,6 +1,8 @@
 ---
 name: golang-database-patterns
 description: "Go database integration patterns using sqlx, pgx, and migration tools like golang-migrate"
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

@@ -1,6 +1,8 @@
 ---
 name: local-llm-ops
 description: Local LLM operations with Ollama on Apple Silicon, including setup, model pulls, chat launchers, benchmarks, and diagnostics.
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

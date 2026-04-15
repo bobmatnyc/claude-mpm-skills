@@ -1,6 +1,8 @@
 ---
 name: json-data-handling
 description: Working effectively with JSON data structures.
+user-invocable: false
+disable-model-invocation: true
 updated_at: 2025-10-30T17:00:00Z
 tags: [json, data, parsing, serialization]
 progressive_disclosure:

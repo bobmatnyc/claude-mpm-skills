@@ -1,6 +1,8 @@
 ---
 name: terraform
 description: "Terraform infrastructure-as-code workflow patterns: state and environments, module design, safe plan/apply, drift control, and CI guardrails"
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: universal
 author: Claude MPM Team

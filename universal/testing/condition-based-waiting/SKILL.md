@@ -1,6 +1,8 @@
 ---
 name: Condition-Based Waiting
 description: Replace arbitrary timeouts with condition polling for reliable async tests
+user-invocable: false
+disable-model-invocation: true
 when_to_use: when tests have race conditions, timing dependencies, or inconsistent pass/fail behavior
 version: 1.1.0
 languages: all

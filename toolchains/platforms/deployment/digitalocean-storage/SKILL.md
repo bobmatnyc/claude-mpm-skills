@@ -1,6 +1,8 @@
 ---
 name: digitalocean-storage
 description: DigitalOcean storage services including Spaces object storage, Volumes block storage, NFS, Snapshots, and Backups. Use when selecting or managing storage for DigitalOcean workloads.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "DigitalOcean storage services including Spaces object storage, Volumes block storage, NFS, Snapshots, and Backups. Use when selecting or managing storage for DigitalOcean workloads."

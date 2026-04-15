@@ -1,6 +1,8 @@
 ---
 name: datadog-observability
 description: Full-stack observability with Datadog APM, logs, metrics, synthetics, and RUM. Use when implementing monitoring, tracing, alerting, or cost optimization for production systems.
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: platform
 author: Claude MPM Team

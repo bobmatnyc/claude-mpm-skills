@@ -1,6 +1,8 @@
 ---
 name: fastapi-local-dev
 description: FastAPI dev/prod runbook (Uvicorn reload, Gunicorn)
+user-invocable: false
+disable-model-invocation: true
 version: 1.1.0
 category: toolchain
 author: Claude MPM Team
