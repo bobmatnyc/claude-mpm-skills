@@ -1,6 +1,8 @@
 ---
 name: artifacts-builder
 description: "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui)"
+user-invocable: false
+disable-model-invocation: true
 license: Complete terms in LICENSE.txt
 progressive_disclosure:
   entry_point:

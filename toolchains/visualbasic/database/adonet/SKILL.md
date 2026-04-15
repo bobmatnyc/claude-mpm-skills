@@ -1,6 +1,8 @@
 ---
 name: vb-database
 description: ADO.NET patterns, Entity Framework, database best practices
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

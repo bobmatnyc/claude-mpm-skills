@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
-  "updated": "2026-02-12T12:52:44.338900",
+  "updated": "2026-04-15",
   "description": "Curated collection of Claude Code skills for intelligent project development",
   "skills": {
     "universal": [
@@ -345,6 +345,29 @@
         "author": "bobmatnyc",
         "updated": "2025-12-31",
         "source_path": "universal/main/mcp-builder/SKILL.md"
+      },
+      {
+        "name": "mpm-orchestration-demo",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "orchestration",
+          "patterns",
+          "reference",
+          "mpm"
+        ],
+        "entry_point_tokens": 200,
+        "full_tokens": 800,
+        "requires": [],
+        "author": "Claude MPM Skills",
+        "updated": "2026-04-15",
+        "source_path": "universal/orchestration/mpm-orchestration-demo/SKILL.md",
+        "has_references": true,
+        "reference_files": [
+          "orchestration-patterns.md"
+        ]
       },
       {
         "name": "opentelemetry",
@@ -3808,6 +3831,28 @@
           "source_path": "toolchains/visualbasic/core/SKILL.md"
         },
         {
+          "name": "vb-database",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "visualbasic",
+          "framework": null,
+          "tags": [
+            "visualbasic",
+            "database",
+            "adonet",
+            "entity-framework",
+            "sql",
+            "async",
+            "transactions"
+          ],
+          "entry_point_tokens": 2650,
+          "full_tokens": 2650,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-02-12",
+          "source_path": "toolchains/visualbasic/database/adonet/SKILL.md"
+        },
+        {
           "name": "vb-winforms",
           "version": "1.0.0",
           "category": "toolchain",
@@ -3824,43 +3869,17 @@
           ],
           "entry_point_tokens": 2420,
           "full_tokens": 2420,
-          "requires": [
-            "vb-core"
-          ],
+          "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-02-12",
           "source_path": "toolchains/visualbasic/frameworks/winforms/SKILL.md"
-        },
-        {
-          "name": "vb-database",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "visualbasic",
-          "framework": "adonet",
-          "tags": [
-            "visualbasic",
-            "database",
-            "adonet",
-            "entity-framework",
-            "sql",
-            "async",
-            "transactions"
-          ],
-          "entry_point_tokens": 2650,
-          "full_tokens": 2650,
-          "requires": [
-            "vb-core"
-          ],
-          "author": "Claude MPM Team",
-          "updated": "2026-02-12",
-          "source_path": "toolchains/visualbasic/database/adonet/SKILL.md"
         },
         {
           "name": "vb6-legacy",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "visualbasic",
-          "framework": "vb6",
+          "framework": null,
           "tags": [
             "visualbasic",
             "vb6",
@@ -3894,10 +3913,10 @@
         "entry_point_tokens": 74,
         "full_tokens": 3232,
         "requires": [
-          "\u26a0\ufe0f VIOLATION: This field should be empty!",
-          "\u26a0\ufe0f setup-skill",
-          "\u26a0\ufe0f database-skill",
-          "\u26a0\ufe0f pytest-patterns"
+          "⚠️ VIOLATION: This field should be empty!",
+          "⚠️ setup-skill",
+          "⚠️ database-skill",
+          "⚠️ pytest-patterns"
         ],
         "author": "claude-mpm-skills",
         "updated": "2025-12-31",
@@ -3928,10 +3947,10 @@
     ]
   },
   "metadata": {
-    "total_skills": 156,
+    "total_skills": 161,
     "categories": {
-      "universal": 37,
-      "toolchains": 117,
+      "universal": 38,
+      "toolchains": 121,
       "examples": 2
     },
     "toolchains": {
@@ -3948,9 +3967,10 @@
       "rust": 4,
       "typescript": 14,
       "ui": 4,
-      "universal": 9
+      "universal": 9,
+      "visualbasic": 4
     },
-    "last_updated": "2026-01-28",
+    "last_updated": "2026-04-15",
     "schema_version": "2.0.0"
   },
   "provenance": {

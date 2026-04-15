@@ -1,6 +1,8 @@
 ---
 name: langchain-framework
 description: "LangChain LLM application framework with chains, agents, RAG, and memory for building AI-powered applications"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "LangChain LLM application framework with chains, agents, RAG, and memory for building AI-powered applications"

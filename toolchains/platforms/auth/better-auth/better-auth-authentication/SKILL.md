@@ -1,6 +1,8 @@
 ---
 name: better-auth-authentication
 description: Better Auth authentication flows for TypeScript apps. Use when enabling email/password auth, configuring social providers, or implementing sign-up, sign-in, and verification flows.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Better Auth authentication flows for TypeScript apps. Use when enabling email/password auth, configuring social providers, or implementing sign-up, sign-in, and verification flows."

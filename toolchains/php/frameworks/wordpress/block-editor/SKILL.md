@@ -1,6 +1,8 @@
 ---
 name: wordpress-block-editor-fse
 description: "Modern WordPress block development and Full Site Editing with theme.json, block themes, and custom blocks for WordPress 6.7+"
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: development
 author: Claude MPM Team

@@ -1,6 +1,8 @@
 ---
 name: tanstack-query
 description: TanStack Query (React Query) for asynchronous server-state management with automatic caching, background refetching, optimistic updates, and pagination in React applications.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     - summary

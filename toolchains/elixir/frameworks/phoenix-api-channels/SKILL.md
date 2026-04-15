@@ -1,6 +1,8 @@
 ---
 name: phoenix-api-channels
 description: "Phoenix controllers, JSON APIs, Channels, and Presence on the BEAM"
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

@@ -1,6 +1,8 @@
 ---
 name: typescript-core
 description: "Advanced TypeScript patterns and best practices for 2025"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Type-safe TypeScript patterns with optimal tsconfig, runtime validation, and modern TS 5.2+ features"

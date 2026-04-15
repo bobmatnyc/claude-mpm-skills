@@ -1,6 +1,8 @@
 ---
 name: test-driven-development
 description: Comprehensive TDD patterns and practices for all programming languages, eliminating redundant testing guidance per agent.
+user-invocable: false
+disable-model-invocation: true
 license: Apache-2.0
 compatibility: claude-code
 metadata:

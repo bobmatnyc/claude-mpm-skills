@@ -1,6 +1,8 @@
 ---
 name: env-manager
 description: "Environment variable validation, security scanning, and management for Next.js, Vite, React, and Node.js applications"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Environment variable validation, security scanning, and management for Next.js, Vite, React, and Node.js applications"

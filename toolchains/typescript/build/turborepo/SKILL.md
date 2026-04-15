@@ -1,6 +1,8 @@
 ---
 name: turborepo
 description: High-performance monorepo build system with intelligent caching, task orchestration, and parallel execution for multi-package repositories and microservices.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     - summary

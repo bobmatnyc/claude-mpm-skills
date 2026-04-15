@@ -1,6 +1,8 @@
 ---
 name: digitalocean-overview
 description: DigitalOcean platform overview for account setup, projects, tooling (Control Panel, doctl, API, Terraform), and service selection across compute, storage, databases, networking, management, and teams. Use when onboarding or planning DigitalOcean usage.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "DigitalOcean platform overview for account setup, projects, tooling (Control Panel, doctl, API, Terraform), and service selection across compute, storage, databases, networking, management, and tea..."

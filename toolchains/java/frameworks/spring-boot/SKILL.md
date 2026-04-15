@@ -1,6 +1,8 @@
 ---
 name: spring-boot
 description: Spring Boot 3.x - Java framework for production-ready applications with dependency injection, REST APIs, data access, security, and actuator monitoring
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

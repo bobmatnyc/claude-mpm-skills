@@ -1,6 +1,8 @@
 ---
 name: pyright-type-checker
 description: "Pyright fast Python type checker from Microsoft with VS Code integration and strict type checking modes"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Pyright fast Python type checker from Microsoft with VS Code integration and strict type checking modes"

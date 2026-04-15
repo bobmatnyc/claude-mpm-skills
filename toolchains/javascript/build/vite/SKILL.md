@@ -1,6 +1,8 @@
 ---
 name: vite-build-tool
 description: "Vite lightning-fast build tool with instant HMR, ESM-first architecture, and zero-config setup for modern web development"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Vite lightning-fast build tool with instant HMR, ESM-first architecture, and zero-config setup for modern web development"

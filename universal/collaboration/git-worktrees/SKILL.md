@@ -1,6 +1,8 @@
 ---
 name: git-worktrees
 description: Use git worktrees for parallel development on multiple branches simultaneously
+user-invocable: false
+disable-model-invocation: true
 tags: [git, worktrees, parallel-development, productivity]
 related_agents: [version-control, engineer]
 progressive_disclosure:

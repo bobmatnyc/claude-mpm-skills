@@ -1,6 +1,8 @@
 ---
 name: kysely
 description: Kysely type-safe SQL query builder - End-to-end type safety from schema to queries, migrations, transactions, plugins
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: development
 author: Claude MPM Team

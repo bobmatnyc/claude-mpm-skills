@@ -1,6 +1,8 @@
 ---
 name: vercel-observability
 description: Vercel observability for Web Analytics, Speed Insights, logs, tracing, alerts, and observability tooling. Use when monitoring performance or debugging production behavior on Vercel.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Vercel observability for Web Analytics, Speed Insights, logs, tracing, alerts, and observability tooling. Use when monitoring performance or debugging production behavior on Vercel."

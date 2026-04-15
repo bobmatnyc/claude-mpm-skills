@@ -1,6 +1,8 @@
 ---
 name: mcp-builder
 description: "MCP (Model Context Protocol) server build and evaluation guide, including local conventions for tool surfaces, config, and testing"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Build and evaluate MCP servers: define tool/resource surfaces, configure stdio, and validate with independent questions."

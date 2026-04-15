@@ -1,6 +1,8 @@
 ---
 name: mcp
 description: MCP (Model Context Protocol) - Build AI-native servers with tools, resources, and prompts. TypeScript/Python SDKs for Claude Desktop integration.
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

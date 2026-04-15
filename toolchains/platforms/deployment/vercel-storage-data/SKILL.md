@@ -1,6 +1,8 @@
 ---
 name: vercel-storage-data
 description: Vercel data and storage services including Postgres, Redis, Vercel Blob, Edge Config, and data cache. Use when selecting data storage or caching on Vercel.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Vercel data and storage services including Postgres, Redis, Vercel Blob, Edge Config, and data cache. Use when selecting data storage or caching on Vercel."

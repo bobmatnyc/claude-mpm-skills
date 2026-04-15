@@ -1,6 +1,8 @@
 ---
 name: rust-desktop-applications
 description: Build cross-platform desktop applications with Rust using Tauri framework and native GUI alternatives
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: development
 author: Claude MPM Team

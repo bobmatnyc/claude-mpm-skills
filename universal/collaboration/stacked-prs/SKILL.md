@@ -1,6 +1,8 @@
 ---
 name: stacked-prs
 description: Create and manage stacked (dependent) pull requests for complex features
+user-invocable: false
+disable-model-invocation: true
 tags: [git, pull-requests, branching, workflow, collaboration]
 related_agents: [version-control]
 progressive_disclosure:

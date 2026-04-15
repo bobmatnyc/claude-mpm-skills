@@ -1,6 +1,8 @@
 ---
 name: pr-quality-checklist
 description: PR quality checklist for ensuring comprehensive, well-documented pull requests. Use before submitting PRs to improve review efficiency and code quality.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     - summary

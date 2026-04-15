@@ -1,6 +1,8 @@
 ---
 name: vector-search-workflows
 description: Vector search indexing and querying workflows using MCP Vector Search, including setup, reindexing, auto-index strategies, and MCP integration.
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

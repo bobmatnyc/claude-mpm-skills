@@ -1,6 +1,8 @@
 ---
 name: vercel-teams-billing
 description: Vercel account, team, and billing management including plans and spend controls. Use when managing teams, accounts, or cost governance on Vercel.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Vercel account, team, and billing management including plans and spend controls. Use when managing teams, accounts, or cost governance on Vercel."

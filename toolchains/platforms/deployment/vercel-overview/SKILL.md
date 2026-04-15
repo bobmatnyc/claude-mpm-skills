@@ -1,6 +1,8 @@
 ---
 name: vercel-overview
 description: Vercel platform overview for onboarding, projects, CLI, Git integration, environment variables, project configuration, REST API, and webhooks. Use when planning or operating workloads on Vercel.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Vercel platform overview for onboarding, projects, CLI, Git integration, environment variables, project configuration, REST API, and webhooks. Use when planning or operating workloads on Vercel."

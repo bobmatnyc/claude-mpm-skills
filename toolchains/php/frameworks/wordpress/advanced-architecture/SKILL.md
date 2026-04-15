@@ -1,6 +1,8 @@
 ---
 name: wordpress-advanced-architecture
 description: Advanced WordPress development with REST API endpoints, WP-CLI commands, performance optimization, and caching strategies for scalable applications.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Advanced WordPress development with REST API, WP-CLI, performance optimization, and caching strategies"

@@ -1,6 +1,8 @@
 ---
 name: flask
 description: Flask - Lightweight Python web framework for microservices, REST APIs, and flexible web applications with extensive extension ecosystem
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

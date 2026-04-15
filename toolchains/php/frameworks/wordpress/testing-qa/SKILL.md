@@ -1,6 +1,8 @@
 ---
 name: wordpress-testing-qa
 description: "WordPress plugin and theme testing with PHPUnit integration tests, WP_Mock unit tests, PHPCS coding standards, and CI/CD workflows"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "WordPress plugin and theme testing with PHPUnit integration tests, WP_Mock unit tests, PHPCS coding standards, and CI/CD workflows"

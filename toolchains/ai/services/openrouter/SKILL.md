@@ -1,6 +1,8 @@
 ---
 name: openrouter
 description: OpenRouter unified AI API - Access 200+ LLMs through single interface with intelligent routing, streaming, cost optimization, and model fallbacks
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: ai-service
 author: Claude MPM Team

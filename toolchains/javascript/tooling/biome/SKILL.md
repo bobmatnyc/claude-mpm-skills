@@ -1,6 +1,8 @@
 ---
 name: biome
 description: Biome - Fast all-in-one toolchain for web projects (linter + formatter in Rust, 100x faster than ESLint)
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

@@ -1,6 +1,8 @@
 ---
 name: hono-cloudflare
 description: Hono on Cloudflare Workers - bindings, KV, D1, R2, Durable Objects, and edge deployment patterns
+user-invocable: false
+disable-model-invocation: true
 skill_version: 1.0.0
 updated_at: 2025-01-03T00:00:00Z
 tags: [hono, cloudflare-workers, edge, kv, d1, r2, durable-objects, serverless]

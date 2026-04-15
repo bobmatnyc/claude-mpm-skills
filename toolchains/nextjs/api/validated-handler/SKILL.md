@@ -1,6 +1,8 @@
 ---
 name: validated-handler
 description: "Type-safe API route handler with automatic Zod validation for Next.js App Router..."
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 tags: []
 progressive_disclosure:

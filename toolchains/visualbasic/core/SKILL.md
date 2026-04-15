@@ -1,6 +1,8 @@
 ---
 name: vb-core
 description: Core VB.NET patterns, type safety, modern language features
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

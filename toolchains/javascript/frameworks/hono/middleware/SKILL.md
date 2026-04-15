@@ -1,6 +1,8 @@
 ---
 name: hono-middleware
 description: Hono middleware patterns - creation, composition, built-in middleware, and execution order for web applications
+user-invocable: false
+disable-model-invocation: true
 skill_version: 1.0.0
 updated_at: 2025-01-03T00:00:00Z
 tags: [hono, middleware, cors, authentication, logging, compression, security]

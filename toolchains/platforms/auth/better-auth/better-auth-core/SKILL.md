@@ -1,6 +1,8 @@
 ---
 name: better-auth-core
 description: Better Auth core setup for TypeScript apps. Use when configuring the Better Auth instance, wiring server handlers and client instances, working with sessions, or calling server-side auth APIs.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Better Auth core setup for TypeScript apps. Use when configuring the Better Auth instance, wiring server handlers and client instances, working with sessions, or calling server-side auth APIs."

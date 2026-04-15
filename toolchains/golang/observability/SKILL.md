@@ -1,6 +1,8 @@
 ---
 name: golang-observability-opentelemetry
 description: "Instrumenting Go applications with OpenTelemetry for distributed tracing, Prometheus for metrics, and structured logging with slog"
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

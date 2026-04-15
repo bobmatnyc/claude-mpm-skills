@@ -1,6 +1,8 @@
 ---
 name: svelte
 description: Svelte 5 - Reactive UI framework with compiler magic, Runes API, SvelteKit full-stack framework, SSR/SSG, minimal JavaScript
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

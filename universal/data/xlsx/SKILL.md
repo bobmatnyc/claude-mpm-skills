@@ -1,6 +1,8 @@
 ---
 name: xlsx
 description: Working with Excel files programmatically.
+user-invocable: false
+disable-model-invocation: true
 updated_at: 2025-10-30T17:00:00Z
 tags: [excel, xlsx, spreadsheet, data]
 progressive_disclosure:

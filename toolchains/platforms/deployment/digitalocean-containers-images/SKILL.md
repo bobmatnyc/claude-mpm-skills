@@ -1,6 +1,8 @@
 ---
 name: digitalocean-containers-images
 description: DigitalOcean containers and images including Container Registry, preconfigured images, and custom images. Use when building, storing, or deploying container images or Droplet images on DigitalOcean.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "DigitalOcean containers and images including Container Registry, preconfigured images, and custom images. Use when building, storing, or deploying container images or Droplet images on DigitalOcean."

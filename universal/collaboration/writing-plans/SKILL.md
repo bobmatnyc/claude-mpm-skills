@@ -1,6 +1,8 @@
 ---
 name: Writing Plans
 description: Create detailed implementation plans with bite-sized tasks for engineers with zero codebase context
+user-invocable: false
+disable-model-invocation: true
 when_to_use: when design is complete and you need detailed implementation tasks for engineers with zero codebase context
 version: 2.2.0
 progressive_disclosure:

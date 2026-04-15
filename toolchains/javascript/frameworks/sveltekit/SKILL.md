@@ -1,6 +1,8 @@
 ---
 name: sveltekit
 description: SvelteKit - Full-stack Svelte framework with file-based routing, SSR/SSG, form actions, and adapters for deployment
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

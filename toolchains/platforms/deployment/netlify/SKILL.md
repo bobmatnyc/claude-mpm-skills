@@ -1,6 +1,8 @@
 ---
 name: netlify-deployment-platform
 description: "Netlify JAMstack deployment platform with serverless functions, forms, and identity"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Netlify JAMstack deployment platform with serverless functions, forms, and identity"

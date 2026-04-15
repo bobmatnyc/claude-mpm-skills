@@ -1,0 +1,13 @@
+{
+  "name": "mpm-orchestration-demo",
+  "version": "1.0.0",
+  "category": "universal",
+  "tags": ["orchestration", "patterns", "reference", "mpm"],
+  "entry_point_tokens": 200,
+  "full_tokens": 800,
+  "author": "Claude MPM Skills",
+  "license": "MIT",
+  "requires": [],
+  "updated": "2026-04-15",
+  "source_path": "universal/orchestration/mpm-orchestration-demo/SKILL.md"
+}

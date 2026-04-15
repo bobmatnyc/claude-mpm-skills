@@ -1,6 +1,8 @@
 ---
 name: django-framework
 description: "Django full-featured Python web framework with batteries included (ORM, admin, auth)"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Django full-featured Python web framework with batteries included (ORM, admin, auth)"

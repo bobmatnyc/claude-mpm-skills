@@ -1,6 +1,8 @@
 ---
 name: digitalocean-managed-databases
 description: DigitalOcean Managed Databases for PostgreSQL, MySQL, Redis, MongoDB, Kafka, OpenSearch, and Valkey. Use when provisioning, scaling, or operating managed database clusters on DigitalOcean.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "DigitalOcean Managed Databases for PostgreSQL, MySQL, Redis, MongoDB, Kafka, OpenSearch, and Valkey. Use when provisioning, scaling, or operating managed database clusters on DigitalOcean."

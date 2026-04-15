@@ -1,6 +1,8 @@
 ---
 name: api-design-patterns
 description: Comprehensive API design patterns covering REST, GraphQL, gRPC, versioning, authentication, and modern API best practices
+user-invocable: false
+disable-model-invocation: true
 license: Apache-2.0
 compatibility: claude-code
 metadata:

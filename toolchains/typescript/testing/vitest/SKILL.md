@@ -1,6 +1,8 @@
 ---
 name: vitest
 description: Vitest - Modern TypeScript testing framework with Vite-native performance, ESM support, and TypeScript-first design
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

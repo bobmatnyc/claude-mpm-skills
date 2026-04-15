@@ -1,6 +1,8 @@
 ---
 name: skill-creator
 description: "Guide for creating effective skills"
+user-invocable: false
+disable-model-invocation: true
 license: Complete terms in LICENSE.txt
 progressive_disclosure:
   entry_point:

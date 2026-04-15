@@ -1,6 +1,8 @@
 ---
 name: anthropic-sdk
 description: "Official Anthropic SDK for Claude AI with chat, streaming, function calling, and vision capabilities"
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Official Anthropic SDK for Claude AI with chat, streaming, function calling, and vision capabilities"

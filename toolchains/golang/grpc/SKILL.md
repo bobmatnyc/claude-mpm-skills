@@ -1,6 +1,8 @@
 ---
 name: golang-grpc
 description: "Production gRPC in Go: protobuf layout, codegen, interceptors, deadlines, error codes, streaming, health checks, TLS, and testing with bufconn"
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

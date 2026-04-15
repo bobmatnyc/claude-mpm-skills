@@ -1,6 +1,8 @@
 ---
 name: vb6-legacy
 description: Classic VB6 patterns, COM interop, migration strategies
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

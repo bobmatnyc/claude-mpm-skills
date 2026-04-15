@@ -1,6 +1,8 @@
 ---
 name: opentelemetry
 description: "OpenTelemetry observability patterns: traces, metrics, logs, context propagation, OTLP export, Collector pipelines, and troubleshooting"
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: universal
 author: Claude MPM Team

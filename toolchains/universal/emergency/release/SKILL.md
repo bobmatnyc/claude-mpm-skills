@@ -1,6 +1,8 @@
 ---
 name: emergency-release-workflow
 description: Emergency release workflow for critical bug fixes and security patches. Use when production issues require fast-track deployment.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     - summary

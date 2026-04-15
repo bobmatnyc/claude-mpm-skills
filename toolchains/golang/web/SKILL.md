@@ -1,6 +1,8 @@
 ---
 name: golang-http-frameworks
 description: "Go HTTP API development with net/http, Chi, Gin, Echo, and Fiber frameworks"
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

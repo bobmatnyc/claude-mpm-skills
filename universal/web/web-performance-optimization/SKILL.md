@@ -1,6 +1,8 @@
 ---
 name: web-performance-optimization
 description: "Optimize web performance using Core Web Vitals, modern patterns (View Transitions, Speculation Rules), and framework-specific techniques"
+user-invocable: false
+disable-model-invocation: true
 updated_at: 2025-12-02T00:00:00Z
 tags: [performance, optimization, lighthouse, core-web-vitals, frontend]
 progressive_disclosure:

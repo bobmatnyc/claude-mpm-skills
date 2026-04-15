@@ -1,6 +1,8 @@
 ---
 name: Dispatching Parallel Agents
 description: Use multiple Claude agents to investigate and fix independent problems concurrently
+user-invocable: false
+disable-model-invocation: true
 when_to_use: when facing 3+ independent failures that can be investigated without shared state or dependencies
 version: 2.0.0
 progressive_disclosure:

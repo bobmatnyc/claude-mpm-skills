@@ -1,6 +1,8 @@
 ---
 name: vercel-functions-runtime
 description: Vercel Functions and Edge Runtime, including cron jobs and routing middleware. Use when building APIs, serverless workloads, or scheduled tasks on Vercel.
+user-invocable: false
+disable-model-invocation: true
 progressive_disclosure:
   entry_point:
     summary: "Vercel Functions and Edge Runtime, including cron jobs and routing middleware. Use when building APIs, serverless workloads, or scheduled tasks on Vercel."
