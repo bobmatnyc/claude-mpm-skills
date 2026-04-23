@@ -1,14 +1,14 @@
 ---
 name: software-patterns
-description: Decision framework for architectural patterns including DI, SOA, Repository, Domain Events, Circuit Breaker, and Anti-Corruption Layer. Use when designing systems, choosing patterns, or reviewing architecture.
+description: "Compare tradeoffs and recommend architectural patterns — dependency injection, service-oriented architecture, repository, domain events, circuit breaker, and anti-corruption layer. Use when choosing between design patterns, planning microservices boundaries, evaluating system design alternatives, or asking 'which pattern should I use' for a specific coupling or resilience problem."
 user-invocable: false
 disable-model-invocation: true
 version: 1.0.0
 languages: all
 progressive_disclosure:
   entry_point:
-    summary: "Decision framework for choosing and implementing core architectural patterns"
-    when_to_use: "When designing new systems, adding integration points, managing complexity, or reviewing existing architecture"
+    summary: "Compare tradeoffs and recommend architectural patterns for coupling, resilience, and boundary problems"
+    when_to_use: "When choosing between design patterns, planning microservices, evaluating dependency injection vs service locator, or deciding how to decouple services"
     quick_start: "1. Identify the problem class 2. Check decision tree 3. Apply foundational patterns (DI+SOA) 4. Layer situational patterns as needed"
   references:
     - foundational-patterns.md
@@ -19,9 +19,11 @@ progressive_disclosure:
 tags:
   - architecture
   - patterns
-  - design
+  - design-patterns
   - dependency-injection
-  - service-oriented
+  - service-oriented-architecture
+  - microservices
+  - system-design
 ---
 
 # Software Patterns Primer
@@ -52,6 +54,23 @@ These patterns provide the structural foundation for maintainable systems. Apply
 |---------|---------------|-----------------|
 | **Dependency Injection** | Tight coupling, untestable code | Classes instantiate their own dependencies |
 | **Service-Oriented Architecture** | Monolithic tangles, unclear boundaries | Business logic scattered, no clear ownership |
+
+**DI quick example — before and after:**
+
+```python
+# BEFORE: tight coupling, hard to test
+class OrderService:
+    def __init__(self):
+        self.db = PostgresDatabase()       # concrete dependency
+        self.mailer = SmtpMailer()         # concrete dependency
+
+# AFTER: dependencies injected, easily testable
+class OrderService:
+    def __init__(self, db: Database, mailer: Mailer):
+        self.db = db
+        self.mailer = mailer
+# In tests: OrderService(db=FakeDatabase(), mailer=FakeMailer())
+```
 
 ### Situational (Apply When Triggered)
 
@@ -97,36 +116,6 @@ Does one slow service break everything?
 
 → [Complete Decision Trees](references/decision-trees.md)
 
-## Pattern Selection by Problem
-
-### "My code is hard to test"
-**Primary:** Dependency Injection
-**Why:** Dependencies passed in = dependencies mockable
-
-### "I don't know where business logic lives"
-**Primary:** Service-Oriented Architecture
-**Secondary:** Repository (if data access is the confusion)
-**Why:** Clear boundaries = clear ownership
-
-### "External API changes keep breaking my code"
-**Primary:** Anti-Corruption Layer
-**Why:** Translation layer absorbs external volatility
-
-### "Services call each other in circles"
-**Primary:** Domain Events
-**Why:** Publish/subscribe breaks circular dependencies
-
-### "One slow service takes down everything"
-**Primary:** Circuit Breaker
-**Secondary:** Retry with Backoff
-**Why:** Fail fast prevents cascade
-
-### "Database changes ripple through codebase"
-**Primary:** Repository Pattern
-**Why:** Abstraction layer isolates data access
-
-→ [Real-World Examples](references/examples.md)
-
 ## Implementation Priority
 
 When starting a new system:
@@ -141,20 +130,6 @@ When refactoring existing system:
 1. **First:** Identify the specific pain point
 2. **Second:** Apply the minimal pattern that solves it
 3. **Third:** Validate improvement before adding more
-
-## Key Principles
-
-**Minimal Sufficient Pattern**
-Apply the simplest pattern that solves the problem. Over-architecting creates its own maintenance burden.
-
-**Problem-First Selection**
-Never ask "which patterns should I use?" Ask "what problem am I solving?"
-
-**Composition Over Prescription**
-Patterns combine. Repository + Domain Events + Circuit Breaker is common for external data sources.
-
-**Explicit Over Implicit**
-Dependencies should be visible. Service Locator hides them; DI exposes them.
 
 ## Navigation
 
