@@ -120,6 +120,65 @@
         "source_path": "universal/verification/bug-fix/SKILL.md"
       },
       {
+        "name": "code-production-process",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "process",
+          "pipeline",
+          "code-production",
+          "quality-gate"
+        ],
+        "entry_point_tokens": 176,
+        "full_tokens": 2919,
+        "requires": [
+          "code-review-standards"
+        ],
+        "author": "bobmatnyc",
+        "updated": "2026-05-16",
+        "source_path": "universal/process/code-production-process/SKILL.md",
+        "has_references": true,
+        "reference_files": [
+          "stage-research.md",
+          "stage-architect.md",
+          "stage-implement.md",
+          "stage-tests.md",
+          "stage-critic.md",
+          "stage-security.md",
+          "skip-rules.md",
+          "critic-isolation.md"
+        ]
+      },
+      {
+        "name": "code-review-standards",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "code-review",
+          "standards",
+          "checklist",
+          "quality-gate"
+        ],
+        "entry_point_tokens": 109,
+        "full_tokens": 1157,
+        "requires": [],
+        "author": "bobmatnyc",
+        "updated": "2026-05-16",
+        "source_path": "universal/process/code-review-standards/SKILL.md",
+        "has_references": true,
+        "reference_files": [
+          "criteria-critical.md",
+          "criteria-high.md",
+          "criteria-medium.md",
+          "criteria-low.md",
+          "verdict-protocol.md"
+        ]
+      },
+      {
         "name": "condition-based-waiting",
         "version": "1.0.0",
         "category": "universal",
@@ -3913,10 +3972,10 @@
         "entry_point_tokens": 74,
         "full_tokens": 3232,
         "requires": [
-          "⚠️ VIOLATION: This field should be empty!",
-          "⚠️ setup-skill",
-          "⚠️ database-skill",
-          "⚠️ pytest-patterns"
+          "\u26a0\ufe0f VIOLATION: This field should be empty!",
+          "\u26a0\ufe0f setup-skill",
+          "\u26a0\ufe0f database-skill",
+          "\u26a0\ufe0f pytest-patterns"
         ],
         "author": "claude-mpm-skills",
         "updated": "2025-12-31",
