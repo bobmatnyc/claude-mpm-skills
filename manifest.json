@@ -3225,6 +3225,54 @@
           "author": "bobmatnyc",
           "updated": "2025-11-21",
           "source_path": "toolchains/rust/frameworks/tauri/SKILL.md"
+        },
+        {
+          "name": "rust-quality-gate",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": null,
+          "tags": [
+            "rust",
+            "quality",
+            "testing",
+            "clippy",
+            "fmt",
+            "cargo",
+            "ci",
+            "monorepo",
+            "qa"
+          ],
+          "entry_point_tokens": 130,
+          "full_tokens": 1600,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-05-25",
+          "source_path": "toolchains/rust/quality/rust-quality-gate/SKILL.md"
+        },
+        {
+          "name": "cargo-release",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": null,
+          "tags": [
+            "rust",
+            "cargo",
+            "release",
+            "publish",
+            "semver",
+            "versioning",
+            "monorepo",
+            "codesign",
+            "ops"
+          ],
+          "entry_point_tokens": 140,
+          "full_tokens": 1800,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-05-25",
+          "source_path": "toolchains/rust/ops/cargo-release/SKILL.md"
         }
       ],
       "typescript": [
