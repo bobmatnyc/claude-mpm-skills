@@ -23,6 +23,7 @@ Curated skill bundles for efficient deployment of complete development stacks.
 
 ### Universal Development
 - **universal-development**: TDD, systematic debugging, verification standards
+- **ticketing-stack**: gh CLI issue/PR/label ops, git workflow, verification — bundled with the ticketing agent
 
 ### AI/MCP Development
 - **ai-mcp-development**: MCP, Anthropic SDK, LangChain, DSPy, LangGraph

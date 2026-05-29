@@ -1,0 +1,15 @@
+# Ticketing Stack - Skill Manifest
+# Version: 1.0.0
+# Format: path/to/skill:version (or path/to/skill for latest)
+#
+# Bundled with the ticketing agent: everything needed to reliably create,
+# update, and verify GitHub issues/PRs/labels from automation and subagents.
+
+# GitHub CLI operations (issue/PR/label) with pre-flight auth verification
+universal/collaboration/gh-cli
+
+# Conventional commits, branching, PR hygiene for ticket-linked work
+universal/collaboration/git-workflow
+
+# Never report a ticket as created/closed without verifying the result
+universal/debugging/verification-before-completion
