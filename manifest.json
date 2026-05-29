@@ -283,6 +283,30 @@
         ]
       },
       {
+        "name": "gh-cli",
+        "version": "1.0.0",
+        "category": "universal",
+        "toolchain": null,
+        "framework": null,
+        "tags": [
+          "github",
+          "gh",
+          "cli",
+          "issues",
+          "pull-requests",
+          "labels",
+          "automation",
+          "ci",
+          "troubleshooting"
+        ],
+        "entry_point_tokens": 70,
+        "full_tokens": 2845,
+        "requires": [],
+        "author": "Claude MPM Skills",
+        "updated": "2026-05-29",
+        "source_path": "universal/collaboration/gh-cli/SKILL.md"
+      },
+      {
         "name": "git-workflow",
         "version": "1.0.0",
         "category": "universal",
