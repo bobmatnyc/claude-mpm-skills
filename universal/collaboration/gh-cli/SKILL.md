@@ -24,7 +24,7 @@ Reliable patterns for using the GitHub `gh` CLI for issue, PR, and label operati
 
 ## The One Rule: Never Fabricate
 
-If you cannot verify that an operation succeeded, **report the failure with the exact error**. Never invent an issue number, a URL, or a "created successfully" message. A loud, accurate failure is always better than a fake success — downstream agents and humans act on what you report.
+When an operation cannot be verified as succeeded, **report the failure with the exact error**. Never invent an issue number, a URL, or a "created successfully" message. A loud, accurate failure is always better than a fake success — downstream agents and humans act on what gets reported.
 
 ---
 
