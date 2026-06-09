@@ -126,6 +126,39 @@ async fn get_user(Path(id): Path<String>) -> Json<User> {
 }
 ```
 
+### Dependencies & Crate Structure
+
+If your crate is published as a library in addition to being built as a binary, isolate the HTTP stack to avoid bloating library consumers.
+
+✅ **Correct: optional HTTP feature**
+```toml
+[dependencies]
+axum = { version = "0.7", optional = true }
+tower-http = { version = "0.5", optional = true }
+tokio = { version = "1", features = ["full"] }
+
+[features]
+default = ["http-server"]
+http-server = ["axum", "tower-http"]
+
+[[bin]]
+name = "my-service"
+required-features = ["http-server"]
+```
+
+This way:
+- Library consumers (`cargo add my-lib`) get just the core logic without the HTTP overhead.
+- Binary builds include the server by default: `cargo install my-crate` works as expected.
+- Opt-out is explicit: `cargo add my-crate --no-default-features` for library use.
+
+❌ **Wrong: unconditional HTTP dependencies**
+```toml
+# Never do this if the crate is also a library:
+axum = "0.7"
+tower-http = "0.5"
+# Library users now pull in the entire web stack
+```
+
 ## Production Patterns
 
 ### 1) Shared state (DB pool, config, clients)
@@ -250,6 +283,18 @@ async fn main() {
         .unwrap();
 }
 ```
+
+#### Ops: Graceful Shutdown in Supervised Environments
+
+Signal handling above is application-level. In production, your supervisor (systemd, launchd, container orchestrator) controls the actual termination window.
+
+**systemd (Linux)**: Set `KillSignal=SIGTERM` and `TimeoutStopSec=120` (or higher) in your `.service` file.
+- The default 90s timeout can fire mid-fsync on networked storage (EBS/EFS), truncating writes.
+- 120s gives in-flight HTTP requests time to drain plus a safety margin for filesystem syncs.
+
+**launchd (macOS)**: Use `launchctl bootout` (sends SIGTERM and waits) instead of `launchctl kickstart -k` (SIGKILL, truncates in-flight I/O).
+
+**Client-side reconnection**: HTTP clients and MCP bridges connecting to your service should implement exponential backoff (starting 200ms, capped at 30s) so brief restarts are transparent and don't cascade errors upstream.
 
 ## Testing
 
