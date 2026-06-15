@@ -1,10 +1,9 @@
 # Python Code-Quality Anti-Patterns
 
-High-value Python code-quality anti-patterns that complement the pytest testing
-mechanics in the main skill. These are correctness- and readability-focused patterns
-worth checking during review or self-review of Python code under test — clean code is
-easier to test, and several of these (broad `except`, malformed exception classes)
-directly cause flaky or silent test failures.
+High-value Python code-quality anti-patterns to check during review or self-review.
+These are correctness- and readability-focused patterns. Several of them (broad
+`except`, malformed exception classes, identity-vs-equality bugs) directly cause flaky
+or silently-passing tests, so clean code here pays off in testability too.
 
 > **Source note:** These anti-patterns are derived from CAST Highlight's Python code
 > quality indicators (https://doc.casthighlight.com/), which in turn reference primary
@@ -237,8 +236,9 @@ it in CI lint rather than unit tests.
 
 ## Where this fits
 
-These are review/self-review checks, not test patterns per se. Most are enforced cheaply
-by `ruff`/`pylint`/`mypy` in CI; the exception-hierarchy and broad-`except` items also
-have direct behavioral tests (shown above) because they change runtime behavior. For the
-project-wide severity-tagged review checklist that incorporates equivalents of these,
-see the `code-review-standards` skill.
+These are review/self-review checks. Most are enforced cheaply by `ruff`/`pylint`/`mypy`
+in CI; the exception-hierarchy and broad-`except` items also have direct behavioral
+tests (shown above) because they change runtime behavior. For the project-wide
+severity-tagged review checklist that incorporates equivalents of these, see the
+`code-review-standards` skill. For testing mechanics (fixtures, parametrization,
+mocking), see the `pytest` skill.

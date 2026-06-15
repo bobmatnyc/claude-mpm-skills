@@ -1,6 +1,6 @@
 {
   "name": "pytest",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "toolchain",
   "toolchain": "python",
   "framework": "pytest",
@@ -18,14 +18,13 @@
     "fastapi",
     "django",
     "flask",
-    "coverage",
-    "code-quality",
-    "anti-patterns"
+    "coverage"
   ],
   "entry_point_tokens": 163,
-  "full_tokens": 10368,
+  "full_tokens": 8273,
   "related_skills": [
     "../../frameworks/fastapi-local-dev",
+    "../../quality/code-quality",
     "../../../../universal/testing/test-driven-development",
     "../../../../universal/debugging/systematic-debugging"
   ],

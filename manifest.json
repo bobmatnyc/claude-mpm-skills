@@ -710,7 +710,7 @@
       },
       {
         "name": "software-patterns",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -719,10 +719,13 @@
           "patterns",
           "design",
           "dependency-injection",
-          "service-oriented"
+          "service-oriented",
+          "code-smells",
+          "refactoring",
+          "complexity"
         ],
         "entry_point_tokens": 75,
-        "full_tokens": 15814,
+        "full_tokens": 18000,
         "requires": [],
         "author": "masa",
         "updated": "2026-04-15",
@@ -730,6 +733,7 @@
         "has_references": true,
         "reference_files": [
           "anti-patterns.md",
+          "code-smell-signals.md",
           "decision-trees.md",
           "examples.md",
           "foundational-patterns.md",
@@ -1475,7 +1479,7 @@
         },
         {
           "name": "golang-http-frameworks",
-          "version": "1.0.0",
+          "version": "1.1.0",
           "category": "toolchain",
           "toolchain": "golang",
           "framework": null,
@@ -1487,14 +1491,21 @@
             "echo",
             "fiber",
             "rest-api",
-            "middleware"
+            "middleware",
+            "code-quality",
+            "idioms",
+            "anti-patterns"
           ],
           "entry_point_tokens": 160,
-          "full_tokens": 6745,
+          "full_tokens": 7400,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/golang/web/SKILL.md"
+          "source_path": "toolchains/golang/web/SKILL.md",
+          "has_references": true,
+          "reference_files": [
+            "go-idioms-quality.md"
+          ]
         },
         {
           "name": "golang-observability-opentelemetry",
@@ -3143,7 +3154,7 @@
         },
         {
           "name": "pytest",
-          "version": "1.1.0",
+          "version": "1.1.1",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -3161,16 +3172,37 @@
             "fastapi",
             "django",
             "flask",
-            "coverage",
-            "code-quality",
-            "anti-patterns"
+            "coverage"
           ],
           "entry_point_tokens": 163,
-          "full_tokens": 10368,
+          "full_tokens": 8273,
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-06-15",
-          "source_path": "toolchains/python/testing/pytest/SKILL.md",
+          "source_path": "toolchains/python/testing/pytest/SKILL.md"
+        },
+        {
+          "name": "python-code-quality",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "python",
+          "framework": null,
+          "tags": [
+            "python",
+            "code-quality",
+            "anti-patterns",
+            "code-review",
+            "pep8",
+            "ruff",
+            "pylint",
+            "static-analysis"
+          ],
+          "entry_point_tokens": 150,
+          "full_tokens": 3302,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/python/quality/code-quality/SKILL.md",
           "has_references": true,
           "reference_files": [
             "quality-antipatterns.md"
@@ -3178,7 +3210,7 @@
         },
         {
           "name": "sqlalchemy",
-          "version": "1.0.0",
+          "version": "1.1.0",
           "category": "toolchain",
           "toolchain": "python",
           "framework": null,
@@ -3194,20 +3226,28 @@
             "sqlite",
             "async",
             "fastapi",
-            "flask"
+            "flask",
+            "code-quality",
+            "anti-patterns",
+            "n+1",
+            "query-performance"
           ],
           "entry_point_tokens": 80,
-          "full_tokens": 5876,
+          "full_tokens": 8348,
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/python/data/sqlalchemy/SKILL.md"
+          "source_path": "toolchains/python/data/sqlalchemy/SKILL.md",
+          "has_references": true,
+          "reference_files": [
+            "sql-quality-antipatterns.md"
+          ]
         }
       ],
       "rust": [
         {
           "name": "axum",
-          "version": "1.1.0",
+          "version": "1.1.1",
           "category": "toolchain",
           "toolchain": "rust",
           "framework": "axum",
@@ -3625,7 +3665,7 @@
           "full_tokens": 24858,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/typescript/core/SKILL.md",
           "has_references": true,
           "reference_files": [
@@ -4136,10 +4176,10 @@
     ]
   },
   "metadata": {
-    "total_skills": 167,
+    "total_skills": 168,
     "categories": {
       "universal": 42,
-      "toolchains": 123,
+      "toolchains": 124,
       "examples": 2
     },
     "toolchains": {
@@ -4152,7 +4192,7 @@
       "nextjs": 3,
       "php": 6,
       "platforms": 26,
-      "python": 10,
+      "python": 11,
       "rust": 6,
       "typescript": 14,
       "ui": 4,

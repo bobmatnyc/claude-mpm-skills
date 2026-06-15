@@ -3,7 +3,7 @@ name: axum
 description: "Axum (Rust) web framework patterns for production APIs: routers/extractors, state, middleware, error handling, tracing, graceful shutdown, and testing"
 user-invocable: false
 disable-model-invocation: true
-version: 1.0.0
+version: 1.1.1
 category: toolchain
 author: Claude MPM Team
 license: MIT
@@ -294,7 +294,7 @@ Signal handling above is application-level. In production, your supervisor (syst
 
 **launchd (macOS)**: Use `launchctl bootout` (sends SIGTERM and waits) instead of `launchctl kickstart -k` (SIGKILL, truncates in-flight I/O).
 
-**Client-side reconnection**: HTTP clients and MCP bridges connecting to your service should implement exponential backoff (starting 200ms, capped at 30s) so brief restarts are transparent and don't cascade errors upstream.
+**Client-side reconnection**: Have HTTP clients and MCP bridges connecting to the service implement exponential backoff (starting 200ms, capped at 30s) so brief restarts are transparent and don't cascade errors upstream.
 
 ## Testing
 
