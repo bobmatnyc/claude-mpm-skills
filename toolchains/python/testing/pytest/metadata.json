@@ -1,6 +1,6 @@
 {
   "name": "pytest",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "category": "toolchain",
   "toolchain": "python",
   "framework": "pytest",
@@ -21,9 +21,10 @@
     "coverage"
   ],
   "entry_point_tokens": 163,
-  "full_tokens": 8084,
+  "full_tokens": 8273,
   "related_skills": [
     "../../frameworks/fastapi-local-dev",
+    "../../quality/code-quality",
     "../../../../universal/testing/test-driven-development",
     "../../../../universal/debugging/systematic-debugging"
   ],
@@ -32,7 +33,7 @@
   "requires": [],
   "sub_skills": [],
   "created": "2025-11-30",
-  "updated": "2025-12-31",
+  "updated": "2026-06-15",
   "source_path": "toolchains/python/testing/pytest/SKILL.md",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "description": "pytest - Python's most powerful testing framework with fixtures, parametrization, plugins, and framework integration for FastAPI, Django, Flask"

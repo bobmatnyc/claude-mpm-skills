@@ -15,6 +15,9 @@ progressive_disclosure:
     - update_strategy
     - cleanup_workflow
     - security_scanning
+    - open_source_safety
+  references:
+    - open-source-safety.md
 ---
 
 # Dependency Audit Skill
@@ -637,6 +640,43 @@ npx socket-npm audit
    pnpm test && pnpm build
    git commit -m "fix: patch CVE-2024-XXXX in vulnerable-package"
    ```
+
+---
+
+## Open Source Safety
+
+Vulnerability scanning answers "is it vulnerable?" — but third-party risk has three
+independent dimensions. Gate on the **worst** of them, not just CVEs:
+
+- **License risk** — IP/legal exposure by license type:
+  - **HIGH:** strong copyleft (`GPL-2.0/3.0`, `AGPL-3.0`, `LGPL-2.1/3.0`) — risk of
+    disclosing your whole application's source. Block in distributed/commercial products.
+  - **MEDIUM:** weak copyleft (`MPL-2.0`, `EPL-1.0`) — only modifications to the
+    component's files must be disclosed. OK if used unmodified.
+  - **LOW:** permissive (`MIT`, `Apache-2.0`, `BSD`) — attribution only.
+  - **UNKNOWN** (`NOASSERTION`): treat as HIGH until the license is identified.
+- **CVE weighting** — weight by severity (critical ≫ high ≫ medium ≫ low), not raw
+  counts; this refines the P0–P4 priority matrix above.
+- **Obsolescence** — score the version gap to latest; a dependency a major version (or
+  more) behind, or with an unmaintained upstream, is elevated risk.
+
+```bash
+# License audit
+npx license-checker --failOn "GPL-3.0;AGPL-3.0;LGPL-3.0"   # JS/TS
+pip-licenses --fail-on "GPL-3.0;AGPL-3.0"                  # Python
+```
+
+Add to the monthly checklist: no new HIGH-tier or UNKNOWN licenses; critical/high CVEs
+blocked, medium/low tracked with owner + expiry; nothing more than one major behind
+without a migration plan.
+
+See **[references/open-source-safety.md](references/open-source-safety.md)** for the full
+framework — tier tables, the CVE weighting model, obsolescence scoring, and the
+transitive-dependency ("friends of your friends") trust model.
+
+> Derived from CAST Highlight's Open Source Safety methodology
+> (https://doc.casthighlight.com/); license tiers align with
+> https://choosealicense.com/appendix/.
 
 ---
 

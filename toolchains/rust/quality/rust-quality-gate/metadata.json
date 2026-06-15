@@ -1,0 +1,27 @@
+{
+  "name": "rust-quality-gate",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "rust",
+  "tags": [
+    "rust",
+    "quality",
+    "fmt",
+    "clippy",
+    "test",
+    "ci",
+    "pre-merge"
+  ],
+  "entry_point_tokens": 120,
+  "full_tokens": 1200,
+  "related_skills": [
+    "cargo-release",
+    "github-actions"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [],
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "created": "2026-05-29",
+  "updated": "2026-05-29"
+}

@@ -1,6 +1,6 @@
 {
   "name": "espocrm",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "category": "toolchain",
   "toolchain": "php",
   "framework": "espocrm",
@@ -21,11 +21,11 @@
   "author": "bobmatnyc",
   "license": "MIT",
   "requires": [],
-  "updated": "2026-01-02",
+  "updated": "2026-06-15",
   "source_path": "php/espocrm-development/SKILL.md",
   "source": "https://github.com/bobmatnyc/claude-mpm",
   "created": "2025-11-21",
-  "modified": "2026-01-02",
+  "modified": "2026-06-15",
   "maintainer": "Claude MPM Team",
   "attribution_required": true,
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"

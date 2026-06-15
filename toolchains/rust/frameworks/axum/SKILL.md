@@ -3,7 +3,7 @@ name: axum
 description: "Axum (Rust) web framework patterns for production APIs: routers/extractors, state, middleware, error handling, tracing, graceful shutdown, and testing"
 user-invocable: false
 disable-model-invocation: true
-version: 1.0.0
+version: 1.1.1
 category: toolchain
 author: Claude MPM Team
 license: MIT
@@ -124,6 +124,39 @@ async fn create_user(Json(body): Json<CreateUser>) -> Json<User> {
 async fn get_user(Path(id): Path<String>) -> Json<User> {
     Json(User { id, email: "a@example.com".into() })
 }
+```
+
+### Dependencies & Crate Structure
+
+If your crate is published as a library in addition to being built as a binary, isolate the HTTP stack to avoid bloating library consumers.
+
+✅ **Correct: optional HTTP feature**
+```toml
+[dependencies]
+axum = { version = "0.7", optional = true }
+tower-http = { version = "0.5", optional = true }
+tokio = { version = "1", features = ["full"] }
+
+[features]
+default = ["http-server"]
+http-server = ["axum", "tower-http"]
+
+[[bin]]
+name = "my-service"
+required-features = ["http-server"]
+```
+
+This way:
+- Library consumers (`cargo add my-lib`) get just the core logic without the HTTP overhead.
+- Binary builds include the server by default: `cargo install my-crate` works as expected.
+- Opt-out is explicit: `cargo add my-crate --no-default-features` for library use.
+
+❌ **Wrong: unconditional HTTP dependencies**
+```toml
+# Never do this if the crate is also a library:
+axum = "0.7"
+tower-http = "0.5"
+# Library users now pull in the entire web stack
 ```
 
 ## Production Patterns
@@ -250,6 +283,18 @@ async fn main() {
         .unwrap();
 }
 ```
+
+#### Ops: Graceful Shutdown in Supervised Environments
+
+Signal handling above is application-level. In production, your supervisor (systemd, launchd, container orchestrator) controls the actual termination window.
+
+**systemd (Linux)**: Set `KillSignal=SIGTERM` and `TimeoutStopSec=120` (or higher) in your `.service` file.
+- The default 90s timeout can fire mid-fsync on networked storage (EBS/EFS), truncating writes.
+- 120s gives in-flight HTTP requests time to drain plus a safety margin for filesystem syncs.
+
+**launchd (macOS)**: Use `launchctl bootout` (sends SIGTERM and waits) instead of `launchctl kickstart -k` (SIGKILL, truncates in-flight I/O).
+
+**Client-side reconnection**: Have HTTP clients and MCP bridges connecting to the service implement exponential backoff (starting 200ms, capped at 30s) so brief restarts are transparent and don't cascade errors upstream.
 
 ## Testing
 

@@ -3,7 +3,8 @@ name: software-patterns
 description: "Compare tradeoffs and recommend architectural patterns — dependency injection, service-oriented architecture, repository, domain events, circuit breaker, and anti-corruption layer. Use when choosing between design patterns, planning microservices boundaries, evaluating system design alternatives, or asking 'which pattern should I use' for a specific coupling or resilience problem."
 user-invocable: false
 disable-model-invocation: true
-version: 1.0.0
+version: 1.1.0
+updated: "2026-06-15"
 languages: all
 progressive_disclosure:
   entry_point:
@@ -16,6 +17,7 @@ progressive_disclosure:
     - anti-patterns.md
     - decision-trees.md
     - examples.md
+    - code-smell-signals.md
 tags:
   - architecture
   - patterns
@@ -140,6 +142,7 @@ When refactoring existing system:
 ### Decision Support
 - **[Decision Trees](references/decision-trees.md)**: Complete flowcharts for pattern selection
 - **[Anti-Patterns](references/anti-patterns.md)**: Common misapplications and how to recognize them
+- **[Code-Smell Signals](references/code-smell-signals.md)**: Low-level code smells (large switches, nested loops, parameter reassignment, high complexity/coupling) mapped to the architectural problems they signal and the pattern that fixes each — derived from CAST Highlight `_multi` quality indicators (https://doc.casthighlight.com/)
 
 ### Implementation
 - **[Examples](references/examples.md)**: Language-agnostic pseudocode for each pattern combination

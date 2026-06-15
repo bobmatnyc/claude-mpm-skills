@@ -1,6 +1,6 @@
 {
   "name": "sqlalchemy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "category": "toolchain",
   "toolchain": "python",
   "framework": "sqlalchemy",
@@ -16,10 +16,14 @@
     "sqlite",
     "async",
     "fastapi",
-    "flask"
+    "flask",
+    "code-quality",
+    "anti-patterns",
+    "n+1",
+    "query-performance"
   ],
   "entry_point_tokens": 80,
-  "full_tokens": 5876,
+  "full_tokens": 8348,
   "related_skills": [
     "../../frameworks/fastapi",
     "../../frameworks/flask",
@@ -55,6 +59,7 @@
   ],
   "installation": "pip install sqlalchemy alembic",
   "created_at": "2025-11-30",
+  "updated": "2026-06-15",
   "progressive_loading": {
     "entry_tokens": 80,
     "full_tokens": 5000,

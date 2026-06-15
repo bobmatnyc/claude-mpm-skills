@@ -3,6 +3,8 @@ name: wordpress-security-validation
 description: Security-first WordPress development with nonces, sanitization, validation, and escaping to prevent XSS, CSRF, and SQL injection vulnerabilities.
 user-invocable: false
 disable-model-invocation: true
+version: 1.1.0
+updated: "2026-06-15"
 progressive_disclosure:
   entry_point:
     summary: "Security-first WordPress development with nonces, sanitization, validation, and escaping for robust plugin/theme security"
@@ -14,11 +16,13 @@ progressive_disclosure:
       - "Sanitize on input with sanitize_* functions"
       - "Validate for logic with validation rules"
       - "Escape on output with esc_* functions"
+  references:
+    - php-quality-antipatterns.md
 ---
 
 # WordPress Security & Data Validation
 
-**Version:** 1.0.0
+**Version:** 1.1.0
 **Target:** WordPress 6.7+ | PHP 8.3+
 **Skill Level:** Intermediate to Advanced
 
@@ -613,12 +617,12 @@ function validate_registration_form($data) {
 
     // Password validation
     if (strlen($data['password']) < 8) {
-        $errors['password'] = 'Password must be at least 8 characters';
+        $errors['password'] = 'Password must be at least 8 characters'; // pragma: allowlist secret
     }
 
     // Password confirmation
     if ($data['password'] !== $data['password_confirm']) {
-        $errors['password_confirm'] = 'Passwords do not match';
+        $errors['password_confirm'] = 'Passwords do not match'; // pragma: allowlist secret
     }
 
     // Age validation
@@ -1455,6 +1459,17 @@ Use this checklist for every WordPress feature you implement:
 - [ ] No `extract()` on user input
 - [ ] Error messages don't reveal system information
 - [ ] Debug mode disabled in production (`WP_DEBUG = false`)
+- [ ] No `phpinfo()` / `var_dump()` / `print_r()` reachable in production (server-info disclosure)
+- [ ] No empty `catch` blocks on security-relevant operations — fail closed and log the cause
+- [ ] Every `switch` over user-controlled or access-control input has a fail-closed `default`
+
+> **Code-quality defects with a security dimension:** `phpinfo()` left in production
+> leaks server internals; empty `catch` blocks silently swallow failed signature or
+> capability checks (failing *open*); a `switch` with no `default` lets unexpected input
+> fall through unhandled (CWE-478). See
+> **[PHP Quality Anti-Patterns](references/php-quality-antipatterns.md)** for
+> compliant/non-compliant examples. Patterns derived from CAST Highlight code quality
+> indicators (https://doc.casthighlight.com/).
 
 ---
 

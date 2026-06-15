@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains a comprehensive collection of **161 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, AI, and universal tooling.
+This repository contains a comprehensive collection of **169 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, AI, and universal tooling.
 
 ## What is Claude MPM?
 
@@ -18,7 +18,7 @@ This repository contains a comprehensive collection of **161 Claude Code skills*
 **Key Components:**
 - **Claude Code**: Anthropic's official CLI environment
 - **Claude MPM**: Multi-agent framework running in Claude Code
-- **Skills**: Domain-specific knowledge modules (this repo contains 161 skills)
+- **Skills**: Domain-specific knowledge modules (this repo contains 170 skills)
 
 **How They Work Together:**
 ```
@@ -39,7 +39,7 @@ Skills (Knowledge Modules) ← You are here
 
 ## Quick Stats
 
-- **Total Skills**: 161 production-ready skills
+- **Total Skills**: 169 production-ready skills
 - **Coverage**: 95%+ of modern development workflows
 - **Token Efficiency**: ~66.7k entry tokens vs ~512.4k full tokens (~87% savings)
 - **Categories**: Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, Next.js, UI, AI, Platforms, Universal
@@ -49,15 +49,15 @@ Skills (Knowledge Modules) ← You are here
 
 ```
 claude-mpm-skills/
-├── toolchains/          # Language/framework-specific skills (76 skills)
-│   ├── python/         # 10 skills
+├── toolchains/          # Language/framework-specific skills (125 skills)
+│   ├── python/         # 11 skills
 │   │   ├── frameworks/     # Django, FastAPI, Flask
 │   │   ├── testing/        # pytest
 │   │   ├── data/           # SQLAlchemy
 │   │   ├── async/          # asyncio, Celery
 │   │   ├── tooling/        # mypy, pyright
 │   │   └── validation/     # Pydantic
-│   ├── typescript/     # 13 skills
+│   ├── typescript/     # 14 skills
 │   │   ├── frameworks/     # React, Vue, Node.js backend, Fastify
 │   │   ├── testing/        # Vitest, Jest
 │   │   ├── data/           # Drizzle, Kysely, Prisma
@@ -65,7 +65,7 @@ claude-mpm-skills/
 │   │   ├── state/          # Zustand, TanStack Query
 │   │   ├── api/            # tRPC
 │   │   └── build/          # Turborepo
-│   ├── javascript/     # 12 skills
+│   ├── javascript/     # 20 skills
 │   │   ├── frameworks/     # React, Vue, Svelte, SvelteKit
 │   │   ├── testing/        # Playwright, Cypress
 │   │   ├── build/          # Vite
@@ -81,7 +81,7 @@ claude-mpm-skills/
 │   │   └── observability/  # Logging and telemetry
 │   │   ├── grpc/           # Protobuf APIs, interceptors, streaming
 │   │   └── concurrency/    # errgroup, worker pools, bounded fan-out
-│   ├── rust/           # 4 skills
+│   ├── rust/           # 6 skills
 │   │   ├── frameworks/     # Tauri, Axum
 │   │   ├── cli/            # Clap
 │   │   └── desktop-applications/ # Desktop app patterns
@@ -89,23 +89,30 @@ claude-mpm-skills/
 │   │   ├── frameworks/     # Phoenix + LiveView (BEAM), Phoenix API + Channels
 │   │   ├── data/           # Ecto patterns
 │   │   └── ops/            # Phoenix operations & releases
-│   ├── nextjs/         # 2 skills
+│   ├── nextjs/         # 3 skills
 │   │   ├── core/           # Next.js fundamentals
 │   │   └── v16/            # Next.js 16 (Turbopack, cache components)
 │   ├── ui/             # 4 skills
 │   │   ├── styling/        # Tailwind CSS
 │   │   └── components/     # shadcn/ui, DaisyUI, Headless UI
-│   ├── ai/             # 7 skills
+│   ├── ai/             # 9 skills
 │   │   ├── sdks/           # Anthropic SDK
 │   │   ├── frameworks/     # LangChain, DSPy, LangGraph
 │   │   ├── services/       # OpenRouter
 │   │   ├── protocols/      # MCP
 │   │   └── techniques/     # Session Compression
-│   └── platforms/      # 4 skills
-│       ├── deployment/     # Vercel, Netlify
-│       ├── database/       # Neon
-│       └── backend/        # Supabase
-└── universal/           # 32 skills
+│   ├── platforms/      # 26 skills
+│   │   ├── deployment/     # Vercel (9), Netlify, DigitalOcean (10)
+│   │   ├── database/       # Neon
+│   │   ├── backend/        # Supabase
+│   │   ├── observability/  # Datadog
+│   │   └── auth/           # Better Auth (4)
+│   ├── databases/      # 1 skill
+│   │   └── mongodb/        # MongoDB
+│   ├── visualbasic/    # 4 skills
+│   └── universal/      # 9 skills
+│       └── (cross-language infrastructure patterns)
+└── universal/           # 42 skills
     ├── infrastructure/     # Docker, GitHub Actions
     ├── data/              # GraphQL
     ├── architecture/      # Software patterns
@@ -114,7 +121,7 @@ claude-mpm-skills/
 
 ## Complete Skill Catalog
 
-### Python (10 Skills)
+### Python (11 Skills)
 
 **Frameworks**:
 - Django - Full-featured web framework with ORM, admin, DRF
@@ -138,7 +145,7 @@ claude-mpm-skills/
 **Validation**:
 - Pydantic - Data validation with type hints, FastAPI/Django integration
 
-### TypeScript (13 Skills)
+### TypeScript (14 Skills)
 
 **Frameworks**:
 - React - Hooks, context, performance optimization
@@ -168,7 +175,7 @@ claude-mpm-skills/
 **Build Tools**:
 - Turborepo - Monorepo with intelligent caching
 
-### JavaScript (12 Skills)
+### JavaScript (19 Skills)
 
 **Frameworks**:
 - React - Component patterns (also in TypeScript)
@@ -222,7 +229,7 @@ claude-mpm-skills/
 **Observability**:
 - golang-observability-opentelemetry - Logging/metrics/traces + middleware patterns
 
-### Rust (4 Skills)
+### Rust (6 Skills)
 
 **Web & Desktop**:
 - axum - Production Rust HTTP APIs with Tower middleware
@@ -232,7 +239,7 @@ claude-mpm-skills/
 **CLI**:
 - clap - Rust CLI parsing, subcommands, config layering, testable binaries
 
-### Next.js (2 Skills)
+### Next.js (3 Skills)
 
 - Next.js Core - App Router, Server Components, Server Actions
 - Next.js v16 - Turbopack, cache components, migration guide
@@ -247,7 +254,7 @@ claude-mpm-skills/
 - DaisyUI - Tailwind plugin with 50+ components and themes
 - Headless UI - Unstyled accessible primitives for React/Vue
 
-### AI & LLM (7 Skills)
+### AI & LLM (9 Skills)
 
 **SDKs**:
 - Anthropic SDK - Messages API, streaming, function calling, vision
@@ -266,7 +273,7 @@ claude-mpm-skills/
 **Techniques**:
 - Session Compression - Context window compression, progressive summarization
 
-### Platforms (4 Skills)
+### Platforms (26 Skills)
 
 **Deployment**:
 - Vercel - Next.js deployment, Edge Functions, serverless
@@ -278,7 +285,7 @@ claude-mpm-skills/
 **Backend**:
 - Supabase - Postgres + Auth + Storage + Realtime + RLS
 
-### Universal (32 Skills)
+### Universal (42 Skills)
 
 **Infrastructure**:
 - Docker - Containerization, multi-stage builds, compose

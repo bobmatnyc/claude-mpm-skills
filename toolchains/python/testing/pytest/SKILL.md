@@ -3,7 +3,8 @@ name: pytest
 description: pytest - Python's most powerful testing framework with fixtures, parametrization, plugins, and framework integration for FastAPI, Django, Flask
 user-invocable: false
 disable-model-invocation: true
-version: 1.0.0
+version: 1.1.1
+updated: "2026-06-15"
 category: toolchain
 author: Claude MPM Team
 license: MIT
@@ -551,15 +552,15 @@ def client(test_db):
 def test_create_user(client):
     response = client.post(
         "/users",
-        json={"email": "test@example.com", "password": "secret"}
+        json={"email": "test@example.com", "password": "secret"}  # pragma: allowlist secret
     )
     assert response.status_code == 200
     assert response.json()["email"] == "test@example.com"
 
 def test_read_users(client):
     # Create user first
-    client.post("/users", json={"email": "user1@example.com", "password": "pass1"})
-    client.post("/users", json={"email": "user2@example.com", "password": "pass2"})
+    client.post("/users", json={"email": "user1@example.com", "password": "pass1"})  # pragma: allowlist secret
+    client.post("/users", json={"email": "user2@example.com", "password": "pass2"})  # pragma: allowlist secret
 
     # Read users
     response = client.get("/users")
@@ -1367,7 +1368,7 @@ When using pytest, consider these complementary skills:
    ```python
    def authenticate(user):
        # Minimum code to pass the test
-       if user.username == 'alice' and user.password == 'secret123':
+       if user.username == 'alice' and user.password == 'secret123':  # pragma: allowlist secret
            return AuthResult(is_authenticated=True)
        return AuthResult(is_authenticated=False)
    ```
@@ -1439,6 +1440,22 @@ pytest -k "auth or login" -v
 ```
 
 [Full TDD and debugging workflows available in respective skills if deployed together]
+
+---
+
+## Python Code-Quality Anti-Patterns
+
+Clean code under test is easier to test, and several Python quality defects directly
+cause flaky or silently-passing tests (overly broad `except`, malformed exception
+classes, identity-vs-equality bugs). Code-quality anti-patterns now live in their own
+dedicated skill rather than this testing skill:
+
+See the **python-code-quality** skill (`toolchains/python/quality/code-quality`) for
+the highest-value Python anti-patterns — exception-hierarchy correctness, singleton
+identity comparison, narrow exception handling, wildcard-import avoidance, magic-number
+naming, and dead-local removal — with non-compliant vs compliant examples and how to
+test each. For the project-wide severity-tagged review checklist, see the
+`code-review-standards` skill.
 
 ---
 

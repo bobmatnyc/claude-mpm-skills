@@ -1,6 +1,6 @@
 {
   "name": "software-patterns",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "category": "universal",
   "toolchain": null,
   "framework": null,
@@ -9,14 +9,17 @@
     "patterns",
     "design",
     "dependency-injection",
-    "service-oriented"
+    "service-oriented",
+    "code-smells",
+    "refactoring",
+    "complexity"
   ],
   "entry_point_tokens": 75,
-  "full_tokens": 15814,
+  "full_tokens": 18000,
   "author": "masa",
   "license": "MIT",
   "requires": [],
-  "updated": "2025-11-30",
+  "updated": "2026-06-15",
   "source_path": "architecture/software-patterns/SKILL.md",
   "created": "2025-11-30",
   "modified": "2025-11-30",

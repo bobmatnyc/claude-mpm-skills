@@ -3,7 +3,8 @@ name: spring-boot
 description: Spring Boot 3.x - Java framework for production-ready applications with dependency injection, REST APIs, data access, security, and actuator monitoring
 user-invocable: false
 disable-model-invocation: true
-version: 1.0.0
+version: 1.1.0
+updated: "2026-06-15"
 category: toolchain
 author: Claude MPM Team
 license: MIT
@@ -12,6 +13,8 @@ progressive_disclosure:
     summary: "Modern Java framework for building production-ready microservices and web applications with auto-configuration, DI, REST APIs, and Spring Data"
     when_to_use: "Building Java microservices, REST APIs, enterprise applications, when need production-ready features like health checks, metrics, and security"
     quick_start: "1. Create project with start.spring.io 2. Add @SpringBootApplication 3. Create @RestController 4. Run with ./mvnw spring-boot:run"
+  references:
+    - quality-antipatterns.md
 context_limit: 700
 tags:
   - java
@@ -913,6 +916,31 @@ spring:
 // Return consistent error responses
 // Never expose internal details in production
 ```
+
+## Code Quality & Robustness Anti-Patterns
+
+Beyond framework patterns, watch for a recurring set of robustness and changeability
+defects in services, controllers, and exception handlers. These are caught by static
+analysis but are easy to introduce by hand:
+
+- **Generic `catch (Exception)`** buried in a method — catch the specific types you can
+  handle. A broad catch is correct *only* at the top-level boundary (e.g. the
+  `@RestControllerAdvice` catch-all), commented as intentional.
+- **Catch clauses that only rethrow** the same exception — delete them or have them add
+  context (wrap into a typed domain exception).
+- **Throwing raw `RuntimeException`/`Exception`** — throw typed domain exceptions so
+  `@ExceptionHandler` can map them to the right HTTP status.
+- **Nested `try`/`catch`** — extract the inner concern into its own method.
+- **`if … else if` with no final `else`** and **`switch` with no `default`** — handle the
+  residual case or document why none is needed (defensive programming).
+- **Switch fall-through** from non-empty cases and **nested switches** — prefer the
+  arrow `switch` (Java 14+) over enums/sealed types for compiler-enforced exhaustiveness.
+- **Collapsible nested `if`** and **loop-counter modification inside the loop body** —
+  combine conditions; never reassign a `for` counter in its body.
+
+See **[Quality Anti-Patterns](references/quality-antipatterns.md)** for each defect with
+compliant/non-compliant Java examples, severities, and false-positive filters. Patterns
+derived from CAST Highlight code quality indicators (https://doc.casthighlight.com/).
 
 ## Resources
 
