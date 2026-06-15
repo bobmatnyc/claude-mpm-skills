@@ -1215,6 +1215,30 @@
           "source_path": "toolchains/ai/services/openrouter/SKILL.md"
         },
         {
+          "name": "xquik",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "ai",
+          "framework": null,
+          "tags": [
+            "x",
+            "twitter",
+            "api",
+            "mcp",
+            "social-media",
+            "extraction",
+            "webhooks",
+            "monitoring",
+            "agent-workflows"
+          ],
+          "entry_point_tokens": 43,
+          "full_tokens": 2300,
+          "requires": [],
+          "author": "Xquik-dev",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/ai/services/xquik/SKILL.md"
+        },
+        {
           "name": "session-compression",
           "version": "1.0.0",
           "category": "toolchain",
