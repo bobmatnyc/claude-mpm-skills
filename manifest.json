@@ -1984,8 +1984,51 @@
           "description": "Playwright modern end-to-end testing framework with cross-browser automation, auto-wait, and built-in test runner"
         },
         {
-          "name": "react-core",
+          "name": "react-advanced",
           "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "react",
+          "tags": [
+            "react",
+            "react-19",
+            "react-compiler",
+            "concurrent",
+            "useTransition",
+            "useDeferredValue",
+            "suspense",
+            "use-hook",
+            "useActionState",
+            "useOptimistic",
+            "actions",
+            "performance",
+            "virtualization",
+            "code-splitting",
+            "error-boundaries",
+            "portals",
+            "context-optimization",
+            "rsc"
+          ],
+          "entry_point_tokens": 90,
+          "full_tokens": 13700,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/react/react-advanced/SKILL.md",
+          "description": "Modern React 19 platform features and rendering architecture - the React Compiler (auto-memoization) and how it changes memoization guidance, concurrent rendering (useTransition/useDeferredValue/Suspense), the use() hook, Actions (useActionState/useOptimistic/useFormStatus), ref-as-prop and Context-as-provider changes, compound components, context selectors, error boundaries, portals, virtualization, code-splitting, and the RSC/'use client' boundary.",
+          "has_references": true,
+          "reference_files": [
+            "component-patterns.md",
+            "concurrent-rendering.md",
+            "performance.md",
+            "react-compiler.md",
+            "react19-actions-and-apis.md",
+            "rsc-boundary.md"
+          ]
+        },
+        {
+          "name": "react-core",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "react",
@@ -2011,7 +2054,7 @@
         },
         {
           "name": "react-hooks-composition",
-          "version": "1.0.0",
+          "version": "1.0.1",
           "category": "toolchain",
           "toolchain": "javascript",
           "framework": "react",
@@ -4406,10 +4449,10 @@
     ]
   },
   "metadata": {
-    "total_skills": 170,
+    "total_skills": 171,
     "categories": {
       "universal": 42,
-      "toolchains": 126,
+      "toolchains": 127,
       "examples": 2
     },
     "toolchains": {
@@ -4418,7 +4461,7 @@
       "elixir": 4,
       "golang": 7,
       "java": 1,
-      "javascript": 21,
+      "javascript": 22,
       "nextjs": 3,
       "php": 6,
       "platforms": 26,

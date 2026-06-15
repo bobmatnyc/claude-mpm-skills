@@ -3,7 +3,7 @@ name: react-core
 description: General React fundamentals - components and JSX, props and state, the core hooks (useState/useEffect/useRef/useMemo/useCallback/useContext), composition, conditional and list rendering, and controlled inputs. The canonical "depends on React" reference.
 user-invocable: false
 disable-model-invocation: true
-version: 1.0.0
+version: 1.0.1
 category: toolchain
 author: Claude MPM Team
 license: MIT
@@ -292,6 +292,7 @@ Index keys cause React to misattribute state when items move.
 
 - **`react-hooks-composition`**: advanced custom-hook composition — SWR-backed data fetching, debounced search with dual loading states, memoized context providers, and reusable async state hooks.
 - **`react-state-machine`**: explicit finite-state-machine modeling with XState v5 for complex flows (multi-step forms, media players, modals with animations) where impossible states must be unrepresentable.
+- **`react-advanced`**: React 19 platform features and rendering architecture — the React Compiler (auto-memoization), concurrent rendering, the `use()` hook, Actions, virtualization, code-splitting, and the RSC boundary.
 
 ## Best Practices Summary
 
