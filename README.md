@@ -18,7 +18,7 @@ This repository contains a comprehensive collection of **169 Claude Code skills*
 **Key Components:**
 - **Claude Code**: Anthropic's official CLI environment
 - **Claude MPM**: Multi-agent framework running in Claude Code
-- **Skills**: Domain-specific knowledge modules (this repo contains 170 skills)
+- **Skills**: Domain-specific knowledge modules (this repo contains 169 skills)
 
 **How They Work Together:**
 ```

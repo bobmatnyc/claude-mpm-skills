@@ -1,5 +1,5 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.0",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "updated": "2026-06-15",
   "description": "Curated collection of Claude Code skills for intelligent project development",
@@ -96,12 +96,12 @@
         "full_tokens": 649,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/collaboration/brainstorming/SKILL.md",
         "description": "Interactive idea refinement using Socratic method to develop fully-formed designs"
       },
       {
-        "name": "bug-fix-verification",
+        "name": "bug-fix",
         "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
@@ -234,7 +234,7 @@
         "full_tokens": 2385,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/testing/condition-based-waiting/SKILL.md",
         "description": "Replace arbitrary timeouts with condition polling for reliable async tests",
         "has_references": true,
@@ -286,7 +286,7 @@
         "full_tokens": 14739,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/collaboration/dispatching-parallel-agents/SKILL.md",
         "description": "Use multiple Claude agents to investigate and fix independent problems concurrently",
         "has_references": true,
@@ -406,7 +406,7 @@
         "full_tokens": 811,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/main/internal-comms/SKILL.md",
         "description": "Framework for writing concise 3P (Progress, Plans, Problems) team updates for executives and stakeholders"
       },
@@ -496,7 +496,7 @@
         "full_tokens": 800,
         "requires": [],
         "author": "Claude MPM Skills",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/orchestration/mpm-orchestration-demo/SKILL.md",
         "description": "Reference implementation demonstrating the Command → Agent → Skill orchestration pattern in Claude MPM, showing both preloaded-skill and dynamic-skill-invocation styles",
         "has_references": true,
@@ -535,7 +535,7 @@
         ]
       },
       {
-        "name": "pre-merge-verification",
+        "name": "pre-merge",
         "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
@@ -592,7 +592,7 @@
         "full_tokens": 4044,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/collaboration/requesting-code-review/SKILL.md",
         "description": "Good vs bad reviews, severity guidelines, complete workflow examples",
         "has_references": true,
@@ -618,7 +618,7 @@
         "full_tokens": 13753,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/debugging/root-cause-tracing/SKILL.md",
         "description": "Systematically trace bugs backward through call stack to find original trigger",
         "has_references": true,
@@ -630,7 +630,7 @@
         ]
       },
       {
-        "name": "screenshot-verification",
+        "name": "screenshot",
         "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
@@ -918,7 +918,7 @@
         "full_tokens": 21813,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/testing/testing-anti-patterns/SKILL.md",
         "description": "Never test mock behavior. Never add test-only methods to production classes. Understand dependencies before mocking. Language-agnostic principles with TypeScript/Jest and Python/pytest examples.",
         "has_references": true,
@@ -1032,7 +1032,7 @@
         "full_tokens": 2791,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/testing/webapp-testing/SKILL.md",
         "description": "Comprehensive web application testing patterns with Playwright selectors, wait strategies, and best practices"
       },
@@ -1051,7 +1051,7 @@
         "full_tokens": 4801,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/collaboration/writing-plans/SKILL.md",
         "description": "Writing for zero-context engineers, code completeness, test design patterns",
         "has_references": true,
@@ -1079,7 +1079,7 @@
     "toolchains": {
       "ai": [
         {
-          "name": "anthropic-sdk",
+          "name": "anthropic",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ai",
@@ -1099,7 +1099,7 @@
           "full_tokens": 5920,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/ai/sdks/anthropic/SKILL.md",
           "description": "Official Anthropic SDK for Claude AI with chat, streaming, function calling, and vision capabilities"
         },
@@ -1128,7 +1128,7 @@
           "full_tokens": 10191,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/ai/frameworks/dspy/SKILL.md",
           "description": "Declarative framework for automatic prompt optimization treating prompts as code with signatures, modules, and optimizers"
         },
@@ -1153,7 +1153,7 @@
           "full_tokens": 5200,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/ai/frameworks/langchain/SKILL.md",
           "description": "LLM application framework with chains, agents, RAG, and memory systems"
         },
@@ -1208,7 +1208,7 @@
           "description": "Local LLM operations with Ollama on Apple Silicon, including setup, model pulls, chat launchers, benchmarks, and diagnostics."
         },
         {
-          "name": "model-context-protocol",
+          "name": "mcp",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ai",
@@ -1234,7 +1234,7 @@
           "full_tokens": 8827,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/ai/protocols/mcp/SKILL.md",
           "description": "MCP (Model Context Protocol) - Build AI-native servers with tools, resources, and prompts. TypeScript/Python SDKs for Claude Desktop integration."
         },
@@ -1461,8 +1461,8 @@
           "full_tokens": 6894,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/golang/cli/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/golang/golang-cli-cobra-viper/SKILL.md",
           "description": "Building production-quality CLI tools with Cobra command framework and Viper configuration management"
         },
         {
@@ -1486,8 +1486,8 @@
           "full_tokens": 2070,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/golang/concurrency/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/golang/golang-concurrency-patterns/SKILL.md",
           "description": "Go concurrency patterns for production services: context cancellation, errgroup, worker pools, bounded parallelism, fan-in/fan-out, and common race/deadlock pitfalls"
         },
         {
@@ -1508,8 +1508,8 @@
           "full_tokens": 8868,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/golang/data/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/golang/golang-database-patterns/SKILL.md",
           "description": "Go database integration patterns using sqlx, pgx, and migration tools like golang-migrate"
         },
         {
@@ -1533,8 +1533,8 @@
           "full_tokens": 2077,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/golang/grpc/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/golang/golang-grpc/SKILL.md",
           "description": "Production gRPC in Go: protobuf layout, codegen, interceptors, deadlines, error codes, streaming, health checks, TLS, and testing with bufconn"
         },
         {
@@ -1561,7 +1561,7 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-06-15",
-          "source_path": "toolchains/golang/web/SKILL.md",
+          "source_path": "toolchains/golang/golang-http-frameworks/SKILL.md",
           "description": "Go HTTP API development with net/http, Chi, Gin, Echo, and Fiber frameworks",
           "has_references": true,
           "reference_files": [
@@ -1588,8 +1588,8 @@
           "full_tokens": 6126,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/golang/observability/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/golang/golang-observability-opentelemetry/SKILL.md",
           "description": "Instrumenting Go applications with OpenTelemetry for distributed tracing, Prometheus for metrics, and structured logging with slog"
         },
         {
@@ -1610,8 +1610,8 @@
           "full_tokens": 4500,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/golang/testing/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/golang/golang-testing-strategies/SKILL.md",
           "description": "Comprehensive Go testing strategies including table-driven tests, testify assertions, gomock interface mocking, benchmark testing, and CI/CD integration"
         }
       ],
@@ -1695,7 +1695,7 @@
           "description": "Cypress end-to-end and component testing patterns for web apps: reliable selectors, stable waits, network stubbing, auth handling, CI parallelization, and flake reduction"
         },
         {
-          "name": "express-production",
+          "name": "express-local-dev",
           "version": "2.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
@@ -1718,7 +1718,7 @@
           "full_tokens": 27280,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/javascript/frameworks/express-local-dev/SKILL.md",
           "description": "Production-ready Express.js development covering middleware architecture, error handling, security hardening, testing strategies, and deployment patterns",
           "has_references": true,
@@ -1752,8 +1752,8 @@
             "hono-core"
           ],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/cloudflare/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/hono/hono-cloudflare/SKILL.md",
           "description": "Hono on Cloudflare Workers - bindings, KV, D1, R2, Durable Objects, and edge deployment patterns"
         },
         {
@@ -1780,8 +1780,8 @@
           "full_tokens": 4200,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/core/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/hono/hono-core/SKILL.md",
           "description": "Hono ultrafast web framework fundamentals - routing, context, handlers, and response patterns for multi-runtime deployment"
         },
         {
@@ -1807,8 +1807,8 @@
             "hono-core"
           ],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/jsx/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/hono/hono-jsx/SKILL.md",
           "description": "Hono JSX - server-side rendering, streaming, async components, and HTML generation patterns"
         },
         {
@@ -1835,8 +1835,8 @@
             "hono-core"
           ],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/middleware/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/hono/hono-middleware/SKILL.md",
           "description": "Hono middleware patterns - creation, composition, built-in middleware, and execution order for web applications"
         },
         {
@@ -1861,8 +1861,8 @@
             "hono-core"
           ],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/rpc/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/hono/hono-rpc/SKILL.md",
           "description": "Hono RPC - end-to-end type-safe API client generation with hc client and TypeScript inference"
         },
         {
@@ -1887,8 +1887,8 @@
             "hono-core"
           ],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/testing/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/hono/hono-testing/SKILL.md",
           "description": "Hono testing patterns - app.request(), test client, mocking environment, and integration testing strategies"
         },
         {
@@ -1914,75 +1914,12 @@
             "hono-core"
           ],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/validation/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/hono/hono-validation/SKILL.md",
           "description": "Hono request validation with Zod, TypeBox, Valibot - type-safe input validation for JSON, forms, query params, and headers"
         },
         {
-          "name": "nextjs",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "javascript",
-          "framework": "nextjs",
-          "tags": [
-            "async",
-            "database",
-            "api",
-            "security",
-            "testing"
-          ],
-          "entry_point_tokens": 64,
-          "full_tokens": 2123,
-          "requires": [],
-          "author": "bobmatnyc",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/nextjs/SKILL.md",
-          "description": "Next.js environment variable management with file precedence, variable types, and deployment configurations. Use when configuring Next.js applications, managing environment-specific settings, or deploying to Vercel/Railway/Heroku."
-        },
-        {
-          "name": "playwright",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "javascript",
-          "framework": null,
-          "tags": [
-            "testing",
-            "e2e",
-            "playwright",
-            "automation",
-            "cross-browser"
-          ],
-          "entry_point_tokens": 85,
-          "full_tokens": 6541,
-          "requires": [],
-          "author": "Claude MPM",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/testing/playwright/SKILL.md",
-          "description": "Playwright modern end-to-end testing framework with cross-browser automation, auto-wait, and built-in test runner"
-        },
-        {
-          "name": "react",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "javascript",
-          "framework": "react",
-          "tags": [
-            "async",
-            "frontend",
-            "api",
-            "security",
-            "testing"
-          ],
-          "entry_point_tokens": 55,
-          "full_tokens": 4070,
-          "requires": [],
-          "author": "bobmatnyc",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/react/SKILL.md",
-          "description": "FlexLayout for React - Advanced docking layout manager with drag-and-drop, tabs, splitters, and complex window management"
-        },
-        {
-          "name": "react-hooks-composition",
+          "name": "hooks-composition",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
@@ -2016,7 +1953,70 @@
           ]
         },
         {
-          "name": "react-state-machines",
+          "name": "nextjs",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "nextjs",
+          "tags": [
+            "async",
+            "database",
+            "api",
+            "security",
+            "testing"
+          ],
+          "entry_point_tokens": 64,
+          "full_tokens": 2123,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/nextjs/SKILL.md",
+          "description": "Next.js environment variable management with file precedence, variable types, and deployment configurations. Use when configuring Next.js applications, managing environment-specific settings, or deploying to Vercel/Railway/Heroku."
+        },
+        {
+          "name": "playwright",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": null,
+          "tags": [
+            "testing",
+            "e2e",
+            "playwright",
+            "automation",
+            "cross-browser"
+          ],
+          "entry_point_tokens": 85,
+          "full_tokens": 6541,
+          "requires": [],
+          "author": "Claude MPM",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/testing/playwright/SKILL.md",
+          "description": "Playwright modern end-to-end testing framework with cross-browser automation, auto-wait, and built-in test runner"
+        },
+        {
+          "name": "react",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "react",
+          "tags": [
+            "async",
+            "frontend",
+            "api",
+            "security",
+            "testing"
+          ],
+          "entry_point_tokens": 55,
+          "full_tokens": 4070,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/react/SKILL.md",
+          "description": "FlexLayout for React - Advanced docking layout manager with drag-and-drop, tabs, splitters, and complex window management"
+        },
+        {
+          "name": "state-machine",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
@@ -2035,7 +2035,7 @@
           "full_tokens": 37323,
           "requires": [],
           "author": "bobmatnyc",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/javascript/frameworks/react/state-machine/SKILL.md",
           "description": "Building reusable React state machine skills with XState v5 and the actor model",
           "has_references": true,
@@ -2162,7 +2162,7 @@
           "full_tokens": 5460,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/javascript/build/vite/SKILL.md",
           "description": "Lightning-fast build tool with instant HMR and ESM-first architecture for modern web development"
         },
@@ -2201,7 +2201,7 @@
           "version": "1.1.0",
           "category": "toolchain",
           "toolchain": "nextjs",
-          "framework": null,
+          "framework": "nextjs",
           "tags": [
             "nextjs",
             "react",
@@ -2219,8 +2219,8 @@
           "full_tokens": 12236,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/nextjs/core/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/nextjs/nextjs-core/SKILL.md",
           "description": "Core Next.js patterns for App Router development including Server Components, Server Actions, route handlers, data fetching, and caching strategies",
           "has_references": true,
           "reference_files": [
@@ -2233,7 +2233,7 @@
           ]
         },
         {
-          "name": "nextjs-v16",
+          "name": "v16",
           "version": "1.1.0",
           "category": "toolchain",
           "toolchain": "nextjs",
@@ -2254,7 +2254,7 @@
             "nextjs-core"
           ],
           "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/nextjs/v16/SKILL.md",
           "description": "Next.js 16 migration guide (async request APIs, \"use cache\", Turbopack)",
           "has_references": true,
@@ -2354,8 +2354,8 @@
           "full_tokens": 12169,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/php/frameworks/wordpress/advanced-architecture/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/php/frameworks/wordpress/wordpress-advanced-architecture/SKILL.md",
           "description": "Advanced WordPress development with REST API, WP-CLI, performance optimization, and caching strategies for scalable applications"
         },
         {
@@ -2380,8 +2380,8 @@
           "full_tokens": 5517,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/php/frameworks/wordpress/block-editor/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/php/frameworks/wordpress/wordpress-block-editor-fse/SKILL.md",
           "description": "Modern WordPress block development and Full Site Editing with theme.json, block themes, and custom blocks for WordPress 6.7+"
         },
         {
@@ -2408,8 +2408,8 @@
           "full_tokens": 8643,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/php/frameworks/wordpress/plugin-fundamentals/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/php/frameworks/wordpress/wordpress-plugin-fundamentals/SKILL.md",
           "description": "Modern WordPress plugin development with PHP 8.3+, OOP architecture, hooks system, database interactions, and Settings API for building secure, maintainable plugins"
         },
         {
@@ -2435,7 +2435,7 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-06-15",
-          "source_path": "toolchains/php/frameworks/wordpress/security-validation/SKILL.md",
+          "source_path": "toolchains/php/frameworks/wordpress/wordpress-security-validation/SKILL.md",
           "description": "Security-first WordPress development with nonces, sanitization, validation, and escaping for robust plugin/theme security",
           "has_references": true,
           "reference_files": [
@@ -2465,8 +2465,8 @@
           "full_tokens": 12579,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/php/frameworks/wordpress/testing-qa/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/php/frameworks/wordpress/wordpress-testing-qa/SKILL.md",
           "description": "WordPress plugin and theme testing with PHPUnit integration tests, WP_Mock unit tests, PHPCS coding standards enforcement, and GitHub Actions CI/CD pipelines"
         }
       ],
@@ -2589,7 +2589,7 @@
           ]
         },
         {
-          "name": "datadog-observability",
+          "name": "datadog",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "platforms",
@@ -2609,7 +2609,7 @@
           "full_tokens": 20200,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/platforms/observability/datadog/SKILL.md",
           "description": "Full-stack observability with Datadog APM, logs, metrics, synthetics, and RUM. Use when implementing monitoring, tracing, alerting, or cost optimization for production systems.",
           "has_references": true,
@@ -2850,7 +2850,7 @@
           "full_tokens": 4971,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/platforms/database/neon/SKILL.md",
           "description": "Neon serverless Postgres with autoscaling, database branching, and instant provisioning"
         },
@@ -2871,7 +2871,7 @@
           "full_tokens": 4970,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/platforms/deployment/netlify/SKILL.md",
           "description": "Netlify JAMstack deployment platform with serverless functions, forms, and identity"
         },
@@ -2895,7 +2895,7 @@
           "full_tokens": 8098,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/platforms/backend/supabase/SKILL.md",
           "description": "Open-source Firebase alternative with Postgres, authentication, storage, and realtime subscriptions"
         },
@@ -3159,6 +3159,34 @@
           "description": "Distributed task queue system for Python enabling asynchronous execution of background jobs, scheduled tasks, and workflows across multiple workers with Django, Flask, and FastAPI integration."
         },
         {
+          "name": "code-quality",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "python",
+          "framework": null,
+          "tags": [
+            "python",
+            "code-quality",
+            "anti-patterns",
+            "code-review",
+            "pep8",
+            "ruff",
+            "pylint",
+            "static-analysis"
+          ],
+          "entry_point_tokens": 150,
+          "full_tokens": 3302,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/python/quality/code-quality/SKILL.md",
+          "description": "Python code-quality anti-patterns and review checks: exception-hierarchy correctness, singleton identity comparison, narrow exception handling, wildcard-import avoidance, magic-number naming, and dead-local removal.",
+          "has_references": true,
+          "reference_files": [
+            "quality-antipatterns.md"
+          ]
+        },
+        {
           "name": "django",
           "version": "1.0.0",
           "category": "toolchain",
@@ -3175,7 +3203,7 @@
           "full_tokens": 7995,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/python/frameworks/django/SKILL.md",
           "description": "Django full-featured Python web framework with batteries included (ORM, admin, auth)"
         },
@@ -3308,7 +3336,7 @@
           "full_tokens": 3506,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/python/tooling/pyright/SKILL.md",
           "description": "Pyright fast Python type checker from Microsoft with VS Code integration and strict type checking modes"
         },
@@ -3341,34 +3369,6 @@
           "updated": "2026-06-15",
           "source_path": "toolchains/python/testing/pytest/SKILL.md",
           "description": "pytest - Python's most powerful testing framework with fixtures, parametrization, plugins, and framework integration for FastAPI, Django, Flask"
-        },
-        {
-          "name": "python-code-quality",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "python",
-          "framework": null,
-          "tags": [
-            "python",
-            "code-quality",
-            "anti-patterns",
-            "code-review",
-            "pep8",
-            "ruff",
-            "pylint",
-            "static-analysis"
-          ],
-          "entry_point_tokens": 150,
-          "full_tokens": 3302,
-          "requires": [],
-          "author": "Claude MPM Team",
-          "updated": "2026-06-15",
-          "source_path": "toolchains/python/quality/code-quality/SKILL.md",
-          "description": "Python code-quality anti-patterns and review checks: exception-hierarchy correctness, singleton identity comparison, narrow exception handling, wildcard-import avoidance, magic-number naming, and dead-local removal.",
-          "has_references": true,
-          "reference_files": [
-            "quality-antipatterns.md"
-          ]
         },
         {
           "name": "sqlalchemy",
@@ -3499,7 +3499,7 @@
           "full_tokens": 32953,
           "requires": [],
           "author": "bobmatnyc",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/rust/desktop-applications/SKILL.md",
           "description": "Build cross-platform desktop applications with Rust using Tauri framework and native GUI alternatives",
           "has_references": true,
@@ -3552,12 +3552,46 @@
           "full_tokens": 3732,
           "requires": [],
           "author": "bobmatnyc",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/rust/frameworks/tauri/SKILL.md",
           "description": "Advanced Tauri event patterns for bidirectional communication, streaming data, window-to-window messaging, and custom event handling"
         }
       ],
       "typescript": [
+        {
+          "name": "drizzle",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "typescript",
+          "framework": null,
+          "tags": [
+            "drizzle",
+            "orm",
+            "database",
+            "sql",
+            "postgresql",
+            "mysql",
+            "sqlite",
+            "typescript",
+            "type-safety"
+          ],
+          "entry_point_tokens": 75,
+          "full_tokens": 14767,
+          "requires": [
+            "typescript-core"
+          ],
+          "author": "claude-mpm-skills",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/typescript/data/drizzle/SKILL.md",
+          "description": "Type-safe SQL ORM for TypeScript with zero runtime overhead",
+          "has_references": true,
+          "reference_files": [
+            "advanced-schemas.md",
+            "performance.md",
+            "query-patterns.md",
+            "vs-prisma.md"
+          ]
+        },
         {
           "name": "drizzle-migrations",
           "version": "1.0.0",
@@ -3583,40 +3617,6 @@
           "updated": "2026-04-15",
           "source_path": "toolchains/typescript/data/drizzle-migrations/SKILL.md",
           "description": "Migration-first database development workflow using Drizzle ORM for TypeScript/J..."
-        },
-        {
-          "name": "drizzle-orm",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "typescript",
-          "framework": null,
-          "tags": [
-            "drizzle",
-            "orm",
-            "database",
-            "sql",
-            "postgresql",
-            "mysql",
-            "sqlite",
-            "typescript",
-            "type-safety"
-          ],
-          "entry_point_tokens": 75,
-          "full_tokens": 14767,
-          "requires": [
-            "typescript-core"
-          ],
-          "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/data/drizzle/SKILL.md",
-          "description": "Type-safe SQL ORM for TypeScript with zero runtime overhead",
-          "has_references": true,
-          "reference_files": [
-            "advanced-schemas.md",
-            "performance.md",
-            "query-patterns.md",
-            "vs-prisma.md"
-          ]
         },
         {
           "name": "fastify",
@@ -3646,7 +3646,7 @@
           "description": "Production Fastify (TypeScript) patterns: schema validation, plugins, typed routes, error handling, security hardening, logging, testing with inject, and graceful shutdown"
         },
         {
-          "name": "jest-typescript",
+          "name": "jest",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
@@ -3661,7 +3661,7 @@
           "full_tokens": 6420,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/typescript/testing/jest/SKILL.md",
           "description": "Jest with TypeScript - Industry standard testing framework with 70% market share, mature ecosystem, React Testing Library integration"
         },
@@ -3715,12 +3715,12 @@
           "full_tokens": 5576,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/typescript/frameworks/nodejs-backend/SKILL.md",
           "description": "Comprehensive TypeScript backend development with Express and Fastify, covering routing, middleware, authentication, database integration, testing, and production deployment patterns."
         },
         {
-          "name": "prisma-orm",
+          "name": "prisma",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "typescript",
@@ -3743,7 +3743,7 @@
             "typescript-core"
           ],
           "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/typescript/data/prisma/SKILL.md",
           "description": "Prisma ORM for TypeScript - Type-safe database toolkit with schema-first development, auto-generated client, migrations, relations, and Prisma Studio"
         },
@@ -3795,7 +3795,7 @@
             "../../validation/zod"
           ],
           "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/typescript/api/trpc/SKILL.md",
           "description": "End-to-end type safety for TypeScript APIs without code generation. Build type-safe APIs with automatic client-server type inference."
         },
@@ -3845,7 +3845,7 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-06-15",
-          "source_path": "toolchains/typescript/core/SKILL.md",
+          "source_path": "toolchains/typescript/typescript-core/SKILL.md",
           "description": "Advanced TypeScript patterns and best practices for 2025",
           "has_references": true,
           "reference_files": [
@@ -3978,7 +3978,7 @@
           "description": "Headless UI - Unstyled, fully accessible UI components for React and Vue with built-in ARIA patterns"
         },
         {
-          "name": "shadcn-ui",
+          "name": "shadcn",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ui",
@@ -3998,7 +3998,7 @@
             "../../../javascript/frameworks/react"
           ],
           "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/ui/components/shadcn/SKILL.md",
           "description": "shadcn/ui component library for React with Tailwind CSS - copy-paste accessible components with full code ownership"
         },
@@ -4021,14 +4021,14 @@
           "full_tokens": 8041,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/ui/styling/tailwind/SKILL.md",
           "description": "Comprehensive Tailwind CSS skill covering utility-first styling, responsive design, dark mode, custom configuration, plugins, and framework integration"
         }
       ],
       "universal": [
         {
-          "name": "api-security-review",
+          "name": "api-review",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "universal",
@@ -4045,12 +4045,12 @@
           "full_tokens": 5025,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/universal/security/api-review/SKILL.md",
           "description": "API security checklist for reviewing endpoints before deployment. Use when creating or modifying API routes to ensure proper authentication, authorization, and input validation."
         },
         {
-          "name": "dependency-audit",
+          "name": "audit",
           "version": "1.1.0",
           "category": "toolchain",
           "toolchain": "universal",
@@ -4098,28 +4098,6 @@
           "updated": "2026-04-15",
           "source_path": "toolchains/universal/infrastructure/docker/SKILL.md",
           "description": "Docker containerization for packaging applications with dependencies into isolated, portable units ensuring consistency across development, testing, and production environments."
-        },
-        {
-          "name": "emergency-release-workflow",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "universal",
-          "framework": null,
-          "tags": [
-            "hotfix",
-            "emergency",
-            "deployment",
-            "production",
-            "incident-response",
-            "release"
-          ],
-          "entry_point_tokens": 95,
-          "full_tokens": 4000,
-          "requires": [],
-          "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/universal/emergency/release/SKILL.md",
-          "description": "Emergency release workflow for critical bug fixes and security patches. Use when production issues require fast-track deployment."
         },
         {
           "name": "github-actions",
@@ -4211,7 +4189,7 @@
           "description": "FFmpeg-based media transcoding workflows with preset-driven conversions, batch processing, and safe backups for web/mobile/archive outputs."
         },
         {
-          "name": "pr-quality-checklist",
+          "name": "quality",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "universal",
@@ -4227,9 +4205,31 @@
           "full_tokens": 3200,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/universal/pr/quality/SKILL.md",
           "description": "PR quality checklist for ensuring comprehensive, well-documented pull requests. Use before submitting PRs to improve review efficiency and code quality."
+        },
+        {
+          "name": "release",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "universal",
+          "framework": null,
+          "tags": [
+            "hotfix",
+            "emergency",
+            "deployment",
+            "production",
+            "incident-response",
+            "release"
+          ],
+          "entry_point_tokens": 95,
+          "full_tokens": 4000,
+          "requires": [],
+          "author": "claude-mpm-skills",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/universal/emergency/release/SKILL.md",
+          "description": "Emergency release workflow for critical bug fixes and security patches. Use when production issues require fast-track deployment."
         }
       ],
       "visualbasic": [
@@ -4252,8 +4252,8 @@
           "full_tokens": 3850,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/visualbasic/core/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/visualbasic/vb-core/SKILL.md",
           "description": "Core VB.NET patterns, type safety, modern language features"
         },
         {
@@ -4275,8 +4275,8 @@
           "full_tokens": 2650,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/visualbasic/database/adonet/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/visualbasic/database/vb-database/SKILL.md",
           "description": "ADO.NET patterns, Entity Framework, database best practices"
         },
         {
@@ -4284,7 +4284,7 @@
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "visualbasic",
-          "framework": "winforms",
+          "framework": "vb-winforms",
           "tags": [
             "visualbasic",
             "winforms",
@@ -4298,8 +4298,8 @@
           "full_tokens": 2420,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/visualbasic/frameworks/winforms/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/visualbasic/frameworks/vb-winforms/SKILL.md",
           "description": "Windows Forms development patterns, UI threading, data binding"
         },
         {
@@ -4320,8 +4320,8 @@
           "full_tokens": 2980,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/visualbasic/legacy/vb6-interop/SKILL.md",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/visualbasic/legacy/vb6-legacy/SKILL.md",
           "description": "Classic VB6 patterns, COM interop, migration strategies"
         }
       ]
@@ -4348,7 +4348,7 @@
           "⚠️ pytest-patterns"
         ],
         "author": "claude-mpm-skills",
-        "updated": "2025-12-31",
+        "updated": "2026-06-15",
         "source_path": "examples/bad-interdependent-skill/SKILL.md",
         "description": "ANTI-PATTERN - Example showing violations of self-containment (DO NOT COPY)"
       },
@@ -4371,7 +4371,7 @@
         "full_tokens": 2844,
         "requires": [],
         "author": "claude-mpm-skills",
-        "updated": "2025-12-31",
+        "updated": "2026-06-15",
         "source_path": "examples/good-self-contained-skill/SKILL.md",
         "description": "Example of a properly self-contained skill following all best practices"
       }
