@@ -1,5 +1,5 @@
 {
-  "name": "state-machine",
+  "name": "react-state-machine",
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "javascript",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "requires": [],
   "updated": "2025-12-19",
-  "source_path": "react/state-machine",
+  "source_path": "toolchains/javascript/frameworks/react/react-state-machine/SKILL.md",
   "source": "https://github.com/bobmatnyc/claude-mpm",
   "created": "2025-11-29",
   "modified": "2025-12-19",

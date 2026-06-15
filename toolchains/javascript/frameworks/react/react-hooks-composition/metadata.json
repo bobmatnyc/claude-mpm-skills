@@ -1,5 +1,5 @@
 {
-  "name": "hooks-composition",
+  "name": "react-hooks-composition",
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "javascript",
@@ -24,7 +24,7 @@
   "license": "MIT",
   "requires": [],
   "updated": "2026-02-01",
-  "source_path": "toolchains/javascript/frameworks/react/hooks-composition/SKILL.md",
+  "source_path": "toolchains/javascript/frameworks/react/react-hooks-composition/SKILL.md",
   "source": "https://github.com/bobmatnyc/claude-mpm",
   "created": "2026-02-01",
   "modified": "2026-02-01",

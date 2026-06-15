@@ -1,5 +1,5 @@
 ---
-name: state-machine
+name: react-state-machine
 description: "Building reusable React state machine skills with XState v5 and the actor model"
 user-invocable: false
 disable-model-invocation: true

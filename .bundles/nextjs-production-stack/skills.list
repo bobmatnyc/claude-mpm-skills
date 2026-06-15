@@ -3,7 +3,7 @@
 
 # Next.js Framework
 toolchains/nextjs/nextjs-core
-toolchains/nextjs/v16
+toolchains/nextjs/nextjs-v16
 
 # Core Dependencies
 toolchains/javascript/frameworks/react

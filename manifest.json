@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.5",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "updated": "2026-06-15",
   "description": "Curated collection of Claude Code skills for intelligent project development",
@@ -1919,40 +1919,6 @@
           "description": "Hono request validation with Zod, TypeBox, Valibot - type-safe input validation for JSON, forms, query params, and headers"
         },
         {
-          "name": "hooks-composition",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "javascript",
-          "framework": "react",
-          "tags": [
-            "react",
-            "hooks",
-            "composition",
-            "swr",
-            "performance",
-            "typescript",
-            "custom-hooks",
-            "useMemo",
-            "useCallback",
-            "context",
-            "debounce",
-            "state-machine"
-          ],
-          "entry_point_tokens": 4200,
-          "full_tokens": 12500,
-          "requires": [],
-          "author": "Claude MPM Team",
-          "updated": "2026-06-15",
-          "source_path": "toolchains/javascript/frameworks/react/hooks-composition/SKILL.md",
-          "description": "Advanced React hooks composition patterns - SWR integration, debounced search, memoized contexts, state machines, and performance optimization",
-          "has_references": true,
-          "reference_files": [
-            "performance-optimization.md",
-            "swr-patterns.md",
-            "testing-patterns.md"
-          ]
-        },
-        {
           "name": "nextjs",
           "version": "1.0.0",
           "category": "toolchain",
@@ -2016,7 +1982,41 @@
           "description": "FlexLayout for React - Advanced docking layout manager with drag-and-drop, tabs, splitters, and complex window management"
         },
         {
-          "name": "state-machine",
+          "name": "react-hooks-composition",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "react",
+          "tags": [
+            "react",
+            "hooks",
+            "composition",
+            "swr",
+            "performance",
+            "typescript",
+            "custom-hooks",
+            "useMemo",
+            "useCallback",
+            "context",
+            "debounce",
+            "state-machine"
+          ],
+          "entry_point_tokens": 4200,
+          "full_tokens": 12500,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/react/react-hooks-composition/SKILL.md",
+          "description": "Advanced React hooks composition patterns - SWR integration, debounced search, memoized contexts, state machines, and performance optimization",
+          "has_references": true,
+          "reference_files": [
+            "performance-optimization.md",
+            "swr-patterns.md",
+            "testing-patterns.md"
+          ]
+        },
+        {
+          "name": "react-state-machine",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
@@ -2036,7 +2036,7 @@
           "requires": [],
           "author": "bobmatnyc",
           "updated": "2026-06-15",
-          "source_path": "toolchains/javascript/frameworks/react/state-machine/SKILL.md",
+          "source_path": "toolchains/javascript/frameworks/react/react-state-machine/SKILL.md",
           "description": "Building reusable React state machine skills with XState v5 and the actor model",
           "has_references": true,
           "reference_files": [
@@ -2233,11 +2233,11 @@
           ]
         },
         {
-          "name": "v16",
+          "name": "nextjs-v16",
           "version": "1.1.0",
           "category": "toolchain",
           "toolchain": "nextjs",
-          "framework": null,
+          "framework": "nextjs",
           "tags": [
             "nextjs",
             "nextjs-16",
@@ -2255,7 +2255,7 @@
           ],
           "author": "claude-mpm-skills",
           "updated": "2026-06-15",
-          "source_path": "toolchains/nextjs/v16/SKILL.md",
+          "source_path": "toolchains/nextjs/nextjs-v16/SKILL.md",
           "description": "Next.js 16 migration guide (async request APIs, \"use cache\", Turbopack)",
           "has_references": true,
           "reference_files": [
@@ -4050,7 +4050,7 @@
           "description": "API security checklist for reviewing endpoints before deployment. Use when creating or modifying API routes to ensure proper authentication, authorization, and input validation."
         },
         {
-          "name": "audit",
+          "name": "dependency-audit",
           "version": "1.1.0",
           "category": "toolchain",
           "toolchain": "universal",
@@ -4071,7 +4071,7 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-06-15",
-          "source_path": "toolchains/universal/dependency/audit/SKILL.md",
+          "source_path": "toolchains/universal/dependency/dependency-audit/SKILL.md",
           "description": "Dependency audit and cleanup workflow for maintaining healthy project dependencies. Use for regular maintenance, security updates, and removing unused packages.",
           "has_references": true,
           "reference_files": [
@@ -4098,6 +4098,28 @@
           "updated": "2026-04-15",
           "source_path": "toolchains/universal/infrastructure/docker/SKILL.md",
           "description": "Docker containerization for packaging applications with dependencies into isolated, portable units ensuring consistency across development, testing, and production environments."
+        },
+        {
+          "name": "emergency-release-workflow",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "universal",
+          "framework": null,
+          "tags": [
+            "hotfix",
+            "emergency",
+            "deployment",
+            "production",
+            "incident-response",
+            "release"
+          ],
+          "entry_point_tokens": 95,
+          "full_tokens": 4000,
+          "requires": [],
+          "author": "claude-mpm-skills",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/universal/emergency/emergency-release-workflow/SKILL.md",
+          "description": "Emergency release workflow for critical bug fixes and security patches. Use when production issues require fast-track deployment."
         },
         {
           "name": "github-actions",
@@ -4189,7 +4211,7 @@
           "description": "FFmpeg-based media transcoding workflows with preset-driven conversions, batch processing, and safe backups for web/mobile/archive outputs."
         },
         {
-          "name": "quality",
+          "name": "pr-quality-checklist",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "universal",
@@ -4206,30 +4228,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-06-15",
-          "source_path": "toolchains/universal/pr/quality/SKILL.md",
+          "source_path": "toolchains/universal/pr/pr-quality-checklist/SKILL.md",
           "description": "PR quality checklist for ensuring comprehensive, well-documented pull requests. Use before submitting PRs to improve review efficiency and code quality."
-        },
-        {
-          "name": "release",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "universal",
-          "framework": null,
-          "tags": [
-            "hotfix",
-            "emergency",
-            "deployment",
-            "production",
-            "incident-response",
-            "release"
-          ],
-          "entry_point_tokens": 95,
-          "full_tokens": 4000,
-          "requires": [],
-          "author": "claude-mpm-skills",
-          "updated": "2026-06-15",
-          "source_path": "toolchains/universal/emergency/release/SKILL.md",
-          "description": "Emergency release workflow for critical bug fixes and security patches. Use when production issues require fast-track deployment."
         }
       ],
       "visualbasic": [

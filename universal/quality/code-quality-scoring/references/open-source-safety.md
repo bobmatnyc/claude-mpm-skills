@@ -37,7 +37,7 @@ licensed yet dangerously stale. A high blended score hides a single fatal dimens
 
 | You need… | Go to |
 |-----------|-------|
-| License risk tiers (HIGH = GPL/AGPL/LGPL, MEDIUM = EPL/MPL, LOW = MIT/Apache/BSD) | `toolchains/universal/dependency/audit/references/open-source-safety.md` |
+| License risk tiers (HIGH = GPL/AGPL/LGPL, MEDIUM = EPL/MPL, LOW = MIT/Apache/BSD) | `toolchains/universal/dependency/dependency-audit/references/open-source-safety.md` |
 | CVE weighting and obsolescence signals, with `npm audit` / `pip-audit` commands | same audit reference |
 | OSS safety as a *security gate* in scanning pipelines | `universal/security/security-scanning/references/open-source-safety.md` |
 | Transitive-dependency trust model | CAST methodology `transitive-dependencies-...` (research dir) |

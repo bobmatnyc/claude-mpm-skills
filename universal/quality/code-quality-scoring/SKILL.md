@@ -114,7 +114,7 @@ Third-party risk is the average of **Security** (CVE count weighted by criticali
 **Obsolescence** (version gap to latest). This cross-references the Phase 1 OSS Safety
 work — do not duplicate it. See **[open-source-safety.md](references/open-source-safety.md)**,
 and for remediation mechanics use `universal/security/security-scanning` and
-`toolchains/universal/dependency/audit`, which already carry the license-risk tiers and
+`toolchains/universal/dependency/dependency-audit`, which already carry the license-risk tiers and
 CVE-weighting framing.
 
 ## Core Concept 5 — Prioritize by business impact

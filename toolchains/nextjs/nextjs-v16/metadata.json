@@ -1,5 +1,5 @@
 {
-  "name": "v16",
+  "name": "nextjs-v16",
   "version": "1.1.0",
   "category": "toolchain",
   "toolchain": "nextjs",
@@ -19,7 +19,7 @@
   "requires": ["nextjs-core"],
   "author": "claude-mpm-skills",
   "updated": "2025-12-17",
-  "source_path": "toolchains/nextjs/v16/SKILL.md",
+  "source_path": "toolchains/nextjs/nextjs-v16/SKILL.md",
   "license": "MIT",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
 }

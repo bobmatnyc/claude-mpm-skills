@@ -90,8 +90,8 @@ claude-mpm-skills/
 │   │   ├── data/           # Ecto patterns
 │   │   └── ops/            # Phoenix operations & releases
 │   ├── nextjs/         # 3 skills
-│   │   ├── core/           # Next.js fundamentals
-│   │   └── v16/            # Next.js 16 (Turbopack, cache components)
+│   │   ├── nextjs-core/    # Next.js fundamentals
+│   │   └── nextjs-v16/     # Next.js 16 (Turbopack, cache components)
 │   ├── ui/             # 4 skills
 │   │   ├── styling/        # Tailwind CSS
 │   │   └── components/     # shadcn/ui, DaisyUI, Headless UI

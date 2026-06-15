@@ -11,7 +11,7 @@ Production-ready Next.js application stack with App Router, Server Components, T
 ## Included Skills
 
 - **nextjs-core** (toolchains/nextjs/nextjs-core) - App Router, Server Components, Server Actions
-- **nextjs-v16** (toolchains/nextjs/v16) - Next.js 16 features (Turbopack, cache components)
+- **nextjs-v16** (toolchains/nextjs/nextjs-v16) - Next.js 16 features (Turbopack, cache components)
 - **react** (toolchains/typescript/frameworks/react) - React fundamentals and hooks
 - **typescript-core** (toolchains/typescript/typescript-core) - TypeScript patterns and best practices
 - **vercel** (toolchains/platforms/deployment/vercel) - Deployment and Edge Functions
