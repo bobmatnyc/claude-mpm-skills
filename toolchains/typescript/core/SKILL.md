@@ -3,6 +3,8 @@ name: typescript-core
 description: "Advanced TypeScript patterns and best practices for 2025"
 user-invocable: false
 disable-model-invocation: true
+version: 1.2.0
+updated: "2026-06-15"
 progressive_disclosure:
   entry_point:
     summary: "Type-safe TypeScript patterns with optimal tsconfig, runtime validation, and modern TS 5.2+ features"
@@ -15,6 +17,7 @@ progressive_disclosure:
     - advanced-patterns-2025.md
     - decision-trees.md
     - troubleshooting.md
+    - js-quality-antipatterns.md
 ---
 
 # TypeScript Core Patterns
@@ -234,6 +237,31 @@ function parseUser(input: unknown): User {
 - **[🌳 Decision Trees](./references/decision-trees.md)** - Clear decision frameworks for `type` vs `interface`, generics vs unions, `unknown` vs `any`, validation library selection, type narrowing strategies, and module resolution. Load when making TypeScript design decisions.
 
 - **[🔧 Troubleshooting](./references/troubleshooting.md)** - Common TypeScript errors and fixes, type inference issues, module resolution problems, tsconfig misconfigurations, build performance optimization, and type compatibility errors. Load when debugging TypeScript issues.
+
+## JavaScript / Runtime Quality Anti-Patterns
+
+The type system catches type errors, but a class of JavaScript defects is **runtime/AST-
+level** and survives into emitted JS and plain-JS files. Watch for:
+
+- **Loose equality** (`==`/`!=`) — coercion bugs and auth flaws; use `===`/`!==` (accept
+  `== null` only when commented as "null or undefined").
+- **Dynamic code execution** (`eval`, `new Function(str)`, string `setTimeout`) — injection
+  risk and unnecessary; use direct syntax.
+- **Mutating builtins** (`Object`/`Array`/`Function.prototype`) — pollutes `for…in`,
+  breaks the whole runtime; extend or use free functions instead.
+- **Variable shadowing**, **`var` instead of `let`/`const`**, **using functions before
+  declaration** — readability and "wrong variable" bugs.
+- **Logical OR in `switch` case labels** (`case 1 || 2:` only matches 1) — use stacked
+  case labels.
+- **Repetitive deep-member access** — cache the resolved chain in a local (esp. DOM).
+- **Non-wrapped IIFEs**, **backslash multiline strings**, **`new Array()`** — readability
+  and well-known traps; prefer wrapped IIFEs, template literals, and array literals.
+
+See **[JS/TS Quality Anti-Patterns](./references/js-quality-antipatterns.md)** for each
+defect with compliant/non-compliant examples, severities, false-positive filters, and the
+equivalent ESLint/SonarSource rule. Derived from CAST Highlight JavaScript code quality
+indicators (https://doc.casthighlight.com/), cross-referenced to ESLint core rules and
+SonarSource RSPEC.
 
 ## Red Flags
 
