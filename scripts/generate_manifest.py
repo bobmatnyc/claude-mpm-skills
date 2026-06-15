@@ -634,7 +634,46 @@ class ManifestGenerator:
             repo_root, verbose, source_prefix=source_prefix, skills_dir=skills_dir
         )
 
-    def generate_manifest(self) -> Dict[str, Any]:
+    def _resolve_manifest_version(self, output_path: Optional[Path]) -> str:
+        """Preserve the existing manifest's top-level version across regens.
+
+        Why: The release version lives in manifest.json and is bumped by the
+        release process, not by skill discovery. Hardcoding a value here caused
+        a regression (1.0.5 -> 1.0.0) on every regen. Reusing the prior value
+        keeps the released version stable while still defaulting cleanly when no
+        manifest exists yet.
+        What: Reads the top-level ``version`` from the target manifest (or the
+        repo-root manifest.json) if present, else falls back to "1.0.0".
+        Test: With an existing manifest.json containing version "1.0.5", assert
+        this returns "1.0.5"; with no file present, assert it returns "1.0.0".
+        """
+        default_version = "1.0.0"
+        candidates: List[Path] = []
+        if output_path is not None:
+            candidates.append(
+                output_path
+                if output_path.is_absolute()
+                else self.repo_root / output_path
+            )
+        candidates.append(self.repo_root / "manifest.json")
+
+        for path in candidates:
+            try:
+                if path.exists():
+                    existing = json.loads(path.read_text(encoding="utf-8"))
+                    version = existing.get("version")
+                    if isinstance(version, str) and version.strip():
+                        return version
+            except Exception as e:  # noqa: BLE001 - best-effort preservation
+                if self.verbose:
+                    print(
+                        f"Warning: Could not read existing version from {path}: {e}",
+                        file=sys.stderr,
+                    )
+
+        return default_version
+
+    def generate_manifest(self, output_path: Optional[Path] = None) -> Dict[str, Any]:
         """Generate complete manifest structure."""
         if self.verbose:
             print("Discovering skills...")
@@ -682,9 +721,11 @@ class ManifestGenerator:
             toolchain: len(skills) for toolchain, skills in toolchain_skills.items()
         }
 
-        # Build manifest
+        # Build manifest. Preserve the existing release version (set by the
+        # release process) instead of hardcoding it, which previously caused a
+        # version regression on every regen.
         manifest = {
-            "version": "1.0.0",
+            "version": self._resolve_manifest_version(output_path),
             "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
             "updated": datetime.now().strftime("%Y-%m-%d"),
             "description": "Curated collection of Claude Code skills for intelligent project development",
@@ -826,7 +867,7 @@ def main():
 
     # Generate new manifest
     print("Generating manifest.json...")
-    manifest = generator.generate_manifest()
+    manifest = generator.generate_manifest(output_path=args.output)
 
     # Validate generated manifest
     print("\nValidating generated manifest...")
