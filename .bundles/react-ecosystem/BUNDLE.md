@@ -10,7 +10,7 @@ Complete React development stack with modern state management, server state cach
 
 ## Included Skills
 
-- **react** (toolchains/typescript/frameworks/react) - Hooks, context, performance optimization
+- **react-hooks-composition** (toolchains/javascript/frameworks/react/react-hooks-composition) - Hooks, context, performance optimization (closest existing React-fundamentals skill; no general "react" skill exists yet)
 - **zustand** (toolchains/typescript/state/zustand) - Minimal client state management
 - **tanstack-query** (toolchains/typescript/state/tanstack-query) - Server state and caching
 - **jest** (toolchains/typescript/testing/jest) - TypeScript testing framework
@@ -47,7 +47,7 @@ Complete React development stack with modern state management, server state cach
 
 | Skill | Standalone | Bundle-Enhanced | Required Dependencies |
 |-------|------------|-----------------|----------------------|
-| react | ✅ Yes | 🚀 Enhanced | None |
+| react-hooks-composition | ✅ Yes | 🚀 Enhanced | None |
 | zustand | ✅ Yes | 🚀 Enhanced | React (recommended) |
 | tanstack-query | ✅ Yes | 🚀 Enhanced | React (required) |
 | jest | ✅ Yes | 🚀 Enhanced | None |

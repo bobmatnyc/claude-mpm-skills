@@ -6,7 +6,10 @@ toolchains/nextjs/nextjs-core
 toolchains/nextjs/nextjs-v16
 
 # Core Dependencies
-toolchains/javascript/frameworks/react
+# NOTE: No general-React skill exists yet (the former react/ skill was FlexLayout-specific,
+# now at toolchains/javascript/frameworks/flexlayout-react). Using the closest existing
+# React-fundamentals skill. See PR flag: a general "react" patterns skill is a future gap.
+toolchains/javascript/frameworks/react/react-hooks-composition
 toolchains/typescript/typescript-core
 
 # Deployment & Styling

@@ -15,7 +15,7 @@
   "full_tokens": 6541,
   "related_skills": [
     "../../typescript/testing/vitest",
-    "../../frameworks/react",
+    "../../frameworks/react/react-hooks-composition",
     "../../frameworks/vue"
   ],
   "author": "Claude MPM",

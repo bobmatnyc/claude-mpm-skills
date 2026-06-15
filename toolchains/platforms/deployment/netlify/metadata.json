@@ -13,7 +13,7 @@
   "entry_point_tokens": 75,
   "full_tokens": 4970,
   "related_skills": [
-    "../../../javascript/frameworks/react",
+    "../../../javascript/frameworks/react/react-hooks-composition",
     "../../../javascript/frameworks/vue",
     "../../../javascript/frameworks/svelte",
     "../vercel"

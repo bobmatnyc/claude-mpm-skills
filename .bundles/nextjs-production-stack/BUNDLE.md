@@ -12,7 +12,7 @@ Production-ready Next.js application stack with App Router, Server Components, T
 
 - **nextjs-core** (toolchains/nextjs/nextjs-core) - App Router, Server Components, Server Actions
 - **nextjs-v16** (toolchains/nextjs/nextjs-v16) - Next.js 16 features (Turbopack, cache components)
-- **react** (toolchains/typescript/frameworks/react) - React fundamentals and hooks
+- **react-hooks-composition** (toolchains/javascript/frameworks/react/react-hooks-composition) - React fundamentals and hooks (closest existing React-fundamentals skill; no general "react" skill exists yet)
 - **typescript-core** (toolchains/typescript/typescript-core) - TypeScript patterns and best practices
 - **vercel** (toolchains/platforms/deployment/vercel) - Deployment and Edge Functions
 - **tailwind** (toolchains/ui/styling/tailwind) - Utility-first CSS
@@ -50,7 +50,7 @@ Production-ready Next.js application stack with App Router, Server Components, T
 |-------|------------|-----------------|----------------------|
 | nextjs-core | ✅ Yes | 🚀 Enhanced | React (required) |
 | nextjs-v16 | ✅ Yes | 🚀 Enhanced | nextjs-core (recommended) |
-| react | ✅ Yes | 🚀 Enhanced | None |
+| react-hooks-composition | ✅ Yes | 🚀 Enhanced | None |
 | typescript-core | ✅ Yes | 🚀 Enhanced | None |
 | vercel | ✅ Yes | 🚀 Enhanced | Next.js (recommended) |
 | tailwind | ✅ Yes | 🚀 Enhanced | None |

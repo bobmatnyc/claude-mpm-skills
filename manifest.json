@@ -1695,11 +1695,11 @@
           "description": "Cypress end-to-end and component testing patterns for web apps: reliable selectors, stable waits, network stubbing, auth handling, CI parallelization, and flake reduction"
         },
         {
-          "name": "express-local-dev",
+          "name": "express-production",
           "version": "2.0.0",
           "category": "toolchain",
           "toolchain": "javascript",
-          "framework": "express-local-dev",
+          "framework": "express-production",
           "tags": [
             "express",
             "nodejs",
@@ -1719,7 +1719,7 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-06-15",
-          "source_path": "toolchains/javascript/frameworks/express-local-dev/SKILL.md",
+          "source_path": "toolchains/javascript/frameworks/express-production/SKILL.md",
           "description": "Production-ready Express.js development covering middleware architecture, error handling, security hardening, testing strategies, and deployment patterns",
           "has_references": true,
           "reference_files": [
@@ -1728,6 +1728,29 @@
             "security-hardening.md",
             "testing-strategies.md"
           ]
+        },
+        {
+          "name": "flexlayout-react",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "flexlayout-react",
+          "tags": [
+            "react",
+            "layout",
+            "docking",
+            "drag-drop",
+            "ide",
+            "dashboard",
+            "flexlayout"
+          ],
+          "entry_point_tokens": 55,
+          "full_tokens": 4070,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/flexlayout-react/SKILL.md",
+          "description": "FlexLayout for React - Advanced docking layout manager with drag-and-drop, tabs, splitters, and complex window management"
         },
         {
           "name": "hono-cloudflare",
@@ -1959,27 +1982,6 @@
           "updated": "2026-06-15",
           "source_path": "toolchains/javascript/testing/playwright/SKILL.md",
           "description": "Playwright modern end-to-end testing framework with cross-browser automation, auto-wait, and built-in test runner"
-        },
-        {
-          "name": "react",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "javascript",
-          "framework": "react",
-          "tags": [
-            "async",
-            "frontend",
-            "api",
-            "security",
-            "testing"
-          ],
-          "entry_point_tokens": 55,
-          "full_tokens": 4070,
-          "requires": [],
-          "author": "bobmatnyc",
-          "updated": "2026-06-15",
-          "source_path": "toolchains/javascript/frameworks/react/SKILL.md",
-          "description": "FlexLayout for React - Advanced docking layout manager with drag-and-drop, tabs, splitters, and complex window management"
         },
         {
           "name": "react-hooks-composition",
@@ -3995,7 +3997,7 @@
           "full_tokens": 7879,
           "requires": [
             "../../styling/tailwind",
-            "../../../javascript/frameworks/react"
+            "../../../javascript/frameworks/react/react-hooks-composition"
           ],
           "author": "claude-mpm-skills",
           "updated": "2026-06-15",

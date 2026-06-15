@@ -1,15 +1,17 @@
 {
-  "name": "react",
+  "name": "flexlayout-react",
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "javascript",
   "framework": "react",
   "tags": [
-    "async",
-    "frontend",
-    "api",
-    "security",
-    "testing"
+    "react",
+    "layout",
+    "docking",
+    "drag-drop",
+    "ide",
+    "dashboard",
+    "flexlayout"
   ],
   "entry_point_tokens": 55,
   "full_tokens": 4070,
@@ -17,14 +19,11 @@
   "license": "MIT",
   "requires": [],
   "updated": "2025-11-21",
-  "source_path": "react/flexlayout-react.md",
+  "source_path": "toolchains/javascript/frameworks/flexlayout-react/SKILL.md",
   "source": "https://github.com/bobmatnyc/claude-mpm",
   "created": "2025-11-21",
   "modified": "2025-11-21",
   "maintainer": "Claude MPM Team",
   "attribution_required": true,
-  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
-  "sub_skills": [
-    "state-machine"
-  ]
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
 }
