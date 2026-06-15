@@ -3,7 +3,8 @@ name: espocrm-development
 description: Comprehensive guide for developing on EspoCRM - metadata-driven CRM with service layer architecture
 user-invocable: false
 disable-model-invocation: true
-version: 1.0.0
+version: 1.2.0
+updated: "2026-06-15"
 category: development
 author: Claude MPM Team
 license: MIT
@@ -23,6 +24,7 @@ progressive_disclosure:
     - api-actions.md
     - custom-field-types.md
     - extension-packages.md
+    - php-quality-antipatterns.md
 context_limit: 800
 tags:
   - espocrm
@@ -140,6 +142,7 @@ EspoCRM provides 7 hook types - ALWAYS use interfaces: `BeforeSave` (validation 
 
 ### Quality Assurance
 - **[Testing and Debugging](references/testing-debugging.md)**: Unit tests, debugging techniques, performance optimization, and common pitfalls
+- **[PHP Quality Anti-Patterns](references/php-quality-antipatterns.md)**: Language-level robustness/changeability defects — PHP4 constructor naming, uppercased control keywords, `goto`, and empty `catch` blocks, with compliant examples (derived from CAST Highlight code quality indicators, https://doc.casthighlight.com/)
 
 ## Key Patterns
 

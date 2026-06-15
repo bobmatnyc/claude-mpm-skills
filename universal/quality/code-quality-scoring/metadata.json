@@ -1,0 +1,24 @@
+{
+  "name": "code-quality-scoring",
+  "version": "1.0.0",
+  "category": "universal",
+  "toolchain": "universal",
+  "framework": null,
+  "tags": [
+    "code-quality",
+    "software-health",
+    "technical-debt",
+    "cloud-readiness",
+    "open-source-safety",
+    "metrics",
+    "portfolio"
+  ],
+  "entry_point_tokens": 139,
+  "full_tokens": 6972,
+  "author": "bobmatnyc",
+  "license": "Apache-2.0",
+  "requires": [],
+  "updated": "2026-06-15",
+  "source_path": "universal/quality/code-quality-scoring/SKILL.md",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

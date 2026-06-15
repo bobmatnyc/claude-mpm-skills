@@ -1,0 +1,33 @@
+{
+  "name": "python-code-quality",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "python",
+  "framework": null,
+  "tags": [
+    "python",
+    "code-quality",
+    "anti-patterns",
+    "code-review",
+    "pep8",
+    "ruff",
+    "pylint",
+    "static-analysis"
+  ],
+  "entry_point_tokens": 150,
+  "full_tokens": 3302,
+  "related_skills": [
+    "../../testing/pytest",
+    "../../../../universal/process/code-review-standards",
+    "../../../../universal/quality/code-quality-scoring"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [],
+  "sub_skills": [],
+  "created": "2026-06-15",
+  "updated": "2026-06-15",
+  "source_path": "toolchains/python/quality/code-quality/SKILL.md",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "description": "Python code-quality anti-patterns and review checks: exception-hierarchy correctness, singleton identity comparison, narrow exception handling, wildcard-import avoidance, magic-number naming, and dead-local removal."
+}

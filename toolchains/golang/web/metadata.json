@@ -1,6 +1,6 @@
 {
   "name": "golang-http-frameworks",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "category": "toolchain",
   "toolchain": "golang",
   "framework": "web",
@@ -12,14 +12,18 @@
     "echo",
     "fiber",
     "rest-api",
-    "middleware"
+    "middleware",
+    "code-quality",
+    "idioms",
+    "anti-patterns"
   ],
   "entry_point_tokens": 160,
-  "full_tokens": 6745,
+  "full_tokens": 7400,
   "related_skills": [
     "../toolchains-golang-testing",
     "../toolchains-golang-data"
   ],
   "author": "Claude MPM",
-  "license": "MIT"
+  "license": "MIT",
+  "updated": "2026-06-15"
 }

@@ -114,3 +114,7 @@ yarn-error.log*
 # Aitrackdown (ticket management)
 .aitrackdown/
 .aitrackdown*
+.trusty-search/
+
+# CAST Highlight raw HTML cache (not committed)
+docs/research/cast-highlight/_cache/

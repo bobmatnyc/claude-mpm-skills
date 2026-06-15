@@ -1,0 +1,2012 @@
+[
+  {
+    "url": "https://doc.casthighlight.com/cloud-maturity/",
+    "title": "03Jul",
+    "discovered_page": 1,
+    "lastmod": "2024-07-03T10:42:12+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badreturn/",
+    "title": "Read more",
+    "discovered_page": 1,
+    "lastmod": "2024-01-09T14:13:23+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_comparetonull/",
+    "title": "Read more",
+    "discovered_page": 1,
+    "lastmod": "2024-01-09T12:32:01+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_elseif-avoid-long-else-chains-replaced-switch-statement/",
+    "title": "Read more",
+    "discovered_page": 1,
+    "lastmod": "2022-04-08T06:03:38+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_debug-phpinfo-not-used-production/",
+    "title": "Read more",
+    "discovered_page": 1,
+    "lastmod": "2022-04-08T06:04:17+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_overriding-code-contains-many-useless-overriding-methods-call-parent-classess-method-name-arguments/",
+    "title": "Read more",
+    "discovered_page": 1,
+    "lastmod": "2022-04-08T06:04:43+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_uppercase-code-contains-many-uppercase-control-structure-keywords/",
+    "title": "Read more",
+    "discovered_page": 1,
+    "lastmod": "2022-04-08T06:05:47+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_constructornaming-code-contains-many-php4-deprecated-constructor-naming-since-php5-constructor-named-__construct/",
+    "title": "Read more",
+    "discovered_page": 1,
+    "lastmod": "2022-04-08T06:05:59+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_endcomment-code-contains-many-functions-interfaces-classes-closing-not-commented/",
+    "title": "Read more",
+    "discovered_page": 1,
+    "lastmod": "2022-04-08T06:06:11+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_commentedthrow-code-contains-many-functions-throwing-exceptions-inconsistencies-throws-tags/",
+    "title": "Read more",
+    "discovered_page": 1,
+    "lastmod": "2025-04-15T10:03:25+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_functionnaming-code-contains-many-functions-bad-name/",
+    "title": "Read more",
+    "discovered_page": 2,
+    "lastmod": "2022-04-08T06:07:07+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_finalmodifier-code-contains-many-final-artifacts-final-classes/",
+    "title": "Read more",
+    "discovered_page": 2,
+    "lastmod": "2022-04-08T06:07:23+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingsetter-code-contains-many-classes-declare-__get-without-declaring-__set/",
+    "title": "Read more",
+    "discovered_page": 2,
+    "lastmod": "2022-04-08T06:08:30+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_classnaming-code-contains-many-class-names-not-begin-uppercase-letter/",
+    "title": "Read more",
+    "discovered_page": 2,
+    "lastmod": "2022-04-08T06:08:46+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_dangerouscast-force-casts-not-used/",
+    "title": "Read more",
+    "discovered_page": 2,
+    "lastmod": "2022-04-08T06:08:56+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unexpectedbody-prefer-use-expression-body-functions-whose-body-consists-single-expression/",
+    "title": "Read more",
+    "discovered_page": 2,
+    "lastmod": "2022-04-08T06:17:55+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badabstractclass-avoid-abstract-classes-without-abstract-concrete-methods/",
+    "title": "Read more",
+    "discovered_page": 2,
+    "lastmod": "2022-04-08T06:18:10+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_variabledeclaration-use-short-variable-declarations-variables-default-values/",
+    "title": "Read more",
+    "discovered_page": 2,
+    "lastmod": "2022-04-08T06:18:22+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badreceiver-avoid-naming-unused-receivers/",
+    "title": "Read more",
+    "discovered_page": 2,
+    "lastmod": "2022-04-08T14:11:06+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badinstanciation-avoid-instanciation-new/",
+    "title": "Read more",
+    "discovered_page": 2,
+    "lastmod": "2023-09-15T09:17:23+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_largeswitchcase-avoid-switch-many-case-statements/",
+    "title": "Read more",
+    "discovered_page": 3,
+    "lastmod": "2022-04-08T14:11:31+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_datashadowing-variables-not-shadowed/",
+    "title": "Read more",
+    "discovered_page": 3,
+    "lastmod": "2022-04-08T14:11:43+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_variabledeclaration-variables-declared-let-const/",
+    "title": "Read more",
+    "discovered_page": 3,
+    "lastmod": "2022-04-08T14:11:55+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badlinecontinuation-multiline-string-literals-not-used/",
+    "title": "Read more",
+    "discovered_page": 3,
+    "lastmod": "2022-04-08T14:12:06+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_caseexpression-logical-not-used-switch-cases/",
+    "title": "Read more",
+    "discovered_page": 3,
+    "lastmod": "2022-04-08T14:12:42+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_casedefaultordering-switch-default-clauses-last/",
+    "title": "Read more",
+    "discovered_page": 3,
+    "lastmod": "2022-04-08T14:12:53+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_greedydataaccess-avoid-caching-selector-long-time/",
+    "title": "Read more",
+    "discovered_page": 3,
+    "lastmod": "2022-04-08T14:13:16+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_hardcodedpaths-uris-url-path-not-hardcoded/",
+    "title": "Read more",
+    "discovered_page": 3,
+    "lastmod": "2022-04-08T14:13:29+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_dangeroustry-try-not-used/",
+    "title": "Read more",
+    "discovered_page": 3,
+    "lastmod": "2022-04-08T14:13:39+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_fieldnameisclassname-field-not-duplicate-name-containing-class/",
+    "title": "Read more",
+    "discovered_page": 3,
+    "lastmod": "2022-04-08T14:13:50+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badnullablecheck-use-instead-dealing-nullable-boolean/",
+    "title": "Read more",
+    "discovered_page": 4,
+    "lastmod": "2022-04-08T14:46:02+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unusedprivatemethods-code-contain-many-unused-private-methods/",
+    "title": "Read more",
+    "discovered_page": 4,
+    "lastmod": "2022-04-08T14:46:14+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingexpressionform-prefer-using-expression-form-place-statement-syntax/",
+    "title": "Read more",
+    "discovered_page": 4,
+    "lastmod": "2022-04-08T14:46:26+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_labeledreturnendinglambda-not-use-labeled-return-last-statement-lambda/",
+    "title": "Read more",
+    "discovered_page": 4,
+    "lastmod": "2022-04-08T14:46:37+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_booleanpitfall-boolean-checks-not-inverted/",
+    "title": "Read more",
+    "discovered_page": 4,
+    "lastmod": "2022-04-08T14:46:51+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_labeledreturnsinlambda-avoid-using-multiple-labeled-returns-lambda-expression/",
+    "title": "Read more",
+    "discovered_page": 4,
+    "lastmod": "2022-04-08T14:47:00+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_genericcatches-avoid-generic-catch/",
+    "title": "Read more",
+    "discovered_page": 4,
+    "lastmod": "2022-04-08T14:48:09+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_couldbeelvis-use-elvis-operator-avoid-unclear-syntax-pattern/",
+    "title": "Read more",
+    "discovered_page": 4,
+    "lastmod": "2022-04-08T14:48:18+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_dynamictype-avoid-undefined-type-data-routines-declaration/",
+    "title": "Read more",
+    "discovered_page": 4,
+    "lastmod": "2022-04-08T14:48:29+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_assignmenttostaticfieldfrominstancemethod-avoid-update-static-fields-instance-methods/",
+    "title": "Read more",
+    "discovered_page": 4,
+    "lastmod": "2022-04-08T14:48:39+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_parameterupdate-avoid-update-parameters-inside-routines-bodies/",
+    "title": "Read more",
+    "discovered_page": 5,
+    "lastmod": "2022-04-08T14:48:49+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_nestedforloop-avoid-to-cover-two-dimensional-ranges-with-nested-for-loop/",
+    "title": "Read more",
+    "discovered_page": 5,
+    "lastmod": "2022-04-08T14:48:59+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_publicfinalizemethod-avoid-public-finalize-methods/",
+    "title": "Read more",
+    "discovered_page": 5,
+    "lastmod": "2022-04-08T14:49:34+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_suspiciousdestructuringassignment-avoid-confusing-initialization-variables-declared-line/",
+    "title": "Read more",
+    "discovered_page": 5,
+    "lastmod": "2022-04-08T14:49:45+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_closureaslastmethodparameter-avoid-unexpected-closure-inside-parentheses-call/",
+    "title": "Read more",
+    "discovered_page": 5,
+    "lastmod": "2022-04-08T14:49:54+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_nbfiles-code-managing-many-files-together/",
+    "title": "Read more",
+    "discovered_page": 5,
+    "lastmod": "2022-04-08T14:50:07+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_simplecompute-the-code-contains-too-many-unnecessary-compute/",
+    "title": "Read more",
+    "discovered_page": 5,
+    "lastmod": "2022-04-08T14:50:17+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_paranamewithoutdot-code-contains-many-paragraph-labels-not-followed-dot/",
+    "title": "Read more",
+    "discovered_page": 5,
+    "lastmod": "2022-04-08T14:50:28+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badendclausealign-code-contains-many-not-aligned-end-instructions/",
+    "title": "Read more",
+    "discovered_page": 5,
+    "lastmod": "2022-04-08T14:51:00+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_pictoolong-code-contains-many-long-pic-declaration-pattern/",
+    "title": "Read more",
+    "discovered_page": 5,
+    "lastmod": "2022-04-08T14:51:10+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badinit-code-contains-many-instructions-initialize-zones-data-zeros-spaces/",
+    "title": "Read more",
+    "discovered_page": 6,
+    "lastmod": "2022-04-08T14:51:19+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_contiguslevel-code-contains-many-data-contigus-levels/",
+    "title": "Read more",
+    "discovered_page": 6,
+    "lastmod": "2022-04-08T14:51:28+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_backperform-code-contains-many-back-performs/",
+    "title": "Read more",
+    "discovered_page": 6,
+    "lastmod": "2022-04-08T14:51:38+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_seriousfilepb-code-contains-many-dangerous-usage-patterns-file-management/",
+    "title": "Read more",
+    "discovered_page": 6,
+    "lastmod": "2022-04-08T14:51:48+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_duplicatedparaname-code-contains-paragraphs-name/",
+    "title": "Read more",
+    "discovered_page": 6,
+    "lastmod": "2022-04-08T14:53:38+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badzone-code-contains-many-bad-area-usages/",
+    "title": "Read more",
+    "discovered_page": 6,
+    "lastmod": "2022-04-08T14:53:47+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_optionalproperties-optional-property-declarations-use-syntax/",
+    "title": "Read more",
+    "discovered_page": 6,
+    "lastmod": "2022-04-08T14:53:58+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_errormanagement-errors-not-created-without-thrown/",
+    "title": "Read more",
+    "discovered_page": 6,
+    "lastmod": "2022-04-08T14:54:20+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_uselesstypespecification-avoid-explicit-type-can-inferred-literal-value-affected/",
+    "title": "Read more",
+    "discovered_page": 6,
+    "lastmod": "2022-04-08T14:54:34+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unnameddata-avoid-structures-initializations-unamed-fields/",
+    "title": "Read more",
+    "discovered_page": 6,
+    "lastmod": "2022-04-08T14:54:46+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_selfassigned-avoid-self-assigned-variables/",
+    "title": "Read more",
+    "discovered_page": 7,
+    "lastmod": "2022-04-08T14:57:40+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badvaluesoperator-avoid-binary-operators-identical-members/",
+    "title": "Read more",
+    "discovered_page": 7,
+    "lastmod": "2022-04-08T14:57:50+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_duplicatedcondition-avoid-else-cases-statements-condition/",
+    "title": "Read more",
+    "discovered_page": 7,
+    "lastmod": "2022-04-08T14:58:04+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_deadcode-avoid-dead-code/",
+    "title": "Read more",
+    "discovered_page": 7,
+    "lastmod": "2022-04-08T14:58:16+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingfinalelse-avoid-else-constructs-missing-final-else-clauses/",
+    "title": "Read more",
+    "discovered_page": 7,
+    "lastmod": "2022-04-08T14:58:33+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_incdec-increment-decrement-operators-not-used-method-call-mixed-operators-expression/",
+    "title": "Read more",
+    "discovered_page": 7,
+    "lastmod": "2022-04-08T14:58:43+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_nestedswitches-switch-statements-should-not-be-nested/",
+    "title": "Read more",
+    "discovered_page": 7,
+    "lastmod": "2022-04-08T15:00:09+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_collapsibleif-avoid-collapsible-nested/",
+    "title": "Read more",
+    "discovered_page": 7,
+    "lastmod": "2022-04-08T15:00:19+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_scope-code-contains-one-instructions/",
+    "title": "Read more",
+    "discovered_page": 7,
+    "lastmod": "2022-04-08T15:00:29+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_innerfunction-code-contains-inner-functions/",
+    "title": "Read more",
+    "discovered_page": 7,
+    "lastmod": "2022-04-08T15:00:39+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_finalize-code-contains-least-one-class-defining-destructor/",
+    "title": "Read more",
+    "discovered_page": 8,
+    "lastmod": "2022-04-08T15:00:51+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingbreakinswitch-the-code-contains-too-many-switch-cases-with-missing-ending-breaks/",
+    "title": "Read more",
+    "discovered_page": 8,
+    "lastmod": "2022-04-08T15:01:12+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_behaviouralteration-the-code-contains-modifications-of-buildtins-objects-object-array-or-function/",
+    "title": "Read more",
+    "discovered_page": 8,
+    "lastmod": "2022-04-08T15:01:59+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_ellipsis-avoid-using-ellipsis-functions/",
+    "title": "Read more",
+    "discovered_page": 8,
+    "lastmod": "2022-04-08T15:02:09+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_protectedmemberinfinalclass-avoid-protected-member-final-classes/",
+    "title": "Read more",
+    "discovered_page": 8,
+    "lastmod": "2022-04-08T15:02:20+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_loopcountermodification-avoid-loop-counter-modification/",
+    "title": "Read more",
+    "discovered_page": 8,
+    "lastmod": "2022-04-08T15:02:30+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_equalsnottestingparameter-avoid-equals-methods-not-testing-parameters/",
+    "title": "Read more",
+    "discovered_page": 8,
+    "lastmod": "2022-04-08T15:02:42+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_onlyrethrowingcatches-avoid-catches-rethrow/",
+    "title": "Read more",
+    "discovered_page": 8,
+    "lastmod": "2022-04-08T15:02:52+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_nestedtrycatches-avoid-nested-try-catch-blocks/",
+    "title": "Read more",
+    "discovered_page": 8,
+    "lastmod": "2022-04-08T15:03:35+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_longcase-avoid-long-case-statements/",
+    "title": "Read more",
+    "discovered_page": 8,
+    "lastmod": "2022-04-08T15:03:43+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_immediatefunccall-code-contains-non-wrapped-immediate-function-calls/",
+    "title": "Read more",
+    "discovered_page": 9,
+    "lastmod": "2022-04-08T15:03:52+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_multdecl-code-contains-many-var-statements-declaring-several-variables/",
+    "title": "Read more",
+    "discovered_page": 9,
+    "lastmod": "2022-04-08T15:04:03+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_outoffinallyjumps-the-code-contains-too-many-jump-instructions-that-derive-the-control-flow-out-of-a-finally-structure/",
+    "title": "Read more",
+    "discovered_page": 9,
+    "lastmod": "2022-04-08T15:04:13+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_smallswitchcase/",
+    "title": "Read more",
+    "discovered_page": 9,
+    "lastmod": "2022-04-08T15:04:24+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_overloadequals_code-contains-classes-overload-equalsobject/",
+    "title": "Read more",
+    "discovered_page": 9,
+    "lastmod": "2022-04-08T15:05:05+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_endlooptest/",
+    "title": "Read more",
+    "discovered_page": 9,
+    "lastmod": "2022-04-08T15:05:14+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_assignmentsinconditionalexpr-avoid-many-variable-assignments-conditional-expressions/",
+    "title": "Read more",
+    "discovered_page": 9,
+    "lastmod": "2022-04-08T15:05:25+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_negativecomparison-code-contains-many-negative-comparisons/",
+    "title": "Read more",
+    "discovered_page": 9,
+    "lastmod": "2022-04-08T15:05:37+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_functionsusingellipsis-avoid-using-ellipsis-functions/",
+    "title": "Read more",
+    "discovered_page": 9,
+    "lastmod": "2022-04-08T15:05:47+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_classescomparisons-code-contains-use-getclass-getname/",
+    "title": "Read more",
+    "discovered_page": 9,
+    "lastmod": "2022-04-08T15:06:16+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unconditionaljump-avoid-unconditional-jump-statement/",
+    "title": "Read more",
+    "discovered_page": 10,
+    "lastmod": "2022-04-08T15:09:36+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_literalvalue-avoid-octal-values/",
+    "title": "Read more",
+    "discovered_page": 10,
+    "lastmod": "2022-04-08T15:09:44+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_illegalthrows-the-code-contains-too-many-throws-to-system-exceptions/",
+    "title": "Read more",
+    "discovered_page": 10,
+    "lastmod": "2022-04-08T15:09:54+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/methodology-update-threshold-change-health-factors-june-2021/",
+    "title": "Read more",
+    "discovered_page": 10,
+    "lastmod": "2021-09-14T13:15:52+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_numberofcolumns-code-contains-many-queries-leading-high-number-table-columns/",
+    "title": "Read more",
+    "discovered_page": 10,
+    "lastmod": "2021-04-21T17:33:02+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/code-contains-many-hard-coded-absolute-file-system-paths-include-directives/",
+    "title": "Read more",
+    "discovered_page": 10,
+    "lastmod": "2021-04-21T14:46:28+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_complexquery-code-contains-many-select-requests/",
+    "title": "Read more",
+    "discovered_page": 10,
+    "lastmod": "2022-04-08T15:10:07+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_reftome-web-dynpro-code-contains-many-direct-calls-routines-using/",
+    "title": "Read more",
+    "discovered_page": 10,
+    "lastmod": "2021-04-21T11:25:04+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_standardtablemodification-program-user-exit-include-contains-many-open-sql-queries-access-sap-standard-tables-modification/",
+    "title": "Read more",
+    "discovered_page": 10,
+    "lastmod": "2021-04-21T11:14:44+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_query-code-contains-many-sql-instructions-missing-clause-using-order-using-not-operator-null-check-clause/",
+    "title": "Read more",
+    "discovered_page": 10,
+    "lastmod": "2021-04-21T14:16:39+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_emptyartifact-code-contains-many-empty-functions-procedures-methods-modules/",
+    "title": "Read more",
+    "discovered_page": 11,
+    "lastmod": "2024-01-19T11:19:59+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_uncheckedreturn-code-contains-many-unchecked-returns-functions-calls/",
+    "title": "Read more",
+    "discovered_page": 11,
+    "lastmod": "2021-04-21T10:19:42+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_multaffect/",
+    "title": "Read more",
+    "discovered_page": 11,
+    "lastmod": "2021-07-02T13:32:22+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_variabledefinitioncheck/",
+    "title": "Read more",
+    "discovered_page": 11,
+    "lastmod": "2020-10-06T08:47:28+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/open-source-safety/",
+    "title": "20Mar",
+    "discovered_page": 11,
+    "lastmod": "2024-07-03T10:41:45+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/software-health/",
+    "title": "Read more",
+    "discovered_page": 11,
+    "lastmod": "2022-03-01T10:06:59+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/transitive-dependencies-much-can-trust-friends-friends/",
+    "title": "19Jun",
+    "discovered_page": 11,
+    "lastmod": "2022-05-12T17:07:48+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_complexoperands-avoid-using-complex-operands/",
+    "title": "Read more",
+    "discovered_page": 11,
+    "lastmod": "2020-10-06T08:47:58+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_varnotused-avoid-many-unused-variables/",
+    "title": "Read more",
+    "discovered_page": 11,
+    "lastmod": "2020-10-06T08:48:18+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/software-composition-in-highlight-how-open-source-component-detection-works/",
+    "title": "12Mar",
+    "discovered_page": 11,
+    "lastmod": "2024-12-09T11:10:20+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/oss-licenses-mined-detected-highlights-software-composition-analysis-feature/",
+    "title": "27Feb",
+    "discovered_page": 12,
+    "lastmod": "2023-07-03T13:05:22+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/line-code-highlight-counts-lines-code/",
+    "title": "27Jan",
+    "discovered_page": 12,
+    "lastmod": "2026-03-03T12:43:44+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/open-source-license-risk-profiles/",
+    "title": "Read more",
+    "discovered_page": 12,
+    "lastmod": "2021-10-12T10:44:52+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_nbmeth_avoid-files-with-too-many-functions-or-methods/",
+    "title": "Read more",
+    "discovered_page": 12,
+    "lastmod": "2021-12-06T10:50:06+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_prototype-spaces-between-function-name-and-opening-parenthesis-cause-bugs/",
+    "title": "Read more",
+    "discovered_page": 12,
+    "lastmod": "2018-08-08T20:22:03+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_riskyfunctioncalls-avoid-using-risky-builtins/",
+    "title": "Read more",
+    "discovered_page": 12,
+    "lastmod": "2018-08-06T14:47:24+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_depthcode-avoid-deep-code/",
+    "title": "Read more",
+    "discovered_page": 12,
+    "lastmod": "2018-06-07T18:18:51+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_curiousfilepb-avoid-suspicious-file-usage-patterns/",
+    "title": "Read more",
+    "discovered_page": 12,
+    "lastmod": "2018-06-07T16:37:58+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_nocopyclause_avoid-file-records-not-in-in-copy-clause/",
+    "title": "Read more",
+    "discovered_page": 12,
+    "lastmod": "2018-06-07T16:00:06+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingdefault-avoid-missing-default-treatment-in-evaluate/",
+    "title": "Read more",
+    "discovered_page": 12,
+    "lastmod": "2018-06-07T15:40:00+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/technical-debt-estimates-stats-technology/",
+    "title": "04Jun",
+    "discovered_page": 13,
+    "lastmod": "2021-05-26T10:31:57+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_jspcomment-avoid-multiple-comments/",
+    "title": "Read more",
+    "discovered_page": 13,
+    "lastmod": "2018-06-01T17:37:21+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_jspcomment-prefer-pure-jsp-comments/",
+    "title": "Read more",
+    "discovered_page": 13,
+    "lastmod": "2018-06-01T00:01:08+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_longlines-avoid-long-lines/",
+    "title": "Read more",
+    "discovered_page": 13,
+    "lastmod": "2018-05-31T23:57:16+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_baddeclarationorder-conform-to-declaration-order/",
+    "title": "Read more",
+    "discovered_page": 13,
+    "lastmod": "2018-05-31T23:53:01+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_sql-avoid-use-of-standard-sql-api/",
+    "title": "Read more",
+    "discovered_page": 13,
+    "lastmod": "2018-05-31T23:45:43+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_taglibrarydescriptor-use-significant-tld-header/",
+    "title": "Read more",
+    "discovered_page": 13,
+    "lastmod": "2018-05-31T23:42:20+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badnaming-avoid-bad-attribute-name/",
+    "title": "Read more",
+    "discovered_page": 13,
+    "lastmod": "2018-05-31T22:39:48+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badnaming-avoid-bad-method-name/",
+    "title": "Read more",
+    "discovered_page": 13,
+    "lastmod": "2018-05-31T22:36:55+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badnaming-avoid-bad-function-name/",
+    "title": "Read more",
+    "discovered_page": 13,
+    "lastmod": "2018-05-31T22:32:32+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badnaming-avoid-bad-class-name/",
+    "title": "Read more",
+    "discovered_page": 14,
+    "lastmod": "2018-05-31T22:27:16+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badnaming-avoid-bad-variable-name/",
+    "title": "Read more",
+    "discovered_page": 14,
+    "lastmod": "2018-05-31T22:21:42+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badnamelength-avoid-short-function-or-methods-name/",
+    "title": "Read more",
+    "discovered_page": 14,
+    "lastmod": "2018-08-03T16:06:50+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_suspiciousloop-avoid-else-clause-on-loop-without-a-break-statement/",
+    "title": "Read more",
+    "discovered_page": 14,
+    "lastmod": "2018-05-31T23:50:15+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_magicnumbers-avoid-magic-numbers/",
+    "title": "Read more",
+    "discovered_page": 14,
+    "lastmod": "2018-05-31T04:16:09+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_localvar-avoid-methods-or-function-with-too-many-local-variables/",
+    "title": "Read more",
+    "discovered_page": 14,
+    "lastmod": "2021-09-27T10:26:51+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_stringformat-avoid-operator-to-format-string/",
+    "title": "Read more",
+    "discovered_page": 14,
+    "lastmod": "2018-05-31T03:44:39+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_stringformat-avoid-whitespaces-in-replacement-field-names/",
+    "title": "Read more",
+    "discovered_page": 14,
+    "lastmod": "2018-05-31T03:45:03+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_string-avoid-mixed-style-for-string-quote/",
+    "title": "Read more",
+    "discovered_page": 14,
+    "lastmod": "2023-12-01T11:56:36+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_concatinloop-avoid-string-concatenation-in-loops/",
+    "title": "Read more",
+    "discovered_page": 14,
+    "lastmod": "2018-05-31T03:40:49+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badspacing-avoid-trailing-spaces/",
+    "title": "Read more",
+    "discovered_page": 15,
+    "lastmod": "2018-05-25T07:18:18+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badspacing-avoid-missing-spaces/",
+    "title": "Read more",
+    "discovered_page": 15,
+    "lastmod": "2018-06-04T20:50:29+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badspacing-avoid-extraneous-whitespaces/",
+    "title": "Read more",
+    "discovered_page": 15,
+    "lastmod": "2018-08-09T20:58:24+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unexpectedgetter-avoid-java-style-getters-and-setters/",
+    "title": "Read more",
+    "discovered_page": 15,
+    "lastmod": "2018-05-25T07:05:39+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_import_alias-use-alias-agreement-for-import/",
+    "title": "Read more",
+    "discovered_page": 15,
+    "lastmod": "2018-06-04T20:54:58+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_starimport-avoid-using-wildcard-imports/",
+    "title": "Read more",
+    "discovered_page": 15,
+    "lastmod": "2018-05-25T06:45:17+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_multipleimports-avoid-imports-on-the-same-line/",
+    "title": "Read more",
+    "discovered_page": 15,
+    "lastmod": "2018-05-25T06:49:15+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_methodswithtoomuchparameters-avoid-methods-or-function-with-too-many-arguments/",
+    "title": "Read more",
+    "discovered_page": 15,
+    "lastmod": "2018-08-02T19:41:40+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_illegalexception-always-derive-exceptions-classes-from-baseexception/",
+    "title": "Read more",
+    "discovered_page": 15,
+    "lastmod": "2018-06-07T16:34:14+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_riskycatches-avoid-catching-all/",
+    "title": "Read more",
+    "discovered_page": 15,
+    "lastmod": "2018-07-11T18:18:55+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_instanceof-avoid-using-is-for-anything-else-than-singleton/",
+    "title": "Read more",
+    "discovered_page": 16,
+    "lastmod": "2018-05-25T03:54:51+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_conditionreadability-avoid-not-is-syntax/",
+    "title": "Read more",
+    "discovered_page": 16,
+    "lastmod": "2018-05-25T03:46:13+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_comparisontosingleton-avoid-explicit-comparison-to-singleton/",
+    "title": "Read more",
+    "discovered_page": 16,
+    "lastmod": "2018-05-24T19:11:54+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_suspiciouscomments-avoid-suspicious-comments/",
+    "title": "Read more",
+    "discovered_page": 16,
+    "lastmod": "2018-08-09T20:42:45+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_weakcommentrate-avoid-weak-comment-rate/",
+    "title": "Read more",
+    "discovered_page": 16,
+    "lastmod": "2018-08-08T17:18:43+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_inlinecomment-avoid-inline-comments/",
+    "title": "Read more",
+    "discovered_page": 16,
+    "lastmod": "2018-05-24T18:49:55+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_uncommentedartifact-avoid-uncommented-functions-or-methods/",
+    "title": "Read more",
+    "discovered_page": 16,
+    "lastmod": "2018-05-24T18:42:13+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_uncommentedartifact-avoid-uncommented-classes/",
+    "title": "Read more",
+    "discovered_page": 16,
+    "lastmod": "2018-05-24T18:36:34+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_nestedloop-avoid-nested-loop-php/",
+    "title": "Read more",
+    "discovered_page": 16,
+    "lastmod": "2023-05-10T14:08:05+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_nestedloop-too-many-nested-loops-php/",
+    "title": "Read more",
+    "discovered_page": 16,
+    "lastmod": "2018-05-18T16:38:00+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_nbmeth-avoid-many-functions/",
+    "title": "Read more",
+    "discovered_page": 17,
+    "lastmod": "2018-08-09T21:04:12+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_classnameisnotfilename-avoid-classes-not-having-the-same-name-as-the-file-php/",
+    "title": "Read more",
+    "discovered_page": 17,
+    "lastmod": "2018-05-18T16:16:17+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_elsif-avoid-elseif-statements-else-and-if-should-be-separate-php/",
+    "title": "Read more",
+    "discovered_page": 17,
+    "lastmod": "2018-05-18T16:09:40+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unusedthrowstags-avoid-function-throwing-exceptions-and-not-having-a-throws-tag-php/",
+    "title": "Read more",
+    "discovered_page": 17,
+    "lastmod": "2018-05-18T15:59:20+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingendcomment-avoid-artifacts-not-checking-the-ending-comments-php/",
+    "title": "Read more",
+    "discovered_page": 17,
+    "lastmod": "2018-05-18T15:54:13+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badincdecuse-avoid-using-incrementdecrement-operator-php/",
+    "title": "Read more",
+    "discovered_page": 17,
+    "lastmod": "2018-05-18T15:49:05+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unusedparameters-avoid-unsed-function-parameters/",
+    "title": "Read more",
+    "discovered_page": 17,
+    "lastmod": "2020-10-06T09:14:56+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_ternaryoperators-avoid-ternary-operators-java/",
+    "title": "Read more",
+    "discovered_page": 17,
+    "lastmod": "2023-03-22T10:40:50+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_classdefinitions-avoid-too-many-classes-java/",
+    "title": "Read more",
+    "discovered_page": 17,
+    "lastmod": "2021-07-09T13:59:24+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_ternary-%e2%80%a2the-code-contains-too-many-uses-of-ternary-operator/",
+    "title": "Read more",
+    "discovered_page": 17,
+    "lastmod": "2018-05-18T15:23:34+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_classimplementations-avoid-too-many-class-implemented-in-same-file/",
+    "title": "Read more",
+    "discovered_page": 18,
+    "lastmod": "2018-05-18T15:23:46+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_classdefinitions-avoid-too-many-number-of-class-definition-in-same-file/",
+    "title": "Read more",
+    "discovered_page": 18,
+    "lastmod": "2018-05-18T15:23:57+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badloop-avoid-for-loops-which-can-be-simplified-to-a-while-loop-php/",
+    "title": "Read more",
+    "discovered_page": 18,
+    "lastmod": "2018-06-07T20:44:40+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_constructorreturn-avoid-having-constructors-with-a-return-value/",
+    "title": "Read more",
+    "discovered_page": 18,
+    "lastmod": "2018-05-11T16:25:50+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_emptystatement-the-code-contains-too-many-empty-statement-blocs-containing-no-instructions/",
+    "title": "Read more",
+    "discovered_page": 18,
+    "lastmod": "2018-06-07T20:52:46+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_parameters-the-code-contains-too-many-functions-whose-parameters-having-a-default-value-dont-come-at-the-end-of-the-function-signature/",
+    "title": "Read more",
+    "discovered_page": 18,
+    "lastmod": "2018-06-07T20:54:51+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_object-avoid-having-the-assignment-to-this/",
+    "title": "Read more",
+    "discovered_page": 18,
+    "lastmod": "2018-06-07T20:51:00+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_instanceof_avoid-usage-of-instanceof/",
+    "title": "Read more",
+    "discovered_page": 18,
+    "lastmod": "2018-07-11T18:34:44+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingbreakincasepath-the-code-contains-too-many-switch-cases-with-missing-ending-breaks/",
+    "title": "Read more",
+    "discovered_page": 18,
+    "lastmod": "2018-07-26T20:38:32+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_applicationglobalvariables-the-code-contains-too-many-implied-global-variables-to-prevent-conflicts-in-global-scope-all-variables-should-be-explicitely-declared-and-if-possible-not-in-global-sco/",
+    "title": "Read more",
+    "discovered_page": 18,
+    "lastmod": "2018-08-08T20:06:10+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_mallocfreeuses_count-one-violation-each-time-malloc-or-free-keyword-is-encountered/",
+    "title": "Read more",
+    "discovered_page": 19,
+    "lastmod": "2018-05-11T15:02:40+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_spaghetticode-avoid-unstructured-branches/",
+    "title": "Read more",
+    "discovered_page": 19,
+    "lastmod": "2018-06-04T21:49:47+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingclassdestructor2_the-code-contains-too-many-classes-with-missing-destructor-2/",
+    "title": "Read more",
+    "discovered_page": 19,
+    "lastmod": "2018-06-04T21:52:25+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingclassdestructor_the-code-contains-too-many-classes-with-missing-constructor/",
+    "title": "Read more",
+    "discovered_page": 19,
+    "lastmod": "2018-05-11T14:35:24+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_dynamicclassdef_dynamic-class-defintion-can-be-non-resilient/",
+    "title": "Read more",
+    "discovered_page": 19,
+    "lastmod": "2018-05-11T14:29:16+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_macrodefinitions-avoid-macro-defining-constants/",
+    "title": "Read more",
+    "discovered_page": 19,
+    "lastmod": "2018-05-11T14:54:24+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingclassdestructor2_the-code-contains-too-many-classes-with-missing-destructor/",
+    "title": "Read more",
+    "discovered_page": 19,
+    "lastmod": "2018-05-11T14:16:52+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_string-prefer-simple-quotes-strings/",
+    "title": "Read more",
+    "discovered_page": 19,
+    "lastmod": "2018-06-15T16:00:03+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_array-use-array-literals-instead-of-array-constructors/",
+    "title": "Read more",
+    "discovered_page": 19,
+    "lastmod": "2018-06-07T18:20:49+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_forinloop-avoid-for-in-loop/",
+    "title": "Read more",
+    "discovered_page": 19,
+    "lastmod": "2018-08-08T21:07:06+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingsemicolon-always-use-semicolons/",
+    "title": "Read more",
+    "discovered_page": 20,
+    "lastmod": "2018-08-08T17:17:57+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_intrinsics-avoid-simplified-syntax/",
+    "title": "Read more",
+    "discovered_page": 20,
+    "lastmod": "2018-08-06T14:50:00+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_spaghetticode-avoid-spaghetti-code/",
+    "title": "Read more",
+    "discovered_page": 20,
+    "lastmod": "2018-06-07T17:08:52+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_checkargs-always-check-arguments/",
+    "title": "Read more",
+    "discovered_page": 20,
+    "lastmod": "2018-09-03T22:35:41+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_explicitexit-avoid-exit-without-value/",
+    "title": "Read more",
+    "discovered_page": 20,
+    "lastmod": "2018-05-04T16:36:18+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unecessarymethod-avoid-methods-that-could-be-functions/",
+    "title": "Read more",
+    "discovered_page": 20,
+    "lastmod": "2018-05-04T16:24:27+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_constructorreturn-avoid-explicit-return-in-__init__/",
+    "title": "Read more",
+    "discovered_page": 20,
+    "lastmod": "2018-06-07T20:45:42+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_magicmethods-avoid-calling-magic-methods/",
+    "title": "Read more",
+    "discovered_page": 20,
+    "lastmod": "2018-05-04T16:15:30+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unnecessaryconcat-avoid-for-list-concatenation/",
+    "title": "Read more",
+    "discovered_page": 20,
+    "lastmod": "2018-05-04T16:16:07+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_longtry-avoid-long-try-blocks/",
+    "title": "Read more",
+    "discovered_page": 20,
+    "lastmod": "2018-06-06T21:56:45+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_importconflict-avoid-naming-collision-with-imports/",
+    "title": "Read more",
+    "discovered_page": 21,
+    "lastmod": "2018-05-04T03:18:44+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_fileglobalvariables-avoid-global-variables/",
+    "title": "Read more",
+    "discovered_page": 21,
+    "lastmod": "2018-05-04T03:13:22+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unsignificantreturn-avoid-empty-and-implicit-return/",
+    "title": "Read more",
+    "discovered_page": 21,
+    "lastmod": "2018-05-25T06:37:23+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_namingconflict-avoid-localglobal-variable-conflicts/",
+    "title": "Read more",
+    "discovered_page": 21,
+    "lastmod": "2018-06-25T17:19:30+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unusedarg-unused-arguments-quite-risky-code/",
+    "title": "Read more",
+    "discovered_page": 21,
+    "lastmod": "2018-05-04T02:44:05+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_inheritance-overloaded-__init__-should-always-call-ancestor-2/",
+    "title": "Read more",
+    "discovered_page": 21,
+    "lastmod": "2018-05-31T23:03:42+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_multiplereturn-avoid-methods-or-function-with-too-many-arguments/",
+    "title": "Read more",
+    "discovered_page": 21,
+    "lastmod": "2018-05-25T06:36:00+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unusedimports-avoid-unused-imports/",
+    "title": "Read more",
+    "discovered_page": 21,
+    "lastmod": "2018-05-04T02:46:24+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unusedvar-avoid-unused-variable/",
+    "title": "Read more",
+    "discovered_page": 21,
+    "lastmod": "2018-05-04T02:41:12+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_automaticnumbering-automatic-numbering-increases-costs/",
+    "title": "Read more",
+    "discovered_page": 21,
+    "lastmod": "2018-04-13T05:50:16+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_multilineinstruction-backslash-line-continuation-makes-code-less-readable/",
+    "title": "Read more",
+    "discovered_page": 22,
+    "lastmod": "2018-04-13T05:38:12+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_rangeboundary-avoid-using-len-as-upper-boundary/",
+    "title": "Read more",
+    "discovered_page": 22,
+    "lastmod": "2018-04-13T04:08:06+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_multilineinstruction-avoid-multiline-conditional-expressions/",
+    "title": "Read more",
+    "discovered_page": 22,
+    "lastmod": "2018-04-13T04:18:31+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_suspiciousindentations-avoid-bad-indentation/",
+    "title": "Read more",
+    "discovered_page": 22,
+    "lastmod": "2018-04-13T03:43:12+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingonerror-avoid-main-procedures-not-error-clause/",
+    "title": "Read more",
+    "discovered_page": 22,
+    "lastmod": "2018-04-06T16:54:20+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unusedparameters-avoid-unused-function-parameters-php/",
+    "title": "Read more",
+    "discovered_page": 22,
+    "lastmod": "2021-06-26T08:22:52+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingdefault2-avoid-missing-default-switch-statements/",
+    "title": "Read more",
+    "discovered_page": 22,
+    "lastmod": "2018-06-07T15:42:03+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_selectcontrolstruct-avoid-using-select-endselect-statement/",
+    "title": "Read more",
+    "discovered_page": 22,
+    "lastmod": "2018-04-06T16:40:45+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badselect-avoid-using-select-distinct-use-delete-adjacent/",
+    "title": "Read more",
+    "discovered_page": 22,
+    "lastmod": "2018-04-06T16:33:48+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_dynamicqueries-avoid-using-dynamic-queries/",
+    "title": "Read more",
+    "discovered_page": 22,
+    "lastmod": "2018-04-06T16:29:31+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_subquery-avoid-main-procedures-complex-queries/",
+    "title": "Read more",
+    "discovered_page": 23,
+    "lastmod": "2018-04-06T16:25:41+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missinghashcode-avoid-classes-overriding-equals-hashcode/",
+    "title": "Read more",
+    "discovered_page": 23,
+    "lastmod": "2018-04-06T16:20:47+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_instanceof-avoid-type-in-conditions/",
+    "title": "Read more",
+    "discovered_page": 23,
+    "lastmod": "2018-05-24T17:07:10+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_truncate-truncate-tables-compromise-backups/",
+    "title": "Read more",
+    "discovered_page": 23,
+    "lastmod": "2018-04-05T08:44:19+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_toomanyincludes-code-contains-many-includes/",
+    "title": "Read more",
+    "discovered_page": 23,
+    "lastmod": "2018-04-05T08:44:34+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_nestedloop-nested-loops-cause-performance-issues/",
+    "title": "Read more",
+    "discovered_page": 23,
+    "lastmod": "2018-09-05T03:20:43+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingexplicitonoption-explicit-option-makes-declaring-variables-easier/",
+    "title": "Read more",
+    "discovered_page": 23,
+    "lastmod": "2018-09-07T14:51:31+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_numberofparameters-crossing-parameter-limit-can-cause-bugs/",
+    "title": "Read more",
+    "discovered_page": 23,
+    "lastmod": "2018-09-05T03:44:51+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unsecure-unmanaged-manage-transactions-changing-tables/",
+    "title": "Read more",
+    "discovered_page": 23,
+    "lastmod": "2023-03-07T11:39:57+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_baddynamicclassdefinitions-avoid-classes-using-incorrect-dynamic-allocation/",
+    "title": "Read more",
+    "discovered_page": 23,
+    "lastmod": "2018-02-21T11:48:09+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingclassdestructor-avoid-classes-with-missing-destructor-declarations-in-header-files/",
+    "title": "Read more",
+    "discovered_page": 24,
+    "lastmod": "2018-02-21T10:52:38+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_macrodefinitions-avoid-macros-defining-constants/",
+    "title": "Read more",
+    "discovered_page": 24,
+    "lastmod": "2018-02-21T09:32:41+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingincludeprotections-lack-of-multiple-inclusion-protection-in-header-files/",
+    "title": "Read more",
+    "discovered_page": 24,
+    "lastmod": "2018-02-20T17:33:40+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_spaghetticode-too-many-unconditional-branches-may-end-to-spaghetti-code/",
+    "title": "Read more",
+    "discovered_page": 24,
+    "lastmod": "2018-02-20T17:45:30+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingbraces2_using-curly-braces-is-less-error-prone/",
+    "title": "Read more",
+    "discovered_page": 24,
+    "lastmod": "2023-07-25T21:08:35+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_finalreturn-avoid-missing-function-return/",
+    "title": "Read more",
+    "discovered_page": 24,
+    "lastmod": "2018-09-05T03:41:38+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_bugpatterns-avoid-using-risky-patterns-too-frequently/",
+    "title": "Read more",
+    "discovered_page": 24,
+    "lastmod": "2018-08-02T19:43:30+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_dbmswarning-avoid-using-dbms-dynamic-sql/",
+    "title": "Read more",
+    "discovered_page": 24,
+    "lastmod": "2017-07-29T17:39:20+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_withoutlabel_end-avoid-missing-label-for-end-keyword/",
+    "title": "Read more",
+    "discovered_page": 24,
+    "lastmod": "2018-09-05T03:38:55+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_withreturnoutsideexceptionhandler-avoid-returning-from-routine-before-the-end/",
+    "title": "Read more",
+    "discovered_page": 24,
+    "lastmod": "2018-09-05T03:34:03+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_sqlinterleaving-avoid-ddl-and-dml-interleaving/",
+    "title": "Read more",
+    "discovered_page": 25,
+    "lastmod": "2019-07-05T16:17:22+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_dbobjectqualification-avoid-missing-object-qualification/",
+    "title": "Read more",
+    "discovered_page": 25,
+    "lastmod": "2018-09-05T02:50:35+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_complexconditions-the-code-contains-too-many-complex-conditions-conditionals-expressions-with-at-least-and-logical-operator-and-composed-with-too-many-simple-contitions-comparisons-expres/",
+    "title": "Read more",
+    "discovered_page": 25,
+    "lastmod": "2018-09-05T02:48:35+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_emptycatches-avoid-empty-catches/",
+    "title": "Read more",
+    "discovered_page": 25,
+    "lastmod": "2018-09-05T05:21:37+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_uselessdependencies-avoid-useless-taglib/",
+    "title": "Read more",
+    "discovered_page": 25,
+    "lastmod": "2018-09-05T03:05:52+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_undocumented-avoid-undocumented-methods-or-functions-php/",
+    "title": "Read more",
+    "discovered_page": 25,
+    "lastmod": "2018-09-05T03:01:04+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_notefficiencytype-avoid-using-less-efficient-types/",
+    "title": "Read more",
+    "discovered_page": 25,
+    "lastmod": "2018-09-05T02:53:01+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingidentical-avoiding-implied-typecasting/",
+    "title": "Read more",
+    "discovered_page": 25,
+    "lastmod": "2018-09-05T02:33:59+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_eval-avoid-dynamic-code-execution/",
+    "title": "Read more",
+    "discovered_page": 25,
+    "lastmod": "2018-09-05T02:28:54+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_localnames-use-dedicated-nomenclature-for-local-variables/",
+    "title": "Read more",
+    "discovered_page": 25,
+    "lastmod": "2018-09-05T02:18:29+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_dangeroustypes-avoid-dangerous-types/",
+    "title": "Read more",
+    "discovered_page": 26,
+    "lastmod": "2020-03-06T15:18:17+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_complexartifact-avoid-complex-artifact/",
+    "title": "Read more",
+    "discovered_page": 26,
+    "lastmod": "2018-09-05T05:29:06+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_deprecatedfeature-deprecated-jsp-scriptlets-should-not-be-used/",
+    "title": "Read more",
+    "discovered_page": 26,
+    "lastmod": "2018-09-05T02:05:35+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_filenaming-jsp-fragments-should-always-use-the-jspf-suffix/",
+    "title": "Read more",
+    "discovered_page": 26,
+    "lastmod": "2018-09-05T02:02:25+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingprecision-avoid-missing-precision-when-declaring-data/",
+    "title": "Read more",
+    "discovered_page": 26,
+    "lastmod": "2018-09-05T01:30:10+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_kshfirstline-avoid-missing-interpreter-invocation/",
+    "title": "Read more",
+    "discovered_page": 26,
+    "lastmod": "2018-09-05T01:26:27+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_vardecl-always-declare-variables/",
+    "title": "Read more",
+    "discovered_page": 26,
+    "lastmod": "2018-08-02T19:20:40+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_columnslist-avoid-insert-with-missing-columns-list/",
+    "title": "Read more",
+    "discovered_page": 26,
+    "lastmod": "2018-09-05T01:24:30+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_indent-avoid-bad-line-indentation/",
+    "title": "Read more",
+    "discovered_page": 26,
+    "lastmod": "2018-09-05T01:22:52+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_shortvarname-avoid-short-local-variables-names/",
+    "title": "Read more",
+    "discovered_page": 26,
+    "lastmod": "2018-09-05T01:18:59+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_continuationchar-avoid-continuation-line/",
+    "title": "Read more",
+    "discovered_page": 27,
+    "lastmod": "2018-09-05T01:17:25+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_htmlcomment-avoid-html-comments/",
+    "title": "Read more",
+    "discovered_page": 27,
+    "lastmod": "2018-09-05T01:33:57+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_pipes-avoid-using-pipes/",
+    "title": "Read more",
+    "discovered_page": 27,
+    "lastmod": "2018-09-05T01:05:38+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_pipechain-avoid-to-pipe-too-many-commands/",
+    "title": "Read more",
+    "discovered_page": 27,
+    "lastmod": "2018-09-04T17:51:24+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_decode-avoid-using-decode/",
+    "title": "Read more",
+    "discovered_page": 27,
+    "lastmod": "2018-09-04T17:51:11+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_toomanyjavacode-use-beans-and-tags/",
+    "title": "Read more",
+    "discovered_page": 27,
+    "lastmod": "2018-09-04T17:51:05+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_shortidentifiers-avoid-short-identifiers/",
+    "title": "Read more",
+    "discovered_page": 27,
+    "lastmod": "2018-09-04T17:39:19+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_emptycatches-avoid-empty-catch-blocks-php/",
+    "title": "Read more",
+    "discovered_page": 27,
+    "lastmod": "2018-09-05T05:21:47+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_goto-never-use-goto/",
+    "title": "Read more",
+    "discovered_page": 27,
+    "lastmod": "2018-09-05T01:13:58+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_withoutsemicolumn_end_semicolon-used-terminate-statement/",
+    "title": "Read more",
+    "discovered_page": 27,
+    "lastmod": "2020-01-08T16:24:00+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_untrusteddata-avoid-untrusted-data/",
+    "title": "Read more",
+    "discovered_page": 28,
+    "lastmod": "2018-09-05T01:13:37+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_withseveralexit_loop_exit-closes-entire-script/",
+    "title": "Read more",
+    "discovered_page": 28,
+    "lastmod": "2020-01-08T16:26:45+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_fetchinloop-avoid-cursors-inside-a-loop/",
+    "title": "Read more",
+    "discovered_page": 28,
+    "lastmod": "2018-09-04T17:50:54+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_exportnames-use-dedicated-nomenclature-for-exported-variables/",
+    "title": "Read more",
+    "discovered_page": 28,
+    "lastmod": "2018-09-04T17:05:19+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_multipleinstructions-avoid-several-instruction-on-the-same-line/",
+    "title": "Read more",
+    "discovered_page": 28,
+    "lastmod": "2018-09-05T01:13:00+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingcatch-use-exception-catching-with-number-parsing-methods-while-loops-and-tab-access/",
+    "title": "Read more",
+    "discovered_page": 28,
+    "lastmod": "2018-09-05T01:12:55+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_ieconditionalcomments-avoid-ies-conditional/",
+    "title": "Read more",
+    "discovered_page": 28,
+    "lastmod": "2018-09-05T01:12:45+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_background-avoid-using-background-processes/",
+    "title": "Read more",
+    "discovered_page": 28,
+    "lastmod": "2018-09-05T01:12:32+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_starimport-avoid-using-unqualified-imports/",
+    "title": "Read more",
+    "discovered_page": 28,
+    "lastmod": "2018-09-04T17:50:49+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_exitnovalue-avoid-exit-without-value/",
+    "title": "Read more",
+    "discovered_page": 28,
+    "lastmod": "2018-09-05T01:11:54+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_unconditionnal-avoid-unconditional-if-and-elseif-statements/",
+    "title": "Read more",
+    "discovered_page": 29,
+    "lastmod": "2018-09-05T01:11:38+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_multilinestring-avoid-multiline-string-literals/",
+    "title": "Read more",
+    "discovered_page": 29,
+    "lastmod": "2018-09-04T17:50:34+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_subqueries-avoid-artifacts-with-sql-statement-including-subqueries/",
+    "title": "Read more",
+    "discovered_page": 29,
+    "lastmod": "2018-09-07T14:42:33+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_tmpfilename-always-use-in-tempo-filename/",
+    "title": "Read more",
+    "discovered_page": 29,
+    "lastmod": "2018-09-05T01:09:34+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingwhenothers-the-code-contains-too-many-case-instructions-with-missing-default-statement-when-other/",
+    "title": "Read more",
+    "discovered_page": 29,
+    "lastmod": "2018-09-04T17:50:28+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_susplastcase-always-terminate-case-entry-with-double-semicolon/",
+    "title": "Read more",
+    "discovered_page": 29,
+    "lastmod": "2018-09-05T01:08:38+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_basex_package-avoid-several-packages-in-the-same-file/",
+    "title": "Read more",
+    "discovered_page": 29,
+    "lastmod": "2018-09-04T05:07:25+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_comparetoemptystring-avoid-comparison-to-empty-string/",
+    "title": "Read more",
+    "discovered_page": 29,
+    "lastmod": "2018-09-05T01:08:22+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_include-avoid-include-javascript-files/",
+    "title": "Read more",
+    "discovered_page": 29,
+    "lastmod": "2018-09-05T01:08:02+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_heterogeneouscode-do-not-mix-jsp-standard-syntax-with-jsp-xml-syntax/",
+    "title": "Read more",
+    "discovered_page": 29,
+    "lastmod": "2018-09-04T04:55:37+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_groupingdeclarations-use-grouping-declarations/",
+    "title": "Read more",
+    "discovered_page": 30,
+    "lastmod": "2018-09-04T16:13:12+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_uncommentedartifact-comment-every-setproperty-call/",
+    "title": "Read more",
+    "discovered_page": 30,
+    "lastmod": "2018-09-05T01:09:53+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_alias-avoid-using-aliases/",
+    "title": "Read more",
+    "discovered_page": 30,
+    "lastmod": "2018-09-05T01:09:51+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_xmlformat-use-cdata-for-jsp-documents/",
+    "title": "Read more",
+    "discovered_page": 30,
+    "lastmod": "2018-09-04T17:50:22+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_illegalexception-avoid-illegal-exceptions/",
+    "title": "Read more",
+    "discovered_page": 30,
+    "lastmod": "2018-09-05T01:09:48+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_filelocation-jsp-fragments-should-always-be-placed-in-web-infjspf/",
+    "title": "Read more",
+    "discovered_page": 30,
+    "lastmod": "2018-09-04T17:51:52+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingerrorpage-always-declare-an-error-page/",
+    "title": "Read more",
+    "discovered_page": 30,
+    "lastmod": "2018-09-04T17:49:17+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingbraces-using-curly-braces-is-less-error-prone/",
+    "title": "Read more",
+    "discovered_page": 30,
+    "lastmod": "2017-07-07T08:51:35+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingdefault-switch-statements-default-case-specified/",
+    "title": "Read more",
+    "discovered_page": 30,
+    "lastmod": "2017-07-07T07:18:43+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_uncommentedparam-database-columns-functions-triggers-procedures-commented/",
+    "title": "Read more",
+    "discovered_page": 30,
+    "lastmod": "2017-07-06T11:29:36+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_publicattributes-avoid-exposing-many-public-class-fields/",
+    "title": "Read more",
+    "discovered_page": 31,
+    "lastmod": "2018-02-20T17:21:51+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_baddeclarationorder-avoid-using-functions-declaration/",
+    "title": "Read more",
+    "discovered_page": 31,
+    "lastmod": "2017-07-05T17:28:01+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_strongdataaccess-avoid-repetitive-access-nested-members/",
+    "title": "Read more",
+    "discovered_page": 31,
+    "lastmod": "2018-08-08T20:25:00+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_suspiciouscomments-code-stripped-suspicious-comments/",
+    "title": "Read more",
+    "discovered_page": 31,
+    "lastmod": "2017-06-22T09:49:50+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/atl_missingsemicolon-semicolons-seem-missing-frequently/",
+    "title": "Read more",
+    "discovered_page": 31,
+    "lastmod": "2017-06-22T09:44:16+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_vg-structural-code-complexity-may-high/",
+    "title": "Read more",
+    "discovered_page": 31,
+    "lastmod": "2017-06-22T09:29:34+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_multinst-code-contains-many-lines-containing-several-instructions/",
+    "title": "Read more",
+    "discovered_page": 31,
+    "lastmod": "2017-06-22T09:23:58+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingautomateddoc2-method-parameters-should-have-their-description-tag/",
+    "title": "Read more",
+    "discovered_page": 31,
+    "lastmod": "2018-08-01T19:20:24+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_longlines100-line-code-shouldnt-long-help-readability/",
+    "title": "Read more",
+    "discovered_page": 31,
+    "lastmod": "2017-06-21T15:15:37+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_heterogeneousencoding-code-indentation-line-character-encoding-formats-consistent/",
+    "title": "Read more",
+    "discovered_page": 31,
+    "lastmod": "2017-06-19T13:11:09+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badnaming-attribute-classes-methods-follow-naming-convention/",
+    "title": "Read more",
+    "discovered_page": 32,
+    "lastmod": "2018-08-08T20:45:54+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_magicnumbers-avoid-literal-numbers-e-magic-numbers-not-magic/",
+    "title": "Read more",
+    "discovered_page": 32,
+    "lastmod": "2018-08-09T19:29:34+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_prohibitedkeyword-many-controversial-unsafe-deprecated-keywords-procedure-divisions/",
+    "title": "Read more",
+    "discovered_page": 32,
+    "lastmod": "2017-06-19T08:33:35+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_uncommentedartifact-ensure-main-sql-related-code-artifacts-documented/",
+    "title": "Read more",
+    "discovered_page": 32,
+    "lastmod": "2017-06-22T08:28:58+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badspacing-operators-operands-use-appropriate-spacing-help-readability/",
+    "title": "Read more",
+    "discovered_page": 32,
+    "lastmod": "2017-06-19T08:10:02+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_complexbinarydecisions-levels-logic-complexity-conditions-seem-unbalanced/",
+    "title": "Read more",
+    "discovered_page": 32,
+    "lastmod": "2018-08-09T20:33:57+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_this-avoid-using-unless-points-newly-created-object-tested/",
+    "title": "Read more",
+    "discovered_page": 32,
+    "lastmod": "2018-08-01T20:07:17+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_starimport-wildcard-imports-not-used-frequently/",
+    "title": "Read more",
+    "discovered_page": 32,
+    "lastmod": "2017-06-16T08:47:39+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_riskycatches-exceptions-shouldnt-catched-system-exception-classes/",
+    "title": "Read more",
+    "discovered_page": 32,
+    "lastmod": "2023-09-15T09:17:00+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingidentical-avoid-implied-typecasting/",
+    "title": "Read more",
+    "discovered_page": 32,
+    "lastmod": "2018-08-06T14:48:59+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_missingbraces1-using-curly-braces-less-error-prone/",
+    "title": "Read more",
+    "discovered_page": 33,
+    "lastmod": "2017-07-07T08:50:49+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_commentedoutcode-much-commented-code-can-counter-productive/",
+    "title": "Read more",
+    "discovered_page": 33,
+    "lastmod": "2026-01-07T13:38:23+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_fvoc-vocabulary-frequency-may-be-too-low/",
+    "title": "Read more",
+    "discovered_page": 33,
+    "lastmod": "2021-07-09T14:26:12+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_nbloc-bulky-files-complex-work-with/",
+    "title": "Read more",
+    "discovered_page": 33,
+    "lastmod": "2018-08-01T20:04:54+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_longlines-a-line-of-code-shouldnt-be-too-long-to-help-readability/",
+    "title": "Read more",
+    "discovered_page": 33,
+    "lastmod": "2018-08-09T20:52:16+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_weakcommentrate-ensure-code-contains-enough-block-comments/",
+    "title": "Read more",
+    "discovered_page": 33,
+    "lastmod": "2017-06-16T08:50:56+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/alt_badnamelength-short-code-identifiers-harder-understand/",
+    "title": "Read more",
+    "discovered_page": 33,
+    "lastmod": "2017-06-16T08:51:07+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/software-maintenance-estimates/",
+    "title": "29May",
+    "discovered_page": 33,
+    "lastmod": "2020-05-12T15:01:46+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/backfired-function-points/",
+    "title": "26May",
+    "discovered_page": 33,
+    "lastmod": "2025-03-05T18:33:06+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/business-impact/",
+    "title": "08Nov",
+    "discovered_page": 33,
+    "lastmod": "2021-09-27T11:10:31+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/automated-framework-discovery/",
+    "title": "06May",
+    "discovered_page": 34,
+    "lastmod": "2026-03-25T15:36:46+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/software-elegance/",
+    "title": "11Mar",
+    "discovered_page": 34,
+    "lastmod": "2021-09-27T10:19:33+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/software-agility/",
+    "title": "11Mar",
+    "discovered_page": 34,
+    "lastmod": "2021-09-27T10:18:04+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/definition-roar-index/",
+    "title": "11Mar",
+    "discovered_page": 34,
+    "lastmod": "2020-05-12T15:01:32+01:00"
+  },
+  {
+    "url": "https://doc.casthighlight.com/software-resiliency/",
+    "title": "08Mar",
+    "discovered_page": 34,
+    "lastmod": "2021-09-27T10:17:33+01:00"
+  }
+]

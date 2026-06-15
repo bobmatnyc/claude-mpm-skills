@@ -1,6 +1,7 @@
 {
   "name": "wordpress-security-validation",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "updated": "2026-06-15",
   "category": "toolchain",
   "toolchain": "php",
   "tags": [

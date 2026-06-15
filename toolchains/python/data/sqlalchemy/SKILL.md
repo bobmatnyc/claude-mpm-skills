@@ -3,11 +3,15 @@ name: sqlalchemy-orm
 description: "SQLAlchemy Python SQL toolkit and ORM with powerful query builder, relationship mapping, and database migrations via Alembic"
 user-invocable: false
 disable-model-invocation: true
+version: 1.1.0
+updated: "2026-06-15"
 progressive_disclosure:
   entry_point:
     summary: "SQLAlchemy Python SQL toolkit and ORM with powerful query builder, relationship mapping, and database migrations via Alembic"
     when_to_use: "When working with sqlalchemy-orm or related functionality."
     quick_start: "1. Review the core concepts below. 2. Apply patterns to your use case. 3. Follow best practices for implementation."
+  references:
+    - sql-quality-antipatterns.md
 ---
 # SQLAlchemy ORM Skill
 
@@ -158,10 +162,10 @@ from sqlalchemy.pool import QueuePool
 
 # Database URL formats
 # SQLite: sqlite:///./database.db
-# PostgreSQL: postgresql://user:pass@localhost/dbname
-# MySQL: mysql+pymysql://user:pass@localhost/dbname
+# PostgreSQL: postgresql://user:pass@localhost/dbname  # pragma: allowlist secret
+# MySQL: mysql+pymysql://user:pass@localhost/dbname  # pragma: allowlist secret
 
-DATABASE_URL = "postgresql://user:pass@localhost/mydb"
+DATABASE_URL = "postgresql://user:pass@localhost/mydb"  # pragma: allowlist secret
 
 # Create engine with connection pooling
 engine = create_engine(
@@ -455,7 +459,7 @@ from sqlalchemy.ext.asyncio import (
 )
 
 # Async engine (note: asyncpg for PostgreSQL, aiosqlite for SQLite)
-DATABASE_URL = "postgresql+asyncpg://user:pass@localhost/mydb"
+DATABASE_URL = "postgresql+asyncpg://user:pass@localhost/mydb"  # pragma: allowlist secret
 
 async_engine = create_async_engine(
     DATABASE_URL,
@@ -518,7 +522,7 @@ async def get_user_endpoint(
 alembic init alembic
 
 # Edit alembic.ini - set database URL
-# sqlalchemy.url = postgresql://user:pass@localhost/mydb
+# sqlalchemy.url = postgresql://user:pass@localhost/mydb  # pragma: allowlist secret
 
 # Or use env variable in alembic/env.py
 ```
@@ -748,7 +752,7 @@ def test_user(db_session):
     user = User(
         email="test@example.com",
         username="testuser",
-        hashed_password="hashed"
+        hashed_password="hashed"  # pragma: allowlist secret
     )
     db_session.add(user)
     db_session.commit()
@@ -973,6 +977,30 @@ class Post(Base, AuditMixin):
     __tablename__ = "posts"
     # ... fields
 ```
+
+## SQL Quality & Efficiency Anti-Patterns
+
+The ORM makes several classic SQL defects easy to introduce by accident. Watch for these
+during query review:
+
+- **Query-in-loop (N+1)** — eager-load with `selectinload`/`joinedload` instead of one
+  query per row.
+- **`SELECT *` / over-fetching** — project only the columns you use with
+  `select(Model.col_a, Model.col_b)`.
+- **Missing indexes / `SELECT DISTINCT` to mask duplicates** — index filter/join/order
+  columns; `DISTINCT` usually hides a missing join, not a fix.
+- **Cursor-in-loop writes** — replace row-by-row writes with a single set-based
+  `update()`/`insert()`.
+- **DDL/DML interleaving** — keep schema changes in migrations; runtime code is DML-only.
+- **Unparameterized queries** — bind parameters; never f-string untrusted data into SQL.
+- **Correlated subqueries** — prefer independent subqueries/CTEs or joins with indexes.
+
+See **[sql-quality-antipatterns.md](references/sql-quality-antipatterns.md)** for
+non-compliant vs compliant examples (raw SQL and SQLAlchemy 2.0) and how to test each.
+
+> Derived from CAST Highlight SQL code-quality indicators
+> (https://doc.casthighlight.com/), cross-referenced with the SQL standard and SonarSource
+> RSPEC. For DDL hygiene see the `database-migration` skill.
 
 ## Resources
 

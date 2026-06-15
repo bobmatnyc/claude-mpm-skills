@@ -3,7 +3,8 @@ name: golang-http-frameworks
 description: "Go HTTP API development with net/http, Chi, Gin, Echo, and Fiber frameworks"
 user-invocable: false
 disable-model-invocation: true
-version: 1.0.0
+version: 1.1.0
+updated: "2026-06-15"
 category: toolchain
 author: Claude MPM Team
 license: MIT
@@ -12,6 +13,8 @@ progressive_disclosure:
     summary: "Master Go HTTP frameworks from stdlib net/http to Chi, Gin, Echo, and Fiber for building production-ready REST APIs with middleware, validation, and client patterns"
     when_to_use: "Building RESTful APIs, choosing HTTP framework, implementing authentication middleware, designing REST endpoints, testing HTTP handlers, optimizing API performance"
     quick_start: "1. Choose framework (stdlib, Chi, Gin, Echo, Fiber) 2. Structure routes and middleware 3. Implement request validation 4. Design error handling 5. Test with httptest"
+  references:
+    - go-idioms-quality.md
   token_estimate:
     entry: 160
     full: 5000
@@ -1110,6 +1113,27 @@ func makeRequest() {
     resp, _ := httpClient.Get(url)
 }
 ```
+
+## Go Idiomatic Quality Rules
+
+Small, high-frequency Go idioms worth enforcing in handler/service code:
+
+- **Use `:=` for locals with an initial value** — reserve `var` for zero values and
+  package-level declarations.
+- **Don't name an unused method receiver** — `func (*Server) Foo()` makes it clear the
+  receiver is irrelevant.
+- **Initialize struct pointers with `&T{}`, not `new(T)`** — consistent with composite
+  literals and lets you set fields inline.
+- **Handle (don't discard) returned errors** — a dropped error from `Decode`/`Write`/a
+  repository call turns a failure into a silent success.
+
+See **[go-idioms-quality.md](references/go-idioms-quality.md)** for non-idiomatic vs
+idiomatic examples and how to test/lint each. Most are enforced by `gofmt -s`,
+`staticcheck`, `errcheck`, and `revive` under `golangci-lint`.
+
+> Derived from CAST Highlight Go-tagged code-quality indicators
+> (https://doc.casthighlight.com/), which reference Effective Go and the Go Code Review
+> Comments wiki as primary sources.
 
 ## Related Skills
 

@@ -3,7 +3,8 @@ name: software-patterns
 description: Decision framework for architectural patterns including DI, SOA, Repository, Domain Events, Circuit Breaker, and Anti-Corruption Layer. Use when designing systems, choosing patterns, or reviewing architecture.
 user-invocable: false
 disable-model-invocation: true
-version: 1.0.0
+version: 1.1.0
+updated: "2026-06-15"
 languages: all
 progressive_disclosure:
   entry_point:
@@ -16,6 +17,7 @@ progressive_disclosure:
     - anti-patterns.md
     - decision-trees.md
     - examples.md
+    - code-smell-signals.md
 tags:
   - architecture
   - patterns
@@ -165,6 +167,7 @@ Dependencies should be visible. Service Locator hides them; DI exposes them.
 ### Decision Support
 - **[Decision Trees](references/decision-trees.md)**: Complete flowcharts for pattern selection
 - **[Anti-Patterns](references/anti-patterns.md)**: Common misapplications and how to recognize them
+- **[Code-Smell Signals](references/code-smell-signals.md)**: Low-level code smells (large switches, nested loops, parameter reassignment, high complexity/coupling) mapped to the architectural problems they signal and the pattern that fixes each — derived from CAST Highlight `_multi` quality indicators (https://doc.casthighlight.com/)
 
 ### Implementation
 - **[Examples](references/examples.md)**: Language-agnostic pseudocode for each pattern combination
