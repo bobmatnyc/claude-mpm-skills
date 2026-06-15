@@ -552,15 +552,15 @@ def client(test_db):
 def test_create_user(client):
     response = client.post(
         "/users",
-        json={"email": "test@example.com", "password": "secret"}
+        json={"email": "test@example.com", "password": "secret"}  # pragma: allowlist secret
     )
     assert response.status_code == 200
     assert response.json()["email"] == "test@example.com"
 
 def test_read_users(client):
     # Create user first
-    client.post("/users", json={"email": "user1@example.com", "password": "pass1"})
-    client.post("/users", json={"email": "user2@example.com", "password": "pass2"})
+    client.post("/users", json={"email": "user1@example.com", "password": "pass1"})  # pragma: allowlist secret
+    client.post("/users", json={"email": "user2@example.com", "password": "pass2"})  # pragma: allowlist secret
 
     # Read users
     response = client.get("/users")
@@ -1368,7 +1368,7 @@ When using pytest, consider these complementary skills:
    ```python
    def authenticate(user):
        # Minimum code to pass the test
-       if user.username == 'alice' and user.password == 'secret123':
+       if user.username == 'alice' and user.password == 'secret123':  # pragma: allowlist secret
            return AuthResult(is_authenticated=True)
        return AuthResult(is_authenticated=False)
    ```

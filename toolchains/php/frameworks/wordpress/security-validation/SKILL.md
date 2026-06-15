@@ -617,12 +617,12 @@ function validate_registration_form($data) {
 
     // Password validation
     if (strlen($data['password']) < 8) {
-        $errors['password'] = 'Password must be at least 8 characters';
+        $errors['password'] = 'Password must be at least 8 characters'; // pragma: allowlist secret
     }
 
     // Password confirmation
     if ($data['password'] !== $data['password_confirm']) {
-        $errors['password_confirm'] = 'Passwords do not match';
+        $errors['password_confirm'] = 'Passwords do not match'; // pragma: allowlist secret
     }
 
     // Age validation

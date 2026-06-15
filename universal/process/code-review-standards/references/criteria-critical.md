@@ -15,7 +15,7 @@ exploitable vulnerability, data breach risk, or unrecoverable system failure.
 
 **What to look for:**
 - String literals matching patterns: `sk-`, `ghp_`, `AWS`, `AKIA`, `password=`, `secret=`, `api_key=`
-- Credentials assigned directly in source: `API_KEY = "abc123"`, `DB_PASSWORD = "hunter2"`
+- Credentials assigned directly in source: `API_KEY = "abc123"`, `DB_PASSWORD = "hunter2"`  <!-- pragma: allowlist secret -->
 - Tokens committed in test fixtures or default config values
 
 **Why CRITICAL:**

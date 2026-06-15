@@ -162,10 +162,10 @@ from sqlalchemy.pool import QueuePool
 
 # Database URL formats
 # SQLite: sqlite:///./database.db
-# PostgreSQL: postgresql://user:pass@localhost/dbname
-# MySQL: mysql+pymysql://user:pass@localhost/dbname
+# PostgreSQL: postgresql://user:pass@localhost/dbname  # pragma: allowlist secret
+# MySQL: mysql+pymysql://user:pass@localhost/dbname  # pragma: allowlist secret
 
-DATABASE_URL = "postgresql://user:pass@localhost/mydb"
+DATABASE_URL = "postgresql://user:pass@localhost/mydb"  # pragma: allowlist secret
 
 # Create engine with connection pooling
 engine = create_engine(
@@ -459,7 +459,7 @@ from sqlalchemy.ext.asyncio import (
 )
 
 # Async engine (note: asyncpg for PostgreSQL, aiosqlite for SQLite)
-DATABASE_URL = "postgresql+asyncpg://user:pass@localhost/mydb"
+DATABASE_URL = "postgresql+asyncpg://user:pass@localhost/mydb"  # pragma: allowlist secret
 
 async_engine = create_async_engine(
     DATABASE_URL,
@@ -522,7 +522,7 @@ async def get_user_endpoint(
 alembic init alembic
 
 # Edit alembic.ini - set database URL
-# sqlalchemy.url = postgresql://user:pass@localhost/mydb
+# sqlalchemy.url = postgresql://user:pass@localhost/mydb  # pragma: allowlist secret
 
 # Or use env variable in alembic/env.py
 ```
@@ -752,7 +752,7 @@ def test_user(db_session):
     user = User(
         email="test@example.com",
         username="testuser",
-        hashed_password="hashed"
+        hashed_password="hashed"  # pragma: allowlist secret
     )
     db_session.add(user)
     db_session.commit()
