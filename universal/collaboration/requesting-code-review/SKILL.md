@@ -1,5 +1,5 @@
 ---
-name: Requesting Code Review
+name: requesting-code-review
 description: Dispatch code-reviewer subagent to review implementation against plan or requirements before proceeding
 user-invocable: false
 disable-model-invocation: true

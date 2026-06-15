@@ -1,5 +1,5 @@
 {
-  "name": "express-production",
+  "name": "express-local-dev",
   "version": "2.0.0",
   "category": "toolchain",
   "toolchain": "javascript",

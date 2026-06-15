@@ -1,5 +1,5 @@
 ---
-name: supabase-backend-platform
+name: supabase
 description: Supabase open-source Firebase alternative with Postgres, authentication, storage, and realtime subscriptions. Use when building full-stack applications requiring integrated backend services with Next.js, React, or Vue.
 user-invocable: false
 disable-model-invocation: true

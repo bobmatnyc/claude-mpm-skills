@@ -1,5 +1,5 @@
 ---
-name: python-code-quality
+name: code-quality
 description: "Python code-quality anti-patterns and review checks: exception-hierarchy correctness, singleton identity comparison, narrow exception handling, wildcard-import avoidance, magic-number naming, and dead-local removal. Use when reviewing or self-reviewing Python code for correctness and readability defects that linters and reviewers should catch."
 user-invocable: false
 disable-model-invocation: true

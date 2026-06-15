@@ -1,5 +1,5 @@
 ---
-name: Brainstorming Ideas Into Designs
+name: brainstorming
 description: Interactive idea refinement using Socratic method to develop fully-formed designs
 user-invocable: false
 disable-model-invocation: true

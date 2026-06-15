@@ -1,5 +1,5 @@
 ---
-name: Condition-Based Waiting
+name: condition-based-waiting
 description: Replace arbitrary timeouts with condition polling for reliable async tests
 user-invocable: false
 disable-model-invocation: true

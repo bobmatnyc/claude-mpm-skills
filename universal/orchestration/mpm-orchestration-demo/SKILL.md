@@ -3,6 +3,7 @@ name: mpm-orchestration-demo
 description: Reference implementation demonstrating the Command → Agent → Skill orchestration pattern in Claude MPM, showing both preloaded-skill and dynamic-skill-invocation styles
 argument-hint: "[topic]"
 user-invocable: true
+disable-model-invocation: true
 version: 1.1.0
 category: universal
 author: Claude MPM Team

@@ -1,5 +1,5 @@
 ---
-name: internal-comms-3p-updates
+name: internal-comms
 description: "Framework for writing concise 3P (Progress, Plans, Problems) team updates for executives and stakeholders"
 user-invocable: false
 disable-model-invocation: true

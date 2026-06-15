@@ -1,5 +1,5 @@
 ---
-name: Dispatching Parallel Agents
+name: dispatching-parallel-agents
 description: Use multiple Claude agents to investigate and fix independent problems concurrently
 user-invocable: false
 disable-model-invocation: true

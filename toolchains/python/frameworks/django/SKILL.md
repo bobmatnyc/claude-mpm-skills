@@ -1,5 +1,5 @@
 ---
-name: django-framework
+name: django
 description: "Django full-featured Python web framework with batteries included (ORM, admin, auth)"
 user-invocable: false
 disable-model-invocation: true

@@ -10,12 +10,12 @@ Production-ready Go service stack for HTTP APIs and gRPC services, including dat
 
 ## Included Skills
 
-- **golang-http-frameworks** (toolchains/golang/web) - net/http + routers (Chi/Gin/Echo/Fiber), middleware, REST patterns
-- **golang-grpc** (toolchains/golang/grpc) - protobuf-first APIs, interceptors, deadlines, streaming, TLS, bufconn tests
-- **golang-concurrency-patterns** (toolchains/golang/concurrency) - context cancellation, errgroup, bounded concurrency, leak/race pitfalls
-- **golang-database-patterns** (toolchains/golang/data) - sqlx/pgx patterns, repository design, pooling, transactions, migrations
-- **golang-observability-opentelemetry** (toolchains/golang/observability) - tracing/metrics/logging defaults (OTel, Prometheus, slog)
-- **golang-testing-strategies** (toolchains/golang/testing) - table-driven tests, gomock/testify, benchmarks, `-race`, CI patterns
+- **golang-http-frameworks** (toolchains/golang/golang-http-frameworks) - net/http + routers (Chi/Gin/Echo/Fiber), middleware, REST patterns
+- **golang-grpc** (toolchains/golang/golang-grpc) - protobuf-first APIs, interceptors, deadlines, streaming, TLS, bufconn tests
+- **golang-concurrency-patterns** (toolchains/golang/golang-concurrency-patterns) - context cancellation, errgroup, bounded concurrency, leak/race pitfalls
+- **golang-database-patterns** (toolchains/golang/golang-database-patterns) - sqlx/pgx patterns, repository design, pooling, transactions, migrations
+- **golang-observability-opentelemetry** (toolchains/golang/golang-observability-opentelemetry) - tracing/metrics/logging defaults (OTel, Prometheus, slog)
+- **golang-testing-strategies** (toolchains/golang/golang-testing-strategies) - table-driven tests, gomock/testify, benchmarks, `-race`, CI patterns
 - **api-design-patterns** (universal/web/api-design-patterns) - resource design, error shapes, pagination, idempotency
 - **security-scanning** (universal/security/security-scanning) - CI scanning workflow (secrets, deps, SAST) + triage/exceptions
 - **docker** (toolchains/universal/infrastructure/docker) - container packaging, compose workflows, prod patterns

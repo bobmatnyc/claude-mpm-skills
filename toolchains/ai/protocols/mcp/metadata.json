@@ -1,5 +1,5 @@
 {
-  "name": "model-context-protocol",
+  "name": "mcp",
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "ai",
@@ -24,7 +24,7 @@
   "entry_point_tokens": 167,
   "full_tokens": 8827,
   "related_skills": [
-    "../../../typescript/core",
+    "../../../typescript/typescript-core",
     "../../../python/core",
     "../../services/openrouter"
   ],

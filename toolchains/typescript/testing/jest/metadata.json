@@ -1,5 +1,5 @@
 {
-  "name": "jest-typescript",
+  "name": "jest",
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "typescript",

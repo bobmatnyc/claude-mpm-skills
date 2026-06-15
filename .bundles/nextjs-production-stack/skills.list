@@ -2,12 +2,12 @@
 # Version: 1.0.0
 
 # Next.js Framework
-toolchains/nextjs/core
-toolchains/nextjs/v16
+toolchains/nextjs/nextjs-core
+toolchains/nextjs/nextjs-v16
 
 # Core Dependencies
 toolchains/javascript/frameworks/react
-toolchains/typescript/core
+toolchains/typescript/typescript-core
 
 # Deployment & Styling
 toolchains/platforms/deployment/vercel

@@ -1,5 +1,5 @@
 ---
-name: vite-build-tool
+name: vite
 description: "Vite lightning-fast build tool with instant HMR, ESM-first architecture, and zero-config setup for modern web development"
 user-invocable: false
 disable-model-invocation: true

@@ -1,6 +1,8 @@
 ---
 name: bad-example-skill
 description: ANTI-PATTERN - Example showing violations of self-containment (DO NOT COPY)
+user-invocable: false
+disable-model-invocation: true
 category: framework
 toolchain: python
 tags: [anti-pattern, bad-example, violations]

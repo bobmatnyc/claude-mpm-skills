@@ -1,5 +1,5 @@
 ---
-name: dspy-framework
+name: dspy
 description: "DSPy declarative framework for automatic prompt optimization treating prompts as code with systematic evaluation and compilers"
 user-invocable: false
 disable-model-invocation: true

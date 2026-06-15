@@ -1,5 +1,5 @@
 ---
-name: webapp-testing-patterns
+name: webapp-testing
 description: "Comprehensive web application testing patterns with Playwright selectors, wait strategies, and best practices"
 user-invocable: false
 disable-model-invocation: true

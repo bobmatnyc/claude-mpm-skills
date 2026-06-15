@@ -1,5 +1,5 @@
 ---
-name: tailwind-css
+name: tailwind
 description: "Tailwind CSS utility-first framework for rapid UI development with responsive design and dark mode"
 user-invocable: false
 disable-model-invocation: true

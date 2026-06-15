@@ -18,7 +18,7 @@ This repository contains a comprehensive collection of **169 Claude Code skills*
 **Key Components:**
 - **Claude Code**: Anthropic's official CLI environment
 - **Claude MPM**: Multi-agent framework running in Claude Code
-- **Skills**: Domain-specific knowledge modules (this repo contains 170 skills)
+- **Skills**: Domain-specific knowledge modules (this repo contains 169 skills)
 
 **How They Work Together:**
 ```
@@ -90,8 +90,8 @@ claude-mpm-skills/
 │   │   ├── data/           # Ecto patterns
 │   │   └── ops/            # Phoenix operations & releases
 │   ├── nextjs/         # 3 skills
-│   │   ├── core/           # Next.js fundamentals
-│   │   └── v16/            # Next.js 16 (Turbopack, cache components)
+│   │   ├── nextjs-core/    # Next.js fundamentals
+│   │   └── nextjs-v16/     # Next.js 16 (Turbopack, cache components)
 │   ├── ui/             # 4 skills
 │   │   ├── styling/        # Tailwind CSS
 │   │   └── components/     # shadcn/ui, DaisyUI, Headless UI

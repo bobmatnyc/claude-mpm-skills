@@ -2,22 +2,22 @@
 # Version: 1.0.0
 
 # Core HTTP APIs
-toolchains/golang/web
+toolchains/golang/golang-http-frameworks
 
 # RPC & Contracts (service-to-service)
-toolchains/golang/grpc
+toolchains/golang/golang-grpc
 
 # Concurrency & Cancellation
-toolchains/golang/concurrency
+toolchains/golang/golang-concurrency-patterns
 
 # Data Access
-toolchains/golang/data
+toolchains/golang/golang-database-patterns
 
 # Observability
-toolchains/golang/observability
+toolchains/golang/golang-observability-opentelemetry
 
 # Testing
-toolchains/golang/testing
+toolchains/golang/golang-testing-strategies
 
 # API Design & Security
 universal/web/api-design-patterns
@@ -25,4 +25,3 @@ universal/security/security-scanning
 
 # Containerization
 toolchains/universal/infrastructure/docker
-

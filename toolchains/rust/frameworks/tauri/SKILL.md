@@ -1,5 +1,5 @@
 ---
-name: tauri-event-system
+name: tauri
 description: Advanced Tauri event patterns for bidirectional communication, streaming data, window-to-window messaging, and custom event handling
 user-invocable: false
 disable-model-invocation: true

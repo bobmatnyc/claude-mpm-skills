@@ -1,5 +1,5 @@
 {
-  "name": "python-code-quality",
+  "name": "code-quality",
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "python",

@@ -1,5 +1,5 @@
 ---
-name: sqlalchemy-orm
+name: sqlalchemy
 description: "SQLAlchemy Python SQL toolkit and ORM with powerful query builder, relationship mapping, and database migrations via Alembic"
 user-invocable: false
 disable-model-invocation: true

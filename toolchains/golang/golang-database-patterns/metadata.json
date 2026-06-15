@@ -1,0 +1,22 @@
+{
+  "name": "golang-database-patterns",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "golang",
+  "framework": "database",
+  "tags": [
+    "database",
+    "golang",
+    "sqlx",
+    "pgx",
+    "migrations",
+    "repository-pattern"
+  ],
+  "entry_point_tokens": 140,
+  "full_tokens": 8868,
+  "related_skills": [
+    "golang-testing-strategies"
+  ],
+  "author": "Claude MPM",
+  "license": "MIT"
+}
