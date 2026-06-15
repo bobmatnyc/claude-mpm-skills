@@ -96,6 +96,63 @@ if issues:
 - A notification skill invoked only on failure
 - A diagram generator invoked after analysis completes
 
+## The `context: fork` Pattern
+
+Beyond preloaded (Style 1) and dynamic (Style 2) skill invocation, an agent can run as a **forked sub-agent** that inherits the parent's accumulated context. This is the `context: fork` pattern: instead of starting the sub-agent with a clean slate, the orchestrator forks the current context so the sub-agent sees everything gathered so far.
+
+### Fresh Context vs. Forked Context
+
+```
+DEFAULT (fresh context):
+  Command gathers data → Agent("specialist") starts CLEAN
+  └─ Sub-agent sees only the prompt; parent findings must be
+     re-passed explicitly in the prompt string.
+
+context: fork:
+  Command gathers data → Agent("specialist", context: fork)
+  └─ Sub-agent INHERITS the parent conversation: prior findings,
+     file reads, and intermediate results are already present.
+```
+
+### Where Fork Fits in the Orchestration Flow
+
+```
+Step 1: /code-review-demo gathers context
+        └─ Reads src/auth.py, src/api.py (now in parent context)
+
+Step 2: Command → Agent tool with fork
+        Agent(
+          subagent_type="code-reviewer",
+          context: fork,                  ← inherit parent context
+          prompt="Review the files already read for security issues"
+        )
+        └─ Forked code-reviewer already sees the file contents;
+           no need to re-read or re-pass them.
+
+Step 3: Forked agent returns structured issues
+        └─ Parent continues; context: fork did not pollute the
+           parent with the agent's internal reasoning.
+```
+
+### When to Fork vs. Start Fresh
+
+Use `context: fork` when the sub-agent's work depends on substantial context the orchestrator already gathered — file contents, prior analysis, or a running decision trail — and re-passing it in the prompt would be lossy or expensive.
+
+Start fresh (the default) when the sub-agent's task is self-contained and a clean, focused context produces better results. A fresh context avoids distracting the sub-agent with irrelevant parent history.
+
+| Question | Fresh context (default) | `context: fork` |
+|---|---|---|
+| Sub-agent needs prior file reads? | Re-pass in prompt | Inherited automatically |
+| Sub-agent task self-contained? | Preferred | Unnecessary overhead |
+| Risk of context pollution? | Low (isolated) | Higher (inherits everything) |
+| Token cost | Lower per agent | Higher (carries parent history) |
+
+### Fork and the Two Invocation Styles
+
+`context: fork` composes with both styles. A forked agent still preloads its `skills:` frontmatter (Style 1) and can still invoke dynamic skills via the `Skill` tool (Style 2). Fork governs *what context the agent starts with*, not *how skills attach to it*. Preloaded skills are injected on top of the inherited context; dynamic skills run downstream as usual.
+
+**Anti-pattern:** Do not fork by default. Forking every sub-agent carries the full parent history into each one, inflating token cost and risking context pollution where a focused, fresh agent would perform better. Reserve fork for genuine context-dependence.
+
 ## Agent Communication Patterns
 
 ### Return Format Contract

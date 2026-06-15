@@ -32,6 +32,7 @@
         "author": "Claude MPM Skills",
         "updated": "2026-04-15",
         "source_path": "universal/web/api-design-patterns/SKILL.md",
+        "description": "Comprehensive API design patterns covering REST, GraphQL, gRPC, versioning strategies, authentication, and modern API best practices",
         "has_references": true,
         "reference_files": [
           "authentication.md",
@@ -59,7 +60,8 @@
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2026-04-15",
-        "source_path": "universal/web/api-documentation/SKILL.md"
+        "source_path": "universal/web/api-documentation/SKILL.md",
+        "description": "Best practices for documenting APIs and code interfaces, eliminating redundant documentation guidance per agent."
       },
       {
         "name": "artifacts-builder",
@@ -76,7 +78,8 @@
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2026-04-15",
-        "source_path": "universal/main/artifacts-builder/SKILL.md"
+        "source_path": "universal/main/artifacts-builder/SKILL.md",
+        "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui)"
       },
       {
         "name": "brainstorming",
@@ -94,7 +97,8 @@
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2026-04-15",
-        "source_path": "universal/collaboration/brainstorming/SKILL.md"
+        "source_path": "universal/collaboration/brainstorming/SKILL.md",
+        "description": "Interactive idea refinement using Socratic method to develop fully-formed designs"
       },
       {
         "name": "bug-fix-verification",
@@ -117,7 +121,8 @@
         ],
         "author": "claude-mpm-skills",
         "updated": "2026-04-15",
-        "source_path": "universal/verification/bug-fix/SKILL.md"
+        "source_path": "universal/verification/bug-fix/SKILL.md",
+        "description": "Systematic workflow for verifying bug fixes to ensure quality and prevent regres..."
       },
       {
         "name": "code-production-process",
@@ -137,6 +142,7 @@
         "author": "bobmatnyc",
         "updated": "2026-05-18",
         "source_path": "universal/process/code-production-process/SKILL.md",
+        "description": "Six-stage quality-gate pipeline for any code implementation task",
         "has_references": true,
         "reference_files": [
           "critic-isolation.md",
@@ -170,6 +176,7 @@
         "author": "bobmatnyc",
         "updated": "2026-06-15",
         "source_path": "universal/quality/code-quality-scoring/SKILL.md",
+        "description": "Vendor-neutral framework for scoring software health, estimating technical debt, assessing cloud readiness and open-source safety, and communicating quality to business stakeholders. Use when you need to quantify code health at the application or portfolio level rather than fix individual findings.",
         "has_references": true,
         "reference_files": [
           "cloud-maturity.md",
@@ -199,6 +206,7 @@
         "author": "bobmatnyc",
         "updated": "2026-06-15",
         "source_path": "universal/process/code-review-standards/SKILL.md",
+        "description": "Severity-tagged code review checklist (CRITICAL/HIGH/MEDIUM/LOW) used by code-critic agent",
         "has_references": true,
         "reference_files": [
           "criteria-critical.md",
@@ -228,6 +236,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/testing/condition-based-waiting/SKILL.md",
+        "description": "Replace arbitrary timeouts with condition polling for reliable async tests",
         "has_references": true,
         "reference_files": [
           "patterns-and-implementation.md"
@@ -235,7 +244,7 @@
       },
       {
         "name": "database-migration",
-        "version": "1.1.0",
+        "version": "1.2.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -254,6 +263,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/data/database-migration/SKILL.md",
+        "description": "Safe patterns for evolving database schemas in production with decision trees and troubleshooting guidance.",
         "has_references": true,
         "reference_files": [
           "decision-trees.md",
@@ -278,6 +288,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/collaboration/dispatching-parallel-agents/SKILL.md",
+        "description": "Use multiple Claude agents to investigate and fix independent problems concurrently",
         "has_references": true,
         "reference_files": [
           "agent-prompts.md",
@@ -305,6 +316,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/infrastructure/env-manager/SKILL.md",
+        "description": "Environment variable validation, security scanning, and management for Next.js, Vite, React, and Node.js applications",
         "has_references": true,
         "reference_files": [
           "frameworks.md",
@@ -336,7 +348,8 @@
         "requires": [],
         "author": "Claude MPM Skills",
         "updated": "2026-05-29",
-        "source_path": "universal/collaboration/gh-cli/SKILL.md"
+        "source_path": "universal/collaboration/gh-cli/SKILL.md",
+        "description": "Reliably drive the GitHub gh CLI for issue, PR, and label operations in automation and subagent environments, with pre-flight verification so you never fabricate a success or a fake issue URL."
       },
       {
         "name": "git-workflow",
@@ -356,7 +369,8 @@
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2026-04-15",
-        "source_path": "universal/collaboration/git-workflow/SKILL.md"
+        "source_path": "universal/collaboration/git-workflow/SKILL.md",
+        "description": "Essential Git patterns for effective version control, eliminating redundant Git guidance per agent."
       },
       {
         "name": "git-worktrees",
@@ -376,7 +390,8 @@
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2026-04-15",
-        "source_path": "universal/collaboration/git-worktrees/SKILL.md"
+        "source_path": "universal/collaboration/git-worktrees/SKILL.md",
+        "description": "Use git worktrees for parallel development on multiple branches simultaneously"
       },
       {
         "name": "internal-comms",
@@ -392,7 +407,8 @@
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2026-04-15",
-        "source_path": "universal/main/internal-comms/SKILL.md"
+        "source_path": "universal/main/internal-comms/SKILL.md",
+        "description": "Framework for writing concise 3P (Progress, Plans, Problems) team updates for executives and stakeholders"
       },
       {
         "name": "json-data-handling",
@@ -409,7 +425,8 @@
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2026-04-15",
-        "source_path": "universal/data/json-data-handling/SKILL.md"
+        "source_path": "universal/data/json-data-handling/SKILL.md",
+        "description": "Working effectively with JSON data structures."
       },
       {
         "name": "kubernetes",
@@ -433,6 +450,7 @@
         "author": "Claude MPM Team",
         "updated": "2026-04-15",
         "source_path": "universal/infrastructure/kubernetes/SKILL.md",
+        "description": "Kubernetes operations playbook for deploying and running services: core objects, probes, resource sizing, safe rollouts, and fast kubectl debugging",
         "has_references": true,
         "reference_files": [
           "core-objects.md",
@@ -459,11 +477,12 @@
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2026-04-15",
-        "source_path": "universal/main/mcp-builder/SKILL.md"
+        "source_path": "universal/main/mcp-builder/SKILL.md",
+        "description": "MCP (Model Context Protocol) server build and evaluation guide, including local conventions for tool surfaces, config, and testing"
       },
       {
         "name": "mpm-orchestration-demo",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "category": "universal",
         "toolchain": null,
         "framework": null,
@@ -479,6 +498,7 @@
         "author": "Claude MPM Skills",
         "updated": "2026-04-15",
         "source_path": "universal/orchestration/mpm-orchestration-demo/SKILL.md",
+        "description": "Reference implementation demonstrating the Command → Agent → Skill orchestration pattern in Claude MPM, showing both preloaded-skill and dynamic-skill-invocation styles",
         "has_references": true,
         "reference_files": [
           "orchestration-patterns.md"
@@ -506,6 +526,7 @@
         "author": "Claude MPM Team",
         "updated": "2026-04-15",
         "source_path": "universal/observability/opentelemetry/SKILL.md",
+        "description": "OpenTelemetry observability patterns for traces, metrics, and logs: context propagation, OTLP export, Collector pipelines, sampling, and troubleshooting",
         "has_references": true,
         "reference_files": [
           "collector-and-otlp.md",
@@ -533,7 +554,8 @@
         "requires": [],
         "author": "claude-mpm-skills",
         "updated": "2026-04-15",
-        "source_path": "universal/verification/pre-merge/SKILL.md"
+        "source_path": "universal/verification/pre-merge/SKILL.md",
+        "description": "Comprehensive verification workflow before merging changes to production."
       },
       {
         "name": "reporting-pipelines",
@@ -553,7 +575,8 @@
         "requires": [],
         "author": "Claude MPM Team",
         "updated": "2026-04-15",
-        "source_path": "universal/data/reporting-pipelines/SKILL.md"
+        "source_path": "universal/data/reporting-pipelines/SKILL.md",
+        "description": "Reporting pipelines for CSV/JSON/Markdown exports with timestamped outputs, summaries, and post-processing."
       },
       {
         "name": "requesting-code-review",
@@ -571,6 +594,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/collaboration/requesting-code-review/SKILL.md",
+        "description": "Good vs bad reviews, severity guidelines, complete workflow examples",
         "has_references": true,
         "reference_files": [
           "code-reviewer-template.md",
@@ -596,6 +620,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/debugging/root-cause-tracing/SKILL.md",
+        "description": "Systematically trace bugs backward through call stack to find original trigger",
         "has_references": true,
         "reference_files": [
           "advanced-techniques.md",
@@ -623,7 +648,8 @@
         "requires": [],
         "author": "claude-mpm-skills",
         "updated": "2026-04-15",
-        "source_path": "universal/verification/screenshot/SKILL.md"
+        "source_path": "universal/verification/screenshot/SKILL.md",
+        "description": "Visual verification workflow for UI changes to accelerate code review and catch ..."
       },
       {
         "name": "sec-edgar-pipeline",
@@ -643,7 +669,8 @@
         "requires": [],
         "author": "Claude MPM Team",
         "updated": "2026-04-15",
-        "source_path": "universal/data/sec-edgar-pipeline/SKILL.md"
+        "source_path": "universal/data/sec-edgar-pipeline/SKILL.md",
+        "description": "SEC EDGAR extraction pipeline: setup, filing discovery by CIK, recipe-driven extraction, and report generation."
       },
       {
         "name": "security-scanning",
@@ -670,6 +697,7 @@
         "author": "bobmatnyc",
         "updated": "2026-06-15",
         "source_path": "universal/security/security-scanning/SKILL.md",
+        "description": "CI security scanning workflow: secrets, dependency vulnerabilities, SAST, triage, and expiring exceptions",
         "has_references": true,
         "reference_files": [
           "ci-workflows.md",
@@ -699,6 +727,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/main/skill-creator/SKILL.md",
+        "description": "Guide for creating effective skills",
         "has_references": true,
         "reference_files": [
           "best-practices.md",
@@ -730,6 +759,7 @@
         "author": "masa",
         "updated": "2026-06-15",
         "source_path": "universal/architecture/software-patterns/SKILL.md",
+        "description": "Compare tradeoffs and recommend architectural patterns — dependency injection, service-oriented architecture, repository, domain events, circuit breaker, and anti-corruption layer. Use when choosing between design patterns, planning microservices boundaries, evaluating system design alternatives, or asking 'which pattern should I use' for a specific coupling or resilience problem.",
         "has_references": true,
         "reference_files": [
           "anti-patterns.md",
@@ -756,7 +786,8 @@
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2026-04-15",
-        "source_path": "universal/collaboration/stacked-prs/SKILL.md"
+        "source_path": "universal/collaboration/stacked-prs/SKILL.md",
+        "description": "Create and manage stacked (dependent) pull requests for complex features"
       },
       {
         "name": "systematic-debugging",
@@ -774,8 +805,9 @@
         "full_tokens": 11799,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/debugging/systematic-debugging/SKILL.md",
+        "description": "Step-by-step debugging workflow: reproduce the bug, isolate the failing component, trace to root cause, apply a targeted fix, and verify the fix resolves the issue without regressions. Use when you encounter a bug, error, exception, crash, or unexpected behavior that needs troubleshooting.",
         "has_references": true,
         "reference_files": [
           "anti-patterns.md",
@@ -806,6 +838,7 @@
         "author": "Claude MPM Team",
         "updated": "2026-04-15",
         "source_path": "universal/infrastructure/terraform/SKILL.md",
+        "description": "Terraform infrastructure-as-code workflow patterns: remote state, environments, module design, safe plan/apply, drift control, and CI guardrails",
         "has_references": true,
         "reference_files": [
           "modules-and-composition.md",
@@ -832,6 +865,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/testing/test-driven-development/SKILL.md",
+        "description": "Comprehensive TDD patterns and practices for all programming languages, eliminating redundant testing guidance per agent.",
         "has_references": true,
         "reference_files": [
           "anti-patterns.md",
@@ -860,6 +894,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/testing/test-quality-inspector/SKILL.md",
+        "description": "Test quality inspection framework for reviewing test coverage, identifying gaps, and ensuring comprehensive validation",
         "has_references": true,
         "reference_files": [
           "assertion-quality.md",
@@ -885,6 +920,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/testing/testing-anti-patterns/SKILL.md",
+        "description": "Never test mock behavior. Never add test-only methods to production classes. Understand dependencies before mocking. Language-agnostic principles with TypeScript/Jest and Python/pytest examples.",
         "has_references": true,
         "reference_files": [
           "completeness-anti-patterns.md",
@@ -912,8 +948,9 @@
         "full_tokens": 1495,
         "requires": [],
         "author": "Claude MPM Team",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/security/threat-modeling/SKILL.md",
+        "description": "Threat modeling workflow for software systems: scope, data flow diagrams, STRIDE analysis, risk scoring, and converting mitigations into backlog and tests",
         "has_references": true,
         "reference_files": [
           "common-threats-and-mitigations.md",
@@ -939,6 +976,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/debugging/verification-before-completion/SKILL.md",
+        "description": "Run verification commands and confirm output before claiming success",
         "has_references": true,
         "reference_files": [
           "gate-function.md",
@@ -966,6 +1004,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/web/web-performance-optimization/SKILL.md",
+        "description": "Optimize web performance using Core Web Vitals, modern patterns (View Transitions, Speculation Rules), and framework-specific techniques",
         "has_references": true,
         "reference_files": [
           "core-web-vitals.md",
@@ -994,7 +1033,8 @@
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2026-04-15",
-        "source_path": "universal/testing/webapp-testing/SKILL.md"
+        "source_path": "universal/testing/webapp-testing/SKILL.md",
+        "description": "Comprehensive web application testing patterns with Playwright selectors, wait strategies, and best practices"
       },
       {
         "name": "writing-plans",
@@ -1013,6 +1053,7 @@
         "author": "bobmatnyc",
         "updated": "2026-04-15",
         "source_path": "universal/collaboration/writing-plans/SKILL.md",
+        "description": "Writing for zero-context engineers, code completeness, test design patterns",
         "has_references": true,
         "reference_files": [
           "best-practices.md",
@@ -1031,7 +1072,8 @@
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2026-04-15",
-        "source_path": "universal/data/xlsx/SKILL.md"
+        "source_path": "universal/data/xlsx/SKILL.md",
+        "description": "Working with Excel files programmatically."
       }
     ],
     "toolchains": {
@@ -1058,7 +1100,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ai/sdks/anthropic/SKILL.md"
+          "source_path": "toolchains/ai/sdks/anthropic/SKILL.md",
+          "description": "Official Anthropic SDK for Claude AI with chat, streaming, function calling, and vision capabilities"
         },
         {
           "name": "dspy",
@@ -1086,7 +1129,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ai/frameworks/dspy/SKILL.md"
+          "source_path": "toolchains/ai/frameworks/dspy/SKILL.md",
+          "description": "Declarative framework for automatic prompt optimization treating prompts as code with signatures, modules, and optimizers"
         },
         {
           "name": "langchain",
@@ -1110,7 +1154,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ai/frameworks/langchain/SKILL.md"
+          "source_path": "toolchains/ai/frameworks/langchain/SKILL.md",
+          "description": "LLM application framework with chains, agents, RAG, and memory systems"
         },
         {
           "name": "langgraph",
@@ -1137,7 +1182,8 @@
           ],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ai/frameworks/langgraph/SKILL.md"
+          "source_path": "toolchains/ai/frameworks/langgraph/SKILL.md",
+          "description": "Comprehensive LangGraph workflows skill covering stateful multi-agent orchestration, state management, conditional routing, human-in-the-loop, checkpointing, time-travel debugging, and production deployment patterns."
         },
         {
           "name": "local-llm-ops",
@@ -1158,7 +1204,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ai/ops/local-llm-ops/SKILL.md"
+          "source_path": "toolchains/ai/ops/local-llm-ops/SKILL.md",
+          "description": "Local LLM operations with Ollama on Apple Silicon, including setup, model pulls, chat launchers, benchmarks, and diagnostics."
         },
         {
           "name": "model-context-protocol",
@@ -1188,7 +1235,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ai/protocols/mcp/SKILL.md"
+          "source_path": "toolchains/ai/protocols/mcp/SKILL.md",
+          "description": "MCP (Model Context Protocol) - Build AI-native servers with tools, resources, and prompts. TypeScript/Python SDKs for Claude Desktop integration."
         },
         {
           "name": "openrouter",
@@ -1212,7 +1260,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ai/services/openrouter/SKILL.md"
+          "source_path": "toolchains/ai/services/openrouter/SKILL.md",
+          "description": "OpenRouter unified AI API - Access 200+ LLMs through single interface with intelligent routing, streaming, cost optimization, and model fallbacks"
         },
         {
           "name": "session-compression",
@@ -1239,7 +1288,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ai/techniques/session-compression/SKILL.md"
+          "source_path": "toolchains/ai/techniques/session-compression/SKILL.md",
+          "description": "Compress long AI conversations to fit context windows while preserving critical information through summarization, RAG, and intelligent memory management"
         },
         {
           "name": "vector-search-workflows",
@@ -1259,7 +1309,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ai/techniques/vector-search-workflows/SKILL.md"
+          "source_path": "toolchains/ai/techniques/vector-search-workflows/SKILL.md",
+          "description": "Vector search indexing and querying workflows using MCP Vector Search, including setup, reindexing, auto-index strategies, and MCP integration."
         }
       ],
       "databases": [
@@ -1284,7 +1335,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/databases/mongodb/SKILL.md"
+          "source_path": "toolchains/databases/mongodb/SKILL.md",
+          "description": "MongoDB - NoSQL document database with flexible schema design, aggregation pipelines, indexing strategies, and Spring Data integration"
         }
       ],
       "elixir": [
@@ -1311,7 +1363,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/elixir/data/ecto-patterns/SKILL.md"
+          "source_path": "toolchains/elixir/data/ecto-patterns/SKILL.md",
+          "description": "Ecto patterns for Phoenix/Elixir apps. Covers schemas, changesets, migrations, queries, Ecto.Multi, transactions, constraints, associations, pagination, tenant partitioning, performance, and testing."
         },
         {
           "name": "phoenix-api-channels",
@@ -1335,7 +1388,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/elixir/frameworks/phoenix-api-channels/SKILL.md"
+          "source_path": "toolchains/elixir/frameworks/phoenix-api-channels/SKILL.md",
+          "description": "Phoenix controllers, JSON APIs, Channels, and Presence on the BEAM"
         },
         {
           "name": "phoenix-liveview",
@@ -1359,7 +1413,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/elixir/frameworks/phoenix-liveview/SKILL.md"
+          "source_path": "toolchains/elixir/frameworks/phoenix-liveview/SKILL.md",
+          "description": "Phoenix Framework with LiveView on the BEAM"
         },
         {
           "name": "phoenix-ops",
@@ -1383,7 +1438,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/elixir/ops/phoenix-ops/SKILL.md"
+          "source_path": "toolchains/elixir/ops/phoenix-ops/SKILL.md",
+          "description": "Phoenix operations and deployment: releases, runtime configuration, clustering, libcluster, telemetry/logging, secrets, assets, background jobs, and production hardening on the BEAM."
         }
       ],
       "golang": [
@@ -1406,7 +1462,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/golang/cli/SKILL.md"
+          "source_path": "toolchains/golang/cli/SKILL.md",
+          "description": "Building production-quality CLI tools with Cobra command framework and Viper configuration management"
         },
         {
           "name": "golang-concurrency-patterns",
@@ -1430,7 +1487,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/golang/concurrency/SKILL.md"
+          "source_path": "toolchains/golang/concurrency/SKILL.md",
+          "description": "Go concurrency patterns for production services: context cancellation, errgroup, worker pools, bounded parallelism, fan-in/fan-out, and common race/deadlock pitfalls"
         },
         {
           "name": "golang-database-patterns",
@@ -1451,7 +1509,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/golang/data/SKILL.md"
+          "source_path": "toolchains/golang/data/SKILL.md",
+          "description": "Go database integration patterns using sqlx, pgx, and migration tools like golang-migrate"
         },
         {
           "name": "golang-grpc",
@@ -1475,7 +1534,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/golang/grpc/SKILL.md"
+          "source_path": "toolchains/golang/grpc/SKILL.md",
+          "description": "Production gRPC in Go: protobuf layout, codegen, interceptors, deadlines, error codes, streaming, health checks, TLS, and testing with bufconn"
         },
         {
           "name": "golang-http-frameworks",
@@ -1502,6 +1562,7 @@
           "author": "Claude MPM",
           "updated": "2026-06-15",
           "source_path": "toolchains/golang/web/SKILL.md",
+          "description": "Go HTTP API development with net/http, Chi, Gin, Echo, and Fiber frameworks",
           "has_references": true,
           "reference_files": [
             "go-idioms-quality.md"
@@ -1528,7 +1589,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/golang/observability/SKILL.md"
+          "source_path": "toolchains/golang/observability/SKILL.md",
+          "description": "Instrumenting Go applications with OpenTelemetry for distributed tracing, Prometheus for metrics, and structured logging with slog"
         },
         {
           "name": "golang-testing-strategies",
@@ -1549,7 +1611,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/golang/testing/SKILL.md"
+          "source_path": "toolchains/golang/testing/SKILL.md",
+          "description": "Comprehensive Go testing strategies including table-driven tests, testify assertions, gomock interface mocking, benchmark testing, and CI/CD integration"
         }
       ],
       "java": [
@@ -1576,6 +1639,7 @@
           "author": "Claude MPM Team",
           "updated": "2026-06-15",
           "source_path": "toolchains/java/frameworks/spring-boot/SKILL.md",
+          "description": "Spring Boot 3.x - Java framework for production-ready applications with dependency injection, REST APIs, data access, security, and actuator monitoring",
           "has_references": true,
           "reference_files": [
             "quality-antipatterns.md"
@@ -1604,7 +1668,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/tooling/biome/SKILL.md"
+          "source_path": "toolchains/javascript/tooling/biome/SKILL.md",
+          "description": "Fast all-in-one linter and formatter (Rust-based replacement for ESLint + Prettier)"
         },
         {
           "name": "cypress",
@@ -1626,7 +1691,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/testing/cypress/SKILL.md"
+          "source_path": "toolchains/javascript/testing/cypress/SKILL.md",
+          "description": "Cypress end-to-end and component testing patterns for web apps: reliable selectors, stable waits, network stubbing, auth handling, CI parallelization, and flake reduction"
         },
         {
           "name": "express-production",
@@ -1654,6 +1720,7 @@
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
           "source_path": "toolchains/javascript/frameworks/express-local-dev/SKILL.md",
+          "description": "Production-ready Express.js development covering middleware architecture, error handling, security hardening, testing strategies, and deployment patterns",
           "has_references": true,
           "reference_files": [
             "middleware-patterns.md",
@@ -1686,7 +1753,8 @@
           ],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/cloudflare/SKILL.md"
+          "source_path": "toolchains/javascript/frameworks/hono/cloudflare/SKILL.md",
+          "description": "Hono on Cloudflare Workers - bindings, KV, D1, R2, Durable Objects, and edge deployment patterns"
         },
         {
           "name": "hono-core",
@@ -1713,7 +1781,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/core/SKILL.md"
+          "source_path": "toolchains/javascript/frameworks/hono/core/SKILL.md",
+          "description": "Hono ultrafast web framework fundamentals - routing, context, handlers, and response patterns for multi-runtime deployment"
         },
         {
           "name": "hono-jsx",
@@ -1739,7 +1808,8 @@
           ],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/jsx/SKILL.md"
+          "source_path": "toolchains/javascript/frameworks/hono/jsx/SKILL.md",
+          "description": "Hono JSX - server-side rendering, streaming, async components, and HTML generation patterns"
         },
         {
           "name": "hono-middleware",
@@ -1766,7 +1836,8 @@
           ],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/middleware/SKILL.md"
+          "source_path": "toolchains/javascript/frameworks/hono/middleware/SKILL.md",
+          "description": "Hono middleware patterns - creation, composition, built-in middleware, and execution order for web applications"
         },
         {
           "name": "hono-rpc",
@@ -1791,7 +1862,8 @@
           ],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/rpc/SKILL.md"
+          "source_path": "toolchains/javascript/frameworks/hono/rpc/SKILL.md",
+          "description": "Hono RPC - end-to-end type-safe API client generation with hc client and TypeScript inference"
         },
         {
           "name": "hono-testing",
@@ -1816,7 +1888,8 @@
           ],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/testing/SKILL.md"
+          "source_path": "toolchains/javascript/frameworks/hono/testing/SKILL.md",
+          "description": "Hono testing patterns - app.request(), test client, mocking environment, and integration testing strategies"
         },
         {
           "name": "hono-validation",
@@ -1842,7 +1915,8 @@
           ],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/hono/validation/SKILL.md"
+          "source_path": "toolchains/javascript/frameworks/hono/validation/SKILL.md",
+          "description": "Hono request validation with Zod, TypeBox, Valibot - type-safe input validation for JSON, forms, query params, and headers"
         },
         {
           "name": "nextjs",
@@ -1862,7 +1936,8 @@
           "requires": [],
           "author": "bobmatnyc",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/nextjs/SKILL.md"
+          "source_path": "toolchains/javascript/frameworks/nextjs/SKILL.md",
+          "description": "Next.js environment variable management with file precedence, variable types, and deployment configurations. Use when configuring Next.js applications, managing environment-specific settings, or deploying to Vercel/Railway/Heroku."
         },
         {
           "name": "playwright",
@@ -1882,7 +1957,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/testing/playwright/SKILL.md"
+          "source_path": "toolchains/javascript/testing/playwright/SKILL.md",
+          "description": "Playwright modern end-to-end testing framework with cross-browser automation, auto-wait, and built-in test runner"
         },
         {
           "name": "react",
@@ -1902,44 +1978,8 @@
           "requires": [],
           "author": "bobmatnyc",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/react/SKILL.md"
-        },
-        {
-          "name": "react-state-machines",
-          "version": "1.0.0",
-          "category": "toolchain",
-          "toolchain": "javascript",
-          "framework": "react",
-          "tags": [
-            "react",
-            "state-machine",
-            "xstate",
-            "actors",
-            "async",
-            "forms",
-            "ui-logic",
-            "typescript"
-          ],
-          "entry_point_tokens": 150,
-          "full_tokens": 37323,
-          "requires": [],
-          "author": "bobmatnyc",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/react/state-machine/SKILL.md",
-          "has_references": true,
-          "reference_files": [
-            "composition-patterns.md",
-            "decision-trees.md",
-            "error-handling.md",
-            "migration-guide.md",
-            "performance.md",
-            "persistence-hydration.md",
-            "react-integration.md",
-            "real-world-patterns.md",
-            "skills-architecture.md",
-            "testing-patterns.md",
-            "xstate-v5-patterns.md"
-          ]
+          "source_path": "toolchains/javascript/frameworks/react/SKILL.md",
+          "description": "FlexLayout for React - Advanced docking layout manager with drag-and-drop, tabs, splitters, and complex window management"
         },
         {
           "name": "react-hooks-composition",
@@ -1965,13 +2005,52 @@
           "full_tokens": 12500,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-02-01",
+          "updated": "2026-06-15",
           "source_path": "toolchains/javascript/frameworks/react/hooks-composition/SKILL.md",
+          "description": "Advanced React hooks composition patterns - SWR integration, debounced search, memoized contexts, state machines, and performance optimization",
           "has_references": true,
           "reference_files": [
-            "swr-patterns.md",
             "performance-optimization.md",
+            "swr-patterns.md",
             "testing-patterns.md"
+          ]
+        },
+        {
+          "name": "react-state-machines",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "react",
+          "tags": [
+            "react",
+            "state-machine",
+            "xstate",
+            "actors",
+            "async",
+            "forms",
+            "ui-logic",
+            "typescript"
+          ],
+          "entry_point_tokens": 150,
+          "full_tokens": 37323,
+          "requires": [],
+          "author": "bobmatnyc",
+          "updated": "2026-04-15",
+          "source_path": "toolchains/javascript/frameworks/react/state-machine/SKILL.md",
+          "description": "Building reusable React state machine skills with XState v5 and the actor model",
+          "has_references": true,
+          "reference_files": [
+            "composition-patterns.md",
+            "decision-trees.md",
+            "error-handling.md",
+            "migration-guide.md",
+            "performance.md",
+            "persistence-hydration.md",
+            "react-integration.md",
+            "real-world-patterns.md",
+            "skills-architecture.md",
+            "testing-patterns.md",
+            "xstate-v5-patterns.md"
           ]
         },
         {
@@ -2001,7 +2080,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/svelte/SKILL.md"
+          "source_path": "toolchains/javascript/frameworks/svelte/SKILL.md",
+          "description": "Svelte 5 - Reactive UI framework with compiler magic, Runes API, SvelteKit full-stack framework, SSR/SSG, minimal JavaScript"
         },
         {
           "name": "svelte5-runes-static",
@@ -2028,7 +2108,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/svelte5-runes-static/SKILL.md"
+          "source_path": "toolchains/javascript/frameworks/svelte5-runes-static/SKILL.md",
+          "description": "Svelte 5 runes + SvelteKit adapter-static (SSG/SSR) patterns for hydration-safe state, store bridges, and reactivity that survives prerendering"
         },
         {
           "name": "sveltekit",
@@ -2055,7 +2136,8 @@
           ],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/sveltekit/SKILL.md"
+          "source_path": "toolchains/javascript/frameworks/sveltekit/SKILL.md",
+          "description": "SvelteKit - Full-stack Svelte framework with file-based routing, SSR/SSG, form actions, and adapters for deployment"
         },
         {
           "name": "vite",
@@ -2081,7 +2163,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/build/vite/SKILL.md"
+          "source_path": "toolchains/javascript/build/vite/SKILL.md",
+          "description": "Lightning-fast build tool with instant HMR and ESM-first architecture for modern web development"
         },
         {
           "name": "vue",
@@ -2108,7 +2191,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/javascript/frameworks/vue/SKILL.md"
+          "source_path": "toolchains/javascript/frameworks/vue/SKILL.md",
+          "description": "Vue 3 framework with Composition API, reactivity system, single-file components, Vue Router, Pinia state management, and TypeScript support"
         }
       ],
       "nextjs": [
@@ -2137,6 +2221,7 @@
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
           "source_path": "toolchains/nextjs/core/SKILL.md",
+          "description": "Core Next.js patterns for App Router development including Server Components, Server Actions, route handlers, data fetching, and caching strategies",
           "has_references": true,
           "reference_files": [
             "authentication.md",
@@ -2171,6 +2256,7 @@
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
           "source_path": "toolchains/nextjs/v16/SKILL.md",
+          "description": "Next.js 16 migration guide (async request APIs, \"use cache\", Turbopack)",
           "has_references": true,
           "reference_files": [
             "cache-components.md",
@@ -2201,7 +2287,8 @@
           ],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/nextjs/api/validated-handler/SKILL.md"
+          "source_path": "toolchains/nextjs/api/validated-handler/SKILL.md",
+          "description": "Type-safe API route handler with automatic Zod validation for Next.js App Router..."
         }
       ],
       "php": [
@@ -2229,6 +2316,7 @@
           "author": "bobmatnyc",
           "updated": "2026-06-15",
           "source_path": "toolchains/php/frameworks/espocrm/SKILL.md",
+          "description": "Comprehensive guide for developing on EspoCRM - metadata-driven CRM with service layer architecture",
           "has_references": true,
           "reference_files": [
             "api-actions.md",
@@ -2267,7 +2355,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/php/frameworks/wordpress/advanced-architecture/SKILL.md"
+          "source_path": "toolchains/php/frameworks/wordpress/advanced-architecture/SKILL.md",
+          "description": "Advanced WordPress development with REST API, WP-CLI, performance optimization, and caching strategies for scalable applications"
         },
         {
           "name": "wordpress-block-editor-fse",
@@ -2292,7 +2381,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/php/frameworks/wordpress/block-editor/SKILL.md"
+          "source_path": "toolchains/php/frameworks/wordpress/block-editor/SKILL.md",
+          "description": "Modern WordPress block development and Full Site Editing with theme.json, block themes, and custom blocks for WordPress 6.7+"
         },
         {
           "name": "wordpress-plugin-fundamentals",
@@ -2319,7 +2409,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/php/frameworks/wordpress/plugin-fundamentals/SKILL.md"
+          "source_path": "toolchains/php/frameworks/wordpress/plugin-fundamentals/SKILL.md",
+          "description": "Modern WordPress plugin development with PHP 8.3+, OOP architecture, hooks system, database interactions, and Settings API for building secure, maintainable plugins"
         },
         {
           "name": "wordpress-security-validation",
@@ -2345,6 +2436,7 @@
           "author": "Claude MPM Team",
           "updated": "2026-06-15",
           "source_path": "toolchains/php/frameworks/wordpress/security-validation/SKILL.md",
+          "description": "Security-first WordPress development with nonces, sanitization, validation, and escaping for robust plugin/theme security",
           "has_references": true,
           "reference_files": [
             "php-quality-antipatterns.md"
@@ -2374,7 +2466,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/php/frameworks/wordpress/testing-qa/SKILL.md"
+          "source_path": "toolchains/php/frameworks/wordpress/testing-qa/SKILL.md",
+          "description": "WordPress plugin and theme testing with PHPUnit integration tests, WP_Mock unit tests, PHPCS coding standards enforcement, and GitHub Actions CI/CD pipelines"
         }
       ],
       "platforms": [
@@ -2399,6 +2492,7 @@
           "author": "Claude MPM",
           "updated": "2026-04-15",
           "source_path": "toolchains/platforms/auth/better-auth/better-auth-authentication/SKILL.md",
+          "description": "Better Auth authentication flows for TypeScript apps. Use when enabling email/password auth, configuring social providers, or implementing sign-up, sign-in, and verification flows.",
           "has_references": true,
           "reference_files": [
             "email-password.md",
@@ -2428,6 +2522,7 @@
           "author": "Claude MPM",
           "updated": "2026-04-15",
           "source_path": "toolchains/platforms/auth/better-auth/better-auth-core/SKILL.md",
+          "description": "Better Auth core setup for TypeScript apps. Use when configuring the Better Auth instance, wiring server handlers and client instances, working with sessions, or calling server-side auth APIs.",
           "has_references": true,
           "reference_files": [
             "client-server.md",
@@ -2458,6 +2553,7 @@
           "author": "Claude MPM",
           "updated": "2026-04-15",
           "source_path": "toolchains/platforms/auth/better-auth/better-auth-integrations/SKILL.md",
+          "description": "Better Auth framework integrations for TypeScript. Use when wiring route handlers in Next.js, SvelteKit, Remix, Express, Hono, or other web frameworks.",
           "has_references": true,
           "reference_files": [
             "frameworks.md",
@@ -2486,6 +2582,7 @@
           "author": "Claude MPM",
           "updated": "2026-04-15",
           "source_path": "toolchains/platforms/auth/better-auth/better-auth-plugins/SKILL.md",
+          "description": "Better Auth plugin system for TypeScript. Use when adding advanced auth features (2FA, magic link, passkey, username, JWT, organizations) via server and client plugins.",
           "has_references": true,
           "reference_files": [
             "plugins-index.md"
@@ -2514,6 +2611,7 @@
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
           "source_path": "toolchains/platforms/observability/datadog/SKILL.md",
+          "description": "Full-stack observability with Datadog APM, logs, metrics, synthetics, and RUM. Use when implementing monitoring, tracing, alerting, or cost optimization for production systems.",
           "has_references": true,
           "reference_files": [
             "agent-installation.md",
@@ -2544,7 +2642,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/digitalocean-agentic-cloud/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/digitalocean-agentic-cloud/SKILL.md",
+          "description": "DigitalOcean Gradient AI agentic cloud and AI platform for building, training, and deploying AI agents on GPU infrastructure with foundation models, knowledge bases, and agent routes. Use when planning or operating AI agents on DigitalOcean."
         },
         {
           "name": "digitalocean-compute",
@@ -2566,7 +2665,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/digitalocean-compute/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/digitalocean-compute/SKILL.md",
+          "description": "DigitalOcean compute services covering Droplets, App Platform, Functions, Kubernetes (DOKS), GPU Droplets, and Bare Metal GPUs. Use when selecting or provisioning compute for applications, containers, or serverless workloads."
         },
         {
           "name": "digitalocean-containers-images",
@@ -2587,7 +2687,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/digitalocean-containers-images/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/digitalocean-containers-images/SKILL.md",
+          "description": "DigitalOcean containers and images including Container Registry, preconfigured images, and custom images. Use when building, storing, or deploying container images or Droplet images on DigitalOcean."
         },
         {
           "name": "digitalocean-managed-databases",
@@ -2611,7 +2712,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/digitalocean-managed-databases/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/digitalocean-managed-databases/SKILL.md",
+          "description": "DigitalOcean Managed Databases for PostgreSQL, MySQL, Redis, MongoDB, Kafka, OpenSearch, and Valkey. Use when provisioning, scaling, or operating managed database clusters on DigitalOcean."
         },
         {
           "name": "digitalocean-management",
@@ -2632,7 +2734,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/digitalocean-management/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/digitalocean-management/SKILL.md",
+          "description": "DigitalOcean management services for monitoring, uptime checks, and resource organization with Projects. Use when setting up observability, alerts, and operational visibility on DigitalOcean."
         },
         {
           "name": "digitalocean-networking",
@@ -2656,7 +2759,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/digitalocean-networking/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/digitalocean-networking/SKILL.md",
+          "description": "DigitalOcean networking services including VPC, firewalls, load balancers, reserved IPs, DNS, IPv6, and NAT gateway. Use when designing or securing network connectivity for DigitalOcean workloads."
         },
         {
           "name": "digitalocean-overview",
@@ -2677,7 +2781,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/digitalocean-overview/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/digitalocean-overview/SKILL.md",
+          "description": "DigitalOcean platform overview for account setup, projects, tooling (Control Panel, doctl, API, Terraform), and service selection across compute, storage, databases, networking, management, and teams. Use when onboarding or planning DigitalOcean usage."
         },
         {
           "name": "digitalocean-storage",
@@ -2699,7 +2804,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/digitalocean-storage/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/digitalocean-storage/SKILL.md",
+          "description": "DigitalOcean storage services including Spaces object storage, Volumes block storage, NFS, Snapshots, and Backups. Use when selecting or managing storage for DigitalOcean workloads."
         },
         {
           "name": "digitalocean-teams",
@@ -2721,7 +2827,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/digitalocean-teams/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/digitalocean-teams/SKILL.md",
+          "description": "DigitalOcean Teams and Organizations for billing, access control, roles, and membership. Use when managing team structure, permissions, and organization-wide billing on DigitalOcean."
         },
         {
           "name": "neon",
@@ -2744,7 +2851,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/database/neon/SKILL.md"
+          "source_path": "toolchains/platforms/database/neon/SKILL.md",
+          "description": "Neon serverless Postgres with autoscaling, database branching, and instant provisioning"
         },
         {
           "name": "netlify",
@@ -2764,7 +2872,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/netlify/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/netlify/SKILL.md",
+          "description": "Netlify JAMstack deployment platform with serverless functions, forms, and identity"
         },
         {
           "name": "supabase",
@@ -2787,7 +2896,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/backend/supabase/SKILL.md"
+          "source_path": "toolchains/platforms/backend/supabase/SKILL.md",
+          "description": "Open-source Firebase alternative with Postgres, authentication, storage, and realtime subscriptions"
         },
         {
           "name": "vercel-ai",
@@ -2808,7 +2918,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/vercel-ai/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/vercel-ai/SKILL.md",
+          "description": "Vercel AI platform guidance covering AI SDK, AI Gateway, Vercel Agent, and MCP. Use when building AI-powered or agentic workloads on Vercel."
         },
         {
           "name": "vercel-deployments-builds",
@@ -2829,7 +2940,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/vercel-deployments-builds/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/vercel-deployments-builds/SKILL.md",
+          "description": "Vercel deployment lifecycle for builds, deployments, previews, release phases, and rollback. Use when configuring build output, deployment workflows, or release controls on Vercel."
         },
         {
           "name": "vercel-functions-runtime",
@@ -2850,7 +2962,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/vercel-functions-runtime/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/vercel-functions-runtime/SKILL.md",
+          "description": "Vercel Functions and Edge Runtime, including cron jobs and routing middleware. Use when building APIs, serverless workloads, or scheduled tasks on Vercel."
         },
         {
           "name": "vercel-networking-domains",
@@ -2874,7 +2987,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/vercel-networking-domains/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/vercel-networking-domains/SKILL.md",
+          "description": "Vercel networking and routing for domains, DNS, redirects, rewrites, headers, CDN, edge cache, and regions. Use when configuring routing or traffic behavior on Vercel."
         },
         {
           "name": "vercel-observability",
@@ -2896,7 +3010,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/vercel-observability/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/vercel-observability/SKILL.md",
+          "description": "Vercel observability for Web Analytics, Speed Insights, logs, tracing, alerts, and observability tooling. Use when monitoring performance or debugging production behavior on Vercel."
         },
         {
           "name": "vercel-overview",
@@ -2919,7 +3034,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/vercel-overview/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/vercel-overview/SKILL.md",
+          "description": "Vercel platform overview for onboarding, projects, CLI, Git integration, environment variables, project configuration, REST API, and webhooks. Use when planning or operating workloads on Vercel."
         },
         {
           "name": "vercel-security-access",
@@ -2943,7 +3059,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/vercel-security-access/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/vercel-security-access/SKILL.md",
+          "description": "Vercel security and access controls including RBAC, SSO, deployment protection, firewall, bot defense, audit logs, and 2FA. Use when securing Vercel projects or managing access."
         },
         {
           "name": "vercel-storage-data",
@@ -2965,7 +3082,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/vercel-storage-data/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/vercel-storage-data/SKILL.md",
+          "description": "Vercel data and storage services including Postgres, Redis, Vercel Blob, Edge Config, and data cache. Use when selecting data storage or caching on Vercel."
         },
         {
           "name": "vercel-teams-billing",
@@ -2986,7 +3104,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/platforms/deployment/vercel-teams-billing/SKILL.md"
+          "source_path": "toolchains/platforms/deployment/vercel-teams-billing/SKILL.md",
+          "description": "Vercel account, team, and billing management including plans and spend controls. Use when managing teams, accounts, or cost governance on Vercel."
         }
       ],
       "python": [
@@ -3015,7 +3134,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/python/async/asyncio/SKILL.md"
+          "source_path": "toolchains/python/async/asyncio/SKILL.md",
+          "description": "Python asyncio - Modern concurrent programming with async/await, event loops, tasks, coroutines, primitives, aiohttp, and FastAPI async patterns"
         },
         {
           "name": "celery",
@@ -3035,7 +3155,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/python/async/celery/SKILL.md"
+          "source_path": "toolchains/python/async/celery/SKILL.md",
+          "description": "Distributed task queue system for Python enabling asynchronous execution of background jobs, scheduled tasks, and workflows across multiple workers with Django, Flask, and FastAPI integration."
         },
         {
           "name": "django",
@@ -3055,7 +3176,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/python/frameworks/django/SKILL.md"
+          "source_path": "toolchains/python/frameworks/django/SKILL.md",
+          "description": "Django full-featured Python web framework with batteries included (ORM, admin, auth)"
         },
         {
           "name": "fastapi-local-dev",
@@ -3082,6 +3204,7 @@
           "author": "bobmatnyc",
           "updated": "2026-04-15",
           "source_path": "toolchains/python/frameworks/fastapi-local-dev/SKILL.md",
+          "description": "FastAPI dev/prod runbook (Uvicorn reload, Gunicorn)",
           "has_references": true,
           "reference_files": [
             "dev-server.md",
@@ -3115,7 +3238,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/python/frameworks/flask/SKILL.md"
+          "source_path": "toolchains/python/frameworks/flask/SKILL.md",
+          "description": "Lightweight Python web framework for microservices and REST APIs"
         },
         {
           "name": "mypy",
@@ -3140,7 +3264,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/python/tooling/mypy/SKILL.md"
+          "source_path": "toolchains/python/tooling/mypy/SKILL.md",
+          "description": "Static type checker for Python with gradual typing, strict mode, Protocol support, and framework integration for FastAPI and Django"
         },
         {
           "name": "pydantic",
@@ -3163,7 +3288,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/python/validation/pydantic/SKILL.md"
+          "source_path": "toolchains/python/validation/pydantic/SKILL.md",
+          "description": "Python data validation using type hints and runtime type checking with Pydantic v2's Rust-powered core for high-performance validation in FastAPI, Django, and configuration management."
         },
         {
           "name": "pyright",
@@ -3183,7 +3309,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/python/tooling/pyright/SKILL.md"
+          "source_path": "toolchains/python/tooling/pyright/SKILL.md",
+          "description": "Pyright fast Python type checker from Microsoft with VS Code integration and strict type checking modes"
         },
         {
           "name": "pytest",
@@ -3212,7 +3339,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-06-15",
-          "source_path": "toolchains/python/testing/pytest/SKILL.md"
+          "source_path": "toolchains/python/testing/pytest/SKILL.md",
+          "description": "pytest - Python's most powerful testing framework with fixtures, parametrization, plugins, and framework integration for FastAPI, Django, Flask"
         },
         {
           "name": "python-code-quality",
@@ -3236,6 +3364,7 @@
           "author": "Claude MPM Team",
           "updated": "2026-06-15",
           "source_path": "toolchains/python/quality/code-quality/SKILL.md",
+          "description": "Python code-quality anti-patterns and review checks: exception-hierarchy correctness, singleton identity comparison, narrow exception handling, wildcard-import avoidance, magic-number naming, and dead-local removal.",
           "has_references": true,
           "reference_files": [
             "quality-antipatterns.md"
@@ -3271,6 +3400,7 @@
           "author": "Claude MPM",
           "updated": "2026-06-15",
           "source_path": "toolchains/python/data/sqlalchemy/SKILL.md",
+          "description": "SQLAlchemy 2.0 ORM with declarative models, relationships, migrations, and async support",
           "has_references": true,
           "reference_files": [
             "sql-quality-antipatterns.md"
@@ -3303,7 +3433,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-06-15",
-          "source_path": "toolchains/rust/frameworks/axum/SKILL.md"
+          "source_path": "toolchains/rust/frameworks/axum/SKILL.md",
+          "description": "Axum (Rust) web framework patterns for production APIs: routers/extractors, state, middleware, error handling, tracing, graceful shutdown, and testing"
         },
         {
           "name": "cargo-release",
@@ -3325,7 +3456,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-05-25",
-          "source_path": "toolchains/rust/ops/cargo-release/SKILL.md"
+          "source_path": "toolchains/rust/ops/cargo-release/SKILL.md",
+          "description": "PM-invocable protocol for Cargo publish and release operations in the trusty-tools Rust monorepo: semver rules, 10-step release sequence, macOS codesign safety, and cross-crate dependency ordering"
         },
         {
           "name": "clap",
@@ -3347,7 +3479,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/rust/cli/clap/SKILL.md"
+          "source_path": "toolchains/rust/cli/clap/SKILL.md",
+          "description": "Build production Rust CLIs with Clap: subcommands, config layering, validation, exit codes, shell completions, and testable command surfaces"
         },
         {
           "name": "desktop-applications",
@@ -3368,6 +3501,7 @@
           "author": "bobmatnyc",
           "updated": "2026-04-15",
           "source_path": "toolchains/rust/desktop-applications/SKILL.md",
+          "description": "Build cross-platform desktop applications with Rust using Tauri framework and native GUI alternatives",
           "has_references": true,
           "reference_files": [
             "architecture-patterns.md",
@@ -3398,7 +3532,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-05-25",
-          "source_path": "toolchains/rust/quality/rust-quality-gate/SKILL.md"
+          "source_path": "toolchains/rust/quality/rust-quality-gate/SKILL.md",
+          "description": "PM-invocable protocol for running and interpreting Rust quality gates in the trusty-tools monorepo: fmt, clippy, and test in strict sequence before any merge"
         },
         {
           "name": "tauri",
@@ -3418,7 +3553,8 @@
           "requires": [],
           "author": "bobmatnyc",
           "updated": "2026-04-15",
-          "source_path": "toolchains/rust/frameworks/tauri/SKILL.md"
+          "source_path": "toolchains/rust/frameworks/tauri/SKILL.md",
+          "description": "Advanced Tauri event patterns for bidirectional communication, streaming data, window-to-window messaging, and custom event handling"
         }
       ],
       "typescript": [
@@ -3445,7 +3581,8 @@
           ],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/data/drizzle-migrations/SKILL.md"
+          "source_path": "toolchains/typescript/data/drizzle-migrations/SKILL.md",
+          "description": "Migration-first database development workflow using Drizzle ORM for TypeScript/J..."
         },
         {
           "name": "drizzle-orm",
@@ -3472,6 +3609,7 @@
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
           "source_path": "toolchains/typescript/data/drizzle/SKILL.md",
+          "description": "Type-safe SQL ORM for TypeScript with zero runtime overhead",
           "has_references": true,
           "reference_files": [
             "advanced-schemas.md",
@@ -3504,7 +3642,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/frameworks/fastify/SKILL.md"
+          "source_path": "toolchains/typescript/frameworks/fastify/SKILL.md",
+          "description": "Production Fastify (TypeScript) patterns: schema validation, plugins, typed routes, error handling, security hardening, logging, testing with inject, and graceful shutdown"
         },
         {
           "name": "jest-typescript",
@@ -3523,7 +3662,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/testing/jest/SKILL.md"
+          "source_path": "toolchains/typescript/testing/jest/SKILL.md",
+          "description": "Jest with TypeScript - Industry standard testing framework with 70% market share, mature ecosystem, React Testing Library integration"
         },
         {
           "name": "kysely",
@@ -3550,7 +3690,8 @@
           ],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/data/kysely/SKILL.md"
+          "source_path": "toolchains/typescript/data/kysely/SKILL.md",
+          "description": "Kysely type-safe SQL query builder - End-to-end type safety from schema to queries, migrations, transactions, plugins"
         },
         {
           "name": "nodejs-backend",
@@ -3575,7 +3716,8 @@
           "requires": [],
           "author": "Claude MPM",
           "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/frameworks/nodejs-backend/SKILL.md"
+          "source_path": "toolchains/typescript/frameworks/nodejs-backend/SKILL.md",
+          "description": "Comprehensive TypeScript backend development with Express and Fastify, covering routing, middleware, authentication, database integration, testing, and production deployment patterns."
         },
         {
           "name": "prisma-orm",
@@ -3602,7 +3744,8 @@
           ],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/data/prisma/SKILL.md"
+          "source_path": "toolchains/typescript/data/prisma/SKILL.md",
+          "description": "Prisma ORM for TypeScript - Type-safe database toolkit with schema-first development, auto-generated client, migrations, relations, and Prisma Studio"
         },
         {
           "name": "tanstack-query",
@@ -3625,7 +3768,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/state/tanstack-query/SKILL.md"
+          "source_path": "toolchains/typescript/state/tanstack-query/SKILL.md",
+          "description": "TanStack Query (React Query) for asynchronous server-state management with automatic caching, background refetching, optimistic updates, and pagination in React applications."
         },
         {
           "name": "trpc",
@@ -3652,7 +3796,8 @@
           ],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/api/trpc/SKILL.md"
+          "source_path": "toolchains/typescript/api/trpc/SKILL.md",
+          "description": "End-to-end type safety for TypeScript APIs without code generation. Build type-safe APIs with automatic client-server type inference."
         },
         {
           "name": "turborepo",
@@ -3674,7 +3819,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/build/turborepo/SKILL.md"
+          "source_path": "toolchains/typescript/build/turborepo/SKILL.md",
+          "description": "High-performance monorepo build system with intelligent caching, task orchestration, and parallel execution for multi-package repositories and microservices."
         },
         {
           "name": "typescript-core",
@@ -3700,6 +3846,7 @@
           "author": "claude-mpm-skills",
           "updated": "2026-06-15",
           "source_path": "toolchains/typescript/core/SKILL.md",
+          "description": "Advanced TypeScript patterns and best practices for 2025",
           "has_references": true,
           "reference_files": [
             "advanced-patterns-2025.md",
@@ -3735,7 +3882,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/testing/vitest/SKILL.md"
+          "source_path": "toolchains/typescript/testing/vitest/SKILL.md",
+          "description": "Vitest - Modern TypeScript testing framework with Vite-native performance, ESM support, and TypeScript-first design"
         },
         {
           "name": "zod",
@@ -3754,8 +3902,9 @@
           "full_tokens": 7468,
           "requires": [],
           "author": "claude-mpm-skills",
-          "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/validation/zod/SKILL.md"
+          "updated": "2026-06-15",
+          "source_path": "toolchains/typescript/validation/zod/SKILL.md",
+          "description": "TypeScript-first schema validation library with static type inference for form validation, API validation, and runtime type checking with compile-time types."
         },
         {
           "name": "zustand",
@@ -3775,7 +3924,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/typescript/state/zustand/SKILL.md"
+          "source_path": "toolchains/typescript/state/zustand/SKILL.md",
+          "description": "Minimal, unopinionated state management library for React with simple hook-based API, no providers, and minimal boilerplate for global state without Redux complexity."
         }
       ],
       "ui": [
@@ -3799,7 +3949,8 @@
           ],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ui/components/daisyui/SKILL.md"
+          "source_path": "toolchains/ui/components/daisyui/SKILL.md",
+          "description": "Tailwind CSS component library providing semantic class names for 50+ components with built-in themes, dark mode, and customization for rapid UI development."
         },
         {
           "name": "headlessui",
@@ -3823,7 +3974,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ui/components/headlessui/SKILL.md"
+          "source_path": "toolchains/ui/components/headlessui/SKILL.md",
+          "description": "Headless UI - Unstyled, fully accessible UI components for React and Vue with built-in ARIA patterns"
         },
         {
           "name": "shadcn-ui",
@@ -3847,7 +3999,8 @@
           ],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ui/components/shadcn/SKILL.md"
+          "source_path": "toolchains/ui/components/shadcn/SKILL.md",
+          "description": "shadcn/ui component library for React with Tailwind CSS - copy-paste accessible components with full code ownership"
         },
         {
           "name": "tailwind",
@@ -3869,7 +4022,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/ui/styling/tailwind/SKILL.md"
+          "source_path": "toolchains/ui/styling/tailwind/SKILL.md",
+          "description": "Comprehensive Tailwind CSS skill covering utility-first styling, responsive design, dark mode, custom configuration, plugins, and framework integration"
         }
       ],
       "universal": [
@@ -3892,7 +4046,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/universal/security/api-review/SKILL.md"
+          "source_path": "toolchains/universal/security/api-review/SKILL.md",
+          "description": "API security checklist for reviewing endpoints before deployment. Use when creating or modifying API routes to ensure proper authentication, authorization, and input validation."
         },
         {
           "name": "dependency-audit",
@@ -3917,6 +4072,7 @@
           "author": "claude-mpm-skills",
           "updated": "2026-06-15",
           "source_path": "toolchains/universal/dependency/audit/SKILL.md",
+          "description": "Dependency audit and cleanup workflow for maintaining healthy project dependencies. Use for regular maintenance, security updates, and removing unused packages.",
           "has_references": true,
           "reference_files": [
             "open-source-safety.md"
@@ -3940,7 +4096,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/universal/infrastructure/docker/SKILL.md"
+          "source_path": "toolchains/universal/infrastructure/docker/SKILL.md",
+          "description": "Docker containerization for packaging applications with dependencies into isolated, portable units ensuring consistency across development, testing, and production environments."
         },
         {
           "name": "emergency-release-workflow",
@@ -3961,7 +4118,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/universal/emergency/release/SKILL.md"
+          "source_path": "toolchains/universal/emergency/release/SKILL.md",
+          "description": "Emergency release workflow for critical bug fixes and security patches. Use when production issues require fast-track deployment."
         },
         {
           "name": "github-actions",
@@ -3981,7 +4139,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/universal/infrastructure/github-actions/SKILL.md"
+          "source_path": "toolchains/universal/infrastructure/github-actions/SKILL.md",
+          "description": "GitHub Actions CI/CD workflows for automating build, test, and deployment"
         },
         {
           "name": "graphql",
@@ -4005,7 +4164,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/universal/data/graphql/SKILL.md"
+          "source_path": "toolchains/universal/data/graphql/SKILL.md",
+          "description": "GraphQL query language and runtime for APIs enabling clients to request exactly the data they need with strongly-typed schemas and single endpoint architecture."
         },
         {
           "name": "homebrew-formula-maintenance",
@@ -4026,7 +4186,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/universal/infrastructure/homebrew-formula-maintenance/SKILL.md"
+          "source_path": "toolchains/universal/infrastructure/homebrew-formula-maintenance/SKILL.md",
+          "description": "Homebrew formula maintenance workflows for Python CLIs and taps, including version bumps, SHA/resource updates, testing, audits, and releases."
         },
         {
           "name": "media-transcoding",
@@ -4046,7 +4207,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/universal/infrastructure/media-transcoding/SKILL.md"
+          "source_path": "toolchains/universal/infrastructure/media-transcoding/SKILL.md",
+          "description": "FFmpeg-based media transcoding workflows with preset-driven conversions, batch processing, and safe backups for web/mobile/archive outputs."
         },
         {
           "name": "pr-quality-checklist",
@@ -4066,7 +4228,8 @@
           "requires": [],
           "author": "claude-mpm-skills",
           "updated": "2026-04-15",
-          "source_path": "toolchains/universal/pr/quality/SKILL.md"
+          "source_path": "toolchains/universal/pr/quality/SKILL.md",
+          "description": "PR quality checklist for ensuring comprehensive, well-documented pull requests. Use before submitting PRs to improve review efficiency and code quality."
         }
       ],
       "visualbasic": [
@@ -4090,7 +4253,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/visualbasic/core/SKILL.md"
+          "source_path": "toolchains/visualbasic/core/SKILL.md",
+          "description": "Core VB.NET patterns, type safety, modern language features"
         },
         {
           "name": "vb-database",
@@ -4112,7 +4276,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/visualbasic/database/adonet/SKILL.md"
+          "source_path": "toolchains/visualbasic/database/adonet/SKILL.md",
+          "description": "ADO.NET patterns, Entity Framework, database best practices"
         },
         {
           "name": "vb-winforms",
@@ -4134,7 +4299,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/visualbasic/frameworks/winforms/SKILL.md"
+          "source_path": "toolchains/visualbasic/frameworks/winforms/SKILL.md",
+          "description": "Windows Forms development patterns, UI threading, data binding"
         },
         {
           "name": "vb6-legacy",
@@ -4155,7 +4321,8 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-04-15",
-          "source_path": "toolchains/visualbasic/legacy/vb6-interop/SKILL.md"
+          "source_path": "toolchains/visualbasic/legacy/vb6-interop/SKILL.md",
+          "description": "Classic VB6 patterns, COM interop, migration strategies"
         }
       ]
     },
@@ -4182,7 +4349,8 @@
         ],
         "author": "claude-mpm-skills",
         "updated": "2025-12-31",
-        "source_path": "examples/bad-interdependent-skill/SKILL.md"
+        "source_path": "examples/bad-interdependent-skill/SKILL.md",
+        "description": "ANTI-PATTERN - Example showing violations of self-containment (DO NOT COPY)"
       },
       {
         "name": "example-framework-skill",
@@ -4204,7 +4372,8 @@
         "requires": [],
         "author": "claude-mpm-skills",
         "updated": "2025-12-31",
-        "source_path": "examples/good-self-contained-skill/SKILL.md"
+        "source_path": "examples/good-self-contained-skill/SKILL.md",
+        "description": "Example of a properly self-contained skill following all best practices"
       }
     ]
   },

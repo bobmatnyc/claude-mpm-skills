@@ -341,6 +341,7 @@ class SkillDiscovery:
 
         # Load metadata from various sources
         metadata_json = self.load_metadata_json(skill_dir)
+        frontmatter = self.extract_frontmatter(skill_path)
         classification = self.classify_skill(relative_path, metadata_json)
 
         # Extract skill name from directory
@@ -370,6 +371,13 @@ class SkillDiscovery:
             "updated": updated,
             "source_path": relative_path,
         }
+
+        # Add a discoverability description. Prefer metadata.json, fall back to
+        # SKILL.md frontmatter. Surfacing this in the manifest lets external
+        # registries (e.g. Dispatch) recommend skills accurately. See issue #12.
+        description = metadata_json.get("description") or frontmatter.get("description")
+        if description:
+            skill["description"] = description
 
         # Add optional fields
         if has_references:

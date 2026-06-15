@@ -309,6 +309,9 @@ claude-mpm-skills/
 - TDD - Test-driven development workflows
 - Systematic Debugging - Root cause analysis
 
+**Orchestration**:
+- MPM Orchestration Demo - Reference workflow for the Command → Agent → Skill pattern, covering preloaded skills, dynamic `Skill` invocation, and the `context: fork` pattern for forked sub-agents
+
 ## Installation
 
 ### Prerequisites
@@ -384,6 +387,39 @@ git clone https://github.com/bobmatnyc/claude-mpm-skills.git
 # Link to Claude MPM skills directory
 ln -s $(pwd)/claude-mpm-skills ~/.claude-mpm/skills
 ```
+
+## Using these skills outside claude-mpm
+
+These skills are built for the [claude-mpm](https://github.com/bobmatnyc/claude-mpm) **passive-injection model**. In that model, the framework injects skill content into the PM agent's context as reference material and lets the orchestrator decide when to apply it — skills deliberately do not self-trigger on keyword matches.
+
+Two frontmatter fields encode that design and are intentional, not oversights:
+
+- `user-invocable: false` — suppresses slash-command generation, since these skills are applied by the orchestrator rather than invoked directly by a user.
+- `disable-model-invocation: true` — includes the skill as passive context rather than registering it as a callable, auto-triggering tool.
+
+This behavior is load-bearing for multi-agent dispatch correctness within claude-mpm.
+
+### Standalone usage in a generic `.claude/skills/` setup
+
+Generic installers that rely on auto-triggering — such as a plain `.claude/skills/` directory, `autoskills`, or `npx skills add` — expect skills to fire on keyword matches. With the two fields above present, these skills will not auto-trigger under those tools.
+
+To use a skill standalone, copy its `SKILL.md` content into the target `.claude/skills/` location and strip the two fields so the skill can auto-trigger:
+
+```diff
+ ---
+ name: database-migration
+ description: Safe patterns for evolving database schemas in production.
+-user-invocable: false
+-disable-model-invocation: true
+ tags: [database, migration, schema, production]
+ ---
+```
+
+After removing those lines, the skill registers as a normal auto-triggering skill in the generic setup.
+
+### Known limitation
+
+These skills are **incompatible with auto-triggering installers as shipped**. Auto-triggering tools (`autoskills`, `npx skills add`, and similar) will not fire the skills until the `user-invocable` and `disable-model-invocation` fields are removed per the workaround above. This is a deliberate trade-off in favor of claude-mpm dispatch correctness, not a bug.
 
 ## Usage
 
