@@ -16,8 +16,8 @@
   "entry_point_tokens": 2420,
   "full_tokens": 2420,
   "related_skills": [
-    "../../core",
-    "../../database/adonet"
+    "../../vb-core",
+    "../../database/vb-database"
   ],
   "author": "Claude MPM Team",
   "license": "MIT"

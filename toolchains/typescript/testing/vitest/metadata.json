@@ -20,7 +20,7 @@
   "entry_point_tokens": 78,
   "full_tokens": 6035,
   "related_skills": [
-    "../../core",
+    "../../typescript-core",
     "../../../javascript/frameworks/react",
     "../../../../universal/testing/test-driven-development"
   ],

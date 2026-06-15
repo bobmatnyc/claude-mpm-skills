@@ -19,9 +19,9 @@
   "entry_point_tokens": 106,
   "full_tokens": 12579,
   "related_skills": [
-    "../plugin-fundamentals",
-    "../security-validation",
-    "../block-editor",
+    "../wordpress-plugin-fundamentals",
+    "../wordpress-security-validation",
+    "../wordpress-block-editor-fse",
     "../../../../python/testing/pytest",
     "../../../../universal/infrastructure/github-actions"
   ],

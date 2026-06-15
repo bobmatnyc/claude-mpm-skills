@@ -15,7 +15,7 @@
   "entry_point_tokens": 140,
   "full_tokens": 6894,
   "related_skills": [
-    "../toolchains-golang-testing"
+    "golang-testing-strategies"
   ],
   "author": "Claude MPM",
   "license": "MIT"

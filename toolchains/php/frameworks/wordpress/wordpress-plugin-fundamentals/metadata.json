@@ -20,8 +20,8 @@
   "entry_point_tokens": 155,
   "full_tokens": 8643,
   "related_skills": [
-    "../security-validation",
-    "../block-editor",
+    "../wordpress-security-validation",
+    "../wordpress-block-editor-fse",
     "../../../testing/phpunit",
     "../../validation/pydantic"
   ],

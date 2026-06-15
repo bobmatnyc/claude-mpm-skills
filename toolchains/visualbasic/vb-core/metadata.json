@@ -16,8 +16,8 @@
   "entry_point_tokens": 3850,
   "full_tokens": 3850,
   "related_skills": [
-    "../frameworks/winforms",
-    "../database/adonet",
+    "../frameworks/vb-winforms",
+    "../database/vb-database",
     "../../universal/testing/test-driven-development"
   ],
   "author": "Claude MPM Team",

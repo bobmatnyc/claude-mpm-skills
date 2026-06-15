@@ -18,9 +18,9 @@
   "entry_point_tokens": 98,
   "full_tokens": 12169,
   "related_skills": [
-    "../plugin-fundamentals",
-    "../security",
-    "../testing-qa",
+    "../wordpress-plugin-fundamentals",
+    "../wordpress-security-validation",
+    "../wordpress-testing-qa",
     "../../../../universal/data/graphql",
     "../../../../universal/infrastructure/docker"
   ],

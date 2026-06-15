@@ -15,8 +15,8 @@
   "entry_point_tokens": 2980,
   "full_tokens": 2980,
   "related_skills": [
-    "../../core",
-    "../../frameworks/winforms"
+    "../../vb-core",
+    "../../frameworks/vb-winforms"
   ],
   "author": "Claude MPM Team",
   "license": "MIT"

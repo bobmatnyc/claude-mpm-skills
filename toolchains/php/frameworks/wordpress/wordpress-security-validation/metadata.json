@@ -19,8 +19,8 @@
   "entry_point_tokens": 98,
   "full_tokens": 11530,
   "related_skills": [
-    "../plugin-fundamentals",
-    "../testing-qa",
+    "../wordpress-plugin-fundamentals",
+    "../wordpress-testing-qa",
     "../../validation/pydantic"
   ],
   "description": "Security-first WordPress development with nonces, sanitization, validation, and escaping for robust plugin/theme security",

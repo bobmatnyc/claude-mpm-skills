@@ -20,8 +20,8 @@
   "entry_point_tokens": 160,
   "full_tokens": 7400,
   "related_skills": [
-    "../toolchains-golang-testing",
-    "../toolchains-golang-data"
+    "golang-testing-strategies",
+    "golang-database-patterns"
   ],
   "author": "Claude MPM",
   "license": "MIT",
