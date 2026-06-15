@@ -1,6 +1,8 @@
 ---
 name: hooks-composition
 description: Advanced React hooks composition patterns - SWR integration, debounced search, memoized contexts, state machines, and performance optimization
+user-invocable: false
+disable-model-invocation: true
 version: 1.0.0
 category: toolchain
 author: Claude MPM Team

@@ -1,6 +1,8 @@
 ---
 name: example-framework-skill
 description: Example of a properly self-contained skill following all best practices
+user-invocable: false
+disable-model-invocation: true
 category: framework
 toolchain: python
 tags: [self-contained, example, template, best-practice]
