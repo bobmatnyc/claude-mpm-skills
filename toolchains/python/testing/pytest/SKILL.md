@@ -3,7 +3,8 @@ name: pytest
 description: pytest - Python's most powerful testing framework with fixtures, parametrization, plugins, and framework integration for FastAPI, Django, Flask
 user-invocable: false
 disable-model-invocation: true
-version: 1.0.0
+version: 1.1.0
+updated: "2026-06-15"
 category: toolchain
 author: Claude MPM Team
 license: MIT
@@ -12,6 +13,8 @@ progressive_disclosure:
     summary: "Professional Python testing: fixtures, parametrize, markers, async support, FastAPI/Django/Flask integration, coverage, mocking"
     when_to_use: "Writing unit tests, integration tests, API testing, TDD workflow, testing async code, database testing, mocking dependencies"
     quick_start: "1. pip install pytest 2. Create test_*.py files 3. Use fixtures with @pytest.fixture 4. Parametrize with @pytest.mark.parametrize 5. Run: pytest -v"
+  references:
+    - quality-antipatterns.md
 context_limit: 700
 tags:
   - pytest
@@ -1439,6 +1442,30 @@ pytest -k "auth or login" -v
 ```
 
 [Full TDD and debugging workflows available in respective skills if deployed together]
+
+---
+
+## Python Code-Quality Anti-Patterns
+
+Clean code under test is easier to test, and several Python quality defects directly
+cause flaky or silently-passing tests (overly broad `except`, malformed exception
+classes, identity-vs-equality bugs). The companion reference covers the highest-value
+Python anti-patterns to check during review or self-review:
+
+- Custom exceptions must derive from `Exception` (not a plain `object`)
+- Compare singletons (`None`/`True`/`False`) with `is`; use `is` only for singletons
+- Avoid bare / overly broad `except`; catch the narrowest type you can handle
+- Avoid wildcard imports (`from x import *`)
+- Replace magic numbers with named constants
+- Remove unused local variables
+
+See **[quality-antipatterns.md](references/quality-antipatterns.md)** for non-compliant
+vs compliant examples and how to test each. Most are enforceable cheaply with
+`ruff`/`pylint`/`mypy` in CI.
+
+> Derived from CAST Highlight Python code quality indicators
+> (https://doc.casthighlight.com/), which reference PEP 8 and the Python data model as
+> primary sources.
 
 ---
 

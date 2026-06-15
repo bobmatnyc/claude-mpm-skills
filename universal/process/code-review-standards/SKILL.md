@@ -15,6 +15,8 @@ progressive_disclosure:
     - criteria-high.md
     - criteria-medium.md
     - criteria-low.md
+    - criteria-efficiency.md
+    - criteria-transferability.md
     - verdict-protocol.md
 ---
 
@@ -64,12 +66,29 @@ flags the same things. Severity tagging makes the review deterministic across di
 - [ ] Docstrings on public methods (Google or NumPy style)
 - [ ] No Any types in production code paths
 
+**Efficiency** (see [criteria-efficiency.md](references/criteria-efficiency.md)):
+
+- [ ] No nested loops over two collections that should be a hash-map lookup (O(n*m) → O(n+m))
+- [ ] No per-iteration I/O (queries/RPCs/fetches inside a loop) — batch outside the loop (HIGH on hot paths; see "No N+1 query patterns")
+- [ ] Repeated deep property/selector resolution cached in a local (no greedy data access)
+- [ ] String accumulation in loops uses list+join / StringBuilder, not `+=`
+- [ ] No `SELECT *` / over-fetching in production query paths
+
+**Transferability** (see [criteria-transferability.md](references/criteria-transferability.md)):
+
+- [ ] No dead/unreachable code (statements after unconditional return/break/raise; uncalled private members)
+- [ ] Long `if/else if` chains (3+ branches on one key) replaced by switch/match or dispatch map
+- [ ] No nested `switch`/`match` — extract inner switch to a named function
+- [ ] No actively misleading names (name contradicts the value it holds)
+
 ### LOW (note only)
 
 - [ ] PEP 8 compliance (black + isort handles this automatically)
 - [ ] Variable naming is clear and descriptive
 - [ ] No commented-out code left in
 - [ ] Import ordering is clean
+- [ ] Naming consistency across the change (same concept, same name; consistent casing)
+- [ ] No file managing too many responsibilities (see 800-line file limit)
 
 ## Verdict Format
 
@@ -144,4 +163,10 @@ For detailed criteria with examples:
 - **[HIGH Criteria](references/criteria-high.md)**: Detailed explanations and examples for each HIGH item
 - **[MEDIUM Criteria](references/criteria-medium.md)**: Detailed explanations and examples for each MEDIUM item
 - **[LOW Criteria](references/criteria-low.md)**: Detailed explanations and examples for each LOW item
+- **[Efficiency Criteria](references/criteria-efficiency.md)**: Algorithmic/data-access patterns (nested loops, fetch-in-loop, greedy access, loop concatenation, over-fetching)
+- **[Transferability Criteria](references/criteria-transferability.md)**: Maintainability patterns (dead code, long if/else-if chains, nested switch, naming hygiene)
 - **[Verdict Protocol](references/verdict-protocol.md)**: Full PM behavior for each verdict, failure loop templates
+
+> The Efficiency and Transferability criteria are derived from CAST Highlight code
+> quality indicators (https://doc.casthighlight.com/), paraphrased with original
+> examples.
