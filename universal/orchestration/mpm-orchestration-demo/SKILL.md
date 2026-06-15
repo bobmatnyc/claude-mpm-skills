@@ -3,7 +3,7 @@ name: mpm-orchestration-demo
 description: Reference implementation demonstrating the Command → Agent → Skill orchestration pattern in Claude MPM, showing both preloaded-skill and dynamic-skill-invocation styles
 argument-hint: "[topic]"
 user-invocable: true
-version: 1.0.0
+version: 1.1.0
 category: universal
 author: Claude MPM Team
 license: MIT
@@ -249,4 +249,4 @@ COMMAND (.claude/commands/my-workflow.md)
 
 ## Navigation
 
-- **[Orchestration Patterns](references/orchestration-patterns.md)**: Deep-dive reference — annotated weather system example, when to use each style, agent communication patterns, error handling
+- **[Orchestration Patterns](references/orchestration-patterns.md)**: Deep-dive reference — annotated weather system example, when to use each style, the `context: fork` pattern for forked sub-agents that inherit parent context, agent communication patterns, error handling
