@@ -1,5 +1,5 @@
 {
-  "name": "model-context-protocol",
+  "name": "mcp",
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "ai",
