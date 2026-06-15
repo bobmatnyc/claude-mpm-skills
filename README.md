@@ -183,7 +183,6 @@ claude-mpm-skills/
 - React State Machine - XState v5 finite-state modeling for complex UI flows
 - FlexLayout (React) - Docking layout manager with drag-and-drop panels
 - Vue - Progressive framework (also in TypeScript)
-- Vue - Progressive framework (also in TypeScript)
 - Svelte - Reactive framework with runes
 - SvelteKit - Full-stack Svelte with SSR/SSG
 - Svelte 5 Runes + adapter-static - Hydration-safe state and store bridges

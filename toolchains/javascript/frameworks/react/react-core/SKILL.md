@@ -268,8 +268,8 @@ function Profile({ id }: { id?: string }) {
 ```tsx
 // GOOD: call the hook unconditionally; branch on its result
 function Profile({ id }: { id?: string }) {
-  const data = useUser(id);
-  if (!id) return null;
+  const data = useUser(id); // useUser must accept an undefined id (no fetch / returns null) so the hook is always called
+  if (!id || !data) return null;
   return <span>{data.name}</span>;
 }
 ```
