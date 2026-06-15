@@ -18,7 +18,7 @@ This repository contains a comprehensive collection of **169 Claude Code skills*
 **Key Components:**
 - **Claude Code**: Anthropic's official CLI environment
 - **Claude MPM**: Multi-agent framework running in Claude Code
-- **Skills**: Domain-specific knowledge modules (this repo contains 169 skills)
+- **Skills**: Domain-specific knowledge modules (this repo contains 170 skills)
 
 **How They Work Together:**
 ```
@@ -49,7 +49,7 @@ Skills (Knowledge Modules) ← You are here
 
 ```
 claude-mpm-skills/
-├── toolchains/          # Language/framework-specific skills (124 skills)
+├── toolchains/          # Language/framework-specific skills (125 skills)
 │   ├── python/         # 11 skills
 │   │   ├── frameworks/     # Django, FastAPI, Flask
 │   │   ├── testing/        # pytest
@@ -65,7 +65,7 @@ claude-mpm-skills/
 │   │   ├── state/          # Zustand, TanStack Query
 │   │   ├── api/            # tRPC
 │   │   └── build/          # Turborepo
-│   ├── javascript/     # 19 skills
+│   ├── javascript/     # 20 skills
 │   │   ├── frameworks/     # React, Vue, Svelte, SvelteKit
 │   │   ├── testing/        # Playwright, Cypress
 │   │   ├── build/          # Vite

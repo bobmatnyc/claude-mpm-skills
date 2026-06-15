@@ -1942,6 +1942,39 @@
           ]
         },
         {
+          "name": "react-hooks-composition",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "react",
+          "tags": [
+            "react",
+            "hooks",
+            "composition",
+            "swr",
+            "performance",
+            "typescript",
+            "custom-hooks",
+            "useMemo",
+            "useCallback",
+            "context",
+            "debounce",
+            "state-machine"
+          ],
+          "entry_point_tokens": 4200,
+          "full_tokens": 12500,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-02-01",
+          "source_path": "toolchains/javascript/frameworks/react/hooks-composition/SKILL.md",
+          "has_references": true,
+          "reference_files": [
+            "swr-patterns.md",
+            "performance-optimization.md",
+            "testing-patterns.md"
+          ]
+        },
+        {
           "name": "svelte",
           "version": "1.0.0",
           "category": "toolchain",
@@ -4176,10 +4209,10 @@
     ]
   },
   "metadata": {
-    "total_skills": 168,
+    "total_skills": 169,
     "categories": {
       "universal": 42,
-      "toolchains": 124,
+      "toolchains": 125,
       "examples": 2
     },
     "toolchains": {
@@ -4188,7 +4221,7 @@
       "elixir": 4,
       "golang": 7,
       "java": 1,
-      "javascript": 19,
+      "javascript": 20,
       "nextjs": 3,
       "php": 6,
       "platforms": 26,
