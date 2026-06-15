@@ -1,0 +1,36 @@
+{
+  "name": "react-core",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "react",
+  "tags": [
+    "react",
+    "components",
+    "jsx",
+    "hooks",
+    "useState",
+    "useEffect",
+    "props",
+    "state",
+    "composition",
+    "controlled-inputs"
+  ],
+  "entry_point_tokens": 80,
+  "full_tokens": 3200,
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [],
+  "related_skills": [
+    "react-hooks-composition",
+    "react-state-machine"
+  ],
+  "updated": "2026-06-15",
+  "source_path": "toolchains/javascript/frameworks/react/react-core/SKILL.md",
+  "source": "https://github.com/bobmatnyc/claude-mpm",
+  "created": "2026-06-15",
+  "modified": "2026-06-15",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

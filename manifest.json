@@ -1984,6 +1984,32 @@
           "description": "Playwright modern end-to-end testing framework with cross-browser automation, auto-wait, and built-in test runner"
         },
         {
+          "name": "react-core",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "javascript",
+          "framework": "react",
+          "tags": [
+            "react",
+            "components",
+            "jsx",
+            "hooks",
+            "useState",
+            "useEffect",
+            "props",
+            "state",
+            "composition",
+            "controlled-inputs"
+          ],
+          "entry_point_tokens": 80,
+          "full_tokens": 3200,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-06-15",
+          "source_path": "toolchains/javascript/frameworks/react/react-core/SKILL.md",
+          "description": "General React fundamentals - components and JSX, props and state, the core hooks (useState/useEffect/useRef/useMemo/useCallback/useContext), composition, conditional and list rendering, and controlled inputs. The canonical \"depends on React\" reference."
+        },
+        {
           "name": "react-hooks-composition",
           "version": "1.0.0",
           "category": "toolchain",
@@ -3997,7 +4023,7 @@
           "full_tokens": 7879,
           "requires": [
             "../../styling/tailwind",
-            "../../../javascript/frameworks/react/react-hooks-composition"
+            "../../../javascript/frameworks/react/react-core"
           ],
           "author": "claude-mpm-skills",
           "updated": "2026-06-15",
@@ -4380,10 +4406,10 @@
     ]
   },
   "metadata": {
-    "total_skills": 169,
+    "total_skills": 170,
     "categories": {
       "universal": 42,
-      "toolchains": 125,
+      "toolchains": 126,
       "examples": 2
     },
     "toolchains": {
@@ -4392,7 +4418,7 @@
       "elixir": 4,
       "golang": 7,
       "java": 1,
-      "javascript": 20,
+      "javascript": 21,
       "nextjs": 3,
       "php": 6,
       "platforms": 26,

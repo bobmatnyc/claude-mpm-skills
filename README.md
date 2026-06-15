@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains a comprehensive collection of **169 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, AI, and universal tooling.
+This repository contains a comprehensive collection of **170 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, AI, and universal tooling.
 
 ## What is Claude MPM?
 
@@ -18,7 +18,7 @@ This repository contains a comprehensive collection of **169 Claude Code skills*
 **Key Components:**
 - **Claude Code**: Anthropic's official CLI environment
 - **Claude MPM**: Multi-agent framework running in Claude Code
-- **Skills**: Domain-specific knowledge modules (this repo contains 169 skills)
+- **Skills**: Domain-specific knowledge modules (this repo contains 170 skills)
 
 **How They Work Together:**
 ```
@@ -39,7 +39,7 @@ Skills (Knowledge Modules) ← You are here
 
 ## Quick Stats
 
-- **Total Skills**: 169 production-ready skills
+- **Total Skills**: 170 production-ready skills
 - **Coverage**: 95%+ of modern development workflows
 - **Token Efficiency**: ~66.7k entry tokens vs ~512.4k full tokens (~87% savings)
 - **Categories**: Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, Next.js, UI, AI, Platforms, Universal
@@ -65,7 +65,7 @@ claude-mpm-skills/
 │   │   ├── state/          # Zustand, TanStack Query
 │   │   ├── api/            # tRPC
 │   │   └── build/          # Turborepo
-│   ├── javascript/     # 20 skills
+│   ├── javascript/     # 21 skills
 │   │   ├── frameworks/     # React, Vue, Svelte, SvelteKit
 │   │   ├── testing/        # Playwright, Cypress
 │   │   ├── build/          # Vite
@@ -175,10 +175,14 @@ claude-mpm-skills/
 **Build Tools**:
 - Turborepo - Monorepo with intelligent caching
 
-### JavaScript (19 Skills)
+### JavaScript (21 Skills)
 
 **Frameworks**:
-- React - Component patterns (also in TypeScript)
+- React Core - Component patterns, JSX, props/state, core hooks, composition
+- React Hooks Composition - Advanced custom-hook patterns (SWR, debounce, memoized contexts)
+- React State Machine - XState v5 finite-state modeling for complex UI flows
+- FlexLayout (React) - Docking layout manager with drag-and-drop panels
+- Vue - Progressive framework (also in TypeScript)
 - Vue - Progressive framework (also in TypeScript)
 - Svelte - Reactive framework with runes
 - SvelteKit - Full-stack Svelte with SSR/SSG

@@ -19,7 +19,7 @@
   "related_skills": [
     "../../typescript/typescript-core",
     "../build/vite",
-    "../../frameworks/react/react-hooks-composition"
+    "../../frameworks/react/react-core"
   ],
   "author": "Claude MPM",
   "license": "MIT",

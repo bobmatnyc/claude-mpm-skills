@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "javascript",
-  "framework": "react",
+  "framework": "flexlayout-react",
   "tags": [
     "react",
     "layout",
@@ -18,11 +18,11 @@
   "author": "bobmatnyc",
   "license": "MIT",
   "requires": [],
-  "updated": "2025-11-21",
+  "updated": "2026-06-15",
   "source_path": "toolchains/javascript/frameworks/flexlayout-react/SKILL.md",
   "source": "https://github.com/bobmatnyc/claude-mpm",
   "created": "2025-11-21",
-  "modified": "2025-11-21",
+  "modified": "2026-06-15",
   "maintainer": "Claude MPM Team",
   "attribution_required": true,
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"

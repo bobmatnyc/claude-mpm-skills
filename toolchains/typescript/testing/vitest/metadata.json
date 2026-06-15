@@ -21,7 +21,7 @@
   "full_tokens": 6035,
   "related_skills": [
     "../../typescript-core",
-    "../../../javascript/frameworks/react/react-hooks-composition",
+    "../../../javascript/frameworks/react/react-core",
     "../../../../universal/testing/test-driven-development"
   ],
   "author": "Claude MPM Team",

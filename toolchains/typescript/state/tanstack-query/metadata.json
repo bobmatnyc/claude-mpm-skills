@@ -18,7 +18,7 @@
   "related_skills": [
     "../zustand",
     "../../api/trpc",
-    "../../frameworks/react/react-hooks-composition",
+    "../../../javascript/frameworks/react/react-core",
     "../../../nextjs"
   ],
   "author": "claude-mpm-skills",
