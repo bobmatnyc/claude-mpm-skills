@@ -1,5 +1,5 @@
 ---
-name: react
+name: flexlayout-react
 description: FlexLayout for React - Advanced docking layout manager with drag-and-drop, tabs, splitters, and complex window management
 user-invocable: false
 disable-model-invocation: true
@@ -733,10 +733,6 @@ import { Layout } from 'flexlayout-react';
 - **Examples**: https://rawgit.com/caplin/FlexLayout/demos/demos/index.html
 - **TypeScript Types**: Included in package
 
-## Related Sub-Skills
-
-- **[state-machine](./state-machine/SKILL.md)**: XState v5 state machines and actor model for complex UI logic, multi-step forms, async flows
-
 ## Summary
 
 - **FlexLayout** provides IDE-quality docking layouts
@@ -749,7 +745,9 @@ import { Layout } from 'flexlayout-react';
 
 ## Related Skills
 
-When using React, these skills enhance your workflow:
+When using FlexLayout-React, these skills enhance your workflow:
+- **react-state-machine**: XState v5 state machines and actor model for complex UI logic, multi-step forms, async flows
+- **react-hooks-composition**: Advanced React hooks composition patterns for data-fetching and performance
 - **tanstack-query**: Server-state management for React apps with caching and refetching
 - **zustand**: Lightweight client-state management alternative to Redux
 - **nextjs**: React framework with SSR, routing, and full-stack capabilities

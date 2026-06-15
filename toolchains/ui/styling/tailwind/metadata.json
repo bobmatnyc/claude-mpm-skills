@@ -15,7 +15,7 @@
   "entry_point_tokens": 75,
   "full_tokens": 8041,
   "related_skills": [
-    "../../../javascript/frameworks/react",
+    "../../../javascript/frameworks/react/react-core",
     "../../../javascript/frameworks/sveltekit",
     "../../../nextjs",
     "../../../typescript"

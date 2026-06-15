@@ -20,7 +20,7 @@
   "entry_point_tokens": 75,
   "full_tokens": 5460,
   "related_skills": [
-    "../../frameworks/react",
+    "../../frameworks/react/react-core",
     "../../frameworks/vue",
     "../../frameworks/svelte",
     "../../../typescript/typescript-core"

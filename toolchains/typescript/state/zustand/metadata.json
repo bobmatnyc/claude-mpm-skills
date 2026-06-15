@@ -13,7 +13,7 @@
   "entry_point_tokens": 70,
   "full_tokens": 6408,
   "related_skills": [
-    "../../frameworks/react",
+    "../../../javascript/frameworks/react/react-core",
     "../../../nextjs",
     "../../testing/vitest"
   ],

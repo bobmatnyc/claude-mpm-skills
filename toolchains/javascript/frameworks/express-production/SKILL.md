@@ -1,5 +1,5 @@
 ---
-name: express-local-dev
+name: express-production
 description: Production-ready Express.js development covering middleware architecture, error handling, security hardening, testing strategies, and deployment patterns
 user-invocable: false
 disable-model-invocation: true

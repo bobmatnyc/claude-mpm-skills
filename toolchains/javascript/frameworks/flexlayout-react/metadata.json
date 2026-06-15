@@ -1,0 +1,29 @@
+{
+  "name": "flexlayout-react",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "javascript",
+  "framework": "flexlayout-react",
+  "tags": [
+    "react",
+    "layout",
+    "docking",
+    "drag-drop",
+    "ide",
+    "dashboard",
+    "flexlayout"
+  ],
+  "entry_point_tokens": 55,
+  "full_tokens": 4070,
+  "author": "bobmatnyc",
+  "license": "MIT",
+  "requires": [],
+  "updated": "2026-06-15",
+  "source_path": "toolchains/javascript/frameworks/flexlayout-react/SKILL.md",
+  "source": "https://github.com/bobmatnyc/claude-mpm",
+  "created": "2025-11-21",
+  "modified": "2026-06-15",
+  "maintainer": "Claude MPM Team",
+  "attribution_required": true,
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills"
+}

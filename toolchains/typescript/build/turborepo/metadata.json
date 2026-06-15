@@ -16,7 +16,7 @@
   "full_tokens": 9386,
   "related_skills": [
     "../../../nextjs",
-    "../../frameworks/react",
+    "../../../javascript/frameworks/react/react-core",
     "../vite"
   ],
   "author": "claude-mpm-skills",

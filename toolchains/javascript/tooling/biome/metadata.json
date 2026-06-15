@@ -19,7 +19,7 @@
   "related_skills": [
     "../../typescript/typescript-core",
     "../build/vite",
-    "../../frameworks/react"
+    "../../frameworks/react/react-core"
   ],
   "author": "Claude MPM",
   "license": "MIT",
