@@ -1,6 +1,6 @@
 {
   "name": "react-state-machine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "category": "toolchain",
   "toolchain": "javascript",
   "framework": "react",
@@ -17,6 +17,7 @@
   "entry_point_tokens": 150,
   "full_tokens": 37323,
   "related_skills": [
+    "react-advanced",
     "toolchains/javascript/frameworks/react",
     "toolchains/javascript/frameworks/nextjs",
     "universal/testing/test-driven-development"
@@ -24,11 +25,11 @@
   "author": "bobmatnyc",
   "license": "MIT",
   "requires": [],
-  "updated": "2025-12-19",
+  "updated": "2026-06-15",
   "source_path": "toolchains/javascript/frameworks/react/react-state-machine/SKILL.md",
   "source": "https://github.com/bobmatnyc/claude-mpm",
   "created": "2025-11-29",
-  "modified": "2025-12-19",
+  "modified": "2026-06-15",
   "maintainer": "Claude MPM Team",
   "attribution_required": true,
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills"

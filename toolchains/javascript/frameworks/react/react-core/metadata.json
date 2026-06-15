@@ -1,6 +1,6 @@
 {
   "name": "react-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "category": "toolchain",
   "toolchain": "javascript",
   "framework": "react",
@@ -23,7 +23,8 @@
   "requires": [],
   "related_skills": [
     "react-hooks-composition",
-    "react-state-machine"
+    "react-state-machine",
+    "react-advanced"
   ],
   "updated": "2026-06-15",
   "source_path": "toolchains/javascript/frameworks/react/react-core/SKILL.md",

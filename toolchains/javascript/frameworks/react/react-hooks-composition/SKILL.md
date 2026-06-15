@@ -3,7 +3,7 @@ name: react-hooks-composition
 description: Advanced React hooks composition patterns - SWR integration, debounced search, memoized contexts, state machines, and performance optimization
 user-invocable: false
 disable-model-invocation: true
-version: 1.0.0
+version: 1.0.1
 category: toolchain
 author: Claude MPM Team
 license: MIT
@@ -716,7 +716,7 @@ function Component() {
 
 ## Related Patterns
 
-See the `react-state-machine` skill for more advanced state machine patterns with XState.
+See the `react-state-machine` skill for more advanced state machine patterns with XState. See the `react-advanced` skill for React 19 platform features and rendering architecture — the React Compiler (which changes when manual memoization is needed), concurrent rendering, Actions, and context-optimization at scale.
 
 ## References
 
