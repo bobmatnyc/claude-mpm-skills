@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.5",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
   "updated": "2026-06-15",
   "description": "Curated collection of Claude Code skills for intelligent project development",
@@ -728,7 +728,7 @@
         "full_tokens": 18000,
         "requires": [],
         "author": "masa",
-        "updated": "2026-04-15",
+        "updated": "2026-06-15",
         "source_path": "universal/architecture/software-patterns/SKILL.md",
         "has_references": true,
         "reference_files": [
@@ -1500,7 +1500,7 @@
           "full_tokens": 7400,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/golang/web/SKILL.md",
           "has_references": true,
           "reference_files": [
@@ -3236,7 +3236,7 @@
           "full_tokens": 8348,
           "requires": [],
           "author": "Claude MPM",
-          "updated": "2026-04-15",
+          "updated": "2026-06-15",
           "source_path": "toolchains/python/data/sqlalchemy/SKILL.md",
           "has_references": true,
           "reference_files": [
@@ -3269,7 +3269,7 @@
           "full_tokens": 2100,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-06-09",
+          "updated": "2026-06-15",
           "source_path": "toolchains/rust/frameworks/axum/SKILL.md"
         },
         {
