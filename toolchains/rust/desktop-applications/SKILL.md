@@ -1,5 +1,5 @@
 ---
-name: rust-desktop-applications
+name: desktop-applications
 description: Build cross-platform desktop applications with Rust using Tauri framework and native GUI alternatives
 user-invocable: false
 disable-model-invocation: true

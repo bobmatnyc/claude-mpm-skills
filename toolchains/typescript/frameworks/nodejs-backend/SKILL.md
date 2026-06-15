@@ -1,5 +1,5 @@
 ---
-name: nodejs-backend-typescript
+name: nodejs-backend
 description: "Node.js backend development with TypeScript, Express/Fastify servers, routing, middleware, and database integration"
 user-invocable: false
 disable-model-invocation: true

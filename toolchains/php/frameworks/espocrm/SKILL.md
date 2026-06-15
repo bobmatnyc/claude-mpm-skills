@@ -1,5 +1,5 @@
 ---
-name: espocrm-development
+name: espocrm
 description: Comprehensive guide for developing on EspoCRM - metadata-driven CRM with service layer architecture
 user-invocable: false
 disable-model-invocation: true

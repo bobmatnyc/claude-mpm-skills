@@ -1,5 +1,5 @@
 ---
-name: jest-typescript
+name: jest
 description: Jest with TypeScript - Industry standard testing framework with 70% market share, mature ecosystem, React Testing Library integration
 user-invocable: false
 disable-model-invocation: true

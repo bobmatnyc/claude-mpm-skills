@@ -1,5 +1,5 @@
 ---
-name: Root Cause Tracing
+name: root-cause-tracing
 description: Systematically trace bugs backward through call stack to find original trigger
 user-invocable: false
 disable-model-invocation: true

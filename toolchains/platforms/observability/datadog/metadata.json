@@ -1,5 +1,5 @@
 {
-  "name": "datadog-observability",
+  "name": "datadog",
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "observability",

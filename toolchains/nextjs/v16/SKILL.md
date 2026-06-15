@@ -1,5 +1,5 @@
 ---
-name: nextjs-v16
+name: v16
 description: Next.js 16 migration guide (async request APIs, "use cache", Turbopack)
 user-invocable: false
 disable-model-invocation: true

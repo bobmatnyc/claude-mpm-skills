@@ -1,5 +1,5 @@
 ---
-name: react-hooks-composition
+name: hooks-composition
 description: Advanced React hooks composition patterns - SWR integration, debounced search, memoized contexts, state machines, and performance optimization
 version: 1.0.0
 category: toolchain

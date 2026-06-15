@@ -1,5 +1,5 @@
 ---
-name: neon-serverless-postgres
+name: neon
 description: Neon serverless Postgres with autoscaling, instant database branching, and zero-downtime deployments. Use when building serverless applications, implementing database branching for dev/staging, or deploying with Vercel/Netlify.
 user-invocable: false
 disable-model-invocation: true

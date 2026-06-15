@@ -1,5 +1,5 @@
 ---
-name: langchain-framework
+name: langchain
 description: "LangChain LLM application framework with chains, agents, RAG, and memory for building AI-powered applications"
 user-invocable: false
 disable-model-invocation: true

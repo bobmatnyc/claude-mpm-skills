@@ -1,5 +1,5 @@
 ---
-name: api-security-review
+name: api-review
 description: API security checklist for reviewing endpoints before deployment. Use when creating or modifying API routes to ensure proper authentication, authorization, and input validation.
 user-invocable: false
 disable-model-invocation: true

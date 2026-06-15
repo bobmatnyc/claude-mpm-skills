@@ -1,5 +1,5 @@
 ---
-name: Writing Plans
+name: writing-plans
 description: Create detailed implementation plans with bite-sized tasks for engineers with zero codebase context
 user-invocable: false
 disable-model-invocation: true

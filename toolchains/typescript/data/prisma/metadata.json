@@ -1,5 +1,5 @@
 {
-  "name": "prisma-orm",
+  "name": "prisma",
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "typescript",

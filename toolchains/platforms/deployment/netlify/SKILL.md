@@ -1,5 +1,5 @@
 ---
-name: netlify-deployment-platform
+name: netlify
 description: "Netlify JAMstack deployment platform with serverless functions, forms, and identity"
 user-invocable: false
 disable-model-invocation: true

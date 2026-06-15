@@ -1,5 +1,5 @@
 {
-  "name": "anthropic-sdk",
+  "name": "anthropic",
   "version": "1.0.0",
   "category": "toolchain",
   "toolchain": "ai",

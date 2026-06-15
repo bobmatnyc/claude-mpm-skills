@@ -1,5 +1,5 @@
 ---
-name: dependency-audit
+name: audit
 description: Dependency audit and cleanup workflow for maintaining healthy project dependencies. Use for regular maintenance, security updates, and removing unused packages.
 user-invocable: false
 disable-model-invocation: true
