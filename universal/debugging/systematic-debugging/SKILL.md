@@ -23,7 +23,7 @@ progressive_disclosure:
 - A bug, error, exception, or crash needs investigation
 - Something is "not working" and the cause is unclear
 - A test is failing and the reason isn't obvious
-- You need to troubleshoot unexpected behavior in any language or framework
+- Unexpected behavior needs troubleshooting in any language or framework
 
 ## Core Workflow
 
@@ -55,7 +55,7 @@ git bisect good <last-known-good-commit>
 # Git will checkout midpoints — test each one and mark good/bad
 ```
 
-**Checkpoint:** You can point to a specific function, module, or data flow where the bug lives.
+**Checkpoint:** The bug is traced to a specific function, module, or data flow.
 
 ### Phase 3: Trace to Root Cause
 
@@ -74,7 +74,7 @@ def process_order(order):
     # ... rest of processing
 ```
 
-**Checkpoint:** You can explain the chain of causation from trigger to symptom, and you have evidence (logs, assertions, debugger output) supporting your explanation.
+**Checkpoint:** The chain of causation from trigger to symptom is explained, with supporting evidence (logs, assertions, debugger output).
 
 ### Phase 4: Fix at Root Cause
 
