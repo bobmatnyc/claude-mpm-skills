@@ -74,11 +74,16 @@ Renders an optimistic value while an action is in flight, reverting automaticall
 
 ```tsx
 function Likes({ count, like }: { count: number; like: () => Promise<void> }) {
-  const [optimisticCount, addOptimistic] = useOptimistic(count, (c) => c + 1);
+  // The update fn receives the current value plus the argument you pass to
+  // `addOptimistic`, so the delta is explicit rather than hard-coded.
+  const [optimisticCount, addOptimistic] = useOptimistic(
+    count,
+    (current, delta: number) => current + delta,
+  );
 
   async function onLike() {
-    addOptimistic(null);  // show +1 immediately
-    await like();         // reverts to real `count` if this throws
+    addOptimistic(1);  // apply +1 immediately
+    await like();      // reverts to real `count` if this throws
   }
 
   return <button onClick={onLike}>♥ {optimisticCount}</button>;
@@ -119,6 +124,12 @@ function TextInput({ ref, ...props }: Props & { ref?: React.Ref<HTMLInputElement
   return <input ref={ref} {...props} />;
 }
 ```
+
+> **When you need the `& { ref?: ... }` intersection:** only when defining a custom
+> prop interface that must expose `ref`. For wrappers over an intrinsic HTML element,
+> React 19's types already include `ref` — e.g. deriving `Props` from
+> `React.ComponentProps<'input'>` (or spreading the element's HTML attributes) gives you
+> a correctly-typed `ref` prop for free, so the explicit intersection is redundant there.
 
 `useImperativeHandle` still customizes the exposed handle; it now reads the `ref` prop directly.
 

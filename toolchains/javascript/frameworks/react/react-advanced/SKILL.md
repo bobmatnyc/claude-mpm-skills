@@ -276,6 +276,8 @@ function Input({ ref, ...props }: Props & { ref?: React.Ref<HTMLInputElement> })
 <ThemeContext value={theme}>{children}</ThemeContext>;
 ```
 
+The `& { ref?: ... }` intersection is only needed when `Props` is a custom interface that must expose `ref`. For wrappers over an intrinsic element, deriving `Props` from `React.ComponentProps<'input'>` already includes a correctly-typed `ref`, so the intersection is redundant.
+
 ## When to Reach for Sibling Skills
 
 - **react-core**: fundamentals — components, JSX, props/state, core hooks, lists, controlled inputs.
