@@ -1,0 +1,30 @@
+{
+  "name": "ort",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "rust",
+  "tags": [
+    "rust",
+    "ort",
+    "onnx",
+    "ml",
+    "inference",
+    "embeddings",
+    "coreml",
+    "cuda",
+    "ndarray"
+  ],
+  "entry_point_tokens": 160,
+  "full_tokens": 4200,
+  "related_skills": [
+    "axum",
+    "systematic-debugging",
+    "verification-before-completion"
+  ],
+  "author": "Claude MPM Team",
+  "license": "MIT",
+  "requires": [],
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "created": "2026-06-25",
+  "updated": "2026-06-25"
+}
