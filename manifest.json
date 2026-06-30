@@ -1,7 +1,7 @@
 {
   "version": "1.0.8",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
-  "updated": "2026-06-15",
+  "updated": "2026-06-30",
   "description": "Curated collection of Claude Code skills for intelligent project development",
   "skills": {
     "universal": [
@@ -3584,6 +3584,31 @@
           ]
         },
         {
+          "name": "ort",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "rust",
+          "framework": null,
+          "tags": [
+            "rust",
+            "ort",
+            "onnx",
+            "ml",
+            "inference",
+            "embeddings",
+            "coreml",
+            "cuda",
+            "ndarray"
+          ],
+          "entry_point_tokens": 160,
+          "full_tokens": 4200,
+          "requires": [],
+          "author": "Claude MPM Team",
+          "updated": "2026-06-25",
+          "source_path": "toolchains/rust/ml/ort/SKILL.md",
+          "description": "ONNX Runtime in Rust via the `ort` crate (2.x): loading sessions, configuring CPU/CoreML/CUDA execution providers, tensor I/O with ndarray, async-safe spawn_blocking wrapping, global thread-pool init, and debugging provider/opset issues"
+        },
+        {
           "name": "rust-quality-gate",
           "version": "1.0.0",
           "category": "toolchain",
@@ -4449,10 +4474,10 @@
     ]
   },
   "metadata": {
-    "total_skills": 171,
+    "total_skills": 172,
     "categories": {
       "universal": 42,
-      "toolchains": 127,
+      "toolchains": 128,
       "examples": 2
     },
     "toolchains": {
@@ -4466,13 +4491,13 @@
       "php": 6,
       "platforms": 26,
       "python": 11,
-      "rust": 6,
+      "rust": 7,
       "typescript": 14,
       "ui": 4,
       "universal": 9,
       "visualbasic": 4
     },
-    "last_updated": "2026-06-15",
+    "last_updated": "2026-06-30",
     "schema_version": "2.0.0"
   },
   "provenance": {
