@@ -14,8 +14,8 @@
   "entry_point_tokens": 118,
   "full_tokens": 700,
   "related_skills": [
-    "../../protocols/mcp",
-    "../../../universal/main/mcp-builder"
+    "../../protocols/model-context",
+    "../../../universal/main/model-context-builder"
   ],
   "author": "Claude MPM Team",
   "license": "MIT",

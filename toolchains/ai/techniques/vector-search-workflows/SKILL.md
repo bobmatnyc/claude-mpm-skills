@@ -106,5 +106,5 @@ Typical `.mcp.json` entry:
 
 ## Related Skills
 
-- `toolchains/ai/protocols/mcp`
-- `universal/main/mcp-builder`
+- `toolchains/ai/protocols/model-context`
+- `universal/main/model-context-builder`

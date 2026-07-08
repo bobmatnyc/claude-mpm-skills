@@ -10,7 +10,7 @@ Complete AI development stack for building LLM-powered applications with Claude,
 
 ## Included Skills
 
-- **mcp** (toolchains/ai/protocols/mcp) - Model Context Protocol for tool integration
+- **model-context** (toolchains/ai/protocols/model-context) - Model Context Protocol for tool integration
 - **anthropic-sdk** (toolchains/ai/sdks/anthropic) - Claude Messages API and streaming
 - **langchain** (toolchains/ai/frameworks/langchain) - LCEL, RAG, agents, memory
 - **dspy** (toolchains/ai/frameworks/dspy) - Automatic prompt optimization

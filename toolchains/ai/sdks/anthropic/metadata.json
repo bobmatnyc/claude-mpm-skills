@@ -18,7 +18,7 @@
   "full_tokens": 5920,
   "related_skills": [
     "../services/openrouter",
-    "../protocols/mcp",
+    "../protocols/model-context",
     "../../../python/frameworks/fastapi",
     "../../../typescript/frameworks/nodejs-backend"
   ],

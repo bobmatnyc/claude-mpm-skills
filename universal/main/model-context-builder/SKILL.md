@@ -1,5 +1,5 @@
 ---
-name: mcp-builder
+name: model-context-builder
 description: "MCP (Model Context Protocol) server build and evaluation guide, including local conventions for tool surfaces, config, and testing"
 user-invocable: false
 disable-model-invocation: true
