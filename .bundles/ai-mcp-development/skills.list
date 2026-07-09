@@ -2,7 +2,7 @@
 # Version: 1.0.0
 
 # Protocols & SDKs
-toolchains/ai/protocols/mcp
+toolchains/ai/protocols/model-context
 toolchains/ai/sdks/anthropic
 
 # AI Frameworks

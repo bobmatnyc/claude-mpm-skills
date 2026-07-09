@@ -460,7 +460,7 @@
         ]
       },
       {
-        "name": "mcp-builder",
+        "name": "model-context-builder",
         "version": "1.0.0",
         "category": "universal",
         "toolchain": null,
@@ -477,7 +477,7 @@
         "requires": [],
         "author": "bobmatnyc",
         "updated": "2026-04-15",
-        "source_path": "universal/main/mcp-builder/SKILL.md",
+        "source_path": "universal/main/model-context-builder/SKILL.md",
         "description": "MCP (Model Context Protocol) server build and evaluation guide, including local conventions for tool surfaces, config, and testing"
       },
       {
@@ -1208,7 +1208,7 @@
           "description": "Local LLM operations with Ollama on Apple Silicon, including setup, model pulls, chat launchers, benchmarks, and diagnostics."
         },
         {
-          "name": "mcp",
+          "name": "model-context",
           "version": "1.0.0",
           "category": "toolchain",
           "toolchain": "ai",
@@ -1235,7 +1235,7 @@
           "requires": [],
           "author": "Claude MPM Team",
           "updated": "2026-06-15",
-          "source_path": "toolchains/ai/protocols/mcp/SKILL.md",
+          "source_path": "toolchains/ai/protocols/model-context/SKILL.md",
           "description": "MCP (Model Context Protocol) - Build AI-native servers with tools, resources, and prompts. TypeScript/Python SDKs for Claude Desktop integration."
         },
         {
