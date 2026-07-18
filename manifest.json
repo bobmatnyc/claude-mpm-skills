@@ -1,7 +1,7 @@
 {
   "version": "1.0.9",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
-  "updated": "2026-07-03",
+  "updated": "2026-07-18",
   "description": "Curated collection of Claude Code skills for intelligent project development",
   "skills": {
     "universal": [
@@ -476,7 +476,7 @@
         "full_tokens": 5341,
         "requires": [],
         "author": "bobmatnyc",
-        "updated": "2026-04-15",
+        "updated": "2026-07-08",
         "source_path": "universal/main/model-context-builder/SKILL.md",
         "description": "MCP (Model Context Protocol) server build and evaluation guide, including local conventions for tool surfaces, config, and testing"
       },
@@ -1186,6 +1186,30 @@
           "description": "Comprehensive LangGraph workflows skill covering stateful multi-agent orchestration, state management, conditional routing, human-in-the-loop, checkpointing, time-travel debugging, and production deployment patterns."
         },
         {
+          "name": "linkedin",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "ai",
+          "framework": null,
+          "tags": [
+            "linkedin",
+            "social-media",
+            "automation",
+            "api",
+            "cli",
+            "messaging",
+            "sales-navigator",
+            "agent-workflows"
+          ],
+          "entry_point_tokens": 62,
+          "full_tokens": 3900,
+          "requires": [],
+          "author": "Linked API (vprudnikoff)",
+          "updated": "2026-07-18",
+          "source_path": "toolchains/ai/services/linkedin/SKILL.md",
+          "description": "LinkedIn automation via the Linked API CLI: fetch/search people and companies, send messages, manage connections, create posts, react, comment, plus Sales Navigator and custom workflows."
+        },
+        {
           "name": "local-llm-ops",
           "version": "1.0.0",
           "category": "toolchain",
@@ -1234,7 +1258,7 @@
           "full_tokens": 8827,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-06-15",
+          "updated": "2026-07-08",
           "source_path": "toolchains/ai/protocols/model-context/SKILL.md",
           "description": "MCP (Model Context Protocol) - Build AI-native servers with tools, resources, and prompts. TypeScript/Python SDKs for Claude Desktop integration."
         },
@@ -1308,7 +1332,7 @@
           "full_tokens": 700,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-04-15",
+          "updated": "2026-07-08",
           "source_path": "toolchains/ai/techniques/vector-search-workflows/SKILL.md",
           "description": "Vector search indexing and querying workflows using MCP Vector Search, including setup, reindexing, auto-index strategies, and MCP integration."
         },
@@ -1333,7 +1357,7 @@
           "full_tokens": 2300,
           "requires": [],
           "author": "Xquik-dev",
-          "updated": "2026-07-03",
+          "updated": "2026-07-18",
           "source_path": "toolchains/ai/services/xquik/SKILL.md",
           "description": "Xquik X data automation API with REST and MCP support for tweet search, user lookup, extraction jobs, monitors, webhooks, and approval-gated X actions."
         }
@@ -4499,14 +4523,14 @@
     ]
   },
   "metadata": {
-    "total_skills": 173,
+    "total_skills": 174,
     "categories": {
       "universal": 42,
-      "toolchains": 129,
+      "toolchains": 130,
       "examples": 2
     },
     "toolchains": {
-      "ai": 10,
+      "ai": 11,
       "databases": 1,
       "elixir": 4,
       "golang": 7,
@@ -4522,7 +4546,7 @@
       "universal": 9,
       "visualbasic": 4
     },
-    "last_updated": "2026-07-03",
+    "last_updated": "2026-07-18",
     "schema_version": "2.0.0"
   },
   "provenance": {

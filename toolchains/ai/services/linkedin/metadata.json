@@ -1,0 +1,25 @@
+{
+  "name": "linkedin",
+  "version": "1.0.0",
+  "category": "toolchain",
+  "toolchain": "ai",
+  "framework": null,
+  "tags": [
+    "linkedin",
+    "social-media",
+    "automation",
+    "api",
+    "cli",
+    "messaging",
+    "sales-navigator",
+    "agent-workflows"
+  ],
+  "entry_point_tokens": 62,
+  "full_tokens": 3900,
+  "requires": [],
+  "author": "Linked API (vprudnikoff)",
+  "updated": "2026-07-18",
+  "source_path": "toolchains/ai/services/linkedin/SKILL.md",
+  "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
+  "description": "LinkedIn automation via the Linked API CLI: fetch/search people and companies, send messages, manage connections, create posts, react, comment, plus Sales Navigator and custom workflows."
+}
