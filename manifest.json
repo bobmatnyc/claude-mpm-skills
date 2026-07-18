@@ -1,7 +1,7 @@
 {
   "version": "1.0.9",
   "repository": "https://github.com/bobmatnyc/claude-mpm-skills",
-  "updated": "2026-06-30",
+  "updated": "2026-07-03",
   "description": "Curated collection of Claude Code skills for intelligent project development",
   "skills": {
     "universal": [
@@ -1311,6 +1311,31 @@
           "updated": "2026-04-15",
           "source_path": "toolchains/ai/techniques/vector-search-workflows/SKILL.md",
           "description": "Vector search indexing and querying workflows using MCP Vector Search, including setup, reindexing, auto-index strategies, and MCP integration."
+        },
+        {
+          "name": "xquik",
+          "version": "1.0.0",
+          "category": "toolchain",
+          "toolchain": "ai",
+          "framework": null,
+          "tags": [
+            "x",
+            "twitter",
+            "api",
+            "mcp",
+            "social-media",
+            "extraction",
+            "webhooks",
+            "monitoring",
+            "agent-workflows"
+          ],
+          "entry_point_tokens": 43,
+          "full_tokens": 2300,
+          "requires": [],
+          "author": "Xquik-dev",
+          "updated": "2026-07-03",
+          "source_path": "toolchains/ai/services/xquik/SKILL.md",
+          "description": "Xquik X data automation API with REST and MCP support for tweet search, user lookup, extraction jobs, monitors, webhooks, and approval-gated X actions."
         }
       ],
       "databases": [
@@ -3604,7 +3629,7 @@
           "full_tokens": 4200,
           "requires": [],
           "author": "Claude MPM Team",
-          "updated": "2026-06-25",
+          "updated": "2026-06-30",
           "source_path": "toolchains/rust/ml/ort/SKILL.md",
           "description": "ONNX Runtime in Rust via the `ort` crate (2.x): loading sessions, configuring CPU/CoreML/CUDA execution providers, tensor I/O with ndarray, async-safe spawn_blocking wrapping, global thread-pool init, and debugging provider/opset issues"
         },
@@ -4474,14 +4499,14 @@
     ]
   },
   "metadata": {
-    "total_skills": 172,
+    "total_skills": 173,
     "categories": {
       "universal": 42,
-      "toolchains": 128,
+      "toolchains": 129,
       "examples": 2
     },
     "toolchains": {
-      "ai": 9,
+      "ai": 10,
       "databases": 1,
       "elixir": 4,
       "golang": 7,
@@ -4497,7 +4522,7 @@
       "universal": 9,
       "visualbasic": 4
     },
-    "last_updated": "2026-06-30",
+    "last_updated": "2026-07-03",
     "schema_version": "2.0.0"
   },
   "provenance": {
