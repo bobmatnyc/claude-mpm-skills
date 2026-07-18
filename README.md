@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains a comprehensive collection of **171 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, AI, and universal tooling.
+This repository contains a comprehensive collection of **173 Claude Code skills** designed for the Claude Multi-Agent Project Manager (MPM) ecosystem. Skills cover modern development workflows with **95%+ coverage** across Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, AI, and universal tooling.
 
 ## What is Claude MPM?
 
@@ -18,7 +18,7 @@ This repository contains a comprehensive collection of **171 Claude Code skills*
 **Key Components:**
 - **Claude Code**: Anthropic's official CLI environment
 - **Claude MPM**: Multi-agent framework running in Claude Code
-- **Skills**: Domain-specific knowledge modules (this repo contains 172 skills)
+- **Skills**: Domain-specific knowledge modules (this repo contains 173 skills)
 
 **How They Work Together:**
 ```
@@ -39,7 +39,7 @@ Skills (Knowledge Modules) ← You are here
 
 ## Quick Stats
 
-- **Total Skills**: 172 production-ready skills
+- **Total Skills**: 173 production-ready skills
 - **Coverage**: 95%+ of modern development workflows
 - **Token Efficiency**: ~66.7k entry tokens vs ~512.4k full tokens (~87% savings)
 - **Categories**: Python, TypeScript, JavaScript, Golang, PHP, Rust, Elixir, Next.js, UI, AI, Platforms, Universal
@@ -49,7 +49,7 @@ Skills (Knowledge Modules) ← You are here
 
 ```
 claude-mpm-skills/
-├── toolchains/          # Language/framework-specific skills (128 skills)
+├── toolchains/          # Language/framework-specific skills (129 skills)
 │   ├── python/         # 11 skills
 │   │   ├── frameworks/     # Django, FastAPI, Flask
 │   │   ├── testing/        # pytest
@@ -95,7 +95,7 @@ claude-mpm-skills/
 │   ├── ui/             # 4 skills
 │   │   ├── styling/        # Tailwind CSS
 │   │   └── components/     # shadcn/ui, DaisyUI, Headless UI
-│   ├── ai/             # 9 skills
+│   ├── ai/             # 10 skills
 │   │   ├── sdks/           # Anthropic SDK
 │   │   ├── frameworks/     # LangChain, DSPy, LangGraph
 │   │   ├── services/       # OpenRouter
@@ -258,7 +258,7 @@ claude-mpm-skills/
 - DaisyUI - Tailwind plugin with 50+ components and themes
 - Headless UI - Unstyled accessible primitives for React/Vue
 
-### AI & LLM (9 Skills)
+### AI & LLM (10 Skills)
 
 **SDKs**:
 - Anthropic SDK - Messages API, streaming, function calling, vision
